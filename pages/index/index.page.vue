@@ -1,12 +1,11 @@
 <template>
-  <h1>Welcome</h1>
-  This page is:
-  <ul>
-    <li>Rendered to HTML.</li>
-    <li>Interactive. <Counter /></li>
-  </ul>
+  <h1>Home</h1>
+  <p>
+    Choose the checklist for <Link href="/data/v0.2">data</Link> or for <Link href="/software/v0.2">software</Link>.
+  </P>
 </template>
 
+
 <script lang="ts" setup>
-import Counter from './Counter.vue'
+import Link from './../../renderer/Link.vue'
 </script>

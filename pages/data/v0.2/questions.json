@@ -1,0 +1,358 @@
+{
+    "questions": [
+        {
+            "answers": [
+                {
+                    "id": "F:q0:a0",
+                    "score": 0,
+                    "text": "No identifier"
+                },
+                {
+                    "id": "F:q0:a1",
+                    "score": 1,
+                    "text": "Local identifier"
+                },
+                {
+                    "id": "F:q0:a2",
+                    "score": 3,
+                    "text": "Web address (URL)"
+                },
+                {
+                    "id": "F:q0:a3",
+                    "score": 8,
+                    "text": "Globally Unique, citable and persistent (e.g. DOI, PURL, ARK or Handle)"
+                }
+            ],
+            "aspect": "F",
+            "guidance": "",
+            "id": "F:q0",
+            "principle": "",
+            "text": "Does the dataset have any identifiers assigned?"
+        },
+        {
+            "answers": [
+                {
+                    "id": "F:q1:a0",
+                    "score": 0,
+                    "text": "No"
+                },
+                {
+                    "id": "F:q1:a1",
+                    "score": 1,
+                    "text": "Yes"
+                }
+            ],
+            "aspect": "F",
+            "guidance": "",
+            "id": "F:q1",
+            "principle": "",
+            "text": "Is the dataset identifier included in all metadata records/files describing the data?"
+        },
+        {
+            "answers": [
+                {
+                    "id": "F:q2:a0",
+                    "score": 0,
+                    "text": "The data is not described."
+                },
+                {
+                    "id": "F:q2:a1",
+                    "score": 2,
+                    "text": "Brief title and description."
+                },
+                {
+                    "id": "F:q2:a2",
+                    "score": 3,
+                    "text": "Comprehensively, but in a text-based, non-standard format."
+                },
+                {
+                    "id": "F:q2:a3",
+                    "score": 4,
+                    "text": "Comprehensively (see suggestion) using a recognised formal machine-readable metadata schema."                                                                                                                    
+                }
+            ],
+            "aspect": "F",
+            "guidance": "",
+            "id": "F:q2",
+            "principle": "",
+            "text": "How is the data described with metadata?"
+        },
+        {
+            "answers": [
+                {
+                    "id": "F:q3:a0",
+                    "score": 0,
+                    "text": "The data is not described in any repository"
+                },
+                {
+                    "id": "F:q3:a1",
+                    "score": 2,
+                    "text": "Local institutional repository"
+                },
+                {
+                    "id": "F:q3:a2",
+                    "score": 2,
+                    "text": "Domain-specific repository"
+                },
+                {
+                    "id": "F:q3:a3",
+                    "score": 2,
+                    "text": "Generalist public repository"
+                },
+                {
+                    "id": "F:q3:a4",
+                    "score": 4,
+                    "text": "Data is in one place but discoverable through several registries"
+                }
+            ],
+            "aspect": "F",
+            "guidance": "",
+            "id": "F:q3",
+            "principle": "",
+            "text": "What type of repository or registry is the metadata record in?"
+        },
+        {
+            "answers": [
+                {
+                    "id": "A:q0:a0",
+                    "score": 0,
+                    "text": "No access to data or metadata"
+                },
+                {
+                    "id": "A:q0:a1",
+                    "score": 1,
+                    "text": "Access to metadata only"
+                },
+                {
+                    "id": "A:q0:a2",
+                    "score": 2,
+                    "text": "Unspecified conditional access e.g. contact the data custodian for access"
+                },
+                {
+                    "id": "A:q0:a3",
+                    "score": 3,
+                    "text": "Embargoed access after a specified date"
+                },
+                {
+                    "id": "A:q0:a4",
+                    "score": 4,
+                    "text": "A de-identified / modified subset of the data is publicly accessible"
+                },
+                {
+                    "id": "A:q0:a5",
+                    "score": 5,
+                    "text": "Fully accessible to persons who meet explicitly stated conditions, e.g. ethics approval for sensitive data"                                                                                                      
+                },
+                {
+                    "id": "A:q0:a6",
+                    "score": 5,
+                    "text": "Publicly accessible"
+                }
+            ],
+            "aspect": "A",
+            "guidance": "",
+            "id": "A:q0",
+            "principle": "",
+            "text": "How accessible is the data?"
+        },
+        {
+            "answers": [
+                {
+                    "id": "A:q1:a0",
+                    "score": 0,
+                    "text": "No access to data"
+                },
+                {
+                    "id": "A:q1:a1",
+                    "score": 1,
+                    "text": "By individual arrangement"
+                },
+                {
+                    "id": "A:q1:a2",
+                    "score": 2,
+                    "text": "File download from online location"
+                },
+                {
+                    "id": "A:q1:a3",
+                    "score": 3,
+                    "text": "Non-standard web service (e.g. OpenAPI/Swagger/informal API)"
+                },
+                {
+                    "id": "A:q1:a4",
+                    "score": 4,
+                    "text": "Standard web service API (e.g. OGC)"
+                }
+            ],
+            "aspect": "A",
+            "guidance": "",
+            "id": "A:q1",
+            "principle": "",
+            "text": "Is the data available online without requiring specialised protocols or tools once access has been approved?"                                                                                                            
+        },
+        {
+            "answers": [
+                {
+                    "id": "A:q2:a0",
+                    "score": 0,
+                    "text": "No"
+                },
+                {
+                    "id": "A:q2:a1",
+                    "score": 0,
+                    "text": "Unsure"
+                },
+                {
+                    "id": "A:q2:a2",
+                    "score": 1,
+                    "text": "Yes"
+                }
+            ],
+            "aspect": "A",
+            "guidance": "",
+            "id": "A:q2",
+            "principle": "",
+            "text": "Will the metadata record be available even if the data is no longer available?"
+        },
+        {
+            "answers": [
+                {
+                    "id": "I:q0:a0",
+                    "score": 0,
+                    "text": "Mostly in a proprietary format"
+                },
+                {
+                    "id": "I:q0:a1",
+                    "score": 1,
+                    "text": "In a structured, open standard, non-machine-readable format"
+                },
+                {
+                    "id": "I:q0:a2",
+                    "score": 2,
+                    "text": "In a structured, open standard, machine-readable format"
+                }
+            ],
+            "aspect": "I",
+            "guidance": "",
+            "id": "I:q0",
+            "principle": "",
+            "text": "What (file) format(s) is the data available in?"
+        },
+        {
+            "answers": [
+                {
+                    "id": "I:q1:a0",
+                    "score": 0,
+                    "text": "Data elements not described"
+                },
+                {
+                    "id": "I:q1:a1",
+                    "score": 1,
+                    "text": "No standards have been applied in the description of data elements"
+                },
+                {
+                    "id": "I:q1:a2",
+                    "score": 2,
+                    "text": "Standardised vocabularies/ontologies/schema without global identifiers"
+                },
+                {
+                    "id": "I:q1:a3",
+                    "score": 3,
+                    "text": "Standardised open and universal using resolvable global identifiers linking to explanations"                                                                                                                     
+                }
+            ],
+            "aspect": "I",
+            "guidance": "",
+            "id": "I:q1",
+            "principle": "",
+            "text": "What best describes the types of vocabularies/ontologies/tagging schemas used to define the data elements?"                                                                                                              
+        },
+        {
+            "answers": [
+                {
+                    "id": "I:q2:a0",
+                    "score": 0,
+                    "text": "There are no links to other metadata"
+                },
+                {
+                    "id": "I:q2:a1",
+                    "score": 2,
+                    "text": "The metadata record includes URI links to related metadata, data and definitions"
+                },
+                {
+                    "id": "I:q2:a2",
+                    "score": 3,
+                    "text": "Metadata is represented in a machine readable format, e.g. in a linked data format such as Resource Description Framework (RDF)."                                                                                
+                }
+            ],
+            "aspect": "I",
+            "guidance": "",
+            "id": "I:q2",
+            "principle": "",
+            "text": "How is the metadata linked to other data and metadata (to enhance context and clearly indicate relationships)?"                                                                                                          
+        },
+        {
+            "answers": [
+                {
+                    "id": "R:q0:a0",
+                    "score": 0,
+                    "text": "No license"
+                },
+                {
+                    "id": "R:q0:a1",
+                    "score": 2,
+                    "text": "Non-standard text-based license"
+                },
+                {
+                    "id": "R:q0:a2",
+                    "score": 3,
+                    "text": "Non-standard machine-readable license (clearly indicating under what conditions the data may be reused)"                                                                                                         
+                },
+                {
+                    "id": "R:q0:a3",
+                    "score": 3,
+                    "text": "Standard text based license"
+                },
+                {
+                    "id": "R:q0:a4",
+                    "score": 4,
+                    "text": "Standard machine-readable license (e.g. Creative Commons)"
+                }
+            ],
+            "aspect": "R",
+            "guidance": "",
+            "id": "R:q0",
+            "principle": "",
+            "text": "Which of the following best describes the license/usage rights attached to the data?"
+        },
+        {
+            "answers": [
+                {
+                    "id": "R:q1:a0",
+                    "score": 0,
+                    "text": "No provenance information is recorded"
+                },
+                {
+                    "id": "R:q1:a1",
+                    "score": 1,
+                    "text": "Partially recorded"
+                },
+                {
+                    "id": "R:q1:a2",
+                    "score": 2,
+                    "text": "Fully recorded in a text format"
+                },
+                {
+                    "id": "R:q1:a3",
+                    "score": 3,
+                    "text": "Fully recorded in a machine readable format"
+                }
+            ],
+            "aspect": "R",
+            "guidance": "",
+            "id": "R:q1",
+            "principle": "",
+            "text": "How much provenance information has been captured to facilitate data reuse?"
+        }
+    ],
+    "version": "0.1"
+}
