@@ -1,7 +1,7 @@
 <template>
     <main>
         <h1>ARDC FAIR for software self-assessment checklist</h1>
-        <p>Switch to the checklist for <Link href="/data/v0.2">data</Link> instead.</p>
+        <p>Switch to the checklist for <Link href="/ssg/data/v0.2">data</Link> instead.</p>
         <Banner />
         <template v-if="nQuestions.total > 0">
             <p>Answer the {{ nQuestions.total }} questions below to assess your software's FAIRness.</p>

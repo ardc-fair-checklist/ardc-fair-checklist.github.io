@@ -1,7 +1,7 @@
 <template>
     <main>
         <h1>ARDC FAIR for data self-assessment checklist</h1>
-        <p>Switch to the checklist for <Link href="/software/v0.2">software</Link> instead.</p>
+        <p>Switch to the checklist for <Link href="/ssg/software/v0.2">software</Link> instead.</p>
         <template v-if="nQuestions.total > 0">
             <p>Answer the {{ nQuestions.total }} questions below to assess your data's FAIRness.</p>
             <div class="aspect" v-for="aspect in ['F', 'A', 'I', 'R']" >
