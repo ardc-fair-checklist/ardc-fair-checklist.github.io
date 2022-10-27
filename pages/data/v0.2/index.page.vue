@@ -34,12 +34,9 @@ import Question from './Question.vue'
 import { setQuestions, nQuestions, type QuestionType, questions } from './store'
 import { progress } from './store'
 import './style.css'
+import { questions as data}  from './questions.json'
 
-setTimeout(async () => {
-    // simulate async dynamic loading using setTimeout
-    const { questions } = await import('./questions.json');
-    setQuestions(questions as QuestionType[]);
-}, 0)
+setQuestions(data as QuestionType[]);
 
 const getFullAspect = (aspect: string) => {
     return {
