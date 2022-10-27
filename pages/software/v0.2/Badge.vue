@@ -13,21 +13,17 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { fairQueryParams } from './store'
-import metadata from '../../../package.json'
-const [major, minor] = metadata.version.split('.').slice(0, 2)
 const APP_BASE_URL = "https://ardc-fair-checklist.github.io/ardc-fair-checklist"
 const badge = {
-    html: computed(() => `<a href="${APP_BASE_URL}/#/software?` +
-                         `v=${major}.${minor}` +
+    html: computed(() => `<a href="${APP_BASE_URL}/software/v0.2?` +
                          `${fairQueryParams.value}">\n` +
                          `  <img src="${APP_BASE_URL}/badge.svg" ` +
                          `alt="FAIR checklist badge">\n</a>`),
     markdown: computed(() => `[![FAIRness badge image](${APP_BASE_URL}/badge.svg)]` +
-                             `(${APP_BASE_URL}/#/software?` +
-                             `v=${major}.${minor}` +
+                             `(${APP_BASE_URL}/software/v0.2?` +
                              `${fairQueryParams.value})`),
     rst: computed(() => `.. image:: ${APP_BASE_URL}/badge.svg\n` +
-                        `   :target: ${APP_BASE_URL}/#software?v=${major}.${minor}${fairQueryParams.value}\n` +
+                        `   :target: ${APP_BASE_URL}/software/v0.2?${fairQueryParams.value}\n` +
                         `   :alt: FAIR checklist badge`)
 }
 </script>
