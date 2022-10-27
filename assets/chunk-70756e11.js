@@ -1,0 +1,1 @@
+import{u as t}from"./chunk-89e65c56.js";import{d as s,t as n,A as o,B as r,C as l,u as m}from"./chunk-376a9fed.js";const i=s({__name:"Link",setup(c){const a=t();return(e,p)=>(m(),n("a",{class:r({active:l(a).urlPathname===e.$attrs.href})},[o(e.$slots,"default")],2))}});export{i as _};

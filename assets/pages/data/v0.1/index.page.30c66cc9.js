@@ -1,0 +1,1 @@
+import{_ as t}from"../../../chunk-de093346.js";import{t as n,u as s,F as o,v as e}from"../../../chunk-376a9fed.js";const a={},r=e("h1",null,"data",-1),c=e("p",null,"Demo app using vite-plugin-ssr.",-1);function _(l,i){return s(),n(o,null,[r,c],64)}const d=t(a,[["render",_]]);export{d as default};
