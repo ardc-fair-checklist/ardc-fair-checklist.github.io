@@ -42,6 +42,16 @@ export const nQuestions = computed(() => {
     }
 })
 
+export const nAnswers = computed(() => {
+    const numbers = questions.value.map(q => q.answers.length)
+    return {
+        f: numbers.slice(...slices.value.f),
+        a: numbers.slice(...slices.value.a),
+        i: numbers.slice(...slices.value.i),
+        r: numbers.slice(...slices.value.r)
+    }
+})
+
 export const nPointsMax = computed(() => {
     const derivePointsMax = (aspect: "F" | "A" | "I" | "R" | "*") => {
         let selectedQuestions = state.value.questions;
@@ -76,10 +86,10 @@ export const slices = computed(() => {
 })
 
 export const fairQueryParams = computed(() => {
-    return `&f=${state.value.compliance.slice(...slices.value.f).map(elem => elem.toString()).join('')}` +
-           `&a=${state.value.compliance.slice(...slices.value.a).map(elem => elem.toString()).join('')}` +
-           `&i=${state.value.compliance.slice(...slices.value.i).map(elem => elem.toString()).join('')}` +
-           `&r=${state.value.compliance.slice(...slices.value.r).map(elem => elem.toString()).join('')}`
+    return [`f=${state.value.compliance.slice(...slices.value.f).map(elem => elem.toString()).join('')}`,
+            `a=${state.value.compliance.slice(...slices.value.a).map(elem => elem.toString()).join('')}`,
+            `i=${state.value.compliance.slice(...slices.value.i).map(elem => elem.toString()).join('')}`,
+            `r=${state.value.compliance.slice(...slices.value.r).map(elem => elem.toString()).join('')}`].join('&')
 })
 
 export const progress = computed(() => {
