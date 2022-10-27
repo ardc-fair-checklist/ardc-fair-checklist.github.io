@@ -13,7 +13,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { fairQueryParams } from './store'
-const APP_BASE_URL = "https://ardc-fair-checklist.github.io/ardc-fair-checklist"
+const APP_BASE_URL = "https://ardc-fair-checklist.github.io/ssg"
 const badge = {
     html: computed(() => `<a href="${APP_BASE_URL}/software/v0.2?` +
                          `${fairQueryParams.value}">\n` +
