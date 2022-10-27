@@ -1,7 +1,7 @@
 <template>
   <h1>Home</h1>
   <p>
-    Choose the checklist for <Link href="/data/v0.2">data</Link> or for <Link href="/software/v0.2">software</Link>.
+    Choose the checklist for <Link href="/ssg/data/v0.2">data</Link> or for <Link href="/ssg/software/v0.2">software</Link>.
   </P>
 </template>
 
