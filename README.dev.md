@@ -24,17 +24,17 @@ git clone https://github.com/ardc-fair-checklist/ardc-fair-checklist .
 npm install
 ```
 
-Building for development:
+## npm scripts
 
-```shell
-npm run dev
-```
+- `npm run build`: build the project for production, output files in `./dist`
+- `npm run dev`: build the project for development, watch files for changes, serve output files on `localhost`.
+- `npm run prod`: shorthand for `npm run build && npm run server:prod`
+- `npm run server`: serve the development build
+- `npm run server:prod`: serve the prodcution build
 
-Building for production:
+## Versioning strategy
 
-```shell
-npm run build
-```
+In the current app, there are multiple entities that could be versioned: the data questions JSON, the data questions app, the software questions JSON, and the software questions app. The DRY (Don't Repeat Yourself) principle would suggest to make one app that can be used to render data as well as software. However, this becomes more difficult to maintain as more versions of the data questions and software questions (and perhaps new future topics) are introduced. We therefore chose to have one directory for each combination of topic and version. That one directory contains all the components, along with all the data needed to render the app for that particular topic and that particular version. Naturally, this comes at the cost of having duplicate code. Each combination of topic and version is assigned its own route, and can choose to do its own processing on supplied query parameters.
 
 ## Publishing
 
@@ -49,12 +49,16 @@ There is a GitHub action `/.github/workflows/publish.yml` that builds the projec
 1. ~~add rst badge~~
 1. ~~investigate migrating to ~~SSR~~SSG [Prerendering](https://vite-plugin-ssr.com/)~~
 1. ~~make questions part of the store and settable, derive other variables and make them gettable~~
+1. ~~write foundation for versioning of list of questions~~
 1. publish coverage in ci
 1. add testing as prose
 1. implement testing prose
-1. write foundation for versioning of list of questions
 1. add validation of query parameters
 1. use the checklist for a couple of existing software packages
 1. revisit questions content with TomH
-
 1. investigate using tailwindcss for styling
+1. make Banner appear in production
+1. when user supplies query params, set state and redirect or show Banner
+1. redirecting from unversioned software and data urls
+1. look into client side routing v server side routing
+
