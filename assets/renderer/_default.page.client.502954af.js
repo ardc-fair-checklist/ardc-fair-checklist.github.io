@@ -1,0 +1,1 @@
+import{c as t}from"../chunk-5a244714.js";import{s as a}from"../chunk-89e65c56.js";import{d as s,h as c}from"../chunk-376a9fed.js";function m(r){const{Page:e,pageProps:o}=r,p=s({render(){return c(e,o||{})}}),n=t(p);return a(n,r),n}async function d(r){var o;m(r).mount("#app"),console.log((o=r.urlParsed)==null?void 0:o.search)}export{d as render};

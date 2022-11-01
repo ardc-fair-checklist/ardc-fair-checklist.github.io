@@ -1,6 +1,6 @@
 {
   "renderer/_default.page.client.ts": {
-    "file": "assets/renderer/_default.page.client.084fc920.js",
+    "file": "assets/renderer/_default.page.client.502954af.js",
     "src": "renderer/_default.page.client.ts",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -67,7 +67,7 @@
     ]
   },
   "pages/software/v0.2/index.page.vue": {
-    "file": "assets/pages/software/v0.2/index.page.589193ed.js",
+    "file": "assets/pages/software/v0.2/index.page.88b8c022.js",
     "src": "pages/software/v0.2/index.page.vue",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -79,11 +79,11 @@
       "_chunk-5a244714.js"
     ],
     "css": [
-      "assets/index.page.7b121825.css"
+      "assets/index.page.5bfac45d.css"
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.9cedee9e.js",
+    "file": "assets/entry-client-routing.ab8b586d.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -100,7 +100,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.0a119157.js",
+    "file": "assets/entry-server-routing.92f791ac.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
@@ -149,7 +149,7 @@
     "src": "pages/data/v0.2/index.page.css"
   },
   "pages/software/v0.2/index.page.css": {
-    "file": "assets/index.page.7b121825.css",
+    "file": "assets/index.page.5bfac45d.css",
     "src": "pages/software/v0.2/index.page.css"
   }
 }
