@@ -1,15 +1,15 @@
 <template>
     <div class="banner">
-        {{ msg }}
+        {{ bannerMessage }}
     </div>
 </template>
 
 <script setup lang="ts">
 import { usePageContext } from '../../../renderer/usePageContext'
-import { nAnswers, nQuestions, setCompliance} from './store'
+import { bannerMessage, nAnswers, nQuestions, setBannerMessage, setCompliance} from './store'
 
 type Params = Record<string, string>
-const getBannerMessage = (params: Params) => {
+const chooseBannerMessage = (params: Params) => {
     const checkAspect = (aspect: 'f' | 'a' | 'i' | 'r') => {
         if (Object.keys(params).includes(aspect)) {
             if (params[aspect].length !== nQuestions.value[aspect]) {
@@ -41,13 +41,13 @@ const getBannerMessage = (params: Params) => {
     return aspects.map(aspect => checkAspect(aspect)).filter(msg => msg !== "").join('; ')
 }
 
-const queryParams = {f:'000', a: '90', i: '000a', r: '000000'} //usePageContext().urlParsed?.search
+const queryParams = usePageContext().urlParsed?.search
 const zeros = Array(nQuestions.value.total).fill(0)
-let msg = ""
 if (queryParams === undefined || Object.keys(queryParams).length === 0 ) {
     setCompliance(zeros)
 } else {
-    msg = getBannerMessage(queryParams)
+    const msg = chooseBannerMessage(queryParams)
+    setBannerMessage(msg)
     if (msg === "") {
         const {f, a, i, r} = queryParams
         const compl = f + a + i + r
