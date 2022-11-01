@@ -1,12 +1,12 @@
 <template>
     <div class="banner">
-        {{ bannerMessage }}
+        {{ msg }}
     </div>
 </template>
 
 <script setup lang="ts">
 import { usePageContext } from '../../../renderer/usePageContext'
-import { bannerMessage, nAnswers, nQuestions, setBannerMessage, setCompliance} from './store'
+import { nAnswers, nQuestions, setCompliance} from './store'
 
 type Params = Record<string, string>
 const getBannerMessage = (params: Params) => {
@@ -43,10 +43,11 @@ const getBannerMessage = (params: Params) => {
 
 const queryParams = usePageContext().urlParsed?.search
 const zeros = Array(nQuestions.value.total).fill(0)
+let msg = ""
 if (queryParams === undefined || Object.keys(queryParams).length === 0 ) {
     setCompliance(zeros)
 } else {
-    const msg = getBannerMessage(queryParams)
+    msg = getBannerMessage(queryParams)
     if (msg === "") {
         const {f, a, i, r} = queryParams
         const compl = f + a + i + r
@@ -54,7 +55,6 @@ if (queryParams === undefined || Object.keys(queryParams).length === 0 ) {
     } else {
         setCompliance(zeros)
     }
-    setBannerMessage(msg)
 }
 </script>
 

@@ -16,15 +16,12 @@ export type QuestionType = {
 }
 
 const state = ref({
-    bannerMessage: "",
     compliance: [] as number[],
     questions: [] as (QuestionType & { index: number })[]
 })
 
-export const bannerMessage = computed(() => state.value.bannerMessage);
 export const compliance = computed(() => state.value.compliance);
 export const questions = computed(() => state.value.questions);
-export const setBannerMessage = (msg: string) => state.value.bannerMessage = msg;
 export const setCompliance = (newCompliance: number[]) => state.value.compliance = newCompliance;
 export const setQuestions = (questions: QuestionType[]) => {
     // add index
