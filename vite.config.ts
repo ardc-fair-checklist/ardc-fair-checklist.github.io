@@ -4,7 +4,12 @@ import { UserConfig } from 'vite'
 
 const config: UserConfig = {
     base: '/ssg/',
-    plugins: [vue(), ssr({prerender: true})]
+    plugins: [
+        vue(),
+        ssr({
+            prerender: true
+        })
+    ]
 }
 
 export default config
