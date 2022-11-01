@@ -2,6 +2,8 @@
     <div class="banner">
         {{ bannerMessage }}
     </div>
+    {{ queryParams}}
+    1847
 </template>
 
 <script setup lang="ts">
