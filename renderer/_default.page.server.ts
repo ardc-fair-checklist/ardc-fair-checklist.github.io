@@ -27,6 +27,7 @@ async function render(pageContext: PageContextServer) {
         <title>${title}</title>
       </head>
       <body>
+        <script>0</script> <!-- dummy script to force full page load -->
         <div id="app">${dangerouslySkipEscape(appHtml)}</div>
       </body>
     </html>`
