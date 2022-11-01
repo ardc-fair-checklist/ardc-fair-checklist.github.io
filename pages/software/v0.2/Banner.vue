@@ -2,8 +2,9 @@
     <div class="banner">
         {{ bannerMessage }}
     </div>
-    {{ queryParams}}
-    1847
+    {{ queryParams }}<br>
+    {{ pc.urlOriginal }}<br>
+    1900
 </template>
 
 <script setup lang="ts">
@@ -43,6 +44,7 @@ const chooseBannerMessage = (params: Params) => {
     return aspects.map(aspect => checkAspect(aspect)).filter(msg => msg !== "").join('; ')
 }
 
+const pc = usePageContext();
 const queryParams = usePageContext().urlParsed?.search
 const zeros = Array(nQuestions.value.total).fill(0)
 if (queryParams === undefined || Object.keys(queryParams).length === 0 ) {
