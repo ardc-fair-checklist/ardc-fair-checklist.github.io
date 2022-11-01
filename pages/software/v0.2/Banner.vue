@@ -1,5 +1,5 @@
 <template>
-    <div class="banner" v-if="bannerMessage !== ''">
+    <div class="banner">
         {{ bannerMessage }}
     </div>
 </template>
