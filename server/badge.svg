@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100"
+   height="20"
+   viewBox="0 0 26.458333 5.2916665"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="badge.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     units="px"
+     width="118px"
+     inkscape:snap-global="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="12.865"
+     inkscape:cx="32.646716"
+     inkscape:cy="10.649048"
+     inkscape:window-width="3380"
+     inkscape:window-height="1325"
+     inkscape:window-x="30"
+     inkscape:window-y="45"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-0.05825798,0.00162016)">
+    <rect
+       style="fill:#333333;fill-rule:evenodd;stroke:none;stroke-width:0.507699;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect13371"
+       width="26.458332"
+       height="5.2916665"
+       x="0.058257978"
+       y="-0.0016201582"
+       ry="0.46656221" />
+    <g
+       aria-label="FAIRness"
+       id="text5181"
+       style="font-size:3.45127px;line-height:1.25;fill:#ececec;stroke-width:0.0862822"
+       transform="matrix(0.95248849,0,0,0.95248849,0.60923168,0.16820409)">
+      <path
+         d="M 1.661206,1.3690533 H 3.1070994 V 1.6555357 H 2.0016145 V 2.3970195 H 2.9992472 V 2.6835019 H 2.0016145 V 3.8850427 H 1.661206 Z"
+         style="font-family:FontAwesome;-inkscape-font-specification:FontAwesome"
+         id="path14" />
+      <path
+         d="M 4.1704546,1.7044062 3.7087124,2.9565027 H 4.633882 Z M 3.9783429,1.3690533 h 0.3859086 l 0.9588734,2.5159894 h -0.35389 L 4.740049,3.2396147 H 3.6059158 L 3.3767299,3.8850427 H 3.0177843 Z"
+         style="font-family:FontAwesome;-inkscape-font-specification:FontAwesome"
+         id="path16" />
+      <path
+         d="M 5.6904962,1.3690533 H 6.0309047 V 3.8850427 H 5.6904962 Z"
+         style="font-family:FontAwesome;-inkscape-font-specification:FontAwesome"
+         id="path18" />
+      <path
+         d="M 7.9014662,2.7054093 Q 8.0110036,2.7424835 8.1138002,2.8638172 8.218282,2.985151 8.3227638,3.197485 L 8.6682279,3.8850427 H 8.3025416 L 7.9806702,3.2396147 Q 7.8559661,2.9868361 7.7380027,2.9042618 7.6217246,2.8216875 7.4195017,2.8216875 H 7.0487598 V 3.8850427 H 6.7083514 V 1.3690533 h 0.7684468 q 0.4314088,0 0.6437428,0.1803154 0.212334,0.1803153 0.212334,0.5443165 0,0.2376118 -0.1112226,0.3943346 Q 8.112115,2.6447425 7.9014662,2.7054093 Z M 7.0487598,1.6487949 v 0.893151 h 0.4280384 q 0.2460378,0 0.3707419,-0.1129078 0.1263893,-0.114593 0.1263893,-0.3353529 0,-0.22076 -0.1263893,-0.3319825 Q 7.722836,1.6487949 7.4767982,1.6487949 Z"
+         style="font-family:FontAwesome;-inkscape-font-specification:FontAwesome"
+         id="path20" />
+      <path
+         d="M 10.661808,2.7458539 V 3.8850427 H 10.351733 V 2.755965 q 0,-0.2679452 -0.104482,-0.4010753 -0.104482,-0.13313 -0.3134451,-0.13313 -0.2510934,0 -0.3960198,0.1600931 Q 9.3928597,2.5419459 9.3928597,2.8183171 V 3.8850427 H 9.0810995 V 1.9976293 h 0.3117602 v 0.2932232 q 0.1112226,-0.1702043 0.2612046,-0.2544638 0.1516671,-0.084259 0.3488347,-0.084259 0.325241,0 0.492075,0.2022228 0.166834,0.2005377 0.166834,0.5915014 z"
+         style="font-family:FontAwesome;-inkscape-font-specification:FontAwesome"
+         id="path22" />
+      <path
+         d="m 12.894685,2.8638172 v 0.1516672 h -1.425671 q 0.02022,0.3201862 0.192112,0.4887052 0.173574,0.1668339 0.481964,0.1668339 0.178631,0 0.345464,-0.043815 0.168519,-0.043815 0.333668,-0.1314448 v 0.2932231 q -0.166834,0.070778 -0.342094,0.1078522 -0.175259,0.037074 -0.355575,0.037074 -0.451631,0 -0.716206,-0.2628897 -0.262889,-0.2628897 -0.262889,-0.7111504 0,-0.4634274 0.249408,-0.7347431 0.251093,-0.2730008 0.675761,-0.2730008 0.380853,0 0.601613,0.2460378 0.222445,0.2443526 0.222445,0.6656504 z m -0.310075,-0.091 Q 12.58124,2.5183532 12.441369,2.366686 12.303183,2.2150189 12.073998,2.2150189 q -0.25952,0 -0.416243,0.1466116 -0.155037,0.1466115 -0.17863,0.4128716 z"
+         style="font-family:FontAwesome;-inkscape-font-specification:FontAwesome"
+         id="path24" />
+      <path
+         d="m 14.606839,2.0532406 v 0.2932232 q -0.131444,-0.067408 -0.273,-0.1011115 -0.141556,-0.033704 -0.293224,-0.033704 -0.230871,0 -0.347149,0.070778 -0.114593,0.070778 -0.114593,0.212334 0,0.1078522 0.08258,0.1702043 0.08257,0.060667 0.331982,0.1162781 l 0.106167,0.023593 q 0.330297,0.070778 0.468483,0.2005376 0.139871,0.1280745 0.139871,0.3589456 0,0.2628897 -0.208964,0.4162421 -0.207278,0.1533523 -0.571279,0.1533523 -0.151667,0 -0.316816,-0.030333 -0.163464,-0.028648 -0.345464,-0.08763 V 3.4957637 q 0.171889,0.089315 0.338723,0.1348152 0.166834,0.043815 0.330297,0.043815 0.219075,0 0.337039,-0.074148 0.117963,-0.075834 0.117963,-0.212334 0,-0.1263893 -0.08595,-0.1937969 -0.08426,-0.067408 -0.372427,-0.1297597 L 13.823226,3.039077 Q 13.535058,2.9784102 13.406984,2.8537061 13.278909,2.7273168 13.278909,2.508242 q 0,-0.2662601 0.188742,-0.4111864 0.188741,-0.1449264 0.53589,-0.1449264 0.17189,0 0.323557,0.025278 0.151667,0.025278 0.279741,0.075833 z"
+         style="font-family:FontAwesome;-inkscape-font-specification:FontAwesome"
+         id="path26" />
+      <path
+         d="m 16.404937,2.0532406 v 0.2932232 q -0.131445,-0.067408 -0.273001,-0.1011115 -0.141556,-0.033704 -0.293223,-0.033704 -0.230871,0 -0.347149,0.070778 -0.114593,0.070778 -0.114593,0.212334 0,0.1078522 0.08257,0.1702043 0.08257,0.060667 0.331983,0.1162781 l 0.106167,0.023593 q 0.330297,0.070778 0.468483,0.2005376 0.13987,0.1280745 0.13987,0.3589456 0,0.2628897 -0.208963,0.4162421 -0.207279,0.1533523 -0.57128,0.1533523 -0.151667,0 -0.316816,-0.030333 -0.163463,-0.028648 -0.345464,-0.08763 V 3.4957637 q 0.17189,0.089315 0.338724,0.1348152 0.166834,0.043815 0.330297,0.043815 0.219075,0 0.337038,-0.074148 0.117963,-0.075834 0.117963,-0.212334 0,-0.1263893 -0.08594,-0.1937969 -0.08426,-0.067408 -0.372427,-0.1297597 L 15.621323,3.039077 Q 15.333156,2.9784102 15.205081,2.8537061 15.077007,2.7273168 15.077007,2.508242 q 0,-0.2662601 0.188741,-0.4111864 0.188742,-0.1449264 0.535891,-0.1449264 0.171889,0 0.323556,0.025278 0.151668,0.025278 0.279742,0.075833 z"
+         style="font-family:FontAwesome;-inkscape-font-specification:FontAwesome"
+         id="path28" />
+    </g>
+    <g
+       id="g30891"
+       transform="translate(-5.7257069,0.0052461)">
+      <rect
+         style="fill:#e51875;fill-opacity:1;stroke:none;stroke-width:0.284444;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect30378-9"
+         width="2.3645797"
+         height="2.3645797"
+         x="23.64716"
+         y="0.88905829" />
+      <rect
+         style="fill:#00b0d5;fill-opacity:1;stroke:none;stroke-width:0.284444;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect30378"
+         width="2.3645797"
+         height="2.3645797"
+         x="25.109955"
+         y="2.4083805"
+         ry="0" />
+      <rect
+         style="fill:#f8b20e;fill-opacity:1;stroke:none;stroke-width:0.284444;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect30378-2"
+         width="2.3645797"
+         height="2.3645797"
+         x="27.255005"
+         y="1.8426188" />
+      <rect
+         style="fill:#8e489b;fill-opacity:1;stroke:none;stroke-width:0.284444;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect30378-6"
+         width="2.3645797"
+         height="2.3645797"
+         x="25.809772"
+         y="0.50821418" />
+    </g>
+  </g>
+</svg>
