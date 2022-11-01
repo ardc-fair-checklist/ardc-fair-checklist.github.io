@@ -41,7 +41,7 @@ const getBannerMessage = (params: Params) => {
     return aspects.map(aspect => checkAspect(aspect)).filter(msg => msg !== "").join('; ')
 }
 
-const queryParams = usePageContext().urlParsed?.search
+const queryParams = {f:'000', a: '90', i: '000a', r: '000000'} //usePageContext().urlParsed?.search
 const zeros = Array(nQuestions.value.total).fill(0)
 let msg = ""
 if (queryParams === undefined || Object.keys(queryParams).length === 0 ) {
