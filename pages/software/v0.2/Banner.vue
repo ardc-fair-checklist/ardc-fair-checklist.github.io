@@ -1,24 +1,17 @@
 <template>
-    <div class="banner" v-if="msg !== ''">
-        {{ msg }}
+    <div class="banner" v-if="bannerMessage !== ''">
+        {{ bannerMessage }}
     </div>
 </template>
 
 <script setup lang="ts">
 import { usePageContext } from '../../../renderer/usePageContext'
-import { nAnswers, nQuestions, setCompliance} from './store'
+import { bannerMessage, nAnswers, nQuestions, setBannerMessage, setCompliance} from './store'
 
 type Params = Record<string, string>
-const validateFairParams = (params: Params) => {
-    const keys = Object.keys(params);
-    if (keys.includes("f") && keys.includes("a") && keys.includes("i") && keys.includes("r")) {
-        // pass
-    } else {
-        return `When using query parameters, include 'f', 'a', 'i', and 'r'`
-    }
-
-    const runChecks = (aspect: 'f' | 'a' | 'i' | 'r') => {
-        if (keys.includes(aspect)) {
+const getBannerMessage = (params: Params) => {
+    const checkAspect = (aspect: 'f' | 'a' | 'i' | 'r') => {
+        if (Object.keys(params).includes(aspect)) {
             if (params[aspect].length !== nQuestions.value[aspect]) {
                 return `Query parameter '${aspect}' does not have the right number of elements (${nQuestions.value[aspect]})`
             }
@@ -27,7 +20,7 @@ const validateFairParams = (params: Params) => {
             }
             const supplied = params[aspect].split('').map(c => parseInt(c, 10))
             return supplied.map((iAnswer, index) => {
-                if (iAnswer > nAnswers.value[aspect][index]) {
+                if (iAnswer >= nAnswers.value[aspect][index]) {
                     return `Query parameter '${aspect}' has out-of-range value on position ${index}`
                 } else {
                     return ""
@@ -36,25 +29,33 @@ const validateFairParams = (params: Params) => {
         }
         return ""
     }
-    return ['f', 'a', 'i', 'r'].map(aspect => runChecks(aspect as 'f' | 'a' | 'i' | 'r')).filter(msg => msg !== "").join('; ')
+    if (params === undefined || Object.keys(params).length === 0 ) {
+        return ""
+    }
+    type Aspect = 'f' | 'a' | 'i' | 'r'
+    const aspects: Aspect[] =  ['f', 'a', 'i', 'r']
+    const hasAllAspects = aspects.map(aspect => Object.keys(params).includes(aspect)).every(e => e)
+    if (!hasAllAspects) {
+        return `When using query parameters, include 'f', 'a', 'i', and 'r'`
+    }
+    return aspects.map(aspect => checkAspect(aspect)).filter(msg => msg !== "").join('; ')
 }
 
-const pageContext = usePageContext();
-const queryParams = pageContext.urlParsed?.search
-const zeroes = Array(nQuestions.value.total).fill(0)
-let msg = ""
+const queryParams = usePageContext().urlParsed?.search
+const zeros = Array(nQuestions.value.total).fill(0)
 if (queryParams === undefined || Object.keys(queryParams).length === 0 ) {
-    setCompliance(zeroes)
+    setCompliance(zeros)
 } else {
-    msg = validateFairParams(queryParams)
+    const msg = getBannerMessage(queryParams)
     if (msg === "") {
-        const compl: string = queryParams.f + queryParams.a + queryParams.i + queryParams.r
+        const {f, a, i, r} = queryParams
+        const compl = f + a + i + r
         setCompliance(compl.split('').map(char => parseInt(char, 10)))
     } else {
-        setCompliance(zeroes)
+        setCompliance(zeros)
     }
+    setBannerMessage(msg)
 }
-
 </script>
 
 
