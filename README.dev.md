@@ -32,6 +32,22 @@ npm install
 - `npm run server`: serve the development build
 - `npm run server:prod`: serve the production build
 
+## Production problems
+
+Running npm run prod results in a production site that can't resolve some of its own assets when run locally and combined with not undefined `base` option in `vite.config.js`. A possible workaround is to build the production files, then insert a directory with the same name as `base` between `server`|`client` and their files, like so:
+
+```shell
+BASE=ssg
+npm run build
+LIST_CLIENT=$(find ./dist/client/ -mindepth 1 -maxdepth 1)
+LIST_SERVER=$(find ./dist/server/ -mindepth 1 -maxdepth 1)
+mkdir dist/client/$BASE
+mkdir dist/server/$BASE
+mv $LIST_CLIENT dist/client/$BASE/
+mv $LIST_SERVER dist/server/$BASE/
+npm run server:prod
+```
+
 ## Versioning strategy
 
 In the current app, there are multiple entities that could be versioned: the data questions JSON, the data questions app, the software questions JSON, and the software questions app. The DRY (Don't Repeat Yourself) principle would suggest to make one app that can be used to render data as well as software. However, this becomes more difficult to maintain as more versions of the data questions and software questions (and perhaps new future topics) are introduced. We therefore chose to have one directory for each combination of topic and version. That one directory contains all the components, along with all the data needed to render the app for that particular topic and that particular version. Naturally, this comes at the cost of having duplicate code. Each combination of topic and version is assigned its own route, and can choose to do its own processing on supplied query parameters.
@@ -50,15 +66,14 @@ There is a GitHub action `/.github/workflows/publish.yml` that builds the projec
 1. ~~investigate migrating to ~~SSR~~SSG [Prerendering](https://vite-plugin-ssr.com/)~~
 1. ~~make questions part of the store and settable, derive other variables and make them gettable~~
 1. ~~write foundation for versioning of list of questions~~
-1. publish coverage in ci
-1. add testing as prose
-1. implement testing prose
 1. add validation of query parameters
-1. use the checklist for a couple of existing software packages
-1. revisit questions content with TomH
-1. investigate using tailwindcss for styling
 1. make Banner appear in production
 1. when user supplies query params, set state and redirect or show Banner
 1. redirecting from unversioned software and data urls
+1. publish coverage in ci
+1. add testing as prose
+1. implement testing prose
+1. use the checklist for a couple of existing software packages
+1. revisit questions content with TomH
+1. investigate using tailwindcss for styling
 1. look into client side routing v server side routing
-
