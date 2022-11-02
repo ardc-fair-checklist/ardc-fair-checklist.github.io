@@ -34,7 +34,7 @@
 import Badge from './Badge.vue'
 import Banner from './Banner.vue'
 import Footer from './Footer.vue'
-import Link from '../../../renderer/Link.vue'
+import Link from '~/renderer/Link.vue'
 import ProgressBar from './ProgressBar.vue';
 import Question from './Question.vue'
 import { setQuestions, nQuestions, type QuestionType, progress, questions } from './store'
