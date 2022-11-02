@@ -10,7 +10,8 @@ export const passToClient = [
     'effect',
     'pageProps',
     'render',
-    'urlOriginal'
+    'urlPathname',
+    'urlParsed'
 ]
 
 async function render(pageContext: PageContextServer) {

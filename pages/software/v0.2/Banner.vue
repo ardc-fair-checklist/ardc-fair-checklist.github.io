@@ -1,9 +1,7 @@
 <template>
-    <div class="banner">
+    <div class="banner" v-if="bannerMessage !== ''" >
         {{ bannerMessage }}
     </div>
-    {{ queryParams }}<br>
-    {{ pc.urlOriginal }}<br>
 </template>
 
 <script setup lang="ts">
@@ -43,7 +41,6 @@ const chooseBannerMessage = (params: Params) => {
     return aspects.map(aspect => checkAspect(aspect)).filter(msg => msg !== "").join('; ')
 }
 
-const pc = usePageContext();
 const queryParams = usePageContext().urlParsed?.search
 const zeros = Array(nQuestions.value.total).fill(0)
 if (queryParams === undefined || Object.keys(queryParams).length === 0 ) {
