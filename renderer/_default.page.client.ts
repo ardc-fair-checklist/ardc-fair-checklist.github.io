@@ -6,7 +6,6 @@ export { render }
 async function render(pageContext: PageContextClient) {
     const app = createApp(pageContext)
     app.mount('#app')
-    console.log(pageContext.urlParsed?.search)
 }
 
 /* To enable Client-side Routing:
