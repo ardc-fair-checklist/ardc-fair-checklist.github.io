@@ -3,7 +3,11 @@ import ssr from 'vite-plugin-ssr/plugin'
 import { UserConfig } from 'vite'
 
 const config: UserConfig = {
+//    base: 'https://ardc-fair-checklist.github.io/ssg/',
     base: '/ssg/',
+    build: {
+        ssrManifest: true
+    },
     plugins: [
         vue(),
         ssr({
