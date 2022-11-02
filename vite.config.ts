@@ -4,8 +4,9 @@ import { UserConfig } from 'vite'
 
 const config: UserConfig = {
 //    base: 'https://ardc-fair-checklist.github.io/ssg/',
-    base: '/ssg/',
+    base: undefined,
     build: {
+        minify: false,
         ssrManifest: true
     },
     plugins: [
@@ -13,7 +14,12 @@ const config: UserConfig = {
         ssr({
             prerender: true
         })
-    ]
+    ],
+    resolve: {
+        alias: {
+            "~": __dirname,
+        }
+    }
 }
 
 export default config
