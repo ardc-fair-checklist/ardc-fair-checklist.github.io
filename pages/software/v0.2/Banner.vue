@@ -4,11 +4,10 @@
     </div>
     {{ queryParams }}<br>
     {{ pc.urlOriginal }}<br>
-    1957
 </template>
 
 <script setup lang="ts">
-import { usePageContext } from '../../../renderer/usePageContext'
+import { usePageContext } from '~/renderer/usePageContext'
 import { bannerMessage, nAnswers, nQuestions, setBannerMessage, setCompliance} from './store'
 
 type Params = Record<string, string>
