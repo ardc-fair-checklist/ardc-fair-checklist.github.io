@@ -29,7 +29,7 @@
 
 <script setup lang="ts">
 import ProgressBar from './ProgressBar.vue';
-import Link from '../../../renderer/Link.vue'
+import Link from '~/renderer/Link.vue'
 import Question from './Question.vue'
 import { setQuestions, nQuestions, type QuestionType, questions } from './store'
 import { progress } from './store'
