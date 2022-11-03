@@ -113,7 +113,7 @@ const _hoisted_8 = {
 const _sfc_main$6 = /* @__PURE__ */ defineComponent({
   __name: "Badge",
   setup(__props) {
-    const APP_BASE_URL = `https://ardc-fair-checklist.github.io${"/"}`;
+    const APP_BASE_URL = `https://ardc-fair-checklist.github.io${"/ssg/"}`;
     const badge = {
       html: computed(() => `<a href="${APP_BASE_URL}software/v0.2?${fairQueryParams.value}">
   <img src="${APP_BASE_URL}badge.svg" alt="FAIR checklist badge">
@@ -843,7 +843,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
         R: "Reusable"
       }[aspect];
     };
-    const linkToDataChecklist = `${"/"}data/v0.2`;
+    const linkToDataChecklist = `${"/ssg/"}data/v0.2`;
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("main", null, [
         _hoisted_1,

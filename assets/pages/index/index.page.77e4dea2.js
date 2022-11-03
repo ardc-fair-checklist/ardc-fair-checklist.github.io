@@ -30,8 +30,8 @@ const _hoisted_1 = /* @__PURE__ */ createBaseVNode("h1", null, "Home", -1);
 const _sfc_main = /* @__PURE__ */ defineComponent({
   __name: "index.page",
   setup(__props) {
-    const linkToDataChecklist = `${"/"}data/v0.2`;
-    const linkToSoftwareChecklist = `${"/"}software/v0.2`;
+    const linkToDataChecklist = `${"/ssg/"}data/v0.2`;
+    const linkToSoftwareChecklist = `${"/ssg/"}software/v0.2`;
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock(Fragment, null, [
         _hoisted_1,

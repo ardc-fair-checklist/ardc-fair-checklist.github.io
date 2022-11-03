@@ -532,7 +532,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
         R: "Reusable"
       }[aspect];
     };
-    const linkToSoftwareChecklist = `${"/"}software/v0.2`;
+    const linkToSoftwareChecklist = `${"/ssg/"}software/v0.2`;
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("main", null, [
         _hoisted_1,
