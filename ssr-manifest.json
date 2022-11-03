@@ -1,0 +1,285 @@
+{
+  "renderer/app.ts": [],
+  "renderer/_default.page.client.ts": [],
+  "renderer/_error.page.vue?vue&type=script&setup=true&lang.ts": [],
+  "renderer/_error.page.vue": [],
+  "pages/index/Footer.vue": [],
+  "pages/index/style.css": [],
+  "pages/index/index.page.vue?vue&type=script&setup=true&lang.ts": [],
+  "pages/index/index.page.vue": [],
+  "pages/data/v0.1/index.page.vue": [],
+  "pages/data/v0.2/ProgressBar.vue?vue&type=script&setup=true&lang.ts": [],
+  "pages/data/v0.2/ProgressBar.vue?vue&type=style&index=0&scoped=2a621585&lang.css": [],
+  "pages/data/v0.2/ProgressBar.vue": [],
+  "pages/data/v0.2/Answer.vue?vue&type=script&setup=true&lang.ts": [],
+  "pages/data/v0.2/store.ts": [],
+  "pages/data/v0.2/Question.vue?vue&type=script&setup=true&lang.ts": [],
+  "pages/data/v0.2/style.css": [],
+  "pages/data/v0.2/questions.json": [],
+  "pages/data/v0.2/index.page.vue?vue&type=script&setup=true&lang.ts": [],
+  "pages/data/v0.2/index.page.vue": [],
+  "pages/software/v0.1/index.page.vue": [],
+  "pages/software/v0.2/store.ts": [],
+  "pages/software/v0.2/Badge.vue?vue&type=script&setup=true&lang.ts": [],
+  "pages/software/v0.2/Badge.vue?vue&type=style&index=0&scoped=cb44f43b&lang.css": [],
+  "pages/software/v0.2/Badge.vue": [],
+  "pages/software/v0.2/Banner.vue?vue&type=script&setup=true&lang.ts": [],
+  "pages/software/v0.2/Banner.vue?vue&type=style&index=0&scoped=d4ffcff8&lang.css": [],
+  "pages/software/v0.2/Banner.vue": [],
+  "pages/software/v0.2/Footer.vue": [],
+  "pages/software/v0.2/ProgressBar.vue?vue&type=script&setup=true&lang.ts": [],
+  "pages/software/v0.2/ProgressBar.vue?vue&type=style&index=0&scoped=580e5af2&lang.css": [],
+  "pages/software/v0.2/ProgressBar.vue": [],
+  "pages/software/v0.2/Answer.vue?vue&type=script&setup=true&lang.ts": [],
+  "pages/software/v0.2/Question.vue?vue&type=script&setup=true&lang.ts": [],
+  "pages/software/v0.2/style.css": [],
+  "pages/software/v0.2/questions.json": [],
+  "pages/software/v0.2/index.page.vue?vue&type=script&setup=true&lang.ts": [],
+  "pages/software/v0.2/index.page.vue": [],
+  "node_modules/vite-plugin-ssr/dist/esm/utils/isPlainObject.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/utils/stringifyStringArray.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/utils/hasPropertyGetter.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/utils/isObjectWithKeys.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/utils/isPromise.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/shared/route/deduceRouteStringFromFilesystemPath.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/shared/route/loadPageRoutes.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/shared/addComputedUrlProps.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/shared/route/resolveRouteString.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/shared/route/resolvePrecedence.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/shared/route/resolveRouteFunction.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/shared/assertPageContextProvidedByUser.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/shared/route/callOnBeforeRouteHook.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/shared/route/debug.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/shared/route.js": [],
+  "virtual:vite-plugin-ssr:pageFiles:client:client-routing": [],
+  "node_modules/vite-plugin-ssr/dist/esm/client/router/pageFiles.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/utils/isBaseUrl.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/utils/isExternalLink.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/utils/throttle.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/utils/getUrlPathname.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/utils/serverSideRouteTo.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/utils/detectHydrationSkipSupport.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/utils/isSameErrorMessage.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/utils/sleep.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/utils/humanizeTime.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/utils/callHookWithTimeout.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/client/navigationState.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/shared/getPageFiles/analyzePageServerSide/getPageFilesServerSide.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/shared/getPageFiles/analyzePageServerSide.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/shared/assertHookResult.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/client/router/releasePageContext.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/client/router/getPageContext/removeBuiltInOverrides.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/utils/urlToFile.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/shared/getPageContextRequestUrl.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/client/router/getPageContext.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/client/getBaseUrl.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/client/router/getGlobalContext.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/client/router/getPageId.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/shared/getPageFiles/analyzePageClientSide/getExportNames.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/shared/getPageFiles/analyzePageClientSide/analyzeExports.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/shared/getPageFiles/analyzePageClientSide/determineClientEntry.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/shared/getPageFiles/analyzePageClientSide.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/client/router/skipLink/isClientSideRenderable.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/client/router/skipLink.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/client/router/prefetch/getPrefetchConfig.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/client/router/prefetch/alreadyPrefetched.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/client/router/prefetch.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/client/router/history.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/client/router/useClientRouter.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": [],
+  "index.page.30c66cc9.js": [],
+  "index.page.05b7da4a.js": [
+    "/assets/index.page.ed4d00ee.css"
+  ],
+  "index.page.619242e3.js": [
+    "/assets/index.page.235bfbe2.css"
+  ],
+  "index.page.f04c915f.js": [],
+  "index.page.0f26607c.js": [
+    "/assets/index.page.d3d3bc64.css"
+  ],
+  "_error.page.9b6b9650.js": [],
+  "_default.page.client.084fc920.js": [],
+  "virtual:vite-plugin-ssr:pageFiles:client:server-routing": [],
+  "node_modules/vite-plugin-ssr/dist/esm/client/pageFiles.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/client/releasePageContext.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/client/getPageContext.js": [],
+  "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": [],
+  "node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js": [
+    "/assets/chunk-5a244714.js"
+  ],
+  "renderer/usePageContext.ts": [
+    "/assets/chunk-89e65c56.js"
+  ],
+  "node_modules/@vue/shared/dist/shared.esm-bundler.js": [
+    "/assets/chunk-376a9fed.js"
+  ],
+  "node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js": [
+    "/assets/chunk-376a9fed.js"
+  ],
+  "node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js": [
+    "/assets/chunk-376a9fed.js"
+  ],
+  "renderer/Link.vue?vue&type=script&setup=true&lang.ts": [
+    "/assets/chunk-70756e11.js"
+  ],
+  "../../../../../netherlands-escience-center-logo.svg": [
+    "/assets/chunk-5b637298.js"
+  ],
+  "../../../../../ardc-logo.svg": [
+    "/assets/chunk-5b637298.js"
+  ],
+  "\u0000plugin-vue:export-helper": [
+    "/assets/chunk-de093346.js"
+  ],
+  "node_modules/vite-plugin-ssr/dist/esm/utils/createErrorWithCleanStackTrace.js": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "node_modules/vite-plugin-ssr/dist/esm/utils/getGlobalObject.js": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "node_modules/vite-plugin-ssr/dist/esm/utils/unique.js": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "node_modules/vite-plugin-ssr/dist/esm/utils/assertPackageInstances.js": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "node_modules/vite-plugin-ssr/dist/esm/utils/projectInfo.js": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "node_modules/vite-plugin-ssr/dist/esm/utils/assert.js": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "node_modules/vite-plugin-ssr/dist/esm/utils/slice.js": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "node_modules/vite-plugin-ssr/dist/esm/utils/parseUrl.js": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "node_modules/vite-plugin-ssr/dist/esm/utils/objectAssign.js": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "node_modules/vite-plugin-ssr/dist/esm/utils/isCallable.js": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "node_modules/vite-plugin-ssr/dist/esm/utils/isObject.js": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "node_modules/vite-plugin-ssr/dist/esm/utils/sorter.js": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "node_modules/vite-plugin-ssr/dist/esm/utils/isBrowser.js": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "node_modules/vite-plugin-ssr/dist/esm/utils/hasProp.js": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "node_modules/vite-plugin-ssr/dist/esm/utils/compareString.js": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "node_modules/vite-plugin-ssr/dist/esm/utils/isNotNullish.js": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "node_modules/vite-plugin-ssr/dist/esm/utils/filesystemPathHandling.js": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "node_modules/vite-plugin-ssr/dist/esm/utils/isJavaScriptFile.js": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "node_modules/vite-plugin-ssr/dist/esm/shared/getPageFiles/assertExports.js": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "node_modules/vite-plugin-ssr/dist/esm/shared/getPageFiles/getExports.js": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "node_modules/vite-plugin-ssr/dist/esm/shared/determinePageId.js": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "node_modules/vite-plugin-ssr/dist/esm/shared/route/error-page.js": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "node_modules/vite-plugin-ssr/dist/esm/shared/getPageFiles/getPageFileObject.js": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "node_modules/vite-plugin-ssr/dist/esm/shared/getPageFiles/types.js": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "node_modules/vite-plugin-ssr/dist/esm/shared/getPageFiles/parseGlobResults.js": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "node_modules/vite-plugin-ssr/dist/esm/shared/getPageFiles/setPageFiles.js": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "node_modules/vite-plugin-ssr/dist/esm/shared/getPageFiles/getAllPageIdFiles.js": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "node_modules/vite-plugin-ssr/dist/esm/shared/getPageFiles/analyzePageClientSide/getPageFilesClientSide.js": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "\u0000vite/preload-helper": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "renderer/_default.page.client.ts?extractExportNames&lang.ts": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "renderer/_default.page.server.ts?extractExportNames&lang.ts": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "pages/data/v0.1/index.page.vue?extractExportNames&lang.vue": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "pages/data/v0.2/index.page.vue?extractExportNames&vue&type=script&setup=true&lang.ts": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "pages/data/v0.2/index.page.vue?extractExportNames&lang.vue": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "pages/index/index.page.vue?extractExportNames&vue&type=script&setup=true&lang.ts": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "pages/index/index.page.vue?extractExportNames&lang.vue": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "pages/software/v0.1/index.page.vue?extractExportNames&lang.vue": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "pages/software/v0.2/index.page.vue?extractExportNames&vue&type=script&setup=true&lang.ts": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "pages/software/v0.2/index.page.vue?extractExportNames&lang.vue": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "renderer/_error.page.vue?extractExportNames&vue&type=script&setup=true&lang.ts": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "renderer/_error.page.vue?extractExportNames&lang.vue": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "node_modules/vite-plugin-ssr/dist/esm/utils/getCurrentUrl.js": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "node_modules/@brillout/json-serializer/dist/esm/types.js": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "node_modules/@brillout/json-serializer/dist/esm/parse.js": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "node_modules/vite-plugin-ssr/dist/esm/client/getPageContextSerializedInHtml.js": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "node_modules/vite-plugin-ssr/dist/esm/shared/getHook.js": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "node_modules/vite-plugin-ssr/dist/esm/shared/sortPageContext.js": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "node_modules/vite-plugin-ssr/dist/esm/client/releasePageContextCommon.js": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "node_modules/vite-plugin-ssr/dist/esm/client/loadPageFilesClientSide.js": [
+    "/assets/chunk-9849de8f.js"
+  ],
+  "node_modules/vite-plugin-ssr/dist/esm/client/assertRenderHook.js": [
+    "/assets/chunk-9849de8f.js"
+  ]
+}
