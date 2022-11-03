@@ -3,8 +3,8 @@ import ssr from 'vite-plugin-ssr/plugin'
 import { UserConfig } from 'vite'
 
 const config: UserConfig = {
-    // base: '/ssg/',
-    base: undefined,
+    base: '/ssg/',
+    //base: undefined,
     build: {
         minify: false,
         ssrManifest: true
