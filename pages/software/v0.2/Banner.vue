@@ -7,55 +7,76 @@
 <script setup lang="ts">
 import { usePageContext } from '~/renderer/usePageContext'
 import { bannerMessage, nAnswers, nQuestions, setBannerMessage, setCompliance} from './store'
-
-type Params = Record<string, string>
-const chooseBannerMessage = (params: Params) => {
-    const checkAspect = (aspect: 'f' | 'a' | 'i' | 'r') => {
-        if (Object.keys(params).includes(aspect)) {
-            if (params[aspect].length !== nQuestions.value[aspect]) {
-                return `Query parameter '${aspect}' does not have the right number of elements (${nQuestions.value[aspect]})`
-            }
-            if (/^[0-9]+$/.test(params[aspect]) === false) {
-                return `Query parameter '${aspect}' includes unknown character`
-            }
-            const supplied = params[aspect].split('').map(c => parseInt(c, 10))
-            return supplied.map((iAnswer, index) => {
-                if (iAnswer >= nAnswers.value[aspect][index]) {
-                    return `Query parameter '${aspect}' has out-of-range value on position ${index}`
-                } else {
-                    return ""
-                }
-            }).filter(msg => msg !== "").join('; ')
-        }
-        return ""
-    }
-    if (params === undefined || Object.keys(params).length === 0 ) {
-        return ""
-    }
+import { onMounted } from 'vue'
+onMounted(() => {
+    type Params = Record<string, string>
     type Aspect = 'f' | 'a' | 'i' | 'r'
-    const aspects: Aspect[] =  ['f', 'a', 'i', 'r']
-    const hasAllAspects = aspects.map(aspect => Object.keys(params).includes(aspect)).every(e => e)
-    if (!hasAllAspects) {
-        return `When using query parameters, include 'f', 'a', 'i', and 'r'`
+    const chooseBannerMessage = (params: Params) => {
+        const checkAspect = (aspect: 'f' | 'a' | 'i' | 'r') => {
+            if (Object.keys(params).includes(aspect)) {
+                if (params[aspect].length !== nQuestions.value[aspect]) {
+                    return `Query parameter '${aspect}' does not have the right number of elements (${nQuestions.value[aspect]})`
+                }
+                if (/^[0-9]+$/.test(params[aspect]) === false) {
+                    return `Query parameter '${aspect}' includes unknown character`
+                }
+                const supplied = params[aspect].split('').map(c => parseInt(c, 10))
+                return supplied.map((iAnswer, index) => {
+                    if (iAnswer >= nAnswers.value[aspect][index]) {
+                        return `Query parameter '${aspect}' has out-of-range value on position ${index}`
+                    } else {
+                        return ""
+                    }
+                }).filter(msg => msg !== "").join('; ')
+            }
+            return ""
+        }
+        if (params === undefined || Object.keys(params).length === 0 ) {
+            return ""
+        }
+        const aspects: Aspect[] =  ['f', 'a', 'i', 'r']
+        const hasAllAspects = aspects.map(aspect => Object.keys(params).includes(aspect)).every(e => e)
+        if (!hasAllAspects) {
+            return `When using query parameters, include 'f', 'a', 'i', and 'r'`
+        }
+        return aspects.map(aspect => checkAspect(aspect)).filter(msg => msg !== "").join('; ')
     }
-    return aspects.map(aspect => checkAspect(aspect)).filter(msg => msg !== "").join('; ')
-}
 
-const queryParams = usePageContext().urlParsed?.search
-const zeros = Array(nQuestions.value.total).fill(0)
-if (queryParams === undefined || Object.keys(queryParams).length === 0 ) {
-    setCompliance(zeros)
-} else {
-    const msg = chooseBannerMessage(queryParams)
-    setBannerMessage(msg)
-    if (msg === "") {
-        const {f, a, i, r} = queryParams
-        const compl = f + a + i + r
-        setCompliance(compl.split('').map(char => parseInt(char, 10)))
-    } else {
-        setCompliance(zeros)
+    //const queryParams = usePageContext().urlParsed?.search
+    //console.log(queryParams)
+    let queryParams = {} as {f?: string, a?: string, i?: string, r?: string};
+    const mySearchParams = new URLSearchParams(window.location.search)
+    for (const [k, v] of mySearchParams.entries()) {
+        if (k === 'f') {
+            queryParams.f = v
+        }
+        if (k === 'a') {
+            queryParams.a = v
+        }
+        if (k === 'i') {
+            queryParams.i = v
+        }
+        if (k === 'r') {
+            queryParams.r = v
+        }
     }
-}
+
+    const zeros = Array(nQuestions.value.total).fill(0)
+    if (queryParams === undefined || Object.keys(queryParams).length === 0 ) {
+        setCompliance(zeros)
+    } else {
+        const msg = chooseBannerMessage(queryParams)
+        setBannerMessage(msg)
+        if (msg === "") {
+            const {f, a, i, r} = queryParams as {f: string, a: string, i: string, r: string}
+            const compl = f + a + i + r
+            setCompliance(compl.split('').map(char => parseInt(char, 10)))
+        } else {
+            setCompliance(zeros)
+        }
+    }
+})
+
 </script>
 
 
