@@ -202,6 +202,7 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
           const { f, a, i, r } = queryParams;
           const compl = f + a + i + r;
           setCompliance(compl.split("").map((char) => parseInt(char, 10)));
+          window.history.pushState({}, "", [window.location.origin, window.location.pathname].join(""));
         } else {
           setCompliance(zeros);
         }
@@ -212,8 +213,8 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const Banner_vue_vue_type_style_index_0_scoped_c20240fd_lang = "";
-const Banner = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-c20240fd"]]);
+const Banner_vue_vue_type_style_index_0_scoped_48cb2967_lang = "";
+const Banner = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-48cb2967"]]);
 const _sfc_main$4 = {};
 const _hoisted_1$4 = /* @__PURE__ */ createBaseVNode("div", { class: "logos" }, [
   /* @__PURE__ */ createBaseVNode("img", {
