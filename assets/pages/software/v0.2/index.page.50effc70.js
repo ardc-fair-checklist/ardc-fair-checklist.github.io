@@ -212,8 +212,8 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const Banner_vue_vue_type_style_index_0_scoped_d4ffcff8_lang = "";
-const Banner = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-d4ffcff8"]]);
+const Banner_vue_vue_type_style_index_0_scoped_c20240fd_lang = "";
+const Banner = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-c20240fd"]]);
 const _sfc_main$4 = {};
 const _hoisted_1$4 = /* @__PURE__ */ createBaseVNode("div", { class: "logos" }, [
   /* @__PURE__ */ createBaseVNode("img", {
