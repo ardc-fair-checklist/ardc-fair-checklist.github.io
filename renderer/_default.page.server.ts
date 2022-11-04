@@ -10,8 +10,7 @@ export const passToClient = [
     'effect',
     'pageProps',
     'render',
-    'urlPathname',
-    'urlParsed'
+    'urlPathname'
 ]
 
 async function render(pageContext: PageContextServer) {
@@ -27,7 +26,7 @@ async function render(pageContext: PageContextServer) {
         <html lang="en">
             <head>
                 <meta charset="UTF-8" />
-                <link rel="icon" href="/site-logo.svg" />
+                <link rel="icon" href="${import.meta.env.BASE_URL}site-logo.svg" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta name="description" content="${desc}" />
                 <title>${title}</title>
