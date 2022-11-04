@@ -66,9 +66,9 @@ There is a GitHub action `/.github/workflows/publish.yml` that builds the projec
 1. ~~investigate migrating to ~~SSR~~SSG [Prerendering](https://vite-plugin-ssr.com/)~~
 1. ~~make questions part of the store and settable, derive other variables and make them gettable~~
 1. ~~write foundation for versioning of list of questions~~
-1. add validation of query parameters
-1. make Banner appear in production
-1. when user supplies query params, set state and redirect or show Banner
+1. ~~add validation of query parameters~~
+1. ~~make Banner appear in production~~
+1. ~~when user supplies query params, set state and redirect or show Banner~~
 1. redirecting from unversioned software and data urls
 1. publish coverage in ci
 1. add testing as prose
