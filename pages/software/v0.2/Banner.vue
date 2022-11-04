@@ -41,9 +41,6 @@ onMounted(() => {
         }
         return aspects.map(aspect => checkAspect(aspect)).filter(msg => msg !== "").join('; ')
     }
-
-    //const queryParams = usePageContext().urlParsed?.search
-    //console.log(queryParams)
     let queryParams = {} as {f?: string, a?: string, i?: string, r?: string};
     const mySearchParams = new URLSearchParams(window.location.search)
     for (const [k, v] of mySearchParams.entries()) {
@@ -60,7 +57,6 @@ onMounted(() => {
             queryParams.r = v
         }
     }
-
     const zeros = Array(nQuestions.value.total).fill(0)
     if (queryParams === undefined || Object.keys(queryParams).length === 0 ) {
         setCompliance(zeros)
