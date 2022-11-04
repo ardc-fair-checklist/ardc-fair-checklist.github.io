@@ -5,12 +5,9 @@
 </template>
 
 <script setup lang="ts">
-import { usePageContext } from '~/renderer/usePageContext'
-import { bannerMessage, nAnswers, nQuestions, setBannerMessage, setCompliance} from './store'
+import { bannerMessage, nAnswers, nQuestions, setBannerMessage, setCompliance } from './store'
 import { onMounted } from 'vue'
 onMounted(() => {
-    type Params = Record<string, string>
-    type Aspect = 'f' | 'a' | 'i' | 'r'
     const chooseBannerMessage = (params: Params) => {
         const checkAspect = (aspect: 'f' | 'a' | 'i' | 'r') => {
             if (Object.keys(params).includes(aspect)) {
@@ -41,6 +38,8 @@ onMounted(() => {
         }
         return aspects.map(aspect => checkAspect(aspect)).filter(msg => msg !== "").join('; ')
     }
+    type Params = Record<string, string>
+    type Aspect = 'f' | 'a' | 'i' | 'r';
     let queryParams = {} as {f?: string, a?: string, i?: string, r?: string};
     const mySearchParams = new URLSearchParams(window.location.search)
     for (const [k, v] of mySearchParams.entries()) {
@@ -67,6 +66,7 @@ onMounted(() => {
             const {f, a, i, r} = queryParams as {f: string, a: string, i: string, r: string}
             const compl = f + a + i + r
             setCompliance(compl.split('').map(char => parseInt(char, 10)))
+            window.history.pushState({}, '', [window.location.origin, window.location.pathname].join(''));
         } else {
             setCompliance(zeros)
         }
