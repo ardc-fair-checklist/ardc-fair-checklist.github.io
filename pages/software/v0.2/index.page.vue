@@ -6,7 +6,7 @@
         <template v-if="nQuestions.total > 0">
             <p>Answer the {{ nQuestions.total }} questions below to assess your software's FAIRness.</p>
             <div class="aspect" v-for="aspect in ['F', 'A', 'I', 'R']" >
-                <h2>{{ getAspectFullname(aspect) }}</h2>
+                <h2 class="aspect">{{ getAspectFullname(aspect) }}</h2>
                 <Question v-for="question in questions.filter(q => q.aspect === aspect)"
                     v-bind:key="question.id"
                     v-bind:question="question"

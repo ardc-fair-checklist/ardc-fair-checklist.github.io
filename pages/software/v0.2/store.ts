@@ -32,7 +32,6 @@ export const setQuestions = (questions: QuestionType[]) => {
     state.value.compliance = new Array(questions.length).fill(0);
 }
 
-
 export const nQuestions = computed(() => {
     const deriveNumberOfQuestions = (aspect: "F" | "A" | "I" | "R") => {
         return state.value.questions.filter(question => question.aspect === aspect).length
