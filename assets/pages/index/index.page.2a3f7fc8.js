@@ -1,7 +1,6 @@
-import { _ as _imports_0, a as _imports_1 } from "../../chunk-5b637298.js";
+import { _ as _imports_0, a as _imports_1, b as _sfc_main$2 } from "../../chunk-17606473.js";
 import { _ as _export_sfc } from "../../chunk-de093346.js";
 import { u as openBlock, t as createElementBlock, v as createBaseVNode, d as defineComponent, x as createTextVNode, y as createVNode, z as withCtx, F as Fragment } from "../../chunk-376a9fed.js";
-import { _ as _sfc_main$2 } from "../../chunk-70756e11.js";
 import "../../chunk-89e65c56.js";
 const _sfc_main$1 = {};
 const _hoisted_1$1 = /* @__PURE__ */ createBaseVNode("div", { class: "logos" }, [

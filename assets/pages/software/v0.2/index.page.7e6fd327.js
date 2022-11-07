@@ -1,7 +1,6 @@
 import { H as ref, I as computed, d as defineComponent, u as openBlock, t as createElementBlock, v as createBaseVNode, G as toDisplayString, D as pushScopeId, E as popScopeId, o as onMounted, C as unref, L as createCommentVNode, F as Fragment, J as renderList, K as createBlock, x as createTextVNode, y as createVNode, z as withCtx } from "../../../chunk-376a9fed.js";
 import { _ as _export_sfc } from "../../../chunk-de093346.js";
-import { _ as _imports_0, a as _imports_1 } from "../../../chunk-5b637298.js";
-import { _ as _sfc_main$7 } from "../../../chunk-70756e11.js";
+import { _ as _imports_0, a as _imports_1, b as _sfc_main$7 } from "../../../chunk-17606473.js";
 import { u as useCssVars } from "../../../chunk-5a244714.js";
 import "../../../chunk-89e65c56.js";
 const state = ref({
@@ -100,7 +99,7 @@ const _hoisted_4$3 = {
   readonly: "",
   wrap: "off"
 };
-const _hoisted_5$1 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("h3", null, "ReStructured Text", -1));
+const _hoisted_5$2 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("h3", null, "ReStructured Text", -1));
 const _hoisted_6 = {
   readonly: "",
   wrap: "off"
@@ -128,7 +127,7 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
         _hoisted_2$5,
         _hoisted_3$5,
         createBaseVNode("textarea", _hoisted_4$3, toDisplayString(badge.markdown.value), 1),
-        _hoisted_5$1,
+        _hoisted_5$2,
         createBaseVNode("textarea", _hoisted_6, toDisplayString(badge.rst.value) + " ", 1),
         _hoisted_7,
         createBaseVNode("textarea", _hoisted_8, toDisplayString(badge.html.value), 1)
@@ -263,7 +262,7 @@ const _hoisted_1$2 = { class: "answer-radiobutton" };
 const _hoisted_2$2 = ["id", "value", "checked"];
 const _hoisted_3$2 = ["for"];
 const _hoisted_4$2 = { class: "answer-points" };
-const _hoisted_5 = { class: "answer-text" };
+const _hoisted_5$1 = { class: "answer-text" };
 const _sfc_main$2 = /* @__PURE__ */ defineComponent({
   __name: "Answer",
   props: {
@@ -289,7 +288,7 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
           }, null, 8, _hoisted_3$2)
         ]),
         createBaseVNode("div", _hoisted_4$2, " (+" + toDisplayString(__props.answer.score) + ") ", 1),
-        createBaseVNode("div", _hoisted_5, toDisplayString(__props.answer.text), 1)
+        createBaseVNode("div", _hoisted_5$1, toDisplayString(__props.answer.text), 1)
       ]);
     };
   }
@@ -843,8 +842,9 @@ const questions = [
 ];
 const _hoisted_1 = /* @__PURE__ */ createBaseVNode("h1", null, "ARDC FAIR for software self-assessment checklist", -1);
 const _hoisted_2 = { class: "aspect" };
-const _hoisted_3 = { class: "overall-progress" };
-const _hoisted_4 = /* @__PURE__ */ createBaseVNode("h2", null, "FAIR state overall:", -1);
+const _hoisted_3 = { class: "aspect" };
+const _hoisted_4 = { class: "overall-progress" };
+const _hoisted_5 = /* @__PURE__ */ createBaseVNode("h2", null, "FAIR state overall:", -1);
 const _sfc_main = /* @__PURE__ */ defineComponent({
   __name: "index.page",
   setup(__props) {
@@ -876,7 +876,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
           createBaseVNode("p", null, "Answer the " + toDisplayString(unref(nQuestions).total) + " questions below to assess your software's FAIRness.", 1),
           (openBlock(), createElementBlock(Fragment, null, renderList(["F", "A", "I", "R"], (aspect) => {
             return createBaseVNode("div", _hoisted_2, [
-              createBaseVNode("h2", null, toDisplayString(getAspectFullname(aspect)), 1),
+              createBaseVNode("h2", _hoisted_3, toDisplayString(getAspectFullname(aspect)), 1),
               (openBlock(true), createElementBlock(Fragment, null, renderList(unref(questions$1).filter((q) => q.aspect === aspect), (question) => {
                 return openBlock(), createBlock(_sfc_main$1, {
                   key: question.id,
@@ -902,8 +902,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
               }, null, 8, ["progress"])) : createCommentVNode("", true)
             ]);
           }), 64)),
-          createBaseVNode("div", _hoisted_3, [
-            _hoisted_4,
+          createBaseVNode("div", _hoisted_4, [
+            _hoisted_5,
             createVNode(ProgressBar, {
               progress: unref(progress).overall
             }, null, 8, ["progress"])

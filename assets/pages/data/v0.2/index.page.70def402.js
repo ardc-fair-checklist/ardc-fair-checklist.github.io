@@ -1,12 +1,34 @@
-import { u as useCssVars } from "../../../chunk-5a244714.js";
-import { d as defineComponent, t as createElementBlock, u as openBlock, D as pushScopeId, E as popScopeId, v as createBaseVNode, G as toDisplayString, H as ref, I as computed, F as Fragment, J as renderList, K as createBlock, C as unref, x as createTextVNode, y as createVNode, z as withCtx, L as createCommentVNode } from "../../../chunk-376a9fed.js";
+import { _ as _imports_0, a as _imports_1, b as _sfc_main$5 } from "../../../chunk-17606473.js";
 import { _ as _export_sfc } from "../../../chunk-de093346.js";
-import { _ as _sfc_main$4 } from "../../../chunk-70756e11.js";
+import { u as openBlock, t as createElementBlock, v as createBaseVNode, d as defineComponent, D as pushScopeId, E as popScopeId, G as toDisplayString, H as ref, I as computed, F as Fragment, J as renderList, K as createBlock, C as unref, x as createTextVNode, y as createVNode, z as withCtx, L as createCommentVNode } from "../../../chunk-376a9fed.js";
+import { u as useCssVars } from "../../../chunk-5a244714.js";
 import "../../../chunk-89e65c56.js";
-const _withScopeId = (n) => (pushScopeId("data-v-2a621585"), n = n(), popScopeId(), n);
+const _sfc_main$4 = {};
+const _hoisted_1$4 = /* @__PURE__ */ createBaseVNode("div", { class: "logos" }, [
+  /* @__PURE__ */ createBaseVNode("img", {
+    class: "logo",
+    src: _imports_0,
+    alt: "nlesc logo"
+  }),
+  /* @__PURE__ */ createBaseVNode("img", {
+    class: "logo",
+    src: _imports_1,
+    alt: "ardc logo"
+  })
+], -1);
+const _hoisted_2$4 = /* @__PURE__ */ createBaseVNode("p", null, " This checklist is a collaborative effort by Netherlands eScience Center and Australian Research Data Commons. ", -1);
+const _hoisted_3$4 = [
+  _hoisted_1$4,
+  _hoisted_2$4
+];
+function _sfc_render(_ctx, _cache) {
+  return openBlock(), createElementBlock("footer", null, _hoisted_3$4);
+}
+const Footer = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["render", _sfc_render]]);
+const _withScopeId = (n) => (pushScopeId("data-v-8e357eb1"), n = n(), popScopeId(), n);
 const _hoisted_1$3 = { class: "outer" };
 const _hoisted_2$3 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("div", { class: "inner" }, null, -1));
-const _hoisted_3$2 = [
+const _hoisted_3$3 = [
   _hoisted_2$3
 ];
 const _sfc_main$3 = /* @__PURE__ */ defineComponent({
@@ -16,18 +38,20 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
   },
   setup(__props) {
     useCssVars((_ctx) => ({
-      "13532ba2": __props.progress
+      "adb596e2": __props.progress
     }));
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("div", _hoisted_1$3, _hoisted_3$2);
+      return openBlock(), createElementBlock("div", _hoisted_1$3, _hoisted_3$3);
     };
   }
 });
-const ProgressBar_vue_vue_type_style_index_0_scoped_2a621585_lang = "";
-const ProgressBar = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-2a621585"]]);
-const _hoisted_1$2 = { class: "answer" };
+const ProgressBar_vue_vue_type_style_index_0_scoped_8e357eb1_lang = "";
+const ProgressBar = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-8e357eb1"]]);
+const _hoisted_1$2 = { class: "answer-radiobutton" };
 const _hoisted_2$2 = ["id", "value", "checked"];
-const _hoisted_3$1 = ["for"];
+const _hoisted_3$2 = ["for"];
+const _hoisted_4$2 = { class: "answer-points" };
+const _hoisted_5$1 = { class: "answer-text" };
 const _sfc_main$2 = /* @__PURE__ */ defineComponent({
   __name: "Answer",
   props: {
@@ -37,17 +61,23 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
   },
   setup(__props) {
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("div", _hoisted_1$2, [
-        createBaseVNode("input", {
-          type: "radio",
-          id: __props.answer.id,
-          value: __props.answer.id,
-          checked: __props.isChecked,
-          onClick: _cache[0] || (_cache[0] = (...args) => __props.onClick && __props.onClick(...args))
-        }, null, 8, _hoisted_2$2),
-        createBaseVNode("label", {
-          for: __props.answer.id
-        }, "(+" + toDisplayString(__props.answer.score) + ") " + toDisplayString(__props.answer.text), 9, _hoisted_3$1)
+      return openBlock(), createElementBlock("div", {
+        class: "answer",
+        onClick: _cache[0] || (_cache[0] = (...args) => __props.onClick && __props.onClick(...args))
+      }, [
+        createBaseVNode("div", _hoisted_1$2, [
+          createBaseVNode("input", {
+            type: "radio",
+            id: __props.answer.id,
+            value: __props.answer.id,
+            checked: __props.isChecked
+          }, null, 8, _hoisted_2$2),
+          createBaseVNode("label", {
+            for: __props.answer.id
+          }, null, 8, _hoisted_3$2)
+        ]),
+        createBaseVNode("div", _hoisted_4$2, " (+" + toDisplayString(__props.answer.score) + ") ", 1),
+        createBaseVNode("div", _hoisted_5$1, toDisplayString(__props.answer.text), 1)
       ]);
     };
   }
@@ -99,9 +129,6 @@ const slices = computed(() => {
     r: [nQuestions.value.f + nQuestions.value.a + nQuestions.value.i, nQuestions.value.total]
   };
 });
-computed(() => {
-  return `&f=${state.value.compliance.slice(...slices.value.f).map((elem) => elem.toString()).join("")}&a=${state.value.compliance.slice(...slices.value.a).map((elem) => elem.toString()).join("")}&i=${state.value.compliance.slice(...slices.value.i).map((elem) => elem.toString()).join("")}&r=${state.value.compliance.slice(...slices.value.r).map((elem) => elem.toString()).join("")}`;
-});
 const progress = computed(() => {
   const scoreArrays = state.value.questions.map((q) => q.answers.map((a) => a.score));
   const scores = state.value.compliance.map((iAnswer, iQuestion) => scoreArrays[iQuestion][iAnswer]);
@@ -124,7 +151,9 @@ const progress = computed(() => {
   };
 });
 const _hoisted_1$1 = { class: "question" };
-const _hoisted_2$1 = { class: "guidance" };
+const _hoisted_2$1 = { class: "question-index" };
+const _hoisted_3$1 = { class: "question-content" };
+const _hoisted_4$1 = { class: "question-guidance" };
 const _sfc_main$1 = /* @__PURE__ */ defineComponent({
   __name: "Question",
   props: {
@@ -144,17 +173,20 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
     };
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("div", _hoisted_1$1, [
-        createBaseVNode("h3", null, toDisplayString(`${__props.question.index + 1}. ${__props.question.text}`), 1),
-        createBaseVNode("fieldset", null, [
-          createBaseVNode("p", _hoisted_2$1, toDisplayString(__props.question.guidance), 1),
-          (openBlock(true), createElementBlock(Fragment, null, renderList(__props.question.answers, (answer, answerIndex) => {
-            return openBlock(), createBlock(_sfc_main$2, {
-              answer,
-              isChecked: unref(compliance)[__props.question.index] === answerIndex,
-              key: answer.id,
-              onClick: onClick(answerIndex)
-            }, null, 8, ["answer", "isChecked", "onClick"]);
-          }), 128))
+        createBaseVNode("div", _hoisted_2$1, toDisplayString(`${__props.question.index + 1}.`), 1),
+        createBaseVNode("div", _hoisted_3$1, [
+          createBaseVNode("h3", null, toDisplayString(`${__props.question.text}`), 1),
+          createBaseVNode("div", _hoisted_4$1, toDisplayString(__props.question.guidance), 1),
+          createBaseVNode("fieldset", null, [
+            (openBlock(true), createElementBlock(Fragment, null, renderList(__props.question.answers, (answer, answerIndex) => {
+              return openBlock(), createBlock(_sfc_main$2, {
+                answer,
+                isChecked: unref(compliance)[__props.question.index] === answerIndex,
+                key: answer.id,
+                onClick: onClick(answerIndex)
+              }, null, 8, ["answer", "isChecked", "onClick"]);
+            }), 128))
+          ])
         ])
       ]);
     };
@@ -518,13 +550,14 @@ const questions = [
 ];
 const _hoisted_1 = /* @__PURE__ */ createBaseVNode("h1", null, "ARDC FAIR for data self-assessment checklist", -1);
 const _hoisted_2 = { class: "aspect" };
-const _hoisted_3 = { class: "overall-progress" };
-const _hoisted_4 = /* @__PURE__ */ createBaseVNode("h2", null, "FAIR state overall:", -1);
+const _hoisted_3 = { class: "aspect" };
+const _hoisted_4 = { class: "overall-progress" };
+const _hoisted_5 = /* @__PURE__ */ createBaseVNode("h2", null, "FAIR state overall:", -1);
 const _sfc_main = /* @__PURE__ */ defineComponent({
   __name: "index.page",
   setup(__props) {
     setQuestions(questions);
-    const getFullAspect = (aspect) => {
+    const getAspectFullname = (aspect) => {
       return {
         F: "Findable",
         A: "Accessible",
@@ -538,7 +571,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
         _hoisted_1,
         createBaseVNode("p", null, [
           createTextVNode("Switch to the checklist for "),
-          createVNode(_sfc_main$4, { href: linkToSoftwareChecklist }, {
+          createVNode(_sfc_main$5, { href: linkToSoftwareChecklist }, {
             default: withCtx(() => [
               createTextVNode("software")
             ]),
@@ -550,14 +583,14 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
           createBaseVNode("p", null, "Answer the " + toDisplayString(unref(nQuestions).total) + " questions below to assess your data's FAIRness.", 1),
           (openBlock(), createElementBlock(Fragment, null, renderList(["F", "A", "I", "R"], (aspect) => {
             return createBaseVNode("div", _hoisted_2, [
-              createBaseVNode("h2", null, toDisplayString(getFullAspect(aspect)), 1),
+              createBaseVNode("h2", _hoisted_3, toDisplayString(getAspectFullname(aspect)), 1),
               (openBlock(true), createElementBlock(Fragment, null, renderList(unref(questions$1).filter((q) => q.aspect === aspect), (question) => {
                 return openBlock(), createBlock(_sfc_main$1, {
                   key: question.id,
                   question
                 }, null, 8, ["question"]);
               }), 128)),
-              createBaseVNode("p", null, toDisplayString(getFullAspect(aspect)) + " state:", 1),
+              createBaseVNode("p", null, toDisplayString(getAspectFullname(aspect)) + " state:", 1),
               aspect === "F" ? (openBlock(), createBlock(ProgressBar, {
                 key: 0,
                 progress: unref(progress).f
@@ -576,12 +609,13 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
               }, null, 8, ["progress"])) : createCommentVNode("", true)
             ]);
           }), 64)),
-          createBaseVNode("div", _hoisted_3, [
-            _hoisted_4,
+          createBaseVNode("div", _hoisted_4, [
+            _hoisted_5,
             createVNode(ProgressBar, {
               progress: unref(progress).overall
             }, null, 8, ["progress"])
-          ])
+          ]),
+          createVNode(Footer)
         ], 64)) : (openBlock(), createElementBlock(Fragment, { key: 1 }, [
           createTextVNode(" Loading questions data... ")
         ], 64))

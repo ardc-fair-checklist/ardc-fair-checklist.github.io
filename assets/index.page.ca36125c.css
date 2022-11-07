@@ -86,7 +86,13 @@ h1 {
     margin-top: 3em;
 }
 h2 {
-    margin-bottom: 3em;
+    margin-bottom: 1.5em;
+}
+h2.aspect {
+    text-align: center;
+    padding: 20px 10px;
+    color: var(--white);
+    background-color: var(--ardc-purple);
 }
 
 h3 {
@@ -94,19 +100,19 @@ h3 {
 }
 
 a {
-    text-decoration: none;
-    color: var(--ardc-blue);
+    text-underline-offset: 0.3em;
+    color: rgb(95, 192, 224);
 }
 
 a:visited {
-    color: var(--ardc-purple);
+    color: #8E489B;
 }
 
 a:hover {
-    text-decoration: underline;
+    color: rgb(160, 208, 224);
 }
 
-.aspect {
+div.aspect {
     background-color: var(--dark);
     margin-bottom: 6em;
     padding: 3em;
@@ -125,7 +131,7 @@ fieldset {
 }
 
 .question {
-    margin-bottom:3em;
+    margin-bottom: 2em;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -145,7 +151,6 @@ fieldset {
 
 .question-content {
     flex-grow: 1;
-    /*background-color: #333;*/
     display: flex;
     flex-direction: column;
 }

@@ -8,8 +8,9 @@
   "pages/index/index.page.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/index/index.page.vue": [],
   "pages/data/v0.1/index.page.vue": [],
+  "pages/data/v0.2/Footer.vue": [],
   "pages/data/v0.2/ProgressBar.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/data/v0.2/ProgressBar.vue?vue&type=style&index=0&scoped=2a621585&lang.css": [],
+  "pages/data/v0.2/ProgressBar.vue?vue&type=style&index=0&scoped=8e357eb1&lang.css": [],
   "pages/data/v0.2/ProgressBar.vue": [],
   "pages/data/v0.2/Answer.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/data/v0.2/store.ts": [],
@@ -88,15 +89,15 @@
   "node_modules/vite-plugin-ssr/dist/esm/client/router/useClientRouter.js": [],
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": [],
   "index.page.30c66cc9.js": [],
-  "index.page.1ccc115c.js": [
-    "/ssg/assets/index.page.ed4d00ee.css"
+  "index.page.70def402.js": [
+    "/ssg/assets/index.page.8a51574c.css"
   ],
-  "index.page.77e4dea2.js": [
-    "/ssg/assets/index.page.235bfbe2.css"
+  "index.page.2a3f7fc8.js": [
+    "/ssg/assets/index.page.de17bc50.css"
   ],
   "index.page.f04c915f.js": [],
-  "index.page.a87eb676.js": [
-    "/ssg/assets/index.page.bac340d5.css"
+  "index.page.7e6fd327.js": [
+    "/ssg/assets/index.page.ca36125c.css"
   ],
   "_error.page.9b6b9650.js": [],
   "_default.page.client.cdb6e56b.js": [],
@@ -120,14 +121,14 @@
   "node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js": [
     "/ssg/assets/chunk-376a9fed.js"
   ],
-  "renderer/Link.vue?vue&type=script&setup=true&lang.ts": [
-    "/ssg/assets/chunk-70756e11.js"
-  ],
   "../../../../../netherlands-escience-center-logo.svg": [
-    "/ssg/assets/chunk-5b637298.js"
+    "/ssg/assets/chunk-17606473.js"
   ],
   "../../../../../ardc-logo.svg": [
-    "/ssg/assets/chunk-5b637298.js"
+    "/ssg/assets/chunk-17606473.js"
+  ],
+  "renderer/Link.vue?vue&type=script&setup=true&lang.ts": [
+    "/ssg/assets/chunk-17606473.js"
   ],
   "\u0000plugin-vue:export-helper": [
     "/ssg/assets/chunk-de093346.js"
