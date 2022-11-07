@@ -3,7 +3,13 @@ import type { PageContextClient } from './types'
 
 export { render }
 
-async function render(pageContext: PageContextClient) {
+async function render(pageContext: PageContextClient & {redirectTo?: string}) {
+
+    const { redirectTo } = pageContext
+    if (redirectTo) {
+        window.location.href = redirectTo
+    }
+
     const app = createApp(pageContext)
     app.mount('#app')
 }
