@@ -45,16 +45,16 @@ h2 {
 }
 
 a {
-    text-decoration: none;
-    color: #4fc3f7
+    text-underline-offset: 0.3em;
+    color: rgb(95, 192, 224);
 }
 
 a:visited {
-    color: #8a00c2;
+    color: #8E489B;
 }
 
 a:hover {
-    text-decoration: underline;
+    color: rgb(160, 208, 224);
 }
 
 .aspect {
