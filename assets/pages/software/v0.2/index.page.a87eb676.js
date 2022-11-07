@@ -95,12 +95,12 @@ const progress = computed(() => {
 const _withScopeId$1 = (n) => (pushScopeId("data-v-cb44f43b"), n = n(), popScopeId(), n);
 const _hoisted_1$6 = { class: "badge" };
 const _hoisted_2$5 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("h2", null, "Get the badge", -1));
-const _hoisted_3$4 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("h3", null, "Markdown", -1));
-const _hoisted_4$1 = {
+const _hoisted_3$5 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("h3", null, "Markdown", -1));
+const _hoisted_4$3 = {
   readonly: "",
   wrap: "off"
 };
-const _hoisted_5 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("h3", null, "ReStructured Text", -1));
+const _hoisted_5$1 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("h3", null, "ReStructured Text", -1));
 const _hoisted_6 = {
   readonly: "",
   wrap: "off"
@@ -126,9 +126,9 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("div", _hoisted_1$6, [
         _hoisted_2$5,
-        _hoisted_3$4,
-        createBaseVNode("textarea", _hoisted_4$1, toDisplayString(badge.markdown.value), 1),
-        _hoisted_5,
+        _hoisted_3$5,
+        createBaseVNode("textarea", _hoisted_4$3, toDisplayString(badge.markdown.value), 1),
+        _hoisted_5$1,
         createBaseVNode("textarea", _hoisted_6, toDisplayString(badge.rst.value) + " ", 1),
         _hoisted_7,
         createBaseVNode("textarea", _hoisted_8, toDisplayString(badge.html.value), 1)
@@ -229,18 +229,18 @@ const _hoisted_1$4 = /* @__PURE__ */ createBaseVNode("div", { class: "logos" }, 
   })
 ], -1);
 const _hoisted_2$4 = /* @__PURE__ */ createBaseVNode("p", null, " This checklist is a collaborative effort by Netherlands eScience Center and Australian Research Data Commons. ", -1);
-const _hoisted_3$3 = [
+const _hoisted_3$4 = [
   _hoisted_1$4,
   _hoisted_2$4
 ];
 function _sfc_render(_ctx, _cache) {
-  return openBlock(), createElementBlock("footer", null, _hoisted_3$3);
+  return openBlock(), createElementBlock("footer", null, _hoisted_3$4);
 }
 const Footer = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["render", _sfc_render]]);
 const _withScopeId = (n) => (pushScopeId("data-v-580e5af2"), n = n(), popScopeId(), n);
 const _hoisted_1$3 = { class: "outer" };
 const _hoisted_2$3 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("div", { class: "inner" }, null, -1));
-const _hoisted_3$2 = [
+const _hoisted_3$3 = [
   _hoisted_2$3
 ];
 const _sfc_main$3 = /* @__PURE__ */ defineComponent({
@@ -253,15 +253,17 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
       "4e49e693": __props.progress
     }));
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("div", _hoisted_1$3, _hoisted_3$2);
+      return openBlock(), createElementBlock("div", _hoisted_1$3, _hoisted_3$3);
     };
   }
 });
 const ProgressBar_vue_vue_type_style_index_0_scoped_580e5af2_lang = "";
 const ProgressBar = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-580e5af2"]]);
-const _hoisted_1$2 = { class: "answer" };
+const _hoisted_1$2 = { class: "answer-radiobutton" };
 const _hoisted_2$2 = ["id", "value", "checked"];
-const _hoisted_3$1 = ["for"];
+const _hoisted_3$2 = ["for"];
+const _hoisted_4$2 = { class: "answer-points" };
+const _hoisted_5 = { class: "answer-text" };
 const _sfc_main$2 = /* @__PURE__ */ defineComponent({
   __name: "Answer",
   props: {
@@ -271,23 +273,31 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
   },
   setup(__props) {
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("div", _hoisted_1$2, [
-        createBaseVNode("input", {
-          type: "radio",
-          id: __props.answer.id,
-          value: __props.answer.id,
-          checked: __props.isChecked,
-          onClick: _cache[0] || (_cache[0] = (...args) => __props.onClick && __props.onClick(...args))
-        }, null, 8, _hoisted_2$2),
-        createBaseVNode("label", {
-          for: __props.answer.id
-        }, "(+" + toDisplayString(__props.answer.score) + ") " + toDisplayString(__props.answer.text), 9, _hoisted_3$1)
+      return openBlock(), createElementBlock("div", {
+        class: "answer",
+        onClick: _cache[0] || (_cache[0] = (...args) => __props.onClick && __props.onClick(...args))
+      }, [
+        createBaseVNode("div", _hoisted_1$2, [
+          createBaseVNode("input", {
+            type: "radio",
+            id: __props.answer.id,
+            value: __props.answer.id,
+            checked: __props.isChecked
+          }, null, 8, _hoisted_2$2),
+          createBaseVNode("label", {
+            for: __props.answer.id
+          }, null, 8, _hoisted_3$2)
+        ]),
+        createBaseVNode("div", _hoisted_4$2, " (+" + toDisplayString(__props.answer.score) + ") ", 1),
+        createBaseVNode("div", _hoisted_5, toDisplayString(__props.answer.text), 1)
       ]);
     };
   }
 });
 const _hoisted_1$1 = { class: "question" };
-const _hoisted_2$1 = { class: "guidance" };
+const _hoisted_2$1 = { class: "question-index" };
+const _hoisted_3$1 = { class: "question-content" };
+const _hoisted_4$1 = { class: "question-guidance" };
 const _sfc_main$1 = /* @__PURE__ */ defineComponent({
   __name: "Question",
   props: {
@@ -307,17 +317,20 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
     };
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("div", _hoisted_1$1, [
-        createBaseVNode("h3", null, toDisplayString(`${__props.question.index + 1}. ${__props.question.text}`), 1),
-        createBaseVNode("fieldset", null, [
-          createBaseVNode("p", _hoisted_2$1, toDisplayString(__props.question.guidance), 1),
-          (openBlock(true), createElementBlock(Fragment, null, renderList(__props.question.answers, (answer, answerIndex) => {
-            return openBlock(), createBlock(_sfc_main$2, {
-              answer,
-              isChecked: unref(compliance)[__props.question.index] === answerIndex,
-              key: answer.id,
-              onClick: onClick(answerIndex)
-            }, null, 8, ["answer", "isChecked", "onClick"]);
-          }), 128))
+        createBaseVNode("div", _hoisted_2$1, toDisplayString(`${__props.question.index + 1}.`), 1),
+        createBaseVNode("div", _hoisted_3$1, [
+          createBaseVNode("h3", null, toDisplayString(`${__props.question.text}`), 1),
+          createBaseVNode("div", _hoisted_4$1, toDisplayString(__props.question.guidance), 1),
+          createBaseVNode("fieldset", null, [
+            (openBlock(true), createElementBlock(Fragment, null, renderList(__props.question.answers, (answer, answerIndex) => {
+              return openBlock(), createBlock(_sfc_main$2, {
+                answer,
+                isChecked: unref(compliance)[__props.question.index] === answerIndex,
+                key: answer.id,
+                onClick: onClick(answerIndex)
+              }, null, 8, ["answer", "isChecked", "onClick"]);
+            }), 128))
+          ])
         ])
       ]);
     };
