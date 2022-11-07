@@ -57,7 +57,7 @@
       "_chunk-89e65c56.js"
     ],
     "css": [
-      "assets/index.page.8a51574c.css"
+      "assets/index.page.88f71be8.css"
     ]
   },
   "pages/software/v0.1/index.page.vue": {
@@ -153,7 +153,7 @@
     "src": "pages/index/index.page.css"
   },
   "pages/data/v0.2/index.page.css": {
-    "file": "assets/index.page.8a51574c.css",
+    "file": "assets/index.page.88f71be8.css",
     "src": "pages/data/v0.2/index.page.css"
   },
   "pages/software/v0.2/index.page.css": {
