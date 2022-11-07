@@ -13,6 +13,10 @@ function createApp(pageContext) {
   return app;
 }
 async function render(pageContext) {
+  const { redirectTo } = pageContext;
+  if (redirectTo) {
+    window.location.href = redirectTo;
+  }
   const app = createApp(pageContext);
   app.mount("#app");
 }

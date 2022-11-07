@@ -1,6 +1,6 @@
 {
   "renderer/_default.page.client.ts": {
-    "file": "assets/renderer/_default.page.client.084fc920.js",
+    "file": "assets/renderer/_default.page.client.cdb6e56b.js",
     "src": "renderer/_default.page.client.ts",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -85,15 +85,15 @@
       "_chunk-89e65c56.js"
     ],
     "css": [
-      "assets/index.page.c9ec9cae.css"
+      "assets/index.page.bac340d5.css"
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.0464f407.js",
+    "file": "assets/entry-client-routing.76010473.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-e92636f8.js"
+      "_chunk-0f60e432.js"
     ],
     "dynamicImports": [
       "pages/data/v0.1/index.page.vue",
@@ -106,11 +106,11 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.d43c39a6.js",
+    "file": "assets/entry-server-routing.f8c17dd7.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-e92636f8.js"
+      "_chunk-0f60e432.js"
     ],
     "dynamicImports": [
       "pages/data/v0.1/index.page.vue",
@@ -150,8 +150,8 @@
   "_chunk-de093346.js": {
     "file": "assets/chunk-de093346.js"
   },
-  "_chunk-e92636f8.js": {
-    "file": "assets/chunk-e92636f8.js"
+  "_chunk-0f60e432.js": {
+    "file": "assets/chunk-0f60e432.js"
   },
   "pages/index/index.page.css": {
     "file": "assets/index.page.235bfbe2.css",
@@ -162,7 +162,7 @@
     "src": "pages/data/v0.2/index.page.css"
   },
   "pages/software/v0.2/index.page.css": {
-    "file": "assets/index.page.c9ec9cae.css",
+    "file": "assets/index.page.bac340d5.css",
     "src": "pages/software/v0.2/index.page.css"
   }
 }

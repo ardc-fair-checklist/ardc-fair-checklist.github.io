@@ -96,10 +96,10 @@
   ],
   "index.page.f04c915f.js": [],
   "index.page.a87eb676.js": [
-    "/ssg/assets/index.page.c9ec9cae.css"
+    "/ssg/assets/index.page.bac340d5.css"
   ],
   "_error.page.9b6b9650.js": [],
-  "_default.page.client.084fc920.js": [],
+  "_default.page.client.cdb6e56b.js": [],
   "virtual:vite-plugin-ssr:pageFiles:client:server-routing": [],
   "node_modules/vite-plugin-ssr/dist/esm/client/pageFiles.js": [],
   "node_modules/vite-plugin-ssr/dist/esm/client/releasePageContext.js": [],
@@ -133,153 +133,153 @@
     "/ssg/assets/chunk-de093346.js"
   ],
   "node_modules/vite-plugin-ssr/dist/esm/utils/createErrorWithCleanStackTrace.js": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "node_modules/vite-plugin-ssr/dist/esm/utils/getGlobalObject.js": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "node_modules/vite-plugin-ssr/dist/esm/utils/unique.js": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "node_modules/vite-plugin-ssr/dist/esm/utils/assertPackageInstances.js": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "node_modules/vite-plugin-ssr/dist/esm/utils/projectInfo.js": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "node_modules/vite-plugin-ssr/dist/esm/utils/assert.js": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "node_modules/vite-plugin-ssr/dist/esm/utils/slice.js": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "node_modules/vite-plugin-ssr/dist/esm/utils/parseUrl.js": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "node_modules/vite-plugin-ssr/dist/esm/utils/objectAssign.js": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "node_modules/vite-plugin-ssr/dist/esm/utils/isCallable.js": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "node_modules/vite-plugin-ssr/dist/esm/utils/isObject.js": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "node_modules/vite-plugin-ssr/dist/esm/utils/sorter.js": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "node_modules/vite-plugin-ssr/dist/esm/utils/isBrowser.js": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "node_modules/vite-plugin-ssr/dist/esm/utils/hasProp.js": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "node_modules/vite-plugin-ssr/dist/esm/utils/compareString.js": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "node_modules/vite-plugin-ssr/dist/esm/utils/isNotNullish.js": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "node_modules/vite-plugin-ssr/dist/esm/utils/filesystemPathHandling.js": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "node_modules/vite-plugin-ssr/dist/esm/utils/isJavaScriptFile.js": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "node_modules/vite-plugin-ssr/dist/esm/shared/getPageFiles/assertExports.js": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "node_modules/vite-plugin-ssr/dist/esm/shared/getPageFiles/getExports.js": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "node_modules/vite-plugin-ssr/dist/esm/shared/determinePageId.js": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "node_modules/vite-plugin-ssr/dist/esm/shared/route/error-page.js": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "node_modules/vite-plugin-ssr/dist/esm/shared/getPageFiles/getPageFileObject.js": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "node_modules/vite-plugin-ssr/dist/esm/shared/getPageFiles/types.js": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "node_modules/vite-plugin-ssr/dist/esm/shared/getPageFiles/parseGlobResults.js": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "node_modules/vite-plugin-ssr/dist/esm/shared/getPageFiles/setPageFiles.js": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "node_modules/vite-plugin-ssr/dist/esm/shared/getPageFiles/getAllPageIdFiles.js": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "node_modules/vite-plugin-ssr/dist/esm/shared/getPageFiles/analyzePageClientSide/getPageFilesClientSide.js": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "\u0000vite/preload-helper": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "renderer/_default.page.client.ts?extractExportNames&lang.ts": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "renderer/_default.page.server.ts?extractExportNames&lang.ts": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "pages/data/v0.1/index.page.vue?extractExportNames&lang.vue": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "pages/data/v0.2/index.page.vue?extractExportNames&vue&type=script&setup=true&lang.ts": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "pages/data/v0.2/index.page.vue?extractExportNames&lang.vue": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "pages/index/index.page.vue?extractExportNames&vue&type=script&setup=true&lang.ts": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "pages/index/index.page.vue?extractExportNames&lang.vue": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "pages/software/v0.1/index.page.vue?extractExportNames&lang.vue": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "pages/software/v0.2/index.page.vue?extractExportNames&vue&type=script&setup=true&lang.ts": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "pages/software/v0.2/index.page.vue?extractExportNames&lang.vue": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "renderer/_error.page.vue?extractExportNames&vue&type=script&setup=true&lang.ts": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "renderer/_error.page.vue?extractExportNames&lang.vue": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "node_modules/vite-plugin-ssr/dist/esm/utils/getCurrentUrl.js": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "node_modules/@brillout/json-serializer/dist/esm/types.js": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "node_modules/@brillout/json-serializer/dist/esm/parse.js": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "node_modules/vite-plugin-ssr/dist/esm/client/getPageContextSerializedInHtml.js": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "node_modules/vite-plugin-ssr/dist/esm/shared/getHook.js": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "node_modules/vite-plugin-ssr/dist/esm/shared/sortPageContext.js": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "node_modules/vite-plugin-ssr/dist/esm/client/releasePageContextCommon.js": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "node_modules/vite-plugin-ssr/dist/esm/client/loadPageFilesClientSide.js": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ],
   "node_modules/vite-plugin-ssr/dist/esm/client/assertRenderHook.js": [
-    "/ssg/assets/chunk-e92636f8.js"
+    "/ssg/assets/chunk-0f60e432.js"
   ]
 }
