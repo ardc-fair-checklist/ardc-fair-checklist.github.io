@@ -5,12 +5,12 @@
         <template v-if="nQuestions.total > 0">
             <p>Answer the {{ nQuestions.total }} questions below to assess your data's FAIRness.</p>
             <div class="aspect" v-for="aspect in ['F', 'A', 'I', 'R']" >
-                <h2>{{ getFullAspect(aspect) }}</h2>
+                <h2 class="aspect">{{ getAspectFullname(aspect) }}</h2>
                 <Question v-for="question in questions.filter(q => q.aspect === aspect)"
                     v-bind:key="question.id"
                     v-bind:question="question"
                 />
-                <p>{{ getFullAspect(aspect) }} state:</p>
+                <p>{{ getAspectFullname(aspect) }} state:</p>
                 <ProgressBar v-if="aspect==='F'" v-bind:progress="progress.f"/>
                 <ProgressBar v-if="aspect==='A'" v-bind:progress="progress.a"/>
                 <ProgressBar v-if="aspect==='I'" v-bind:progress="progress.i"/>
@@ -20,6 +20,7 @@
                 <h2>FAIR state overall:</h2>
                 <ProgressBar v-bind:progress="progress.overall"/>
             </div>
+            <Footer />
         </template>
         <template v-else>
             Loading questions data...
@@ -28,17 +29,17 @@
 </template>
 
 <script setup lang="ts">
-import ProgressBar from './ProgressBar.vue';
+import Footer from './Footer.vue'
 import Link from '~/renderer/Link.vue'
+import ProgressBar from './ProgressBar.vue';
 import Question from './Question.vue'
-import { setQuestions, nQuestions, type QuestionType, questions } from './store'
-import { progress } from './store'
+import { setQuestions, nQuestions, type QuestionType, progress, questions } from './store'
 import './style.css'
-import { questions as data}  from './questions.json'
+import { questions as data } from './questions.json'
 
 setQuestions(data as QuestionType[]);
 
-const getFullAspect = (aspect: string) => {
+const getAspectFullname = (aspect: string) => {
     return {
         F: "Findable",
         A: "Accessible",

@@ -22,7 +22,7 @@ const state = ref({
 
 export const compliance = computed(() => state.value.compliance);
 export const questions = computed(() => state.value.questions);
-export const setCompliance = (newCompliance: number[]) => state.value.compliance = newCompliance
+export const setCompliance = (newCompliance: number[]) => state.value.compliance = newCompliance;
 export const setQuestions = (questions: QuestionType[]) => {
     // add index
     state.value.questions = (questions as QuestionType[]).map((q, i) => ({...q, index: i}))
@@ -73,13 +73,6 @@ export const slices = computed(() => {
         i: [nQuestions.value.f + nQuestions.value.a, nQuestions.value.f + nQuestions.value.a + nQuestions.value.i],
         r: [nQuestions.value.f + nQuestions.value.a + nQuestions.value.i, nQuestions.value.total],
     } as Slices
-})
-
-export const fairQueryParams = computed(() => {
-    return `&f=${state.value.compliance.slice(...slices.value.f).map(elem => elem.toString()).join('')}` +
-           `&a=${state.value.compliance.slice(...slices.value.a).map(elem => elem.toString()).join('')}` +
-           `&i=${state.value.compliance.slice(...slices.value.i).map(elem => elem.toString()).join('')}` +
-           `&r=${state.value.compliance.slice(...slices.value.r).map(elem => elem.toString()).join('')}`
 })
 
 export const progress = computed(() => {
