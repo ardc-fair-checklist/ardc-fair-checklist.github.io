@@ -139,7 +139,7 @@ fieldset {
 }
 
 .answer:hover {
-    border-color: var(--ardc-purple);
+    border-color: var(--ardc-blue);
     color: var(--white);
 }
 
