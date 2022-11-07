@@ -59,7 +59,7 @@ h2.aspect {
     text-align: center;
     padding: 20px 10px;
     color: var(--white);
-    background-color: var(--ardc-purple);
+    border-bottom: 5px solid var(--ardc-purple);
 }
 
 h3 {
@@ -82,7 +82,10 @@ a:hover {
 div.aspect {
     background-color: var(--dark);
     margin-bottom: 6em;
-    padding: 3em;
+    padding-top: 1em;
+    padding-bottom: 3em;
+    padding-left: 3em;
+    padding-right: 3em;
     border-radius: 1em;
 }
 
