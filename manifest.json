@@ -19,6 +19,20 @@
       "_chunk-ca2b0874.js"
     ]
   },
+  "pages/data/index.page.vue": {
+    "file": "assets/pages/data/index.page.5ff44d99.js",
+    "src": "pages/data/index.page.vue",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-c9bff55b.js",
+      "_chunk-ca2b0874.js"
+    ],
+    "css": [
+      "assets/index.page.0637b063.css",
+      "assets/colors.69af2279.css"
+    ]
+  },
   "pages/index/index.page.vue": {
     "file": "assets/pages/index/index.page.9fd780a4.js",
     "src": "pages/index/index.page.vue",
@@ -102,13 +116,14 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.e0e701c3.js",
+    "file": "assets/entry-client-routing.dd923eef.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-f7c672ec.js"
+      "_chunk-806f2279.js"
     ],
     "dynamicImports": [
+      "pages/data/index.page.vue",
       "pages/data/v0.1/index.page.vue",
       "pages/data/v0.2/index.page.vue",
       "pages/index/index.page.vue",
@@ -120,13 +135,14 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.fcc1621f.js",
+    "file": "assets/entry-server-routing.8ed5f327.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
-      "_chunk-f7c672ec.js"
+      "_chunk-806f2279.js"
     ],
     "dynamicImports": [
+      "pages/data/index.page.vue",
       "pages/data/v0.1/index.page.vue",
       "pages/data/v0.2/index.page.vue",
       "pages/index/index.page.vue",
@@ -162,12 +178,8 @@
   "_chunk-de093346.js": {
     "file": "assets/chunk-de093346.js"
   },
-  "_chunk-f7c672ec.js": {
-    "file": "assets/chunk-f7c672ec.js"
-  },
-  "pages/index/index.page.css": {
-    "file": "assets/index.page.de17bc50.css",
-    "src": "pages/index/index.page.css"
+  "_chunk-806f2279.js": {
+    "file": "assets/chunk-806f2279.js"
   },
   "pages/software/index.page.css": {
     "file": "assets/index.page.0637b063.css",
@@ -176,6 +188,10 @@
   "colors.css": {
     "file": "assets/colors.69af2279.css",
     "src": "colors.css"
+  },
+  "pages/index/index.page.css": {
+    "file": "assets/index.page.de17bc50.css",
+    "src": "pages/index/index.page.css"
   },
   "pages/data/v0.2/index.page.css": {
     "file": "assets/index.page.0b512594.css",
