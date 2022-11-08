@@ -30,9 +30,13 @@
   "pages/software/v0.2/Badge.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/software/v0.2/Badge.vue?vue&type=style&index=0&scoped=9ef958c9&lang.css": [],
   "pages/software/v0.2/Badge.vue": [],
-  "pages/software/v0.2/Banner.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/software/v0.2/Banner.vue?vue&type=style&index=0&scoped=48cb2967&lang.css": [],
-  "pages/software/v0.2/Banner.vue": [],
+  "pages/software/v0.2/BannerParams.vue?vue&type=script&setup=true&lang.ts": [],
+  "pages/software/v0.2/BannerParams.vue?vue&type=style&index=0&scoped=24347cdb&lang.css": [],
+  "pages/software/v0.2/BannerParams.vue": [],
+  "renderer/versions.ts": [],
+  "pages/software/v0.2/BannerVersions.vue?vue&type=script&setup=true&lang.ts": [],
+  "pages/software/v0.2/BannerVersions.vue?vue&type=style&index=0&scoped=66650a08&lang.css": [],
+  "pages/software/v0.2/BannerVersions.vue": [],
   "pages/software/v0.2/Footer.vue?vue&type=style&index=0&scoped=9483011b&lang.css": [],
   "pages/software/v0.2/Footer.vue": [],
   "pages/software/v0.2/ProgressBar.vue?vue&type=script&setup=true&lang.ts": [],
@@ -47,7 +51,7 @@
   "pages/software/v0.2/style.css": [],
   "pages/software/v0.2/questions.json": [],
   "pages/software/v0.2/index.page.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/software/v0.2/index.page.vue?vue&type=style&index=0&scoped=3b88eb6a&lang.css": [],
+  "pages/software/v0.2/index.page.vue?vue&type=style&index=0&scoped=0ada496b&lang.css": [],
   "pages/software/v0.2/index.page.vue": [],
   "node_modules/vite-plugin-ssr/dist/esm/utils/isPlainObject.js": [],
   "node_modules/vite-plugin-ssr/dist/esm/utils/stringifyStringArray.js": [],
@@ -116,8 +120,8 @@
     "/ssg/assets/colors.69af2279.css"
   ],
   "index.page.66235efe.js": [],
-  "index.page.06c6db6e.js": [
-    "/ssg/assets/index.page.870e6192.css",
+  "index.page.e230400f.js": [
+    "/ssg/assets/index.page.fb3283db.css",
     "/ssg/assets/colors.69af2279.css"
   ],
   "_error.page.81d5440c.js": [],

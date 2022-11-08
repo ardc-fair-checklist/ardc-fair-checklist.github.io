@@ -1,32 +1,35 @@
 import { H as ref, I as computed, d as defineComponent, u as openBlock, t as createElementBlock, v as createBaseVNode, x as createTextVNode, G as toDisplayString, D as pushScopeId, E as popScopeId, o as onMounted, C as unref, L as createCommentVNode, F as Fragment, J as renderList, K as createBlock, y as createVNode, z as withCtx } from "../../../chunk-ca2b0874.js";
 import { _ as _export_sfc } from "../../../chunk-de093346.js";
-import { _ as _imports_0, a as _imports_1, b as _sfc_main$7 } from "../../../chunk-e13913e9.js";
+import { u as usePageContext } from "../../../chunk-c9bff55b.js";
+/* empty css                       */import { _ as _imports_0, a as _imports_1, b as _sfc_main$8 } from "../../../chunk-e13913e9.js";
 import { u as useCssVars, w as withKeys } from "../../../chunk-28fe97f4.js";
-/* empty css                       */import "../../../chunk-c9bff55b.js";
-const state = ref({
-  bannerMessage: "",
+const state$1 = ref({
+  bannerMessageParams: "",
   compliance: [],
-  questions: []
+  questions: [],
+  showBannerMessageVersions: false
 });
-const bannerMessage = computed(() => state.value.bannerMessage);
-const compliance = computed(() => state.value.compliance);
-const questions$1 = computed(() => state.value.questions);
-const setBannerMessage = (msg) => state.value.bannerMessage = msg;
-const setCompliance = (newCompliance) => state.value.compliance = newCompliance;
+const bannerMessageParams = computed(() => state$1.value.bannerMessageParams);
+const showBannerMessageVersions = computed(() => state$1.value.showBannerMessageVersions);
+const compliance = computed(() => state$1.value.compliance);
+const questions$1 = computed(() => state$1.value.questions);
+const setBannerMessageParams = (msg) => state$1.value.bannerMessageParams = msg;
+const setShowBannerMessageVersions = (b) => state$1.value.showBannerMessageVersions = b;
+const setCompliance = (newCompliance) => state$1.value.compliance = newCompliance;
 const setQuestions = (questions2) => {
-  state.value.questions = questions2.map((q, i) => ({ ...q, index: i }));
-  state.value.compliance = new Array(questions2.length).fill(0);
+  state$1.value.questions = questions2.map((q, i) => ({ ...q, index: i }));
+  state$1.value.compliance = new Array(questions2.length).fill(0);
 };
 const nQuestions = computed(() => {
   const deriveNumberOfQuestions = (aspect) => {
-    return state.value.questions.filter((question) => question.aspect === aspect).length;
+    return state$1.value.questions.filter((question) => question.aspect === aspect).length;
   };
   return {
     f: deriveNumberOfQuestions("F"),
     a: deriveNumberOfQuestions("A"),
     i: deriveNumberOfQuestions("I"),
     r: deriveNumberOfQuestions("R"),
-    total: state.value.questions.length
+    total: state$1.value.questions.length
   };
 });
 const nAnswers = computed(() => {
@@ -40,9 +43,9 @@ const nAnswers = computed(() => {
 });
 const nPointsMax = computed(() => {
   const derivePointsMax = (aspect) => {
-    let selectedQuestions = state.value.questions;
+    let selectedQuestions = state$1.value.questions;
     if (aspect !== "*") {
-      selectedQuestions = state.value.questions.filter((question) => question.aspect === aspect);
+      selectedQuestions = state$1.value.questions.filter((question) => question.aspect === aspect);
     }
     return selectedQuestions.map((question) => Math.max(...question.answers.map((answer) => answer.score))).reduce((previousValue, currentValue) => previousValue + currentValue, 0);
   };
@@ -64,15 +67,15 @@ const slices = computed(() => {
 });
 const fairQueryParams = computed(() => {
   return [
-    `f=${state.value.compliance.slice(...slices.value.f).map((elem) => elem.toString()).join("")}`,
-    `a=${state.value.compliance.slice(...slices.value.a).map((elem) => elem.toString()).join("")}`,
-    `i=${state.value.compliance.slice(...slices.value.i).map((elem) => elem.toString()).join("")}`,
-    `r=${state.value.compliance.slice(...slices.value.r).map((elem) => elem.toString()).join("")}`
+    `f=${state$1.value.compliance.slice(...slices.value.f).map((elem) => elem.toString()).join("")}`,
+    `a=${state$1.value.compliance.slice(...slices.value.a).map((elem) => elem.toString()).join("")}`,
+    `i=${state$1.value.compliance.slice(...slices.value.i).map((elem) => elem.toString()).join("")}`,
+    `r=${state$1.value.compliance.slice(...slices.value.r).map((elem) => elem.toString()).join("")}`
   ].join("&");
 });
 const progress = computed(() => {
-  const scoreArrays = state.value.questions.map((q) => q.answers.map((a) => a.score));
-  const scores = state.value.compliance.map((iAnswer, iQuestion) => scoreArrays[iQuestion][iAnswer]);
+  const scoreArrays = state$1.value.questions.map((q) => q.answers.map((a) => a.score));
+  const scores = state$1.value.compliance.map((iAnswer, iQuestion) => scoreArrays[iQuestion][iAnswer]);
   const summation = (previousValue, currentValue) => previousValue + currentValue;
   if (nQuestions.value.total === 0) {
     return {
@@ -92,8 +95,8 @@ const progress = computed(() => {
   };
 });
 const _withScopeId$3 = (n) => (pushScopeId("data-v-9ef958c9"), n = n(), popScopeId(), n);
-const _hoisted_1$6 = { class: "badge" };
-const _hoisted_2$5 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createBaseVNode("h2", null, "Get the badge", -1));
+const _hoisted_1$7 = { class: "badge" };
+const _hoisted_2$6 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createBaseVNode("h2", null, "Get the badge", -1));
 const _hoisted_3$5 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createBaseVNode("h3", null, "Markdown", -1));
 const _hoisted_4$2 = { for: "textarea-markdown-badge" };
 const _hoisted_5$1 = {
@@ -115,7 +118,7 @@ const _hoisted_11 = {
   wrap: "off",
   id: "textarea-html-badge"
 };
-const _sfc_main$6 = /* @__PURE__ */ defineComponent({
+const _sfc_main$7 = /* @__PURE__ */ defineComponent({
   __name: "Badge",
   setup(__props) {
     const APP_BASE_URL = `https://ardc-fair-checklist.github.io${"/ssg/"}`;
@@ -129,8 +132,8 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
    :alt: FAIR checklist badge`)
     };
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("div", _hoisted_1$6, [
-        _hoisted_2$5,
+      return openBlock(), createElementBlock("div", _hoisted_1$7, [
+        _hoisted_2$6,
         _hoisted_3$5,
         createBaseVNode("label", _hoisted_4$2, [
           createTextVNode(" The snippet for the FAIRness badge in Markdown format: "),
@@ -151,13 +154,13 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
   }
 });
 const Badge_vue_vue_type_style_index_0_scoped_9ef958c9_lang = "";
-const Badge = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__scopeId", "data-v-9ef958c9"]]);
-const _hoisted_1$5 = {
+const Badge = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["__scopeId", "data-v-9ef958c9"]]);
+const _hoisted_1$6 = {
   key: 0,
   class: "banner"
 };
-const _sfc_main$5 = /* @__PURE__ */ defineComponent({
-  __name: "Banner",
+const _sfc_main$6 = /* @__PURE__ */ defineComponent({
+  __name: "BannerParams",
   setup(__props) {
     onMounted(() => {
       const chooseBannerMessage = (params) => {
@@ -211,7 +214,7 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
         setCompliance(zeros);
       } else {
         const msg = chooseBannerMessage(queryParams);
-        setBannerMessage(msg);
+        setBannerMessageParams(msg);
         if (msg === "") {
           const { f, a, i, r } = queryParams;
           const compl = f + a + i + r;
@@ -223,12 +226,56 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
       }
     });
     return (_ctx, _cache) => {
-      return unref(bannerMessage) !== "" ? (openBlock(), createElementBlock("div", _hoisted_1$5, toDisplayString(unref(bannerMessage)), 1)) : createCommentVNode("", true);
+      return unref(bannerMessageParams) !== "" ? (openBlock(), createElementBlock("div", _hoisted_1$6, toDisplayString(unref(bannerMessageParams)), 1)) : createCommentVNode("", true);
     };
   }
 });
-const Banner_vue_vue_type_style_index_0_scoped_48cb2967_lang = "";
-const Banner = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-48cb2967"]]);
+const BannerParams_vue_vue_type_style_index_0_scoped_24347cdb_lang = "";
+const BannerParams = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__scopeId", "data-v-24347cdb"]]);
+const state = ref({
+  software: ["v0.1", "v0.2", "v0.3"],
+  data: ["v0.1", "v0.2"]
+});
+computed(() => state.value);
+const latest = computed(() => {
+  return {
+    software: state.value.software.slice(-1)[0],
+    data: state.value.data.slice(-1)[0]
+  };
+});
+const _hoisted_1$5 = {
+  key: 0,
+  class: "banner"
+};
+const _hoisted_2$5 = ["href"];
+const _sfc_main$5 = /* @__PURE__ */ defineComponent({
+  __name: "BannerVersions",
+  setup(__props) {
+    const link = computed(() => {
+      return [
+        window.location.origin,
+        window.location.pathname.split("/").filter((e) => e !== "").slice(0, -1).join("/"),
+        latest.value.software
+      ].join("/");
+    });
+    onMounted(() => {
+      const { urlPathname } = usePageContext();
+      const myVersion = urlPathname.split("/").slice(-1)[0];
+      if (myVersion !== latest.value.software) {
+        setShowBannerMessageVersions(true);
+      }
+    });
+    return (_ctx, _cache) => {
+      return unref(showBannerMessageVersions) ? (openBlock(), createElementBlock("div", _hoisted_1$5, [
+        createTextVNode(" A newer version of the checklist is available at "),
+        createBaseVNode("a", { href: unref(link) }, toDisplayString(unref(link)), 9, _hoisted_2$5),
+        createTextVNode(", consider upgrading. ")
+      ])) : createCommentVNode("", true);
+    };
+  }
+});
+const BannerVersions_vue_vue_type_style_index_0_scoped_66650a08_lang = "";
+const BannerVersions = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-66650a08"]]);
 const Footer_vue_vue_type_style_index_0_scoped_9483011b_lang = "";
 const _sfc_main$4 = {};
 const _withScopeId$2 = (n) => (pushScopeId("data-v-9483011b"), n = n(), popScopeId(), n);
@@ -868,7 +915,7 @@ const questions = [
     text: "If they exist, how much have domain-relevant community standards been considered in writing the software? it is linked to I:q0"
   }
 ];
-const _withScopeId = (n) => (pushScopeId("data-v-3b88eb6a"), n = n(), popScopeId(), n);
+const _withScopeId = (n) => (pushScopeId("data-v-0ada496b"), n = n(), popScopeId(), n);
 const _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("h1", null, "ARDC FAIR for software self-assessment checklist", -1));
 const _hoisted_2 = { class: "aspect" };
 const _hoisted_3 = { class: "overall-progress" };
@@ -890,7 +937,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
         _hoisted_1,
         createBaseVNode("p", null, [
           createTextVNode("Switch to the checklist for "),
-          createVNode(_sfc_main$7, { href: linkToDataChecklist }, {
+          createVNode(_sfc_main$8, { href: linkToDataChecklist }, {
             default: withCtx(() => [
               createTextVNode("data")
             ]),
@@ -898,7 +945,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
           }),
           createTextVNode(" instead.")
         ]),
-        createVNode(Banner),
+        createVNode(BannerVersions),
+        createVNode(BannerParams),
         unref(nQuestions).total > 0 ? (openBlock(), createElementBlock(Fragment, { key: 0 }, [
           createBaseVNode("p", null, "Answer the " + toDisplayString(unref(nQuestions).total) + " questions below to assess your software's FAIRness.", 1),
           (openBlock(), createElementBlock(Fragment, null, renderList(["F", "A", "I", "R"], (aspect) => {
@@ -944,8 +992,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const index_page_vue_vue_type_style_index_0_scoped_3b88eb6a_lang = "";
-const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-3b88eb6a"]]);
+const index_page_vue_vue_type_style_index_0_scoped_0ada496b_lang = "";
+const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-0ada496b"]]);
 export {
   index_page as default
 };
