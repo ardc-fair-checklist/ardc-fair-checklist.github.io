@@ -7,7 +7,7 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
 import { usePageContext } from '~/renderer/usePageContext'
-import '~/colors.css'
+import '~/renderer/colors.css'
 import './style.css'
 
 onMounted(() => {
