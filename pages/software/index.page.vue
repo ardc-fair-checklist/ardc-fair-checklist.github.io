@@ -12,7 +12,8 @@ import './style.css'
 
 onMounted(() => {
     const { urlPathname } = usePageContext()
-    window.location.href = `/${urlPathname.split('/').filter(e => e !== "").join('/')}/v0.2`
+    const url = `${import.meta.env.BASE_URL}${urlPathname}`
+    window.location.href = `/${url.split('/').filter(e => e !== "").join('/')}/v0.2`
 })
 </script>
 
