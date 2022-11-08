@@ -4,37 +4,15 @@ import { createApp } from './app'
 import type { PageContextServer } from './types'
 
 export { render }
-export { onBeforeRender }
 
 // See https://vite-plugin-ssr.com/data-fetching
 export const passToClient = [
     '__asyncLoader',
     'effect',
     'pageProps',
-    'redirectTo',
     'render',
     'urlPathname'
 ]
-
-async function onBeforeRender(pageContext: PageContextServer) {
-
-    const regexpData = new RegExp('^/data/?$')
-    if (regexpData.test(pageContext.urlPathname)) {
-        return {
-            pageContext: {
-                redirectTo: `${import.meta.env.BASE_URL}data/v0.1`
-            }
-        }
-    }
-    const regexpSoftware = new RegExp('^/software/?$')
-    if (regexpSoftware.test(pageContext.urlPathname)) {
-        return {
-            pageContext: {
-                redirectTo: `${import.meta.env.BASE_URL}software/v0.2`
-            }
-        }
-    }
-}
 
 async function render(pageContext: PageContextServer) {
 
