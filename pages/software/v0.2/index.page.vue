@@ -2,7 +2,8 @@
     <main>
         <h1>ARDC FAIR for software self-assessment checklist</h1>
         <p>Switch to the checklist for <Link v-bind:href="linkToDataChecklist">data</Link> instead.</p>
-        <Banner />
+        <BannerVersions />
+        <BannerParams />
         <template v-if="nQuestions.total > 0">
             <p>Answer the {{ nQuestions.total }} questions below to assess your software's FAIRness.</p>
             <div class="aspect" v-for="aspect in ['F', 'A', 'I', 'R']" >
@@ -32,13 +33,14 @@
 
 <script setup lang="ts">
 import Badge from './Badge.vue'
-import Banner from './Banner.vue'
+import BannerParams from './BannerParams.vue'
+import BannerVersions from './BannerVersions.vue'
 import Footer from './Footer.vue'
 import Link from '~/renderer/Link.vue'
 import ProgressBar from './ProgressBar.vue';
 import Question from './Question.vue'
 import { setQuestions, nQuestions, type QuestionType, progress, questions } from './store'
-import '~/colors.css'
+import '~/renderer/colors.css'
 import './style.css'
 import { questions as data } from './questions.json'
 
