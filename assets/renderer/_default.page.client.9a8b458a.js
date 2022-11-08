@@ -1,6 +1,6 @@
-import { c as createSSRApp } from "../chunk-5a244714.js";
-import { s as setPageContext } from "../chunk-89e65c56.js";
-import { d as defineComponent, h } from "../chunk-376a9fed.js";
+import { c as createSSRApp } from "../chunk-28fe97f4.js";
+import { s as setPageContext } from "../chunk-c9bff55b.js";
+import { d as defineComponent, h } from "../chunk-ca2b0874.js";
 function createApp(pageContext) {
   const { Page, pageProps } = pageContext;
   const PageWithLayout = defineComponent({
@@ -13,10 +13,6 @@ function createApp(pageContext) {
   return app;
 }
 async function render(pageContext) {
-  const { redirectTo } = pageContext;
-  if (redirectTo) {
-    window.location.href = redirectTo;
-  }
   const app = createApp(pageContext);
   app.mount("#app");
 }

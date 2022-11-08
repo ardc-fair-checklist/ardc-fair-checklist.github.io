@@ -1,24 +1,5 @@
 
-textarea[data-v-cb44f43b] {
-    width: 100%;
-    height: 6em;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 3px;
-    resize: none;
-}
-
-.banner[data-v-48cb2967] {
-    background-color: lightgoldenrodyellow;
-    min-height: 3em;
-    border-radius: 0.5em;
-    color: #333;
-    padding: 1.5em 3em;
-    box-sizing: border-box;
-    text-align: center;
-}
-
-.outer[data-v-580e5af2] {
+.outer[data-v-8e357eb1] {
     background-color: #808080;
     width: 100%;
     position: relative;
@@ -26,10 +7,10 @@ textarea[data-v-cb44f43b] {
     overflow: hidden;
     border-radius: 3px;
 }
-.inner[data-v-580e5af2] {
-    background-color: #8E489B;
+.inner[data-v-8e357eb1] {
+    background-color: #00B0D5;
     height: 0.6em;
-    width: var(--4e49e693);  /* CSS Vue magic here */
+    width: var(--adb596e2);  /* CSS Vue magic here */
 }
 :root {
     font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -92,7 +73,7 @@ h2.aspect {
     text-align: center;
     padding: 20px 10px;
     color: var(--white);
-    background-color: var(--ardc-purple);
+    border-bottom: 5px solid var(--ardc-blue);
 }
 
 h3 {
@@ -115,7 +96,10 @@ a:hover {
 div.aspect {
     background-color: var(--dark);
     margin-bottom: 6em;
-    padding: 3em;
+    padding-top: 1em;
+    padding-bottom: 3em;
+    padding-left: 3em;
+    padding-right: 3em;
     border-radius: 1em;
 }
 
@@ -158,7 +142,7 @@ fieldset {
     margin-bottom: 1em;
     margin-top: 1em;
     text-align: justify;
-    /*display: none;*/
+    display: none;
 }
 
 .answer {
@@ -172,7 +156,7 @@ fieldset {
 }
 
 .answer:hover {
-    border-color: var(--ardc-purple);
+    border-color: var(--ardc-blue);
     color: var(--white);
 }
 

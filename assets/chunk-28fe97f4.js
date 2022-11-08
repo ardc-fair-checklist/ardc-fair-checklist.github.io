@@ -1,4 +1,4 @@
-import { i as isString, w as watchPostEffect, o as onMounted, a as onUnmounted, c as createHydrationRenderer, g as getCurrentInstance, F as Fragment, S as Static, e as extend, b as isOn, f as isModelListener, j as isFunction, k as isArray, l as hyphenate, m as camelize, n as capitalize, p as isSpecialBooleanAttr, q as includeBooleanAttr, r as callWithAsyncErrorHandling } from "./chunk-376a9fed.js";
+import { a as hyphenate, i as isString, w as watchPostEffect, o as onMounted, b as onUnmounted, c as createHydrationRenderer, g as getCurrentInstance, F as Fragment, S as Static, e as extend, f as isOn, j as isModelListener, k as isFunction, l as isArray, m as camelize, n as capitalize, p as isSpecialBooleanAttr, q as includeBooleanAttr, r as callWithAsyncErrorHandling } from "./chunk-ca2b0874.js";
 const svgNS = "http://www.w3.org/2000/svg";
 const doc = typeof document !== "undefined" ? document : null;
 const templateContainer = doc && /* @__PURE__ */ doc.createElement("template");
@@ -354,6 +354,26 @@ function setVarsOnNode(el, vars) {
     }
   }
 }
+const keyNames = {
+  esc: "escape",
+  space: " ",
+  up: "arrow-up",
+  left: "arrow-left",
+  right: "arrow-right",
+  down: "arrow-down",
+  delete: "backspace"
+};
+const withKeys = (fn, modifiers) => {
+  return (event) => {
+    if (!("key" in event)) {
+      return;
+    }
+    const eventKey = hyphenate(event.key);
+    if (modifiers.some((k) => k === eventKey || keyNames[k] === eventKey)) {
+      return fn(event);
+    }
+  };
+};
 const rendererOptions = /* @__PURE__ */ extend({ patchProp }, nodeOps);
 let renderer;
 let enabledHydration = false;
@@ -382,5 +402,6 @@ function normalizeContainer(container) {
 }
 export {
   createSSRApp as c,
-  useCssVars as u
+  useCssVars as u,
+  withKeys as w
 };
