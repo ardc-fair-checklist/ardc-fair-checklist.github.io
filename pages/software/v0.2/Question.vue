@@ -1,24 +1,23 @@
 <template>
     <div class="question">
-        <div class="question-index">
+        <div class="question-index shared">
             {{ `${question.index + 1}.` }}
         </div>
-        <div class="question-content">
-            <h3>
+        <fieldset >
+            <legend class="shared">
                 {{ `${question.text}` }}
-            </h3>
+            </legend>
             <div class="question-guidance">
                 {{ question.guidance }}
             </div>
-            <fieldset>
-                <Answer v-for="(answer, answerIndex) in question.answers"
-                    v-bind:answer="answer"
-                    v-bind:isChecked="compliance[question.index] === answerIndex"
-                    v-bind:key="answer.id"
-                    v-bind:onClick="onClick(answerIndex)"
-                />
-            </fieldset>
-        </div>
+            <Answer v-for="(answer, answerIndex) in question.answers"
+                v-bind:answer="answer"
+                v-bind:isChecked="compliance[question.index] === answerIndex"
+                v-bind:key="answer.id"
+                v-bind:onClick="onClick(answerIndex)"
+                v-on:keyup.space="onClick(answerIndex)"
+            />
+        </fieldset>
     </div>
 </template>
 
@@ -52,4 +51,40 @@ const onClick = (answerIndex: number) => {
 </script>
 
 <style scoped>
+
+fieldset {
+    border-style: none;
+    flex-grow: 1;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-block-start: 0em;
+    padding-inline-start: 0em;
+    padding-inline-end: 0em;
+    padding-block-end: 0em;
+}
+legend {
+    padding-inline-start: 0px;
+    padding-inline-end: 0px;
+    margin-bottom: 1em;
+}
+.question {
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.question-index {
+    min-width: 2em;
+}
+.question-guidance {
+    margin-bottom: 1em;
+    text-align: justify;
+    /*display: none;*/
+}
+.shared {
+    /* shared styles for legend and .question-index */
+    font-weight: bold;
+    line-height: 1.6em;
+    font-size: 1.17em;
+}
 </style>

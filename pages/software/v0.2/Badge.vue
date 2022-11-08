@@ -1,12 +1,33 @@
 <template>
     <div class="badge">
         <h2>Get the badge</h2>
+
         <h3>Markdown</h3>
-        <textarea readonly wrap="off">{{ badge.markdown.value }}</textarea>
+        <label for="textarea-markdown-badge">
+            The snippet for the FAIRness badge in Markdown format:
+            <textarea
+                readonly wrap="off"
+                id="textarea-markdown-badge"
+            >{{ badge.markdown.value }}</textarea>
+        </label>
+
         <h3>ReStructured Text</h3>
-        <textarea readonly wrap="off">{{ badge.rst.value }} </textarea>
+        <label for="textarea-rst-badge">
+            The snippet for the FAIRness badge in ReStructured Text format:
+            <textarea
+                readonly wrap="off"
+                id="textarea-rst-badge"
+            >{{ badge.rst.value }}</textarea>
+        </label>
+
         <h3>HTML</h3>
-        <textarea readonly wrap="off">{{ badge.html.value }}</textarea>
+        <label for="textarea-html-badge">
+            The snippet for the FAIRness badge in HTML Text format:
+            <textarea
+                readonly wrap="off"
+                id="textarea-html-badge"
+            >{{ badge.html.value }}</textarea>
+        </label>
     </div>
 </template>
 

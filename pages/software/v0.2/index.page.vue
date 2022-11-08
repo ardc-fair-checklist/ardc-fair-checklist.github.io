@@ -6,7 +6,7 @@
         <template v-if="nQuestions.total > 0">
             <p>Answer the {{ nQuestions.total }} questions below to assess your software's FAIRness.</p>
             <div class="aspect" v-for="aspect in ['F', 'A', 'I', 'R']" >
-                <h2 class="aspect">{{ getAspectFullname(aspect) }}</h2>
+                <h2>{{ getAspectFullname(aspect) }}</h2>
                 <Question v-for="question in questions.filter(q => q.aspect === aspect)"
                     v-bind:key="question.id"
                     v-bind:question="question"
@@ -18,7 +18,7 @@
                 <ProgressBar v-if="aspect==='R'" v-bind:progress="progress.r"/>
             </div>
             <div class="overall-progress">
-                <h2>FAIR state overall:</h2>
+                FAIR state overall
                 <ProgressBar v-bind:progress="progress.overall"/>
             </div>
             <Badge />
@@ -38,6 +38,7 @@ import Link from '~/renderer/Link.vue'
 import ProgressBar from './ProgressBar.vue';
 import Question from './Question.vue'
 import { setQuestions, nQuestions, type QuestionType, progress, questions } from './store'
+import '~/colors.css'
 import './style.css'
 import { questions as data } from './questions.json'
 
@@ -55,4 +56,36 @@ const linkToDataChecklist = `${import.meta.env.BASE_URL}data/v0.2`
 </script>
 
 <style scoped>
+main {
+    color: var(--light);
+}
+h1 {
+    line-height: 1.2em;
+    margin-top: 3em;
+}
+h2 {
+    border-bottom: 5px solid var(--ardc-purple);
+    color: var(--white);
+    margin-bottom: 1.5em;
+    padding: 20px 10px;
+    text-align: center;
+}
+.aspect {
+    background-color: var(--dark);
+    border-radius: 1em;
+    margin-bottom: 6em;
+    padding-bottom: 3em;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 1em;
+}
+.overall-progress {
+    background-color: #eeeeee;
+    border-radius: 1em;
+    color: var(--dark);
+    line-height: 1.6em;
+    margin-bottom: 5em;
+    margin-bottom: 6em;
+    padding: 3em;
+}
 </style>
