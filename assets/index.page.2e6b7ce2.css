@@ -1,0 +1,196 @@
+
+a[data-v-9cfb228b] {
+    text-underline-offset: 0.3em;
+    color: rgb(60, 116, 134);
+}
+a[data-v-9cfb228b]:visited {
+    color: #721d81;
+}
+a[data-v-9cfb228b]:hover {
+    color: rgb(113, 117, 119);
+}
+.banner[data-v-9cfb228b] {
+    background-color: lightgoldenrodyellow;
+    border-radius: 0.5em;
+    box-sizing: border-box;
+    color: #333;
+    margin-bottom: 1em;
+    min-height: 3em;
+    padding: 1.5em 3em;
+    text-align: center;
+}
+
+img.logo[data-v-140da7b6] {
+    height: 3em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.logos[data-v-140da7b6] {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3em;
+}
+footer[data-v-140da7b6] {
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 5em;
+    padding-bottom: 6em;
+}
+footer p[data-v-140da7b6] {
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: small;
+}
+
+.outer[data-v-90dbaf62] {
+    background-color: #808080;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 3px;
+}
+.inner[data-v-90dbaf62] {
+    background-color: var(--ardc-yellow);
+    height: 1em;
+    width: var(--ef16bdce);  /* CSS Vue magic here */
+}
+
+.answer[data-v-14000829] {
+    padding: 0.3em 0.2em;
+    border: 2px solid var(--dark);
+    border-radius: 0.25em;
+    column-gap: 0.5em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.answer[data-v-14000829]:hover {
+    border-color: var(--ardc-blue);
+    color: var(--white);
+}
+.answer-radiobutton[data-v-14000829] {
+    width: min-content;
+}
+.answer-points[data-v-14000829] {
+    width: min-content;
+    /*display: none;*/
+}
+.answer-text[data-v-14000829] {
+    width: 100%;
+}
+
+
+fieldset[data-v-9176ba0a] {
+    border-style: none;
+    flex-grow: 1;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-block-start: 0em;
+    padding-inline-start: 0em;
+    padding-inline-end: 0em;
+    padding-block-end: 0em;
+}
+legend[data-v-9176ba0a] {
+    padding-inline-start: 0px;
+    padding-inline-end: 0px;
+    margin-bottom: 1em;
+}
+.question[data-v-9176ba0a] {
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.question-index[data-v-9176ba0a] {
+    min-width: 2em;
+}
+.question-guidance[data-v-9176ba0a] {
+    margin-bottom: 1em;
+    text-align: justify;
+    /*display: none;*/
+}
+.shared[data-v-9176ba0a] {
+    /* shared styles for legend and .question-index */
+    font-weight: bold;
+    line-height: 1.6em;
+    font-size: 1.17em;
+}
+:root {
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+    box-sizing: border-box;
+    background-color: var(--black);
+    margin: 0;
+}
+
+#app {
+    min-width: 30em;
+    max-width: 50em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+a {
+    text-underline-offset: 0.3em;
+    color: rgb(95, 192, 224);
+}
+
+a:visited {
+    color: #8E489B;
+}
+
+a:hover {
+    color: rgb(160, 208, 224);
+}
+
+main[data-v-6fa21c55] {
+    background-color: var(--black);
+    color: var(--white);
+}
+h1[data-v-6fa21c55] {
+    line-height: 1.2em;
+    margin-top: 3em;
+}
+h2[data-v-6fa21c55] {
+    border-bottom: 2px solid var(--white);
+    color: var(--white);
+    margin-bottom: 2em;
+    padding: 20px 10px;
+    text-align: center;
+}
+.aspect[data-v-6fa21c55] {
+    background-color: var(--dark);
+    border-radius: 1em;
+    border: 2px solid var(--ardc-blue);
+    color: var(--light);
+    margin-bottom: 6em;
+    padding-bottom: 3em;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 1em;
+}
+.overall-progress[data-v-6fa21c55] {
+    background-color: #eeeeee;
+    border-radius: 1em;
+    color: var(--dark);
+    line-height: 1.6em;
+    margin-bottom: 5em;
+    margin-bottom: 6em;
+    padding: 3em;
+}

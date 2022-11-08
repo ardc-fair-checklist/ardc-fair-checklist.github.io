@@ -1,35 +1,36 @@
-import { H as ref, I as computed, d as defineComponent, u as openBlock, t as createElementBlock, v as createBaseVNode, x as createTextVNode, G as toDisplayString, D as pushScopeId, E as popScopeId, o as onMounted, C as unref, L as createCommentVNode, F as Fragment, J as renderList, K as createBlock, y as createVNode, z as withCtx } from "../../../chunk-ca2b0874.js";
+import { D as ref, E as computed, d as defineComponent, u as openBlock, t as createElementBlock, v as createBaseVNode, x as createTextVNode, G as toDisplayString, I as pushScopeId, J as popScopeId, o as onMounted, C as unref, H as createCommentVNode, F as Fragment, K as renderList, L as createBlock, y as createVNode, z as withCtx } from "../../../chunk-64f4e639.js";
 import { _ as _export_sfc } from "../../../chunk-de093346.js";
-import { u as usePageContext } from "../../../chunk-c9bff55b.js";
-/* empty css                       */import { _ as _imports_0, a as _imports_1, b as _sfc_main$8 } from "../../../chunk-e13913e9.js";
-import { u as useCssVars, w as withKeys } from "../../../chunk-28fe97f4.js";
-const state$1 = ref({
+import { l as latest } from "../../../chunk-c37fdac6.js";
+import { u as usePageContext } from "../../../chunk-214b0f2c.js";
+/* empty css                       */import { _ as _imports_0, a as _imports_1, b as _sfc_main$8 } from "../../../chunk-a88020e5.js";
+import { u as useCssVars, w as withKeys } from "../../../chunk-f2019d91.js";
+const state = ref({
   bannerMessageParams: "",
   compliance: [],
   questions: [],
   showBannerMessageVersions: false
 });
-const bannerMessageParams = computed(() => state$1.value.bannerMessageParams);
-const showBannerMessageVersions = computed(() => state$1.value.showBannerMessageVersions);
-const compliance = computed(() => state$1.value.compliance);
-const questions$1 = computed(() => state$1.value.questions);
-const setBannerMessageParams = (msg) => state$1.value.bannerMessageParams = msg;
-const setShowBannerMessageVersions = (b) => state$1.value.showBannerMessageVersions = b;
-const setCompliance = (newCompliance) => state$1.value.compliance = newCompliance;
+const bannerMessageParams = computed(() => state.value.bannerMessageParams);
+const showBannerMessageVersions = computed(() => state.value.showBannerMessageVersions);
+const compliance = computed(() => state.value.compliance);
+const questions$1 = computed(() => state.value.questions);
+const setBannerMessageParams = (msg) => state.value.bannerMessageParams = msg;
+const setShowBannerMessageVersions = (b) => state.value.showBannerMessageVersions = b;
+const setCompliance = (newCompliance) => state.value.compliance = newCompliance;
 const setQuestions = (questions2) => {
-  state$1.value.questions = questions2.map((q, i) => ({ ...q, index: i }));
-  state$1.value.compliance = new Array(questions2.length).fill(0);
+  state.value.questions = questions2.map((q, i) => ({ ...q, index: i }));
+  state.value.compliance = new Array(questions2.length).fill(0);
 };
 const nQuestions = computed(() => {
   const deriveNumberOfQuestions = (aspect) => {
-    return state$1.value.questions.filter((question) => question.aspect === aspect).length;
+    return state.value.questions.filter((question) => question.aspect === aspect).length;
   };
   return {
     f: deriveNumberOfQuestions("F"),
     a: deriveNumberOfQuestions("A"),
     i: deriveNumberOfQuestions("I"),
     r: deriveNumberOfQuestions("R"),
-    total: state$1.value.questions.length
+    total: state.value.questions.length
   };
 });
 const nAnswers = computed(() => {
@@ -43,9 +44,9 @@ const nAnswers = computed(() => {
 });
 const nPointsMax = computed(() => {
   const derivePointsMax = (aspect) => {
-    let selectedQuestions = state$1.value.questions;
+    let selectedQuestions = state.value.questions;
     if (aspect !== "*") {
-      selectedQuestions = state$1.value.questions.filter((question) => question.aspect === aspect);
+      selectedQuestions = state.value.questions.filter((question) => question.aspect === aspect);
     }
     return selectedQuestions.map((question) => Math.max(...question.answers.map((answer) => answer.score))).reduce((previousValue, currentValue) => previousValue + currentValue, 0);
   };
@@ -67,15 +68,15 @@ const slices = computed(() => {
 });
 const fairQueryParams = computed(() => {
   return [
-    `f=${state$1.value.compliance.slice(...slices.value.f).map((elem) => elem.toString()).join("")}`,
-    `a=${state$1.value.compliance.slice(...slices.value.a).map((elem) => elem.toString()).join("")}`,
-    `i=${state$1.value.compliance.slice(...slices.value.i).map((elem) => elem.toString()).join("")}`,
-    `r=${state$1.value.compliance.slice(...slices.value.r).map((elem) => elem.toString()).join("")}`
+    `f=${state.value.compliance.slice(...slices.value.f).map((elem) => elem.toString()).join("")}`,
+    `a=${state.value.compliance.slice(...slices.value.a).map((elem) => elem.toString()).join("")}`,
+    `i=${state.value.compliance.slice(...slices.value.i).map((elem) => elem.toString()).join("")}`,
+    `r=${state.value.compliance.slice(...slices.value.r).map((elem) => elem.toString()).join("")}`
   ].join("&");
 });
 const progress = computed(() => {
-  const scoreArrays = state$1.value.questions.map((q) => q.answers.map((a) => a.score));
-  const scores = state$1.value.compliance.map((iAnswer, iQuestion) => scoreArrays[iQuestion][iAnswer]);
+  const scoreArrays = state.value.questions.map((q) => q.answers.map((a) => a.score));
+  const scores = state.value.compliance.map((iAnswer, iQuestion) => scoreArrays[iQuestion][iAnswer]);
   const summation = (previousValue, currentValue) => previousValue + currentValue;
   if (nQuestions.value.total === 0) {
     return {
@@ -232,17 +233,6 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
 });
 const BannerParams_vue_vue_type_style_index_0_scoped_24347cdb_lang = "";
 const BannerParams = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__scopeId", "data-v-24347cdb"]]);
-const state = ref({
-  software: ["v0.1", "v0.2"],
-  data: ["v0.1", "v0.2"]
-});
-computed(() => state.value);
-const latest = computed(() => {
-  return {
-    software: state.value.software.slice(-1)[0],
-    data: state.value.data.slice(-1)[0]
-  };
-});
 const _hoisted_1$5 = {
   key: 0,
   class: "banner"
@@ -300,7 +290,7 @@ function _sfc_render(_ctx, _cache) {
   return openBlock(), createElementBlock("footer", null, _hoisted_3$4);
 }
 const Footer = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["render", _sfc_render], ["__scopeId", "data-v-9483011b"]]);
-const _withScopeId$1 = (n) => (pushScopeId("data-v-580e5af2"), n = n(), popScopeId(), n);
+const _withScopeId$1 = (n) => (pushScopeId("data-v-68faa8df"), n = n(), popScopeId(), n);
 const _hoisted_1$3 = { class: "outer" };
 const _hoisted_2$3 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("div", { class: "inner" }, null, -1));
 const _hoisted_3$3 = [
@@ -313,15 +303,15 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
   },
   setup(__props) {
     useCssVars((_ctx) => ({
-      "4e49e693": __props.progress
+      "6c58b14e": __props.progress
     }));
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("div", _hoisted_1$3, _hoisted_3$3);
     };
   }
 });
-const ProgressBar_vue_vue_type_style_index_0_scoped_580e5af2_lang = "";
-const ProgressBar = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-580e5af2"]]);
+const ProgressBar_vue_vue_type_style_index_0_scoped_68faa8df_lang = "";
+const ProgressBar = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-68faa8df"]]);
 const _hoisted_1$2 = { class: "answer-radiobutton" };
 const _hoisted_2$2 = ["id", "value", "checked"];
 const _hoisted_3$2 = { class: "answer-points" };
@@ -915,7 +905,7 @@ const questions = [
     text: "If they exist, how much have domain-relevant community standards been considered in writing the software? it is linked to I:q0"
   }
 ];
-const _withScopeId = (n) => (pushScopeId("data-v-0ada496b"), n = n(), popScopeId(), n);
+const _withScopeId = (n) => (pushScopeId("data-v-f5c4cbdd"), n = n(), popScopeId(), n);
 const _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("h1", null, "ARDC FAIR for software self-assessment checklist", -1));
 const _hoisted_2 = { class: "aspect" };
 const _hoisted_3 = { class: "overall-progress" };
@@ -992,8 +982,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const index_page_vue_vue_type_style_index_0_scoped_0ada496b_lang = "";
-const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-0ada496b"]]);
+const index_page_vue_vue_type_style_index_0_scoped_f5c4cbdd_lang = "";
+const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-f5c4cbdd"]]);
 export {
   index_page as default
 };
