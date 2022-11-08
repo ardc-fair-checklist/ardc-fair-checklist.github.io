@@ -35,7 +35,7 @@
     ]
   },
   "pages/software/index.page.vue": {
-    "file": "assets/pages/software/index.page.8d0abbf3.js",
+    "file": "assets/pages/software/index.page.00b87d14.js",
     "src": "pages/software/index.page.vue",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -102,7 +102,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.708aff54.js",
+    "file": "assets/entry-client-routing.e0e701c3.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -120,7 +120,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.7ae85262.js",
+    "file": "assets/entry-server-routing.fcc1621f.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [

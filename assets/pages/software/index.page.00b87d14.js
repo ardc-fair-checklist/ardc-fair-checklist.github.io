@@ -6,7 +6,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
   setup(__props) {
     onMounted(() => {
       const { urlPathname } = usePageContext();
-      window.location.href = `/${urlPathname.split("/").filter((e) => e !== "").join("/")}/v0.2`;
+      const url = `${"/ssg/"}${urlPathname}`;
+      window.location.href = `/${url.split("/").filter((e) => e !== "").join("/")}/v0.2`;
     });
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("p", null, " Redirecting... ");
