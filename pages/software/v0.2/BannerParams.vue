@@ -1,11 +1,11 @@
 <template>
-    <div class="banner" v-if="bannerMessage !== ''" >
-        {{ bannerMessage }}
+    <div class="banner" v-if="bannerMessageParams !== ''" >
+        {{ bannerMessageParams }}
     </div>
 </template>
 
 <script setup lang="ts">
-import { bannerMessage, nAnswers, nQuestions, setBannerMessage, setCompliance } from './store'
+import { bannerMessageParams, nAnswers, nQuestions, setBannerMessageParams, setCompliance } from './store'
 import { onMounted } from 'vue'
 onMounted(() => {
     const chooseBannerMessage = (params: Params) => {
@@ -61,7 +61,7 @@ onMounted(() => {
         setCompliance(zeros)
     } else {
         const msg = chooseBannerMessage(queryParams)
-        setBannerMessage(msg)
+        setBannerMessageParams(msg)
         if (msg === "") {
             const {f, a, i, r} = queryParams as {f: string, a: string, i: string, r: string}
             const compl = f + a + i + r
@@ -79,11 +79,12 @@ onMounted(() => {
 <style scoped>
 .banner {
     background-color: lightgoldenrodyellow;
-    min-height: 3em;
     border-radius: 0.5em;
-    color: #333;
-    padding: 1.5em 3em;
     box-sizing: border-box;
+    color: #333;
+    margin-bottom: 1em;
+    min-height: 3em;
+    padding: 1.5em 3em;
     text-align: center;
 }
 </style>
