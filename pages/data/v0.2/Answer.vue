@@ -1,14 +1,25 @@
 <template>
-    <div class="answer" v-on:click="onClick">
+    <div
+        class="answer"
+        v-on:click="onClick"
+        v-on:keyup.space="onClick"
+        tabindex=0
+    >
         <div class="answer-radiobutton">
-            <input type="radio" v-bind:id="answer.id" v-bind:value="answer.id" v-bind:checked="isChecked" >
-            <label v-bind:for="answer.id"></label>
+            <input
+                type="radio"
+                v-bind:id="answer.id"
+                v-bind:value="answer.id"
+                v-bind:checked="isChecked"
+                role="presentation"
+                tabindex="-1"
+            >
         </div>
         <div class="answer-points">
             (+{{ answer.score }})
         </div>
         <div class="answer-text">
-             {{ answer.text }}
+            <label v-bind:for="answer.id">{{ answer.text }}</label>
         </div>
     </div>
 </template>
@@ -26,4 +37,30 @@ defineProps<{
 </script>
 
 <style scoped>
+.answer {
+    padding: 0.3em 0.2em;
+    border: 2px solid var(--dark);
+    border-radius: 0.25em;
+    column-gap: 0.5em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.answer:hover {
+    border-color: var(--ardc-blue);
+    color: var(--white);
+}
+
+.answer-radiobutton {
+    width: min-content;
+}
+.answer-points {
+    width: min-content;
+    /*display: none;*/
+}
+.answer-text {
+    width: 100%;
+}
+
 </style>

@@ -2,10 +2,11 @@
     <main>
         <h1>ARDC FAIR for data self-assessment checklist</h1>
         <p>Switch to the checklist for <Link v-bind:href="linkToSoftwareChecklist">software</Link> instead.</p>
+        <BannerVersions />
         <template v-if="nQuestions.total > 0">
             <p>Answer the {{ nQuestions.total }} questions below to assess your data's FAIRness.</p>
             <div class="aspect" v-for="aspect in ['F', 'A', 'I', 'R']" >
-                <h2 class="aspect">{{ getAspectFullname(aspect) }}</h2>
+                <h2>{{ getAspectFullname(aspect) }}</h2>
                 <Question v-for="question in questions.filter(q => q.aspect === aspect)"
                     v-bind:key="question.id"
                     v-bind:question="question"
@@ -17,7 +18,7 @@
                 <ProgressBar v-if="aspect==='R'" v-bind:progress="progress.r"/>
             </div>
             <div class="overall-progress">
-                <h2>FAIR state overall:</h2>
+                FAIR state overall
                 <ProgressBar v-bind:progress="progress.overall"/>
             </div>
             <Footer />
@@ -29,11 +30,13 @@
 </template>
 
 <script setup lang="ts">
+import BannerVersions from './BannerVersions.vue'
 import Footer from './Footer.vue'
 import Link from '~/renderer/Link.vue'
 import ProgressBar from './ProgressBar.vue';
 import Question from './Question.vue'
 import { setQuestions, nQuestions, type QuestionType, progress, questions } from './store'
+import '~/renderer/colors.css'
 import './style.css'
 import { questions as data } from './questions.json'
 
@@ -51,4 +54,39 @@ const linkToSoftwareChecklist = `${import.meta.env.BASE_URL}software/v0.2`
 </script>
 
 <style scoped>
+main {
+    background-color: var(--black);
+    color: var(--white);
+}
+h1 {
+    line-height: 1.2em;
+    margin-top: 3em;
+}
+h2 {
+    border-bottom: 2px solid var(--white);
+    color: var(--white);
+    margin-bottom: 2em;
+    padding: 20px 10px;
+    text-align: center;
+}
+.aspect {
+    background-color: var(--dark);
+    border-radius: 1em;
+    border: 2px solid var(--ardc-blue);
+    color: var(--light);
+    margin-bottom: 6em;
+    padding-bottom: 3em;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 1em;
+}
+.overall-progress {
+    background-color: #eeeeee;
+    border-radius: 1em;
+    color: var(--dark);
+    line-height: 1.6em;
+    margin-bottom: 5em;
+    margin-bottom: 6em;
+    padding: 3em;
+}
 </style>

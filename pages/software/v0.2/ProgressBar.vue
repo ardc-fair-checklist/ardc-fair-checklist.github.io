@@ -22,8 +22,8 @@ defineProps<{
 }
 
 .inner {
-    background-color: #8E489B;
-    height: 0.6em;
+    background-color: var(--ardc-yellow);
+    height: 1em;
     width: v-bind('progress');  /* CSS Vue magic here */
 }
 </style>

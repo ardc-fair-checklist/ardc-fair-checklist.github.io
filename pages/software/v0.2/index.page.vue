@@ -59,22 +59,25 @@ const linkToDataChecklist = `${import.meta.env.BASE_URL}data/v0.2`
 
 <style scoped>
 main {
-    color: var(--light);
+    background-color: var(--black);
+    color: var(--white);
 }
 h1 {
     line-height: 1.2em;
     margin-top: 3em;
 }
 h2 {
-    border-bottom: 5px solid var(--ardc-purple);
+    border-bottom: 2px solid var(--white);
     color: var(--white);
-    margin-bottom: 1.5em;
+    margin-bottom: 2em;
     padding: 20px 10px;
     text-align: center;
 }
 .aspect {
     background-color: var(--dark);
     border-radius: 1em;
+    border: 2px solid var(--ardc-purple);
+    color: var(--light);
     margin-bottom: 6em;
     padding-bottom: 3em;
     padding-left: 3em;
