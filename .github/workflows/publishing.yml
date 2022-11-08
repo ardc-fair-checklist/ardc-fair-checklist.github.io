@@ -1,6 +1,6 @@
 # based on: https://raw.githubusercontent.com/brillout/vite-plugin-ssr/main/.github/workflows/docs.yml
 
-name: pages-build-deployment
+name: publishing
 
 on:
   workflow_dispatch:
