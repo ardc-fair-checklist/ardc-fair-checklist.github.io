@@ -233,7 +233,7 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
 const BannerParams_vue_vue_type_style_index_0_scoped_24347cdb_lang = "";
 const BannerParams = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__scopeId", "data-v-24347cdb"]]);
 const state = ref({
-  software: ["v0.1", "v0.2", "v0.3"],
+  software: ["v0.1", "v0.2"],
   data: ["v0.1", "v0.2"]
 });
 computed(() => state.value);
