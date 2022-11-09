@@ -1,6 +1,6 @@
 <template>
     <div class="banner" v-if="showBannerMessageVersions">
-        A newer version of the checklist is available at <a v-bind:href="link">{{link}}</a>, consider upgrading.
+        A newer version of the checklist is available at <Link v-bind:href="link">{{link}}</Link>, consider upgrading.
     </div>
 </template>
 
@@ -9,7 +9,8 @@ import { computed, onMounted } from 'vue'
 import { latest } from '~/renderer/versions'
 import { usePageContext } from '~/renderer/usePageContext'
 import { showBannerMessageVersions, setShowBannerMessageVersions } from './store'
-import '~/renderer/colors.css'
+import Link from './Link.vue'
+import '~/renderer/global.css'
 
 const link = computed(() => {
     return [
@@ -31,15 +32,11 @@ onMounted(() => {
 <style scoped>
 a {
     text-underline-offset: 0.3em;
-    color: rgb(60, 116, 134);
-}
-
-a:visited {
-    color: #721d81;
+    color: #144e70;
 }
 
 a:hover {
-    color: rgb(113, 117, 119);
+    color: var(--black);
 }
 
 .banner {

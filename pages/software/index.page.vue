@@ -7,8 +7,7 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
 import { usePageContext } from '~/renderer/usePageContext'
-import '~/renderer/colors.css'
-import './style.css'
+import '~/renderer/global.css'
 
 onMounted(() => {
     const { urlPathname } = usePageContext()

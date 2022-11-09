@@ -9,7 +9,7 @@ import { computed, onMounted } from 'vue'
 import { latest } from '~/renderer/versions'
 import { usePageContext } from '~/renderer/usePageContext'
 import { showBannerMessageVersions, setShowBannerMessageVersions } from './store'
-import '~/renderer/colors.css'
+import '~/renderer/global.css'
 
 const link = computed(() => {
     return [
@@ -22,7 +22,7 @@ const link = computed(() => {
 onMounted(() => {
     const { urlPathname } = usePageContext()
     const myVersion = urlPathname.split('/').slice(-1)[0]
-    if (myVersion !== latest.value.software) {
+    if (myVersion !== latest.value.data) {
         setShowBannerMessageVersions(true)
     }
 })
@@ -31,15 +31,11 @@ onMounted(() => {
 <style scoped>
 a {
     text-underline-offset: 0.3em;
-    color: rgb(60, 116, 134);
-}
-
-a:visited {
-    color: #721d81;
+    color: #144e70;
 }
 
 a:hover {
-    color: rgb(113, 117, 119);
+    color: var(--black);
 }
 
 .banner {

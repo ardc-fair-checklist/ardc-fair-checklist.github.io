@@ -32,12 +32,11 @@
 <script setup lang="ts">
 import BannerVersions from './BannerVersions.vue'
 import Footer from './Footer.vue'
-import Link from '~/renderer/Link.vue'
+import Link from './Link.vue'
 import ProgressBar from './ProgressBar.vue';
 import Question from './Question.vue'
 import { setQuestions, nQuestions, type QuestionType, progress, questions } from './store'
-import '~/renderer/colors.css'
-import './style.css'
+import '~/renderer/global.css'
 import { questions as data } from './questions.json'
 
 setQuestions(data as QuestionType[]);

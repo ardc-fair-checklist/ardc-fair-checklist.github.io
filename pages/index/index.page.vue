@@ -8,8 +8,21 @@
 
 <script lang="ts" setup>
 import Footer from './Footer.vue'
-import Link from '~/renderer/Link.vue'
-import './style.css'
+import Link from './Link.vue'
+import '~/renderer/global.css'
+
 const linkToDataChecklist = `${import.meta.env.BASE_URL}data/v0.2`
 const linkToSoftwareChecklist = `${import.meta.env.BASE_URL}software/v0.2`
 </script>
+
+
+<style scoped>
+main {
+    background-color: var(--black);
+    color: var(--white);
+}
+h1 {
+    line-height: 1.2em;
+    margin-top: 3em;
+}
+</style>

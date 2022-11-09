@@ -12,15 +12,15 @@ type Page = ComponentPublicInstance // https://stackoverflow.com/questions/63985
 type PageProps = {}
 
 export type PageContextCustom = {
-  Page: Page
-  pageProps?: PageProps
-  urlPathname: string
-  exports: {
-    documentProps?: {
-      title?: string
-      description?: string
+    Page: Page
+    pageProps?: PageProps
+    urlPathname: string
+    exports: {
+        documentProps?: {
+            title?: string
+            description?: string
+        }
     }
-  }
 }
 
 type PageContextServer = PageContextBuiltIn<Page> & PageContextCustom
