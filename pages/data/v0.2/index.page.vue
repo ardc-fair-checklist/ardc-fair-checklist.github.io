@@ -70,7 +70,7 @@ h2 {
 }
 .aspect {
     background-color: var(--dark);
-    border-radius: 1em;
+    border-radius: 0.5em;
     border: 2px solid #444;
     color: var(--light);
     margin-bottom: 6em;
@@ -81,7 +81,7 @@ h2 {
 }
 .overall-progress {
     background-color: #eeeeee;
-    border-radius: 1em;
+    border-radius: 0.5em;
     color: var(--dark);
     line-height: 1.6em;
     margin-bottom: 5em;

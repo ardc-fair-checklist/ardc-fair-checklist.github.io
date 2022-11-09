@@ -1,25 +1,32 @@
 <template>
     <div
         class="answer"
+        v-bind:aria-labelledby="`label-${answer.id}`"
         v-on:click="onClick"
-        v-on:keyup.space="onClick"
+        v-on:keydown.space.prevent.stop="onClick"
         tabindex=0
+        role="radio"
     >
         <div class="answer-radiobutton">
             <input
+                role="presentation"
                 type="radio"
                 v-bind:id="answer.id"
                 v-bind:value="answer.id"
                 v-bind:checked="isChecked"
-                role="presentation"
                 tabindex="-1"
+                aria-label=""
             >
         </div>
         <div class="answer-points">
             (+{{ answer.score }})
         </div>
         <div class="answer-text">
-            <label v-bind:for="answer.id">{{ answer.text }}</label>
+            <label
+                v-bind:for="answer.id"
+                v-bind:id="`label-${answer.id}`"
+            >{{ answer.text }}
+            </label>
         </div>
     </div>
 </template>
@@ -47,7 +54,12 @@ defineProps<{
     flex-wrap: nowrap;
 }
 
-.answer:hover {
+*:focus:not(.focus-visible) {
+    /*  https://css-tricks.com/keyboard-only-focus-styles/  */
+    outline: none;
+}
+
+.answer:hover, .answer:focus, .answer:active, .answer:focus-visible {
     border-color: var(--ardc-purple);
     color: var(--white);
 }

@@ -2,8 +2,9 @@
     <div
         class="answer"
         v-on:click="onClick"
-        v-on:keyup.space="onClick"
+        v-on:keydown.space.prevent.stop="onClick"
         tabindex=0
+        role="radio"
     >
         <div class="answer-radiobutton">
             <input
@@ -13,6 +14,7 @@
                 v-bind:checked="isChecked"
                 role="presentation"
                 tabindex="-1"
+                aria-label=""
             >
         </div>
         <div class="answer-points">
@@ -47,7 +49,12 @@ defineProps<{
     flex-wrap: nowrap;
 }
 
-.answer:hover {
+*:focus:not(.focus-visible) {
+    /*  https://css-tricks.com/keyboard-only-focus-styles/  */
+    outline: none;
+}
+
+.answer:hover, .answer:focus, .answer:active, .answer:focus-visible {
     border-color: var(--ardc-blue);
     color: var(--white);
 }

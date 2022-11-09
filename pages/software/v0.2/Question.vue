@@ -15,7 +15,7 @@
                 v-bind:isChecked="compliance[question.index] === answerIndex"
                 v-bind:key="answer.id"
                 v-bind:onClick="onClick(answerIndex)"
-                v-on:keyup.space="onClick(answerIndex)"
+                v-on:keydown.space.prevent.stop="onClick(answerIndex)"
             />
         </fieldset>
     </div>
