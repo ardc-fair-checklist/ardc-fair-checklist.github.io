@@ -1,0 +1,8 @@
+#app {
+    min-width: 30em;
+    max-width: 50em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3em;
+    padding-right: 3em;
+}

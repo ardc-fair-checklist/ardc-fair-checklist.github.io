@@ -10,6 +10,7 @@
 import Footer from './Footer.vue'
 import Link from './Link.vue'
 import '~/renderer/global.css'
+import './app.css'
 
 const linkToDataChecklist = `${import.meta.env.BASE_URL}data/v0.2`
 const linkToSoftwareChecklist = `${import.meta.env.BASE_URL}software/v0.2`

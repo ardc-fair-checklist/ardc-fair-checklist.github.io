@@ -41,6 +41,7 @@ import ProgressBar from './ProgressBar.vue';
 import Question from './Question.vue'
 import { setQuestions, nQuestions, type QuestionType, progress, questions } from './store'
 import '~/renderer/global.css'
+import './app.css'
 import { questions as data } from './questions.json'
 
 setQuestions(data as QuestionType[]);
@@ -58,7 +59,6 @@ const linkToDataChecklist = `${import.meta.env.BASE_URL}data/v0.2`
 
 <style scoped>
 main {
-    background-color: var(--black);
     color: var(--white);
 }
 h1 {
@@ -75,7 +75,7 @@ h2 {
 .aspect {
     background-color: var(--dark);
     border-radius: 1em;
-    border: 2px solid var(--ardc-purple);
+    border: 2px solid #444;
     color: var(--light);
     margin-bottom: 6em;
     padding-bottom: 3em;

@@ -10,6 +10,7 @@ import { latest } from '~/renderer/versions'
 import { usePageContext } from '~/renderer/usePageContext'
 import { showBannerMessageVersions, setShowBannerMessageVersions } from './store'
 import '~/renderer/global.css'
+import './app.css'
 
 const link = computed(() => {
     return [

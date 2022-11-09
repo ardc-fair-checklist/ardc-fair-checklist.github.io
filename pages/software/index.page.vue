@@ -8,6 +8,7 @@
 import { onMounted } from 'vue'
 import { usePageContext } from '~/renderer/usePageContext'
 import '~/renderer/global.css'
+import './app.css'
 
 onMounted(() => {
     const { urlPathname } = usePageContext()
