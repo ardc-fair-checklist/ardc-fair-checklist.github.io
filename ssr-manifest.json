@@ -125,25 +125,25 @@
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": [],
   "index.page.5af12ed4.js": [
     "/ssg/assets/index.page.ec3ad890.css",
-    "/ssg/assets/global.6c3be33d.css"
+    "/ssg/assets/global.4ffaf04d.css"
   ],
   "index.page.c0c84b33.js": [],
   "index.page.f0f15a20.js": [
     "/ssg/assets/index.page.dd0585f1.css",
-    "/ssg/assets/global.6c3be33d.css"
+    "/ssg/assets/global.4ffaf04d.css"
   ],
   "index.page.b80310da.js": [
     "/ssg/assets/index.page.853164d8.css",
-    "/ssg/assets/global.6c3be33d.css"
+    "/ssg/assets/global.4ffaf04d.css"
   ],
   "index.page.1511dbe0.js": [
     "/ssg/assets/index.page.21e1d615.css",
-    "/ssg/assets/global.6c3be33d.css"
+    "/ssg/assets/global.4ffaf04d.css"
   ],
   "index.page.fa7127ef.js": [],
   "index.page.f9dd2f63.js": [
     "/ssg/assets/index.page.c7a0a8ca.css",
-    "/ssg/assets/global.6c3be33d.css"
+    "/ssg/assets/global.4ffaf04d.css"
   ],
   "_error.page.45d84ce3.js": [],
   "_default.page.client.4c3c3a68.js": [],
