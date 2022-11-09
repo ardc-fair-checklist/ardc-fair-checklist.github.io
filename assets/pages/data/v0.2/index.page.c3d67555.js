@@ -615,7 +615,7 @@ const questions = [
     text: "How much provenance information has been captured to facilitate data reuse?"
   }
 ];
-const _withScopeId = (n) => (pushScopeId("data-v-8c3330a6"), n = n(), popScopeId(), n);
+const _withScopeId = (n) => (pushScopeId("data-v-f0657e6d"), n = n(), popScopeId(), n);
 const _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("h1", null, "ARDC FAIR for data self-assessment checklist", -1));
 const _hoisted_2 = { class: "aspect" };
 const _hoisted_3 = { class: "overall-progress" };
@@ -690,8 +690,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const index_page_vue_vue_type_style_index_0_scoped_8c3330a6_lang = "";
-const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-8c3330a6"]]);
+const index_page_vue_vue_type_style_index_0_scoped_f0657e6d_lang = "";
+const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-f0657e6d"]]);
 export {
   index_page as default
 };

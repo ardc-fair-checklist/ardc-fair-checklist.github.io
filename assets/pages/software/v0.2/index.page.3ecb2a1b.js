@@ -929,7 +929,7 @@ const questions = [
     text: "If they exist, how much have domain-relevant community standards been considered in writing the software? it is linked to I:q0"
   }
 ];
-const _withScopeId = (n) => (pushScopeId("data-v-531d30b8"), n = n(), popScopeId(), n);
+const _withScopeId = (n) => (pushScopeId("data-v-ccc17b29"), n = n(), popScopeId(), n);
 const _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("h1", null, "ARDC FAIR for software self-assessment checklist", -1));
 const _hoisted_2 = { class: "aspect" };
 const _hoisted_3 = { class: "overall-progress" };
@@ -1006,8 +1006,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const index_page_vue_vue_type_style_index_0_scoped_531d30b8_lang = "";
-const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-531d30b8"]]);
+const index_page_vue_vue_type_style_index_0_scoped_ccc17b29_lang = "";
+const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-ccc17b29"]]);
 export {
   index_page as default
 };
