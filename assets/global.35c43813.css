@@ -1,4 +1,14 @@
 :root {
+    --ardc-blue: #00B0D5;
+    --ardc-pink: #E51875;
+    --ardc-yellow: #F8B20E;
+    --ardc-purple: #8E489B;
+    --nlesc-blue: #009fe1;
+    --white: #FFFFFF;
+    --black: #000000;
+    --light: #bbbbbb;
+    --dark: #242424;
+
     font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
@@ -14,7 +24,15 @@
     -webkit-text-size-adjust: 100%;
 
     box-sizing: border-box;
-    background-color: #000000;
+    background-color: var(--black);
     margin: 0;
-    color: #ffffff;
+}
+
+#app {
+    min-width: 30em;
+    max-width: 50em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3em;
+    padding-right: 3em;
 }

@@ -1,9 +1,9 @@
-import { l as latest } from "../../../chunk-c37fdac6.js";
-import { u as usePageContext } from "../../../chunk-214b0f2c.js";
-import { D as ref, E as computed, d as defineComponent, o as onMounted, C as unref, u as openBlock, t as createElementBlock, x as createTextVNode, v as createBaseVNode, G as toDisplayString, H as createCommentVNode, I as pushScopeId, J as popScopeId, F as Fragment, K as renderList, L as createBlock, y as createVNode, z as withCtx } from "../../../chunk-64f4e639.js";
+import { l as latest } from "../../../chunk-2d906bec.js";
+import { u as usePageContext } from "../../../chunk-43f5a3e9.js";
+import { G as ref, H as computed, d as defineComponent, o as onMounted, B as unref, u as openBlock, t as createElementBlock, C as createTextVNode, v as createBaseVNode, I as toDisplayString, J as createCommentVNode, x as pushScopeId, y as popScopeId, z as renderSlot, A as normalizeClass, F as Fragment, K as renderList, L as createBlock, D as createVNode, E as withCtx } from "../../../chunk-ef5fba30.js";
 /* empty css                       */import { _ as _export_sfc } from "../../../chunk-de093346.js";
-import { _ as _imports_0, a as _imports_1, b as _sfc_main$6 } from "../../../chunk-a88020e5.js";
-import { u as useCssVars, w as withKeys } from "../../../chunk-f2019d91.js";
+import { _ as _imports_0, a as _imports_1 } from "../../../chunk-5b637298.js";
+import { u as useCssVars, w as withKeys } from "../../../chunk-cc5d185f.js";
 const state = ref({
   compliance: [],
   questions: [],
@@ -80,7 +80,7 @@ const _hoisted_1$5 = {
   class: "banner"
 };
 const _hoisted_2$5 = ["href"];
-const _sfc_main$5 = /* @__PURE__ */ defineComponent({
+const _sfc_main$6 = /* @__PURE__ */ defineComponent({
   __name: "BannerVersions",
   setup(__props) {
     const link = computed(() => {
@@ -93,7 +93,7 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
     onMounted(() => {
       const { urlPathname } = usePageContext();
       const myVersion = urlPathname.split("/").slice(-1)[0];
-      if (myVersion !== latest.value.software) {
+      if (myVersion !== latest.value.data) {
         setShowBannerMessageVersions(true);
       }
     });
@@ -106,10 +106,10 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const BannerVersions_vue_vue_type_style_index_0_scoped_9cfb228b_lang = "";
-const BannerVersions = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-9cfb228b"]]);
+const BannerVersions_vue_vue_type_style_index_0_scoped_338506a9_lang = "";
+const BannerVersions = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__scopeId", "data-v-338506a9"]]);
 const Footer_vue_vue_type_style_index_0_scoped_140da7b6_lang = "";
-const _sfc_main$4 = {};
+const _sfc_main$5 = {};
 const _withScopeId$2 = (n) => (pushScopeId("data-v-140da7b6"), n = n(), popScopeId(), n);
 const _hoisted_1$4 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createBaseVNode("div", { class: "logos" }, [
   /* @__PURE__ */ createBaseVNode("img", {
@@ -131,7 +131,22 @@ const _hoisted_3$4 = [
 function _sfc_render(_ctx, _cache) {
   return openBlock(), createElementBlock("footer", null, _hoisted_3$4);
 }
-const Footer = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["render", _sfc_render], ["__scopeId", "data-v-140da7b6"]]);
+const Footer = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["render", _sfc_render], ["__scopeId", "data-v-140da7b6"]]);
+const _sfc_main$4 = /* @__PURE__ */ defineComponent({
+  __name: "Link",
+  setup(__props) {
+    const pageContext = usePageContext();
+    return (_ctx, _cache) => {
+      return openBlock(), createElementBlock("a", {
+        class: normalizeClass({ active: unref(pageContext).urlPathname === _ctx.$attrs.href })
+      }, [
+        renderSlot(_ctx.$slots, "default", {}, void 0, true)
+      ], 2);
+    };
+  }
+});
+const Link_vue_vue_type_style_index_0_scoped_865de604_lang = "";
+const Link = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-865de604"]]);
 const _withScopeId$1 = (n) => (pushScopeId("data-v-90dbaf62"), n = n(), popScopeId(), n);
 const _hoisted_1$3 = { class: "outer" };
 const _hoisted_2$3 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("div", { class: "inner" }, null, -1));
@@ -242,7 +257,6 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
 });
 const Question_vue_vue_type_style_index_0_scoped_9176ba0a_lang = "";
 const Question = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-9176ba0a"]]);
-const style = "";
 const questions = [
   {
     answers: [
@@ -598,7 +612,7 @@ const questions = [
     text: "How much provenance information has been captured to facilitate data reuse?"
   }
 ];
-const _withScopeId = (n) => (pushScopeId("data-v-6fa21c55"), n = n(), popScopeId(), n);
+const _withScopeId = (n) => (pushScopeId("data-v-bba67843"), n = n(), popScopeId(), n);
 const _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("h1", null, "ARDC FAIR for data self-assessment checklist", -1));
 const _hoisted_2 = { class: "aspect" };
 const _hoisted_3 = { class: "overall-progress" };
@@ -620,7 +634,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
         _hoisted_1,
         createBaseVNode("p", null, [
           createTextVNode("Switch to the checklist for "),
-          createVNode(_sfc_main$6, { href: linkToSoftwareChecklist }, {
+          createVNode(Link, { href: linkToSoftwareChecklist }, {
             default: withCtx(() => [
               createTextVNode("software")
             ]),
@@ -673,8 +687,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const index_page_vue_vue_type_style_index_0_scoped_6fa21c55_lang = "";
-const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-6fa21c55"]]);
+const index_page_vue_vue_type_style_index_0_scoped_bba67843_lang = "";
+const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-bba67843"]]);
 export {
   index_page as default
 };

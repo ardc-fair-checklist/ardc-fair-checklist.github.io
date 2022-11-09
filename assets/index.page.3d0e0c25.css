@@ -1,0 +1,40 @@
+
+img.logo[data-v-616712ff] {
+    height: 3em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.logos[data-v-616712ff] {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3em;
+}
+footer[data-v-616712ff] {
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 5em;
+    padding-bottom: 6em;
+}
+footer p[data-v-616712ff] {
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: small;
+}
+
+a[data-v-99a0f5a5] {
+    text-underline-offset: 0.3em;
+    color: #71caff;
+}
+a[data-v-99a0f5a5]:hover {
+    color: var(--white);
+}
+
+main[data-v-c6cc9b49] {
+    background-color: var(--black);
+    color: var(--white);
+}
+h1[data-v-c6cc9b49] {
+    line-height: 1.2em;
+    margin-top: 3em;
+}

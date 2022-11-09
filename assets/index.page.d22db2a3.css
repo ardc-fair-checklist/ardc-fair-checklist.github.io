@@ -1,15 +1,12 @@
 
-a[data-v-9cfb228b] {
+a[data-v-338506a9] {
     text-underline-offset: 0.3em;
-    color: rgb(60, 116, 134);
+    color: #144e70;
 }
-a[data-v-9cfb228b]:visited {
-    color: #721d81;
+a[data-v-338506a9]:hover {
+    color: var(--black);
 }
-a[data-v-9cfb228b]:hover {
-    color: rgb(113, 117, 119);
-}
-.banner[data-v-9cfb228b] {
+.banner[data-v-338506a9] {
     background-color: lightgoldenrodyellow;
     border-radius: 0.5em;
     box-sizing: border-box;
@@ -41,6 +38,14 @@ footer p[data-v-140da7b6] {
     text-align: center;
     margin: 0 auto;
     font-size: small;
+}
+
+a[data-v-865de604] {
+    text-underline-offset: 0.3em;
+    color: #71caff;
+}
+a[data-v-865de604]:hover {
+    color: var(--white);
 }
 
 .outer[data-v-90dbaf62] {
@@ -117,64 +122,23 @@ legend[data-v-9176ba0a] {
     line-height: 1.6em;
     font-size: 1.17em;
 }
-:root {
-    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
 
-    color-scheme: light dark;
-    color: rgba(255, 255, 255, 0.87);
-
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
-
-    box-sizing: border-box;
-    background-color: var(--black);
-    margin: 0;
-}
-
-#app {
-    min-width: 30em;
-    max-width: 50em;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 3em;
-    padding-right: 3em;
-}
-
-a {
-    text-underline-offset: 0.3em;
-    color: rgb(95, 192, 224);
-}
-
-a:visited {
-    color: #8E489B;
-}
-
-a:hover {
-    color: rgb(160, 208, 224);
-}
-
-main[data-v-6fa21c55] {
+main[data-v-bba67843] {
     background-color: var(--black);
     color: var(--white);
 }
-h1[data-v-6fa21c55] {
+h1[data-v-bba67843] {
     line-height: 1.2em;
     margin-top: 3em;
 }
-h2[data-v-6fa21c55] {
+h2[data-v-bba67843] {
     border-bottom: 2px solid var(--white);
     color: var(--white);
     margin-bottom: 2em;
     padding: 20px 10px;
     text-align: center;
 }
-.aspect[data-v-6fa21c55] {
+.aspect[data-v-bba67843] {
     background-color: var(--dark);
     border-radius: 1em;
     border: 2px solid var(--ardc-blue);
@@ -185,7 +149,7 @@ h2[data-v-6fa21c55] {
     padding-right: 3em;
     padding-top: 1em;
 }
-.overall-progress[data-v-6fa21c55] {
+.overall-progress[data-v-bba67843] {
     background-color: #eeeeee;
     border-radius: 1em;
     color: var(--dark);

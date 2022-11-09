@@ -1,4 +1,4 @@
-import { D as ref, E as computed } from "./chunk-64f4e639.js";
+import { G as ref, H as computed } from "./chunk-ef5fba30.js";
 const state = ref({
   software: ["v0.1", "v0.2"],
   data: ["v0.1", "v0.2"]

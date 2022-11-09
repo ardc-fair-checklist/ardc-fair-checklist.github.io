@@ -19,17 +19,22 @@ textarea[data-v-9ef958c9] {
     text-align: center;
 }
 
-a[data-v-66650a08] {
+a[data-v-10224143] {
     text-underline-offset: 0.3em;
-    color: rgb(60, 116, 134);
+    color: #71caff;
 }
-a[data-v-66650a08]:visited {
-    color: #721d81;
+a[data-v-10224143]:hover {
+    color: var(--white);
 }
-a[data-v-66650a08]:hover {
-    color: rgb(113, 117, 119);
+
+a[data-v-16a4578b] {
+    text-underline-offset: 0.3em;
+    color: #144e70;
 }
-.banner[data-v-66650a08] {
+a[data-v-16a4578b]:hover {
+    color: var(--black);
+}
+.banner[data-v-16a4578b] {
     background-color: lightgoldenrodyellow;
     border-radius: 0.5em;
     box-sizing: border-box;
@@ -137,64 +142,23 @@ legend[data-v-65625207] {
     line-height: 1.6em;
     font-size: 1.17em;
 }
-:root {
-    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
 
-    color-scheme: light dark;
-    color: rgba(255, 255, 255, 0.87);
-
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
-
-    box-sizing: border-box;
-    background-color: var(--black);
-    margin: 0;
-}
-
-#app {
-    min-width: 30em;
-    max-width: 50em;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 3em;
-    padding-right: 3em;
-}
-
-a {
-    text-underline-offset: 0.3em;
-    color: rgb(95, 192, 224);
-}
-
-a:visited {
-    color: #8E489B;
-}
-
-a:hover {
-    color: rgb(160, 208, 224);
-}
-
-main[data-v-f5c4cbdd] {
+main[data-v-35b4bb4d] {
     background-color: var(--black);
     color: var(--white);
 }
-h1[data-v-f5c4cbdd] {
+h1[data-v-35b4bb4d] {
     line-height: 1.2em;
     margin-top: 3em;
 }
-h2[data-v-f5c4cbdd] {
+h2[data-v-35b4bb4d] {
     border-bottom: 2px solid var(--white);
     color: var(--white);
     margin-bottom: 2em;
     padding: 20px 10px;
     text-align: center;
 }
-.aspect[data-v-f5c4cbdd] {
+.aspect[data-v-35b4bb4d] {
     background-color: var(--dark);
     border-radius: 1em;
     border: 2px solid var(--ardc-purple);
@@ -205,7 +169,7 @@ h2[data-v-f5c4cbdd] {
     padding-right: 3em;
     padding-top: 1em;
 }
-.overall-progress[data-v-f5c4cbdd] {
+.overall-progress[data-v-35b4bb4d] {
     background-color: #eeeeee;
     border-radius: 1em;
     color: var(--dark);

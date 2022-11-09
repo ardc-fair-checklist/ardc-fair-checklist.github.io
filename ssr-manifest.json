@@ -3,23 +3,28 @@
   "renderer/_default.page.client.ts": [],
   "renderer/_error.page.vue?vue&type=script&setup=true&lang.ts": [],
   "renderer/_error.page.vue": [],
-  "pages/data/style.css": [],
   "pages/data/index.page.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/data/index.page.vue": [],
+  "pages/index/Footer.vue?vue&type=style&index=0&scoped=616712ff&lang.css": [],
   "pages/index/Footer.vue": [],
-  "pages/index/style.css": [],
+  "pages/index/Link.vue?vue&type=script&setup=true&lang.ts": [],
+  "pages/index/Link.vue?vue&type=style&index=0&scoped=99a0f5a5&lang.css": [],
+  "pages/index/Link.vue": [],
   "pages/index/index.page.vue?vue&type=script&setup=true&lang.ts": [],
+  "pages/index/index.page.vue?vue&type=style&index=0&scoped=c6cc9b49&lang.css": [],
   "pages/index/index.page.vue": [],
-  "pages/software/style.css": [],
   "pages/software/index.page.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/software/index.page.vue": [],
   "pages/data/v0.1/index.page.vue": [],
   "pages/data/v0.2/store.ts": [],
   "pages/data/v0.2/BannerVersions.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/data/v0.2/BannerVersions.vue?vue&type=style&index=0&scoped=9cfb228b&lang.css": [],
+  "pages/data/v0.2/BannerVersions.vue?vue&type=style&index=0&scoped=338506a9&lang.css": [],
   "pages/data/v0.2/BannerVersions.vue": [],
   "pages/data/v0.2/Footer.vue?vue&type=style&index=0&scoped=140da7b6&lang.css": [],
   "pages/data/v0.2/Footer.vue": [],
+  "pages/data/v0.2/Link.vue?vue&type=script&setup=true&lang.ts": [],
+  "pages/data/v0.2/Link.vue?vue&type=style&index=0&scoped=865de604&lang.css": [],
+  "pages/data/v0.2/Link.vue": [],
   "pages/data/v0.2/ProgressBar.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/data/v0.2/ProgressBar.vue?vue&type=style&index=0&scoped=90dbaf62&lang.css": [],
   "pages/data/v0.2/ProgressBar.vue": [],
@@ -29,10 +34,9 @@
   "pages/data/v0.2/Question.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/data/v0.2/Question.vue?vue&type=style&index=0&scoped=9176ba0a&lang.css": [],
   "pages/data/v0.2/Question.vue": [],
-  "pages/data/v0.2/style.css": [],
   "pages/data/v0.2/questions.json": [],
   "pages/data/v0.2/index.page.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/data/v0.2/index.page.vue?vue&type=style&index=0&scoped=6fa21c55&lang.css": [],
+  "pages/data/v0.2/index.page.vue?vue&type=style&index=0&scoped=bba67843&lang.css": [],
   "pages/data/v0.2/index.page.vue": [],
   "pages/software/v0.1/index.page.vue": [],
   "pages/software/v0.2/store.ts": [],
@@ -42,8 +46,11 @@
   "pages/software/v0.2/BannerParams.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/software/v0.2/BannerParams.vue?vue&type=style&index=0&scoped=24347cdb&lang.css": [],
   "pages/software/v0.2/BannerParams.vue": [],
+  "pages/software/v0.2/Link.vue?vue&type=script&setup=true&lang.ts": [],
+  "pages/software/v0.2/Link.vue?vue&type=style&index=0&scoped=10224143&lang.css": [],
+  "pages/software/v0.2/Link.vue": [],
   "pages/software/v0.2/BannerVersions.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/software/v0.2/BannerVersions.vue?vue&type=style&index=0&scoped=66650a08&lang.css": [],
+  "pages/software/v0.2/BannerVersions.vue?vue&type=style&index=0&scoped=16a4578b&lang.css": [],
   "pages/software/v0.2/BannerVersions.vue": [],
   "pages/software/v0.2/Footer.vue?vue&type=style&index=0&scoped=9483011b&lang.css": [],
   "pages/software/v0.2/Footer.vue": [],
@@ -56,10 +63,9 @@
   "pages/software/v0.2/Question.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/software/v0.2/Question.vue?vue&type=style&index=0&scoped=65625207&lang.css": [],
   "pages/software/v0.2/Question.vue": [],
-  "pages/software/v0.2/style.css": [],
   "pages/software/v0.2/questions.json": [],
   "pages/software/v0.2/index.page.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/software/v0.2/index.page.vue?vue&type=style&index=0&scoped=f5c4cbdd&lang.css": [],
+  "pages/software/v0.2/index.page.vue?vue&type=style&index=0&scoped=35b4bb4d&lang.css": [],
   "pages/software/v0.2/index.page.vue": [],
   "node_modules/vite-plugin-ssr/dist/esm/utils/isPlainObject.js": [],
   "node_modules/vite-plugin-ssr/dist/esm/utils/stringifyStringArray.js": [],
@@ -112,63 +118,59 @@
   "node_modules/vite-plugin-ssr/dist/esm/client/router/history.js": [],
   "node_modules/vite-plugin-ssr/dist/esm/client/router/useClientRouter.js": [],
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": [],
-  "index.page.b5deaefc.js": [
-    "/ssg/assets/index.page.0637b063.css",
-    "/ssg/assets/colors.00528b93.css"
+  "index.page.93fa521a.js": [
+    "/ssg/assets/global.35c43813.css"
   ],
-  "index.page.8027b2ee.js": [],
-  "index.page.34ff3956.js": [
-    "/ssg/assets/index.page.2e6b7ce2.css",
-    "/ssg/assets/colors.00528b93.css"
+  "index.page.c0c84b33.js": [],
+  "index.page.41b35fd1.js": [
+    "/ssg/assets/index.page.d22db2a3.css",
+    "/ssg/assets/global.35c43813.css"
   ],
-  "index.page.5e83c3b5.js": [
-    "/ssg/assets/index.page.de17bc50.css"
+  "index.page.33e81245.js": [
+    "/ssg/assets/index.page.3d0e0c25.css",
+    "/ssg/assets/global.35c43813.css"
   ],
-  "index.page.38dde0e3.js": [
-    "/ssg/assets/index.page.0637b063.css",
-    "/ssg/assets/colors.00528b93.css"
+  "index.page.6bf7a3d4.js": [
+    "/ssg/assets/global.35c43813.css"
   ],
-  "index.page.43c9f94e.js": [],
-  "index.page.bc72163a.js": [
-    "/ssg/assets/index.page.ab0fcbe9.css",
-    "/ssg/assets/colors.00528b93.css"
+  "index.page.fa7127ef.js": [],
+  "index.page.9d6fd3d0.js": [
+    "/ssg/assets/index.page.39734fb3.css",
+    "/ssg/assets/global.35c43813.css"
   ],
-  "_error.page.d34b3213.js": [],
-  "_default.page.client.83daa7ec.js": [],
+  "_error.page.45d84ce3.js": [],
+  "_default.page.client.4c3c3a68.js": [],
   "virtual:vite-plugin-ssr:pageFiles:client:server-routing": [],
   "node_modules/vite-plugin-ssr/dist/esm/client/pageFiles.js": [],
   "node_modules/vite-plugin-ssr/dist/esm/client/releasePageContext.js": [],
   "node_modules/vite-plugin-ssr/dist/esm/client/getPageContext.js": [],
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": [],
   "node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js": [
-    "/ssg/assets/chunk-f2019d91.js"
+    "/ssg/assets/chunk-cc5d185f.js"
   ],
   "renderer/usePageContext.ts": [
-    "/ssg/assets/chunk-214b0f2c.js"
+    "/ssg/assets/chunk-43f5a3e9.js"
   ],
   "node_modules/@vue/shared/dist/shared.esm-bundler.js": [
-    "/ssg/assets/chunk-64f4e639.js"
+    "/ssg/assets/chunk-ef5fba30.js"
   ],
   "node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js": [
-    "/ssg/assets/chunk-64f4e639.js"
+    "/ssg/assets/chunk-ef5fba30.js"
   ],
   "node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js": [
-    "/ssg/assets/chunk-64f4e639.js"
-  ],
-  "../../../../../netherlands-escience-center-logo.svg": [
-    "/ssg/assets/chunk-a88020e5.js"
-  ],
-  "../../../../../ardc-logo.svg": [
-    "/ssg/assets/chunk-a88020e5.js"
-  ],
-  "renderer/Link.vue?vue&type=script&setup=true&lang.ts": [
-    "/ssg/assets/chunk-a88020e5.js"
+    "/ssg/assets/chunk-ef5fba30.js"
   ],
   "\u0000plugin-vue:export-helper": [
     "/ssg/assets/chunk-de093346.js"
   ],
+  "../../../../../netherlands-escience-center-logo.svg": [
+    "/ssg/assets/chunk-5b637298.js"
+  ],
+  "../../../../../ardc-logo.svg": [
+    "/ssg/assets/chunk-5b637298.js"
+  ],
   "renderer/versions.ts": [
-    "/ssg/assets/chunk-c37fdac6.js"
+    "/ssg/assets/chunk-2d906bec.js"
   ],
   "node_modules/vite-plugin-ssr/dist/esm/utils/createErrorWithCleanStackTrace.js": [
     "/ssg/assets/chunk-806f2279.js"

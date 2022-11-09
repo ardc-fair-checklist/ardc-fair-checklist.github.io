@@ -1,9 +1,9 @@
-import { D as ref, E as computed, d as defineComponent, u as openBlock, t as createElementBlock, v as createBaseVNode, x as createTextVNode, G as toDisplayString, I as pushScopeId, J as popScopeId, o as onMounted, C as unref, H as createCommentVNode, F as Fragment, K as renderList, L as createBlock, y as createVNode, z as withCtx } from "../../../chunk-64f4e639.js";
+import { G as ref, H as computed, d as defineComponent, u as openBlock, t as createElementBlock, v as createBaseVNode, C as createTextVNode, I as toDisplayString, x as pushScopeId, y as popScopeId, o as onMounted, B as unref, J as createCommentVNode, z as renderSlot, A as normalizeClass, D as createVNode, E as withCtx, F as Fragment, K as renderList, L as createBlock } from "../../../chunk-ef5fba30.js";
 import { _ as _export_sfc } from "../../../chunk-de093346.js";
-import { l as latest } from "../../../chunk-c37fdac6.js";
-import { u as usePageContext } from "../../../chunk-214b0f2c.js";
-/* empty css                       */import { _ as _imports_0, a as _imports_1, b as _sfc_main$8 } from "../../../chunk-a88020e5.js";
-import { u as useCssVars, w as withKeys } from "../../../chunk-f2019d91.js";
+import { l as latest } from "../../../chunk-2d906bec.js";
+import { u as usePageContext } from "../../../chunk-43f5a3e9.js";
+/* empty css                       */import { _ as _imports_0, a as _imports_1 } from "../../../chunk-5b637298.js";
+import { u as useCssVars, w as withKeys } from "../../../chunk-cc5d185f.js";
 const state = ref({
   bannerMessageParams: "",
   compliance: [],
@@ -97,7 +97,7 @@ const progress = computed(() => {
 });
 const _withScopeId$3 = (n) => (pushScopeId("data-v-9ef958c9"), n = n(), popScopeId(), n);
 const _hoisted_1$7 = { class: "badge" };
-const _hoisted_2$6 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createBaseVNode("h2", null, "Get the badge", -1));
+const _hoisted_2$5 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createBaseVNode("h2", null, "Get the badge", -1));
 const _hoisted_3$5 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createBaseVNode("h3", null, "Markdown", -1));
 const _hoisted_4$2 = { for: "textarea-markdown-badge" };
 const _hoisted_5$1 = {
@@ -119,7 +119,7 @@ const _hoisted_11 = {
   wrap: "off",
   id: "textarea-html-badge"
 };
-const _sfc_main$7 = /* @__PURE__ */ defineComponent({
+const _sfc_main$8 = /* @__PURE__ */ defineComponent({
   __name: "Badge",
   setup(__props) {
     const APP_BASE_URL = `https://ardc-fair-checklist.github.io${"/ssg/"}`;
@@ -134,7 +134,7 @@ const _sfc_main$7 = /* @__PURE__ */ defineComponent({
     };
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("div", _hoisted_1$7, [
-        _hoisted_2$6,
+        _hoisted_2$5,
         _hoisted_3$5,
         createBaseVNode("label", _hoisted_4$2, [
           createTextVNode(" The snippet for the FAIRness badge in Markdown format: "),
@@ -155,12 +155,12 @@ const _sfc_main$7 = /* @__PURE__ */ defineComponent({
   }
 });
 const Badge_vue_vue_type_style_index_0_scoped_9ef958c9_lang = "";
-const Badge = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["__scopeId", "data-v-9ef958c9"]]);
+const Badge = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["__scopeId", "data-v-9ef958c9"]]);
 const _hoisted_1$6 = {
   key: 0,
   class: "banner"
 };
-const _sfc_main$6 = /* @__PURE__ */ defineComponent({
+const _sfc_main$7 = /* @__PURE__ */ defineComponent({
   __name: "BannerParams",
   setup(__props) {
     onMounted(() => {
@@ -232,12 +232,26 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
   }
 });
 const BannerParams_vue_vue_type_style_index_0_scoped_24347cdb_lang = "";
-const BannerParams = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__scopeId", "data-v-24347cdb"]]);
+const BannerParams = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["__scopeId", "data-v-24347cdb"]]);
+const _sfc_main$6 = /* @__PURE__ */ defineComponent({
+  __name: "Link",
+  setup(__props) {
+    const pageContext = usePageContext();
+    return (_ctx, _cache) => {
+      return openBlock(), createElementBlock("a", {
+        class: normalizeClass({ active: unref(pageContext).urlPathname === _ctx.$attrs.href })
+      }, [
+        renderSlot(_ctx.$slots, "default", {}, void 0, true)
+      ], 2);
+    };
+  }
+});
+const Link_vue_vue_type_style_index_0_scoped_10224143_lang = "";
+const Link = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__scopeId", "data-v-10224143"]]);
 const _hoisted_1$5 = {
   key: 0,
   class: "banner"
 };
-const _hoisted_2$5 = ["href"];
 const _sfc_main$5 = /* @__PURE__ */ defineComponent({
   __name: "BannerVersions",
   setup(__props) {
@@ -258,14 +272,19 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
     return (_ctx, _cache) => {
       return unref(showBannerMessageVersions) ? (openBlock(), createElementBlock("div", _hoisted_1$5, [
         createTextVNode(" A newer version of the checklist is available at "),
-        createBaseVNode("a", { href: unref(link) }, toDisplayString(unref(link)), 9, _hoisted_2$5),
+        createVNode(Link, { href: unref(link) }, {
+          default: withCtx(() => [
+            createTextVNode(toDisplayString(unref(link)), 1)
+          ]),
+          _: 1
+        }, 8, ["href"]),
         createTextVNode(", consider upgrading. ")
       ])) : createCommentVNode("", true);
     };
   }
 });
-const BannerVersions_vue_vue_type_style_index_0_scoped_66650a08_lang = "";
-const BannerVersions = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-66650a08"]]);
+const BannerVersions_vue_vue_type_style_index_0_scoped_16a4578b_lang = "";
+const BannerVersions = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-16a4578b"]]);
 const Footer_vue_vue_type_style_index_0_scoped_9483011b_lang = "";
 const _sfc_main$4 = {};
 const _withScopeId$2 = (n) => (pushScopeId("data-v-9483011b"), n = n(), popScopeId(), n);
@@ -400,7 +419,6 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
 });
 const Question_vue_vue_type_style_index_0_scoped_65625207_lang = "";
 const Question = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-65625207"]]);
-const style = "";
 const questions = [
   {
     answers: [
@@ -905,7 +923,7 @@ const questions = [
     text: "If they exist, how much have domain-relevant community standards been considered in writing the software? it is linked to I:q0"
   }
 ];
-const _withScopeId = (n) => (pushScopeId("data-v-f5c4cbdd"), n = n(), popScopeId(), n);
+const _withScopeId = (n) => (pushScopeId("data-v-35b4bb4d"), n = n(), popScopeId(), n);
 const _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("h1", null, "ARDC FAIR for software self-assessment checklist", -1));
 const _hoisted_2 = { class: "aspect" };
 const _hoisted_3 = { class: "overall-progress" };
@@ -927,7 +945,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
         _hoisted_1,
         createBaseVNode("p", null, [
           createTextVNode("Switch to the checklist for "),
-          createVNode(_sfc_main$8, { href: linkToDataChecklist }, {
+          createVNode(Link, { href: linkToDataChecklist }, {
             default: withCtx(() => [
               createTextVNode("data")
             ]),
@@ -982,8 +1000,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const index_page_vue_vue_type_style_index_0_scoped_f5c4cbdd_lang = "";
-const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-f5c4cbdd"]]);
+const index_page_vue_vue_type_style_index_0_scoped_35b4bb4d_lang = "";
+const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-35b4bb4d"]]);
 export {
   index_page as default
 };
