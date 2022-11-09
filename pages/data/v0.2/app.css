@@ -13,3 +13,14 @@
     padding-left: 3em;
     padding-right: 3em;
 }
+
+@media screen and (max-width: 41.5em){
+    :root {
+        font-size: 90%;
+    }
+
+    #app {
+        padding-left: 0.25em;
+        padding-right: 0.25em;
+    }
+}
