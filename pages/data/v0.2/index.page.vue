@@ -79,8 +79,16 @@ h2 {
     padding-right: 3em;
     padding-top: 1em;
 }
+
+@media screen and (max-width: 41.5em) {
+    .aspect {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+
 .overall-progress {
-    background-color: #eeeeee;
+    background-color: var(--white);
     border-radius: 0.5em;
     color: var(--dark);
     line-height: 1.6em;
