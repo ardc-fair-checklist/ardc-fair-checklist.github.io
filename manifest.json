@@ -30,7 +30,7 @@
     ],
     "css": [
       "assets/index.page.ec3ad890.css",
-      "assets/global.ed02dee8.css"
+      "assets/global.cf4e69e7.css"
     ]
   },
   "pages/index/index.page.vue": {
@@ -46,7 +46,7 @@
     ],
     "css": [
       "assets/index.page.853164d8.css",
-      "assets/global.ed02dee8.css"
+      "assets/global.cf4e69e7.css"
     ]
   },
   "pages/software/index.page.vue": {
@@ -60,7 +60,7 @@
     ],
     "css": [
       "assets/index.page.21e1d615.css",
-      "assets/global.ed02dee8.css"
+      "assets/global.cf4e69e7.css"
     ]
   },
   "pages/data/v0.1/index.page.vue": {
@@ -88,7 +88,7 @@
     ],
     "css": [
       "assets/index.page.1f1e9c72.css",
-      "assets/global.ed02dee8.css"
+      "assets/global.cf4e69e7.css"
     ]
   },
   "pages/software/v0.1/index.page.vue": {
@@ -116,7 +116,7 @@
     ],
     "css": [
       "assets/index.page.a365e4c8.css",
-      "assets/global.ed02dee8.css"
+      "assets/global.cf4e69e7.css"
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
@@ -192,7 +192,7 @@
     "src": "pages/data/index.page.css"
   },
   "global.css": {
-    "file": "assets/global.ed02dee8.css",
+    "file": "assets/global.cf4e69e7.css",
     "src": "global.css"
   },
   "pages/index/index.page.css": {
