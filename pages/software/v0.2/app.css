@@ -1,7 +1,6 @@
 :root {
     background-image: linear-gradient(165deg, black 55%, var(--ardc-purple) 110%);
     background-attachment: fixed;
-    font-size: 112%;
     height: 100vh;
     width: 100%;
 }
@@ -11,9 +10,19 @@
     max-width: 50em;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 3em;
-    padding-right: 3em;
 }
+
+@media screen and (min-width: 70em){
+    :root {
+        font-size: 112%;
+    }
+
+    #app {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+}
+
 
 @media screen and (max-width: 70em){
     :root {
