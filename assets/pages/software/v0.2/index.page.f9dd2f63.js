@@ -248,6 +248,7 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
 });
 const Link_vue_vue_type_style_index_0_scoped_10224143_lang = "";
 const Link = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__scopeId", "data-v-10224143"]]);
+const app = "";
 const _hoisted_1$5 = {
   key: 0,
   class: "banner"
@@ -283,8 +284,8 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const BannerVersions_vue_vue_type_style_index_0_scoped_16a4578b_lang = "";
-const BannerVersions = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-16a4578b"]]);
+const BannerVersions_vue_vue_type_style_index_0_scoped_996882b3_lang = "";
+const BannerVersions = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-996882b3"]]);
 const Footer_vue_vue_type_style_index_0_scoped_9483011b_lang = "";
 const _sfc_main$4 = {};
 const _withScopeId$2 = (n) => (pushScopeId("data-v-9483011b"), n = n(), popScopeId(), n);
@@ -923,7 +924,7 @@ const questions = [
     text: "If they exist, how much have domain-relevant community standards been considered in writing the software? it is linked to I:q0"
   }
 ];
-const _withScopeId = (n) => (pushScopeId("data-v-35b4bb4d"), n = n(), popScopeId(), n);
+const _withScopeId = (n) => (pushScopeId("data-v-07f58044"), n = n(), popScopeId(), n);
 const _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("h1", null, "ARDC FAIR for software self-assessment checklist", -1));
 const _hoisted_2 = { class: "aspect" };
 const _hoisted_3 = { class: "overall-progress" };
@@ -1000,8 +1001,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const index_page_vue_vue_type_style_index_0_scoped_35b4bb4d_lang = "";
-const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-35b4bb4d"]]);
+const index_page_vue_vue_type_style_index_0_scoped_07f58044_lang = "";
+const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-07f58044"]]);
 export {
   index_page as default
 };

@@ -75,6 +75,7 @@ const progress = computed(() => {
     overall: `${100 * scores.reduce(summation, 0) / nPointsMax.value.total}%`
   };
 });
+const app = "";
 const _hoisted_1$5 = {
   key: 0,
   class: "banner"
@@ -106,8 +107,8 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const BannerVersions_vue_vue_type_style_index_0_scoped_338506a9_lang = "";
-const BannerVersions = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__scopeId", "data-v-338506a9"]]);
+const BannerVersions_vue_vue_type_style_index_0_scoped_2f07734b_lang = "";
+const BannerVersions = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__scopeId", "data-v-2f07734b"]]);
 const Footer_vue_vue_type_style_index_0_scoped_140da7b6_lang = "";
 const _sfc_main$5 = {};
 const _withScopeId$2 = (n) => (pushScopeId("data-v-140da7b6"), n = n(), popScopeId(), n);
@@ -612,7 +613,7 @@ const questions = [
     text: "How much provenance information has been captured to facilitate data reuse?"
   }
 ];
-const _withScopeId = (n) => (pushScopeId("data-v-bba67843"), n = n(), popScopeId(), n);
+const _withScopeId = (n) => (pushScopeId("data-v-68f8b1f8"), n = n(), popScopeId(), n);
 const _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("h1", null, "ARDC FAIR for data self-assessment checklist", -1));
 const _hoisted_2 = { class: "aspect" };
 const _hoisted_3 = { class: "overall-progress" };
@@ -687,8 +688,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const index_page_vue_vue_type_style_index_0_scoped_bba67843_lang = "";
-const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-bba67843"]]);
+const index_page_vue_vue_type_style_index_0_scoped_68f8b1f8_lang = "";
+const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-68f8b1f8"]]);
 export {
   index_page as default
 };

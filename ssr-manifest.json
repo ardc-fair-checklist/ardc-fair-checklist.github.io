@@ -3,6 +3,7 @@
   "renderer/_default.page.client.ts": [],
   "renderer/_error.page.vue?vue&type=script&setup=true&lang.ts": [],
   "renderer/_error.page.vue": [],
+  "pages/data/app.css": [],
   "pages/data/index.page.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/data/index.page.vue": [],
   "pages/index/Footer.vue?vue&type=style&index=0&scoped=616712ff&lang.css": [],
@@ -10,15 +11,18 @@
   "pages/index/Link.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/index/Link.vue?vue&type=style&index=0&scoped=99a0f5a5&lang.css": [],
   "pages/index/Link.vue": [],
+  "pages/index/app.css": [],
   "pages/index/index.page.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/index/index.page.vue?vue&type=style&index=0&scoped=c6cc9b49&lang.css": [],
+  "pages/index/index.page.vue?vue&type=style&index=0&scoped=190a69f5&lang.css": [],
   "pages/index/index.page.vue": [],
+  "pages/software/app.css": [],
   "pages/software/index.page.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/software/index.page.vue": [],
   "pages/data/v0.1/index.page.vue": [],
   "pages/data/v0.2/store.ts": [],
+  "pages/data/v0.2/app.css": [],
   "pages/data/v0.2/BannerVersions.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/data/v0.2/BannerVersions.vue?vue&type=style&index=0&scoped=338506a9&lang.css": [],
+  "pages/data/v0.2/BannerVersions.vue?vue&type=style&index=0&scoped=2f07734b&lang.css": [],
   "pages/data/v0.2/BannerVersions.vue": [],
   "pages/data/v0.2/Footer.vue?vue&type=style&index=0&scoped=140da7b6&lang.css": [],
   "pages/data/v0.2/Footer.vue": [],
@@ -36,7 +40,7 @@
   "pages/data/v0.2/Question.vue": [],
   "pages/data/v0.2/questions.json": [],
   "pages/data/v0.2/index.page.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/data/v0.2/index.page.vue?vue&type=style&index=0&scoped=bba67843&lang.css": [],
+  "pages/data/v0.2/index.page.vue?vue&type=style&index=0&scoped=68f8b1f8&lang.css": [],
   "pages/data/v0.2/index.page.vue": [],
   "pages/software/v0.1/index.page.vue": [],
   "pages/software/v0.2/store.ts": [],
@@ -49,8 +53,9 @@
   "pages/software/v0.2/Link.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/software/v0.2/Link.vue?vue&type=style&index=0&scoped=10224143&lang.css": [],
   "pages/software/v0.2/Link.vue": [],
+  "pages/software/v0.2/app.css": [],
   "pages/software/v0.2/BannerVersions.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/software/v0.2/BannerVersions.vue?vue&type=style&index=0&scoped=16a4578b&lang.css": [],
+  "pages/software/v0.2/BannerVersions.vue?vue&type=style&index=0&scoped=996882b3&lang.css": [],
   "pages/software/v0.2/BannerVersions.vue": [],
   "pages/software/v0.2/Footer.vue?vue&type=style&index=0&scoped=9483011b&lang.css": [],
   "pages/software/v0.2/Footer.vue": [],
@@ -65,7 +70,7 @@
   "pages/software/v0.2/Question.vue": [],
   "pages/software/v0.2/questions.json": [],
   "pages/software/v0.2/index.page.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/software/v0.2/index.page.vue?vue&type=style&index=0&scoped=35b4bb4d&lang.css": [],
+  "pages/software/v0.2/index.page.vue?vue&type=style&index=0&scoped=07f58044&lang.css": [],
   "pages/software/v0.2/index.page.vue": [],
   "node_modules/vite-plugin-ssr/dist/esm/utils/isPlainObject.js": [],
   "node_modules/vite-plugin-ssr/dist/esm/utils/stringifyStringArray.js": [],
@@ -118,25 +123,27 @@
   "node_modules/vite-plugin-ssr/dist/esm/client/router/history.js": [],
   "node_modules/vite-plugin-ssr/dist/esm/client/router/useClientRouter.js": [],
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": [],
-  "index.page.93fa521a.js": [
-    "/ssg/assets/global.35c43813.css"
+  "index.page.5af12ed4.js": [
+    "/ssg/assets/index.page.ec3ad890.css",
+    "/ssg/assets/global.6c3be33d.css"
   ],
   "index.page.c0c84b33.js": [],
-  "index.page.41b35fd1.js": [
-    "/ssg/assets/index.page.d22db2a3.css",
-    "/ssg/assets/global.35c43813.css"
+  "index.page.f0f15a20.js": [
+    "/ssg/assets/index.page.dd0585f1.css",
+    "/ssg/assets/global.6c3be33d.css"
   ],
-  "index.page.33e81245.js": [
-    "/ssg/assets/index.page.3d0e0c25.css",
-    "/ssg/assets/global.35c43813.css"
+  "index.page.b80310da.js": [
+    "/ssg/assets/index.page.853164d8.css",
+    "/ssg/assets/global.6c3be33d.css"
   ],
-  "index.page.6bf7a3d4.js": [
-    "/ssg/assets/global.35c43813.css"
+  "index.page.1511dbe0.js": [
+    "/ssg/assets/index.page.21e1d615.css",
+    "/ssg/assets/global.6c3be33d.css"
   ],
   "index.page.fa7127ef.js": [],
-  "index.page.9d6fd3d0.js": [
-    "/ssg/assets/index.page.39734fb3.css",
-    "/ssg/assets/global.35c43813.css"
+  "index.page.f9dd2f63.js": [
+    "/ssg/assets/index.page.c7a0a8ca.css",
+    "/ssg/assets/global.6c3be33d.css"
   ],
   "_error.page.45d84ce3.js": [],
   "_default.page.client.4c3c3a68.js": [],

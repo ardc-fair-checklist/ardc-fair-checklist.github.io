@@ -41,7 +41,8 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
 });
 const Link_vue_vue_type_style_index_0_scoped_99a0f5a5_lang = "";
 const Link = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-99a0f5a5"]]);
-const _withScopeId = (n) => (pushScopeId("data-v-c6cc9b49"), n = n(), popScopeId(), n);
+const app = "";
+const _withScopeId = (n) => (pushScopeId("data-v-190a69f5"), n = n(), popScopeId(), n);
 const _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("h1", null, "Home", -1));
 const _sfc_main = /* @__PURE__ */ defineComponent({
   __name: "index.page",
@@ -73,8 +74,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const index_page_vue_vue_type_style_index_0_scoped_c6cc9b49_lang = "";
-const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-c6cc9b49"]]);
+const index_page_vue_vue_type_style_index_0_scoped_190a69f5_lang = "";
+const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-190a69f5"]]);
 export {
   index_page as default
 };

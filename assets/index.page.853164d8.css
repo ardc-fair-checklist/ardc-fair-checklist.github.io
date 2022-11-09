@@ -29,12 +29,20 @@ a[data-v-99a0f5a5] {
 a[data-v-99a0f5a5]:hover {
     color: var(--white);
 }
+#app {
+    min-width: 30em;
+    max-width: 50em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3em;
+    padding-right: 3em;
+}
 
-main[data-v-c6cc9b49] {
+main[data-v-190a69f5] {
     background-color: var(--black);
     color: var(--white);
 }
-h1[data-v-c6cc9b49] {
+h1[data-v-190a69f5] {
     line-height: 1.2em;
     margin-top: 3em;
 }
