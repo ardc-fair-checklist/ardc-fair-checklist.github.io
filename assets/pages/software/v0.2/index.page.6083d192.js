@@ -3,7 +3,7 @@ import { _ as _export_sfc } from "../../../chunk-de093346.js";
 import { l as latest } from "../../../chunk-2d906bec.js";
 import { u as usePageContext } from "../../../chunk-43f5a3e9.js";
 /* empty css                       */import { _ as _imports_0, a as _imports_1 } from "../../../chunk-5b637298.js";
-import { u as useCssVars, w as withKeys } from "../../../chunk-cc5d185f.js";
+import { u as useCssVars, w as withKeys, a as withModifiers } from "../../../chunk-2457fd90.js";
 const state = ref({
   bannerMessageParams: "",
   compliance: [],
@@ -105,7 +105,7 @@ const _hoisted_5$1 = {
   wrap: "off",
   id: "textarea-markdown-badge"
 };
-const _hoisted_6 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createBaseVNode("h3", null, "ReStructured Text", -1));
+const _hoisted_6$1 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createBaseVNode("h3", null, "ReStructured Text", -1));
 const _hoisted_7 = { for: "textarea-rst-badge" };
 const _hoisted_8 = {
   readonly: "",
@@ -140,7 +140,7 @@ const _sfc_main$8 = /* @__PURE__ */ defineComponent({
           createTextVNode(" The snippet for the FAIRness badge in Markdown format: "),
           createBaseVNode("textarea", _hoisted_5$1, toDisplayString(badge.markdown.value), 1)
         ]),
-        _hoisted_6,
+        _hoisted_6$1,
         createBaseVNode("label", _hoisted_7, [
           createTextVNode(" The snippet for the FAIRness badge in ReStructured Text format: "),
           createBaseVNode("textarea", _hoisted_8, toDisplayString(badge.rst.value), 1)
@@ -332,11 +332,12 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
 });
 const ProgressBar_vue_vue_type_style_index_0_scoped_68faa8df_lang = "";
 const ProgressBar = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-68faa8df"]]);
-const _hoisted_1$2 = { class: "answer-radiobutton" };
-const _hoisted_2$2 = ["id", "value", "checked"];
-const _hoisted_3$2 = { class: "answer-points" };
-const _hoisted_4$1 = { class: "answer-text" };
-const _hoisted_5 = ["for"];
+const _hoisted_1$2 = ["aria-labelledby"];
+const _hoisted_2$2 = { class: "answer-radiobutton" };
+const _hoisted_3$2 = ["id", "value", "checked"];
+const _hoisted_4$1 = { class: "answer-points" };
+const _hoisted_5 = { class: "answer-text" };
+const _hoisted_6 = ["for", "id"];
 const _sfc_main$2 = /* @__PURE__ */ defineComponent({
   __name: "Answer",
   props: {
@@ -348,35 +349,39 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("div", {
         class: "answer",
+        "aria-labelledby": `label-${__props.answer.id}`,
         onClick: _cache[0] || (_cache[0] = (...args) => __props.onClick && __props.onClick(...args)),
-        onKeyup: _cache[1] || (_cache[1] = withKeys(
+        onKeydown: _cache[1] || (_cache[1] = withKeys(withModifiers(
           (...args) => __props.onClick && __props.onClick(...args),
-          ["space"]
-        )),
-        tabindex: "0"
+          ["prevent", "stop"]
+        ), ["space"])),
+        tabindex: "0",
+        role: "radio"
       }, [
-        createBaseVNode("div", _hoisted_1$2, [
+        createBaseVNode("div", _hoisted_2$2, [
           createBaseVNode("input", {
+            role: "presentation",
             type: "radio",
             id: __props.answer.id,
             value: __props.answer.id,
             checked: __props.isChecked,
-            role: "presentation",
-            tabindex: "-1"
-          }, null, 8, _hoisted_2$2)
+            tabindex: "-1",
+            "aria-label": ""
+          }, null, 8, _hoisted_3$2)
         ]),
-        createBaseVNode("div", _hoisted_3$2, " (+" + toDisplayString(__props.answer.score) + ") ", 1),
-        createBaseVNode("div", _hoisted_4$1, [
+        createBaseVNode("div", _hoisted_4$1, " (+" + toDisplayString(__props.answer.score) + ") ", 1),
+        createBaseVNode("div", _hoisted_5, [
           createBaseVNode("label", {
-            for: __props.answer.id
-          }, toDisplayString(__props.answer.text), 9, _hoisted_5)
+            for: __props.answer.id,
+            id: `label-${__props.answer.id}`
+          }, toDisplayString(__props.answer.text), 9, _hoisted_6)
         ])
-      ], 32);
+      ], 40, _hoisted_1$2);
     };
   }
 });
-const Answer_vue_vue_type_style_index_0_scoped_c10b8daf_lang = "";
-const Answer = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-c10b8daf"]]);
+const Answer_vue_vue_type_style_index_0_scoped_3339ce52_lang = "";
+const Answer = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-3339ce52"]]);
 const _hoisted_1$1 = { class: "question" };
 const _hoisted_2$1 = { class: "question-index shared" };
 const _hoisted_3$1 = { class: "shared" };
@@ -410,16 +415,16 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
               isChecked: unref(compliance)[__props.question.index] === answerIndex,
               key: answer.id,
               onClick: onClick(answerIndex),
-              onKeyup: withKeys(($event) => onClick(answerIndex), ["space"])
-            }, null, 8, ["answer", "isChecked", "onClick", "onKeyup"]);
+              onKeydown: withKeys(withModifiers(($event) => onClick(answerIndex), ["prevent", "stop"]), ["space"])
+            }, null, 8, ["answer", "isChecked", "onClick", "onKeydown"]);
           }), 128))
         ])
       ]);
     };
   }
 });
-const Question_vue_vue_type_style_index_0_scoped_65625207_lang = "";
-const Question = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-65625207"]]);
+const Question_vue_vue_type_style_index_0_scoped_e183013d_lang = "";
+const Question = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-e183013d"]]);
 const questions = [
   {
     answers: [
@@ -924,7 +929,7 @@ const questions = [
     text: "If they exist, how much have domain-relevant community standards been considered in writing the software? it is linked to I:q0"
   }
 ];
-const _withScopeId = (n) => (pushScopeId("data-v-07f58044"), n = n(), popScopeId(), n);
+const _withScopeId = (n) => (pushScopeId("data-v-531d30b8"), n = n(), popScopeId(), n);
 const _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("h1", null, "ARDC FAIR for software self-assessment checklist", -1));
 const _hoisted_2 = { class: "aspect" };
 const _hoisted_3 = { class: "overall-progress" };
@@ -1001,8 +1006,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const index_page_vue_vue_type_style_index_0_scoped_07f58044_lang = "";
-const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-07f58044"]]);
+const index_page_vue_vue_type_style_index_0_scoped_531d30b8_lang = "";
+const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-531d30b8"]]);
 export {
   index_page as default
 };

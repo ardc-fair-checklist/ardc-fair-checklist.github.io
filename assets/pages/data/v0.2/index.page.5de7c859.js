@@ -3,7 +3,7 @@ import { u as usePageContext } from "../../../chunk-43f5a3e9.js";
 import { G as ref, H as computed, d as defineComponent, o as onMounted, B as unref, u as openBlock, t as createElementBlock, C as createTextVNode, v as createBaseVNode, I as toDisplayString, J as createCommentVNode, x as pushScopeId, y as popScopeId, z as renderSlot, A as normalizeClass, F as Fragment, K as renderList, L as createBlock, D as createVNode, E as withCtx } from "../../../chunk-ef5fba30.js";
 /* empty css                       */import { _ as _export_sfc } from "../../../chunk-de093346.js";
 import { _ as _imports_0, a as _imports_1 } from "../../../chunk-5b637298.js";
-import { u as useCssVars, w as withKeys } from "../../../chunk-cc5d185f.js";
+import { u as useCssVars, w as withKeys, a as withModifiers } from "../../../chunk-2457fd90.js";
 const state = ref({
   compliance: [],
   questions: [],
@@ -187,11 +187,12 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
       return openBlock(), createElementBlock("div", {
         class: "answer",
         onClick: _cache[0] || (_cache[0] = (...args) => __props.onClick && __props.onClick(...args)),
-        onKeyup: _cache[1] || (_cache[1] = withKeys(
+        onKeydown: _cache[1] || (_cache[1] = withKeys(withModifiers(
           (...args) => __props.onClick && __props.onClick(...args),
-          ["space"]
-        )),
-        tabindex: "0"
+          ["prevent", "stop"]
+        ), ["space"])),
+        tabindex: "0",
+        role: "radio"
       }, [
         createBaseVNode("div", _hoisted_1$2, [
           createBaseVNode("input", {
@@ -200,7 +201,8 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
             value: __props.answer.id,
             checked: __props.isChecked,
             role: "presentation",
-            tabindex: "-1"
+            tabindex: "-1",
+            "aria-label": ""
           }, null, 8, _hoisted_2$2)
         ]),
         createBaseVNode("div", _hoisted_3$2, " (+" + toDisplayString(__props.answer.score) + ") ", 1),
@@ -213,8 +215,8 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const Answer_vue_vue_type_style_index_0_scoped_14000829_lang = "";
-const Answer = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-14000829"]]);
+const Answer_vue_vue_type_style_index_0_scoped_baeacf9e_lang = "";
+const Answer = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-baeacf9e"]]);
 const _hoisted_1$1 = { class: "question" };
 const _hoisted_2$1 = { class: "question-index shared" };
 const _hoisted_3$1 = { class: "shared" };
@@ -248,16 +250,16 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
               isChecked: unref(compliance)[__props.question.index] === answerIndex,
               key: answer.id,
               onClick: onClick(answerIndex),
-              onKeyup: withKeys(($event) => onClick(answerIndex), ["space"])
-            }, null, 8, ["answer", "isChecked", "onClick", "onKeyup"]);
+              onKeydown: withKeys(withModifiers(($event) => onClick(answerIndex), ["prevent", "stop"]), ["space"])
+            }, null, 8, ["answer", "isChecked", "onClick", "onKeydown"]);
           }), 128))
         ])
       ]);
     };
   }
 });
-const Question_vue_vue_type_style_index_0_scoped_9176ba0a_lang = "";
-const Question = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-9176ba0a"]]);
+const Question_vue_vue_type_style_index_0_scoped_a03a34ad_lang = "";
+const Question = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-a03a34ad"]]);
 const questions = [
   {
     answers: [
@@ -613,7 +615,7 @@ const questions = [
     text: "How much provenance information has been captured to facilitate data reuse?"
   }
 ];
-const _withScopeId = (n) => (pushScopeId("data-v-68f8b1f8"), n = n(), popScopeId(), n);
+const _withScopeId = (n) => (pushScopeId("data-v-8c3330a6"), n = n(), popScopeId(), n);
 const _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("h1", null, "ARDC FAIR for data self-assessment checklist", -1));
 const _hoisted_2 = { class: "aspect" };
 const _hoisted_3 = { class: "overall-progress" };
@@ -688,8 +690,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const index_page_vue_vue_type_style_index_0_scoped_68f8b1f8_lang = "";
-const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-68f8b1f8"]]);
+const index_page_vue_vue_type_style_index_0_scoped_8c3330a6_lang = "";
+const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-8c3330a6"]]);
 export {
   index_page as default
 };

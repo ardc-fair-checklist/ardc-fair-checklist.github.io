@@ -354,6 +354,30 @@ function setVarsOnNode(el, vars) {
     }
   }
 }
+const systemModifiers = ["ctrl", "shift", "alt", "meta"];
+const modifierGuards = {
+  stop: (e) => e.stopPropagation(),
+  prevent: (e) => e.preventDefault(),
+  self: (e) => e.target !== e.currentTarget,
+  ctrl: (e) => !e.ctrlKey,
+  shift: (e) => !e.shiftKey,
+  alt: (e) => !e.altKey,
+  meta: (e) => !e.metaKey,
+  left: (e) => "button" in e && e.button !== 0,
+  middle: (e) => "button" in e && e.button !== 1,
+  right: (e) => "button" in e && e.button !== 2,
+  exact: (e, modifiers) => systemModifiers.some((m) => e[`${m}Key`] && !modifiers.includes(m))
+};
+const withModifiers = (fn, modifiers) => {
+  return (event, ...args) => {
+    for (let i = 0; i < modifiers.length; i++) {
+      const guard = modifierGuards[modifiers[i]];
+      if (guard && guard(event, modifiers))
+        return;
+    }
+    return fn(event, ...args);
+  };
+};
 const keyNames = {
   esc: "escape",
   space: " ",
@@ -401,6 +425,7 @@ function normalizeContainer(container) {
   return container;
 }
 export {
+  withModifiers as a,
   createSSRApp as c,
   useCssVars as u,
   withKeys as w
