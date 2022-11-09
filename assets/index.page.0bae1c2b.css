@@ -14,6 +14,17 @@
     padding-right: 3em;
 }
 
+@media screen and (max-width: 41.5em){
+    :root {
+        font-size: 90%;
+    }
+
+    #app {
+        padding-left: 0.25em;
+        padding-right: 0.25em;
+    }
+}
+
 a[data-v-2f07734b] {
     text-underline-offset: 0.3em;
     color: #144e70;

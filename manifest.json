@@ -87,7 +87,7 @@
       "_chunk-2457fd90.js"
     ],
     "css": [
-      "assets/index.page.80d63917.css",
+      "assets/index.page.0bae1c2b.css",
       "assets/global.4ffaf04d.css"
     ]
   },
@@ -115,7 +115,7 @@
       "_chunk-2457fd90.js"
     ],
     "css": [
-      "assets/index.page.0e020c7c.css",
+      "assets/index.page.8bf64bff.css",
       "assets/global.4ffaf04d.css"
     ]
   },
@@ -204,11 +204,11 @@
     "src": "pages/software/index.page.css"
   },
   "pages/data/v0.2/index.page.css": {
-    "file": "assets/index.page.80d63917.css",
+    "file": "assets/index.page.0bae1c2b.css",
     "src": "pages/data/v0.2/index.page.css"
   },
   "pages/software/v0.2/index.page.css": {
-    "file": "assets/index.page.0e020c7c.css",
+    "file": "assets/index.page.8bf64bff.css",
     "src": "pages/software/v0.2/index.page.css"
   }
 }
