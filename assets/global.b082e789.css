@@ -24,5 +24,8 @@
 
     box-sizing: border-box;
     background-color: var(--black);
+}
+
+body {
     margin: 0;
 }
