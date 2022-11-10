@@ -35,6 +35,10 @@ async function render(pageContext: PageContextServer) {
                 <title>${title}</title>
             </head>
             <body>
+                <div id="bg-container">
+                    <div id="bg">
+                    </div>
+                </div>
                 <div id="app">${dangerouslySkipEscape(appHtml)}</div>
             </body>
         </html>`
