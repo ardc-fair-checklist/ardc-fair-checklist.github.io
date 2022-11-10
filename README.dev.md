@@ -56,24 +56,10 @@ In the current app, there are multiple entities that could be versioned: the dat
 
 There is a GitHub action `/.github/workflows/publish.yml` that builds the project for production and hosts it at https://ardc-fair-checklist.github.io/ssg. The GitHub action can be triggered manually via the GitHub user interface.
 
-## TODO
+## Adding a new version of an existing topic
 
-1. ~~add points to questions~~
-1. ~~show points in interface for the time being~~
-1. ~~calculate partial and total progress~~
-1. ~~write jsonschema for questions~~
-1. ~~add rst badge~~
-1. ~~investigate migrating to ~~SSR~~SSG [Prerendering](https://vite-plugin-ssr.com/)~~
-1. ~~make questions part of the store and settable, derive other variables and make them gettable~~
-1. ~~write foundation for versioning of list of questions~~
-1. ~~add validation of query parameters~~
-1. ~~make Banner appear in production~~
-1. ~~when user supplies query params, set state and redirect or show Banner~~
-1. redirecting from unversioned software and data urls
-1. publish coverage in ci
-1. add testing as prose
-1. implement testing prose
-1. use the checklist for a couple of existing software packages
-1. revisit questions content with TomH
-1. investigate using tailwindcss for styling
-1. look into client side routing v server side routing
+TODO
+
+## Adding a new topic
+
+TODO
