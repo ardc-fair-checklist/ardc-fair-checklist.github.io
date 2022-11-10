@@ -176,7 +176,7 @@ const _sfc_main$7 = /* @__PURE__ */ defineComponent({
             const supplied = params[aspect].split("").map((c) => parseInt(c, 10));
             return supplied.map((iAnswer, index) => {
               if (iAnswer >= nAnswers.value[aspect][index]) {
-                return `Query parameter '${aspect}' has out-of-range value on position ${index}`;
+                return `Query parameter '${aspect}' has out-of-range value on position ${index}; clientHeight = ${document.documentElement.clientHeight.toString()}`;
               } else {
                 return "";
               }
@@ -231,8 +231,8 @@ const _sfc_main$7 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const BannerParams_vue_vue_type_style_index_0_scoped_24347cdb_lang = "";
-const BannerParams = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["__scopeId", "data-v-24347cdb"]]);
+const BannerParams_vue_vue_type_style_index_0_scoped_ab07e9ac_lang = "";
+const BannerParams = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["__scopeId", "data-v-ab07e9ac"]]);
 const _sfc_main$6 = /* @__PURE__ */ defineComponent({
   __name: "Link",
   setup(__props) {
