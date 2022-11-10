@@ -1,5 +1,5 @@
 <template>
-    <h1>Home</h1>
+    <h1>FAIR checklists</h1>
     <p>
         Choose the checklist for <Link v-bind:href="linkToDataChecklist">data</Link> or for <Link v-bind:href="linkToSoftwareChecklist">software</Link>.
     </p>
