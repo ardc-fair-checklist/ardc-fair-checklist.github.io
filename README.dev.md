@@ -20,7 +20,7 @@ We recommend using Volar VSCode extension for improved development experience. T
 
 ```shell
 cd <some dir>
-git clone https://github.com/ardc-fair-checklist/ardc-fair-checklist .
+git clone https://github.com/ardc-fair-checklist/ssg .
 npm install
 ```
 
@@ -48,9 +48,31 @@ mv $LIST_SERVER dist/server/$BASE/
 npm run server:prod
 ```
 
+relevant version info from `npm list`:
+
+```text
+├── @types/compression@1.7.2
+├── @types/express@4.17.14
+├── @types/node@17.0.45
+├── @vitejs/plugin-vue@3.2.0
+├── @vue/compiler-sfc@3.2.41
+├── @vue/server-renderer@3.2.41
+├── ajv@8.11.0
+├── compression@1.7.4
+├── cross-env@7.0.3
+├── express@4.18.2
+├── sirv@2.0.2
+├── ts-node@10.9.1
+├── typescript@4.8.4
+├── vite-plugin-ssr@0.4.43
+├── vite@3.2.0
+├── vitest@0.24.3
+└── vue@3.2.41
+```
+
 ## Versioning strategy
 
-In the current app, there are multiple entities that could be versioned: the data questions JSON, the data questions app, the software questions JSON, and the software questions app. The DRY (Don't Repeat Yourself) principle would suggest to make one app that can be used to render data as well as software. However, this becomes more difficult to maintain as more versions of the data questions and software questions (and perhaps new future topics) are introduced. We therefore chose to have one directory for each combination of topic and version. That one directory contains all the components, along with all the data needed to render the app for that particular topic and that particular version. Naturally, this comes at the cost of having duplicate code. Each combination of topic and version is assigned its own route, and can choose to do its own processing on supplied query parameters.
+In the current app, there are multiple entities that could be versioned: the data questions JSON, the data questions app, the software questions JSON, and the software questions app. The DRY (Don't Repeat Yourself) principle would suggest to make one app that can be used to render data as well as software. However, this becomes more difficult to maintain as more versions of the data questions and software questions (and perhaps new future topics) are introduced. We therefore chose to have one directory for each combination of topic and version. That one directory contains all the components, along with all the data needed to render the app for that particular topic and that particular version. Naturally, this comes at the cost of having duplicate code. Each combination of topic and version is assigned its own route, and can choose to do its own processing on supplied query parameters. Only the contents of `public/`, `renderer/`, and `server` are shared across topics and versions.
 
 ## Publishing
 
@@ -58,8 +80,85 @@ There is a GitHub action `/.github/workflows/publish.yml` that builds the projec
 
 ## Adding a new version of an existing topic
 
-TODO
+Let's say the topic for which you want to make a new version is `software`, the current latest version is `v0.2`, and the version you want to make is `v1`. You would do the following:
+
+```shell
+cd <project root>
+cp -r pages/software/v0.2 pages/software/v1
+```
+
+Then, add the new version string to the relevant part of the state in `versions.ts`:
+
+```shell
+nano renderer/versions.ts 
+```
+
+```text
+software: ['v0.1', 'v0.2'],
+```
+
+becomes:
+
+```text
+software: ['v0.1', 'v0.2', 'v1'],
+```
+
+Start the development server:
+
+```
+npm run dev
+```
+
+Check browser:
+
+```shell
+# add BASE_URL if you have it enabled, see vite.config.js
+open http://localhost:3000
+```
+
+Now make whatever changes you want under `pages/software/v1`. The page should update
+through hot module reloading.
 
 ## Adding a new topic
 
-TODO
+Let's say you want to have a checklist for services in addition to the software and data checklists that are already there. You'd do the following:
+
+Pick the topic and version that are the best match for what you want to make, let's say that is `pages/software/v0.2`:
+
+```shell
+cd <project root>
+mkdir pages/services
+cp -r pages/software/v0.2 pages/services/v0.1
+```
+
+In `versions.ts` where it says
+
+```text
+data: ['v0.1', 'v0.2'],
+software: ['v0.1', 'v0.2'],
+```
+
+add the relevant state:
+
+```text
+data: ['v0.1', 'v0.2'],
+software: ['v0.1', 'v0.2'],
+services: ['v0.1']
+```
+
+And add a getter method below that.
+
+Next, start the development server with:
+
+```
+npm run dev
+```
+
+Check browser:
+
+```shell
+# add BASE_URL if you have it enabled, see vite.config.js
+open http://localhost:3000
+```
+
+Now make whatever changes you want under `pages/services/v0.1`. The page should update through hot module reloading.
