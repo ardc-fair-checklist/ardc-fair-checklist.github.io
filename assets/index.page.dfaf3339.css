@@ -37,7 +37,7 @@ a[data-v-10224143]:hover {
     z-index: 1;
 }
 #bg {
-    background-image: linear-gradient(165deg, var(--black) 60%, #40ad39 110%);
+    background-image: linear-gradient(165deg, var(--black) 60%, var(--ardc-purple) 110%);
     width: 100%;
     height: 100%;
 }
