@@ -93,14 +93,16 @@ Then, add the new version string to the relevant part of the state in `versions.
 nano renderer/versions.ts 
 ```
 
+Where it says
+
 ```text
-software: ['v0.1', 'v0.2'],
+software: ['v0.1', 'v0.2']
 ```
 
-becomes:
+add the next version identifier:
 
 ```text
-software: ['v0.1', 'v0.2', 'v1'],
+software: ['v0.1', 'v0.2', 'v1']
 ```
 
 Start the development server:
@@ -135,15 +137,15 @@ In `versions.ts` where it says
 
 ```text
 data: ['v0.1', 'v0.2'],
-software: ['v0.1', 'v0.2'],
+software: ['v0.1', 'v0.2']
 ```
 
 add the relevant state:
 
 ```text
 data: ['v0.1', 'v0.2'],
-software: ['v0.1', 'v0.2'],
-services: ['v0.1']
+services: ['v0.1'],
+software: ['v0.1', 'v0.2']
 ```
 
 And add a getter method below that.
