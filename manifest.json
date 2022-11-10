@@ -34,7 +34,7 @@
     ]
   },
   "pages/index/index.page.vue": {
-    "file": "assets/pages/index/index.page.b80310da.js",
+    "file": "assets/pages/index/index.page.aa403ab7.js",
     "src": "pages/index/index.page.vue",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -45,7 +45,7 @@
       "_chunk-43f5a3e9.js"
     ],
     "css": [
-      "assets/index.page.853164d8.css",
+      "assets/index.page.08cf40aa.css",
       "assets/global.b082e789.css"
     ]
   },
@@ -87,7 +87,7 @@
       "_chunk-2457fd90.js"
     ],
     "css": [
-      "assets/index.page.1603e028.css",
+      "assets/index.page.edf6e3a1.css",
       "assets/global.b082e789.css"
     ]
   },
@@ -115,12 +115,12 @@
       "_chunk-2457fd90.js"
     ],
     "css": [
-      "assets/index.page.dfaf3339.css",
+      "assets/index.page.f7e54dd6.css",
       "assets/global.b082e789.css"
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.cd326adb.js",
+    "file": "assets/entry-client-routing.104aa323.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -139,7 +139,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.379f04fd.js",
+    "file": "assets/entry-server-routing.5f01e253.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
@@ -196,7 +196,7 @@
     "src": "global.css"
   },
   "pages/index/index.page.css": {
-    "file": "assets/index.page.853164d8.css",
+    "file": "assets/index.page.08cf40aa.css",
     "src": "pages/index/index.page.css"
   },
   "pages/software/index.page.css": {
@@ -204,11 +204,11 @@
     "src": "pages/software/index.page.css"
   },
   "pages/data/v0.2/index.page.css": {
-    "file": "assets/index.page.1603e028.css",
+    "file": "assets/index.page.edf6e3a1.css",
     "src": "pages/data/v0.2/index.page.css"
   },
   "pages/software/v0.2/index.page.css": {
-    "file": "assets/index.page.dfaf3339.css",
+    "file": "assets/index.page.f7e54dd6.css",
     "src": "pages/software/v0.2/index.page.css"
   }
 }

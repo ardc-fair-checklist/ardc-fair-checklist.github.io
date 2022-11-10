@@ -36,13 +36,14 @@ a[data-v-99a0f5a5]:hover {
     margin-right: auto;
     padding-left: 3em;
     padding-right: 3em;
+    text-align: center;
 }
 
-main[data-v-190a69f5] {
+main[data-v-de2df4f9] {
     background-color: var(--black);
     color: var(--white);
 }
-h1[data-v-190a69f5] {
+h1[data-v-de2df4f9] {
     line-height: 1.2em;
     margin-top: 3em;
 }

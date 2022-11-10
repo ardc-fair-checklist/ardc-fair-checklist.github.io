@@ -13,7 +13,7 @@
   "pages/index/Link.vue": [],
   "pages/index/app.css": [],
   "pages/index/index.page.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/index/index.page.vue?vue&type=style&index=0&scoped=190a69f5&lang.css": [],
+  "pages/index/index.page.vue?vue&type=style&index=0&scoped=de2df4f9&lang.css": [],
   "pages/index/index.page.vue": [],
   "pages/software/app.css": [],
   "pages/software/index.page.vue?vue&type=script&setup=true&lang.ts": [],
@@ -129,11 +129,11 @@
   ],
   "index.page.c0c84b33.js": [],
   "index.page.c3d67555.js": [
-    "/ssg/assets/index.page.1603e028.css",
+    "/ssg/assets/index.page.edf6e3a1.css",
     "/ssg/assets/global.b082e789.css"
   ],
-  "index.page.b80310da.js": [
-    "/ssg/assets/index.page.853164d8.css",
+  "index.page.aa403ab7.js": [
+    "/ssg/assets/index.page.08cf40aa.css",
     "/ssg/assets/global.b082e789.css"
   ],
   "index.page.1511dbe0.js": [
@@ -142,7 +142,7 @@
   ],
   "index.page.fa7127ef.js": [],
   "index.page.683f6d7e.js": [
-    "/ssg/assets/index.page.dfaf3339.css",
+    "/ssg/assets/index.page.f7e54dd6.css",
     "/ssg/assets/global.b082e789.css"
   ],
   "_error.page.45d84ce3.js": [],
