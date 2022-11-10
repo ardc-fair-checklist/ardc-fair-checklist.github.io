@@ -20,7 +20,8 @@ onMounted(() => {
                 const supplied = params[aspect].split('').map(c => parseInt(c, 10))
                 return supplied.map((iAnswer, index) => {
                     if (iAnswer >= nAnswers.value[aspect][index]) {
-                        return `Query parameter '${aspect}' has out-of-range value on position ${index}`
+                        return `Query parameter '${aspect}' has out-of-range value on position ${index}` +
+                               `; clientHeight = ${document.documentElement.clientHeight.toString()}`
                     } else {
                         return ""
                     }
