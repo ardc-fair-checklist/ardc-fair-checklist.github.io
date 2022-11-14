@@ -66,7 +66,6 @@ defineProps<{
 <style scoped>
 
 .footer {
-    /*background-color: black;*/
     min-width: 100vw;
     position: fixed;
     bottom: 0;
@@ -74,10 +73,7 @@ defineProps<{
 }
 
 .inner {
-    /*background-image: linear-gradient(0deg, black 100%, red 0%);*/
-    /*background-image: linear-gradient(0deg, var(--black) -20%, var(--ardc-purple) 160%);*/
-    background-color: black;
-    border: 2px solid var(--ardc-purple);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0.4) 100%);
     width: 100%;
     height: 100%;
     min-height: 10em;
@@ -89,9 +85,7 @@ defineProps<{
 }
 
 .progressbars {
-    /*background-color: var(--dark);*/
     border-radius: 0.5em;
-    /*border: 2px solid #444;*/
     column-gap: 0.5em;
     display: flex;
     flex-direction: row;
@@ -101,11 +95,9 @@ defineProps<{
     padding-top: 0.25em;
     padding-left: 3em;
     padding-right: 3em;
-    /*width: 50em;*/
 }
 
 .labels {
-    /*min-width: 10em;*/
     flex-grow: 0;
     display: flex;
     flex-direction: column;
