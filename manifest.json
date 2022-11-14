@@ -115,7 +115,7 @@
       "_chunk-88906689.js"
     ],
     "css": [
-      "assets/index.page.1678814e.css",
+      "assets/index.page.7a4c0fec.css",
       "assets/global.b082e789.css"
     ]
   },
@@ -208,7 +208,7 @@
     "src": "pages/data/v0.2/index.page.css"
   },
   "pages/software/v0.2/index.page.css": {
-    "file": "assets/index.page.1678814e.css",
+    "file": "assets/index.page.7a4c0fec.css",
     "src": "pages/software/v0.2/index.page.css"
   }
 }

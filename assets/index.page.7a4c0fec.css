@@ -27,17 +27,19 @@ a[data-v-10224143]:hover {
     color: var(--white);
 }
 #bg-container {
-    height: 100vh;
-    width: 100vw;
-    min-width: 31em;
+    background-color: black;
     background-color: var(--black);
+    height: 100vh;
+    left: 0;
+    min-width: 31em;
     position: fixed;
     top: 0;
-    left: 0;
+    width: 100vw;
     z-index: 1;
 }
 #bg {
-    background-image: linear-gradient(165deg, var(--black) 60%, var(--ardc-purple) 100%);
+    background-image: linear-gradient(145deg, rgba(0,0,0,0) 40%, var(--ardc-purple) 100%),
+                      linear-gradient(215deg, rgba(0,0,0,0) 60%, var(--ardc-purple) 110%);
     width: 100%;
     height: 100%;
 }
