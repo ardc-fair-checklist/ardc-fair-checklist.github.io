@@ -92,7 +92,6 @@ defineProps<{
     /*background-color: var(--dark);*/
     border-radius: 0.5em;
     /*border: 2px solid #444;*/
-    color: white;
     column-gap: 0.5em;
     display: flex;
     flex-direction: row;
@@ -129,6 +128,7 @@ defineProps<{
 .label {
     text-align: right;
     line-height: 2em;
+    color: white;
 }
 
 .bar {
@@ -138,7 +138,7 @@ defineProps<{
 }
 
 .bar-bg {
-    background-color: #444;
+    background-color: #eee;
 }
 .blue {
     background-color: var(--ardc-blue);
