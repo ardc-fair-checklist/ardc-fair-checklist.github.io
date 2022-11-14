@@ -31,7 +31,7 @@ footer {
     padding-left: 3em;
     padding-right: 3em;
     padding-top: 5em;
-    padding-bottom: 6em;
+    padding-bottom: 16em;
 }
 
 footer p {
