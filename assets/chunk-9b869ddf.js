@@ -4075,6 +4075,11 @@ function cloneVNode(vnode, extraProps, mergeRef = false) {
 function createTextVNode(text = " ", flag = 0) {
   return createVNode(Text, null, text, flag);
 }
+function createStaticVNode(content, numberOfNodes) {
+  const vnode = createVNode(Static, null, content);
+  vnode.staticCount = numberOfNodes;
+  return vnode;
+}
 function createCommentVNode(text = "", asBlock = false) {
   return asBlock ? (openBlock(), createBlock(Comment, null, text)) : createVNode(Comment, null, text);
 }
@@ -4439,6 +4444,7 @@ export {
   createCommentVNode as J,
   renderList as K,
   createBlock as L,
+  createStaticVNode as M,
   Static as S,
   hyphenate as a,
   onUnmounted as b,

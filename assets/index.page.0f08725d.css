@@ -37,7 +37,7 @@ a[data-v-10224143]:hover {
     z-index: 1;
 }
 #bg {
-    background-image: linear-gradient(165deg, var(--black) 60%, var(--ardc-purple) 110%);
+    background-image: linear-gradient(165deg, var(--black) 60%, var(--ardc-purple) 100%);
     width: 100%;
     height: 100%;
 }
@@ -103,41 +103,112 @@ a[data-v-996882b3]:hover {
     text-align: center;
 }
 
-img.logo[data-v-9483011b] {
+img.logo[data-v-ed8fb2dc] {
     height: 3em;
     margin-left: 2em;
     margin-right: 2em;
 }
-.logos[data-v-9483011b] {
+.logos[data-v-ed8fb2dc] {
     display: flex;
     justify-content: center;
     margin-bottom: 3em;
 }
-footer[data-v-9483011b] {
+footer[data-v-ed8fb2dc] {
     padding-left: 3em;
     padding-right: 3em;
     padding-top: 5em;
-    padding-bottom: 6em;
+    padding-bottom: 16em;
 }
-footer p[data-v-9483011b] {
+footer p[data-v-ed8fb2dc] {
     width: 75%;
     text-align: center;
     margin: 0 auto;
     font-size: small;
 }
 
-.outer[data-v-68faa8df] {
-    background-color: #808080;
-    width: 100%;
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    border-radius: 3px;
+.footer[data-v-c8781678] {
+    /*background-color: black;*/
+    min-width: 100vw;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
-.inner[data-v-68faa8df] {
+.inner[data-v-c8781678] {
+    /*background-image: linear-gradient(0deg, black 100%, red 0%);*/
+    /*background-image: linear-gradient(0deg, var(--black) -20%, var(--ardc-purple) 160%);*/
+    background-color: black;
+    border: 2px solid var(--ardc-purple);
+    width: 100%;
+    height: 100%;
+    min-height: 10em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.progressbars[data-v-c8781678] {
+    /*background-color: var(--dark);*/
+    border-radius: 0.5em;
+    /*border: 2px solid #444;*/
+    color: white;
+    column-gap: 0.5em;
+    display: flex;
+    flex-direction: row;
+    max-width: 50em;
+    min-width: 30em;
+    padding-bottom: 0.25em;
+    padding-top: 0.25em;
+    padding-left: 3em;
+    padding-right: 3em;
+    /*width: 50em;*/
+}
+.labels[data-v-c8781678] {
+    /*min-width: 10em;*/
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+}
+.bars[data-v-c8781678] {
+    flex-grow: 0.8;
+    display: flex;
+    flex-direction: column;
+}
+.row[data-v-c8781678] {
+    height: 1.75em;
+    min-height: 1.75em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.label[data-v-c8781678] {
+    text-align: right;
+    line-height: 2em;
+}
+.bar[data-v-c8781678] {
+    height: 0.7em;
+    border-top-right-radius: 0.25em;
+    border-bottom-right-radius: 0.25em;
+}
+.bar-bg[data-v-c8781678] {
+    background-color: #444;
+}
+.blue[data-v-c8781678] {
+    background-color: var(--ardc-blue);
+    width: var(--11522ef7);  /* CSS Vue magic here */
+}
+.pink[data-v-c8781678] {
+    background-color: var(--ardc-pink);
+    width: var(--11522ef2);  /* CSS Vue magic here */
+}
+.yellow[data-v-c8781678] {
     background-color: var(--ardc-yellow);
-    height: 1em;
-    width: var(--6c58b14e);  /* CSS Vue magic here */
+    width: var(--11522efa);  /* CSS Vue magic here */
+}
+.purple[data-v-c8781678] {
+    background-color: var(--ardc-purple);
+    width: var(--11522f03);  /* CSS Vue magic here */
 }
 
 .answer[data-v-3339ce52] {
@@ -205,43 +276,34 @@ legend[data-v-e183013d] {
     font-size: 1.17em;
 }
 
-main[data-v-ccc17b29] {
+main[data-v-0ee2db6e] {
     color: var(--white);
 }
-h1[data-v-ccc17b29] {
+h1[data-v-0ee2db6e] {
     line-height: 1.2em;
     margin-top: 3em;
 }
-h2[data-v-ccc17b29] {
-    border-bottom: 2px solid var(--white);
+h2[data-v-0ee2db6e] {
+    /*border-bottom: 2px solid var(--white);*/
     color: var(--white);
-    margin-bottom: 2em;
+    /*margin-bottom: 2em;*/
     padding: 20px 10px;
     text-align: center;
 }
-.aspect[data-v-ccc17b29] {
+.aspect[data-v-0ee2db6e] {
     background-color: var(--dark);
     border-radius: 0.5em;
     border: 2px solid #444;
     color: var(--light);
-    margin-bottom: 6em;
-    padding-bottom: 3em;
+    margin-bottom: 4em;
+    padding-bottom: 1em;
     padding-left: 3em;
     padding-right: 3em;
     padding-top: 1em;
 }
 @media screen and (max-width: 41.5em) {
-.aspect[data-v-ccc17b29] {
+.aspect[data-v-0ee2db6e] {
         padding-left: 1em;
         padding-right: 1em;
 }
-}
-.overall-progress[data-v-ccc17b29] {
-    background-color: var(--white);
-    border-radius: 0.5em;
-    color: var(--dark);
-    line-height: 1.6em;
-    margin-bottom: 5em;
-    margin-bottom: 6em;
-    padding: 3em;
 }

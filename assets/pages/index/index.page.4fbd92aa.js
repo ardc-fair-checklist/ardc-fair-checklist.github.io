@@ -1,7 +1,7 @@
 import { _ as _imports_0, a as _imports_1 } from "../../chunk-5b637298.js";
 import { _ as _export_sfc } from "../../chunk-de093346.js";
-import { u as openBlock, t as createElementBlock, x as pushScopeId, y as popScopeId, v as createBaseVNode, d as defineComponent, z as renderSlot, A as normalizeClass, B as unref, C as createTextVNode, D as createVNode, E as withCtx, F as Fragment } from "../../chunk-ef5fba30.js";
-import { u as usePageContext } from "../../chunk-43f5a3e9.js";
+import { u as openBlock, t as createElementBlock, x as pushScopeId, y as popScopeId, v as createBaseVNode, d as defineComponent, z as renderSlot, A as normalizeClass, B as unref, C as createTextVNode, D as createVNode, E as withCtx, F as Fragment } from "../../chunk-9b869ddf.js";
+import { u as usePageContext } from "../../chunk-56ca0878.js";
 /* empty css                    */const Footer_vue_vue_type_style_index_0_scoped_616712ff_lang = "";
 const _sfc_main$2 = {};
 const _withScopeId$1 = (n) => (pushScopeId("data-v-616712ff"), n = n(), popScopeId(), n);
