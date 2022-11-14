@@ -311,7 +311,7 @@ function _sfc_render(_ctx, _cache) {
 }
 const About = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["render", _sfc_render], ["__scopeId", "data-v-ed8fb2dc"]]);
 const _hoisted_1$3 = { class: "footer" };
-const _hoisted_2$3 = /* @__PURE__ */ createStaticVNode('<div class="inner" data-v-465e6c2a><div class="progressbars" data-v-465e6c2a><div class="labels" data-v-465e6c2a><div class="row" data-v-465e6c2a><div class="label" data-v-465e6c2a> Findable </div></div><div class="row" data-v-465e6c2a><div class="label" data-v-465e6c2a> Accessible </div></div><div class="row" data-v-465e6c2a><div class="label" data-v-465e6c2a> Interoperable </div></div><div class="row" data-v-465e6c2a><div class="label" data-v-465e6c2a> Reusable </div></div></div><div class="bars" data-v-465e6c2a><div class="row" data-v-465e6c2a><div class="bar bar-bg" data-v-465e6c2a><div class="bar blue" data-v-465e6c2a></div></div></div><div class="row" data-v-465e6c2a><div class="bar bar-bg" data-v-465e6c2a><div class="bar pink" data-v-465e6c2a></div></div></div><div class="row" data-v-465e6c2a><div class="bar bar-bg" data-v-465e6c2a><div class="bar yellow" data-v-465e6c2a></div></div></div><div class="row" data-v-465e6c2a><div class="bar bar-bg" data-v-465e6c2a><div class="bar purple" data-v-465e6c2a></div></div></div></div></div></div>', 1);
+const _hoisted_2$3 = /* @__PURE__ */ createStaticVNode('<div class="inner" data-v-797d62b0><div class="progressbars" data-v-797d62b0><div class="labels" data-v-797d62b0><div class="row" data-v-797d62b0><div class="label" data-v-797d62b0> Findable </div></div><div class="row" data-v-797d62b0><div class="label" data-v-797d62b0> Accessible </div></div><div class="row" data-v-797d62b0><div class="label" data-v-797d62b0> Interoperable </div></div><div class="row" data-v-797d62b0><div class="label" data-v-797d62b0> Reusable </div></div></div><div class="bars" data-v-797d62b0><div class="row" data-v-797d62b0><div class="bar bar-bg" data-v-797d62b0><div class="bar blue" data-v-797d62b0></div></div></div><div class="row" data-v-797d62b0><div class="bar bar-bg" data-v-797d62b0><div class="bar pink" data-v-797d62b0></div></div></div><div class="row" data-v-797d62b0><div class="bar bar-bg" data-v-797d62b0><div class="bar yellow" data-v-797d62b0></div></div></div><div class="row" data-v-797d62b0><div class="bar bar-bg" data-v-797d62b0><div class="bar purple" data-v-797d62b0></div></div></div></div></div></div>', 1);
 const _hoisted_3$2 = [
   _hoisted_2$3
 ];
@@ -322,18 +322,18 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
   },
   setup(__props) {
     useCssVars((_ctx) => ({
-      "6a295bc9": __props.progress.f,
-      "6a295bc4": __props.progress.a,
-      "6a295bcc": __props.progress.i,
-      "6a295bd5": __props.progress.r
+      "5d9979d4": __props.progress.f,
+      "5d9979cf": __props.progress.a,
+      "5d9979d7": __props.progress.i,
+      "5d9979e0": __props.progress.r
     }));
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("div", _hoisted_1$3, _hoisted_3$2);
     };
   }
 });
-const ProgressBars_vue_vue_type_style_index_0_scoped_465e6c2a_lang = "";
-const ProgressBars = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-465e6c2a"]]);
+const ProgressBars_vue_vue_type_style_index_0_scoped_797d62b0_lang = "";
+const ProgressBars = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-797d62b0"]]);
 const _hoisted_1$2 = ["aria-labelledby"];
 const _hoisted_2$2 = { class: "answer-radiobutton" };
 const _hoisted_3$1 = ["id", "value", "checked"];

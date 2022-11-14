@@ -126,24 +126,24 @@ footer p[data-v-ed8fb2dc] {
     font-size: small;
 }
 
-.footer[data-v-465e6c2a] {
+.footer[data-v-797d62b0] {
     min-width: 100vw;
     position: fixed;
     bottom: 0;
     left: 0;
 }
-.inner[data-v-465e6c2a] {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0.4) 100%);
+.inner[data-v-797d62b0] {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0.4) 100%);
     width: 100%;
     height: 100%;
-    min-height: 10em;
+    min-height: 12em;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
 }
-.progressbars[data-v-465e6c2a] {
+.progressbars[data-v-797d62b0] {
     border-radius: 0.5em;
     column-gap: 0.5em;
     display: flex;
@@ -155,52 +155,52 @@ footer p[data-v-ed8fb2dc] {
     padding-left: 3em;
     padding-right: 3em;
 }
-.labels[data-v-465e6c2a] {
+.labels[data-v-797d62b0] {
     flex-grow: 0;
     display: flex;
     flex-direction: column;
     margin-left: 2em;
 }
-.bars[data-v-465e6c2a] {
+.bars[data-v-797d62b0] {
     flex-grow: 0.8;
     display: flex;
     flex-direction: column;
 }
-.row[data-v-465e6c2a] {
+.row[data-v-797d62b0] {
     height: 1.75em;
     min-height: 1.75em;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.label[data-v-465e6c2a] {
+.label[data-v-797d62b0] {
     text-align: right;
     line-height: 2em;
     color: white;
 }
-.bar[data-v-465e6c2a] {
+.bar[data-v-797d62b0] {
     height: 0.7em;
     border-top-right-radius: 0.25em;
     border-bottom-right-radius: 0.25em;
 }
-.bar-bg[data-v-465e6c2a] {
+.bar-bg[data-v-797d62b0] {
     background-color: #eee;
 }
-.blue[data-v-465e6c2a] {
+.blue[data-v-797d62b0] {
     background-color: var(--ardc-blue);
-    width: var(--6a295bc9);  /* CSS Vue magic here */
+    width: var(--5d9979d4);  /* CSS Vue magic here */
 }
-.pink[data-v-465e6c2a] {
+.pink[data-v-797d62b0] {
     background-color: var(--ardc-pink);
-    width: var(--6a295bc4);  /* CSS Vue magic here */
+    width: var(--5d9979cf);  /* CSS Vue magic here */
 }
-.yellow[data-v-465e6c2a] {
+.yellow[data-v-797d62b0] {
     background-color: var(--ardc-yellow);
-    width: var(--6a295bcc);  /* CSS Vue magic here */
+    width: var(--5d9979d7);  /* CSS Vue magic here */
 }
-.purple[data-v-465e6c2a] {
+.purple[data-v-797d62b0] {
     background-color: var(--ardc-purple);
-    width: var(--6a295bd5);  /* CSS Vue magic here */
+    width: var(--5d9979e0);  /* CSS Vue magic here */
 }
 
 .answer[data-v-3339ce52] {
