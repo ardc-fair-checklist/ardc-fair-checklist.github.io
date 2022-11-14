@@ -73,10 +73,10 @@ defineProps<{
 }
 
 .inner {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0.4) 100%);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0.4) 100%);
     width: 100%;
     height: 100%;
-    min-height: 10em;
+    min-height: 12em;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
