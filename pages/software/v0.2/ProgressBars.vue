@@ -1,49 +1,51 @@
 <template>
     <div class="footer">
         <div class="inner">
-            <div class="progressbars">
-                <div class="labels">
-                    <div class="row">
-                        <div class="label">
-                            Findable
+            <div class="test">
+                <div class="progressbars">
+                    <div class="labels">
+                        <div class="row">
+                            <div class="label">
+                                Findable
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="label">
+                                Accessible
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="label">
+                                Interoperable
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="label">
+                                Reusable
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="label">
-                            Accessible
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="label">
-                            Interoperable
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="label">
-                            Reusable
-                        </div>
-                    </div>
-                </div>
 
-                <div class="bars">
-                    <div class="row">
-                        <div class="bar bar-bg">
-                            <div class="bar blue" />
+                    <div class="bars">
+                        <div class="row">
+                            <div class="bar bar-bg">
+                                <div class="bar blue" />
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="bar bar-bg">
-                            <div class="bar pink" />
+                        <div class="row">
+                            <div class="bar bar-bg">
+                                <div class="bar pink" />
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="bar bar-bg">
-                            <div class="bar yellow" />
+                        <div class="row">
+                            <div class="bar bar-bg">
+                                <div class="bar yellow" />
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="bar bar-bg">
-                            <div class="bar purple" />
+                        <div class="row">
+                            <div class="bar bar-bg">
+                                <div class="bar purple" />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -66,17 +68,10 @@ defineProps<{
 <style scoped>
 
 .footer {
-    min-width: 100vw;
+    width: 100%;
     position: fixed;
     bottom: 0;
     left: 0;
-}
-
-.inner {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0.4) 100%);
-    width: 100%;
-    height: 100%;
-    min-height: 12em;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -84,17 +79,59 @@ defineProps<{
     align-items: center;
 }
 
+.inner {
+    width: 100%;
+    /*background-color: orange;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.test {
+    background-color: var(--light);
+    flex-grow: 1;
+    min-width: 30em;
+    max-width: 50em;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    /*border-left: 2px solid #444;*/
+    /*border-right: 2px solid #444;*/
+}
+
+@media screen and (min-width: 70em) {
+    .inner {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+}
+
+
+@media screen and (max-width: 70em) {
+    .inner {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+}
+
+@media screen and (max-width: 41.5em) {
+    .inner {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+}
+
 .progressbars {
-    border-radius: 0.5em;
     column-gap: 0.5em;
     display: flex;
     flex-direction: row;
-    max-width: 50em;
-    min-width: 30em;
+    margin-top: 1em;
     padding-bottom: 0.25em;
     padding-top: 0.25em;
     padding-left: 3em;
     padding-right: 3em;
+    background-color: var(--light);
 }
 
 .labels {
@@ -120,7 +157,7 @@ defineProps<{
 .label {
     text-align: right;
     line-height: 2em;
-    color: white;
+    color: black;
 }
 
 .bar {
@@ -131,6 +168,7 @@ defineProps<{
 
 .bar-bg {
     background-color: #eee;
+    border: 1px solid var(--dark);
 }
 .blue {
     background-color: var(--ardc-blue);
