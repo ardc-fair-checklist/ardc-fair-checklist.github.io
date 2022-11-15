@@ -6,11 +6,12 @@
         <BannerParams />
         <template v-if="nQuestions.total > 0">
             <p>Answer the {{ nQuestions.total }} questions below to assess your software's FAIRness.</p>
-            <div class="aspect" v-for="aspect in ['F', 'A', 'I', 'R']" >
+            <div v-for="aspect in ['F', 'A', 'I', 'R']">
                 <h2>{{ getAspectFullname(aspect) }}</h2>
                 <Question v-for="question in questions.filter(q => q.aspect === aspect)"
                     v-bind:key="question.id"
                     v-bind:question="question"
+                    class="aspect"
                 />
             </div>
             <ProgressBars v-bind:progress="progress" />
@@ -66,10 +67,10 @@ h2 {
 }
 .aspect {
     background-color: var(--dark);
-    border-radius: 0.5em;
+    /*border-radius: 0.5em;*/
     border: 2px solid #444;
     color: var(--light);
-    margin-bottom: 4em;
+    margin-bottom: 2em;
     padding-bottom: 1em;
     padding-left: 3em;
     padding-right: 3em;

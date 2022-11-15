@@ -87,6 +87,11 @@ defineProps<{
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    background-color: var(--light);
+    max-width: 55em;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    box-sizing: border-box;
 }
 
 .test {
@@ -94,10 +99,10 @@ defineProps<{
     flex-grow: 1;
     min-width: 30em;
     max-width: 50em;
-    border-top-left-radius: 0.5em;
-    border-top-right-radius: 0.5em;
+    /*border-top: 2px solid #444;*/
     /*border-left: 2px solid #444;*/
     /*border-right: 2px solid #444;*/
+    box-sizing: border-box;
 }
 
 @media screen and (min-width: 70em) {
