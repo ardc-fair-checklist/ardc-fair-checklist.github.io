@@ -1,7 +1,7 @@
 <template>
     <div class="footer">
         <div class="inner">
-            <div class="test">
+            <div class="another-inner">
                 <div class="progressbars">
                     <div class="labels">
                         <div class="row">
@@ -29,25 +29,32 @@
                     <div class="bars">
                         <div class="row">
                             <div class="bar bar-bg">
-                                <div class="bar blue" />
+                                <div class="bar blue">
+                                </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="bar bar-bg">
-                                <div class="bar pink" />
+                                <div class="bar pink">
+                                </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="bar bar-bg">
-                                <div class="bar yellow" />
+                                <div class="bar yellow">
+                                </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="bar bar-bg">
-                                <div class="bar purple" />
+                                <div class="bar purple">
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <button v-bind:disabled="showButton"
+                        role="button"
+                        v-on:click="onClick()">Get the badge</button>
                 </div>
             </div>
         </div>
@@ -61,8 +68,10 @@ defineProps<{
         a: string;
         i: string;
         r: string;
-    }
-}>()
+    },
+    onClick: () => void,
+    showButton: boolean
+}>();
 </script>
 
 <style scoped>
@@ -88,13 +97,13 @@ defineProps<{
     justify-content: center;
     align-items: center;
     background-color: var(--light);
-    max-width: 55em;
+    max-width: 56em;
     border-top-left-radius: 0.5em;
     border-top-right-radius: 0.5em;
     box-sizing: border-box;
 }
 
-.test {
+.another-inner {
     background-color: var(--light);
     flex-grow: 1;
     min-width: 30em;
@@ -134,8 +143,8 @@ defineProps<{
     margin-top: 1em;
     padding-bottom: 0.25em;
     padding-top: 0.25em;
-    padding-left: 3em;
-    padding-right: 3em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
     background-color: var(--light);
 }
 
@@ -143,10 +152,10 @@ defineProps<{
     flex-grow: 0;
     display: flex;
     flex-direction: column;
-    margin-left: 2em;
+    /*margin-left: 2em;*/
 }
 .bars {
-    flex-grow: 0.8;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
 }
@@ -191,4 +200,14 @@ defineProps<{
     background-color: var(--ardc-purple);
     width: v-bind('progress.r');  /* CSS Vue magic here */
 }
+
+button {
+    padding: 0.5em 1.5em;
+    height: min-content;
+    flex-grow: 0;
+    margin-left: 2em;
+    margin-right: 1em;
+    align-self: center;
+}
+
 </style>

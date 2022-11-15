@@ -11,11 +11,14 @@
                 <Question v-for="question in questions.filter(q => q.aspect === aspect)"
                     v-bind:key="question.id"
                     v-bind:question="question"
-                    class="aspect"
                 />
             </div>
-            <ProgressBars v-bind:progress="progress" />
-            <Badge />
+            <ProgressBars
+                v-bind:progress="progress"
+                v-bind:onClick="scrollToBadgesSection"
+                v-bind:showButton="showButton"
+            />
+            <Badge id="badges-section"/>
             <About />
         </template>
         <template v-else>
@@ -25,6 +28,7 @@
 </template>
 
 <script setup lang="ts">
+import { onMounted, ref } from 'vue'
 import Badge from './Badge.vue'
 import BannerParams from './BannerParams.vue'
 import BannerVersions from './BannerVersions.vue'
@@ -39,6 +43,8 @@ import { questions as data } from './questions.json'
 
 setQuestions(data as QuestionType[]);
 
+const showButton = ref(false);
+
 const getAspectFullname = (aspect: string) => {
     return {
         F: "Findable",
@@ -47,6 +53,29 @@ const getAspectFullname = (aspect: string) => {
         R: "Reusable"
     }[aspect]
 }
+const scrollToBadgesSection = () => {
+    document.getElementById("badges-section")?.scrollIntoView({behavior: "smooth"})
+}
+onMounted(() => {
+    window.onscroll = () => {
+        function elementInViewport(rect: DOMRect) {
+            const conditions = [
+                rect.top >= 0,
+                rect.left >= 0,
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth),
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+            ]
+            return conditions.every(e => e)
+        }
+        const elem = document.getElementById("badges-section")
+        if (elem !== undefined && elem !== null) {
+            const rect = elem.getBoundingClientRect();
+            showButton.value = elementInViewport(rect);
+        }
+    }
+})
+
+
 const linkToDataChecklist = `${import.meta.env.BASE_URL}data/v0.2`
 </script>
 
@@ -59,28 +88,14 @@ h1 {
     margin-top: 3em;
 }
 h2 {
-    /*border-bottom: 2px solid var(--white);*/
+    border-bottom: 2px solid var(--white);
+    width: 40%;
     color: var(--white);
-    /*margin-bottom: 2em;*/
+    margin-bottom: 1.5em;
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
     padding: 20px 10px;
     text-align: center;
-}
-.aspect {
-    background-color: var(--dark);
-    /*border-radius: 0.5em;*/
-    border: 2px solid #444;
-    color: var(--light);
-    margin-bottom: 2em;
-    padding-bottom: 1em;
-    padding-left: 3em;
-    padding-right: 3em;
-    padding-top: 1em;
-}
-
-@media screen and (max-width: 41.5em) {
-    .aspect {
-        padding-left: 1em;
-        padding-right: 1em;
-    }
 }
 </style>
