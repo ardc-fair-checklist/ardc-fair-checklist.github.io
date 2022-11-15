@@ -60,17 +60,17 @@
   "pages/software/v0.2/About.vue?vue&type=style&index=0&scoped=ed8fb2dc&lang.css": [],
   "pages/software/v0.2/About.vue": [],
   "pages/software/v0.2/ProgressBars.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/software/v0.2/ProgressBars.vue?vue&type=style&index=0&scoped=b5a02348&lang.css": [],
+  "pages/software/v0.2/ProgressBars.vue?vue&type=style&index=0&scoped=c15ffe00&lang.css": [],
   "pages/software/v0.2/ProgressBars.vue": [],
   "pages/software/v0.2/Answer.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/software/v0.2/Answer.vue?vue&type=style&index=0&scoped=3339ce52&lang.css": [],
   "pages/software/v0.2/Answer.vue": [],
   "pages/software/v0.2/Question.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/software/v0.2/Question.vue?vue&type=style&index=0&scoped=e183013d&lang.css": [],
+  "pages/software/v0.2/Question.vue?vue&type=style&index=0&scoped=c82cf252&lang.css": [],
   "pages/software/v0.2/Question.vue": [],
   "pages/software/v0.2/questions.json": [],
   "pages/software/v0.2/index.page.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/software/v0.2/index.page.vue?vue&type=style&index=0&scoped=163f3aca&lang.css": [],
+  "pages/software/v0.2/index.page.vue?vue&type=style&index=0&scoped=e0a1dc33&lang.css": [],
   "pages/software/v0.2/index.page.vue": [],
   "node_modules/vite-plugin-ssr/dist/esm/utils/isPlainObject.js": [],
   "node_modules/vite-plugin-ssr/dist/esm/utils/stringifyStringArray.js": [],
@@ -141,8 +141,8 @@
     "/ssg/assets/global.b082e789.css"
   ],
   "index.page.c7c4abfa.js": [],
-  "index.page.165fa0fb.js": [
-    "/ssg/assets/index.page.cf7778f3.css",
+  "index.page.38752ae4.js": [
+    "/ssg/assets/index.page.911531ee.css",
     "/ssg/assets/global.b082e789.css"
   ],
   "_error.page.028b1f5f.js": [],

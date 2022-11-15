@@ -125,7 +125,7 @@ footer p[data-v-ed8fb2dc] {
     font-size: small;
 }
 
-.footer[data-v-b5a02348] {
+.footer[data-v-c15ffe00] {
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -136,7 +136,7 @@ footer p[data-v-ed8fb2dc] {
     justify-content: center;
     align-items: center;
 }
-.inner[data-v-b5a02348] {
+.inner[data-v-c15ffe00] {
     width: 100%;
     /*background-color: orange;*/
     display: flex;
@@ -145,12 +145,12 @@ footer p[data-v-ed8fb2dc] {
     justify-content: center;
     align-items: center;
     background-color: var(--light);
-    max-width: 55em;
+    max-width: 56em;
     border-top-left-radius: 0.5em;
     border-top-right-radius: 0.5em;
     box-sizing: border-box;
 }
-.test[data-v-b5a02348] {
+.another-inner[data-v-c15ffe00] {
     background-color: var(--light);
     flex-grow: 1;
     min-width: 30em;
@@ -161,82 +161,91 @@ footer p[data-v-ed8fb2dc] {
     box-sizing: border-box;
 }
 @media screen and (min-width: 70em) {
-.inner[data-v-b5a02348] {
+.inner[data-v-c15ffe00] {
         padding-left: 3em;
         padding-right: 3em;
 }
 }
 @media screen and (max-width: 70em) {
-.inner[data-v-b5a02348] {
+.inner[data-v-c15ffe00] {
         padding-left: 3em;
         padding-right: 3em;
 }
 }
 @media screen and (max-width: 41.5em) {
-.inner[data-v-b5a02348] {
+.inner[data-v-c15ffe00] {
         padding-left: 0.5em;
         padding-right: 0.5em;
 }
 }
-.progressbars[data-v-b5a02348] {
+.progressbars[data-v-c15ffe00] {
     column-gap: 0.5em;
     display: flex;
     flex-direction: row;
     margin-top: 1em;
     padding-bottom: 0.25em;
     padding-top: 0.25em;
-    padding-left: 3em;
-    padding-right: 3em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
     background-color: var(--light);
 }
-.labels[data-v-b5a02348] {
+.labels[data-v-c15ffe00] {
     flex-grow: 0;
     display: flex;
     flex-direction: column;
-    margin-left: 2em;
+    /*margin-left: 2em;*/
 }
-.bars[data-v-b5a02348] {
-    flex-grow: 0.8;
+.bars[data-v-c15ffe00] {
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
 }
-.row[data-v-b5a02348] {
+.row[data-v-c15ffe00] {
     height: 1.75em;
     min-height: 1.75em;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.label[data-v-b5a02348] {
+.label[data-v-c15ffe00] {
     text-align: right;
     line-height: 2em;
     color: black;
 }
-.bar[data-v-b5a02348] {
+.bar[data-v-c15ffe00] {
     height: 0.7em;
     border-top-right-radius: 0.25em;
     border-bottom-right-radius: 0.25em;
 }
-.bar-bg[data-v-b5a02348] {
+.bar-bg[data-v-c15ffe00] {
     background-color: #eee;
     border: 1px solid var(--dark);
 }
-.blue[data-v-b5a02348] {
+.blue[data-v-c15ffe00] {
     background-color: var(--ardc-blue);
-    width: var(--e5d4e53c);  /* CSS Vue magic here */
+    width: var(--2223664e);  /* CSS Vue magic here */
 }
-.pink[data-v-b5a02348] {
+.pink[data-v-c15ffe00] {
     background-color: var(--ardc-pink);
-    width: var(--e5d4e546);  /* CSS Vue magic here */
+    width: var(--22236658);  /* CSS Vue magic here */
 }
-.yellow[data-v-b5a02348] {
+.yellow[data-v-c15ffe00] {
     background-color: var(--ardc-yellow);
-    width: var(--e5d4e536);  /* CSS Vue magic here */
+    width: var(--22236648);  /* CSS Vue magic here */
 }
-.purple[data-v-b5a02348] {
+.purple[data-v-c15ffe00] {
     background-color: var(--ardc-purple);
-    width: var(--e5d4e524);  /* CSS Vue magic here */
+    width: var(--22236636);  /* CSS Vue magic here */
 }
+button[data-v-c15ffe00] {
+    padding: 0.5em 1.5em;
+    height: min-content;
+    flex-grow: 0;
+    margin-left: 2em;
+    margin-right: 1em;
+    align-self: center;
+}
+
 
 .answer[data-v-3339ce52] {
     padding: 0.3em 0.2em;
@@ -267,7 +276,7 @@ footer p[data-v-ed8fb2dc] {
 }
 
 
-fieldset[data-v-e183013d] {
+fieldset[data-v-c82cf252] {
     border-style: none;
     flex-grow: 1;
     margin-inline-start: 0px;
@@ -277,51 +286,19 @@ fieldset[data-v-e183013d] {
     padding-inline-end: 0em;
     padding-block-end: 0em;
 }
-legend[data-v-e183013d] {
+legend[data-v-c82cf252] {
     padding-inline-start: 0px;
     padding-inline-end: 0px;
     margin-bottom: 1em;
 }
-.question[data-v-e183013d] {
-    margin-bottom: 2em;
+.question[data-v-c82cf252] {
+    background-color: var(--dark);
+    border-radius: 0.25em;
+    border: 2px solid #444;
+    color: var(--light);
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-}
-.question-index[data-v-e183013d] {
-    min-width: 2em;
-}
-.question-guidance[data-v-e183013d] {
-    margin-bottom: 1em;
-    text-align: justify;
-    /*display: none;*/
-}
-.shared[data-v-e183013d] {
-    /* shared styles for legend and .question-index */
-    font-weight: bold;
-    line-height: 1.6em;
-    font-size: 1.17em;
-}
-
-main[data-v-163f3aca] {
-    color: var(--white);
-}
-h1[data-v-163f3aca] {
-    line-height: 1.2em;
-    margin-top: 3em;
-}
-h2[data-v-163f3aca] {
-    /*border-bottom: 2px solid var(--white);*/
-    color: var(--white);
-    /*margin-bottom: 2em;*/
-    padding: 20px 10px;
-    text-align: center;
-}
-.aspect[data-v-163f3aca] {
-    background-color: var(--dark);
-    /*border-radius: 0.5em;*/
-    border: 2px solid #444;
-    color: var(--light);
     margin-bottom: 2em;
     padding-bottom: 1em;
     padding-left: 3em;
@@ -329,8 +306,41 @@ h2[data-v-163f3aca] {
     padding-top: 1em;
 }
 @media screen and (max-width: 41.5em) {
-.aspect[data-v-163f3aca] {
+.question[data-v-c82cf252] {
         padding-left: 1em;
         padding-right: 1em;
 }
+}
+.question-index[data-v-c82cf252] {
+    min-width: 2em;
+}
+.question-guidance[data-v-c82cf252] {
+    margin-bottom: 1em;
+    text-align: justify;
+    /*display: none;*/
+}
+.shared[data-v-c82cf252] {
+    /* shared styles for legend and .question-index */
+    font-weight: bold;
+    line-height: 1.6em;
+    font-size: 1.17em;
+}
+
+main[data-v-e0a1dc33] {
+    color: var(--white);
+}
+h1[data-v-e0a1dc33] {
+    line-height: 1.2em;
+    margin-top: 3em;
+}
+h2[data-v-e0a1dc33] {
+    border-bottom: 2px solid var(--white);
+    width: 40%;
+    color: var(--white);
+    margin-bottom: 1.5em;
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 10px;
+    text-align: center;
 }

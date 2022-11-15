@@ -99,14 +99,14 @@ const _withScopeId$2 = (n) => (pushScopeId("data-v-9ef958c9"), n = n(), popScope
 const _hoisted_1$7 = { class: "badge" };
 const _hoisted_2$4 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createBaseVNode("h2", null, "Get the badge", -1));
 const _hoisted_3$4 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createBaseVNode("h3", null, "Markdown", -1));
-const _hoisted_4$2 = { for: "textarea-markdown-badge" };
-const _hoisted_5$1 = {
+const _hoisted_4$3 = { for: "textarea-markdown-badge" };
+const _hoisted_5$2 = {
   readonly: "",
   wrap: "off",
   id: "textarea-markdown-badge"
 };
 const _hoisted_6$1 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createBaseVNode("h3", null, "ReStructured Text", -1));
-const _hoisted_7 = { for: "textarea-rst-badge" };
+const _hoisted_7$1 = { for: "textarea-rst-badge" };
 const _hoisted_8 = {
   readonly: "",
   wrap: "off",
@@ -136,12 +136,12 @@ const _sfc_main$8 = /* @__PURE__ */ defineComponent({
       return openBlock(), createElementBlock("div", _hoisted_1$7, [
         _hoisted_2$4,
         _hoisted_3$4,
-        createBaseVNode("label", _hoisted_4$2, [
+        createBaseVNode("label", _hoisted_4$3, [
           createTextVNode(" The snippet for the FAIRness badge in Markdown format: "),
-          createBaseVNode("textarea", _hoisted_5$1, toDisplayString(badge.markdown.value), 1)
+          createBaseVNode("textarea", _hoisted_5$2, toDisplayString(badge.markdown.value), 1)
         ]),
         _hoisted_6$1,
-        createBaseVNode("label", _hoisted_7, [
+        createBaseVNode("label", _hoisted_7$1, [
           createTextVNode(" The snippet for the FAIRness badge in ReStructured Text format: "),
           createBaseVNode("textarea", _hoisted_8, toDisplayString(badge.rst.value), 1)
         ]),
@@ -311,29 +311,45 @@ function _sfc_render(_ctx, _cache) {
 }
 const About = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["render", _sfc_render], ["__scopeId", "data-v-ed8fb2dc"]]);
 const _hoisted_1$3 = { class: "footer" };
-const _hoisted_2$2 = /* @__PURE__ */ createStaticVNode('<div class="inner" data-v-b5a02348><div class="test" data-v-b5a02348><div class="progressbars" data-v-b5a02348><div class="labels" data-v-b5a02348><div class="row" data-v-b5a02348><div class="label" data-v-b5a02348> Findable </div></div><div class="row" data-v-b5a02348><div class="label" data-v-b5a02348> Accessible </div></div><div class="row" data-v-b5a02348><div class="label" data-v-b5a02348> Interoperable </div></div><div class="row" data-v-b5a02348><div class="label" data-v-b5a02348> Reusable </div></div></div><div class="bars" data-v-b5a02348><div class="row" data-v-b5a02348><div class="bar bar-bg" data-v-b5a02348><div class="bar blue" data-v-b5a02348></div></div></div><div class="row" data-v-b5a02348><div class="bar bar-bg" data-v-b5a02348><div class="bar pink" data-v-b5a02348></div></div></div><div class="row" data-v-b5a02348><div class="bar bar-bg" data-v-b5a02348><div class="bar yellow" data-v-b5a02348></div></div></div><div class="row" data-v-b5a02348><div class="bar bar-bg" data-v-b5a02348><div class="bar purple" data-v-b5a02348></div></div></div></div></div></div></div>', 1);
-const _hoisted_3$2 = [
-  _hoisted_2$2
-];
+const _hoisted_2$2 = { class: "inner" };
+const _hoisted_3$2 = { class: "another-inner" };
+const _hoisted_4$2 = { class: "progressbars" };
+const _hoisted_5$1 = /* @__PURE__ */ createStaticVNode('<div class="labels" data-v-c15ffe00><div class="row" data-v-c15ffe00><div class="label" data-v-c15ffe00> Findable </div></div><div class="row" data-v-c15ffe00><div class="label" data-v-c15ffe00> Accessible </div></div><div class="row" data-v-c15ffe00><div class="label" data-v-c15ffe00> Interoperable </div></div><div class="row" data-v-c15ffe00><div class="label" data-v-c15ffe00> Reusable </div></div></div><div class="bars" data-v-c15ffe00><div class="row" data-v-c15ffe00><div class="bar bar-bg" data-v-c15ffe00><div class="bar blue" data-v-c15ffe00></div></div></div><div class="row" data-v-c15ffe00><div class="bar bar-bg" data-v-c15ffe00><div class="bar pink" data-v-c15ffe00></div></div></div><div class="row" data-v-c15ffe00><div class="bar bar-bg" data-v-c15ffe00><div class="bar yellow" data-v-c15ffe00></div></div></div><div class="row" data-v-c15ffe00><div class="bar bar-bg" data-v-c15ffe00><div class="bar purple" data-v-c15ffe00></div></div></div></div>', 2);
+const _hoisted_7 = ["disabled"];
 const _sfc_main$3 = /* @__PURE__ */ defineComponent({
   __name: "ProgressBars",
   props: {
-    progress: null
+    progress: null,
+    onClick: null,
+    showButton: { type: Boolean }
   },
   setup(__props) {
     useCssVars((_ctx) => ({
-      "e5d4e53c": __props.progress.f,
-      "e5d4e546": __props.progress.a,
-      "e5d4e536": __props.progress.i,
-      "e5d4e524": __props.progress.r
+      "2223664e": __props.progress.f,
+      "22236658": __props.progress.a,
+      "22236648": __props.progress.i,
+      "22236636": __props.progress.r
     }));
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("div", _hoisted_1$3, _hoisted_3$2);
+      return openBlock(), createElementBlock("div", _hoisted_1$3, [
+        createBaseVNode("div", _hoisted_2$2, [
+          createBaseVNode("div", _hoisted_3$2, [
+            createBaseVNode("div", _hoisted_4$2, [
+              _hoisted_5$1,
+              createBaseVNode("button", {
+                disabled: __props.showButton,
+                role: "button",
+                onClick: _cache[0] || (_cache[0] = ($event) => __props.onClick())
+              }, "Get the badge", 8, _hoisted_7)
+            ])
+          ])
+        ])
+      ]);
     };
   }
 });
-const ProgressBars_vue_vue_type_style_index_0_scoped_b5a02348_lang = "";
-const ProgressBars = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-b5a02348"]]);
+const ProgressBars_vue_vue_type_style_index_0_scoped_c15ffe00_lang = "";
+const ProgressBars = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-c15ffe00"]]);
 const _hoisted_1$2 = ["aria-labelledby"];
 const _hoisted_2$1 = { class: "answer-radiobutton" };
 const _hoisted_3$1 = ["id", "value", "checked"];
@@ -425,8 +441,8 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const Question_vue_vue_type_style_index_0_scoped_e183013d_lang = "";
-const Question = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-e183013d"]]);
+const Question_vue_vue_type_style_index_0_scoped_c82cf252_lang = "";
+const Question = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-c82cf252"]]);
 const questions = [
   {
     answers: [
@@ -931,12 +947,13 @@ const questions = [
     text: "If they exist, how much have domain-relevant community standards been considered in writing the software? it is linked to I:q0"
   }
 ];
-const _withScopeId = (n) => (pushScopeId("data-v-163f3aca"), n = n(), popScopeId(), n);
+const _withScopeId = (n) => (pushScopeId("data-v-e0a1dc33"), n = n(), popScopeId(), n);
 const _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("h1", null, "ARDC FAIR for software self-assessment checklist", -1));
 const _sfc_main = /* @__PURE__ */ defineComponent({
   __name: "index.page",
   setup(__props) {
     setQuestions(questions);
+    const showButton = ref(false);
     const getAspectFullname = (aspect) => {
       return {
         F: "Findable",
@@ -945,6 +962,28 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
         R: "Reusable"
       }[aspect];
     };
+    const scrollToBadgesSection = () => {
+      var _a;
+      (_a = document.getElementById("badges-section")) == null ? void 0 : _a.scrollIntoView({ behavior: "smooth" });
+    };
+    onMounted(() => {
+      window.onscroll = () => {
+        function elementInViewport(rect) {
+          const conditions = [
+            rect.top >= 0,
+            rect.left >= 0,
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth),
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+          ];
+          return conditions.every((e) => e);
+        }
+        const elem = document.getElementById("badges-section");
+        if (elem !== void 0 && elem !== null) {
+          const rect = elem.getBoundingClientRect();
+          showButton.value = elementInViewport(rect);
+        }
+      };
+    });
     const linkToDataChecklist = `${"/ssg/"}data/v0.2`;
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("main", null, [
@@ -969,14 +1008,17 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
               (openBlock(true), createElementBlock(Fragment, null, renderList(unref(questions$1).filter((q) => q.aspect === aspect), (question) => {
                 return openBlock(), createBlock(Question, {
                   key: question.id,
-                  question,
-                  class: "aspect"
+                  question
                 }, null, 8, ["question"]);
               }), 128))
             ]);
           }), 64)),
-          createVNode(ProgressBars, { progress: unref(progress) }, null, 8, ["progress"]),
-          createVNode(Badge),
+          createVNode(ProgressBars, {
+            progress: unref(progress),
+            onClick: scrollToBadgesSection,
+            showButton: showButton.value
+          }, null, 8, ["progress", "showButton"]),
+          createVNode(Badge, { id: "badges-section" }),
           createVNode(About)
         ], 64)) : (openBlock(), createElementBlock(Fragment, { key: 1 }, [
           createTextVNode(" Loading questions data... ")
@@ -985,8 +1027,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const index_page_vue_vue_type_style_index_0_scoped_163f3aca_lang = "";
-const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-163f3aca"]]);
+const index_page_vue_vue_type_style_index_0_scoped_e0a1dc33_lang = "";
+const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-e0a1dc33"]]);
 export {
   index_page as default
 };
