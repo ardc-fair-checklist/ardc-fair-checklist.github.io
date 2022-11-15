@@ -57,7 +57,6 @@ a[data-v-10224143]:hover {
     :root {
         font-size: 112%;
     }
-
     #app {
         padding-left: 3em;
         padding-right: 3em;
@@ -69,7 +68,6 @@ a[data-v-10224143]:hover {
     :root {
         font-size: 100%;
     }
-
     #app {
         padding-left: 3em;
         padding-right: 3em;
@@ -80,7 +78,6 @@ a[data-v-10224143]:hover {
     :root {
         font-size: 70%;
     }
-
     #app {
         padding-left: 0.5em;
         padding-right: 0.5em;
@@ -128,81 +125,117 @@ footer p[data-v-ed8fb2dc] {
     font-size: small;
 }
 
-.footer[data-v-797d62b0] {
-    min-width: 100vw;
+.footer[data-v-b5a02348] {
+    width: 100%;
     position: fixed;
     bottom: 0;
     left: 0;
-}
-.inner[data-v-797d62b0] {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0.4) 100%);
-    width: 100%;
-    height: 100%;
-    min-height: 12em;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
 }
-.progressbars[data-v-797d62b0] {
-    border-radius: 0.5em;
+.inner[data-v-b5a02348] {
+    width: 100%;
+    /*background-color: orange;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light);
+    max-width: 55em;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    box-sizing: border-box;
+}
+.test[data-v-b5a02348] {
+    background-color: var(--light);
+    flex-grow: 1;
+    min-width: 30em;
+    max-width: 50em;
+    /*border-top: 2px solid #444;*/
+    /*border-left: 2px solid #444;*/
+    /*border-right: 2px solid #444;*/
+    box-sizing: border-box;
+}
+@media screen and (min-width: 70em) {
+.inner[data-v-b5a02348] {
+        padding-left: 3em;
+        padding-right: 3em;
+}
+}
+@media screen and (max-width: 70em) {
+.inner[data-v-b5a02348] {
+        padding-left: 3em;
+        padding-right: 3em;
+}
+}
+@media screen and (max-width: 41.5em) {
+.inner[data-v-b5a02348] {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+}
+}
+.progressbars[data-v-b5a02348] {
     column-gap: 0.5em;
     display: flex;
     flex-direction: row;
-    max-width: 50em;
-    min-width: 30em;
+    margin-top: 1em;
     padding-bottom: 0.25em;
     padding-top: 0.25em;
     padding-left: 3em;
     padding-right: 3em;
+    background-color: var(--light);
 }
-.labels[data-v-797d62b0] {
+.labels[data-v-b5a02348] {
     flex-grow: 0;
     display: flex;
     flex-direction: column;
     margin-left: 2em;
 }
-.bars[data-v-797d62b0] {
+.bars[data-v-b5a02348] {
     flex-grow: 0.8;
     display: flex;
     flex-direction: column;
 }
-.row[data-v-797d62b0] {
+.row[data-v-b5a02348] {
     height: 1.75em;
     min-height: 1.75em;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.label[data-v-797d62b0] {
+.label[data-v-b5a02348] {
     text-align: right;
     line-height: 2em;
-    color: white;
+    color: black;
 }
-.bar[data-v-797d62b0] {
+.bar[data-v-b5a02348] {
     height: 0.7em;
     border-top-right-radius: 0.25em;
     border-bottom-right-radius: 0.25em;
 }
-.bar-bg[data-v-797d62b0] {
+.bar-bg[data-v-b5a02348] {
     background-color: #eee;
+    border: 1px solid var(--dark);
 }
-.blue[data-v-797d62b0] {
+.blue[data-v-b5a02348] {
     background-color: var(--ardc-blue);
-    width: var(--5d9979d4);  /* CSS Vue magic here */
+    width: var(--e5d4e53c);  /* CSS Vue magic here */
 }
-.pink[data-v-797d62b0] {
+.pink[data-v-b5a02348] {
     background-color: var(--ardc-pink);
-    width: var(--5d9979cf);  /* CSS Vue magic here */
+    width: var(--e5d4e546);  /* CSS Vue magic here */
 }
-.yellow[data-v-797d62b0] {
+.yellow[data-v-b5a02348] {
     background-color: var(--ardc-yellow);
-    width: var(--5d9979d7);  /* CSS Vue magic here */
+    width: var(--e5d4e536);  /* CSS Vue magic here */
 }
-.purple[data-v-797d62b0] {
+.purple[data-v-b5a02348] {
     background-color: var(--ardc-purple);
-    width: var(--5d9979e0);  /* CSS Vue magic here */
+    width: var(--e5d4e524);  /* CSS Vue magic here */
 }
 
 .answer[data-v-3339ce52] {
@@ -270,33 +303,33 @@ legend[data-v-e183013d] {
     font-size: 1.17em;
 }
 
-main[data-v-0ee2db6e] {
+main[data-v-163f3aca] {
     color: var(--white);
 }
-h1[data-v-0ee2db6e] {
+h1[data-v-163f3aca] {
     line-height: 1.2em;
     margin-top: 3em;
 }
-h2[data-v-0ee2db6e] {
+h2[data-v-163f3aca] {
     /*border-bottom: 2px solid var(--white);*/
     color: var(--white);
     /*margin-bottom: 2em;*/
     padding: 20px 10px;
     text-align: center;
 }
-.aspect[data-v-0ee2db6e] {
+.aspect[data-v-163f3aca] {
     background-color: var(--dark);
-    border-radius: 0.5em;
+    /*border-radius: 0.5em;*/
     border: 2px solid #444;
     color: var(--light);
-    margin-bottom: 4em;
+    margin-bottom: 2em;
     padding-bottom: 1em;
     padding-left: 3em;
     padding-right: 3em;
     padding-top: 1em;
 }
 @media screen and (max-width: 41.5em) {
-.aspect[data-v-0ee2db6e] {
+.aspect[data-v-163f3aca] {
         padding-left: 1em;
         padding-right: 1em;
 }
