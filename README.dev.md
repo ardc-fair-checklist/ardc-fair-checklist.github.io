@@ -119,7 +119,9 @@ open http://localhost:3000
 ```
 
 Now make whatever changes you want under `pages/software/v1`. The page should update
-through hot module reloading.
+through hot module reloading. Existing badges that point to any version that isn't
+the latest should still resolve to the correct (older) version page, but will display
+a message prompting users to update.
 
 ## Adding a new topic
 
