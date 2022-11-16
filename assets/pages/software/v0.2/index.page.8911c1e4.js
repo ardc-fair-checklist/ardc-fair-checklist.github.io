@@ -1,9 +1,9 @@
-import { G as ref, H as computed, d as defineComponent, u as openBlock, t as createElementBlock, v as createBaseVNode, C as createTextVNode, I as toDisplayString, x as pushScopeId, y as popScopeId, o as onMounted, B as unref, J as createCommentVNode, z as renderSlot, A as normalizeClass, D as createVNode, E as withCtx, M as createStaticVNode, F as Fragment, K as renderList, L as createBlock } from "../../../chunk-9b869ddf.js";
+import { G as ref, H as computed, d as defineComponent, u as openBlock, t as createElementBlock, v as createBaseVNode, C as createTextVNode, I as toDisplayString, x as pushScopeId, y as popScopeId, o as onMounted, B as unref, J as createCommentVNode, z as renderSlot, A as normalizeClass, D as createVNode, E as withCtx, K as createStaticVNode, F as Fragment, L as renderList, M as createBlock } from "../../../chunk-4828f769.js";
 import { _ as _export_sfc } from "../../../chunk-de093346.js";
-import { l as latest } from "../../../chunk-dc7e3355.js";
-import { u as usePageContext } from "../../../chunk-56ca0878.js";
+import { l as latest } from "../../../chunk-ccb53c0e.js";
+import { u as usePageContext } from "../../../chunk-26e7f91e.js";
 /* empty css                       */import { _ as _imports_0, a as _imports_1 } from "../../../chunk-5b637298.js";
-import { u as useCssVars, w as withKeys, a as withModifiers } from "../../../chunk-88906689.js";
+import { u as useCssVars, w as withKeys, a as withModifiers } from "../../../chunk-ad67e3db.js";
 const state = ref({
   bannerMessageParams: "",
   compliance: [],
@@ -284,8 +284,8 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const BannerVersions_vue_vue_type_style_index_0_scoped_996882b3_lang = "";
-const BannerVersions = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-996882b3"]]);
+const BannerVersions_vue_vue_type_style_index_0_scoped_6919f73d_lang = "";
+const BannerVersions = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-6919f73d"]]);
 const About_vue_vue_type_style_index_0_scoped_ed8fb2dc_lang = "";
 const _sfc_main$4 = {};
 const _withScopeId$1 = (n) => (pushScopeId("data-v-ed8fb2dc"), n = n(), popScopeId(), n);
@@ -314,7 +314,7 @@ const _hoisted_1$3 = { class: "footer" };
 const _hoisted_2$2 = { class: "inner" };
 const _hoisted_3$2 = { class: "another-inner" };
 const _hoisted_4$2 = { class: "progressbars" };
-const _hoisted_5$1 = /* @__PURE__ */ createStaticVNode('<div class="labels" data-v-c15ffe00><div class="row" data-v-c15ffe00><div class="label" data-v-c15ffe00> Findable </div></div><div class="row" data-v-c15ffe00><div class="label" data-v-c15ffe00> Accessible </div></div><div class="row" data-v-c15ffe00><div class="label" data-v-c15ffe00> Interoperable </div></div><div class="row" data-v-c15ffe00><div class="label" data-v-c15ffe00> Reusable </div></div></div><div class="bars" data-v-c15ffe00><div class="row" data-v-c15ffe00><div class="bar bar-bg" data-v-c15ffe00><div class="bar blue" data-v-c15ffe00></div></div></div><div class="row" data-v-c15ffe00><div class="bar bar-bg" data-v-c15ffe00><div class="bar pink" data-v-c15ffe00></div></div></div><div class="row" data-v-c15ffe00><div class="bar bar-bg" data-v-c15ffe00><div class="bar yellow" data-v-c15ffe00></div></div></div><div class="row" data-v-c15ffe00><div class="bar bar-bg" data-v-c15ffe00><div class="bar purple" data-v-c15ffe00></div></div></div></div>', 2);
+const _hoisted_5$1 = /* @__PURE__ */ createStaticVNode('<div class="labels" data-v-7eb2e851><div class="row" data-v-7eb2e851><div class="label" data-v-7eb2e851> Findable </div></div><div class="row" data-v-7eb2e851><div class="label" data-v-7eb2e851> Accessible </div></div><div class="row" data-v-7eb2e851><div class="label" data-v-7eb2e851> Interoperable </div></div><div class="row" data-v-7eb2e851><div class="label" data-v-7eb2e851> Reusable </div></div></div><div class="bars" data-v-7eb2e851><div class="row" data-v-7eb2e851><div class="bar bar-bg" data-v-7eb2e851><div class="bar blue" data-v-7eb2e851></div></div></div><div class="row" data-v-7eb2e851><div class="bar bar-bg" data-v-7eb2e851><div class="bar pink" data-v-7eb2e851></div></div></div><div class="row" data-v-7eb2e851><div class="bar bar-bg" data-v-7eb2e851><div class="bar yellow" data-v-7eb2e851></div></div></div><div class="row" data-v-7eb2e851><div class="bar bar-bg" data-v-7eb2e851><div class="bar purple" data-v-7eb2e851></div></div></div></div>', 2);
 const _hoisted_7 = ["disabled"];
 const _sfc_main$3 = /* @__PURE__ */ defineComponent({
   __name: "ProgressBars",
@@ -325,10 +325,10 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
   },
   setup(__props) {
     useCssVars((_ctx) => ({
-      "2223664e": __props.progress.f,
-      "22236658": __props.progress.a,
-      "22236648": __props.progress.i,
-      "22236636": __props.progress.r
+      "4a341bf0": __props.progress.f,
+      "4a341bfa": __props.progress.a,
+      "4a341bea": __props.progress.i,
+      "4a341bd8": __props.progress.r
     }));
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("div", _hoisted_1$3, [
@@ -348,8 +348,8 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const ProgressBars_vue_vue_type_style_index_0_scoped_c15ffe00_lang = "";
-const ProgressBars = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-c15ffe00"]]);
+const ProgressBars_vue_vue_type_style_index_0_scoped_7eb2e851_lang = "";
+const ProgressBars = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-7eb2e851"]]);
 const _hoisted_1$2 = ["aria-labelledby"];
 const _hoisted_2$1 = { class: "answer-radiobutton" };
 const _hoisted_3$1 = ["id", "value", "checked"];
@@ -378,11 +378,11 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
       }, [
         createBaseVNode("div", _hoisted_2$1, [
           createBaseVNode("input", {
-            role: "presentation",
             type: "radio",
             id: __props.answer.id,
             value: __props.answer.id,
             checked: __props.isChecked,
+            role: "presentation",
             tabindex: "-1",
             "aria-label": ""
           }, null, 8, _hoisted_3$1)
@@ -398,8 +398,8 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const Answer_vue_vue_type_style_index_0_scoped_3339ce52_lang = "";
-const Answer = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-3339ce52"]]);
+const Answer_vue_vue_type_style_index_0_scoped_74444eb4_lang = "";
+const Answer = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-74444eb4"]]);
 const _hoisted_1$1 = { class: "question" };
 const _hoisted_2 = { class: "question-index shared" };
 const _hoisted_3 = { class: "shared" };
@@ -947,7 +947,7 @@ const questions = [
     text: "If they exist, how much have domain-relevant community standards been considered in writing the software? it is linked to I:q0"
   }
 ];
-const _withScopeId = (n) => (pushScopeId("data-v-e0a1dc33"), n = n(), popScopeId(), n);
+const _withScopeId = (n) => (pushScopeId("data-v-dcb21db4"), n = n(), popScopeId(), n);
 const _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("h1", null, "ARDC FAIR for software self-assessment checklist", -1));
 const _sfc_main = /* @__PURE__ */ defineComponent({
   __name: "index.page",
@@ -1027,8 +1027,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const index_page_vue_vue_type_style_index_0_scoped_e0a1dc33_lang = "";
-const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-e0a1dc33"]]);
+const index_page_vue_vue_type_style_index_0_scoped_dcb21db4_lang = "";
+const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-dcb21db4"]]);
 export {
   index_page as default
 };
