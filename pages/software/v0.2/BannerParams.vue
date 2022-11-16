@@ -5,8 +5,12 @@
 </template>
 
 <script setup lang="ts">
-import { bannerMessageParams, nAnswers, nQuestions, setBannerMessageParams, setCompliance } from './store'
+import { bannerMessageParams } from './store'
+import { nAnswers } from './store'
+import { nQuestions } from './store'
 import { onMounted } from 'vue'
+import { setBannerMessageParams } from './store'
+import { setCompliance } from './store'
 onMounted(() => {
     const chooseBannerMessage = (params: Params) => {
         const checkAspect = (aspect: 'f' | 'a' | 'i' | 'r') => {

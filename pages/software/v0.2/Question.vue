@@ -22,8 +22,9 @@
 </template>
 
 <script setup lang="ts">
+import { compliance } from './store'
+import { setCompliance } from './store'
 import Answer from './Answer.vue'
-import { compliance, setCompliance } from './store'
 
 const props = defineProps<{
     question: {

@@ -5,10 +5,12 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted } from 'vue'
+import { computed } from 'vue'
 import { latest } from '~/renderer/versions'
+import { onMounted } from 'vue'
+import { setShowBannerMessageVersions } from './store'
+import { showBannerMessageVersions } from './store'
 import { usePageContext } from '~/renderer/usePageContext'
-import { showBannerMessageVersions, setShowBannerMessageVersions } from './store'
 import Link from './Link.vue'
 import '~/renderer/global.css'
 import './app.css'

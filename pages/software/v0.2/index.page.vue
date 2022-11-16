@@ -28,18 +28,23 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
+import { nQuestions } from './store'
+import { onMounted } from 'vue'
+import { progress } from './store'
+import { questions } from './store'
+import { questions as data } from './questions.json'
+import { ref } from 'vue'
+import { setQuestions } from './store'
+import { type QuestionType } from './store'
+import About from './About.vue'
 import BadgeSnippets from './BadgeSnippets.vue'
 import BannerParams from './BannerParams.vue'
 import BannerVersions from './BannerVersions.vue'
-import About from './About.vue'
 import Link from './Link.vue'
 import ProgressBars from './ProgressBars.vue';
 import Question from './Question.vue'
-import { setQuestions, nQuestions, type QuestionType, progress, questions } from './store'
 import '~/renderer/global.css'
 import './app.css'
-import { questions as data } from './questions.json'
 
 setQuestions(data as QuestionType[]);
 
