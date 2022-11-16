@@ -9,11 +9,11 @@
     >
         <div class="answer-radiobutton">
             <input
-                role="presentation"
                 type="radio"
                 v-bind:id="answer.id"
                 v-bind:value="answer.id"
                 v-bind:checked="isChecked"
+                role="presentation"
                 tabindex="-1"
                 aria-label=""
             >

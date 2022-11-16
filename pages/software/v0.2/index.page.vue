@@ -75,7 +75,6 @@ onMounted(() => {
     }
 })
 
-
 const linkToDataChecklist = `${import.meta.env.BASE_URL}data/v0.2`
 </script>
 

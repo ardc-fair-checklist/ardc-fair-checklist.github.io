@@ -5,23 +5,19 @@
         <BannerVersions />
         <template v-if="nQuestions.total > 0">
             <p>Answer the {{ nQuestions.total }} questions below to assess your data's FAIRness.</p>
-            <div class="aspect" v-for="aspect in ['F', 'A', 'I', 'R']" >
+            <div v-for="aspect in ['F', 'A', 'I', 'R']">
                 <h2>{{ getAspectFullname(aspect) }}</h2>
                 <Question v-for="question in questions.filter(q => q.aspect === aspect)"
                     v-bind:key="question.id"
                     v-bind:question="question"
                 />
-                <p>{{ getAspectFullname(aspect) }} state:</p>
-                <ProgressBar v-if="aspect==='F'" v-bind:progress="progress.f"/>
-                <ProgressBar v-if="aspect==='A'" v-bind:progress="progress.a"/>
-                <ProgressBar v-if="aspect==='I'" v-bind:progress="progress.i"/>
-                <ProgressBar v-if="aspect==='R'" v-bind:progress="progress.r"/>
             </div>
-            <div class="overall-progress">
-                FAIR state overall
-                <ProgressBar v-bind:progress="progress.overall"/>
-            </div>
-            <Footer />
+            <ProgressBars
+                v-bind:progress="progress"
+                v-bind:onClick="() => {}"
+                v-bind:showButton="false"
+            />
+            <About />
         </template>
         <template v-else>
             Loading questions data...
@@ -31,9 +27,9 @@
 
 <script setup lang="ts">
 import BannerVersions from './BannerVersions.vue'
-import Footer from './Footer.vue'
+import About from './About.vue'
 import Link from './Link.vue'
-import ProgressBar from './ProgressBar.vue';
+import ProgressBars from './ProgressBars.vue';
 import Question from './Question.vue'
 import { setQuestions, nQuestions, type QuestionType, progress, questions } from './store'
 import '~/renderer/global.css'
@@ -63,37 +59,13 @@ h1 {
 }
 h2 {
     border-bottom: 2px solid var(--white);
+    width: 40%;
     color: var(--white);
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
     padding: 20px 10px;
     text-align: center;
-}
-.aspect {
-    background-color: var(--dark);
-    border-radius: 0.5em;
-    border: 2px solid #444;
-    color: var(--light);
-    margin-bottom: 6em;
-    padding-bottom: 3em;
-    padding-left: 3em;
-    padding-right: 3em;
-    padding-top: 1em;
-}
-
-@media screen and (max-width: 41.5em) {
-    .aspect {
-        padding-left: 1em;
-        padding-right: 1em;
-    }
-}
-
-.overall-progress {
-    background-color: var(--white);
-    border-radius: 0.5em;
-    color: var(--dark);
-    line-height: 1.6em;
-    margin-bottom: 5em;
-    margin-bottom: 6em;
-    padding: 3em;
 }
 </style>

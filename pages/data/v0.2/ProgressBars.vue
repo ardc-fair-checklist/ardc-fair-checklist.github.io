@@ -52,9 +52,6 @@
                             </div>
                         </div>
                     </div>
-                    <button v-bind:disabled="showButton"
-                        role="button"
-                        v-on:click="onClick()">Get the badge</button>
                 </div>
             </div>
         </div>
@@ -156,7 +153,7 @@ defineProps<{
     /*margin-left: 2em;*/
 }
 .bars {
-    flex-grow: 1;
+    flex-grow: 0.9;
     display: flex;
     flex-direction: column;
 }

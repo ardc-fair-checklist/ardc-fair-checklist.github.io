@@ -1,6 +1,7 @@
 <template>
     <div
         class="answer"
+        v-bind:aria-labelledby="`label-${answer.id}`"
         v-on:click="onClick"
         v-on:keydown.space.prevent.stop="onClick"
         tabindex=0
@@ -21,7 +22,11 @@
             (+{{ answer.score }})
         </div>
         <div class="answer-text">
-            <label v-bind:for="answer.id">{{ answer.text }}</label>
+            <label
+                v-bind:for="answer.id"
+                v-bind:id="`label-${answer.id}`"
+            >{{ answer.text }}
+            </label>
         </div>
     </div>
 </template>

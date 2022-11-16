@@ -13,7 +13,6 @@ import Link from './Link.vue'
 import '~/renderer/global.css'
 import './app.css'
 
-
 const link = computed(() => {
     return [
         window.location.origin,

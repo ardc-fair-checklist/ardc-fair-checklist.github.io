@@ -68,11 +68,28 @@ legend {
     margin-bottom: 1em;
 }
 .question {
-    margin-bottom: 2em;
+    background-color: var(--dark);
+    border-radius: 0.25em;
+    border: 2px solid #444;
+    color: var(--light);
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    margin-bottom: 2em;
+    padding-bottom: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 1em;
 }
+
+@media screen and (max-width: 41.5em) {
+    .question {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+
+
 .question-index {
     min-width: 2em;
 }
