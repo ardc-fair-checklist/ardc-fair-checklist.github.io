@@ -1,4 +1,4 @@
-import { G as ref, H as computed, d as defineComponent, u as openBlock, t as createElementBlock, v as createBaseVNode, C as createTextVNode, I as toDisplayString, x as pushScopeId, y as popScopeId, o as onMounted, B as unref, J as createCommentVNode, z as renderSlot, A as normalizeClass, D as createVNode, E as withCtx, K as createStaticVNode, F as Fragment, L as renderList, M as createBlock } from "../../../chunk-4828f769.js";
+import { G as ref, H as computed, d as defineComponent, u as openBlock, t as createElementBlock, v as createBaseVNode, I as toDisplayString, x as pushScopeId, y as popScopeId, o as onMounted, B as unref, J as createCommentVNode, z as renderSlot, A as normalizeClass, C as createTextVNode, D as createVNode, E as withCtx, K as createStaticVNode, F as Fragment, L as renderList, M as createBlock } from "../../../chunk-4828f769.js";
 import { _ as _export_sfc } from "../../../chunk-de093346.js";
 import { l as latest } from "../../../chunk-ccb53c0e.js";
 import { u as usePageContext } from "../../../chunk-26e7f91e.js";
@@ -95,26 +95,29 @@ const progress = computed(() => {
     overall: `${100 * scores.reduce(summation, 0) / nPointsMax.value.total}%`
   };
 });
-const _withScopeId$2 = (n) => (pushScopeId("data-v-17539a46"), n = n(), popScopeId(), n);
-const _hoisted_1$7 = { class: "badge" };
+const _withScopeId$2 = (n) => (pushScopeId("data-v-937f192e"), n = n(), popScopeId(), n);
+const _hoisted_1$7 = { class: "badges" };
 const _hoisted_2$4 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createBaseVNode("h2", null, "Get the badge", -1));
-const _hoisted_3$4 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createBaseVNode("h3", null, "Markdown", -1));
-const _hoisted_4$3 = { for: "textarea-markdown-badge" };
-const _hoisted_5$2 = {
+const _hoisted_3$4 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createBaseVNode("h3", null, [
+  /* @__PURE__ */ createBaseVNode("label", { for: "textarea-markdown-badge" }, "Markdown")
+], -1));
+const _hoisted_4$3 = {
   readonly: "",
   wrap: "off",
   id: "textarea-markdown-badge"
 };
-const _hoisted_6$1 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createBaseVNode("h3", null, "ReStructured Text", -1));
-const _hoisted_7$1 = { for: "textarea-rst-badge" };
-const _hoisted_8 = {
+const _hoisted_5$2 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createBaseVNode("h3", null, [
+  /* @__PURE__ */ createBaseVNode("label", { for: "textarea-rst-badge" }, "ReStructured Text")
+], -1));
+const _hoisted_6$1 = {
   readonly: "",
   wrap: "off",
   id: "textarea-rst-badge"
 };
-const _hoisted_9 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createBaseVNode("h3", null, "HTML", -1));
-const _hoisted_10 = { for: "textarea-html-badge" };
-const _hoisted_11 = {
+const _hoisted_7$1 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createBaseVNode("h3", null, [
+  /* @__PURE__ */ createBaseVNode("label", { for: "textarea-html-badge" }, "HTML")
+], -1));
+const _hoisted_8 = {
   readonly: "",
   wrap: "off",
   id: "textarea-html-badge"
@@ -136,26 +139,17 @@ const _sfc_main$8 = /* @__PURE__ */ defineComponent({
       return openBlock(), createElementBlock("div", _hoisted_1$7, [
         _hoisted_2$4,
         _hoisted_3$4,
-        createBaseVNode("label", _hoisted_4$3, [
-          createTextVNode(" The snippet for the FAIRness badge in Markdown format: "),
-          createBaseVNode("textarea", _hoisted_5$2, toDisplayString(badge.markdown.value), 1)
-        ]),
-        _hoisted_6$1,
-        createBaseVNode("label", _hoisted_7$1, [
-          createTextVNode(" The snippet for the FAIRness badge in ReStructured Text format: "),
-          createBaseVNode("textarea", _hoisted_8, toDisplayString(badge.rst.value), 1)
-        ]),
-        _hoisted_9,
-        createBaseVNode("label", _hoisted_10, [
-          createTextVNode(" The snippet for the FAIRness badge in HTML Text format: "),
-          createBaseVNode("textarea", _hoisted_11, toDisplayString(badge.html.value), 1)
-        ])
+        createBaseVNode("textarea", _hoisted_4$3, toDisplayString(badge.markdown.value), 1),
+        _hoisted_5$2,
+        createBaseVNode("textarea", _hoisted_6$1, toDisplayString(badge.rst.value), 1),
+        _hoisted_7$1,
+        createBaseVNode("textarea", _hoisted_8, toDisplayString(badge.html.value), 1)
       ]);
     };
   }
 });
-const BadgeSnippets_vue_vue_type_style_index_0_scoped_17539a46_lang = "";
-const BadgeSnippets = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["__scopeId", "data-v-17539a46"]]);
+const BadgeSnippets_vue_vue_type_style_index_0_scoped_937f192e_lang = "";
+const BadgeSnippets = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["__scopeId", "data-v-937f192e"]]);
 const _hoisted_1$6 = {
   key: 0,
   class: "banner"

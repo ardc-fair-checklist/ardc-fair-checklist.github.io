@@ -45,7 +45,7 @@
   "pages/software/v0.1/index.page.vue": [],
   "pages/software/v0.2/store.ts": [],
   "pages/software/v0.2/BadgeSnippets.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/software/v0.2/BadgeSnippets.vue?vue&type=style&index=0&scoped=17539a46&lang.css": [],
+  "pages/software/v0.2/BadgeSnippets.vue?vue&type=style&index=0&scoped=937f192e&lang.css": [],
   "pages/software/v0.2/BadgeSnippets.vue": [],
   "pages/software/v0.2/BannerParams.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/software/v0.2/BannerParams.vue?vue&type=style&index=0&scoped=ab07e9ac&lang.css": [],
@@ -141,8 +141,8 @@
     "/ssg/assets/global.b082e789.css"
   ],
   "index.page.dbc160a6.js": [],
-  "index.page.76149805.js": [
-    "/ssg/assets/index.page.37fb43f0.css",
+  "index.page.1be9c5cb.js": [
+    "/ssg/assets/index.page.13148cd4.css",
     "/ssg/assets/global.b082e789.css"
   ],
   "_error.page.98982569.js": [],

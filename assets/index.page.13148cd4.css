@@ -1,5 +1,9 @@
 
-textarea[data-v-17539a46] {
+.badges[data-v-937f192e] {
+    margin-top: 5em;
+    padding-top: 1.5em;
+}
+textarea[data-v-937f192e] {
     background-color: white;
     border-radius: 3px;
     border: 2px solid #ccc;
