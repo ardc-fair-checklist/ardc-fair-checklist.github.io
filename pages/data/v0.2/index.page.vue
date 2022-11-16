@@ -25,15 +25,20 @@
 </template>
 
 <script setup lang="ts">
-import BannerVersions from './BannerVersions.vue'
+import { nQuestions } from './store'
+import { progress } from './store'
+import { questions } from './store'
+import { questions as data } from './questions.json'
+import { setQuestions } from './store'
+import { type QuestionType } from './store'
 import About from './About.vue'
+import BannerVersions from './BannerVersions.vue'
+import Header from './Header.vue'
 import Link from './Link.vue'
 import ProgressBars from './ProgressBars.vue';
 import Question from './Question.vue'
-import { setQuestions, nQuestions, type QuestionType, progress, questions } from './store'
 import '~/renderer/global.css'
 import './app.css'
-import { questions as data } from './questions.json'
 
 setQuestions(data as QuestionType[]);
 
