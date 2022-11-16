@@ -4,12 +4,12 @@ An interactive checklist with questions about FAIRness of software and data. The
 
 The checklist yields hyperlinked badges like this one:
 
-[![FAIRness badge image](https://ardc-fair-checklist.github.io/ssg/badge.svg)](https://ardc-fair-checklist.github.io/ssg/software/v0.2?f=332323&a=3333&i=22&r=424332)
+[![FAIRness badge image](https://ardc-fair-checklist.github.io/ssg/badge.svg)](https://ardc-fair-checklist.github.io/ssg/software/v0.2?f=111111&a=1111&i=11&r=111111)
 
 Here's what the corresponding Markdown looks like for that badge:
 
 ```markdown
-[![FAIRness badge image](https://ardc-fair-checklist.github.io/ssg/badge.svg)](https://ardc-fair-checklist.github.io/ssg/software/v0.2?f=332323&a=3333&i=22&r=424332)
+[![FAIRness badge image](https://ardc-fair-checklist.github.io/ssg/badge.svg)](https://ardc-fair-checklist.github.io/ssg/software/v0.2?f=111111&a=1111&i=11&r=111111)
 ```
 
-Clicking on a badge should take you to the checklist and restore the state (for the badge above, the last answer for each question should be selected).
+The app state should be restored to have the second answer for each question selected.
