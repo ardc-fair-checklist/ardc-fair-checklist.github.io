@@ -1,33 +1,35 @@
 <template>
-    <div class="badge">
+    <div class="badges">
         <h2>Get the badge</h2>
 
-        <h3>Markdown</h3>
-        <label for="textarea-markdown-badge">
-            The snippet for the FAIRness badge in Markdown format:
-            <textarea
-                readonly wrap="off"
-                id="textarea-markdown-badge"
-            >{{ badge.markdown.value }}</textarea>
-        </label>
+        <h3>
+            <label for="textarea-markdown-badge">Markdown</label>
+        </h3>
 
-        <h3>ReStructured Text</h3>
-        <label for="textarea-rst-badge">
-            The snippet for the FAIRness badge in ReStructured Text format:
-            <textarea
-                readonly wrap="off"
-                id="textarea-rst-badge"
-            >{{ badge.rst.value }}</textarea>
-        </label>
+        <textarea
+            readonly wrap="off"
+            id="textarea-markdown-badge"
+        >{{ badge.markdown.value }}</textarea>
 
-        <h3>HTML</h3>
-        <label for="textarea-html-badge">
-            The snippet for the FAIRness badge in HTML Text format:
-            <textarea
-                readonly wrap="off"
-                id="textarea-html-badge"
-            >{{ badge.html.value }}</textarea>
-        </label>
+        <h3>
+            <label for="textarea-rst-badge">ReStructured Text</label>
+        </h3>
+
+        <textarea
+            readonly wrap="off"
+            id="textarea-rst-badge"
+        >{{ badge.rst.value }}</textarea>
+
+
+        <h3>
+            <label for="textarea-html-badge">HTML</label>
+        </h3>
+
+        <textarea
+            readonly wrap="off"
+            id="textarea-html-badge"
+        >{{ badge.html.value }}</textarea>
+
     </div>
 </template>
 
@@ -51,6 +53,11 @@ const badge = {
 
 
 <style scoped>
+.badges {
+    margin-top: 5em;
+    padding-top: 1.5em;
+}
+
 textarea {
     background-color: white;
     border-radius: 3px;
