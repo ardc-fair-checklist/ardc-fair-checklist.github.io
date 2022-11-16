@@ -52,11 +52,13 @@ const badge = {
 
 <style scoped>
 textarea {
-    width: 100%;
-    height: 6em;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
+    background-color: white;
     border-radius: 3px;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+    color: black;
+    height: 6em;
     resize: none;
+    width: 100%;
 }
 </style>

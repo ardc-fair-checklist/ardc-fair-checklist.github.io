@@ -18,7 +18,7 @@
                 v-bind:onClick="scrollToBadgesSection"
                 v-bind:showButton="showButton"
             />
-            <Badge id="badges-section"/>
+            <BadgeSnippets id="badges-section"/>
             <About />
         </template>
         <template v-else>
@@ -29,7 +29,7 @@
 
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
-import Badge from './Badge.vue'
+import BadgeSnippets from './BadgeSnippets.vue'
 import BannerParams from './BannerParams.vue'
 import BannerVersions from './BannerVersions.vue'
 import About from './About.vue'
