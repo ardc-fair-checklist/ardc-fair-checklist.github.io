@@ -1,11 +1,13 @@
 
-textarea[data-v-9ef958c9] {
-    width: 100%;
-    height: 6em;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
+textarea[data-v-17539a46] {
+    background-color: white;
     border-radius: 3px;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+    color: black;
+    height: 6em;
     resize: none;
+    width: 100%;
 }
 
 .banner[data-v-ab07e9ac] {
@@ -326,14 +328,14 @@ legend[data-v-c82cf252] {
     font-size: 1.17em;
 }
 
-main[data-v-dcb21db4] {
+main[data-v-eaf7fb49] {
     color: var(--white);
 }
-h1[data-v-dcb21db4] {
+h1[data-v-eaf7fb49] {
     line-height: 1.2em;
     margin-top: 3em;
 }
-h2[data-v-dcb21db4] {
+h2[data-v-eaf7fb49] {
     border-bottom: 2px solid var(--white);
     width: 40%;
     color: var(--white);

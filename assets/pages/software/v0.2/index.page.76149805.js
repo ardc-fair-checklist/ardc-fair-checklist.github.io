@@ -95,7 +95,7 @@ const progress = computed(() => {
     overall: `${100 * scores.reduce(summation, 0) / nPointsMax.value.total}%`
   };
 });
-const _withScopeId$2 = (n) => (pushScopeId("data-v-9ef958c9"), n = n(), popScopeId(), n);
+const _withScopeId$2 = (n) => (pushScopeId("data-v-17539a46"), n = n(), popScopeId(), n);
 const _hoisted_1$7 = { class: "badge" };
 const _hoisted_2$4 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createBaseVNode("h2", null, "Get the badge", -1));
 const _hoisted_3$4 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createBaseVNode("h3", null, "Markdown", -1));
@@ -120,7 +120,7 @@ const _hoisted_11 = {
   id: "textarea-html-badge"
 };
 const _sfc_main$8 = /* @__PURE__ */ defineComponent({
-  __name: "Badge",
+  __name: "BadgeSnippets",
   setup(__props) {
     const APP_BASE_URL = `https://ardc-fair-checklist.github.io${"/ssg/"}`;
     const badge = {
@@ -154,8 +154,8 @@ const _sfc_main$8 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const Badge_vue_vue_type_style_index_0_scoped_9ef958c9_lang = "";
-const Badge = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["__scopeId", "data-v-9ef958c9"]]);
+const BadgeSnippets_vue_vue_type_style_index_0_scoped_17539a46_lang = "";
+const BadgeSnippets = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["__scopeId", "data-v-17539a46"]]);
 const _hoisted_1$6 = {
   key: 0,
   class: "banner"
@@ -947,7 +947,7 @@ const questions = [
     text: "If they exist, how much have domain-relevant community standards been considered in writing the software? it is linked to I:q0"
   }
 ];
-const _withScopeId = (n) => (pushScopeId("data-v-dcb21db4"), n = n(), popScopeId(), n);
+const _withScopeId = (n) => (pushScopeId("data-v-eaf7fb49"), n = n(), popScopeId(), n);
 const _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("h1", null, "ARDC FAIR for software self-assessment checklist", -1));
 const _sfc_main = /* @__PURE__ */ defineComponent({
   __name: "index.page",
@@ -1018,7 +1018,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
             onClick: scrollToBadgesSection,
             showButton: showButton.value
           }, null, 8, ["progress", "showButton"]),
-          createVNode(Badge, { id: "badges-section" }),
+          createVNode(BadgeSnippets, { id: "badges-section" }),
           createVNode(About)
         ], 64)) : (openBlock(), createElementBlock(Fragment, { key: 1 }, [
           createTextVNode(" Loading questions data... ")
@@ -1027,8 +1027,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const index_page_vue_vue_type_style_index_0_scoped_dcb21db4_lang = "";
-const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-dcb21db4"]]);
+const index_page_vue_vue_type_style_index_0_scoped_eaf7fb49_lang = "";
+const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-eaf7fb49"]]);
 export {
   index_page as default
 };

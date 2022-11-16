@@ -44,9 +44,9 @@
   "pages/data/v0.2/index.page.vue": [],
   "pages/software/v0.1/index.page.vue": [],
   "pages/software/v0.2/store.ts": [],
-  "pages/software/v0.2/Badge.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/software/v0.2/Badge.vue?vue&type=style&index=0&scoped=9ef958c9&lang.css": [],
-  "pages/software/v0.2/Badge.vue": [],
+  "pages/software/v0.2/BadgeSnippets.vue?vue&type=script&setup=true&lang.ts": [],
+  "pages/software/v0.2/BadgeSnippets.vue?vue&type=style&index=0&scoped=17539a46&lang.css": [],
+  "pages/software/v0.2/BadgeSnippets.vue": [],
   "pages/software/v0.2/BannerParams.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/software/v0.2/BannerParams.vue?vue&type=style&index=0&scoped=ab07e9ac&lang.css": [],
   "pages/software/v0.2/BannerParams.vue": [],
@@ -70,7 +70,7 @@
   "pages/software/v0.2/Question.vue": [],
   "pages/software/v0.2/questions.json": [],
   "pages/software/v0.2/index.page.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/software/v0.2/index.page.vue?vue&type=style&index=0&scoped=dcb21db4&lang.css": [],
+  "pages/software/v0.2/index.page.vue?vue&type=style&index=0&scoped=eaf7fb49&lang.css": [],
   "pages/software/v0.2/index.page.vue": [],
   "node_modules/vite-plugin-ssr/dist/esm/utils/isPlainObject.js": [],
   "node_modules/vite-plugin-ssr/dist/esm/utils/stringifyStringArray.js": [],
@@ -141,8 +141,8 @@
     "/ssg/assets/global.b082e789.css"
   ],
   "index.page.dbc160a6.js": [],
-  "index.page.8911c1e4.js": [
-    "/ssg/assets/index.page.af38cc16.css",
+  "index.page.76149805.js": [
+    "/ssg/assets/index.page.37fb43f0.css",
     "/ssg/assets/global.b082e789.css"
   ],
   "_error.page.98982569.js": [],
