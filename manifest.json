@@ -74,20 +74,20 @@
     ]
   },
   "pages/data/v0.2/index.page.vue": {
-    "file": "assets/pages/data/v0.2/index.page.423d1d28.js",
+    "file": "assets/pages/data/v0.2/index.page.471114e1.js",
     "src": "pages/data/v0.2/index.page.vue",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-ccb53c0e.js",
-      "_chunk-26e7f91e.js",
       "_chunk-4828f769.js",
-      "_chunk-de093346.js",
       "_chunk-5b637298.js",
+      "_chunk-de093346.js",
+      "_chunk-8cea5f64.js",
+      "_chunk-26e7f91e.js",
       "_chunk-ad67e3db.js"
     ],
     "css": [
-      "assets/index.page.58912d89.css",
+      "assets/index.page.aef15e28.css",
       "assets/global.b082e789.css"
     ]
   },
@@ -102,25 +102,25 @@
     ]
   },
   "pages/software/v0.2/index.page.vue": {
-    "file": "assets/pages/software/v0.2/index.page.1be9c5cb.js",
+    "file": "assets/pages/software/v0.2/index.page.3e3496ba.js",
     "src": "pages/software/v0.2/index.page.vue",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_chunk-4828f769.js",
-      "_chunk-de093346.js",
-      "_chunk-ccb53c0e.js",
-      "_chunk-26e7f91e.js",
       "_chunk-5b637298.js",
+      "_chunk-de093346.js",
+      "_chunk-8cea5f64.js",
+      "_chunk-26e7f91e.js",
       "_chunk-ad67e3db.js"
     ],
     "css": [
-      "assets/index.page.13148cd4.css",
+      "assets/index.page.b8f06855.css",
       "assets/global.b082e789.css"
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.5d4616c7.js",
+    "file": "assets/entry-client-routing.cd9d10be.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -139,7 +139,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.f7667b39.js",
+    "file": "assets/entry-server-routing.c978f8a4.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
@@ -178,8 +178,8 @@
   "_chunk-5b637298.js": {
     "file": "assets/chunk-5b637298.js"
   },
-  "_chunk-ccb53c0e.js": {
-    "file": "assets/chunk-ccb53c0e.js",
+  "_chunk-8cea5f64.js": {
+    "file": "assets/chunk-8cea5f64.js",
     "imports": [
       "_chunk-4828f769.js"
     ]
@@ -204,11 +204,11 @@
     "src": "pages/software/index.page.css"
   },
   "pages/data/v0.2/index.page.css": {
-    "file": "assets/index.page.58912d89.css",
+    "file": "assets/index.page.aef15e28.css",
     "src": "pages/data/v0.2/index.page.css"
   },
   "pages/software/v0.2/index.page.css": {
-    "file": "assets/index.page.13148cd4.css",
+    "file": "assets/index.page.b8f06855.css",
     "src": "pages/software/v0.2/index.page.css"
   }
 }

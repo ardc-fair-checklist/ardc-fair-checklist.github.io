@@ -10,6 +10,8 @@ const latest = computed(() => {
     data: state.value.data.slice(-1)[0]
   };
 });
+const _imports_0 = "/ssg/octocat.svg";
 export {
+  _imports_0 as _,
   latest as l
 };
