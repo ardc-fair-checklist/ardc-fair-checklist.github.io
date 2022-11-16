@@ -1,10 +1,9 @@
 <template>
     <main>
-        <h1>ARDC FAIR for data self-assessment checklist</h1>
-        <p>Switch to the checklist for <Link v-bind:href="linkToSoftwareChecklist">software</Link> instead.</p>
+        <h1>FAIR for data self-assessment checklist</h1>
         <BannerVersions />
         <template v-if="nQuestions.total > 0">
-            <p>Answer the {{ nQuestions.total }} questions below to assess your data's FAIRness.</p>
+            <p>Answer the {{ nQuestions.total }} questions below to assess your data's FAIRness, or switch to the checklist for <Link v-bind:href="linkToSoftwareChecklist">software</Link> instead.</p>
             <div v-for="aspect in ['F', 'A', 'I', 'R']">
                 <h2>{{ getAspectFullname(aspect) }}</h2>
                 <Question v-for="question in questions.filter(q => q.aspect === aspect)"

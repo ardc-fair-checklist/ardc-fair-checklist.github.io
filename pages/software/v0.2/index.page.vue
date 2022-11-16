@@ -1,30 +1,32 @@
 <template>
-    <main>
-        <h1>ARDC FAIR for software self-assessment checklist</h1>
-        <p>Switch to the checklist for <Link v-bind:href="linkToDataChecklist">data</Link> instead.</p>
-        <BannerVersions />
-        <BannerParams />
-        <template v-if="nQuestions.total > 0">
-            <p>Answer the {{ nQuestions.total }} questions below to assess your software's FAIRness.</p>
-            <div v-for="aspect in ['F', 'A', 'I', 'R']">
-                <h2>{{ getAspectFullname(aspect) }}</h2>
-                <Question v-for="question in questions.filter(q => q.aspect === aspect)"
-                    v-bind:key="question.id"
-                    v-bind:question="question"
+    <div>
+        <Header />
+        <main>
+            <h1>FAIR for software self-assessment checklist</h1>
+            <BannerVersions />
+            <BannerParams />
+            <template v-if="nQuestions.total > 0">
+                <p>Answer the {{ nQuestions.total }} questions below to assess your software's FAIRness, or switch to the checklist for <Link v-bind:href="linkToDataChecklist">data</Link> instead.</p>
+                <div v-for="aspect in ['F', 'A', 'I', 'R']">
+                    <h2>{{ getAspectFullname(aspect) }}</h2>
+                    <Question v-for="question in questions.filter(q => q.aspect === aspect)"
+                        v-bind:key="question.id"
+                        v-bind:question="question"
+                    />
+                </div>
+                <ProgressBars
+                    v-bind:progress="progress"
+                    v-bind:onClick="scrollToBadgesSection"
+                    v-bind:showButton="showButton"
                 />
-            </div>
-            <ProgressBars
-                v-bind:progress="progress"
-                v-bind:onClick="scrollToBadgesSection"
-                v-bind:showButton="showButton"
-            />
-            <BadgeSnippets id="badges-section"/>
-            <About />
-        </template>
-        <template v-else>
-            Loading questions data...
-        </template>
-    </main>
+                <BadgeSnippets id="badges-section"/>
+                <About />
+            </template>
+            <template v-else>
+                Loading questions data...
+            </template>
+        </main>
+    </div>
 </template>
 
 <script setup lang="ts">
@@ -40,6 +42,7 @@ import About from './About.vue'
 import BadgeSnippets from './BadgeSnippets.vue'
 import BannerParams from './BannerParams.vue'
 import BannerVersions from './BannerVersions.vue'
+import Header from './Header.vue'
 import Link from './Link.vue'
 import ProgressBars from './ProgressBars.vue';
 import Question from './Question.vue'
@@ -85,11 +88,33 @@ const linkToDataChecklist = `${import.meta.env.BASE_URL}data/v0.2`
 
 <style scoped>
 main {
+    min-width: 30em;
+    max-width: 50em;
+    margin-left: auto;
+    margin-right: auto;
     color: var(--white);
+}
+@media screen and (min-width: 70em) {
+    main {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+}
+@media screen and (max-width: 70em) {
+    main {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+}
+@media screen and (max-width: 41.5em) {
+    main {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
 }
 h1 {
     line-height: 1.2em;
-    margin-top: 3em;
+    margin-top: 1em;
 }
 h2 {
     border-bottom: 2px solid var(--white);
