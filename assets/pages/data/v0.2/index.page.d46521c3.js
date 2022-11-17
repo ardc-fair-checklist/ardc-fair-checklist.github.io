@@ -1,9 +1,10 @@
-import { G as ref, H as computed, u as openBlock, t as createElementBlock, x as pushScopeId, y as popScopeId, v as createBaseVNode, d as defineComponent, z as renderSlot, A as normalizeClass, B as unref, o as onMounted, C as createTextVNode, D as createVNode, E as withCtx, I as toDisplayString, J as createCommentVNode, K as createStaticVNode, F as Fragment, L as renderList, M as createBlock } from "../../../chunk-4828f769.js";
+import { l as latest } from "../../../chunk-71847aa3.js";
+import { x as ref, y as computed, u as openBlock, t as createElementBlock, z as pushScopeId, A as popScopeId, v as createBaseVNode, d as defineComponent, B as renderSlot, C as normalizeClass, D as unref, o as onMounted, E as createTextVNode, G as createVNode, H as withCtx, I as toDisplayString, J as createCommentVNode, K as createStaticVNode, F as Fragment, L as renderList, M as createBlock } from "../../../chunk-ae64c334.js";
 import { _ as _imports_0, a as _imports_1 } from "../../../chunk-5b637298.js";
 import { _ as _export_sfc } from "../../../chunk-de093346.js";
-import { l as latest, _ as _imports_0$1 } from "../../../chunk-8cea5f64.js";
-import { u as usePageContext } from "../../../chunk-26e7f91e.js";
-/* empty css                       */import { u as useCssVars, w as withKeys, a as withModifiers } from "../../../chunk-ad67e3db.js";
+import { u as usePageContext } from "../../../chunk-c1a714dd.js";
+import { _ as _imports_0$1 } from "../../../chunk-797968b4.js";
+import { u as useCssVars, w as withKeys, a as withModifiers } from "../../../chunk-29265f1c.js";
 const state = ref({
   compliance: [],
   questions: [],
@@ -480,8 +481,8 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
     const link = computed(() => {
       return [
         window.location.origin,
-        window.location.pathname.split("/").filter((e) => e !== "").slice(0, -1).join("/"),
-        latest.value.software
+        ...window.location.pathname.split("/").filter((e) => e !== "").slice(0, -1),
+        latest.value.data
       ].join("/");
     });
     onMounted(() => {
@@ -493,7 +494,7 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
     });
     return (_ctx, _cache) => {
       return unref(showBannerMessageVersions) ? (openBlock(), createElementBlock("div", _hoisted_1$5, [
-        createTextVNode(" A newer version of the checklist is available at "),
+        createTextVNode(" A newer version of this checklist is available at "),
         createVNode(Link, { href: unref(link) }, {
           default: withCtx(() => [
             createTextVNode(toDisplayString(unref(link)), 1)
@@ -505,8 +506,8 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const BannerVersions_vue_vue_type_style_index_0_scoped_602b94d5_lang = "";
-const BannerVersions = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-602b94d5"]]);
+const BannerVersions_vue_vue_type_style_index_0_scoped_ee11aae8_lang = "";
+const BannerVersions = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-ee11aae8"]]);
 const _withScopeId$1 = (n) => (pushScopeId("data-v-8663c905"), n = n(), popScopeId(), n);
 const _hoisted_1$4 = { class: "home" };
 const _hoisted_2$3 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("svg", {
@@ -682,7 +683,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
 });
 const Question_vue_vue_type_style_index_0_scoped_7438561d_lang = "";
 const Question = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-7438561d"]]);
-const _withScopeId = (n) => (pushScopeId("data-v-f762073e"), n = n(), popScopeId(), n);
+const _withScopeId = (n) => (pushScopeId("data-v-07c5bc34"), n = n(), popScopeId(), n);
 const _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("h1", null, "FAIR for data self-assessment checklist", -1));
 const _sfc_main = /* @__PURE__ */ defineComponent({
   __name: "index.page",
@@ -696,7 +697,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
         R: "Reusable"
       }[aspect];
     };
-    const linkToSoftwareChecklist = `${"/ssg/"}software/v0.2`;
+    const linkToSoftwareChecklist = `${"/ssg/"}software/${latest.value.software}`;
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("div", null, [
         createVNode(Header),
@@ -740,8 +741,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const index_page_vue_vue_type_style_index_0_scoped_f762073e_lang = "";
-const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-f762073e"]]);
+const index_page_vue_vue_type_style_index_0_scoped_07c5bc34_lang = "";
+const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-07c5bc34"]]);
 export {
   index_page as default
 };

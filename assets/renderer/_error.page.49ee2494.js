@@ -1,4 +1,4 @@
-import { d as defineComponent, t as createElementBlock, u as openBlock, v as createBaseVNode } from "../chunk-4828f769.js";
+import { d as defineComponent, t as createElementBlock, u as openBlock, v as createBaseVNode } from "../chunk-ae64c334.js";
 const _hoisted_1 = { key: 0 };
 const _hoisted_2 = /* @__PURE__ */ createBaseVNode("h1", null, "404 Page Not Found", -1);
 const _hoisted_3 = /* @__PURE__ */ createBaseVNode("p", null, "This page could not be found.", -1);

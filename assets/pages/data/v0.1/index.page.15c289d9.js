@@ -1,5 +1,5 @@
 import { _ as _export_sfc } from "../../../chunk-de093346.js";
-import { t as createElementBlock, u as openBlock, F as Fragment, v as createBaseVNode } from "../../../chunk-4828f769.js";
+import { t as createElementBlock, u as openBlock, F as Fragment, v as createBaseVNode } from "../../../chunk-ae64c334.js";
 const _sfc_main = {};
 const _hoisted_1 = /* @__PURE__ */ createBaseVNode("h1", null, "data", -1);
 const _hoisted_2 = /* @__PURE__ */ createBaseVNode("p", null, "Demo app using vite-plugin-ssr.", -1);

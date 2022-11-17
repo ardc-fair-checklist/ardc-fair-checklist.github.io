@@ -1,9 +1,10 @@
-import { G as ref, H as computed, u as openBlock, t as createElementBlock, x as pushScopeId, y as popScopeId, v as createBaseVNode, d as defineComponent, I as toDisplayString, o as onMounted, B as unref, J as createCommentVNode, z as renderSlot, A as normalizeClass, C as createTextVNode, D as createVNode, E as withCtx, K as createStaticVNode, F as Fragment, L as renderList, M as createBlock } from "../../../chunk-4828f769.js";
+import { l as latest } from "../../../chunk-71847aa3.js";
+import { x as ref, y as computed, u as openBlock, t as createElementBlock, z as pushScopeId, A as popScopeId, v as createBaseVNode, d as defineComponent, o as onMounted, I as toDisplayString, D as unref, J as createCommentVNode, B as renderSlot, C as normalizeClass, E as createTextVNode, G as createVNode, H as withCtx, K as createStaticVNode, F as Fragment, L as renderList, M as createBlock } from "../../../chunk-ae64c334.js";
 import { _ as _imports_0, a as _imports_1 } from "../../../chunk-5b637298.js";
 import { _ as _export_sfc } from "../../../chunk-de093346.js";
-import { l as latest, _ as _imports_0$1 } from "../../../chunk-8cea5f64.js";
-import { u as usePageContext } from "../../../chunk-26e7f91e.js";
-/* empty css                       */import { u as useCssVars, w as withKeys, a as withModifiers } from "../../../chunk-ad67e3db.js";
+import { u as usePageContext } from "../../../chunk-c1a714dd.js";
+import { _ as _imports_0$1 } from "../../../chunk-797968b4.js";
+import { u as useCssVars, w as withKeys, a as withModifiers } from "../../../chunk-29265f1c.js";
 const state = ref({
   bannerMessageParams: "",
   compliance: [],
@@ -623,7 +624,7 @@ function _sfc_render(_ctx, _cache) {
   return openBlock(), createElementBlock("footer", null, _hoisted_3$5);
 }
 const About = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["render", _sfc_render], ["__scopeId", "data-v-a31e17c7"]]);
-const _withScopeId$2 = (n) => (pushScopeId("data-v-937f192e"), n = n(), popScopeId(), n);
+const _withScopeId$2 = (n) => (pushScopeId("data-v-16d784eb"), n = n(), popScopeId(), n);
 const _hoisted_1$7 = { class: "badges" };
 const _hoisted_2$4 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createBaseVNode("h2", null, "Get the badge", -1));
 const _hoisted_3$4 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createBaseVNode("h3", null, [
@@ -653,31 +654,35 @@ const _hoisted_8 = {
 const _sfc_main$8 = /* @__PURE__ */ defineComponent({
   __name: "BadgeSnippets",
   setup(__props) {
-    const APP_BASE_URL = `https://ardc-fair-checklist.github.io${"/ssg/"}`;
-    const badge = {
-      html: computed(() => `<a href="${APP_BASE_URL}software/v0.2?${fairQueryParams.value}">
+    const htmlBadge = ref("");
+    const markdownBadge = ref("");
+    const rstBadge = ref("");
+    onMounted(() => {
+      const href = `${window.location.origin}/${window.location.pathname.split("/").filter((e) => e !== "").join("/")}`;
+      const APP_BASE_URL = `${window.location.origin}${"/ssg/"}`;
+      htmlBadge.value = `<a href="${href}?${fairQueryParams.value}">
   <img src="${APP_BASE_URL}badge.svg" alt="FAIR checklist badge">
-</a>`),
-      markdown: computed(() => `[![FAIRness badge image](${APP_BASE_URL}badge.svg)](${APP_BASE_URL}software/v0.2?${fairQueryParams.value})`),
-      rst: computed(() => `.. image:: ${APP_BASE_URL}badge.svg
-   :target: ${APP_BASE_URL}software/v0.2?${fairQueryParams.value}
-   :alt: FAIR checklist badge`)
-    };
+</a>`;
+      markdownBadge.value = `[![FAIRness badge image](${APP_BASE_URL}badge.svg)](${href}?${fairQueryParams.value})`;
+      rstBadge.value = `.. image:: ${APP_BASE_URL}badge.svg
+   :target: ${href}?${fairQueryParams.value}
+   :alt: FAIR checklist badge`;
+    });
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("div", _hoisted_1$7, [
         _hoisted_2$4,
         _hoisted_3$4,
-        createBaseVNode("textarea", _hoisted_4$3, toDisplayString(badge.markdown.value), 1),
+        createBaseVNode("textarea", _hoisted_4$3, toDisplayString(markdownBadge.value), 1),
         _hoisted_5$2,
-        createBaseVNode("textarea", _hoisted_6$1, toDisplayString(badge.rst.value), 1),
+        createBaseVNode("textarea", _hoisted_6$1, toDisplayString(rstBadge.value), 1),
         _hoisted_7$1,
-        createBaseVNode("textarea", _hoisted_8, toDisplayString(badge.html.value), 1)
+        createBaseVNode("textarea", _hoisted_8, toDisplayString(htmlBadge.value), 1)
       ]);
     };
   }
 });
-const BadgeSnippets_vue_vue_type_style_index_0_scoped_937f192e_lang = "";
-const BadgeSnippets = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["__scopeId", "data-v-937f192e"]]);
+const BadgeSnippets_vue_vue_type_style_index_0_scoped_16d784eb_lang = "";
+const BadgeSnippets = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["__scopeId", "data-v-16d784eb"]]);
 const _hoisted_1$6 = {
   key: 0,
   class: "banner"
@@ -781,13 +786,13 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
     const link = computed(() => {
       return [
         window.location.origin,
-        window.location.pathname.split("/").filter((e) => e !== "").slice(0, -1).join("/"),
+        ...window.location.pathname.split("/").filter((e) => e !== "").slice(0, -1),
         latest.value.software
       ].join("/");
     });
     onMounted(() => {
       const { urlPathname } = usePageContext();
-      const myVersion = urlPathname.split("/").slice(-1)[0];
+      const myVersion = urlPathname.split("/").filter((e) => e !== "").slice(-1)[0];
       if (myVersion !== latest.value.software) {
         setShowBannerMessageVersions(true);
       }
@@ -806,8 +811,8 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const BannerVersions_vue_vue_type_style_index_0_scoped_767b9d84_lang = "";
-const BannerVersions = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-767b9d84"]]);
+const BannerVersions_vue_vue_type_style_index_0_scoped_495a93f3_lang = "";
+const BannerVersions = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-495a93f3"]]);
 const _withScopeId$1 = (n) => (pushScopeId("data-v-65279842"), n = n(), popScopeId(), n);
 const _hoisted_1$4 = { class: "home" };
 const _hoisted_2$3 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("svg", {
@@ -997,7 +1002,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
 });
 const Question_vue_vue_type_style_index_0_scoped_07b938da_lang = "";
 const Question = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-07b938da"]]);
-const _withScopeId = (n) => (pushScopeId("data-v-1d5e33d1"), n = n(), popScopeId(), n);
+const _withScopeId = (n) => (pushScopeId("data-v-93387f7b"), n = n(), popScopeId(), n);
 const _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("h1", null, "FAIR for software self-assessment checklist", -1));
 const _sfc_main = /* @__PURE__ */ defineComponent({
   __name: "index.page",
@@ -1034,7 +1039,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
         }
       };
     });
-    const linkToDataChecklist = `${"/ssg/"}data/v0.2`;
+    const linkToDataChecklist = `${"/ssg/"}data/${latest.value.data}`;
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("div", null, [
         createVNode(Header),
@@ -1079,8 +1084,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const index_page_vue_vue_type_style_index_0_scoped_1d5e33d1_lang = "";
-const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-1d5e33d1"]]);
+const index_page_vue_vue_type_style_index_0_scoped_93387f7b_lang = "";
+const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-93387f7b"]]);
 export {
   index_page as default
 };

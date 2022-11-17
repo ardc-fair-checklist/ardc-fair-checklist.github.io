@@ -1,4 +1,4 @@
-import { G as ref, H as computed } from "./chunk-4828f769.js";
+import { x as ref, y as computed } from "./chunk-ae64c334.js";
 const state = ref({
   software: ["v0.1", "v0.2"],
   data: ["v0.1", "v0.2"]
@@ -10,8 +10,7 @@ const latest = computed(() => {
     data: state.value.data.slice(-1)[0]
   };
 });
-const _imports_0 = "/ssg/octocat.svg";
+const global = "";
 export {
-  _imports_0 as _,
   latest as l
 };

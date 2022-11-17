@@ -1,8 +1,9 @@
+import { l as latest } from "../../chunk-71847aa3.js";
 import { _ as _imports_0, a as _imports_1 } from "../../chunk-5b637298.js";
 import { _ as _export_sfc } from "../../chunk-de093346.js";
-import { u as openBlock, t as createElementBlock, x as pushScopeId, y as popScopeId, v as createBaseVNode, d as defineComponent, z as renderSlot, A as normalizeClass, B as unref, C as createTextVNode, D as createVNode, E as withCtx, F as Fragment } from "../../chunk-4828f769.js";
-import { u as usePageContext } from "../../chunk-26e7f91e.js";
-/* empty css                    */const Footer_vue_vue_type_style_index_0_scoped_0e4e5c47_lang = "";
+import { u as openBlock, t as createElementBlock, z as pushScopeId, A as popScopeId, v as createBaseVNode, d as defineComponent, B as renderSlot, C as normalizeClass, D as unref, E as createTextVNode, G as createVNode, H as withCtx, F as Fragment } from "../../chunk-ae64c334.js";
+import { u as usePageContext } from "../../chunk-c1a714dd.js";
+const Footer_vue_vue_type_style_index_0_scoped_0e4e5c47_lang = "";
 const _sfc_main$2 = {};
 const _withScopeId$1 = (n) => (pushScopeId("data-v-0e4e5c47"), n = n(), popScopeId(), n);
 const _hoisted_1$1 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("div", { class: "logos" }, [
@@ -42,13 +43,13 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
 const Link_vue_vue_type_style_index_0_scoped_99a0f5a5_lang = "";
 const Link = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-99a0f5a5"]]);
 const app = "";
-const _withScopeId = (n) => (pushScopeId("data-v-de2df4f9"), n = n(), popScopeId(), n);
+const _withScopeId = (n) => (pushScopeId("data-v-dcdb0ac1"), n = n(), popScopeId(), n);
 const _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("h1", null, "FAIR checklists", -1));
 const _sfc_main = /* @__PURE__ */ defineComponent({
   __name: "index.page",
   setup(__props) {
-    const linkToDataChecklist = `${"/ssg/"}data/v0.2`;
-    const linkToSoftwareChecklist = `${"/ssg/"}software/v0.2`;
+    const linkToDataChecklist = `${"/ssg/"}data/${latest.value.data}`;
+    const linkToSoftwareChecklist = `${"/ssg/"}software/${latest.value.software}`;
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock(Fragment, null, [
         _hoisted_1,
@@ -74,8 +75,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const index_page_vue_vue_type_style_index_0_scoped_de2df4f9_lang = "";
-const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-de2df4f9"]]);
+const index_page_vue_vue_type_style_index_0_scoped_dcdb0ac1_lang = "";
+const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-dcdb0ac1"]]);
 export {
   index_page as default
 };

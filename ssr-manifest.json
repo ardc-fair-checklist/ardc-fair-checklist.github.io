@@ -13,7 +13,7 @@
   "pages/index/Link.vue": [],
   "pages/index/app.css": [],
   "pages/index/index.page.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/index/index.page.vue?vue&type=style&index=0&scoped=de2df4f9&lang.css": [],
+  "pages/index/index.page.vue?vue&type=style&index=0&scoped=dcdb0ac1&lang.css": [],
   "pages/index/index.page.vue": [],
   "pages/software/app.css": [],
   "pages/software/index.page.vue?vue&type=script&setup=true&lang.ts": [],
@@ -28,7 +28,7 @@
   "pages/data/v0.2/Link.vue": [],
   "pages/data/v0.2/app.css": [],
   "pages/data/v0.2/BannerVersions.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/data/v0.2/BannerVersions.vue?vue&type=style&index=0&scoped=602b94d5&lang.css": [],
+  "pages/data/v0.2/BannerVersions.vue?vue&type=style&index=0&scoped=ee11aae8&lang.css": [],
   "pages/data/v0.2/BannerVersions.vue": [],
   "pages/data/v0.2/Header.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/data/v0.2/Header.vue?vue&type=style&index=0&scoped=8663c905&lang.css": [],
@@ -43,7 +43,7 @@
   "pages/data/v0.2/Question.vue?vue&type=style&index=0&scoped=7438561d&lang.css": [],
   "pages/data/v0.2/Question.vue": [],
   "pages/data/v0.2/index.page.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/data/v0.2/index.page.vue?vue&type=style&index=0&scoped=f762073e&lang.css": [],
+  "pages/data/v0.2/index.page.vue?vue&type=style&index=0&scoped=07c5bc34&lang.css": [],
   "pages/data/v0.2/index.page.vue": [],
   "pages/software/v0.1/index.page.vue": [],
   "pages/software/v0.2/store.ts": [],
@@ -51,7 +51,7 @@
   "pages/software/v0.2/About.vue?vue&type=style&index=0&scoped=a31e17c7&lang.css": [],
   "pages/software/v0.2/About.vue": [],
   "pages/software/v0.2/BadgeSnippets.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/software/v0.2/BadgeSnippets.vue?vue&type=style&index=0&scoped=937f192e&lang.css": [],
+  "pages/software/v0.2/BadgeSnippets.vue?vue&type=style&index=0&scoped=16d784eb&lang.css": [],
   "pages/software/v0.2/BadgeSnippets.vue": [],
   "pages/software/v0.2/BannerParams.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/software/v0.2/BannerParams.vue?vue&type=style&index=0&scoped=56f1b9ec&lang.css": [],
@@ -61,7 +61,7 @@
   "pages/software/v0.2/Link.vue": [],
   "pages/software/v0.2/app.css": [],
   "pages/software/v0.2/BannerVersions.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/software/v0.2/BannerVersions.vue?vue&type=style&index=0&scoped=767b9d84&lang.css": [],
+  "pages/software/v0.2/BannerVersions.vue?vue&type=style&index=0&scoped=495a93f3&lang.css": [],
   "pages/software/v0.2/BannerVersions.vue": [],
   "pages/software/v0.2/Header.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/software/v0.2/Header.vue?vue&type=style&index=0&scoped=65279842&lang.css": [],
@@ -76,7 +76,7 @@
   "pages/software/v0.2/Question.vue?vue&type=style&index=0&scoped=07b938da&lang.css": [],
   "pages/software/v0.2/Question.vue": [],
   "pages/software/v0.2/index.page.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/software/v0.2/index.page.vue?vue&type=style&index=0&scoped=1d5e33d1&lang.css": [],
+  "pages/software/v0.2/index.page.vue?vue&type=style&index=0&scoped=93387f7b&lang.css": [],
   "pages/software/v0.2/index.page.vue": [],
   "node_modules/vite-plugin-ssr/dist/esm/utils/isPlainObject.js": [],
   "node_modules/vite-plugin-ssr/dist/esm/utils/stringifyStringArray.js": [],
@@ -129,49 +129,57 @@
   "node_modules/vite-plugin-ssr/dist/esm/client/router/history.js": [],
   "node_modules/vite-plugin-ssr/dist/esm/client/router/useClientRouter.js": [],
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": [],
-  "index.page.265752b7.js": [
+  "index.page.8cad7958.js": [
     "/ssg/assets/index.page.ec3ad890.css",
     "/ssg/assets/global.b082e789.css"
   ],
-  "index.page.9cfbb021.js": [],
-  "index.page.4344b2df.js": [
-    "/ssg/assets/index.page.80eb7b93.css",
+  "index.page.15c289d9.js": [],
+  "index.page.d46521c3.js": [
+    "/ssg/assets/index.page.57187e14.css",
     "/ssg/assets/global.b082e789.css"
   ],
-  "index.page.8e73d7f1.js": [
-    "/ssg/assets/index.page.818123b4.css",
+  "index.page.e16f86df.js": [
+    "/ssg/assets/index.page.7e0669a0.css",
     "/ssg/assets/global.b082e789.css"
   ],
-  "index.page.36a77a8c.js": [
+  "index.page.e5dbba55.js": [
     "/ssg/assets/index.page.21e1d615.css",
     "/ssg/assets/global.b082e789.css"
   ],
-  "index.page.dbc160a6.js": [],
-  "index.page.38aaeaca.js": [
-    "/ssg/assets/index.page.80f7bf13.css",
+  "index.page.0dfa6231.js": [],
+  "index.page.ae968b0e.js": [
+    "/ssg/assets/index.page.ffff68fc.css",
     "/ssg/assets/global.b082e789.css"
   ],
-  "_error.page.98982569.js": [],
-  "_default.page.client.3ede8c9e.js": [],
+  "_error.page.49ee2494.js": [],
+  "_default.page.client.725afc60.js": [],
   "virtual:vite-plugin-ssr:pageFiles:client:server-routing": [],
   "node_modules/vite-plugin-ssr/dist/esm/client/pageFiles.js": [],
   "node_modules/vite-plugin-ssr/dist/esm/client/releasePageContext.js": [],
   "node_modules/vite-plugin-ssr/dist/esm/client/getPageContext.js": [],
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": [],
   "node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js": [
-    "/ssg/assets/chunk-ad67e3db.js"
+    "/ssg/assets/chunk-29265f1c.js"
   ],
   "renderer/usePageContext.ts": [
-    "/ssg/assets/chunk-26e7f91e.js"
+    "/ssg/assets/chunk-c1a714dd.js"
   ],
   "node_modules/@vue/shared/dist/shared.esm-bundler.js": [
-    "/ssg/assets/chunk-4828f769.js"
+    "/ssg/assets/chunk-ae64c334.js"
   ],
   "node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js": [
-    "/ssg/assets/chunk-4828f769.js"
+    "/ssg/assets/chunk-ae64c334.js"
   ],
   "node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js": [
-    "/ssg/assets/chunk-4828f769.js"
+    "/ssg/assets/chunk-ae64c334.js"
+  ],
+  "renderer/versions.ts": [
+    "/ssg/assets/chunk-71847aa3.js",
+    "/ssg/assets/global.b082e789.css"
+  ],
+  "renderer/global.css": [
+    "/ssg/assets/chunk-71847aa3.js",
+    "/ssg/assets/global.b082e789.css"
   ],
   "\u0000plugin-vue:export-helper": [
     "/ssg/assets/chunk-de093346.js"
@@ -182,11 +190,8 @@
   "../../../../../ardc-logo.svg": [
     "/ssg/assets/chunk-5b637298.js"
   ],
-  "renderer/versions.ts": [
-    "/ssg/assets/chunk-8cea5f64.js"
-  ],
   "../../../../../octocat.svg": [
-    "/ssg/assets/chunk-8cea5f64.js"
+    "/ssg/assets/chunk-797968b4.js"
   ],
   "node_modules/vite-plugin-ssr/dist/esm/utils/createErrorWithCleanStackTrace.js": [
     "/ssg/assets/chunk-806f2279.js"
