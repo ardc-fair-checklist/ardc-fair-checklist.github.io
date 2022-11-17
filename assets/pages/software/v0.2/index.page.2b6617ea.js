@@ -6,17 +6,11 @@ import { u as usePageContext } from "../../../chunk-26e7f91e.js";
 import { _ as _imports_0$1 } from "../../../chunk-797968b4.js";
 import { u as useCssVars, w as withKeys, a as withModifiers } from "../../../chunk-ad67e3db.js";
 const state = ref({
-  bannerMessageParams: "",
   compliance: [],
-  questions: [],
-  showBannerMessageVersions: false
+  questions: []
 });
-const bannerMessageParams = computed(() => state.value.bannerMessageParams);
-const showBannerMessageVersions = computed(() => state.value.showBannerMessageVersions);
 const compliance = computed(() => state.value.compliance);
 const questions$1 = computed(() => state.value.questions);
-const setBannerMessageParams = (msg) => state.value.bannerMessageParams = msg;
-const setShowBannerMessageVersions = (b) => state.value.showBannerMessageVersions = b;
 const setCompliance = (newCompliance) => state.value.compliance = newCompliance;
 const setQuestions = (questions2) => {
   state.value.questions = questions2.map((q, i) => ({ ...q, index: i }));
@@ -689,6 +683,7 @@ const _hoisted_1$6 = {
 const _sfc_main$7 = /* @__PURE__ */ defineComponent({
   __name: "BannerParams",
   setup(__props) {
+    const bannerMessage = ref("");
     onMounted(() => {
       const chooseBannerMessage = (params) => {
         const checkAspect = (aspect) => {
@@ -702,7 +697,7 @@ const _sfc_main$7 = /* @__PURE__ */ defineComponent({
             const supplied = params[aspect].split("").map((c) => parseInt(c, 10));
             return supplied.map((iAnswer, index) => {
               if (iAnswer >= nAnswers.value[aspect][index]) {
-                return `Query parameter '${aspect}' has out-of-range value on position ${index}; clientHeight = ${document.documentElement.clientHeight.toString()}`;
+                return `Query parameter '${aspect}' has out-of-range value on position ${index}`;
               } else {
                 return "";
               }
@@ -741,7 +736,7 @@ const _sfc_main$7 = /* @__PURE__ */ defineComponent({
         setCompliance(zeros);
       } else {
         const msg = chooseBannerMessage(queryParams);
-        setBannerMessageParams(msg);
+        bannerMessage.value = msg;
         if (msg === "") {
           const { f, a, i, r } = queryParams;
           const compl = f + a + i + r;
@@ -753,12 +748,12 @@ const _sfc_main$7 = /* @__PURE__ */ defineComponent({
       }
     });
     return (_ctx, _cache) => {
-      return unref(bannerMessageParams) !== "" ? (openBlock(), createElementBlock("div", _hoisted_1$6, toDisplayString(unref(bannerMessageParams)), 1)) : createCommentVNode("", true);
+      return bannerMessage.value !== "" ? (openBlock(), createElementBlock("div", _hoisted_1$6, toDisplayString(bannerMessage.value), 1)) : createCommentVNode("", true);
     };
   }
 });
-const BannerParams_vue_vue_type_style_index_0_scoped_56f1b9ec_lang = "";
-const BannerParams = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["__scopeId", "data-v-56f1b9ec"]]);
+const BannerParams_vue_vue_type_style_index_0_scoped_58b5682c_lang = "";
+const BannerParams = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["__scopeId", "data-v-58b5682c"]]);
 const _sfc_main$6 = /* @__PURE__ */ defineComponent({
   __name: "Link",
   setup(__props) {
@@ -789,15 +784,14 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
         latest.value.software
       ].join("/");
     });
+    const showBanner = ref(false);
     onMounted(() => {
       const { urlPathname } = usePageContext();
       const myVersion = urlPathname.split("/").filter((e) => e !== "").slice(-1)[0];
-      if (myVersion !== latest.value.software) {
-        setShowBannerMessageVersions(true);
-      }
+      showBanner.value = myVersion !== latest.value.software;
     });
     return (_ctx, _cache) => {
-      return unref(showBannerMessageVersions) ? (openBlock(), createElementBlock("div", _hoisted_1$5, [
+      return showBanner.value ? (openBlock(), createElementBlock("div", _hoisted_1$5, [
         createTextVNode(" A newer version of the checklist is available at "),
         createVNode(Link, { href: unref(link) }, {
           default: withCtx(() => [
@@ -810,8 +804,8 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const BannerVersions_vue_vue_type_style_index_0_scoped_495a93f3_lang = "";
-const BannerVersions = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-495a93f3"]]);
+const BannerVersions_vue_vue_type_style_index_0_scoped_d6ab14a0_lang = "";
+const BannerVersions = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-d6ab14a0"]]);
 const _withScopeId$1 = (n) => (pushScopeId("data-v-65279842"), n = n(), popScopeId(), n);
 const _hoisted_1$4 = { class: "home" };
 const _hoisted_2$3 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("svg", {

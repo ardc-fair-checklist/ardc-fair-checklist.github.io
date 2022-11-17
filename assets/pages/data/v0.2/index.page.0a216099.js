@@ -7,13 +7,10 @@ import { _ as _imports_0$1 } from "../../../chunk-797968b4.js";
 import { u as useCssVars, w as withKeys, a as withModifiers } from "../../../chunk-ad67e3db.js";
 const state = ref({
   compliance: [],
-  questions: [],
-  showBannerMessageVersions: false
+  questions: []
 });
-const showBannerMessageVersions = computed(() => state.value.showBannerMessageVersions);
 const compliance = computed(() => state.value.compliance);
 const questions$1 = computed(() => state.value.questions);
-const setShowBannerMessageVersions = (b) => state.value.showBannerMessageVersions = b;
 const setCompliance = (newCompliance) => state.value.compliance = newCompliance;
 const setQuestions = (questions2) => {
   state.value.questions = questions2.map((q, i) => ({ ...q, index: i }));
@@ -485,15 +482,14 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
         latest.value.data
       ].join("/");
     });
+    const showBanner = ref(false);
     onMounted(() => {
       const { urlPathname } = usePageContext();
       const myVersion = urlPathname.split("/").slice(-1)[0];
-      if (myVersion !== latest.value.data) {
-        setShowBannerMessageVersions(true);
-      }
+      showBanner.value = myVersion !== latest.value.data;
     });
     return (_ctx, _cache) => {
-      return unref(showBannerMessageVersions) ? (openBlock(), createElementBlock("div", _hoisted_1$5, [
+      return showBanner.value ? (openBlock(), createElementBlock("div", _hoisted_1$5, [
         createTextVNode(" A newer version of this checklist is available at "),
         createVNode(Link, { href: unref(link) }, {
           default: withCtx(() => [
@@ -506,8 +502,8 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const BannerVersions_vue_vue_type_style_index_0_scoped_ee11aae8_lang = "";
-const BannerVersions = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-ee11aae8"]]);
+const BannerVersions_vue_vue_type_style_index_0_scoped_27f96c02_lang = "";
+const BannerVersions = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-27f96c02"]]);
 const _withScopeId$1 = (n) => (pushScopeId("data-v-8663c905"), n = n(), popScopeId(), n);
 const _hoisted_1$4 = { class: "home" };
 const _hoisted_2$3 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("svg", {

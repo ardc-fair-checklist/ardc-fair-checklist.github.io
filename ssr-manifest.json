@@ -25,7 +25,7 @@
   "pages/data/v0.2/Link.vue": [],
   "pages/data/v0.2/app.css": [],
   "pages/data/v0.2/BannerVersions.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/data/v0.2/BannerVersions.vue?vue&type=style&index=0&scoped=ee11aae8&lang.css": [],
+  "pages/data/v0.2/BannerVersions.vue?vue&type=style&index=0&scoped=27f96c02&lang.css": [],
   "pages/data/v0.2/BannerVersions.vue": [],
   "pages/data/v0.2/Header.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/data/v0.2/Header.vue?vue&type=style&index=0&scoped=8663c905&lang.css": [],
@@ -54,14 +54,14 @@
   "pages/software/v0.2/BadgeSnippets.vue?vue&type=style&index=0&scoped=a12d3d9b&lang.css": [],
   "pages/software/v0.2/BadgeSnippets.vue": [],
   "pages/software/v0.2/BannerParams.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/software/v0.2/BannerParams.vue?vue&type=style&index=0&scoped=56f1b9ec&lang.css": [],
+  "pages/software/v0.2/BannerParams.vue?vue&type=style&index=0&scoped=58b5682c&lang.css": [],
   "pages/software/v0.2/BannerParams.vue": [],
   "pages/software/v0.2/Link.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/software/v0.2/Link.vue?vue&type=style&index=0&scoped=10224143&lang.css": [],
   "pages/software/v0.2/Link.vue": [],
   "pages/software/v0.2/app.css": [],
   "pages/software/v0.2/BannerVersions.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/software/v0.2/BannerVersions.vue?vue&type=style&index=0&scoped=495a93f3&lang.css": [],
+  "pages/software/v0.2/BannerVersions.vue?vue&type=style&index=0&scoped=d6ab14a0&lang.css": [],
   "pages/software/v0.2/BannerVersions.vue": [],
   "pages/software/v0.2/Header.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/software/v0.2/Header.vue?vue&type=style&index=0&scoped=65279842&lang.css": [],
@@ -134,8 +134,8 @@
     "/ssg/assets/global.b082e789.css"
   ],
   "index.page.9cfbb021.js": [],
-  "index.page.ea572c77.js": [
-    "/ssg/assets/index.page.57187e14.css",
+  "index.page.0a216099.js": [
+    "/ssg/assets/index.page.95a20e0d.css",
     "/ssg/assets/global.b082e789.css"
   ],
   "index.page.0043789c.js": [
@@ -147,8 +147,8 @@
     "/ssg/assets/global.b082e789.css"
   ],
   "index.page.dbc160a6.js": [],
-  "index.page.5878e22d.js": [
-    "/ssg/assets/index.page.73ba55ee.css",
+  "index.page.2b6617ea.js": [
+    "/ssg/assets/index.page.bfd869e0.css",
     "/ssg/assets/global.b082e789.css"
   ],
   "_error.page.98982569.js": [],

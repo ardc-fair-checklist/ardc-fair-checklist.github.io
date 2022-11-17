@@ -36,7 +36,7 @@ textarea[data-v-a12d3d9b] {
     width: 100%;
 }
 
-.banner[data-v-56f1b9ec] {
+.banner[data-v-58b5682c] {
     background-color: lightgoldenrodyellow;
     border-radius: 0.5em;
     box-sizing: border-box;
@@ -90,14 +90,14 @@ a[data-v-10224143]:hover {
     }
 }
 
-a[data-v-495a93f3] {
+a[data-v-d6ab14a0] {
     text-underline-offset: 0.3em;
     color: #144e70;
 }
-a[data-v-495a93f3]:hover {
+a[data-v-d6ab14a0]:hover {
     color: var(--black);
 }
-.banner[data-v-495a93f3] {
+.banner[data-v-d6ab14a0] {
     background-color: lightgoldenrodyellow;
     border-radius: 0.5em;
     box-sizing: border-box;
