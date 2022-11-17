@@ -7,3 +7,19 @@
     padding-right: 3em;
     text-align: center;
 }
+
+@media screen and (min-width: 70em) {
+    :root {
+        font-size: 112%;
+    }
+}
+@media screen and (max-width: 70em) {
+    :root {
+        font-size: 100%;
+    }
+}
+@media screen and (max-width: 41.5em) {
+    :root {
+        font-size: 70%;
+    }
+}
