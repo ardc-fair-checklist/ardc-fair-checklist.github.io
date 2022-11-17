@@ -72,5 +72,9 @@ textarea {
     height: 6em;
     resize: none;
     width: 100%;
+    font-family: Consolas, Monaco, 'Lucida Console',
+                'Liberation Mono', 'DejaVu Sans Mono',
+                'Bitstream Vera Sans Mono',
+                'Courier New', monospace;
 }
 </style>
