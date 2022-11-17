@@ -28,6 +28,7 @@
 </template>
 
 <script setup lang="ts">
+import { latest } from '~/renderer/versions'
 import { nQuestions } from './store'
 import { progress } from './store'
 import { questions } from './store'
@@ -53,7 +54,7 @@ const getAspectFullname = (aspect: string) => {
         R: "Reusable"
     }[aspect]
 }
-const linkToSoftwareChecklist = `${import.meta.env.BASE_URL}software/v0.2`
+const linkToSoftwareChecklist = `${import.meta.env.BASE_URL}software/${latest.value.software}`
 </script>
 
 <style scoped>

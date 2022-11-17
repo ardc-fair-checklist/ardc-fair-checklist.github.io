@@ -30,6 +30,7 @@
 </template>
 
 <script setup lang="ts">
+import { latest } from '~/renderer/versions'
 import { nQuestions } from './store'
 import { onMounted } from 'vue'
 import { progress } from './store'
@@ -83,7 +84,7 @@ onMounted(() => {
     }
 })
 
-const linkToDataChecklist = `${import.meta.env.BASE_URL}data/v0.2`
+const linkToDataChecklist = `${import.meta.env.BASE_URL}data/${latest.value.data}`
 </script>
 
 <style scoped>

@@ -5,15 +5,19 @@
 </template>
 
 <script setup lang="ts">
+import { latest } from '~/renderer/versions'
 import { onMounted } from 'vue'
-import { usePageContext } from '~/renderer/usePageContext'
 import '~/renderer/global.css'
 import './app.css'
 
 onMounted(() => {
-    const { urlPathname } = usePageContext()
-    const url = `${import.meta.env.BASE_URL}${urlPathname}`
-    window.location.href = `/${url.split('/').filter(e => e !== "").join('/')}/v0.2`
+    const urlWithDuplicateSlashes = [
+        import.meta.env.BASE_URL,
+        'software',
+        latest.value.software
+    ].join('/');
+    const url = `/${urlWithDuplicateSlashes.split('/').filter(e => e !== "").join('/')}`;
+    window.location.href = url;
 })
 </script>
 
