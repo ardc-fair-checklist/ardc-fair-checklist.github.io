@@ -18,13 +18,10 @@ export type QuestionType = {
 const state = ref({
     compliance: [] as number[],
     questions: [] as (QuestionType & { index: number })[],
-    showBannerMessageVersions: false,
 })
 
-export const showBannerMessageVersions = computed(() => state.value.showBannerMessageVersions);
 export const compliance = computed(() => state.value.compliance);
 export const questions = computed(() => state.value.questions);
-export const setShowBannerMessageVersions = (b: boolean) => state.value.showBannerMessageVersions = b;
 export const setCompliance = (newCompliance: number[]) => state.value.compliance = newCompliance;
 export const setQuestions = (questions: QuestionType[]) => {
     // add index

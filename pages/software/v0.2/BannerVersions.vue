@@ -1,5 +1,5 @@
 <template>
-    <div class="banner" v-if="showBannerMessageVersions">
+    <div class="banner" v-if="showBanner">
         A newer version of the checklist is available at <Link v-bind:href="link">{{link}}</Link>, consider upgrading.
     </div>
 </template>
@@ -8,8 +8,7 @@
 import { computed } from 'vue'
 import { latest } from '~/renderer/versions'
 import { onMounted } from 'vue'
-import { setShowBannerMessageVersions } from './store'
-import { showBannerMessageVersions } from './store'
+import { ref } from 'vue'
 import { usePageContext } from '~/renderer/usePageContext'
 import Link from './Link.vue'
 import '~/renderer/global.css'
@@ -23,12 +22,12 @@ const link = computed(() => {
     ].join('/')
 })
 
+const showBanner = ref(false);
+
 onMounted(() => {
     const { urlPathname } = usePageContext()
     const myVersion = urlPathname.split('/').filter(e => e !== '').slice(-1)[0]
-    if (myVersion !== latest.value.software) {
-        setShowBannerMessageVersions(true)
-    }
+    showBanner.value = myVersion !== latest.value.software
 })
 </script>
 
