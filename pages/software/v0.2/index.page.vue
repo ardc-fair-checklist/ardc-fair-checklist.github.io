@@ -17,7 +17,7 @@
                 <ProgressBars
                     v-bind:progress="progress"
                     v-bind:onClick="scrollToBadgesSection"
-                    v-bind:showButton="showButton"
+                    v-bind:disableButton="disableButton"
                 />
                 <BadgeSnippets id="badges-section"/>
                 <About />
@@ -52,7 +52,7 @@ import './app.css'
 
 setQuestions(data as QuestionType[]);
 
-const showButton = ref(false);
+const disableButton = ref(false);
 
 const getAspectFullname = (aspect: string) => {
     return {
@@ -79,7 +79,7 @@ onMounted(() => {
         const elem = document.getElementById("badges-section")
         if (elem !== undefined && elem !== null) {
             const rect = elem.getBoundingClientRect();
-            showButton.value = elementInViewport(rect);
+            disableButton.value = elementInViewport(rect);
         }
     }
 })

@@ -52,7 +52,7 @@
                             </div>
                         </div>
                     </div>
-                    <button v-bind:disabled="showButton"
+                    <button v-bind:disabled="disableButton"
                         role="button"
                         v-on:click="onClick()">Get the badge</button>
                 </div>
@@ -70,7 +70,7 @@ defineProps<{
         r: string;
     },
     onClick: () => void,
-    showButton: boolean
+    disableButton: boolean
 }>();
 </script>
 
