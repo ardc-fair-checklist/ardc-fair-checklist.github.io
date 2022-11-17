@@ -1,16 +1,17 @@
 <template>
-    <div class="banner" v-if="bannerMessageParams !== ''" >
-        {{ bannerMessageParams }}
+    <div class="banner" v-if="bannerMessage !== ''" >
+        {{ bannerMessage }}
     </div>
 </template>
 
 <script setup lang="ts">
-import { bannerMessageParams } from './store'
 import { nAnswers } from './store'
 import { nQuestions } from './store'
 import { onMounted } from 'vue'
-import { setBannerMessageParams } from './store'
+import { ref } from 'vue'
 import { setCompliance } from './store'
+
+const bannerMessage = ref('');
 onMounted(() => {
     const chooseBannerMessage = (params: Params) => {
         const checkAspect = (aspect: 'f' | 'a' | 'i' | 'r') => {
@@ -24,8 +25,7 @@ onMounted(() => {
                 const supplied = params[aspect].split('').map(c => parseInt(c, 10))
                 return supplied.map((iAnswer, index) => {
                     if (iAnswer >= nAnswers.value[aspect][index]) {
-                        return `Query parameter '${aspect}' has out-of-range value on position ${index}` +
-                               `; clientHeight = ${document.documentElement.clientHeight.toString()}`
+                        return `Query parameter '${aspect}' has out-of-range value on position ${index}`
                     } else {
                         return ""
                     }
@@ -66,7 +66,7 @@ onMounted(() => {
         setCompliance(zeros)
     } else {
         const msg = chooseBannerMessage(queryParams)
-        setBannerMessageParams(msg)
+        bannerMessage.value = msg;
         if (msg === "") {
             const {f, a, i, r} = queryParams as {f: string, a: string, i: string, r: string}
             const compl = f + a + i + r
