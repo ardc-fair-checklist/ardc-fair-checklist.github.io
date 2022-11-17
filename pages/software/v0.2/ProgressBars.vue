@@ -209,6 +209,10 @@ button {
     margin-left: 2em;
     margin-right: 1em;
     align-self: center;
+    border: 0.5px solid rgba(0,0,0,0.5);
+    border-radius: 0.15em;
+    color: black;
+    background-color: #eee;
 }
 
 </style>
