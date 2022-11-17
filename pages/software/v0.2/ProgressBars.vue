@@ -213,6 +213,11 @@ button {
 button:hover {
     border: 1px solid rgba(0,0,0,0.7);
     background-color: white;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.5;
 }
 
 </style>

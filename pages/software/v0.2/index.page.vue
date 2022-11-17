@@ -67,7 +67,7 @@ const scrollToBadgesSection = () => {
 }
 onMounted(() => {
     window.onscroll = () => {
-        function elementInViewport(rect: DOMRect) {
+        const elementInViewport = (rect: DOMRect) => {
             const conditions = [
                 rect.top >= 0,
                 rect.left >= 0,
