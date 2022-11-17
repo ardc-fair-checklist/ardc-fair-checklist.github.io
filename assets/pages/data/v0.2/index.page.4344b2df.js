@@ -430,9 +430,9 @@ const questions = [
     text: "How much provenance information has been captured to facilitate data reuse?"
   }
 ];
-const About_vue_vue_type_style_index_0_scoped_b68f96fd_lang = "";
+const About_vue_vue_type_style_index_0_scoped_9edde193_lang = "";
 const _sfc_main$7 = {};
-const _withScopeId$2 = (n) => (pushScopeId("data-v-b68f96fd"), n = n(), popScopeId(), n);
+const _withScopeId$2 = (n) => (pushScopeId("data-v-9edde193"), n = n(), popScopeId(), n);
 const _hoisted_1$6 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createBaseVNode("div", { class: "logos" }, [
   /* @__PURE__ */ createBaseVNode("img", {
     class: "logo",
@@ -453,7 +453,7 @@ const _hoisted_3$4 = [
 function _sfc_render(_ctx, _cache) {
   return openBlock(), createElementBlock("footer", null, _hoisted_3$4);
 }
-const About = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render], ["__scopeId", "data-v-b68f96fd"]]);
+const About = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render], ["__scopeId", "data-v-9edde193"]]);
 const _sfc_main$6 = /* @__PURE__ */ defineComponent({
   __name: "Link",
   setup(__props) {

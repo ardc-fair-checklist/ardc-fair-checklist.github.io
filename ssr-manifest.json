@@ -6,7 +6,7 @@
   "pages/data/app.css": [],
   "pages/data/index.page.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/data/index.page.vue": [],
-  "pages/index/Footer.vue?vue&type=style&index=0&scoped=616712ff&lang.css": [],
+  "pages/index/Footer.vue?vue&type=style&index=0&scoped=0e4e5c47&lang.css": [],
   "pages/index/Footer.vue": [],
   "pages/index/Link.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/index/Link.vue?vue&type=style&index=0&scoped=99a0f5a5&lang.css": [],
@@ -21,7 +21,7 @@
   "pages/data/v0.1/index.page.vue": [],
   "pages/data/v0.2/store.ts": [],
   "pages/data/v0.2/questions.json": [],
-  "pages/data/v0.2/About.vue?vue&type=style&index=0&scoped=b68f96fd&lang.css": [],
+  "pages/data/v0.2/About.vue?vue&type=style&index=0&scoped=9edde193&lang.css": [],
   "pages/data/v0.2/About.vue": [],
   "pages/data/v0.2/Link.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/data/v0.2/Link.vue?vue&type=style&index=0&scoped=865de604&lang.css": [],
@@ -48,7 +48,7 @@
   "pages/software/v0.1/index.page.vue": [],
   "pages/software/v0.2/store.ts": [],
   "pages/software/v0.2/questions.json": [],
-  "pages/software/v0.2/About.vue?vue&type=style&index=0&scoped=ed8fb2dc&lang.css": [],
+  "pages/software/v0.2/About.vue?vue&type=style&index=0&scoped=a31e17c7&lang.css": [],
   "pages/software/v0.2/About.vue": [],
   "pages/software/v0.2/BadgeSnippets.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/software/v0.2/BadgeSnippets.vue?vue&type=style&index=0&scoped=937f192e&lang.css": [],
@@ -134,12 +134,12 @@
     "/ssg/assets/global.b082e789.css"
   ],
   "index.page.9cfbb021.js": [],
-  "index.page.471114e1.js": [
-    "/ssg/assets/index.page.aef15e28.css",
+  "index.page.4344b2df.js": [
+    "/ssg/assets/index.page.80eb7b93.css",
     "/ssg/assets/global.b082e789.css"
   ],
-  "index.page.2e99cf99.js": [
-    "/ssg/assets/index.page.08cf40aa.css",
+  "index.page.8e73d7f1.js": [
+    "/ssg/assets/index.page.818123b4.css",
     "/ssg/assets/global.b082e789.css"
   ],
   "index.page.36a77a8c.js": [
@@ -147,8 +147,8 @@
     "/ssg/assets/global.b082e789.css"
   ],
   "index.page.dbc160a6.js": [],
-  "index.page.3e3496ba.js": [
-    "/ssg/assets/index.page.b8f06855.css",
+  "index.page.38aaeaca.js": [
+    "/ssg/assets/index.page.80f7bf13.css",
     "/ssg/assets/global.b082e789.css"
   ],
   "_error.page.98982569.js": [],

@@ -599,9 +599,9 @@ const questions = [
     text: "If they exist, how much have domain-relevant community standards been considered in writing the software? it is linked to I:q0"
   }
 ];
-const About_vue_vue_type_style_index_0_scoped_ed8fb2dc_lang = "";
+const About_vue_vue_type_style_index_0_scoped_a31e17c7_lang = "";
 const _sfc_main$9 = {};
-const _withScopeId$3 = (n) => (pushScopeId("data-v-ed8fb2dc"), n = n(), popScopeId(), n);
+const _withScopeId$3 = (n) => (pushScopeId("data-v-a31e17c7"), n = n(), popScopeId(), n);
 const _hoisted_1$8 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createBaseVNode("div", { class: "logos" }, [
   /* @__PURE__ */ createBaseVNode("img", {
     class: "logo",
@@ -622,7 +622,7 @@ const _hoisted_3$5 = [
 function _sfc_render(_ctx, _cache) {
   return openBlock(), createElementBlock("footer", null, _hoisted_3$5);
 }
-const About = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["render", _sfc_render], ["__scopeId", "data-v-ed8fb2dc"]]);
+const About = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["render", _sfc_render], ["__scopeId", "data-v-a31e17c7"]]);
 const _withScopeId$2 = (n) => (pushScopeId("data-v-937f192e"), n = n(), popScopeId(), n);
 const _hoisted_1$7 = { class: "badges" };
 const _hoisted_2$4 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createBaseVNode("h2", null, "Get the badge", -1));

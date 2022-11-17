@@ -34,7 +34,7 @@
     ]
   },
   "pages/index/index.page.vue": {
-    "file": "assets/pages/index/index.page.2e99cf99.js",
+    "file": "assets/pages/index/index.page.8e73d7f1.js",
     "src": "pages/index/index.page.vue",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -45,7 +45,7 @@
       "_chunk-26e7f91e.js"
     ],
     "css": [
-      "assets/index.page.08cf40aa.css",
+      "assets/index.page.818123b4.css",
       "assets/global.b082e789.css"
     ]
   },
@@ -74,7 +74,7 @@
     ]
   },
   "pages/data/v0.2/index.page.vue": {
-    "file": "assets/pages/data/v0.2/index.page.471114e1.js",
+    "file": "assets/pages/data/v0.2/index.page.4344b2df.js",
     "src": "pages/data/v0.2/index.page.vue",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -87,7 +87,7 @@
       "_chunk-ad67e3db.js"
     ],
     "css": [
-      "assets/index.page.aef15e28.css",
+      "assets/index.page.80eb7b93.css",
       "assets/global.b082e789.css"
     ]
   },
@@ -102,7 +102,7 @@
     ]
   },
   "pages/software/v0.2/index.page.vue": {
-    "file": "assets/pages/software/v0.2/index.page.3e3496ba.js",
+    "file": "assets/pages/software/v0.2/index.page.38aaeaca.js",
     "src": "pages/software/v0.2/index.page.vue",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -115,12 +115,12 @@
       "_chunk-ad67e3db.js"
     ],
     "css": [
-      "assets/index.page.b8f06855.css",
+      "assets/index.page.80f7bf13.css",
       "assets/global.b082e789.css"
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.cd9d10be.js",
+    "file": "assets/entry-client-routing.798481f8.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -139,7 +139,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.c978f8a4.js",
+    "file": "assets/entry-server-routing.6634fa59.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
@@ -196,7 +196,7 @@
     "src": "global.css"
   },
   "pages/index/index.page.css": {
-    "file": "assets/index.page.08cf40aa.css",
+    "file": "assets/index.page.818123b4.css",
     "src": "pages/index/index.page.css"
   },
   "pages/software/index.page.css": {
@@ -204,11 +204,11 @@
     "src": "pages/software/index.page.css"
   },
   "pages/data/v0.2/index.page.css": {
-    "file": "assets/index.page.aef15e28.css",
+    "file": "assets/index.page.80eb7b93.css",
     "src": "pages/data/v0.2/index.page.css"
   },
   "pages/software/v0.2/index.page.css": {
-    "file": "assets/index.page.b8f06855.css",
+    "file": "assets/index.page.80f7bf13.css",
     "src": "pages/software/v0.2/index.page.css"
   }
 }

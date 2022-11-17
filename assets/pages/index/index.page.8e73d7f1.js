@@ -2,9 +2,9 @@ import { _ as _imports_0, a as _imports_1 } from "../../chunk-5b637298.js";
 import { _ as _export_sfc } from "../../chunk-de093346.js";
 import { u as openBlock, t as createElementBlock, x as pushScopeId, y as popScopeId, v as createBaseVNode, d as defineComponent, z as renderSlot, A as normalizeClass, B as unref, C as createTextVNode, D as createVNode, E as withCtx, F as Fragment } from "../../chunk-4828f769.js";
 import { u as usePageContext } from "../../chunk-26e7f91e.js";
-/* empty css                    */const Footer_vue_vue_type_style_index_0_scoped_616712ff_lang = "";
+/* empty css                    */const Footer_vue_vue_type_style_index_0_scoped_0e4e5c47_lang = "";
 const _sfc_main$2 = {};
-const _withScopeId$1 = (n) => (pushScopeId("data-v-616712ff"), n = n(), popScopeId(), n);
+const _withScopeId$1 = (n) => (pushScopeId("data-v-0e4e5c47"), n = n(), popScopeId(), n);
 const _hoisted_1$1 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("div", { class: "logos" }, [
   /* @__PURE__ */ createBaseVNode("img", {
     class: "logo",
@@ -25,7 +25,7 @@ const _hoisted_3 = [
 function _sfc_render(_ctx, _cache) {
   return openBlock(), createElementBlock("footer", null, _hoisted_3);
 }
-const Footer = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["render", _sfc_render], ["__scopeId", "data-v-616712ff"]]);
+const Footer = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["render", _sfc_render], ["__scopeId", "data-v-0e4e5c47"]]);
 const _sfc_main$1 = /* @__PURE__ */ defineComponent({
   __name: "Link",
   setup(__props) {

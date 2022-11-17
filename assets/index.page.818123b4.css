@@ -1,25 +1,24 @@
 
-img.logo[data-v-616712ff] {
+img.logo[data-v-0e4e5c47] {
     height: 3em;
     margin-left: 2em;
     margin-right: 2em;
 }
-.logos[data-v-616712ff] {
+.logos[data-v-0e4e5c47] {
     display: flex;
     justify-content: center;
     margin-bottom: 3em;
 }
-footer[data-v-616712ff] {
+footer[data-v-0e4e5c47] {
     padding-left: 3em;
     padding-right: 3em;
     padding-top: 5em;
     padding-bottom: 6em;
 }
-footer p[data-v-616712ff] {
+footer p[data-v-0e4e5c47] {
     width: 75%;
     text-align: center;
     margin: 0 auto;
-    font-size: small;
 }
 
 a[data-v-99a0f5a5] {
@@ -37,6 +36,22 @@ a[data-v-99a0f5a5]:hover {
     padding-left: 3em;
     padding-right: 3em;
     text-align: center;
+}
+
+@media screen and (min-width: 70em) {
+    :root {
+        font-size: 112%;
+    }
+}
+@media screen and (max-width: 70em) {
+    :root {
+        font-size: 100%;
+    }
+}
+@media screen and (max-width: 41.5em) {
+    :root {
+        font-size: 70%;
+    }
 }
 
 main[data-v-de2df4f9] {
