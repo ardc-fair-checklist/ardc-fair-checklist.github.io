@@ -21,11 +21,11 @@ footer p[data-v-a31e17c7] {
     margin: 0 auto;
 }
 
-.badges[data-v-a12d3d9b] {
+.badges[data-v-7a2a6dcc] {
     margin-top: 5em;
     padding-top: 1.5em;
 }
-textarea[data-v-a12d3d9b] {
+textarea[data-v-7a2a6dcc] {
     background-color: white;
     border-radius: 3px;
     border: 2px solid #ccc;
@@ -34,6 +34,10 @@ textarea[data-v-a12d3d9b] {
     height: 6em;
     resize: none;
     width: 100%;
+    font-family: Consolas, Monaco, 'Lucida Console',
+                'Liberation Mono', 'DejaVu Sans Mono',
+                'Bitstream Vera Sans Mono',
+                'Courier New', monospace;
 }
 
 .banner[data-v-58b5682c] {
@@ -164,126 +168,125 @@ svg:hover #outline[data-v-65279842] {
     fill: black;
 }
 
-.footer[data-v-7eb2e851] {
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
+.footer[data-v-567cc66b] {
     align-items: center;
-}
-.inner[data-v-7eb2e851] {
-    width: 100%;
-    /*background-color: orange;*/
+    bottom: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
+    left: 0;
+    position: fixed;
+    width: 100%;
+}
+.inner[data-v-567cc66b] {
     align-items: center;
     background-color: var(--light);
-    max-width: 56em;
     border-top-left-radius: 0.5em;
     border-top-right-radius: 0.5em;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    max-width: 56em;
+    width: 100%;
 }
-.another-inner[data-v-7eb2e851] {
+.another-inner[data-v-567cc66b] {
     background-color: var(--light);
-    flex-grow: 1;
-    min-width: 30em;
-    max-width: 50em;
-    /*border-top: 2px solid #444;*/
-    /*border-left: 2px solid #444;*/
-    /*border-right: 2px solid #444;*/
     box-sizing: border-box;
+    flex-grow: 1;
+    max-width: 50em;
+    min-width: 30em;
 }
 @media screen and (min-width: 70em) {
-.inner[data-v-7eb2e851] {
+.inner[data-v-567cc66b] {
         padding-left: 3em;
         padding-right: 3em;
 }
 }
 @media screen and (max-width: 70em) {
-.inner[data-v-7eb2e851] {
+.inner[data-v-567cc66b] {
         padding-left: 3em;
         padding-right: 3em;
 }
 }
 @media screen and (max-width: 41.5em) {
-.inner[data-v-7eb2e851] {
+.inner[data-v-567cc66b] {
         padding-left: 0.5em;
         padding-right: 0.5em;
 }
 }
-.progressbars[data-v-7eb2e851] {
+.progressbars[data-v-567cc66b] {
+    background-color: var(--light);
     column-gap: 0.5em;
     display: flex;
     flex-direction: row;
     margin-bottom: 0.5em;
     margin-top: 1em;
     padding-bottom: 0.25em;
-    padding-top: 0.25em;
     padding-left: 0.5em;
     padding-right: 0.5em;
-    background-color: var(--light);
+    padding-top: 0.25em;
 }
-.labels[data-v-7eb2e851] {
+.labels[data-v-567cc66b] {
+    display: flex;
+    flex-direction: column;
     flex-grow: 0;
+}
+.bars[data-v-567cc66b] {
     display: flex;
     flex-direction: column;
-    /*margin-left: 2em;*/
-}
-.bars[data-v-7eb2e851] {
     flex-grow: 1;
+}
+.row[data-v-567cc66b] {
     display: flex;
     flex-direction: column;
-}
-.row[data-v-7eb2e851] {
     height: 1.75em;
-    min-height: 1.75em;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
+    min-height: 1.75em;
 }
-.label[data-v-7eb2e851] {
-    text-align: right;
-    line-height: 2em;
+.label[data-v-567cc66b] {
     color: black;
+    line-height: 2em;
+    text-align: right;
 }
-.bar[data-v-7eb2e851] {
-    height: 0.7em;
+.bar[data-v-567cc66b] {
+    border-bottom-right-radius: 0.25em; 
     border-top-right-radius: 0.25em;
-    border-bottom-right-radius: 0.25em;
+    height: 0.7em;
 }
-.bar-bg[data-v-7eb2e851] {
+.bar-bg[data-v-567cc66b] {
     background-color: #eee;
     border: 1px solid var(--dark);
 }
-.blue[data-v-7eb2e851] {
+.blue[data-v-567cc66b] {
     background-color: var(--ardc-blue);
-    width: var(--4a341bf0);  /* CSS Vue magic here */
+    width: var(--8e708cb2);  /* CSS Vue magic here */
 }
-.pink[data-v-7eb2e851] {
+.pink[data-v-567cc66b] {
     background-color: var(--ardc-pink);
-    width: var(--4a341bfa);  /* CSS Vue magic here */
+    width: var(--8e708cbc);  /* CSS Vue magic here */
 }
-.yellow[data-v-7eb2e851] {
+.yellow[data-v-567cc66b] {
     background-color: var(--ardc-yellow);
-    width: var(--4a341bea);  /* CSS Vue magic here */
+    width: var(--8e708cac);  /* CSS Vue magic here */
 }
-.purple[data-v-7eb2e851] {
+.purple[data-v-567cc66b] {
     background-color: var(--ardc-purple);
-    width: var(--4a341bd8);  /* CSS Vue magic here */
+    width: var(--8e708c9a);  /* CSS Vue magic here */
 }
-button[data-v-7eb2e851] {
-    padding: 0.5em 1.5em;
-    height: min-content;
+button[data-v-567cc66b] {
+    align-self: center;
+    background-color: #eee;
+    border-radius: 0.15em;
+    border: 0.5px solid rgba(0,0,0,0.5);
+    color: black;
     flex-grow: 0;
+    height: min-content;
     margin-left: 2em;
     margin-right: 1em;
-    align-self: center;
+    padding: 0.5em 1.5em;
 }
 
 
