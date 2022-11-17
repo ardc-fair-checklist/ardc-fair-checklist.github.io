@@ -201,13 +201,18 @@ button {
     align-self: center;
     background-color: #eee;
     border-radius: 0.15em;
-    border: 0.5px solid rgba(0,0,0,0.5);
+    border: 1px solid rgba(0,0,0,0.5);
     color: black;
     flex-grow: 0;
     height: min-content;
     margin-left: 2em;
     margin-right: 1em;
     padding: 0.5em 1.5em;
+}
+
+button:hover {
+    border: 1px solid rgba(0,0,0,0.7);
+    background-color: white;
 }
 
 </style>
