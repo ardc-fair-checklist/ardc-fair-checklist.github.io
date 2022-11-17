@@ -38,6 +38,5 @@ footer p {
     width: 75%;
     text-align: center;
     margin: 0 auto;
-    font-size: small;
 }
 </style>
