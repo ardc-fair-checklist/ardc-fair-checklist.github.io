@@ -25,7 +25,7 @@ const link = computed(() => {
 
 onMounted(() => {
     const { urlPathname } = usePageContext()
-    const myVersion = urlPathname.split('/').slice(-1)[0]
+    const myVersion = urlPathname.split('/').filter(e => e !== '').slice(-1)[0]
     if (myVersion !== latest.value.software) {
         setShowBannerMessageVersions(true)
     }
