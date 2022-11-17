@@ -112,21 +112,22 @@ a[data-v-d6ab14a0]:hover {
     text-align: center;
 }
 
-header[data-v-65279842] {
+header[data-v-0000de6d] {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     padding: 1em 0.5em;
 }
-.view-source[data-v-65279842] {
+.view-source[data-v-0000de6d] {
     min-width: min-content;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: center;
+    cursor: pointer;
 }
-.view-source a[data-v-65279842] {
+.view-source a[data-v-0000de6d] {
     text-decoration: none;
     color: var(--light);
     padding-right: 0.6em;
@@ -134,41 +135,45 @@ header[data-v-65279842] {
     line-height: 1.6;
     text-underline-offset: 0.7em;
 }
-.view-source:hover a[data-v-65279842] {
+.view-source:hover a[data-v-0000de6d] {
     text-decoration: underline;
     color: white;
 }
-.view-source:hover img[data-v-65279842] {
+.view-source:hover img[data-v-0000de6d] {
     opacity: 1;
+    transform: scale(1.05);
 }
-.view-source img[data-v-65279842] {
+.view-source img[data-v-0000de6d] {
     width: 2em;
     height: 2em;
     opacity: 0.8;
 }
 @media screen and (min-width: 70em) {
-.view-source[data-v-65279842] {
+.view-source[data-v-0000de6d] {
         padding-right: 1em;
 }
-.home[data-v-65279842] {
+.home[data-v-0000de6d] {
         padding-left: 1em;
 }
 }
-svg[data-v-65279842] {
+svg[data-v-0000de6d] {
     width: 2em;
     height: 2em;
 }
-#outline[data-v-65279842] {
+svg[data-v-0000de6d]:hover {
+    transform: scale(1.05);
+}
+#outline[data-v-0000de6d] {
     fill: var(--light);
 }
-svg:hover #outline[data-v-65279842] {
+svg:hover #outline[data-v-0000de6d] {
     fill: white;
 }
-#inside[data-v-65279842] {
+#inside[data-v-0000de6d] {
     fill: black;
 }
 
-.footer[data-v-59ecd2ae] {
+.footer[data-v-a8d9153f] {
     align-items: center;
     bottom: 0;
     display: flex;
@@ -179,7 +184,7 @@ svg:hover #outline[data-v-65279842] {
     position: fixed;
     width: 100%;
 }
-.inner[data-v-59ecd2ae] {
+.inner[data-v-a8d9153f] {
     align-items: center;
     background-color: var(--light);
     border-top-left-radius: 0.5em;
@@ -192,7 +197,7 @@ svg:hover #outline[data-v-65279842] {
     max-width: 56em;
     width: 100%;
 }
-.another-inner[data-v-59ecd2ae] {
+.another-inner[data-v-a8d9153f] {
     background-color: var(--light);
     box-sizing: border-box;
     flex-grow: 1;
@@ -200,24 +205,24 @@ svg:hover #outline[data-v-65279842] {
     min-width: 30em;
 }
 @media screen and (min-width: 70em) {
-.inner[data-v-59ecd2ae] {
+.inner[data-v-a8d9153f] {
         padding-left: 3em;
         padding-right: 3em;
 }
 }
 @media screen and (max-width: 70em) {
-.inner[data-v-59ecd2ae] {
+.inner[data-v-a8d9153f] {
         padding-left: 3em;
         padding-right: 3em;
 }
 }
 @media screen and (max-width: 41.5em) {
-.inner[data-v-59ecd2ae] {
+.inner[data-v-a8d9153f] {
         padding-left: 0.5em;
         padding-right: 0.5em;
 }
 }
-.progressbars[data-v-59ecd2ae] {
+.progressbars[data-v-a8d9153f] {
     background-color: var(--light);
     column-gap: 0.5em;
     display: flex;
@@ -229,54 +234,54 @@ svg:hover #outline[data-v-65279842] {
     padding-right: 0.5em;
     padding-top: 0.25em;
 }
-.labels[data-v-59ecd2ae] {
+.labels[data-v-a8d9153f] {
     display: flex;
     flex-direction: column;
     flex-grow: 0;
 }
-.bars[data-v-59ecd2ae] {
+.bars[data-v-a8d9153f] {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
-.row[data-v-59ecd2ae] {
+.row[data-v-a8d9153f] {
     display: flex;
     flex-direction: column;
     height: 1.75em;
     justify-content: center;
     min-height: 1.75em;
 }
-.label[data-v-59ecd2ae] {
+.label[data-v-a8d9153f] {
     color: black;
     line-height: 2em;
     text-align: right;
 }
-.bar[data-v-59ecd2ae] {
+.bar[data-v-a8d9153f] {
     border-bottom-right-radius: 0.25em; 
     border-top-right-radius: 0.25em;
     height: 0.7em;
 }
-.bar-bg[data-v-59ecd2ae] {
+.bar-bg[data-v-a8d9153f] {
     background-color: #eee;
     border: 1px solid var(--dark);
 }
-.blue[data-v-59ecd2ae] {
+.blue[data-v-a8d9153f] {
     background-color: var(--ardc-blue);
-    width: var(--6451c08f);  /* CSS Vue magic here */
+    width: var(--3c7c57de);  /* CSS Vue magic here */
 }
-.pink[data-v-59ecd2ae] {
+.pink[data-v-a8d9153f] {
     background-color: var(--ardc-pink);
-    width: var(--6451c08a);  /* CSS Vue magic here */
+    width: var(--3c7c57d9);  /* CSS Vue magic here */
 }
-.yellow[data-v-59ecd2ae] {
+.yellow[data-v-a8d9153f] {
     background-color: var(--ardc-yellow);
-    width: var(--6451c092);  /* CSS Vue magic here */
+    width: var(--3c7c57e1);  /* CSS Vue magic here */
 }
-.purple[data-v-59ecd2ae] {
+.purple[data-v-a8d9153f] {
     background-color: var(--ardc-purple);
-    width: var(--6451c09b);  /* CSS Vue magic here */
+    width: var(--3c7c57ea);  /* CSS Vue magic here */
 }
-button[data-v-59ecd2ae] {
+button[data-v-a8d9153f] {
     align-self: center;
     background-color: #eee;
     border-radius: 0.15em;
@@ -288,12 +293,12 @@ button[data-v-59ecd2ae] {
     margin-right: 1em;
     padding: 0.5em 1.5em;
 }
-button[data-v-59ecd2ae]:hover {
+button[data-v-a8d9153f]:hover {
     border: 1px solid rgba(0,0,0,0.7);
     background-color: white;
     cursor: pointer;
 }
-button[data-v-59ecd2ae]:disabled {
+button[data-v-a8d9153f]:disabled {
     opacity: 0.5;
 }
 
@@ -377,7 +382,7 @@ legend[data-v-07b938da] {
     font-size: 1.17em;
 }
 
-main[data-v-ac174f06] {
+main[data-v-225f64ba] {
     min-width: 30em;
     max-width: 50em;
     margin-left: auto;
@@ -385,28 +390,28 @@ main[data-v-ac174f06] {
     color: var(--white);
 }
 @media screen and (min-width: 70em) {
-main[data-v-ac174f06] {
+main[data-v-225f64ba] {
         padding-left: 3em;
         padding-right: 3em;
 }
 }
 @media screen and (max-width: 70em) {
-main[data-v-ac174f06] {
+main[data-v-225f64ba] {
         padding-left: 3em;
         padding-right: 3em;
 }
 }
 @media screen and (max-width: 41.5em) {
-main[data-v-ac174f06] {
+main[data-v-225f64ba] {
         padding-left: 0.5em;
         padding-right: 0.5em;
 }
 }
-h1[data-v-ac174f06] {
+h1[data-v-225f64ba] {
     line-height: 1.2em;
     margin-top: 1em;
 }
-h2[data-v-ac174f06] {
+h2[data-v-225f64ba] {
     border-bottom: 2px solid var(--white);
     width: 40%;
     color: var(--white);

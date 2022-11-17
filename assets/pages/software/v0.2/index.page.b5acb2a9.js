@@ -806,7 +806,7 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
 });
 const BannerVersions_vue_vue_type_style_index_0_scoped_d6ab14a0_lang = "";
 const BannerVersions = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-d6ab14a0"]]);
-const _withScopeId$1 = (n) => (pushScopeId("data-v-65279842"), n = n(), popScopeId(), n);
+const _withScopeId$1 = (n) => (pushScopeId("data-v-0000de6d"), n = n(), popScopeId(), n);
 const _hoisted_1$4 = { class: "home" };
 const _hoisted_2$3 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("svg", {
   width: "128",
@@ -836,10 +836,12 @@ const _hoisted_2$3 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ create
 ], -1));
 const _hoisted_3$3 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("div", { class: "view-source" }, [
   /* @__PURE__ */ createBaseVNode("a", { href: "https://github.com/ardc-fair-checklist/ssg/issues/new" }, " Report an issue "),
-  /* @__PURE__ */ createBaseVNode("img", {
-    src: _imports_0$1,
-    alt: "octocat logo"
-  })
+  /* @__PURE__ */ createBaseVNode("a", { href: "https://github.com/ardc-fair-checklist/ssg/issues/new" }, [
+    /* @__PURE__ */ createBaseVNode("img", {
+      src: _imports_0$1,
+      alt: "octocat logo"
+    })
+  ])
 ], -1));
 const _sfc_main$4 = /* @__PURE__ */ defineComponent({
   __name: "Header",
@@ -860,27 +862,27 @@ const _sfc_main$4 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const Header_vue_vue_type_style_index_0_scoped_65279842_lang = "";
-const Header = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-65279842"]]);
+const Header_vue_vue_type_style_index_0_scoped_0000de6d_lang = "";
+const Header = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-0000de6d"]]);
 const _hoisted_1$3 = { class: "footer" };
 const _hoisted_2$2 = { class: "inner" };
 const _hoisted_3$2 = { class: "another-inner" };
 const _hoisted_4$2 = { class: "progressbars" };
-const _hoisted_5$1 = /* @__PURE__ */ createStaticVNode('<div class="labels" data-v-59ecd2ae><div class="row" data-v-59ecd2ae><div class="label" data-v-59ecd2ae> Findable </div></div><div class="row" data-v-59ecd2ae><div class="label" data-v-59ecd2ae> Accessible </div></div><div class="row" data-v-59ecd2ae><div class="label" data-v-59ecd2ae> Interoperable </div></div><div class="row" data-v-59ecd2ae><div class="label" data-v-59ecd2ae> Reusable </div></div></div><div class="bars" data-v-59ecd2ae><div class="row" data-v-59ecd2ae><div class="bar bar-bg" data-v-59ecd2ae><div class="bar blue" data-v-59ecd2ae></div></div></div><div class="row" data-v-59ecd2ae><div class="bar bar-bg" data-v-59ecd2ae><div class="bar pink" data-v-59ecd2ae></div></div></div><div class="row" data-v-59ecd2ae><div class="bar bar-bg" data-v-59ecd2ae><div class="bar yellow" data-v-59ecd2ae></div></div></div><div class="row" data-v-59ecd2ae><div class="bar bar-bg" data-v-59ecd2ae><div class="bar purple" data-v-59ecd2ae></div></div></div></div>', 2);
+const _hoisted_5$1 = /* @__PURE__ */ createStaticVNode('<div class="labels" data-v-a8d9153f><div class="row" data-v-a8d9153f><div class="label" data-v-a8d9153f> Findable </div></div><div class="row" data-v-a8d9153f><div class="label" data-v-a8d9153f> Accessible </div></div><div class="row" data-v-a8d9153f><div class="label" data-v-a8d9153f> Interoperable </div></div><div class="row" data-v-a8d9153f><div class="label" data-v-a8d9153f> Reusable </div></div></div><div class="bars" data-v-a8d9153f><div class="row" data-v-a8d9153f><div class="bar bar-bg" data-v-a8d9153f><div class="bar blue" data-v-a8d9153f></div></div></div><div class="row" data-v-a8d9153f><div class="bar bar-bg" data-v-a8d9153f><div class="bar pink" data-v-a8d9153f></div></div></div><div class="row" data-v-a8d9153f><div class="bar bar-bg" data-v-a8d9153f><div class="bar yellow" data-v-a8d9153f></div></div></div><div class="row" data-v-a8d9153f><div class="bar bar-bg" data-v-a8d9153f><div class="bar purple" data-v-a8d9153f></div></div></div></div>', 2);
 const _hoisted_7 = ["disabled"];
 const _sfc_main$3 = /* @__PURE__ */ defineComponent({
   __name: "ProgressBars",
   props: {
     progress: null,
     onClick: null,
-    showButton: { type: Boolean }
+    disableButton: { type: Boolean }
   },
   setup(__props) {
     useCssVars((_ctx) => ({
-      "6451c08f": __props.progress.f,
-      "6451c08a": __props.progress.a,
-      "6451c092": __props.progress.i,
-      "6451c09b": __props.progress.r
+      "3c7c57de": __props.progress.f,
+      "3c7c57d9": __props.progress.a,
+      "3c7c57e1": __props.progress.i,
+      "3c7c57ea": __props.progress.r
     }));
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("div", _hoisted_1$3, [
@@ -889,7 +891,7 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
             createBaseVNode("div", _hoisted_4$2, [
               _hoisted_5$1,
               createBaseVNode("button", {
-                disabled: __props.showButton,
+                disabled: __props.disableButton,
                 role: "button",
                 onClick: _cache[0] || (_cache[0] = ($event) => __props.onClick())
               }, "Get the badge", 8, _hoisted_7)
@@ -900,8 +902,8 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const ProgressBars_vue_vue_type_style_index_0_scoped_59ecd2ae_lang = "";
-const ProgressBars = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-59ecd2ae"]]);
+const ProgressBars_vue_vue_type_style_index_0_scoped_a8d9153f_lang = "";
+const ProgressBars = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-a8d9153f"]]);
 const _hoisted_1$2 = ["aria-labelledby"];
 const _hoisted_2$1 = { class: "answer-radiobutton" };
 const _hoisted_3$1 = ["id", "value", "checked"];
@@ -995,13 +997,13 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
 });
 const Question_vue_vue_type_style_index_0_scoped_07b938da_lang = "";
 const Question = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-07b938da"]]);
-const _withScopeId = (n) => (pushScopeId("data-v-ac174f06"), n = n(), popScopeId(), n);
+const _withScopeId = (n) => (pushScopeId("data-v-225f64ba"), n = n(), popScopeId(), n);
 const _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("h1", null, "FAIR for software self-assessment checklist", -1));
 const _sfc_main = /* @__PURE__ */ defineComponent({
   __name: "index.page",
   setup(__props) {
     setQuestions(questions);
-    const showButton = ref(false);
+    const disableButton = ref(false);
     const getAspectFullname = (aspect) => {
       return {
         F: "Findable",
@@ -1028,7 +1030,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
         const elem = document.getElementById("badges-section");
         if (elem !== void 0 && elem !== null) {
           const rect = elem.getBoundingClientRect();
-          showButton.value = elementInViewport(rect);
+          disableButton.value = elementInViewport(rect);
         }
       };
     });
@@ -1065,8 +1067,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
             createVNode(ProgressBars, {
               progress: unref(progress),
               onClick: scrollToBadgesSection,
-              showButton: showButton.value
-            }, null, 8, ["progress", "showButton"]),
+              disableButton: disableButton.value
+            }, null, 8, ["progress", "disableButton"]),
             createVNode(BadgeSnippets, { id: "badges-section" }),
             createVNode(About)
           ], 64)) : (openBlock(), createElementBlock(Fragment, { key: 1 }, [
@@ -1077,8 +1079,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const index_page_vue_vue_type_style_index_0_scoped_ac174f06_lang = "";
-const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-ac174f06"]]);
+const index_page_vue_vue_type_style_index_0_scoped_225f64ba_lang = "";
+const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-225f64ba"]]);
 export {
   index_page as default
 };
