@@ -866,7 +866,7 @@ const _hoisted_1$3 = { class: "footer" };
 const _hoisted_2$2 = { class: "inner" };
 const _hoisted_3$2 = { class: "another-inner" };
 const _hoisted_4$2 = { class: "progressbars" };
-const _hoisted_5$1 = /* @__PURE__ */ createStaticVNode('<div class="labels" data-v-567cc66b><div class="row" data-v-567cc66b><div class="label" data-v-567cc66b> Findable </div></div><div class="row" data-v-567cc66b><div class="label" data-v-567cc66b> Accessible </div></div><div class="row" data-v-567cc66b><div class="label" data-v-567cc66b> Interoperable </div></div><div class="row" data-v-567cc66b><div class="label" data-v-567cc66b> Reusable </div></div></div><div class="bars" data-v-567cc66b><div class="row" data-v-567cc66b><div class="bar bar-bg" data-v-567cc66b><div class="bar blue" data-v-567cc66b></div></div></div><div class="row" data-v-567cc66b><div class="bar bar-bg" data-v-567cc66b><div class="bar pink" data-v-567cc66b></div></div></div><div class="row" data-v-567cc66b><div class="bar bar-bg" data-v-567cc66b><div class="bar yellow" data-v-567cc66b></div></div></div><div class="row" data-v-567cc66b><div class="bar bar-bg" data-v-567cc66b><div class="bar purple" data-v-567cc66b></div></div></div></div>', 2);
+const _hoisted_5$1 = /* @__PURE__ */ createStaticVNode('<div class="labels" data-v-1a731577><div class="row" data-v-1a731577><div class="label" data-v-1a731577> Findable </div></div><div class="row" data-v-1a731577><div class="label" data-v-1a731577> Accessible </div></div><div class="row" data-v-1a731577><div class="label" data-v-1a731577> Interoperable </div></div><div class="row" data-v-1a731577><div class="label" data-v-1a731577> Reusable </div></div></div><div class="bars" data-v-1a731577><div class="row" data-v-1a731577><div class="bar bar-bg" data-v-1a731577><div class="bar blue" data-v-1a731577></div></div></div><div class="row" data-v-1a731577><div class="bar bar-bg" data-v-1a731577><div class="bar pink" data-v-1a731577></div></div></div><div class="row" data-v-1a731577><div class="bar bar-bg" data-v-1a731577><div class="bar yellow" data-v-1a731577></div></div></div><div class="row" data-v-1a731577><div class="bar bar-bg" data-v-1a731577><div class="bar purple" data-v-1a731577></div></div></div></div>', 2);
 const _hoisted_7 = ["disabled"];
 const _sfc_main$3 = /* @__PURE__ */ defineComponent({
   __name: "ProgressBars",
@@ -877,10 +877,10 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
   },
   setup(__props) {
     useCssVars((_ctx) => ({
-      "8e708cb2": __props.progress.f,
-      "8e708cbc": __props.progress.a,
-      "8e708cac": __props.progress.i,
-      "8e708c9a": __props.progress.r
+      "5357c68b": __props.progress.f,
+      "5357c686": __props.progress.a,
+      "5357c68e": __props.progress.i,
+      "5357c697": __props.progress.r
     }));
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("div", _hoisted_1$3, [
@@ -900,8 +900,8 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const ProgressBars_vue_vue_type_style_index_0_scoped_567cc66b_lang = "";
-const ProgressBars = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-567cc66b"]]);
+const ProgressBars_vue_vue_type_style_index_0_scoped_1a731577_lang = "";
+const ProgressBars = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-1a731577"]]);
 const _hoisted_1$2 = ["aria-labelledby"];
 const _hoisted_2$1 = { class: "answer-radiobutton" };
 const _hoisted_3$1 = ["id", "value", "checked"];

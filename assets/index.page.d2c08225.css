@@ -168,7 +168,7 @@ svg:hover #outline[data-v-65279842] {
     fill: black;
 }
 
-.footer[data-v-567cc66b] {
+.footer[data-v-1a731577] {
     align-items: center;
     bottom: 0;
     display: flex;
@@ -179,7 +179,7 @@ svg:hover #outline[data-v-65279842] {
     position: fixed;
     width: 100%;
 }
-.inner[data-v-567cc66b] {
+.inner[data-v-1a731577] {
     align-items: center;
     background-color: var(--light);
     border-top-left-radius: 0.5em;
@@ -192,7 +192,7 @@ svg:hover #outline[data-v-65279842] {
     max-width: 56em;
     width: 100%;
 }
-.another-inner[data-v-567cc66b] {
+.another-inner[data-v-1a731577] {
     background-color: var(--light);
     box-sizing: border-box;
     flex-grow: 1;
@@ -200,24 +200,24 @@ svg:hover #outline[data-v-65279842] {
     min-width: 30em;
 }
 @media screen and (min-width: 70em) {
-.inner[data-v-567cc66b] {
+.inner[data-v-1a731577] {
         padding-left: 3em;
         padding-right: 3em;
 }
 }
 @media screen and (max-width: 70em) {
-.inner[data-v-567cc66b] {
+.inner[data-v-1a731577] {
         padding-left: 3em;
         padding-right: 3em;
 }
 }
 @media screen and (max-width: 41.5em) {
-.inner[data-v-567cc66b] {
+.inner[data-v-1a731577] {
         padding-left: 0.5em;
         padding-right: 0.5em;
 }
 }
-.progressbars[data-v-567cc66b] {
+.progressbars[data-v-1a731577] {
     background-color: var(--light);
     column-gap: 0.5em;
     display: flex;
@@ -229,64 +229,68 @@ svg:hover #outline[data-v-65279842] {
     padding-right: 0.5em;
     padding-top: 0.25em;
 }
-.labels[data-v-567cc66b] {
+.labels[data-v-1a731577] {
     display: flex;
     flex-direction: column;
     flex-grow: 0;
 }
-.bars[data-v-567cc66b] {
+.bars[data-v-1a731577] {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
-.row[data-v-567cc66b] {
+.row[data-v-1a731577] {
     display: flex;
     flex-direction: column;
     height: 1.75em;
     justify-content: center;
     min-height: 1.75em;
 }
-.label[data-v-567cc66b] {
+.label[data-v-1a731577] {
     color: black;
     line-height: 2em;
     text-align: right;
 }
-.bar[data-v-567cc66b] {
+.bar[data-v-1a731577] {
     border-bottom-right-radius: 0.25em; 
     border-top-right-radius: 0.25em;
     height: 0.7em;
 }
-.bar-bg[data-v-567cc66b] {
+.bar-bg[data-v-1a731577] {
     background-color: #eee;
     border: 1px solid var(--dark);
 }
-.blue[data-v-567cc66b] {
+.blue[data-v-1a731577] {
     background-color: var(--ardc-blue);
-    width: var(--8e708cb2);  /* CSS Vue magic here */
+    width: var(--5357c68b);  /* CSS Vue magic here */
 }
-.pink[data-v-567cc66b] {
+.pink[data-v-1a731577] {
     background-color: var(--ardc-pink);
-    width: var(--8e708cbc);  /* CSS Vue magic here */
+    width: var(--5357c686);  /* CSS Vue magic here */
 }
-.yellow[data-v-567cc66b] {
+.yellow[data-v-1a731577] {
     background-color: var(--ardc-yellow);
-    width: var(--8e708cac);  /* CSS Vue magic here */
+    width: var(--5357c68e);  /* CSS Vue magic here */
 }
-.purple[data-v-567cc66b] {
+.purple[data-v-1a731577] {
     background-color: var(--ardc-purple);
-    width: var(--8e708c9a);  /* CSS Vue magic here */
+    width: var(--5357c697);  /* CSS Vue magic here */
 }
-button[data-v-567cc66b] {
+button[data-v-1a731577] {
     align-self: center;
     background-color: #eee;
     border-radius: 0.15em;
-    border: 0.5px solid rgba(0,0,0,0.5);
+    border: 1px solid rgba(0,0,0,0.5);
     color: black;
     flex-grow: 0;
     height: min-content;
     margin-left: 2em;
     margin-right: 1em;
     padding: 0.5em 1.5em;
+}
+button[data-v-1a731577]:hover {
+    border: 1px solid rgba(0,0,0,0.7);
+    background-color: white;
 }
 
 

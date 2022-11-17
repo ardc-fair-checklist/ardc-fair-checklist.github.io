@@ -67,7 +67,7 @@
   "pages/software/v0.2/Header.vue?vue&type=style&index=0&scoped=65279842&lang.css": [],
   "pages/software/v0.2/Header.vue": [],
   "pages/software/v0.2/ProgressBars.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/software/v0.2/ProgressBars.vue?vue&type=style&index=0&scoped=567cc66b&lang.css": [],
+  "pages/software/v0.2/ProgressBars.vue?vue&type=style&index=0&scoped=1a731577&lang.css": [],
   "pages/software/v0.2/ProgressBars.vue": [],
   "pages/software/v0.2/Answer.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/software/v0.2/Answer.vue?vue&type=style&index=0&scoped=74444eb4&lang.css": [],
@@ -147,8 +147,8 @@
     "/ssg/assets/global.b082e789.css"
   ],
   "index.page.dbc160a6.js": [],
-  "index.page.13aac4d7.js": [
-    "/ssg/assets/index.page.5d3b9f50.css",
+  "index.page.16616e6e.js": [
+    "/ssg/assets/index.page.d2c08225.css",
     "/ssg/assets/global.b082e789.css"
   ],
   "_error.page.98982569.js": [],
