@@ -19,7 +19,7 @@ const link = computed(() => {
     return [
         window.location.origin,
         window.location.pathname.split('/').filter(e => e !== '').slice(0, -1).join('/'),
-        latest.value.software
+        latest.value.data
     ].join('/')
 })
 
