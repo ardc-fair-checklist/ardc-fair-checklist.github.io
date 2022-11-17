@@ -18,7 +18,7 @@ import './app.css'
 const link = computed(() => {
     return [
         window.location.origin,
-        window.location.pathname.split('/').filter(e => e !== '').slice(0, -1).join('/'),
+        ...window.location.pathname.split('/').filter(e => e !== '').slice(0, -1),
         latest.value.data
     ].join('/')
 })

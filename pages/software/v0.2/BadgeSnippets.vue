@@ -9,7 +9,7 @@
         <textarea
             readonly wrap="off"
             id="textarea-markdown-badge"
-        >{{ badge.markdown.value }}</textarea>
+        >{{ markdownBadge }}</textarea>
 
         <h3>
             <label for="textarea-rst-badge">ReStructured Text</label>
@@ -18,7 +18,7 @@
         <textarea
             readonly wrap="off"
             id="textarea-rst-badge"
-        >{{ badge.rst.value }}</textarea>
+        >{{ rstBadge }}</textarea>
 
 
         <h3>
@@ -28,29 +28,33 @@
         <textarea
             readonly wrap="off"
             id="textarea-html-badge"
-        >{{ badge.html.value }}</textarea>
+        >{{ htmlBadge }}</textarea>
 
     </div>
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
+import { onMounted } from 'vue'
 import { fairQueryParams } from './store'
-const APP_BASE_URL = `https://ardc-fair-checklist.github.io${import.meta.env.BASE_URL}`
-const badge = {
-    html: computed(() => `<a href="${APP_BASE_URL}software/v0.2` +
-                         `?${fairQueryParams.value}">\n` +
-                         `  <img src="${APP_BASE_URL}badge.svg" ` +
-                         `alt="FAIR checklist badge">\n</a>`),
-    markdown: computed(() => `[![FAIRness badge image](${APP_BASE_URL}badge.svg)]` +
-                             `(${APP_BASE_URL}software/v0.2` +
-                             `?${fairQueryParams.value})`),
-    rst: computed(() => `.. image:: ${APP_BASE_URL}badge.svg\n` +
-                        `   :target: ${APP_BASE_URL}software/v0.2?${fairQueryParams.value}\n` +
-                        `   :alt: FAIR checklist badge`)
-}
-</script>
+import { ref } from 'vue'
 
+const htmlBadge = ref('');
+const markdownBadge = ref('');
+const rstBadge = ref('');
+
+onMounted(() => {
+    const href = `${window.location.origin}/${window.location.pathname.split('/').filter(e => e !== '').join('/')}`;
+    const APP_BASE_URL = `${window.location.origin}${import.meta.env.BASE_URL}`
+    htmlBadge.value = `<a href="${href}?${fairQueryParams.value}">\n` +
+            `  <img src="${APP_BASE_URL}badge.svg" ` +
+            `alt="FAIR checklist badge">\n</a>`
+    markdownBadge.value = `[![FAIRness badge image](${APP_BASE_URL}badge.svg)]` +
+            `(${href}?${fairQueryParams.value})`
+    rstBadge.value = `.. image:: ${APP_BASE_URL}badge.svg\n` +
+            `   :target: ${href}?${fairQueryParams.value}\n` +
+            `   :alt: FAIR checklist badge`
+})
+</script>
 
 <style scoped>
 .badges {
