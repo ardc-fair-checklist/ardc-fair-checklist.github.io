@@ -168,7 +168,7 @@ svg:hover #outline[data-v-65279842] {
     fill: black;
 }
 
-.footer[data-v-1a731577] {
+.footer[data-v-59ecd2ae] {
     align-items: center;
     bottom: 0;
     display: flex;
@@ -179,7 +179,7 @@ svg:hover #outline[data-v-65279842] {
     position: fixed;
     width: 100%;
 }
-.inner[data-v-1a731577] {
+.inner[data-v-59ecd2ae] {
     align-items: center;
     background-color: var(--light);
     border-top-left-radius: 0.5em;
@@ -192,7 +192,7 @@ svg:hover #outline[data-v-65279842] {
     max-width: 56em;
     width: 100%;
 }
-.another-inner[data-v-1a731577] {
+.another-inner[data-v-59ecd2ae] {
     background-color: var(--light);
     box-sizing: border-box;
     flex-grow: 1;
@@ -200,24 +200,24 @@ svg:hover #outline[data-v-65279842] {
     min-width: 30em;
 }
 @media screen and (min-width: 70em) {
-.inner[data-v-1a731577] {
+.inner[data-v-59ecd2ae] {
         padding-left: 3em;
         padding-right: 3em;
 }
 }
 @media screen and (max-width: 70em) {
-.inner[data-v-1a731577] {
+.inner[data-v-59ecd2ae] {
         padding-left: 3em;
         padding-right: 3em;
 }
 }
 @media screen and (max-width: 41.5em) {
-.inner[data-v-1a731577] {
+.inner[data-v-59ecd2ae] {
         padding-left: 0.5em;
         padding-right: 0.5em;
 }
 }
-.progressbars[data-v-1a731577] {
+.progressbars[data-v-59ecd2ae] {
     background-color: var(--light);
     column-gap: 0.5em;
     display: flex;
@@ -229,54 +229,54 @@ svg:hover #outline[data-v-65279842] {
     padding-right: 0.5em;
     padding-top: 0.25em;
 }
-.labels[data-v-1a731577] {
+.labels[data-v-59ecd2ae] {
     display: flex;
     flex-direction: column;
     flex-grow: 0;
 }
-.bars[data-v-1a731577] {
+.bars[data-v-59ecd2ae] {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
-.row[data-v-1a731577] {
+.row[data-v-59ecd2ae] {
     display: flex;
     flex-direction: column;
     height: 1.75em;
     justify-content: center;
     min-height: 1.75em;
 }
-.label[data-v-1a731577] {
+.label[data-v-59ecd2ae] {
     color: black;
     line-height: 2em;
     text-align: right;
 }
-.bar[data-v-1a731577] {
+.bar[data-v-59ecd2ae] {
     border-bottom-right-radius: 0.25em; 
     border-top-right-radius: 0.25em;
     height: 0.7em;
 }
-.bar-bg[data-v-1a731577] {
+.bar-bg[data-v-59ecd2ae] {
     background-color: #eee;
     border: 1px solid var(--dark);
 }
-.blue[data-v-1a731577] {
+.blue[data-v-59ecd2ae] {
     background-color: var(--ardc-blue);
-    width: var(--5357c68b);  /* CSS Vue magic here */
+    width: var(--6451c08f);  /* CSS Vue magic here */
 }
-.pink[data-v-1a731577] {
+.pink[data-v-59ecd2ae] {
     background-color: var(--ardc-pink);
-    width: var(--5357c686);  /* CSS Vue magic here */
+    width: var(--6451c08a);  /* CSS Vue magic here */
 }
-.yellow[data-v-1a731577] {
+.yellow[data-v-59ecd2ae] {
     background-color: var(--ardc-yellow);
-    width: var(--5357c68e);  /* CSS Vue magic here */
+    width: var(--6451c092);  /* CSS Vue magic here */
 }
-.purple[data-v-1a731577] {
+.purple[data-v-59ecd2ae] {
     background-color: var(--ardc-purple);
-    width: var(--5357c697);  /* CSS Vue magic here */
+    width: var(--6451c09b);  /* CSS Vue magic here */
 }
-button[data-v-1a731577] {
+button[data-v-59ecd2ae] {
     align-self: center;
     background-color: #eee;
     border-radius: 0.15em;
@@ -288,9 +288,13 @@ button[data-v-1a731577] {
     margin-right: 1em;
     padding: 0.5em 1.5em;
 }
-button[data-v-1a731577]:hover {
+button[data-v-59ecd2ae]:hover {
     border: 1px solid rgba(0,0,0,0.7);
     background-color: white;
+    cursor: pointer;
+}
+button[data-v-59ecd2ae]:disabled {
+    opacity: 0.5;
 }
 
 
@@ -373,7 +377,7 @@ legend[data-v-07b938da] {
     font-size: 1.17em;
 }
 
-main[data-v-93387f7b] {
+main[data-v-ac174f06] {
     min-width: 30em;
     max-width: 50em;
     margin-left: auto;
@@ -381,28 +385,28 @@ main[data-v-93387f7b] {
     color: var(--white);
 }
 @media screen and (min-width: 70em) {
-main[data-v-93387f7b] {
+main[data-v-ac174f06] {
         padding-left: 3em;
         padding-right: 3em;
 }
 }
 @media screen and (max-width: 70em) {
-main[data-v-93387f7b] {
+main[data-v-ac174f06] {
         padding-left: 3em;
         padding-right: 3em;
 }
 }
 @media screen and (max-width: 41.5em) {
-main[data-v-93387f7b] {
+main[data-v-ac174f06] {
         padding-left: 0.5em;
         padding-right: 0.5em;
 }
 }
-h1[data-v-93387f7b] {
+h1[data-v-ac174f06] {
     line-height: 1.2em;
     margin-top: 1em;
 }
-h2[data-v-93387f7b] {
+h2[data-v-ac174f06] {
     border-bottom: 2px solid var(--white);
     width: 40%;
     color: var(--white);
