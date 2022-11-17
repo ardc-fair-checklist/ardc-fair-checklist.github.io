@@ -624,7 +624,7 @@ function _sfc_render(_ctx, _cache) {
   return openBlock(), createElementBlock("footer", null, _hoisted_3$5);
 }
 const About = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["render", _sfc_render], ["__scopeId", "data-v-a31e17c7"]]);
-const _withScopeId$2 = (n) => (pushScopeId("data-v-16d784eb"), n = n(), popScopeId(), n);
+const _withScopeId$2 = (n) => (pushScopeId("data-v-a12d3d9b"), n = n(), popScopeId(), n);
 const _hoisted_1$7 = { class: "badges" };
 const _hoisted_2$4 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createBaseVNode("h2", null, "Get the badge", -1));
 const _hoisted_3$4 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createBaseVNode("h3", null, [
@@ -654,35 +654,34 @@ const _hoisted_8 = {
 const _sfc_main$8 = /* @__PURE__ */ defineComponent({
   __name: "BadgeSnippets",
   setup(__props) {
-    const htmlBadge = ref("");
-    const markdownBadge = ref("");
-    const rstBadge = ref("");
+    const href = ref("");
+    const app_base_url = ref("");
+    const htmlBadge = computed(() => `<a href="${href.value}?${fairQueryParams.value}">
+  <img src="${app_base_url.value}badge.svg" alt="FAIR checklist badge">
+</a>`);
+    const markdownBadge = computed(() => `[![FAIRness badge image](${app_base_url.value}badge.svg)](${href.value}?${fairQueryParams.value})`);
+    const rstBadge = computed(() => `.. image:: ${app_base_url.value}badge.svg
+   :target: ${href.value}?${fairQueryParams.value}
+   :alt: FAIR checklist badge`);
     onMounted(() => {
-      const href = `${window.location.origin}/${window.location.pathname.split("/").filter((e) => e !== "").join("/")}`;
-      const APP_BASE_URL = `${window.location.origin}${"/ssg/"}`;
-      htmlBadge.value = `<a href="${href}?${fairQueryParams.value}">
-  <img src="${APP_BASE_URL}badge.svg" alt="FAIR checklist badge">
-</a>`;
-      markdownBadge.value = `[![FAIRness badge image](${APP_BASE_URL}badge.svg)](${href}?${fairQueryParams.value})`;
-      rstBadge.value = `.. image:: ${APP_BASE_URL}badge.svg
-   :target: ${href}?${fairQueryParams.value}
-   :alt: FAIR checklist badge`;
+      href.value = `${window.location.origin}/${window.location.pathname.split("/").filter((e) => e !== "").join("/")}`;
+      app_base_url.value = `${window.location.origin}${"/ssg/"}`;
     });
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("div", _hoisted_1$7, [
         _hoisted_2$4,
         _hoisted_3$4,
-        createBaseVNode("textarea", _hoisted_4$3, toDisplayString(markdownBadge.value), 1),
+        createBaseVNode("textarea", _hoisted_4$3, toDisplayString(unref(markdownBadge)), 1),
         _hoisted_5$2,
-        createBaseVNode("textarea", _hoisted_6$1, toDisplayString(rstBadge.value), 1),
+        createBaseVNode("textarea", _hoisted_6$1, toDisplayString(unref(rstBadge)), 1),
         _hoisted_7$1,
-        createBaseVNode("textarea", _hoisted_8, toDisplayString(htmlBadge.value), 1)
+        createBaseVNode("textarea", _hoisted_8, toDisplayString(unref(htmlBadge)), 1)
       ]);
     };
   }
 });
-const BadgeSnippets_vue_vue_type_style_index_0_scoped_16d784eb_lang = "";
-const BadgeSnippets = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["__scopeId", "data-v-16d784eb"]]);
+const BadgeSnippets_vue_vue_type_style_index_0_scoped_a12d3d9b_lang = "";
+const BadgeSnippets = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["__scopeId", "data-v-a12d3d9b"]]);
 const _hoisted_1$6 = {
   key: 0,
   class: "banner"
