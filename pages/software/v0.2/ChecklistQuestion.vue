@@ -10,7 +10,7 @@
             <div class="question-guidance">
                 {{ question.guidance }}
             </div>
-            <Answer v-for="(answer, answerIndex) in question.answers"
+            <ChecklistAnswer v-for="(answer, answerIndex) in question.answers"
                 v-bind:answer="answer"
                 v-bind:isChecked="compliance[question.index] === answerIndex"
                 v-bind:key="answer.id"
@@ -24,7 +24,7 @@
 <script setup lang="ts">
 import { compliance } from './store'
 import { setCompliance } from './store'
-import Answer from './Answer.vue'
+import ChecklistAnswer from './ChecklistAnswer.vue'
 
 const props = defineProps<{
     question: {

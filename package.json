@@ -4,6 +4,7 @@
     "dev": "npm run server",
     "prod": "npm run build && npm run server:prod",
     "build": "vite build",
+    "lint": "eslint \"pages/**\" \"renderer/**\" \"server/**\"",
     "server": "ts-node ./server",
     "server:prod": "cross-env NODE_ENV=production ts-node ./server"
   },
@@ -25,7 +26,11 @@
     "vue": "^3.2.33"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "@typescript-eslint/parser": "^5.43.0",
     "ajv": "^8.11.0",
+    "eslint": "^8.28.0",
+    "eslint-plugin-vue": "^9.7.0",
     "vitest": "^0.24.3"
   }
 }

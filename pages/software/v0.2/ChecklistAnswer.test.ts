@@ -1,5 +1,5 @@
 import { mount } from "@vue/test-utils";
-import Answer from './Answer.vue'
+import ChecklistAnswer from './ChecklistAnswer.vue'
 import { describe, expect, test } from 'vitest'
 
 
@@ -11,10 +11,10 @@ describe('after mounting an Answer component', () => {
             score: 0,
             text: "answer0 text"
         },
-        isChecked: true,
-        onClick: () => {}
+        onClick: () => undefined,
+        isChecked: true
     }
-    const wrapper = mount(Answer, { props });
+    const wrapper = mount(ChecklistAnswer, { props });
 
     test('it has a property named answer', () => {
         expect(wrapper.props('answer')).toBeDefined()

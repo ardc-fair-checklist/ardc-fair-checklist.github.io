@@ -1,6 +1,6 @@
 <template>
     <div class="banner" v-if="showBanner">
-        A newer version of this checklist is available at <Link v-bind:href="link">{{link}}</Link>, consider upgrading.
+        A newer version of this checklist is available at <ChecklistLink v-bind:href="link">{{link}}</ChecklistLink>, consider upgrading.
     </div>
 </template>
 
@@ -10,7 +10,7 @@ import { latest } from '~/renderer/versions'
 import { onMounted } from 'vue'
 import { ref } from 'vue'
 import { usePageContext } from '~/renderer/usePageContext'
-import Link from './Link.vue'
+import ChecklistLink from './ChecklistLink.vue'
 import '~/renderer/global.css'
 import './app.css'
 
