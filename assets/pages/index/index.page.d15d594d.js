@@ -3,9 +3,9 @@ import { _ as _imports_0, a as _imports_1 } from "../../chunk-5b637298.js";
 import { _ as _export_sfc } from "../../chunk-de093346.js";
 import { u as openBlock, t as createElementBlock, x as pushScopeId, y as popScopeId, v as createBaseVNode, d as defineComponent, z as renderSlot, A as normalizeClass, B as unref, C as createTextVNode, D as createVNode, E as withCtx, F as Fragment } from "../../chunk-4828f769.js";
 import { u as usePageContext } from "../../chunk-26e7f91e.js";
-const Footer_vue_vue_type_style_index_0_scoped_0e4e5c47_lang = "";
+const ChecklistFooter_vue_vue_type_style_index_0_scoped_6fb89924_lang = "";
 const _sfc_main$2 = {};
-const _withScopeId$1 = (n) => (pushScopeId("data-v-0e4e5c47"), n = n(), popScopeId(), n);
+const _withScopeId$1 = (n) => (pushScopeId("data-v-6fb89924"), n = n(), popScopeId(), n);
 const _hoisted_1$1 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("div", { class: "logos" }, [
   /* @__PURE__ */ createBaseVNode("img", {
     class: "logo",
@@ -26,9 +26,9 @@ const _hoisted_3 = [
 function _sfc_render(_ctx, _cache) {
   return openBlock(), createElementBlock("footer", null, _hoisted_3);
 }
-const Footer = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["render", _sfc_render], ["__scopeId", "data-v-0e4e5c47"]]);
+const ChecklistFooter = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["render", _sfc_render], ["__scopeId", "data-v-6fb89924"]]);
 const _sfc_main$1 = /* @__PURE__ */ defineComponent({
-  __name: "Link",
+  __name: "ChecklistLink",
   setup(__props) {
     const pageContext = usePageContext();
     return (_ctx, _cache) => {
@@ -40,10 +40,10 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const Link_vue_vue_type_style_index_0_scoped_99a0f5a5_lang = "";
-const Link = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-99a0f5a5"]]);
+const ChecklistLink_vue_vue_type_style_index_0_scoped_3a67c0ee_lang = "";
+const ChecklistLink = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-3a67c0ee"]]);
 const app = "";
-const _withScopeId = (n) => (pushScopeId("data-v-dcdb0ac1"), n = n(), popScopeId(), n);
+const _withScopeId = (n) => (pushScopeId("data-v-eb77947c"), n = n(), popScopeId(), n);
 const _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("h1", null, "FAIR checklists", -1));
 const _sfc_main = /* @__PURE__ */ defineComponent({
   __name: "index.page",
@@ -55,14 +55,14 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
         _hoisted_1,
         createBaseVNode("p", null, [
           createTextVNode(" Choose the checklist for "),
-          createVNode(Link, { href: linkToDataChecklist }, {
+          createVNode(ChecklistLink, { href: linkToDataChecklist }, {
             default: withCtx(() => [
               createTextVNode("data")
             ]),
             _: 1
           }),
           createTextVNode(" or for "),
-          createVNode(Link, { href: linkToSoftwareChecklist }, {
+          createVNode(ChecklistLink, { href: linkToSoftwareChecklist }, {
             default: withCtx(() => [
               createTextVNode("software")
             ]),
@@ -70,13 +70,13 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
           }),
           createTextVNode(". ")
         ]),
-        createVNode(Footer)
+        createVNode(ChecklistFooter)
       ], 64);
     };
   }
 });
-const index_page_vue_vue_type_style_index_0_scoped_dcdb0ac1_lang = "";
-const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-dcdb0ac1"]]);
+const index_page_vue_vue_type_style_index_0_scoped_eb77947c_lang = "";
+const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-eb77947c"]]);
 export {
   index_page as default
 };
