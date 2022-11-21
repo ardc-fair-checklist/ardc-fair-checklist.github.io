@@ -26,7 +26,7 @@ const showBanner = ref(false);
 
 onMounted(() => {
     const { urlPathname } = usePageContext()
-    const myVersion = urlPathname.split('/').slice(-1)[0]
+    const myVersion = urlPathname.split('/').filter(e => e !== '').slice(-1)[0]
     showBanner.value = myVersion !== latest.value.data
 })
 </script>

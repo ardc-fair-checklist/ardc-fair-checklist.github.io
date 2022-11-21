@@ -15,8 +15,6 @@
                 </div>
                 <ProgressBars
                     v-bind:progress="progress"
-                    v-bind:onClick="() => {}"
-                    v-bind:showButton="false"
                 />
                 <About />
             </template>

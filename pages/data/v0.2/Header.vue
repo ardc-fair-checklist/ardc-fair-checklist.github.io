@@ -33,7 +33,9 @@
             <a href="https://github.com/ardc-fair-checklist/ssg/issues/new">
                 Report an issue
             </a>
-            <img src="/octocat.svg" alt="octocat logo" />
+            <a href="https://github.com/ardc-fair-checklist/ssg/issues/new">
+                <img src="/octocat.svg" alt="octocat logo" />
+            </a>
         </div>
     </header>
 </template>
@@ -58,6 +60,7 @@ header {
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: center;
+    cursor: pointer;
 }
 .view-source a {
     text-decoration: none;
@@ -73,6 +76,7 @@ header {
 }
 .view-source:hover img {
     opacity: 1;
+    transform: scale(1.05);
 }
 .view-source img {
     width: 2em;
@@ -91,6 +95,10 @@ svg {
     width: 2em;
     height: 2em;
 }
+svg:hover {
+    transform: scale(1.05);
+}
+
 #outline {
     fill: var(--light);
 }

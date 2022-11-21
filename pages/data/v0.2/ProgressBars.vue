@@ -65,50 +65,44 @@ defineProps<{
         a: string;
         i: string;
         r: string;
-    },
-    onClick: () => void,
-    showButton: boolean
+    }
 }>();
 </script>
 
 <style scoped>
 
 .footer {
-    width: 100%;
-    position: fixed;
+    align-items: center;
     bottom: 0;
-    left: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-    align-items: center;
+    left: 0;
+    position: fixed;
+    width: 100%;
 }
 
 .inner {
-    width: 100%;
-    /*background-color: orange;*/
+    align-items: center;
+    background-color: var(--light);
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-    align-items: center;
-    background-color: var(--light);
     max-width: 56em;
-    border-top-left-radius: 0.5em;
-    border-top-right-radius: 0.5em;
-    box-sizing: border-box;
+    width: 100%;
 }
 
 .another-inner {
     background-color: var(--light);
-    flex-grow: 1;
-    min-width: 30em;
-    max-width: 50em;
-    /*border-top: 2px solid #444;*/
-    /*border-left: 2px solid #444;*/
-    /*border-right: 2px solid #444;*/
     box-sizing: border-box;
+    flex-grow: 1;
+    max-width: 50em;
+    min-width: 30em;
 }
 
 @media screen and (min-width: 70em) {
@@ -134,48 +128,47 @@ defineProps<{
 }
 
 .progressbars {
+    background-color: var(--light);
     column-gap: 0.5em;
     display: flex;
     flex-direction: row;
     margin-bottom: 0.5em;
     margin-top: 1em;
     padding-bottom: 0.25em;
-    padding-top: 0.25em;
     padding-left: 0.5em;
     padding-right: 0.5em;
-    background-color: var(--light);
+    padding-top: 0.25em;
 }
 
 .labels {
-    flex-grow: 0;
     display: flex;
     flex-direction: column;
-    /*margin-left: 2em;*/
+    flex-grow: 0;
 }
 .bars {
-    flex-grow: 0.9;
     display: flex;
     flex-direction: column;
+    flex-grow: 0.9;
 }
 
 .row {
-    height: 1.75em;
-    min-height: 1.75em;
     display: flex;
     flex-direction: column;
+    height: 1.75em;
     justify-content: center;
+    min-height: 1.75em;
 }
 
 .label {
-    text-align: right;
-    line-height: 2em;
     color: black;
+    line-height: 2em;
+    text-align: right;
 }
 
 .bar {
-    height: 0.7em;
-    border-top-right-radius: 0.25em;
     border-bottom-right-radius: 0.25em; 
+    border-top-right-radius: 0.25em;
+    height: 0.7em;
 }
 
 .bar-bg {
@@ -197,15 +190,6 @@ defineProps<{
 .purple {
     background-color: var(--ardc-purple);
     width: v-bind('progress.r');  /* CSS Vue magic here */
-}
-
-button {
-    padding: 0.5em 1.5em;
-    height: min-content;
-    flex-grow: 0;
-    margin-left: 2em;
-    margin-right: 1em;
-    align-self: center;
 }
 
 </style>
