@@ -11,8 +11,8 @@ describe('after mounting an Answer component', () => {
             score: 0,
             text: "answer0 text"
         },
-        onClick: () => undefined,
-        isChecked: true
+        isChecked: true,
+        onClick: () => undefined
     }
     const wrapper = mount(ChecklistAnswer, { props });
 
