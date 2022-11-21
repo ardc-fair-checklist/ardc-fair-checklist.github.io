@@ -13,9 +13,11 @@ async function startServer() {
     app.use(compression())
 
     if (isProduction) {
+        // eslint-disable-next-line @typescript-eslint/no-var-requires
         const sirv = require('sirv')
         app.use(sirv(`${root}/dist/client`))
     } else {
+        // eslint-disable-next-line @typescript-eslint/no-var-requires
         const vite = require('vite')
         const viteDevMiddleware = (
             await vite.createServer({

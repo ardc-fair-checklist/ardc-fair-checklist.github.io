@@ -1,7 +1,7 @@
 <template>
     <header>
         <div class="home">
-            <Link v-bind:href="linkToHome">
+            <ChecklistLink v-bind:href="linkToHome">
                 <svg
                 width="128"
                 height="128"
@@ -27,7 +27,7 @@
                     id="inside" />
                 </g>
                 </svg>
-            </Link>
+            </ChecklistLink>
         </div>
         <div class="view-source">
             <a href="https://github.com/ardc-fair-checklist/ssg/issues/new">
@@ -41,7 +41,7 @@
 </template>
 
 <script setup lang="ts">
-import Link from './Link.vue'
+import ChecklistLink from './ChecklistLink.vue'
 const linkToHome = `${import.meta.env.BASE_URL}`;
 </script>
 

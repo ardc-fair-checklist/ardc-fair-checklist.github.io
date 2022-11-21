@@ -61,10 +61,10 @@
 <script setup lang="ts">
 defineProps<{
     progress: {
-        f: string;
-        a: string;
-        i: string;
-        r: string;
+        f: string,
+        a: string,
+        i: string,
+        r: string
     }
 }>();
 </script>

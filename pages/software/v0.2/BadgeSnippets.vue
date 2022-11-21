@@ -9,7 +9,8 @@
         <textarea
             readonly wrap="off"
             id="textarea-markdown-badge"
-        >{{ markdownBadge }}</textarea>
+            v-bind:value="markdownBadge"
+        ></textarea>
 
         <h3>
             <label for="textarea-rst-badge">ReStructured Text</label>
@@ -18,7 +19,8 @@
         <textarea
             readonly wrap="off"
             id="textarea-rst-badge"
-        >{{ rstBadge }}</textarea>
+            v-bind:value="rstBadge"
+        ></textarea>
 
 
         <h3>
@@ -28,7 +30,8 @@
         <textarea
             readonly wrap="off"
             id="textarea-html-badge"
-        >{{ htmlBadge }}</textarea>
+            v-bind:value="htmlBadge"
+        ></textarea>
 
     </div>
 </template>

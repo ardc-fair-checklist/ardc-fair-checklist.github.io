@@ -1,15 +1,16 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
     <h1>FAIR checklists</h1>
     <p>
-        Choose the checklist for <Link v-bind:href="linkToDataChecklist">data</Link> or for <Link v-bind:href="linkToSoftwareChecklist">software</Link>.
+        Choose the checklist for <ChecklistLink v-bind:href="linkToDataChecklist">data</ChecklistLink> or for <ChecklistLink v-bind:href="linkToSoftwareChecklist">software</ChecklistLink>.
     </p>
-    <Footer />
+    <ChecklistFooter />
 </template>
 
 <script lang="ts" setup>
 import { latest } from '~/renderer/versions'
-import Footer from './Footer.vue'
-import Link from './Link.vue'
+import ChecklistFooter from './ChecklistFooter.vue'
+import ChecklistLink from './ChecklistLink.vue'
 import '~/renderer/global.css'
 import './app.css'
 
