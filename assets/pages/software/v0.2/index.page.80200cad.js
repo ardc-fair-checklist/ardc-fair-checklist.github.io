@@ -792,7 +792,7 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
     });
     return (_ctx, _cache) => {
       return showBanner.value ? (openBlock(), createElementBlock("div", _hoisted_1$5, [
-        createTextVNode(" A newer version of the checklist is available at "),
+        createTextVNode(" A newer version of this checklist is available at "),
         createVNode(Link, { href: unref(link) }, {
           default: withCtx(() => [
             createTextVNode(toDisplayString(unref(link)), 1)
@@ -804,8 +804,8 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const BannerVersions_vue_vue_type_style_index_0_scoped_d6ab14a0_lang = "";
-const BannerVersions = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-d6ab14a0"]]);
+const BannerVersions_vue_vue_type_style_index_0_scoped_8451f5f9_lang = "";
+const BannerVersions = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-8451f5f9"]]);
 const _withScopeId$1 = (n) => (pushScopeId("data-v-0000de6d"), n = n(), popScopeId(), n);
 const _hoisted_1$4 = { class: "home" };
 const _hoisted_2$3 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("svg", {

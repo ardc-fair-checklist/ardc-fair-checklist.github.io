@@ -25,13 +25,13 @@
   "pages/data/v0.2/Link.vue": [],
   "pages/data/v0.2/app.css": [],
   "pages/data/v0.2/BannerVersions.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/data/v0.2/BannerVersions.vue?vue&type=style&index=0&scoped=27f96c02&lang.css": [],
+  "pages/data/v0.2/BannerVersions.vue?vue&type=style&index=0&scoped=4c4f3559&lang.css": [],
   "pages/data/v0.2/BannerVersions.vue": [],
   "pages/data/v0.2/Header.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/data/v0.2/Header.vue?vue&type=style&index=0&scoped=8663c905&lang.css": [],
+  "pages/data/v0.2/Header.vue?vue&type=style&index=0&scoped=4cc3c0c6&lang.css": [],
   "pages/data/v0.2/Header.vue": [],
   "pages/data/v0.2/ProgressBars.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/data/v0.2/ProgressBars.vue?vue&type=style&index=0&scoped=e90aaba5&lang.css": [],
+  "pages/data/v0.2/ProgressBars.vue?vue&type=style&index=0&scoped=8d12ac1a&lang.css": [],
   "pages/data/v0.2/ProgressBars.vue": [],
   "pages/data/v0.2/Answer.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/data/v0.2/Answer.vue?vue&type=style&index=0&scoped=7607e94a&lang.css": [],
@@ -40,7 +40,7 @@
   "pages/data/v0.2/Question.vue?vue&type=style&index=0&scoped=7438561d&lang.css": [],
   "pages/data/v0.2/Question.vue": [],
   "pages/data/v0.2/index.page.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/data/v0.2/index.page.vue?vue&type=style&index=0&scoped=07c5bc34&lang.css": [],
+  "pages/data/v0.2/index.page.vue?vue&type=style&index=0&scoped=7b4e80da&lang.css": [],
   "pages/data/v0.2/index.page.vue": [],
   "pages/software/index/app.css": [],
   "pages/software/index/index.page.vue?vue&type=script&setup=true&lang.ts": [],
@@ -61,7 +61,7 @@
   "pages/software/v0.2/Link.vue": [],
   "pages/software/v0.2/app.css": [],
   "pages/software/v0.2/BannerVersions.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/software/v0.2/BannerVersions.vue?vue&type=style&index=0&scoped=d6ab14a0&lang.css": [],
+  "pages/software/v0.2/BannerVersions.vue?vue&type=style&index=0&scoped=8451f5f9&lang.css": [],
   "pages/software/v0.2/BannerVersions.vue": [],
   "pages/software/v0.2/Header.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/software/v0.2/Header.vue?vue&type=style&index=0&scoped=0000de6d&lang.css": [],
@@ -134,8 +134,8 @@
     "/ssg/assets/global.b082e789.css"
   ],
   "index.page.9cfbb021.js": [],
-  "index.page.0a216099.js": [
-    "/ssg/assets/index.page.95a20e0d.css",
+  "index.page.7d80e184.js": [
+    "/ssg/assets/index.page.410fd3c6.css",
     "/ssg/assets/global.b082e789.css"
   ],
   "index.page.0043789c.js": [
@@ -147,8 +147,8 @@
     "/ssg/assets/global.b082e789.css"
   ],
   "index.page.dbc160a6.js": [],
-  "index.page.b5acb2a9.js": [
-    "/ssg/assets/index.page.20324e33.css",
+  "index.page.80200cad.js": [
+    "/ssg/assets/index.page.626f75f9.css",
     "/ssg/assets/global.b082e789.css"
   ],
   "_error.page.98982569.js": [],

@@ -485,7 +485,7 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
     const showBanner = ref(false);
     onMounted(() => {
       const { urlPathname } = usePageContext();
-      const myVersion = urlPathname.split("/").slice(-1)[0];
+      const myVersion = urlPathname.split("/").filter((e) => e !== "").slice(-1)[0];
       showBanner.value = myVersion !== latest.value.data;
     });
     return (_ctx, _cache) => {
@@ -502,9 +502,9 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const BannerVersions_vue_vue_type_style_index_0_scoped_27f96c02_lang = "";
-const BannerVersions = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-27f96c02"]]);
-const _withScopeId$1 = (n) => (pushScopeId("data-v-8663c905"), n = n(), popScopeId(), n);
+const BannerVersions_vue_vue_type_style_index_0_scoped_4c4f3559_lang = "";
+const BannerVersions = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-4c4f3559"]]);
+const _withScopeId$1 = (n) => (pushScopeId("data-v-4cc3c0c6"), n = n(), popScopeId(), n);
 const _hoisted_1$4 = { class: "home" };
 const _hoisted_2$3 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("svg", {
   width: "128",
@@ -534,10 +534,12 @@ const _hoisted_2$3 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ create
 ], -1));
 const _hoisted_3$3 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("div", { class: "view-source" }, [
   /* @__PURE__ */ createBaseVNode("a", { href: "https://github.com/ardc-fair-checklist/ssg/issues/new" }, " Report an issue "),
-  /* @__PURE__ */ createBaseVNode("img", {
-    src: _imports_0$1,
-    alt: "octocat logo"
-  })
+  /* @__PURE__ */ createBaseVNode("a", { href: "https://github.com/ardc-fair-checklist/ssg/issues/new" }, [
+    /* @__PURE__ */ createBaseVNode("img", {
+      src: _imports_0$1,
+      alt: "octocat logo"
+    })
+  ])
 ], -1));
 const _sfc_main$4 = /* @__PURE__ */ defineComponent({
   __name: "Header",
@@ -558,34 +560,32 @@ const _sfc_main$4 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const Header_vue_vue_type_style_index_0_scoped_8663c905_lang = "";
-const Header = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-8663c905"]]);
+const Header_vue_vue_type_style_index_0_scoped_4cc3c0c6_lang = "";
+const Header = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-4cc3c0c6"]]);
 const _hoisted_1$3 = { class: "footer" };
-const _hoisted_2$2 = /* @__PURE__ */ createStaticVNode('<div class="inner" data-v-e90aaba5><div class="another-inner" data-v-e90aaba5><div class="progressbars" data-v-e90aaba5><div class="labels" data-v-e90aaba5><div class="row" data-v-e90aaba5><div class="label" data-v-e90aaba5> Findable </div></div><div class="row" data-v-e90aaba5><div class="label" data-v-e90aaba5> Accessible </div></div><div class="row" data-v-e90aaba5><div class="label" data-v-e90aaba5> Interoperable </div></div><div class="row" data-v-e90aaba5><div class="label" data-v-e90aaba5> Reusable </div></div></div><div class="bars" data-v-e90aaba5><div class="row" data-v-e90aaba5><div class="bar bar-bg" data-v-e90aaba5><div class="bar blue" data-v-e90aaba5></div></div></div><div class="row" data-v-e90aaba5><div class="bar bar-bg" data-v-e90aaba5><div class="bar pink" data-v-e90aaba5></div></div></div><div class="row" data-v-e90aaba5><div class="bar bar-bg" data-v-e90aaba5><div class="bar yellow" data-v-e90aaba5></div></div></div><div class="row" data-v-e90aaba5><div class="bar bar-bg" data-v-e90aaba5><div class="bar purple" data-v-e90aaba5></div></div></div></div></div></div></div>', 1);
+const _hoisted_2$2 = /* @__PURE__ */ createStaticVNode('<div class="inner" data-v-8d12ac1a><div class="another-inner" data-v-8d12ac1a><div class="progressbars" data-v-8d12ac1a><div class="labels" data-v-8d12ac1a><div class="row" data-v-8d12ac1a><div class="label" data-v-8d12ac1a> Findable </div></div><div class="row" data-v-8d12ac1a><div class="label" data-v-8d12ac1a> Accessible </div></div><div class="row" data-v-8d12ac1a><div class="label" data-v-8d12ac1a> Interoperable </div></div><div class="row" data-v-8d12ac1a><div class="label" data-v-8d12ac1a> Reusable </div></div></div><div class="bars" data-v-8d12ac1a><div class="row" data-v-8d12ac1a><div class="bar bar-bg" data-v-8d12ac1a><div class="bar blue" data-v-8d12ac1a></div></div></div><div class="row" data-v-8d12ac1a><div class="bar bar-bg" data-v-8d12ac1a><div class="bar pink" data-v-8d12ac1a></div></div></div><div class="row" data-v-8d12ac1a><div class="bar bar-bg" data-v-8d12ac1a><div class="bar yellow" data-v-8d12ac1a></div></div></div><div class="row" data-v-8d12ac1a><div class="bar bar-bg" data-v-8d12ac1a><div class="bar purple" data-v-8d12ac1a></div></div></div></div></div></div></div>', 1);
 const _hoisted_3$2 = [
   _hoisted_2$2
 ];
 const _sfc_main$3 = /* @__PURE__ */ defineComponent({
   __name: "ProgressBars",
   props: {
-    progress: null,
-    onClick: null,
-    showButton: { type: Boolean }
+    progress: null
   },
   setup(__props) {
     useCssVars((_ctx) => ({
-      "00d8b9d5": __props.progress.f,
-      "00d8b9d0": __props.progress.a,
-      "00d8b9d8": __props.progress.i,
-      "00d8b9e1": __props.progress.r
+      "76885e5a": __props.progress.f,
+      "76885e55": __props.progress.a,
+      "76885e5d": __props.progress.i,
+      "76885e66": __props.progress.r
     }));
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("div", _hoisted_1$3, _hoisted_3$2);
     };
   }
 });
-const ProgressBars_vue_vue_type_style_index_0_scoped_e90aaba5_lang = "";
-const ProgressBars = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-e90aaba5"]]);
+const ProgressBars_vue_vue_type_style_index_0_scoped_8d12ac1a_lang = "";
+const ProgressBars = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-8d12ac1a"]]);
 const _hoisted_1$2 = ["aria-labelledby"];
 const _hoisted_2$1 = { class: "answer-radiobutton" };
 const _hoisted_3$1 = ["id", "value", "checked"];
@@ -679,7 +679,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
 });
 const Question_vue_vue_type_style_index_0_scoped_7438561d_lang = "";
 const Question = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-7438561d"]]);
-const _withScopeId = (n) => (pushScopeId("data-v-07c5bc34"), n = n(), popScopeId(), n);
+const _withScopeId = (n) => (pushScopeId("data-v-7b4e80da"), n = n(), popScopeId(), n);
 const _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("h1", null, "FAIR for data self-assessment checklist", -1));
 const _sfc_main = /* @__PURE__ */ defineComponent({
   __name: "index.page",
@@ -722,12 +722,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
                 }), 128))
               ]);
             }), 64)),
-            createVNode(ProgressBars, {
-              progress: unref(progress),
-              onClick: () => {
-              },
-              showButton: false
-            }, null, 8, ["progress", "onClick"]),
+            createVNode(ProgressBars, { progress: unref(progress) }, null, 8, ["progress"]),
             createVNode(About)
           ], 64)) : (openBlock(), createElementBlock(Fragment, { key: 1 }, [
             createTextVNode(" Loading questions data... ")
@@ -737,8 +732,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const index_page_vue_vue_type_style_index_0_scoped_07c5bc34_lang = "";
-const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-07c5bc34"]]);
+const index_page_vue_vue_type_style_index_0_scoped_7b4e80da_lang = "";
+const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-7b4e80da"]]);
 export {
   index_page as default
 };
