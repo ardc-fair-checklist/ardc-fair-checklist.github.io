@@ -3,12 +3,14 @@
   "scripts": {
     "build": "vite build",
     "coverage": "vitest run --dom --coverage",
+    "coverage:watch": "vitest --dom --coverage",
     "dev": "npm run server",
     "lint": "eslint \"pages/**\" \"renderer/**\" \"server/**\"",
     "prod": "npm run build && npm run server:prod",
     "server": "ts-node ./server",
     "server:prod": "cross-env NODE_ENV=production ts-node ./server",
-    "test": "vitest run --dom"
+    "test": "vitest run --dom",
+    "test:watch": "vitest --dom"
   },
   "dependencies": {
     "@types/compression": "^1.7.2",
