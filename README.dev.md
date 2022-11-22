@@ -27,13 +27,15 @@ npm install
 ## npm scripts
 
 - `npm run build`: build the project for production, output files in `./dist`
-- `npm run cov`: run the tests and calculate coverage using `@vitest/coverage-c8`
+- `npm run coverage`: run the tests and calculate coverage using `@vitest/coverage-c8`
+- `npm run coverage:watch`: `npm run coverage` but with watch mode
 - `npm run dev`: build the project for development, watch files for changes, serve output files on `localhost`.
 - `npm run lint`: run `eslint`
 - `npm run prod`: shorthand for `npm run build && npm run server:prod`
 - `npm run server`: serve the development build
 - `npm run server:prod`: serve the production build
 - `npm run test`: run the unit tests with `vitest`
+- `npm run test:watch`: `npm run test` but with watch mode
 
 ## Known problem with `npm run prod`
 
