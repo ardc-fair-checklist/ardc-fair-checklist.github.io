@@ -27,12 +27,15 @@ npm install
 ## npm scripts
 
 - `npm run build`: build the project for production, output files in `./dist`
+- `npm run cov`: run the tests and calculate coverage using `@vitest/coverage-c8`
 - `npm run dev`: build the project for development, watch files for changes, serve output files on `localhost`.
+- `npm run lint`: run `eslint`
 - `npm run prod`: shorthand for `npm run build && npm run server:prod`
 - `npm run server`: serve the development build
 - `npm run server:prod`: serve the production build
+- `npm run test`: run the unit tests with `vitest`
 
-## Production problems
+## Known problem with `npm run prod`
 
 Running `npm run prod` results in a production site that can't resolve some of its own assets when run locally and combined with not undefined `base` option in `vite.config.js`. A possible workaround is to build the production files, then insert a directory with the same name as `base` between `server`|`client` and their files, like so:
 
@@ -95,19 +98,19 @@ nano renderer/versions.ts
 
 Where it says
 
-```text
+```ts
 software: ['v0.1', 'v0.2']
 ```
 
 add the next version identifier:
 
-```text
+```ts
 software: ['v0.1', 'v0.2', 'v1']
 ```
 
 Start the development server:
 
-```
+```shell
 npm run dev
 ```
 
@@ -120,8 +123,7 @@ open http://localhost:3000
 
 Now make whatever changes you want under `pages/software/v1`. The page should update
 through hot module reloading. Existing badges that point to any version that isn't
-the latest should still resolve to the correct (older) version page, but will display
-a message prompting users to update.
+the latest should still resolve to the correct (older) version page, but will now display a message prompting users to update.
 
 ## Adding a new topic
 
@@ -137,14 +139,14 @@ cp -r pages/software/v0.2 pages/services/v0.1
 
 In `versions.ts` where it says
 
-```text
+```ts
 data: ['v0.1', 'v0.2'],
 software: ['v0.1', 'v0.2']
 ```
 
 add the relevant state:
 
-```text
+```ts
 data: ['v0.1', 'v0.2'],
 services: ['v0.1'],
 software: ['v0.1', 'v0.2']
@@ -154,7 +156,7 @@ And add a getter method below that.
 
 Next, start the development server with:
 
-```
+```shell
 npm run dev
 ```
 
