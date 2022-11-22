@@ -2,13 +2,13 @@
   "version": "0.1.0",
   "scripts": {
     "build": "vite build",
-    "coverage": "vitest --dom --coverage",
+    "coverage": "vitest run --dom --coverage",
     "dev": "npm run server",
     "lint": "eslint \"pages/**\" \"renderer/**\" \"server/**\"",
     "prod": "npm run build && npm run server:prod",
     "server": "ts-node ./server",
     "server:prod": "cross-env NODE_ENV=production ts-node ./server",
-    "test": "vitest --dom"
+    "test": "vitest run --dom"
   },
   "dependencies": {
     "@types/compression": "^1.7.2",
