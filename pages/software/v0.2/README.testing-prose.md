@@ -22,6 +22,15 @@
         1. the app should show a banner with all the error messages combined
         1. the app should render with the first answer enabled on every question
         1. the app should render with 0 progress on any of the FAIR aspects
+    1. If a user supplies valid values for the FAIR query parameters but also supplies additional parameters, 
+        1. TODO
+    1. If a user supplies valid values for the FAIR query parameters but with repeated parameters, 
+        1. TODO
+    1. If a user supplies a valid set of query parameter values,
+        1. the app should render with the correct answers selected for each question
+        1. the app should render the correct progress values for each aspect
+        1. the overall compliance state should have the correct values
+        1. the app should remove the query parameters from the URL
 1. Version handling
     1. If there is a newer version of the topic,
         1. the app should show a banner telling the user there is a newer version available
