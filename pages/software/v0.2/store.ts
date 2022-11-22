@@ -1,4 +1,5 @@
-import { computed, ref } from 'vue'
+import { computed } from 'vue'
+import { ref } from 'vue'
 
 export type AnswerType = {
     id: string,

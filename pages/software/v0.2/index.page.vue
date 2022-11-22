@@ -40,14 +40,14 @@ import { questions as data } from './questions.json'
 import { ref } from 'vue'
 import { setQuestions } from './store'
 import { type QuestionType } from './store'
-import ChecklistAbout from './ChecklistAbout.vue'
 import BadgeSnippets from './BadgeSnippets.vue'
 import BannerParams from './BannerParams.vue'
 import BannerVersions from './BannerVersions.vue'
+import ChecklistAbout from './ChecklistAbout.vue'
 import ChecklistHeader from './ChecklistHeader.vue'
 import ChecklistLink from './ChecklistLink.vue'
-import ProgressBars from './ProgressBars.vue';
 import ChecklistQuestion from './ChecklistQuestion.vue'
+import ProgressBars from './ProgressBars.vue';
 import '~/renderer/global.css'
 import './app.css'
 

@@ -64,7 +64,7 @@
 <script setup lang="ts">
 defineProps<{
     disableButton: boolean,
-    onClick: () => undefined,
+    onClick: () => void,
     progress: {
         f: string,
         a: string,

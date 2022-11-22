@@ -1,8 +1,10 @@
-import { describe, expect, test } from 'vitest'
+import { describe } from 'vitest'
+import { expect } from 'vitest'
+import { questions } from './questions.json'
+import { test } from 'vitest'
+import { version } from './questions.json'
 import Ajv from "ajv"
-
 import schema from './schema.json'
-import { questions, version } from './questions.json'
 
 const ajv = new Ajv() // options can be passed, e.g. {allErrors: true}
 

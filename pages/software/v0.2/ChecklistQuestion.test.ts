@@ -1,6 +1,8 @@
+import { describe } from 'vitest'
+import { expect } from 'vitest'
 import { mount } from "@vue/test-utils";
+import { test } from 'vitest'
 import ChecklistQuestion from './ChecklistQuestion.vue'
-import { describe, expect, test } from 'vitest'
 
 
 describe('after mounting a Question component', () => {
