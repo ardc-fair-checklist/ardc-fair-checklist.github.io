@@ -22,9 +22,9 @@
 </template>
 
 <script setup lang="ts">
-import { compliance } from './store'
-import { setCompliance } from './store'
-import ChecklistAnswer from './ChecklistAnswer.vue'
+import { compliance } from './store';
+import { setCompliance } from './store';
+import ChecklistAnswer from './ChecklistAnswer.vue';
 
 const props = defineProps<{
     question: {
@@ -37,18 +37,16 @@ const props = defineProps<{
         index: number,
         text: string
     }
-}>()
+}>();
 
-const onClick = (answerIndex: number) => {
-    return () => {
-        const newCompliance = [
-            ...compliance.value.slice(0, props.question.index),
-            answerIndex,
-            ...compliance.value.slice(props.question.index + 1)
-        ]
-        setCompliance(newCompliance);
-    }
-}
+const onClick = (answerIndex: number) => () => {
+    const newCompliance = [
+        ...compliance.value.slice(0, props.question.index),
+        answerIndex,
+        ...compliance.value.slice(props.question.index + 1)
+    ];
+    setCompliance(newCompliance);
+};
 </script>
 
 <style scoped>
@@ -89,7 +87,6 @@ legend {
         padding-right: 1em;
     }
 }
-
 
 .question-index {
     min-width: 2em;

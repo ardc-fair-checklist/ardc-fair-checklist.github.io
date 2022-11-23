@@ -8,16 +8,15 @@
 </template>
 
 <script lang="ts" setup>
-import { latest } from '~/renderer/versions'
-import ChecklistFooter from './ChecklistFooter.vue'
-import ChecklistLink from './ChecklistLink.vue'
-import '~/renderer/global.css'
-import './app.css'
+import { latest } from '~/renderer/versions';
+import ChecklistFooter from './ChecklistFooter.vue';
+import ChecklistLink from './ChecklistLink.vue';
+import '~/renderer/global.css';
+import './app.css';
 
-const linkToDataChecklist = `${import.meta.env.BASE_URL}data/${latest.value.data}`
-const linkToSoftwareChecklist = `${import.meta.env.BASE_URL}software/${latest.value.software}`
+const linkToDataChecklist = `${import.meta.env.BASE_URL}data/${latest.value.data}`;
+const linkToSoftwareChecklist = `${import.meta.env.BASE_URL}software/${latest.value.software}`;
 </script>
-
 
 <style scoped>
 main {

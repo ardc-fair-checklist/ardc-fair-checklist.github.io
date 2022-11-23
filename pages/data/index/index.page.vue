@@ -6,10 +6,10 @@
 </template>
 
 <script setup lang="ts">
-import { latest } from '~/renderer/versions'
-import { onMounted } from 'vue'
-import '~/renderer/global.css'
-import './app.css'
+import { onMounted } from 'vue';
+import { latest } from '~/renderer/versions';
+import '~/renderer/global.css';
+import './app.css';
 
 onMounted(() => {
     const urlWithDuplicateSlashes = [
@@ -17,9 +17,9 @@ onMounted(() => {
         'data',
         latest.value.data
     ].join('/');
-    const url = `/${urlWithDuplicateSlashes.split('/').filter(e => e !== "").join('/')}`;
+    const url = `/${urlWithDuplicateSlashes.split('/').filter(e => e !== '').join('/')}`;
     window.location.href = url;
-})
+});
 </script>
 
 <style scoped>

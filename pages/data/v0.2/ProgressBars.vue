@@ -112,7 +112,6 @@ defineProps<{
     }
 }
 
-
 @media screen and (max-width: 70em) {
     .inner {
         padding-left: 3em;
@@ -166,7 +165,7 @@ defineProps<{
 }
 
 .bar {
-    border-bottom-right-radius: 0.25em; 
+    border-bottom-right-radius: 0.25em;
     border-top-right-radius: 0.25em;
     height: 0.7em;
 }

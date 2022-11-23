@@ -5,30 +5,28 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
-import { latest } from '~/renderer/versions'
-import { onMounted } from 'vue'
-import { ref } from 'vue'
-import { usePageContext } from '~/renderer/usePageContext'
-import ChecklistLink from './ChecklistLink.vue'
-import '~/renderer/global.css'
-import './app.css'
+import { computed } from 'vue';
+import { onMounted } from 'vue';
+import { ref } from 'vue';
+import { latest } from '~/renderer/versions';
+import { usePageContext } from '~/renderer/usePageContext';
+import ChecklistLink from './ChecklistLink.vue';
+import '~/renderer/global.css';
+import './app.css';
 
-const link = computed(() => {
-    return [
-        window.location.origin,
-        ...window.location.pathname.split('/').filter(e => e !== '').slice(0, -1),
-        latest.value.data
-    ].join('/')
-})
+const link = computed(() => [
+    window.location.origin,
+    ...window.location.pathname.split('/').filter(e => e !== '').slice(0, -1),
+    latest.value.data
+].join('/'));
 
 const showBanner = ref(false);
 
 onMounted(() => {
-    const { urlPathname } = usePageContext()
-    const myVersion = urlPathname.split('/').filter(e => e !== '').slice(-1)[0]
-    showBanner.value = myVersion !== latest.value.data
-})
+    const { urlPathname } = usePageContext();
+    const myVersion = urlPathname.split('/').filter(e => e !== '').slice(-1)[0];
+    showBanner.value = myVersion !== latest.value.data;
+});
 </script>
 
 <style scoped>
@@ -52,4 +50,3 @@ a:hover {
     text-align: center;
 }
 </style>
-

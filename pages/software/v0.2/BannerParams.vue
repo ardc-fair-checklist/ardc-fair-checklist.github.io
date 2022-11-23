@@ -13,67 +13,83 @@ import { setCompliance } from './store';
 
 const bannerMessage = ref('');
 onMounted(() => {
-    type Params = Record<string, string>
+    const searchParams = new URLSearchParams(window.location.search);
+    type QueryParams = {
+        f: string,
+        a: string,
+        i: string,
+        r: string
+    }
+    const params = {
+        f: searchParams.get('f') || '',
+        a: searchParams.get('a') || '',
+        i: searchParams.get('i') || '',
+        r: searchParams.get('r') || ''
+    } as QueryParams;
     type Aspect = 'f' | 'a' | 'i' | 'r';
-    const chooseBannerMessage = (params: Params) => {
-        const checkAspect = (aspect: 'f' | 'a' | 'i' | 'r') => {
-            if (Object.keys(params).includes(aspect)) {
-                if (params[aspect].length !== nQuestions.value[aspect]) {
-                    return `Query parameter '${aspect}' does not have the right number of elements (${nQuestions.value[aspect]})`;
-                }
-                if (/^[0-9]+$/.test(params[aspect]) === false) {
-                    return `Query parameter '${aspect}' includes unknown character`;
-                }
-                const supplied = params[aspect].split('').map(c => parseInt(c, 10));
-                return supplied.map((iAnswer, index) => {
-                    if (iAnswer >= nAnswers.value[aspect][index]) {
-                        return `Query parameter '${aspect}' has out-of-range value on position ${index}`;
-                    }
-                    return '';
-                }).filter(msg => msg !== '').join('; ');
+    const chooseBannerMessage = () => {
+        const checkAspect = (aspect: Aspect) => {
+            if (params[aspect].length !== nQuestions.value[aspect]) {
+                return {
+                    msg: `Query parameter '${aspect}' does not have the right number of elements (${nQuestions.value[aspect]})`,
+                    err: true
+                };
             }
-            return '';
+            if (/^[0-9]+$/.test(params[aspect]) === false) {
+                return {
+                    msg: `Query parameter '${aspect}' includes unknown character`,
+                    err: true
+                };
+            }
+            const supplied = params[aspect].split('').map(c => parseInt(c, 10));
+            const errors = supplied.map((iAnswer, index) => {
+                if (iAnswer >= nAnswers.value[aspect][index]) {
+                    return {
+                        msg: `Query parameter '${aspect}' has out-of-range value on position ${index}`,
+                        err: true
+                    };
+                }
+                return { msg: '', err: false };
+            }).filter(error => error.err === true);
+            return {
+                msg: errors.map(e => e.msg).join('; '),
+                err: errors.length > 0
+            };
         };
-        if (params === undefined || Object.keys(params).length === 0) {
-            return '';
+        if (Object.values(params).every(e => e === '')) {
+            // none of the aspects of FAIR have been assigned some value
+            return { msg: '', err: false };
+        }
+        if (Object.values(params).every(e => e !== '')) {
+            // every aspect of FAIR has been assigned some value
+        } else {
+            return {
+                msg: "When using query parameters, include 'f', 'a', 'i', and 'r'",
+                err: true
+            };
         }
         const aspects: Aspect[] = ['f', 'a', 'i', 'r'];
-        const hasAllAspects = aspects.map(a => Object.keys(params).includes(a)).every(e => e);
-        if (!hasAllAspects) {
-            return "When using query parameters, include 'f', 'a', 'i', and 'r'";
-        }
-        return aspects.map(aspect => checkAspect(aspect)).filter(msg => msg !== '').join('; ');
+        const errors = aspects.map(aspect => checkAspect(aspect)).filter(error => error.err === true);
+        return {
+            msg: errors.map(e => e.msg).join('; '),
+            err: errors.length > 0
+        };
     };
-    const queryParams = {} as {f?: string, a?: string, i?: string, r?: string};
-    const mySearchParams = new URLSearchParams(window.location.search);
-    for (const [k, v] of mySearchParams.entries()) {
-        if (k === 'f') {
-            queryParams.f = v;
-        }
-        if (k === 'a') {
-            queryParams.a = v;
-        }
-        if (k === 'i') {
-            queryParams.i = v;
-        }
-        if (k === 'r') {
-            queryParams.r = v;
-        }
-    }
     const zeros = Array(nQuestions.value.total).fill(0);
-    if (queryParams === undefined || Object.keys(queryParams).length === 0) {
+    const { msg, err } = chooseBannerMessage();
+    bannerMessage.value = msg;
+    if (err === true) {
+        // something's wrong, don't use the user-supplied
+        // compliance state but use the default instead
+        setCompliance(zeros);
+    } else if (Object.values(params).every(e => e === '')) {
+        // none of the aspects of FAIR have been assigned a
+        // value, use the default zeros for initialization
         setCompliance(zeros);
     } else {
-        const msg = chooseBannerMessage(queryParams);
-        bannerMessage.value = msg;
-        if (msg === '') {
-            const { f, a, i, r } = queryParams as {f: string, a: string, i: string, r: string};
-            const compl = f + a + i + r;
-            setCompliance(compl.split('').map(char => parseInt(char, 10)));
-            window.history.pushState({}, '', [window.location.origin, window.location.pathname].join(''));
-        } else {
-            setCompliance(zeros);
-        }
+        const compl = `${params.f}${params.a}${params.i}${params.r}`;
+        setCompliance(compl.split('').map(char => parseInt(char, 10)));
+        window.history.pushState({}, '', [window.location.origin, window.location.pathname].join(''));
     }
 });
 

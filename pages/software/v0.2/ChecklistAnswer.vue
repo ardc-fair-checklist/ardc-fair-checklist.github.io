@@ -32,7 +32,7 @@
 </template>
 
 <script setup lang="ts">
-defineProps<{
+type PropType = {
     answer: {
         id: string,
         score: number,
@@ -40,7 +40,8 @@ defineProps<{
     }
     isChecked: boolean
     onClick: () => void
-}>();
+}
+defineProps<PropType>();
 </script>
 
 <style scoped>

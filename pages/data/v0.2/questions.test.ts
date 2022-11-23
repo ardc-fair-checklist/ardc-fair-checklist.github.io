@@ -1,59 +1,59 @@
-import { describe, expect, test } from 'vitest'
-import Ajv from "ajv"
+import { describe } from 'vitest';
+import { expect } from 'vitest';
+import { test } from 'vitest';
+import Ajv from 'ajv';
+import schema from './schema.json';
+import { questions, version } from './questions.json';
 
-import schema from './schema.json'
-import { questions, version } from './questions.json'
+const ajv = new Ajv(); // options can be passed, e.g. {allErrors: true}
 
-const ajv = new Ajv() // options can be passed, e.g. {allErrors: true}
-
-const validate = ajv.compile(schema)
+const validate = ajv.compile(schema);
 
 describe('the data questions data', () => {
-
     test('should validate against the schema', () => {
-        const valid = validate({questions, version})
-        expect(valid).toBe(true)
-    })
+        const valid = validate({ questions, version });
+        expect(valid).toBe(true);
+    });
 
     test('each answer set should have at least one zero-points option', () => {
-        const scoresIncludeZero = questions.map(q => q.answers.map(a => a.score).includes(0))
-        expect(scoresIncludeZero.every(elem => elem === true)).toBe(true)
-    })
+        const scoresIncludeZero = questions.map(q => q.answers.map(a => a.score).includes(0));
+        expect(scoresIncludeZero.every(elem => elem === true)).toBe(true);
+    });
 
     test('each answer set should have the answers in increasing order of points', () => {
         const isIncreasing = (arr: number[]) => {
-            return (
-                arr.every((v:number, i:number) => i === 0 || v >= arr[i - 1])
-            )
-        }
-        const scoreArrays = questions.map(q => q.answers.map(a => a.score))
-        expect(scoreArrays.map(scoreArray => isIncreasing(scoreArray)).every(elem => elem)).toBe(true)
-    })
+            const f = (v:number, i:number) => i === 0 || v >= arr[i - 1];
+            return arr.every(f);
+        };
+        const scoreArrays = questions.map(q => q.answers.map(a => a.score));
+        expect(scoreArrays
+            .map(scoreArray => isIncreasing(scoreArray))
+            .every(elem => elem)).toBe(true);
+    });
 
     test('the questions should be ordered by aspect and appear in FAIR order', () => {
-        const stringified = questions.map(q => q.aspect).join('')
-        const re = /^F+A+I+R+$/
-        expect(re.test(stringified)).toBe(true)
-    })
+        const stringified = questions.map(q => q.aspect).join('');
+        const re = /^F+A+I+R+$/;
+        expect(re.test(stringified)).toBe(true);
+    });
 
     test('there should be 4 questions with aspect F', () => {
-        expect(questions.filter(q => q.aspect === 'F').length).toBe(4)
-    })
+        expect(questions.filter(q => q.aspect === 'F').length).toBe(4);
+    });
 
     test('there should be 3 questions with aspect A', () => {
-        expect(questions.filter(q => q.aspect === 'A').length).toBe(3)
-    })
+        expect(questions.filter(q => q.aspect === 'A').length).toBe(3);
+    });
 
     test('there should be 3 questions with aspect I', () => {
-        expect(questions.filter(q => q.aspect === 'I').length).toBe(3)
-    })
+        expect(questions.filter(q => q.aspect === 'I').length).toBe(3);
+    });
 
     test('there should be 2 questions with aspect R', () => {
-        expect(questions.filter(q => q.aspect === 'R').length).toBe(2)
-    })
+        expect(questions.filter(q => q.aspect === 'R').length).toBe(2);
+    });
 
     test('there should be 12 questions in total', () => {
-        expect(questions.length).toBe(12)
-    })
-
-})
+        expect(questions.length).toBe(12);
+    });
+});

@@ -1,9 +1,7 @@
-import { renderToString } from '@vue/server-renderer'
-import { escapeInject, dangerouslySkipEscape } from 'vite-plugin-ssr'
-import { createApp } from './app'
-import type { PageContextServer } from './types'
-
-export { render }
+import { renderToString } from '@vue/server-renderer';
+import { escapeInject, dangerouslySkipEscape } from 'vite-plugin-ssr';
+import { createApp } from './app';
+import type { PageContextServer } from './types';
 
 // See https://vite-plugin-ssr.com/data-fetching
 export const passToClient = [
@@ -12,17 +10,16 @@ export const passToClient = [
     'pageProps',
     'render',
     'urlPathname'
-]
+];
 
-async function render(pageContext: PageContextServer) {
-
-    const app = createApp(pageContext)
-    const appHtml = await renderToString(app)
+export const render = async (pageContext: PageContextServer) => {
+    const app = createApp(pageContext);
+    const appHtml = await renderToString(app);
 
     // See https://vite-plugin-ssr.com/head
-    const { documentProps } = pageContext.exports
-    const title = (documentProps && documentProps.title) || 'ARDC FAIR checklist'
-    const desc = (documentProps && documentProps.description) || 'ARDC FAIR checklist'
+    const { documentProps } = pageContext.exports;
+    const title = (documentProps && documentProps.title) || 'ARDC FAIR checklist';
+    const desc = (documentProps && documentProps.description) || 'ARDC FAIR checklist';
 
     const documentHtml = escapeInject`<!DOCTYPE html>
         <html lang="en">
@@ -41,12 +38,14 @@ async function render(pageContext: PageContextServer) {
                 </div>
                 <div id="app">${dangerouslySkipEscape(appHtml)}</div>
             </body>
-        </html>`
+        </html>`;
 
-      return {
-          documentHtml,
-          pageContext: {
-              // We can add some `pageContext` here, which is useful if we want to do page redirection https://vite-plugin-ssr.com/page-redirection
-          }
-      }
-}
+    /* eslint-disable object-curly-newline */
+    return {
+        documentHtml,
+        pageContext: {
+            // We can add some `pageContext` here, which is useful if we want to do page redirection https://vite-plugin-ssr.com/page-redirection
+        }
+    };
+    /* eslint-enable object-curly-newline */
+};

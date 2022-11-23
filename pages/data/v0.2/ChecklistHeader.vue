@@ -41,7 +41,8 @@
 </template>
 
 <script setup lang="ts">
-import ChecklistLink from './ChecklistLink.vue'
+import ChecklistLink from './ChecklistLink.vue';
+
 const linkToHome = `${import.meta.env.BASE_URL}`;
 </script>
 

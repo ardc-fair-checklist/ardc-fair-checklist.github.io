@@ -27,33 +27,31 @@
 </template>
 
 <script setup lang="ts">
-import { latest } from '~/renderer/versions'
-import { nQuestions } from './store'
-import { progress } from './store'
-import { questions } from './store'
-import { questions as data } from './questions.json'
-import { setQuestions } from './store'
-import { type QuestionType } from './store'
-import ChecklistAbout from './ChecklistAbout.vue'
-import BannerVersions from './BannerVersions.vue'
-import ChecklistHeader from './ChecklistHeader.vue'
-import ChecklistLink from './ChecklistLink.vue'
+import { latest } from '~/renderer/versions';
+import { nQuestions } from './store';
+import { progress } from './store';
+import { questions } from './store';
+import { questions as data } from './questions.json';
+import { setQuestions } from './store';
+import { type QuestionType } from './store';
+import ChecklistAbout from './ChecklistAbout.vue';
+import BannerVersions from './BannerVersions.vue';
+import ChecklistHeader from './ChecklistHeader.vue';
+import ChecklistLink from './ChecklistLink.vue';
 import ProgressBars from './ProgressBars.vue';
-import ChecklistQuestion from './ChecklistQuestion.vue'
-import '~/renderer/global.css'
-import './app.css'
+import ChecklistQuestion from './ChecklistQuestion.vue';
+import '~/renderer/global.css';
+import './app.css';
 
 setQuestions(data as QuestionType[]);
 
-const getAspectFullname = (aspect: string) => {
-    return {
-        F: "Findable",
-        A: "Accessible",
-        I: "Interoperable",
-        R: "Reusable"
-    }[aspect]
-}
-const linkToSoftwareChecklist = `${import.meta.env.BASE_URL}software/${latest.value.software}`
+const getAspectFullname = (aspect: string) => ({
+    F: 'Findable',
+    A: 'Accessible',
+    I: 'Interoperable',
+    R: 'Reusable'
+}[aspect]);
+const linkToSoftwareChecklist = `${import.meta.env.BASE_URL}software/${latest.value.software}`;
 </script>
 
 <style scoped>

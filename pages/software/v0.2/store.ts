@@ -28,10 +28,10 @@ export const questions = computed(() => state.value.questions);
 export const setCompliance = (newCompliance: number[]) => {
     state.value.compliance = newCompliance;
 };
-export const setQuestions = (questions: QuestionType[]) => {
+export const setQuestions = (questionsNoIndex: QuestionType[]) => {
     // add index
-    state.value.questions = (questions as QuestionType[]).map((q, i) => ({ ...q, index: i }));
-    state.value.compliance = new Array(questions.length).fill(0);
+    state.value.questions = (questionsNoIndex as QuestionType[]).map((q, i) => ({ ...q, index: i }));
+    state.value.compliance = new Array(questionsNoIndex.length).fill(0);
 };
 
 export const nQuestions = computed(() => {
@@ -46,7 +46,7 @@ export const nQuestions = computed(() => {
 });
 
 export const nPointsMax = computed(() => {
-    const derivePointsMax = (aspect: 'F' | 'A' | 'I' | 'R' | '*') => {
+    const derivePointsMax = (aspect: Aspect | '*') => {
         let selectedQuestions = state.value.questions;
         if (aspect !== '*') {
             selectedQuestions = state.value.questions.filter(q => q.aspect === aspect);

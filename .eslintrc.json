@@ -34,9 +34,12 @@
     "rules": {
         "arrow-parens": ["error", "as-needed"],
         "comma-dangle": ["error", "never"],
-        "indent": ["error", 4],
+        "import/extensions": ["off"],
         "import/no-duplicates": ["off"],
         "import/no-extraneous-dependencies": ["error", { "devDependencies": ["**/*.test.ts"] }],
+        "import/no-unresolved": ["off"],
+        "indent": ["error", 4],
+        "max-len": ["off"],
         "object-curly-newline": ["error", { "multiline": true }]
     }
 }

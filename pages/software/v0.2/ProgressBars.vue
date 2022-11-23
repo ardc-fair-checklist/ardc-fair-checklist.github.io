@@ -62,7 +62,7 @@
 </template>
 
 <script setup lang="ts">
-defineProps<{
+type PropType = {
     disableButton: boolean,
     onClick: () => void,
     progress: {
@@ -71,7 +71,8 @@ defineProps<{
         i: string,
         r: string
     }
-}>();
+}
+defineProps<PropType>();
 </script>
 
 <style scoped>
