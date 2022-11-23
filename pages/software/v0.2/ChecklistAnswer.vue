@@ -40,7 +40,7 @@ defineProps<{
     }
     isChecked: boolean
     onClick: () => void
-}>()
+}>();
 </script>
 
 <style scoped>

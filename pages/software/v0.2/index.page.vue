@@ -30,42 +30,40 @@
     </div>
 </template>
 
-<script setup lang="ts">
-import { latest } from '~/renderer/versions'
-import { nQuestions } from './store'
-import { onMounted } from 'vue'
-import { progress } from './store'
-import { questions } from './store'
-import { questions as data } from './questions.json'
-import { ref } from 'vue'
-import { setQuestions } from './store'
-import { type QuestionType } from './store'
-import BadgeSnippets from './BadgeSnippets.vue'
-import BannerParams from './BannerParams.vue'
-import BannerVersions from './BannerVersions.vue'
-import ChecklistAbout from './ChecklistAbout.vue'
-import ChecklistHeader from './ChecklistHeader.vue'
-import ChecklistLink from './ChecklistLink.vue'
-import ChecklistQuestion from './ChecklistQuestion.vue'
+<script setup lang='ts'>
+import { onMounted } from 'vue';
+import { ref } from 'vue';
+import { latest } from '~/renderer/versions';
+import { nQuestions } from './store';
+import { progress } from './store';
+import { questions } from './store';
+import { setQuestions } from './store';
+import { type QuestionType } from './store';
+import BadgeSnippets from './BadgeSnippets.vue';
+import BannerParams from './BannerParams.vue';
+import BannerVersions from './BannerVersions.vue';
+import ChecklistAbout from './ChecklistAbout.vue';
+import ChecklistHeader from './ChecklistHeader.vue';
+import ChecklistLink from './ChecklistLink.vue';
+import ChecklistQuestion from './ChecklistQuestion.vue';
 import ProgressBars from './ProgressBars.vue';
-import '~/renderer/global.css'
-import './app.css'
+import { questions as data } from './questions.json';
+import '~/renderer/global.css';
+import './app.css';
 
 setQuestions(data as QuestionType[]);
 
 const disableButton = ref(false);
 
-const getAspectFullname = (aspect: string) => {
-    return {
-        F: "Findable",
-        A: "Accessible",
-        I: "Interoperable",
-        R: "Reusable"
-    }[aspect]
-}
+const getAspectFullname = (aspect: 'F' | 'A' | 'I' | 'R') => ({
+    F: 'Findable',
+    A: 'Accessible',
+    I: 'Interoperable',
+    R: 'Reusable'
+}[aspect]);
 const scrollToBadgesSection = () => {
-    document.getElementById("badges-section")?.scrollIntoView({behavior: "smooth"})
-}
+    document.getElementById('badges-section')?.scrollIntoView({ behavior: 'smooth' });
+};
 onMounted(() => {
     window.onscroll = () => {
         const elementInViewport = (rect: DOMRect) => {
@@ -74,18 +72,18 @@ onMounted(() => {
                 rect.left >= 0,
                 rect.right <= (window.innerWidth || document.documentElement.clientWidth),
                 rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
-            ]
-            return conditions.every(e => e)
-        }
-        const elem = document.getElementById("badges-section")
+            ];
+            return conditions.every(e => e);
+        };
+        const elem = document.getElementById('badges-section');
         if (elem !== undefined && elem !== null) {
             const rect = elem.getBoundingClientRect();
             disableButton.value = elementInViewport(rect);
         }
-    }
-})
+    };
+});
 
-const linkToDataChecklist = `${import.meta.env.BASE_URL}data/${latest.value.data}`
+const linkToDataChecklist = `${import.meta.env.BASE_URL}data/${latest.value.data}`;
 </script>
 
 <style scoped>

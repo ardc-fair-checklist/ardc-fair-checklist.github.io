@@ -32,5 +32,11 @@
     ],
     "reportUnusedDisableDirectives": true,
     "rules": {
+        "arrow-parens": ["error", "as-needed"],
+        "comma-dangle": ["error", "never"],
+        "indent": ["error", 4],
+        "import/no-duplicates": ["off"],
+        "import/no-extraneous-dependencies": ["error", { "devDependencies": ["**/*.test.ts"] }],
+        "object-curly-newline": ["error", { "multiline": true }]
     }
 }

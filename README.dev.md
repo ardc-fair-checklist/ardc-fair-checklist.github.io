@@ -168,3 +168,8 @@ open http://localhost:3000
 ```
 
 Now make whatever changes you want under `pages/services/v0.1`. The page should update through hot module reloading.
+
+
+## Notes
+
+https://agm1984.medium.com/how-to-set-up-es-lint-for-airbnb-vue-js-and-vs-code-a5ef5ac671e8
