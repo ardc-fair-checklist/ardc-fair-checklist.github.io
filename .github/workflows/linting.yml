@@ -1,0 +1,26 @@
+name: linting
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install
+        run: npm install
+
+      - name: Lint
+        run: npm run lint
