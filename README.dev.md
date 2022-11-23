@@ -29,7 +29,7 @@ npm install
 - `npm run build`: build the project for production, output files in `./dist`
 - `npm run coverage`: run the tests once and calculate coverage using `@vitest/coverage-c8`
 - `npm run dev`: build the project for development, watch files for changes, serve output files on `localhost`.
-- `npm run lint`: run `eslint`
+- `npm run lint`: run `eslint` with configuration from `.eslintrc`
 - `npm run prod`: shorthand for `npm run build && npm run server:prod`
 - `npm run server`: serve the development build
 - `npm run server:prod`: serve the production build
