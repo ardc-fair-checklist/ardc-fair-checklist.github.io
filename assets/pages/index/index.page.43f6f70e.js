@@ -1,8 +1,8 @@
-import { l as latest } from "../../chunk-59326f4c.js";
+import { l as latest } from "../../chunk-24e28be0.js";
 import { _ as _imports_0, a as _imports_1 } from "../../chunk-5b637298.js";
 import { _ as _export_sfc } from "../../chunk-de093346.js";
 import { u as openBlock, t as createElementBlock, x as pushScopeId, y as popScopeId, v as createBaseVNode, d as defineComponent, z as renderSlot, A as normalizeClass, B as unref, C as createTextVNode, D as createVNode, E as withCtx, F as Fragment } from "../../chunk-4828f769.js";
-import { u as usePageContext } from "../../chunk-26e7f91e.js";
+import { u as usePageContext } from "../../chunk-cd518acb.js";
 const ChecklistFooter_vue_vue_type_style_index_0_scoped_6fb89924_lang = "";
 const _sfc_main$2 = {};
 const _withScopeId$1 = (n) => (pushScopeId("data-v-6fb89924"), n = n(), popScopeId(), n);
@@ -40,10 +40,10 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const ChecklistLink_vue_vue_type_style_index_0_scoped_3a67c0ee_lang = "";
-const ChecklistLink = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-3a67c0ee"]]);
+const ChecklistLink_vue_vue_type_style_index_0_scoped_058ee869_lang = "";
+const ChecklistLink = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-058ee869"]]);
 const app = "";
-const _withScopeId = (n) => (pushScopeId("data-v-eb77947c"), n = n(), popScopeId(), n);
+const _withScopeId = (n) => (pushScopeId("data-v-fc835bc5"), n = n(), popScopeId(), n);
 const _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("h1", null, "FAIR checklists", -1));
 const _sfc_main = /* @__PURE__ */ defineComponent({
   __name: "index.page",
@@ -75,8 +75,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const index_page_vue_vue_type_style_index_0_scoped_eb77947c_lang = "";
-const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-eb77947c"]]);
+const index_page_vue_vue_type_style_index_0_scoped_fc835bc5_lang = "";
+const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-fc835bc5"]]);
 export {
   index_page as default
 };

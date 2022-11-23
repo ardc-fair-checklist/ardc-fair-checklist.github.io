@@ -1,4 +1,4 @@
-import { l as latest } from "../../../chunk-59326f4c.js";
+import { l as latest } from "../../../chunk-24e28be0.js";
 import { d as defineComponent, o as onMounted, t as createElementBlock, u as openBlock } from "../../../chunk-4828f769.js";
 const app = "";
 const _sfc_main = /* @__PURE__ */ defineComponent({

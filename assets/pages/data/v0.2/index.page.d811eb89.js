@@ -1,8 +1,8 @@
-import { l as latest } from "../../../chunk-59326f4c.js";
-import { G as ref, H as computed, u as openBlock, t as createElementBlock, x as pushScopeId, y as popScopeId, v as createBaseVNode, d as defineComponent, z as renderSlot, A as normalizeClass, B as unref, o as onMounted, C as createTextVNode, D as createVNode, E as withCtx, I as toDisplayString, J as createCommentVNode, K as createStaticVNode, F as Fragment, L as renderList, M as createBlock } from "../../../chunk-4828f769.js";
+import { l as latest } from "../../../chunk-24e28be0.js";
+import { G as ref, H as computed, u as openBlock, t as createElementBlock, v as createBaseVNode, I as toDisplayString, x as pushScopeId, y as popScopeId, d as defineComponent, z as renderSlot, A as normalizeClass, B as unref, o as onMounted, C as createTextVNode, D as createVNode, E as withCtx, J as createCommentVNode, K as createStaticVNode, F as Fragment, L as renderList, M as createBlock } from "../../../chunk-4828f769.js";
 import { _ as _imports_0, a as _imports_1 } from "../../../chunk-5b637298.js";
 import { _ as _export_sfc } from "../../../chunk-de093346.js";
-import { u as usePageContext } from "../../../chunk-26e7f91e.js";
+import { u as usePageContext } from "../../../chunk-cd518acb.js";
 import { _ as _imports_0$1 } from "../../../chunk-797968b4.js";
 import { u as useCssVars, w as withKeys, a as withModifiers } from "../../../chunk-ad67e3db.js";
 const state = ref({
@@ -11,15 +11,15 @@ const state = ref({
 });
 const compliance = computed(() => state.value.compliance);
 const questions$1 = computed(() => state.value.questions);
-const setCompliance = (newCompliance) => state.value.compliance = newCompliance;
-const setQuestions = (questions2) => {
-  state.value.questions = questions2.map((q, i) => ({ ...q, index: i }));
-  state.value.compliance = new Array(questions2.length).fill(0);
+const setCompliance = (newCompliance) => {
+  state.value.compliance = newCompliance;
+};
+const setQuestions = (questionsNoIndex) => {
+  state.value.questions = questionsNoIndex.map((q, i) => ({ ...q, index: i }));
+  state.value.compliance = new Array(questionsNoIndex.length).fill(0);
 };
 const nQuestions = computed(() => {
-  const deriveNumberOfQuestions = (aspect) => {
-    return state.value.questions.filter((question) => question.aspect === aspect).length;
-  };
+  const deriveNumberOfQuestions = (aspect) => state.value.questions.filter((question) => question.aspect === aspect).length;
   return {
     f: deriveNumberOfQuestions("F"),
     a: deriveNumberOfQuestions("A"),
@@ -32,9 +32,9 @@ const nPointsMax = computed(() => {
   const derivePointsMax = (aspect) => {
     let selectedQuestions = state.value.questions;
     if (aspect !== "*") {
-      selectedQuestions = state.value.questions.filter((question) => question.aspect === aspect);
+      selectedQuestions = state.value.questions.filter((q) => q.aspect === aspect);
     }
-    return selectedQuestions.map((question) => Math.max(...question.answers.map((answer) => answer.score))).reduce((previousValue, currentValue) => previousValue + currentValue, 0);
+    return selectedQuestions.map((q) => Math.max(...q.answers.map((a) => a.score))).reduce((previousValue, currentValue) => previousValue + currentValue, 0);
   };
   return {
     f: derivePointsMax("F"),
@@ -428,9 +428,9 @@ const questions = [
     text: "How much provenance information has been captured to facilitate data reuse?"
   }
 ];
-const ChecklistAbout_vue_vue_type_style_index_0_scoped_afb26c69_lang = "";
+const ChecklistAbout_vue_vue_type_style_index_0_scoped_b1f55dca_lang = "";
 const _sfc_main$7 = {};
-const _withScopeId$2 = (n) => (pushScopeId("data-v-afb26c69"), n = n(), popScopeId(), n);
+const _withScopeId$2 = (n) => (pushScopeId("data-v-b1f55dca"), n = n(), popScopeId(), n);
 const _hoisted_1$6 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createBaseVNode("div", { class: "logos" }, [
   /* @__PURE__ */ createBaseVNode("img", {
     class: "logo",
@@ -443,15 +443,13 @@ const _hoisted_1$6 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ create
     alt: "ardc logo"
   })
 ], -1));
-const _hoisted_2$4 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createBaseVNode("p", null, " This checklist is a collaborative effort by Netherlands eScience Center and Australian Research Data Commons. ", -1));
-const _hoisted_3$4 = [
-  _hoisted_1$6,
-  _hoisted_2$4
-];
 function _sfc_render(_ctx, _cache) {
-  return openBlock(), createElementBlock("footer", null, _hoisted_3$4);
+  return openBlock(), createElementBlock("footer", null, [
+    _hoisted_1$6,
+    createBaseVNode("p", null, toDisplayString("This checklist is a collaborative effort by Netherlands eScience Center and Australian Research Data Commons."), 1)
+  ]);
 }
-const ChecklistAbout = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render], ["__scopeId", "data-v-afb26c69"]]);
+const ChecklistAbout = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render], ["__scopeId", "data-v-b1f55dca"]]);
 const _sfc_main$6 = /* @__PURE__ */ defineComponent({
   __name: "ChecklistLink",
   setup(__props) {
@@ -465,8 +463,8 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const ChecklistLink_vue_vue_type_style_index_0_scoped_018fc387_lang = "";
-const ChecklistLink = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__scopeId", "data-v-018fc387"]]);
+const ChecklistLink_vue_vue_type_style_index_0_scoped_3def1fc4_lang = "";
+const ChecklistLink = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__scopeId", "data-v-3def1fc4"]]);
 const app = "";
 const _hoisted_1$5 = {
   key: 0,
@@ -475,13 +473,11 @@ const _hoisted_1$5 = {
 const _sfc_main$5 = /* @__PURE__ */ defineComponent({
   __name: "BannerVersions",
   setup(__props) {
-    const link = computed(() => {
-      return [
-        window.location.origin,
-        ...window.location.pathname.split("/").filter((e) => e !== "").slice(0, -1),
-        latest.value.data
-      ].join("/");
-    });
+    const link = computed(() => [
+      window.location.origin,
+      ...window.location.pathname.split("/").filter((e) => e !== "").slice(0, -1),
+      latest.value.data
+    ].join("/"));
     const showBanner = ref(false);
     onMounted(() => {
       const { urlPathname } = usePageContext();
@@ -502,9 +498,9 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const BannerVersions_vue_vue_type_style_index_0_scoped_6e230cee_lang = "";
-const BannerVersions = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-6e230cee"]]);
-const _withScopeId$1 = (n) => (pushScopeId("data-v-63f4864e"), n = n(), popScopeId(), n);
+const BannerVersions_vue_vue_type_style_index_0_scoped_bad02721_lang = "";
+const BannerVersions = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-bad02721"]]);
+const _withScopeId$1 = (n) => (pushScopeId("data-v-74929b9b"), n = n(), popScopeId(), n);
 const _hoisted_1$4 = { class: "home" };
 const _hoisted_2$3 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("svg", {
   width: "128",
@@ -560,10 +556,10 @@ const _sfc_main$4 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const ChecklistHeader_vue_vue_type_style_index_0_scoped_63f4864e_lang = "";
-const ChecklistHeader = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-63f4864e"]]);
+const ChecklistHeader_vue_vue_type_style_index_0_scoped_74929b9b_lang = "";
+const ChecklistHeader = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-74929b9b"]]);
 const _hoisted_1$3 = { class: "footer" };
-const _hoisted_2$2 = /* @__PURE__ */ createStaticVNode('<div class="inner" data-v-38a05081><div class="another-inner" data-v-38a05081><div class="progressbars" data-v-38a05081><div class="labels" data-v-38a05081><div class="row" data-v-38a05081><div class="label" data-v-38a05081> Findable </div></div><div class="row" data-v-38a05081><div class="label" data-v-38a05081> Accessible </div></div><div class="row" data-v-38a05081><div class="label" data-v-38a05081> Interoperable </div></div><div class="row" data-v-38a05081><div class="label" data-v-38a05081> Reusable </div></div></div><div class="bars" data-v-38a05081><div class="row" data-v-38a05081><div class="bar bar-bg" data-v-38a05081><div class="bar blue" data-v-38a05081></div></div></div><div class="row" data-v-38a05081><div class="bar bar-bg" data-v-38a05081><div class="bar pink" data-v-38a05081></div></div></div><div class="row" data-v-38a05081><div class="bar bar-bg" data-v-38a05081><div class="bar yellow" data-v-38a05081></div></div></div><div class="row" data-v-38a05081><div class="bar bar-bg" data-v-38a05081><div class="bar purple" data-v-38a05081></div></div></div></div></div></div></div>', 1);
+const _hoisted_2$2 = /* @__PURE__ */ createStaticVNode('<div class="inner" data-v-a7e24763><div class="another-inner" data-v-a7e24763><div class="progressbars" data-v-a7e24763><div class="labels" data-v-a7e24763><div class="row" data-v-a7e24763><div class="label" data-v-a7e24763> Findable </div></div><div class="row" data-v-a7e24763><div class="label" data-v-a7e24763> Accessible </div></div><div class="row" data-v-a7e24763><div class="label" data-v-a7e24763> Interoperable </div></div><div class="row" data-v-a7e24763><div class="label" data-v-a7e24763> Reusable </div></div></div><div class="bars" data-v-a7e24763><div class="row" data-v-a7e24763><div class="bar bar-bg" data-v-a7e24763><div class="bar blue" data-v-a7e24763></div></div></div><div class="row" data-v-a7e24763><div class="bar bar-bg" data-v-a7e24763><div class="bar pink" data-v-a7e24763></div></div></div><div class="row" data-v-a7e24763><div class="bar bar-bg" data-v-a7e24763><div class="bar yellow" data-v-a7e24763></div></div></div><div class="row" data-v-a7e24763><div class="bar bar-bg" data-v-a7e24763><div class="bar purple" data-v-a7e24763></div></div></div></div></div></div></div>', 1);
 const _hoisted_3$2 = [
   _hoisted_2$2
 ];
@@ -574,18 +570,18 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
   },
   setup(__props) {
     useCssVars((_ctx) => ({
-      "4ee09f43": __props.progress.f,
-      "4ee09f3e": __props.progress.a,
-      "4ee09f46": __props.progress.i,
-      "4ee09f4f": __props.progress.r
+      "48892d7e": __props.progress.f,
+      "48892d79": __props.progress.a,
+      "48892d81": __props.progress.i,
+      "48892d8a": __props.progress.r
     }));
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("div", _hoisted_1$3, _hoisted_3$2);
     };
   }
 });
-const ProgressBars_vue_vue_type_style_index_0_scoped_38a05081_lang = "";
-const ProgressBars = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-38a05081"]]);
+const ProgressBars_vue_vue_type_style_index_0_scoped_a7e24763_lang = "";
+const ProgressBars = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-a7e24763"]]);
 const _hoisted_1$2 = ["aria-labelledby"];
 const _hoisted_2$1 = { class: "answer-radiobutton" };
 const _hoisted_3$1 = ["id", "value", "checked"];
@@ -634,8 +630,8 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const ChecklistAnswer_vue_vue_type_style_index_0_scoped_33d6568f_lang = "";
-const ChecklistAnswer = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-33d6568f"]]);
+const ChecklistAnswer_vue_vue_type_style_index_0_scoped_3c80dbf5_lang = "";
+const ChecklistAnswer = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-3c80dbf5"]]);
 const _hoisted_1$1 = { class: "question" };
 const _hoisted_2 = { class: "question-index shared" };
 const _hoisted_3 = { class: "shared" };
@@ -647,15 +643,13 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
   },
   setup(__props) {
     const props = __props;
-    const onClick = (answerIndex) => {
-      return () => {
-        const newCompliance = [
-          ...compliance.value.slice(0, props.question.index),
-          answerIndex,
-          ...compliance.value.slice(props.question.index + 1)
-        ];
-        setCompliance(newCompliance);
-      };
+    const onClick = (answerIndex) => () => {
+      const newCompliance = [
+        ...compliance.value.slice(0, props.question.index),
+        answerIndex,
+        ...compliance.value.slice(props.question.index + 1)
+      ];
+      setCompliance(newCompliance);
     };
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("div", _hoisted_1$1, [
@@ -677,22 +671,20 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const ChecklistQuestion_vue_vue_type_style_index_0_scoped_69982709_lang = "";
-const ChecklistQuestion = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-69982709"]]);
-const _withScopeId = (n) => (pushScopeId("data-v-046d8562"), n = n(), popScopeId(), n);
+const ChecklistQuestion_vue_vue_type_style_index_0_scoped_5a504c23_lang = "";
+const ChecklistQuestion = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-5a504c23"]]);
+const _withScopeId = (n) => (pushScopeId("data-v-c6a591ed"), n = n(), popScopeId(), n);
 const _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("h1", null, "FAIR for data self-assessment checklist", -1));
 const _sfc_main = /* @__PURE__ */ defineComponent({
   __name: "index.page",
   setup(__props) {
     setQuestions(questions);
-    const getAspectFullname = (aspect) => {
-      return {
-        F: "Findable",
-        A: "Accessible",
-        I: "Interoperable",
-        R: "Reusable"
-      }[aspect];
-    };
+    const getAspectFullname = (aspect) => ({
+      F: "Findable",
+      A: "Accessible",
+      I: "Interoperable",
+      R: "Reusable"
+    })[aspect];
     const linkToSoftwareChecklist = `${"/ssg/"}software/${latest.value.software}`;
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("div", null, [
@@ -732,8 +724,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const index_page_vue_vue_type_style_index_0_scoped_046d8562_lang = "";
-const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-046d8562"]]);
+const index_page_vue_vue_type_style_index_0_scoped_c6a591ed_lang = "";
+const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-c6a591ed"]]);
 export {
   index_page as default
 };

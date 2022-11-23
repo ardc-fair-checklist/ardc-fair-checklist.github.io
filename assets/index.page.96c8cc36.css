@@ -21,11 +21,11 @@ footer p[data-v-6fb89924] {
     margin: 0 auto;
 }
 
-a[data-v-3a67c0ee] {
+a[data-v-058ee869] {
     text-underline-offset: 0.3em;
     color: #71caff;
 }
-a[data-v-3a67c0ee]:hover {
+a[data-v-058ee869]:hover {
     color: var(--white);
 }
 #app {
@@ -54,11 +54,11 @@ a[data-v-3a67c0ee]:hover {
     }
 }
 
-main[data-v-eb77947c] {
+main[data-v-fc835bc5] {
     background-color: var(--black);
     color: var(--white);
 }
-h1[data-v-eb77947c] {
+h1[data-v-fc835bc5] {
     line-height: 1.2em;
     margin-top: 3em;
 }
