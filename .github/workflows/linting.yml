@@ -5,6 +5,11 @@ on:
   push:
     branches:
       - main
+    paths:
+      - ./pages
+      - ./renderer
+      - ./server
+      - .eslintrc.json
   workflow_dispatch:
 
 jobs:
