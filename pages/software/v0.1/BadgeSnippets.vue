@@ -6,31 +6,43 @@
             <label for="textarea-markdown-badge">Markdown</label>
         </h3>
 
-        <textarea
-            readonly wrap="off"
-            id="textarea-markdown-badge"
-            v-bind:value="markdownBadge"
-        ></textarea>
+        <div class="row">
+            <textarea
+                id="textarea-markdown-badge"
+                readonly
+                v-bind:value="markdownBadge"
+                wrap="off"
+            ></textarea>
+            <button role="button">Copy</button>
+        </div>
 
         <h3>
             <label for="textarea-rst-badge">ReStructured Text</label>
         </h3>
 
-        <textarea
-            readonly wrap="off"
-            id="textarea-rst-badge"
-            v-bind:value="rstBadge"
-        ></textarea>
+        <div class="row">
+            <textarea
+                id="textarea-rst-badge"
+                readonly
+                v-bind:value="rstBadge"
+                wrap="off"
+            ></textarea>
+            <button role="button">Copy</button>
+        </div>
 
         <h3>
             <label for="textarea-html-badge">HTML</label>
         </h3>
 
-        <textarea
-            readonly wrap="off"
-            id="textarea-html-badge"
-            v-bind:value="htmlBadge"
-        ></textarea>
+        <div class="row">
+            <textarea
+                id="textarea-html-badge"
+                readonly
+                v-bind:value="htmlBadge"
+                wrap="off"
+            ></textarea>
+            <button role="button">Copy</button>
+        </div>
 
     </div>
 </template>
@@ -80,4 +92,33 @@ textarea {
                 'Bitstream Vera Sans Mono',
                 'Courier New', monospace;
 }
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap
+}
+
+button {
+    align-self: center;
+    background-color: #eee;
+    border-radius: 0.15em;
+    border: 2px solid rgba(0, 0, 0, 0.7);
+    color: black;
+    flex-grow: 0;
+    height: min-content;
+    margin-left: 2em;
+    margin-right: 1em;
+    padding: 0.5em 1.5em;
+}
+
+button:hover {
+    border: 2px solid white;
+    background-color: white;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.5;
+}
+
 </style>
