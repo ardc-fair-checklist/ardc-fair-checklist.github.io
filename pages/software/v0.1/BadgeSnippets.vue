@@ -41,17 +41,18 @@ import { onMounted } from 'vue';
 import { ref } from 'vue';
 import { fairQueryParams } from './store';
 
+const alt = 'FAIR checklist badge';
 const href = ref('');
 const appBaseUrl = ref('');
 
 const htmlBadge = computed(() => `<a href="${href.value}?${fairQueryParams.value}">\n`
     + `  <img src="${appBaseUrl.value}badge.svg" `
-    + 'alt="FAIR checklist badge">\n</a>');
-const markdownBadge = computed(() => `[![FAIRness badge image](${appBaseUrl.value}badge.svg)]`
+    + `alt="${alt}">\n</a>`);
+const markdownBadge = computed(() => `[![${alt}](${appBaseUrl.value}badge.svg)]`
     + `(${href.value}?${fairQueryParams.value})`);
 const rstBadge = computed(() => `.. image:: ${appBaseUrl.value}badge.svg\n`
         + `   :target: ${href.value}?${fairQueryParams.value}\n`
-        + '   :alt: FAIR checklist badge');
+        + `   :alt: ${alt}`);
 
 onMounted(() => {
     href.value = `${window.location.origin}/${window.location.pathname.split('/').filter(e => e !== '').join('/')}`;
