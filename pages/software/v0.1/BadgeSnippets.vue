@@ -13,7 +13,7 @@
                 v-bind:value="markdownBadge"
                 wrap="off"
             ></textarea>
-            <button role="button">Copy</button>
+            <button role="button" onclick="console.log('not implemented yet')">Copy</button>
         </div>
 
         <h3>
@@ -27,7 +27,7 @@
                 v-bind:value="rstBadge"
                 wrap="off"
             ></textarea>
-            <button role="button">Copy</button>
+            <button role="button" onclick="console.log('not implemented yet')">Copy</button>
         </div>
 
         <h3>
@@ -41,7 +41,7 @@
                 v-bind:value="htmlBadge"
                 wrap="off"
             ></textarea>
-            <button role="button">Copy</button>
+            <button role="button" onclick="console.log('not implemented yet')">Copy</button>
         </div>
 
     </div>
