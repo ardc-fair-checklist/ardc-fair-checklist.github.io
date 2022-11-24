@@ -43,3 +43,4 @@
         "object-curly-newline": ["error", { "multiline": true }]
     }
 }
+// noop
