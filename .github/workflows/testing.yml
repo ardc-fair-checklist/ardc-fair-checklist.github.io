@@ -6,9 +6,9 @@ on:
     branches:
       - main
     paths:
-      - ./pages
-      - ./renderer
-      - ./server
+      - ./pages/**/*
+      - ./renderer/**/*
+      - ./server/**/*
       - vite.config.ts
   workflow_dispatch:
 
