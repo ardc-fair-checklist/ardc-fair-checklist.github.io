@@ -45,7 +45,7 @@ import { nQuestions } from './store';
 import { progress } from './store';
 import { questions } from './store';
 import { setQuestions } from './store';
-import { type QuestionType } from './types';
+import { type Question } from './types';
 import { type Aspect } from './types';
 import BadgeSnippets from './BadgeSnippets.vue';
 import BannerParams from './BannerParams.vue';
@@ -59,7 +59,7 @@ import { questions as data } from './questions.json';
 import '~/renderer/global.css';
 import './app.css';
 
-setQuestions(data as QuestionType[]);
+setQuestions(data as Question[]);
 
 const disableButton = ref(false);
 

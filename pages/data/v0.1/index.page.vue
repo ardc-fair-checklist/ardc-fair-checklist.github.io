@@ -41,7 +41,7 @@ import { questions } from './store';
 import { questions as data } from './questions.json';
 import { setQuestions } from './store';
 import { type Aspect } from './types';
-import { type QuestionType } from './types';
+import { type Question } from './types';
 import ChecklistAbout from './ChecklistAbout.vue';
 import BannerVersions from './BannerVersions.vue';
 import ChecklistHeader from './ChecklistHeader.vue';
@@ -51,7 +51,7 @@ import ChecklistQuestion from './ChecklistQuestion.vue';
 import '~/renderer/global.css';
 import './app.css';
 
-setQuestions(data as QuestionType[]);
+setQuestions(data as Question[]);
 
 const getAspectFullname = (aspect: Aspect) => ({
     f: 'Findable',

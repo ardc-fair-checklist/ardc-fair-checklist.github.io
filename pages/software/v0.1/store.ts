@@ -1,13 +1,13 @@
 import { computed } from 'vue';
 import { ref } from 'vue';
 import { Aspect } from './types';
-import { QuestionType } from './types';
+import { Question } from './types';
 
 export const aspects = ['f', 'a', 'i', 'r'] as Aspect[];
 
 const state = ref({
     compliance: [] as number[],
-    questions: [] as (QuestionType & { index: number })[]
+    questions: [] as (Question & { index: number })[]
 });
 
 export const compliance = computed(() => state.value.compliance);
@@ -15,9 +15,9 @@ export const questions = computed(() => state.value.questions);
 export const setCompliance = (newCompliance: number[]) => {
     state.value.compliance = newCompliance;
 };
-export const setQuestions = (questionsNoIndex: QuestionType[]) => {
+export const setQuestions = (questionsNoIndex: Question[]) => {
     // add index
-    state.value.questions = (questionsNoIndex as QuestionType[])
+    state.value.questions = (questionsNoIndex as Question[])
         .map((q, i) => ({ ...q, index: i }));
     state.value.compliance = new Array(questionsNoIndex.length).fill(0);
 };

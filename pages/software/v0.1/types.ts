@@ -1,4 +1,4 @@
-export type AnswerType = {
+export type Answer = {
     id: string,
     score: number,
     text: string
@@ -6,8 +6,8 @@ export type AnswerType = {
 
 export type Aspect = 'f' | 'a' | 'i' | 'r';
 
-export type QuestionType = {
-    answers: AnswerType[],
+export type Question = {
+    answers: Answer[],
     aspect: Aspect,
     guidance: string,
     id: string,
