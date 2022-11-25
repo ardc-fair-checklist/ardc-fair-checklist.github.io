@@ -36,20 +36,20 @@ describe('the software questions data', () => {
         expect(re.test(stringified)).toBe(true);
     });
 
-    test('there should be 6 questions with aspect F', () => {
-        expect(questions.filter(q => q.aspect === 'F').length).toBe(6);
+    test('there should be 6 questions with aspect \'f\'', () => {
+        expect(questions.filter(q => q.aspect === 'f').length).toBe(6);
     });
 
-    test('there should be 4 questions with aspect A', () => {
-        expect(questions.filter(q => q.aspect === 'A').length).toBe(4);
+    test('there should be 4 questions with aspect \'a\'', () => {
+        expect(questions.filter(q => q.aspect === 'a').length).toBe(4);
     });
 
-    test('there should be 2 questions with aspect I', () => {
-        expect(questions.filter(q => q.aspect === 'I').length).toBe(2);
+    test('there should be 2 questions with aspect \'i\'', () => {
+        expect(questions.filter(q => q.aspect === 'i').length).toBe(2);
     });
 
-    test('there should be 6 questions with aspect R', () => {
-        expect(questions.filter(q => q.aspect === 'R').length).toBe(6);
+    test('there should be 6 questions with aspect \'r\'', () => {
+        expect(questions.filter(q => q.aspect === 'r').length).toBe(6);
     });
 
     test('there should be 18 questions in total', () => {

@@ -6,10 +6,16 @@
             <h1>FAIR for data self-assessment checklist</h1>
             <BannerVersions />
             <template v-if="nQuestions.total > 0">
-                <p>Answer the {{ nQuestions.total }} questions below to assess your data's FAIRness, or switch to the checklist for <ChecklistLink v-bind:href="linkToSoftwareChecklist">software</ChecklistLink> instead.</p>
-                <div v-for="aspect in ['F', 'A', 'I', 'R']" v-bind:key="aspect">
+                <p>
+                    Answer the {{ nQuestions.total }} questions below to assess
+                    your data's FAIRness, or switch to the checklist for
+                    <ChecklistLink v-bind:href="linkToSoftwareChecklist">software</ChecklistLink>
+                    instead.
+                </p>
+                <div v-for="aspect in aspects" v-bind:key="aspect">
                     <h2>{{ getAspectFullname(aspect) }}</h2>
-                    <ChecklistQuestion v-for="question in questions.filter(q => q.aspect === aspect)"
+                    <ChecklistQuestion
+                        v-for="question in questions.filter(q => q.aspect === aspect)"
                         v-bind:key="question.id"
                         v-bind:question="question"
                     />
@@ -28,12 +34,14 @@
 
 <script setup lang="ts">
 import { latest } from '~/renderer/versions';
+import { aspects } from './store';
 import { nQuestions } from './store';
 import { progress } from './store';
 import { questions } from './store';
 import { questions as data } from './questions.json';
 import { setQuestions } from './store';
-import { type QuestionType } from './store';
+import { type Aspect } from './types';
+import { type QuestionType } from './types';
 import ChecklistAbout from './ChecklistAbout.vue';
 import BannerVersions from './BannerVersions.vue';
 import ChecklistHeader from './ChecklistHeader.vue';
@@ -45,11 +53,11 @@ import './app.css';
 
 setQuestions(data as QuestionType[]);
 
-const getAspectFullname = (aspect: string) => ({
-    F: 'Findable',
-    A: 'Accessible',
-    I: 'Interoperable',
-    R: 'Reusable'
+const getAspectFullname = (aspect: Aspect) => ({
+    f: 'Findable',
+    a: 'Accessible',
+    i: 'Interoperable',
+    r: 'Reusable'
 }[aspect]);
 const linkToSoftwareChecklist = `${import.meta.env.BASE_URL}software/${latest.value.software}`;
 </script>

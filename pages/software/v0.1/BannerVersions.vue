@@ -1,6 +1,8 @@
 <template>
     <div class="banner" v-if="showBanner">
-        A newer version of this checklist is available at <ChecklistLink v-bind:href="link">{{link}}</ChecklistLink>, consider upgrading.
+        A newer version of this checklist is available at
+        <ChecklistLink v-bind:href="link">{{link}}</ChecklistLink>
+        , consider upgrading.
     </div>
 </template>
 

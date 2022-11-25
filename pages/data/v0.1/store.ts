@@ -1,21 +1,9 @@
-import { computed, ref } from 'vue';
+import { computed } from 'vue';
+import { ref } from 'vue';
+import { Aspect } from './types';
+import { QuestionType } from './types';
 
-type Aspect = 'F' | 'A' | 'I' | 'R';
-
-export type AnswerType = {
-    id: string,
-    score: number,
-    text: string
-}
-
-export type QuestionType = {
-    answers: AnswerType[],
-    aspect: Aspect,
-    guidance: string,
-    id: string,
-    principle: string,
-    text: string
-}
+export const aspects = ['f', 'a', 'i', 'r'] as Aspect[];
 
 const state = ref({
     compliance: [] as number[],
@@ -29,7 +17,8 @@ export const setCompliance = (newCompliance: number[]) => {
 };
 export const setQuestions = (questionsNoIndex: QuestionType[]) => {
     // add index
-    state.value.questions = (questionsNoIndex as QuestionType[]).map((q, i) => ({ ...q, index: i }));
+    state.value.questions = (questionsNoIndex as QuestionType[])
+        .map((q, i) => ({ ...q, index: i }));
     state.value.compliance = new Array(questionsNoIndex.length).fill(0);
 };
 
@@ -38,10 +27,10 @@ export const nQuestions = computed(() => {
         state.value.questions.filter(question => question.aspect === aspect).length
     );
     return {
-        f: deriveNumberOfQuestions('F'),
-        a: deriveNumberOfQuestions('A'),
-        i: deriveNumberOfQuestions('I'),
-        r: deriveNumberOfQuestions('R'),
+        f: deriveNumberOfQuestions('f'),
+        a: deriveNumberOfQuestions('a'),
+        i: deriveNumberOfQuestions('i'),
+        r: deriveNumberOfQuestions('r'),
         total: state.value.questions.length
     };
 });
@@ -56,10 +45,10 @@ export const nPointsMax = computed(() => {
             .reduce((previousValue, currentValue) => previousValue + currentValue, 0);
     };
     return {
-        f: derivePointsMax('F'),
-        a: derivePointsMax('A'),
-        i: derivePointsMax('I'),
-        r: derivePointsMax('R'),
+        f: derivePointsMax('f'),
+        a: derivePointsMax('a'),
+        i: derivePointsMax('i'),
+        r: derivePointsMax('r'),
         total: derivePointsMax('*')
     };
 });
@@ -72,16 +61,29 @@ export const slices = computed(() => {
         r: [number, number]
     }
     return {
-        f: [0, nQuestions.value.f],
-        a: [nQuestions.value.f, nQuestions.value.f + nQuestions.value.a],
-        i: [nQuestions.value.f + nQuestions.value.a, nQuestions.value.f + nQuestions.value.a + nQuestions.value.i],
-        r: [nQuestions.value.f + nQuestions.value.a + nQuestions.value.i, nQuestions.value.total]
+        f: [
+            0,
+            nQuestions.value.f
+        ],
+        a: [
+            nQuestions.value.f,
+            nQuestions.value.f + nQuestions.value.a
+        ],
+        i: [
+            nQuestions.value.f + nQuestions.value.a,
+            nQuestions.value.f + nQuestions.value.a + nQuestions.value.i
+        ],
+        r: [
+            nQuestions.value.f + nQuestions.value.a + nQuestions.value.i,
+            nQuestions.value.total
+        ]
     } as Slices;
 });
 
 export const progress = computed(() => {
     const scoreArrays = state.value.questions.map(q => q.answers.map(a => a.score));
-    const scores = state.value.compliance.map((iAnswer, iQuestion) => scoreArrays[iQuestion][iAnswer]);
+    const scores = state.value.compliance
+        .map((iAnswer, iQuestion) => scoreArrays[iQuestion][iAnswer]);
     const summation = (previousValue: number, currentValue: number) => previousValue + currentValue;
     if (nQuestions.value.total === 0) {
         return {

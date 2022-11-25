@@ -7,6 +7,7 @@
 <script setup lang="ts">
 import { onMounted } from 'vue';
 import { ref } from 'vue';
+import { aspects } from './store';
 import { nAnswers } from './store';
 import { nQuestions } from './store';
 import { setCompliance } from './store';
@@ -68,8 +69,7 @@ onMounted(() => {
                 err: true
             };
         }
-        const aspects: Aspect[] = ['f', 'a', 'i', 'r'];
-        const errors = aspects.map(aspect => checkAspect(aspect)).filter(error => error.err === true);
+        const errors = aspects.map(a => checkAspect(a)).filter(error => error.err === true);
         return {
             msg: errors.map(e => e.msg).join('; '),
             err: errors.length > 0

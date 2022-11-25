@@ -2,7 +2,9 @@
 <template>
     <h1>FAIR checklists</h1>
     <p>
-        Choose the checklist for <ChecklistLink v-bind:href="linkToDataChecklist">data</ChecklistLink> or for <ChecklistLink v-bind:href="linkToSoftwareChecklist">software</ChecklistLink>.
+        Choose the checklist for
+        <ChecklistLink v-bind:href="linkToDataChecklist">data</ChecklistLink>
+        or for <ChecklistLink v-bind:href="linkToSoftwareChecklist">software</ChecklistLink>.
     </p>
     <ChecklistFooter />
 </template>
