@@ -32,7 +32,7 @@ describe('the software questions data', () => {
 
     test('the questions should be ordered by aspect and appear in FAIR order', () => {
         const stringified = questions.map(q => q.aspect).join('');
-        const re = /^F+A+I+R+$/;
+        const re = /^f+a+i+r+$/;
         expect(re.test(stringified)).toBe(true);
     });
 
