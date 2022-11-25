@@ -87,33 +87,68 @@ const progress = computed(() => {
     overall: `${100 * scores.reduce(summation, 0) / nPointsMax.value.total}%`
   };
 });
-const _withScopeId$3 = (n) => (pushScopeId("data-v-2fabc4ad"), n = n(), popScopeId(), n);
+const _withScopeId$3 = (n) => (pushScopeId("data-v-c59e0d68"), n = n(), popScopeId(), n);
 const _hoisted_1$8 = { class: "badges" };
 const _hoisted_2$4 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createBaseVNode("h2", null, "Get the badge", -1));
 const _hoisted_3$4 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createBaseVNode("h3", null, [
   /* @__PURE__ */ createBaseVNode("label", { for: "textarea-markdown-badge" }, "Markdown")
 ], -1));
-const _hoisted_4$3 = ["value"];
-const _hoisted_5$2 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createBaseVNode("h3", null, [
+const _hoisted_4$3 = { class: "row" };
+const _hoisted_5$2 = ["value"];
+const _hoisted_6$1 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createBaseVNode("div", { class: "copied-text" }, " copied ", -1));
+const _hoisted_7$1 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createBaseVNode("h3", null, [
   /* @__PURE__ */ createBaseVNode("label", { for: "textarea-rst-badge" }, "ReStructured Text")
 ], -1));
-const _hoisted_6$1 = ["value"];
-const _hoisted_7$1 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createBaseVNode("h3", null, [
+const _hoisted_8 = { class: "row" };
+const _hoisted_9 = ["value"];
+const _hoisted_10 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createBaseVNode("div", { class: "copied-text" }, " copied ", -1));
+const _hoisted_11 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createBaseVNode("h3", null, [
   /* @__PURE__ */ createBaseVNode("label", { for: "textarea-html-badge" }, "HTML")
 ], -1));
-const _hoisted_8 = ["value"];
+const _hoisted_12 = { class: "row" };
+const _hoisted_13 = ["value"];
+const _hoisted_14 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createBaseVNode("div", { class: "copied-text" }, " copied ", -1));
 const _sfc_main$9 = /* @__PURE__ */ defineComponent({
   __name: "BadgeSnippets",
   setup(__props) {
+    const alt = "FAIR checklist badge";
     const href = ref("");
     const appBaseUrl = ref("");
     const htmlBadge = computed(() => `<a href="${href.value}?${fairQueryParams.value}">
-  <img src="${appBaseUrl.value}badge.svg" alt="FAIR checklist badge">
-</a>`);
-    const markdownBadge = computed(() => `[![FAIRness badge image](${appBaseUrl.value}badge.svg)](${href.value}?${fairQueryParams.value})`);
+  <img src="${appBaseUrl.value}badge.svg" alt="${alt}">
+</a>
+`);
+    const markdownBadge = computed(() => `[![${alt}](${appBaseUrl.value}badge.svg)](${href.value}?${fairQueryParams.value})
+`);
     const rstBadge = computed(() => `.. image:: ${appBaseUrl.value}badge.svg
    :target: ${href.value}?${fairQueryParams.value}
-   :alt: FAIR checklist badge`);
+   :alt: ${alt}
+`);
+    const copyButtonClickHandler = (event) => {
+      if (event.target === null) {
+        return;
+      }
+      const button = event.target;
+      if (button.parentElement === null) {
+        return;
+      }
+      if (button.parentElement.previousElementSibling === null) {
+        return;
+      }
+      const textArea = button.parentElement.previousElementSibling;
+      const text = textArea.value;
+      navigator.clipboard.writeText(text);
+      if (button.nextElementSibling === null) {
+        return;
+      }
+      const feedbackString = button.nextElementSibling;
+      feedbackString.classList.remove("transparent");
+      feedbackString.classList.add("opaque");
+      setTimeout(() => {
+        feedbackString.classList.remove("opaque");
+        feedbackString.classList.add("transparent");
+      }, 1e3);
+    };
     onMounted(() => {
       href.value = `${window.location.origin}/${window.location.pathname.split("/").filter((e) => e !== "").join("/")}`;
       appBaseUrl.value = `${window.location.origin}${"/ssg/"}`;
@@ -122,32 +157,59 @@ const _sfc_main$9 = /* @__PURE__ */ defineComponent({
       return openBlock(), createElementBlock("div", _hoisted_1$8, [
         _hoisted_2$4,
         _hoisted_3$4,
-        createBaseVNode("textarea", {
-          readonly: "",
-          wrap: "off",
-          id: "textarea-markdown-badge",
-          value: unref(markdownBadge)
-        }, null, 8, _hoisted_4$3),
-        _hoisted_5$2,
-        createBaseVNode("textarea", {
-          readonly: "",
-          wrap: "off",
-          id: "textarea-rst-badge",
-          value: unref(rstBadge)
-        }, null, 8, _hoisted_6$1),
+        createBaseVNode("div", _hoisted_4$3, [
+          createBaseVNode("textarea", {
+            id: "textarea-markdown-badge",
+            readonly: "",
+            value: unref(markdownBadge),
+            wrap: "off"
+          }, null, 8, _hoisted_5$2),
+          createBaseVNode("div", { class: "col" }, [
+            createBaseVNode("button", {
+              role: "button",
+              onClick: copyButtonClickHandler
+            }, " Copy "),
+            _hoisted_6$1
+          ])
+        ]),
         _hoisted_7$1,
-        createBaseVNode("textarea", {
-          readonly: "",
-          wrap: "off",
-          id: "textarea-html-badge",
-          value: unref(htmlBadge)
-        }, null, 8, _hoisted_8)
+        createBaseVNode("div", _hoisted_8, [
+          createBaseVNode("textarea", {
+            id: "textarea-rst-badge",
+            readonly: "",
+            value: unref(rstBadge),
+            wrap: "off"
+          }, null, 8, _hoisted_9),
+          createBaseVNode("div", { class: "col" }, [
+            createBaseVNode("button", {
+              role: "button",
+              onClick: copyButtonClickHandler
+            }, " Copy "),
+            _hoisted_10
+          ])
+        ]),
+        _hoisted_11,
+        createBaseVNode("div", _hoisted_12, [
+          createBaseVNode("textarea", {
+            id: "textarea-html-badge",
+            readonly: "",
+            value: unref(htmlBadge),
+            wrap: "off"
+          }, null, 8, _hoisted_13),
+          createBaseVNode("div", { class: "col" }, [
+            createBaseVNode("button", {
+              role: "button",
+              onClick: copyButtonClickHandler
+            }, " Copy "),
+            _hoisted_14
+          ])
+        ])
       ]);
     };
   }
 });
-const BadgeSnippets_vue_vue_type_style_index_0_scoped_2fabc4ad_lang = "";
-const BadgeSnippets = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["__scopeId", "data-v-2fabc4ad"]]);
+const BadgeSnippets_vue_vue_type_style_index_0_scoped_c59e0d68_lang = "";
+const BadgeSnippets = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["__scopeId", "data-v-c59e0d68"]]);
 const _hoisted_1$7 = {
   key: 0,
   class: "banner"
