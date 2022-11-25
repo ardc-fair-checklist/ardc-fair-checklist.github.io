@@ -13,7 +13,16 @@
                 v-bind:value="markdownBadge"
                 wrap="off"
             ></textarea>
-            <button role="button" onclick="console.log('not implemented yet')">Copy</button>
+            <div class="col">
+                <button
+                    role="button"
+                    v-on:click="copyButtonClickHandler">
+                    Copy
+                </button>
+                <div class="copied-text">
+                    copied
+                </div>
+            </div>
         </div>
 
         <h3>
@@ -27,7 +36,16 @@
                 v-bind:value="rstBadge"
                 wrap="off"
             ></textarea>
-            <button role="button" onclick="console.log('not implemented yet')">Copy</button>
+            <div class="col">
+                <button
+                    role="button"
+                    v-on:click="copyButtonClickHandler">
+                    Copy
+                </button>
+                <div class="copied-text">
+                    copied
+                </div>
+            </div>
         </div>
 
         <h3>
@@ -41,7 +59,16 @@
                 v-bind:value="htmlBadge"
                 wrap="off"
             ></textarea>
-            <button role="button" onclick="console.log('not implemented yet')">Copy</button>
+            <div class="col">
+                <button
+                    role="button"
+                    v-on:click="copyButtonClickHandler">
+                    Copy
+                </button>
+                <div class="copied-text">
+                    copied
+                </div>
+            </div>
         </div>
 
     </div>
@@ -59,12 +86,38 @@ const appBaseUrl = ref('');
 
 const htmlBadge = computed(() => `<a href="${href.value}?${fairQueryParams.value}">\n`
     + `  <img src="${appBaseUrl.value}badge.svg" `
-    + `alt="${alt}">\n</a>`);
+    + `alt="${alt}">\n</a>\n`);
 const markdownBadge = computed(() => `[![${alt}](${appBaseUrl.value}badge.svg)]`
-    + `(${href.value}?${fairQueryParams.value})`);
+    + `(${href.value}?${fairQueryParams.value})\n`);
 const rstBadge = computed(() => `.. image:: ${appBaseUrl.value}badge.svg\n`
         + `   :target: ${href.value}?${fairQueryParams.value}\n`
-        + `   :alt: ${alt}`);
+        + `   :alt: ${alt}\n`);
+
+const copyButtonClickHandler = (event: Event) => {
+    if (event.target === null) {
+        return;
+    }
+    const button = event.target as HTMLInputElement;
+    if (button.parentElement === null) {
+        return;
+    }
+    if (button.parentElement.previousElementSibling === null) {
+        return;
+    }
+    const textArea = button.parentElement.previousElementSibling as HTMLInputElement;
+    const text = textArea.value;
+    navigator.clipboard.writeText(text);
+    if (button.nextElementSibling === null) {
+        return;
+    }
+    const feedbackString = button.nextElementSibling as HTMLElement;
+    feedbackString.classList.remove('transparent');
+    feedbackString.classList.add('opaque');
+    setTimeout(() => {
+        feedbackString.classList.remove('opaque');
+        feedbackString.classList.add('transparent');
+    }, 1000);
+};
 
 onMounted(() => {
     href.value = `${window.location.origin}/${window.location.pathname.split('/').filter(e => e !== '').join('/')}`;
@@ -96,7 +149,15 @@ textarea {
 .row {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap
+    flex-wrap: nowrap;
+}
+
+.col {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 
 button {
@@ -122,4 +183,19 @@ button:disabled {
     opacity: 0.5;
 }
 
+.copied-text {
+    font-size: 80%;
+    margin-left: 2em;
+    margin-right: 1em;
+    opacity: 0;
+}
+
+.copied-text.opaque {
+    opacity: 1;
+    transition: opacity 0s;
+}
+.copied-text.transparent {
+    opacity: 0;
+    transition: opacity 2s;
+}
 </style>
