@@ -40,7 +40,7 @@ type PropType = {
     }
     isChecked: boolean
     onClick: () => void
-}
+};
 defineProps<PropType>();
 </script>
 

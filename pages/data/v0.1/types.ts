@@ -4,7 +4,7 @@ export type Answer = {
     id: string,
     score: number,
     text: string
-}
+};
 
 export type Question = {
     answers: Answer[],
@@ -13,4 +13,4 @@ export type Question = {
     id: string,
     principle: string,
     text: string
-}
+};

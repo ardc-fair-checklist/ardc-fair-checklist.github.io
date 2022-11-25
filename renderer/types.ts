@@ -14,7 +14,7 @@ export type PageContextCustom = {
             description?: string
         }
     }
-}
-export type PageContextServer = PageContextBuiltIn<Page> & PageContextCustom
-export type PageContextClient = PageContextBuiltInClient<Page> & PageContextCustom
-export type PageContext = PageContextClient | PageContextServer
+};
+export type PageContextServer = PageContextBuiltIn<Page> & PageContextCustom;
+export type PageContextClient = PageContextBuiltInClient<Page> & PageContextCustom;
+export type PageContext = PageContextClient | PageContextServer;

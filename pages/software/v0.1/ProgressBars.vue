@@ -71,7 +71,7 @@ type PropType = {
         i: string,
         r: string
     }
-}
+};
 defineProps<PropType>();
 </script>
 

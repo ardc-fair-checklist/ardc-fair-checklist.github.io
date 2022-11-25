@@ -59,7 +59,7 @@ export const slices = computed(() => {
         a: [number, number]
         i: [number, number]
         r: [number, number]
-    }
+    };
     return {
         f: [
             0,

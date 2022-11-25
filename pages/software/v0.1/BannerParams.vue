@@ -20,7 +20,7 @@ onMounted(() => {
         a: string,
         i: string,
         r: string
-    }
+    };
     const params = {
         f: searchParams.get('f') || '',
         a: searchParams.get('a') || '',

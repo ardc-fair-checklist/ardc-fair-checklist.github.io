@@ -2,7 +2,7 @@ export type Answer = {
     id: string,
     score: number,
     text: string
-}
+};
 
 export type Aspect = 'f' | 'a' | 'i' | 'r';
 
@@ -13,4 +13,4 @@ export type Question = {
     id: string,
     principle: string,
     text: string
-}
+};
