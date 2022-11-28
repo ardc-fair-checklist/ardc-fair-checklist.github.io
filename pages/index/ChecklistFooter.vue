@@ -1,8 +1,12 @@
 <template>
     <footer>
         <div class="logos">
-            <img class="logo" src="/netherlands-escience-center-logo.svg" alt="nlesc logo" />
-            <img class="logo" src="/ardc-logo.svg" alt="ardc logo" />
+            <a href="https://esciencecenter.nl" target="_blank">
+                <img class="logo" src="/netherlands-escience-center-logo.svg" alt="nlesc logo" />
+            </a>
+            <a href="https://ardc.edu.au" target="_blank">
+                <img class="logo" src="/ardc-logo.svg" alt="ardc logo" />
+            </a>
         </div>
         <p>
             This checklist is a collaborative effort by
