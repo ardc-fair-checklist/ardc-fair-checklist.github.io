@@ -1,9 +1,10 @@
-import { l as latest } from "../../../chunk-276c4efb.js";
-import { G as ref, H as computed, u as openBlock, t as createElementBlock, v as createBaseVNode, I as toDisplayString, x as pushScopeId, y as popScopeId, d as defineComponent, z as renderSlot, A as normalizeClass, B as unref, o as onMounted, C as createTextVNode, D as createVNode, E as withCtx, J as createCommentVNode, K as createStaticVNode, F as Fragment, L as renderList, M as createBlock } from "../../../chunk-4828f769.js";
+import { l as latest } from "../../../chunk-6660a69c.js";
+import { H as ref, I as computed, u as openBlock, t as createElementBlock, v as createBaseVNode, J as toDisplayString, x as createStaticVNode, d as defineComponent, y as renderSlot, z as normalizeClass, A as unref, o as onMounted, B as createTextVNode, C as createVNode, D as withCtx, K as createCommentVNode, E as pushScopeId, G as popScopeId, F as Fragment, L as renderList, M as createBlock } from "../../../chunk-34b0814a.js";
 import { _ as _export_sfc, a as _imports_0, b as _imports_1 } from "../../../chunk-55859c7c.js";
-import { u as usePageContext } from "../../../chunk-cd518acb.js";
+import { u as usePageContext } from "../../../chunk-5d891244.js";
 import { _ as _imports_0$1 } from "../../../chunk-797968b4.js";
-import { u as useCssVars, w as withKeys, a as withModifiers } from "../../../chunk-ad67e3db.js";
+import { u as useCssVars, w as withKeys, a as withModifiers } from "../../../chunk-98817835.js";
+const aspects = ["f", "a", "i", "r"];
 const state = ref({
   compliance: [],
   questions: []
@@ -20,10 +21,10 @@ const setQuestions = (questionsNoIndex) => {
 const nQuestions = computed(() => {
   const deriveNumberOfQuestions = (aspect) => state.value.questions.filter((question) => question.aspect === aspect).length;
   return {
-    f: deriveNumberOfQuestions("F"),
-    a: deriveNumberOfQuestions("A"),
-    i: deriveNumberOfQuestions("I"),
-    r: deriveNumberOfQuestions("R"),
+    f: deriveNumberOfQuestions("f"),
+    a: deriveNumberOfQuestions("a"),
+    i: deriveNumberOfQuestions("i"),
+    r: deriveNumberOfQuestions("r"),
     total: state.value.questions.length
   };
 });
@@ -36,19 +37,31 @@ const nPointsMax = computed(() => {
     return selectedQuestions.map((q) => Math.max(...q.answers.map((a) => a.score))).reduce((previousValue, currentValue) => previousValue + currentValue, 0);
   };
   return {
-    f: derivePointsMax("F"),
-    a: derivePointsMax("A"),
-    i: derivePointsMax("I"),
-    r: derivePointsMax("R"),
+    f: derivePointsMax("f"),
+    a: derivePointsMax("a"),
+    i: derivePointsMax("i"),
+    r: derivePointsMax("r"),
     total: derivePointsMax("*")
   };
 });
 const slices = computed(() => {
   return {
-    f: [0, nQuestions.value.f],
-    a: [nQuestions.value.f, nQuestions.value.f + nQuestions.value.a],
-    i: [nQuestions.value.f + nQuestions.value.a, nQuestions.value.f + nQuestions.value.a + nQuestions.value.i],
-    r: [nQuestions.value.f + nQuestions.value.a + nQuestions.value.i, nQuestions.value.total]
+    f: [
+      0,
+      nQuestions.value.f
+    ],
+    a: [
+      nQuestions.value.f,
+      nQuestions.value.f + nQuestions.value.a
+    ],
+    i: [
+      nQuestions.value.f + nQuestions.value.a,
+      nQuestions.value.f + nQuestions.value.a + nQuestions.value.i
+    ],
+    r: [
+      nQuestions.value.f + nQuestions.value.a + nQuestions.value.i,
+      nQuestions.value.total
+    ]
   };
 });
 const progress = computed(() => {
@@ -76,379 +89,367 @@ const questions = [
   {
     answers: [
       {
-        id: "F:q0:a0",
+        id: "f:q0:a0",
         score: 0,
         text: "No identifier"
       },
       {
-        id: "F:q0:a1",
+        id: "f:q0:a1",
         score: 1,
         text: "Local identifier"
       },
       {
-        id: "F:q0:a2",
+        id: "f:q0:a2",
         score: 3,
         text: "Web address (URL)"
       },
       {
-        id: "F:q0:a3",
+        id: "f:q0:a3",
         score: 8,
         text: "Globally Unique, citable and persistent (e.g. DOI, PURL, ARK or Handle)"
       }
     ],
-    aspect: "F",
+    aspect: "f",
     guidance: "",
-    id: "F:q0",
+    id: "f:q0",
     principle: "",
     text: "Does the dataset have any identifiers assigned?"
   },
   {
     answers: [
       {
-        id: "F:q1:a0",
+        id: "f:q1:a0",
         score: 0,
         text: "No"
       },
       {
-        id: "F:q1:a1",
+        id: "f:q1:a1",
         score: 1,
         text: "Yes"
       }
     ],
-    aspect: "F",
+    aspect: "f",
     guidance: "",
-    id: "F:q1",
+    id: "f:q1",
     principle: "",
     text: "Is the dataset identifier included in all metadata records/files describing the data?"
   },
   {
     answers: [
       {
-        id: "F:q2:a0",
+        id: "f:q2:a0",
         score: 0,
         text: "The data is not described."
       },
       {
-        id: "F:q2:a1",
+        id: "f:q2:a1",
         score: 2,
         text: "Brief title and description."
       },
       {
-        id: "F:q2:a2",
+        id: "f:q2:a2",
         score: 3,
         text: "Comprehensively, but in a text-based, non-standard format."
       },
       {
-        id: "F:q2:a3",
+        id: "f:q2:a3",
         score: 4,
         text: "Comprehensively (see suggestion) using a recognised formal machine-readable metadata schema."
       }
     ],
-    aspect: "F",
+    aspect: "f",
     guidance: "",
-    id: "F:q2",
+    id: "f:q2",
     principle: "",
     text: "How is the data described with metadata?"
   },
   {
     answers: [
       {
-        id: "F:q3:a0",
+        id: "f:q3:a0",
         score: 0,
         text: "The data is not described in any repository"
       },
       {
-        id: "F:q3:a1",
+        id: "f:q3:a1",
         score: 2,
         text: "Local institutional repository"
       },
       {
-        id: "F:q3:a2",
+        id: "f:q3:a2",
         score: 2,
         text: "Domain-specific repository"
       },
       {
-        id: "F:q3:a3",
+        id: "f:q3:a3",
         score: 2,
         text: "Generalist public repository"
       },
       {
-        id: "F:q3:a4",
+        id: "f:q3:a4",
         score: 4,
         text: "Data is in one place but discoverable through several registries"
       }
     ],
-    aspect: "F",
+    aspect: "f",
     guidance: "",
-    id: "F:q3",
+    id: "f:q3",
     principle: "",
     text: "What type of repository or registry is the metadata record in?"
   },
   {
     answers: [
       {
-        id: "A:q0:a0",
+        id: "a:q0:a0",
         score: 0,
         text: "No access to data or metadata"
       },
       {
-        id: "A:q0:a1",
+        id: "a:q0:a1",
         score: 1,
         text: "Access to metadata only"
       },
       {
-        id: "A:q0:a2",
+        id: "a:q0:a2",
         score: 2,
         text: "Unspecified conditional access e.g. contact the data custodian for access"
       },
       {
-        id: "A:q0:a3",
+        id: "a:q0:a3",
         score: 3,
         text: "Embargoed access after a specified date"
       },
       {
-        id: "A:q0:a4",
+        id: "a:q0:a4",
         score: 4,
         text: "A de-identified / modified subset of the data is publicly accessible"
       },
       {
-        id: "A:q0:a5",
+        id: "a:q0:a5",
         score: 5,
         text: "Fully accessible to persons who meet explicitly stated conditions, e.g. ethics approval for sensitive data"
       },
       {
-        id: "A:q0:a6",
+        id: "a:q0:a6",
         score: 5,
         text: "Publicly accessible"
       }
     ],
-    aspect: "A",
+    aspect: "a",
     guidance: "",
-    id: "A:q0",
+    id: "a:q0",
     principle: "",
     text: "How accessible is the data?"
   },
   {
     answers: [
       {
-        id: "A:q1:a0",
+        id: "a:q1:a0",
         score: 0,
         text: "No access to data"
       },
       {
-        id: "A:q1:a1",
+        id: "a:q1:a1",
         score: 1,
         text: "By individual arrangement"
       },
       {
-        id: "A:q1:a2",
+        id: "a:q1:a2",
         score: 2,
         text: "File download from online location"
       },
       {
-        id: "A:q1:a3",
+        id: "a:q1:a3",
         score: 3,
         text: "Non-standard web service (e.g. OpenAPI/Swagger/informal API)"
       },
       {
-        id: "A:q1:a4",
+        id: "a:q1:a4",
         score: 4,
         text: "Standard web service API (e.g. OGC)"
       }
     ],
-    aspect: "A",
+    aspect: "a",
     guidance: "",
-    id: "A:q1",
+    id: "a:q1",
     principle: "",
     text: "Is the data available online without requiring specialised protocols or tools once access has been approved?"
   },
   {
     answers: [
       {
-        id: "A:q2:a0",
+        id: "a:q2:a0",
         score: 0,
         text: "No"
       },
       {
-        id: "A:q2:a1",
+        id: "a:q2:a1",
         score: 0,
         text: "Unsure"
       },
       {
-        id: "A:q2:a2",
+        id: "a:q2:a2",
         score: 1,
         text: "Yes"
       }
     ],
-    aspect: "A",
+    aspect: "a",
     guidance: "",
-    id: "A:q2",
+    id: "a:q2",
     principle: "",
     text: "Will the metadata record be available even if the data is no longer available?"
   },
   {
     answers: [
       {
-        id: "I:q0:a0",
+        id: "i:q0:a0",
         score: 0,
         text: "Mostly in a proprietary format"
       },
       {
-        id: "I:q0:a1",
+        id: "i:q0:a1",
         score: 1,
         text: "In a structured, open standard, non-machine-readable format"
       },
       {
-        id: "I:q0:a2",
+        id: "i:q0:a2",
         score: 2,
         text: "In a structured, open standard, machine-readable format"
       }
     ],
-    aspect: "I",
+    aspect: "i",
     guidance: "",
-    id: "I:q0",
+    id: "i:q0",
     principle: "",
     text: "What (file) format(s) is the data available in?"
   },
   {
     answers: [
       {
-        id: "I:q1:a0",
+        id: "i:q1:a0",
         score: 0,
         text: "Data elements not described"
       },
       {
-        id: "I:q1:a1",
+        id: "i:q1:a1",
         score: 1,
         text: "No standards have been applied in the description of data elements"
       },
       {
-        id: "I:q1:a2",
+        id: "i:q1:a2",
         score: 2,
         text: "Standardised vocabularies/ontologies/schema without global identifiers"
       },
       {
-        id: "I:q1:a3",
+        id: "i:q1:a3",
         score: 3,
         text: "Standardised open and universal using resolvable global identifiers linking to explanations"
       }
     ],
-    aspect: "I",
+    aspect: "i",
     guidance: "",
-    id: "I:q1",
+    id: "i:q1",
     principle: "",
     text: "What best describes the types of vocabularies/ontologies/tagging schemas used to define the data elements?"
   },
   {
     answers: [
       {
-        id: "I:q2:a0",
+        id: "i:q2:a0",
         score: 0,
         text: "There are no links to other metadata"
       },
       {
-        id: "I:q2:a1",
+        id: "i:q2:a1",
         score: 2,
         text: "The metadata record includes URI links to related metadata, data and definitions"
       },
       {
-        id: "I:q2:a2",
+        id: "i:q2:a2",
         score: 3,
         text: "Metadata is represented in a machine readable format, e.g. in a linked data format such as Resource Description Framework (RDF)."
       }
     ],
-    aspect: "I",
+    aspect: "i",
     guidance: "",
-    id: "I:q2",
+    id: "i:q2",
     principle: "",
     text: "How is the metadata linked to other data and metadata (to enhance context and clearly indicate relationships)?"
   },
   {
     answers: [
       {
-        id: "R:q0:a0",
+        id: "r:q0:a0",
         score: 0,
         text: "No license"
       },
       {
-        id: "R:q0:a1",
+        id: "r:q0:a1",
         score: 2,
         text: "Non-standard text-based license"
       },
       {
-        id: "R:q0:a2",
+        id: "r:q0:a2",
         score: 3,
         text: "Non-standard machine-readable license (clearly indicating under what conditions the data may be reused)"
       },
       {
-        id: "R:q0:a3",
+        id: "r:q0:a3",
         score: 3,
         text: "Standard text based license"
       },
       {
-        id: "R:q0:a4",
+        id: "r:q0:a4",
         score: 4,
         text: "Standard machine-readable license (e.g. Creative Commons)"
       }
     ],
-    aspect: "R",
+    aspect: "r",
     guidance: "",
-    id: "R:q0",
+    id: "r:q0",
     principle: "",
     text: "Which of the following best describes the license/usage rights attached to the data?"
   },
   {
     answers: [
       {
-        id: "R:q1:a0",
+        id: "r:q1:a0",
         score: 0,
         text: "No provenance information is recorded"
       },
       {
-        id: "R:q1:a1",
+        id: "r:q1:a1",
         score: 1,
         text: "Partially recorded"
       },
       {
-        id: "R:q1:a2",
+        id: "r:q1:a2",
         score: 2,
         text: "Fully recorded in a text format"
       },
       {
-        id: "R:q1:a3",
+        id: "r:q1:a3",
         score: 3,
         text: "Fully recorded in a machine readable format"
       }
     ],
-    aspect: "R",
+    aspect: "r",
     guidance: "",
-    id: "R:q1",
+    id: "r:q1",
     principle: "",
     text: "How much provenance information has been captured to facilitate data reuse?"
   }
 ];
-const ChecklistAbout_vue_vue_type_style_index_0_scoped_8b774fd4_lang = "";
+const ChecklistAbout_vue_vue_type_style_index_0_scoped_7d371f09_lang = "";
 const _sfc_main$7 = {};
-const _withScopeId$2 = (n) => (pushScopeId("data-v-8b774fd4"), n = n(), popScopeId(), n);
-const _hoisted_1$6 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createBaseVNode("div", { class: "logos" }, [
-  /* @__PURE__ */ createBaseVNode("img", {
-    class: "logo",
-    src: _imports_0,
-    alt: "nlesc logo"
-  }),
-  /* @__PURE__ */ createBaseVNode("img", {
-    class: "logo",
-    src: _imports_1,
-    alt: "ardc logo"
-  })
-], -1));
+const _hoisted_1$6 = /* @__PURE__ */ createStaticVNode('<div class="logos" data-v-7d371f09><a href="https://esciencecenter.nl" target="_blank" data-v-7d371f09><img class="logo" src="' + _imports_0 + '" alt="nlesc logo" data-v-7d371f09></a><a href="https://ardc.edu.au" target="_blank" data-v-7d371f09><img class="logo" src="' + _imports_1 + '" alt="ardc logo" data-v-7d371f09></a></div>', 1);
 function _sfc_render(_ctx, _cache) {
   return openBlock(), createElementBlock("footer", null, [
     _hoisted_1$6,
     createBaseVNode("p", null, toDisplayString("This checklist is a collaborative effort by Netherlands eScience Center and Australian Research Data Commons."), 1)
   ]);
 }
-const ChecklistAbout = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render], ["__scopeId", "data-v-8b774fd4"]]);
+const ChecklistAbout = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render], ["__scopeId", "data-v-7d371f09"]]);
 const _sfc_main$6 = /* @__PURE__ */ defineComponent({
   __name: "ChecklistLink",
   setup(__props) {
@@ -492,14 +493,14 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
           ]),
           _: 1
         }, 8, ["href"]),
-        createTextVNode(", consider upgrading. ")
+        createTextVNode(" , consider upgrading. ")
       ])) : createCommentVNode("", true);
     };
   }
 });
-const BannerVersions_vue_vue_type_style_index_0_scoped_698dc52e_lang = "";
-const BannerVersions = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-698dc52e"]]);
-const _withScopeId$1 = (n) => (pushScopeId("data-v-0fb3477e"), n = n(), popScopeId(), n);
+const BannerVersions_vue_vue_type_style_index_0_scoped_924edf38_lang = "";
+const BannerVersions = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-924edf38"]]);
+const _withScopeId$1 = (n) => (pushScopeId("data-v-a6182130"), n = n(), popScopeId(), n);
 const _hoisted_1$4 = { class: "home" };
 const _hoisted_2$3 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("svg", {
   width: "128",
@@ -516,13 +517,13 @@ const _hoisted_2$3 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ create
       id: "outline",
       transform: "matrix(1.032058,0,0,1.032058,-2.0517123,-5.997519)"
     }, [
-      /* @__PURE__ */ createBaseVNode("path", { d: "m 64,13.845703 -57.4746094,41.068359 4.6894534,6.5625 7.96289,-5.689453 V 121.80078 H 49.626953 V 91.585938 H 65.746094 V 121.80078 H 108.82227 V 55.787109 l 7.96289,5.689453 4.68945,-6.5625 C 114.12178,49.660112 106.76885,44.406295 99.416016,39.152344 V 17.582031 H 83.607422 V 27.855469 C 77.071721,23.185398 70.535701,18.515774 64,13.845703 Z m 0,15.738281 34.822266,24.882813 V 111.80078 H 75.746094 V 81.585938 H 39.626953 V 111.80078 H 29.177734 V 54.466797 Z" }),
+      /* @__PURE__ */ createBaseVNode("path", { d: "m 64,13.845703 -57.4746094,41.068359 4.6894534,6.5625\n                            7.96289,-5.689453 V 121.80078 H 49.626953 V 91.585938\n                            H 65.746094 V 121.80078 H 108.82227 V 55.787109 l\n                            7.96289,5.689453 4.68945,-6.5625 C 114.12178,49.660112\n                            106.76885,44.406295 99.416016,39.152344 V 17.582031 H\n                            83.607422 V 27.855469 C 77.071721,23.185398 70.535701,18.515774\n                            64,13.845703 Z m 0,15.738281 34.822266,24.882813 V 111.80078\n                            H 75.746094 V 81.585938 H 39.626953 V 111.80078 H 29.177734\n                            V 54.466797 Z" }),
       /* @__PURE__ */ createBaseVNode("g", null, [
         /* @__PURE__ */ createBaseVNode("path", { d: "m 89.706841,22.049501 h 5.808742 v 12.368457 h -5.808742 z" })
       ])
     ]),
     /* @__PURE__ */ createBaseVNode("path", {
-      d: "M 63.999995,24.525796 99.938597,50.206302 V 109.3783 H 76.122651 V 78.194827 H 38.845604 V 109.3783 H 28.061403 V 50.206302 Z",
+      d: "M 63.999995,24.525796 99.938597,50.206302 V 109.3783 H\n                        76.122651 V 78.194827 H 38.845604 V 109.3783 H 28.061403 V\n                        50.206302 Z",
       id: "inside"
     })
   ])
@@ -555,8 +556,8 @@ const _sfc_main$4 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const ChecklistHeader_vue_vue_type_style_index_0_scoped_0fb3477e_lang = "";
-const ChecklistHeader = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-0fb3477e"]]);
+const ChecklistHeader_vue_vue_type_style_index_0_scoped_a6182130_lang = "";
+const ChecklistHeader = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-a6182130"]]);
 const _hoisted_1$3 = { class: "footer" };
 const _hoisted_2$2 = /* @__PURE__ */ createStaticVNode('<div class="inner" data-v-15734493><div class="another-inner" data-v-15734493><div class="progressbars" data-v-15734493><div class="labels" data-v-15734493><div class="row" data-v-15734493><div class="label" data-v-15734493> Findable </div></div><div class="row" data-v-15734493><div class="label" data-v-15734493> Accessible </div></div><div class="row" data-v-15734493><div class="label" data-v-15734493> Interoperable </div></div><div class="row" data-v-15734493><div class="label" data-v-15734493> Reusable </div></div></div><div class="bars" data-v-15734493><div class="row" data-v-15734493><div class="bar bar-bg" data-v-15734493><div class="bar blue" data-v-15734493></div></div></div><div class="row" data-v-15734493><div class="bar bar-bg" data-v-15734493><div class="bar pink" data-v-15734493></div></div></div><div class="row" data-v-15734493><div class="bar bar-bg" data-v-15734493><div class="bar yellow" data-v-15734493></div></div></div><div class="row" data-v-15734493><div class="bar bar-bg" data-v-15734493><div class="bar purple" data-v-15734493></div></div></div></div></div></div></div>', 1);
 const _hoisted_3$2 = [
@@ -629,8 +630,8 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const ChecklistAnswer_vue_vue_type_style_index_0_scoped_4b3ab247_lang = "";
-const ChecklistAnswer = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-4b3ab247"]]);
+const ChecklistAnswer_vue_vue_type_style_index_0_scoped_a5aa5975_lang = "";
+const ChecklistAnswer = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-a5aa5975"]]);
 const _hoisted_1$1 = { class: "question" };
 const _hoisted_2 = { class: "question-index shared" };
 const _hoisted_3 = { class: "shared" };
@@ -672,17 +673,17 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
 });
 const ChecklistQuestion_vue_vue_type_style_index_0_scoped_fda7e538_lang = "";
 const ChecklistQuestion = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-fda7e538"]]);
-const _withScopeId = (n) => (pushScopeId("data-v-8a7c0ead"), n = n(), popScopeId(), n);
+const _withScopeId = (n) => (pushScopeId("data-v-bfece34d"), n = n(), popScopeId(), n);
 const _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("h1", null, "FAIR for data self-assessment checklist", -1));
 const _sfc_main = /* @__PURE__ */ defineComponent({
   __name: "index.page",
   setup(__props) {
     setQuestions(questions);
     const getAspectFullname = (aspect) => ({
-      F: "Findable",
-      A: "Accessible",
-      I: "Interoperable",
-      R: "Reusable"
+      f: "Findable",
+      a: "Accessible",
+      i: "Interoperable",
+      r: "Reusable"
     })[aspect];
     const linkToSoftwareChecklist = `${"/ssg/"}software/${latest.value.software}`;
     return (_ctx, _cache) => {
@@ -693,17 +694,17 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
           createVNode(BannerVersions),
           unref(nQuestions).total > 0 ? (openBlock(), createElementBlock(Fragment, { key: 0 }, [
             createBaseVNode("p", null, [
-              createTextVNode("Answer the " + toDisplayString(unref(nQuestions).total) + " questions below to assess your data's FAIRness, or switch to the checklist for ", 1),
+              createTextVNode(" Answer the " + toDisplayString(unref(nQuestions).total) + " questions below to assess your data's FAIRness, or switch to the checklist for ", 1),
               createVNode(ChecklistLink, { href: linkToSoftwareChecklist }, {
                 default: withCtx(() => [
                   createTextVNode("software")
                 ]),
                 _: 1
               }),
-              createTextVNode(" instead.")
+              createTextVNode(" instead. ")
             ]),
-            (openBlock(), createElementBlock(Fragment, null, renderList(["F", "A", "I", "R"], (aspect) => {
-              return createBaseVNode("div", { key: aspect }, [
+            (openBlock(true), createElementBlock(Fragment, null, renderList(unref(aspects), (aspect) => {
+              return openBlock(), createElementBlock("div", { key: aspect }, [
                 createBaseVNode("h2", null, toDisplayString(getAspectFullname(aspect)), 1),
                 (openBlock(true), createElementBlock(Fragment, null, renderList(unref(questions$1).filter((q) => q.aspect === aspect), (question) => {
                   return openBlock(), createBlock(ChecklistQuestion, {
@@ -712,7 +713,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
                   }, null, 8, ["question"]);
                 }), 128))
               ]);
-            }), 64)),
+            }), 128)),
             createVNode(ProgressBars, { progress: unref(progress) }, null, 8, ["progress"]),
             createVNode(ChecklistAbout)
           ], 64)) : (openBlock(), createElementBlock(Fragment, { key: 1 }, [
@@ -723,8 +724,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const index_page_vue_vue_type_style_index_0_scoped_8a7c0ead_lang = "";
-const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-8a7c0ead"]]);
+const index_page_vue_vue_type_style_index_0_scoped_bfece34d_lang = "";
+const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-bfece34d"]]);
 export {
   index_page as default
 };

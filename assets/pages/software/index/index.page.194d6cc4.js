@@ -1,5 +1,5 @@
-import { l as latest } from "../../../chunk-276c4efb.js";
-import { d as defineComponent, o as onMounted, t as createElementBlock, u as openBlock } from "../../../chunk-4828f769.js";
+import { l as latest } from "../../../chunk-6660a69c.js";
+import { d as defineComponent, o as onMounted, t as createElementBlock, u as openBlock } from "../../../chunk-34b0814a.js";
 const app = "";
 const _sfc_main = /* @__PURE__ */ defineComponent({
   __name: "index.page",

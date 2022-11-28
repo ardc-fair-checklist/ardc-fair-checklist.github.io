@@ -1,21 +1,21 @@
 
-img.logo[data-v-6fb89924] {
+img.logo[data-v-2ba1b878] {
     height: 3em;
     margin-left: 2em;
     margin-right: 2em;
 }
-.logos[data-v-6fb89924] {
+.logos[data-v-2ba1b878] {
     display: flex;
     justify-content: center;
     margin-bottom: 3em;
 }
-footer[data-v-6fb89924] {
+footer[data-v-2ba1b878] {
     padding-left: 3em;
     padding-right: 3em;
     padding-top: 5em;
     padding-bottom: 6em;
 }
-footer p[data-v-6fb89924] {
+footer p[data-v-2ba1b878] {
     width: 75%;
     text-align: center;
     margin: 0 auto;
@@ -54,11 +54,11 @@ a[data-v-058ee869]:hover {
     }
 }
 
-main[data-v-fc835bc5] {
+main[data-v-593d37f8] {
     background-color: var(--black);
     color: var(--white);
 }
-h1[data-v-fc835bc5] {
+h1[data-v-593d37f8] {
     line-height: 1.2em;
     margin-top: 3em;
 }
