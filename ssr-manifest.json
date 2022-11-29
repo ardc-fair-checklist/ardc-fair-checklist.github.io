@@ -33,10 +33,10 @@
   "pages/data/v0.1/ProgressBars.vue?vue&type=style&index=0&scoped=15734493&lang.css": [],
   "pages/data/v0.1/ProgressBars.vue": [],
   "pages/data/v0.1/ChecklistAnswer.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/data/v0.1/ChecklistAnswer.vue?vue&type=style&index=0&scoped=a5aa5975&lang.css": [],
+  "pages/data/v0.1/ChecklistAnswer.vue?vue&type=style&index=0&scoped=b44595d7&lang.css": [],
   "pages/data/v0.1/ChecklistAnswer.vue": [],
   "pages/data/v0.1/ChecklistQuestion.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/data/v0.1/ChecklistQuestion.vue?vue&type=style&index=0&scoped=fda7e538&lang.css": [],
+  "pages/data/v0.1/ChecklistQuestion.vue?vue&type=style&index=0&scoped=9c1d54a2&lang.css": [],
   "pages/data/v0.1/ChecklistQuestion.vue": [],
   "pages/data/v0.1/index.page.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/data/v0.1/index.page.vue?vue&type=style&index=0&scoped=bfece34d&lang.css": [],
@@ -64,10 +64,10 @@
   "pages/software/v0.1/ChecklistHeader.vue?vue&type=style&index=0&scoped=db88946f&lang.css": [],
   "pages/software/v0.1/ChecklistHeader.vue": [],
   "pages/software/v0.1/ChecklistAnswer.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/software/v0.1/ChecklistAnswer.vue?vue&type=style&index=0&scoped=509d6ca4&lang.css": [],
+  "pages/software/v0.1/ChecklistAnswer.vue?vue&type=style&index=0&scoped=5fd48f14&lang.css": [],
   "pages/software/v0.1/ChecklistAnswer.vue": [],
   "pages/software/v0.1/ChecklistQuestion.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/software/v0.1/ChecklistQuestion.vue?vue&type=style&index=0&scoped=17134e0e&lang.css": [],
+  "pages/software/v0.1/ChecklistQuestion.vue?vue&type=style&index=0&scoped=6bdebae3&lang.css": [],
   "pages/software/v0.1/ChecklistQuestion.vue": [],
   "pages/software/v0.1/ProgressBars.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/software/v0.1/ProgressBars.vue?vue&type=style&index=0&scoped=9bb14f31&lang.css": [],
@@ -131,8 +131,8 @@
     "/ssg/assets/index.page.ec3ad890.css",
     "/ssg/assets/global.b082e789.css"
   ],
-  "index.page.b8c16416.js": [
-    "/ssg/assets/index.page.bd0bc192.css",
+  "index.page.ee90ed60.js": [
+    "/ssg/assets/index.page.c5b2d2cf.css",
     "/ssg/assets/global.b082e789.css"
   ],
   "index.page.a4dc1682.js": [
@@ -143,8 +143,8 @@
     "/ssg/assets/index.page.21e1d615.css",
     "/ssg/assets/global.b082e789.css"
   ],
-  "index.page.36ea24b6.js": [
-    "/ssg/assets/index.page.7dc5ae2a.css",
+  "index.page.7a863b2c.js": [
+    "/ssg/assets/index.page.4e244184.css",
     "/ssg/assets/global.b082e789.css"
   ],
   "_error.page.de708dd4.js": [],

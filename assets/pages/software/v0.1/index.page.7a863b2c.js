@@ -471,8 +471,8 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const ChecklistAnswer_vue_vue_type_style_index_0_scoped_509d6ca4_lang = "";
-const ChecklistAnswer = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-509d6ca4"]]);
+const ChecklistAnswer_vue_vue_type_style_index_0_scoped_5fd48f14_lang = "";
+const ChecklistAnswer = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-5fd48f14"]]);
 const _hoisted_1$2 = { class: "question" };
 const _hoisted_2$1 = { class: "question-index shared" };
 const _hoisted_3$1 = { class: "shared" };
@@ -512,8 +512,8 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const ChecklistQuestion_vue_vue_type_style_index_0_scoped_17134e0e_lang = "";
-const ChecklistQuestion = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-17134e0e"]]);
+const ChecklistQuestion_vue_vue_type_style_index_0_scoped_6bdebae3_lang = "";
+const ChecklistQuestion = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-6bdebae3"]]);
 const _hoisted_1$1 = { class: "footer" };
 const _hoisted_2 = { class: "inner" };
 const _hoisted_3 = { class: "another-inner" };

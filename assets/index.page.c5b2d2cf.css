@@ -253,7 +253,7 @@ svg:hover #outline[data-v-a6182130] {
 }
 
 
-.answer[data-v-a5aa5975] {
+.answer[data-v-b44595d7] {
     padding: 0.3em 0.2em;
     border: 2px solid var(--dark);
     border-radius: 0.25em;
@@ -262,27 +262,27 @@ svg:hover #outline[data-v-a6182130] {
     flex-direction: row;
     flex-wrap: nowrap;
 }
-*[data-v-a5aa5975]:focus:not(.focus-visible) {
+*[data-v-b44595d7]:focus:not(.focus-visible) {
     /*  https://css-tricks.com/keyboard-only-focus-styles/  */
     outline: none;
 }
-.answer[data-v-a5aa5975]:hover, .answer[data-v-a5aa5975]:focus, .answer[data-v-a5aa5975]:active, .answer[data-v-a5aa5975]:focus-visible {
+.answer[data-v-b44595d7]:hover, .answer[data-v-b44595d7]:focus, .answer[data-v-b44595d7]:active, .answer[data-v-b44595d7]:focus-visible {
     border-color: var(--ardc-blue);
     color: var(--white);
 }
-.answer-radiobutton[data-v-a5aa5975] {
+.answer-radiobutton[data-v-b44595d7] {
     width: min-content;
 }
-.answer-points[data-v-a5aa5975] {
+.answer-points[data-v-b44595d7] {
     width: min-content;
-    /*display: none;*/
+    display: none;
 }
-.answer-text[data-v-a5aa5975] {
+.answer-text[data-v-b44595d7] {
     width: 100%;
 }
 
 
-fieldset[data-v-fda7e538] {
+fieldset[data-v-9c1d54a2] {
     border-style: none;
     flex-grow: 1;
     margin-inline-start: 0px;
@@ -292,12 +292,12 @@ fieldset[data-v-fda7e538] {
     padding-inline-end: 0em;
     padding-block-end: 0em;
 }
-legend[data-v-fda7e538] {
+legend[data-v-9c1d54a2] {
     padding-inline-start: 0px;
     padding-inline-end: 0px;
     margin-bottom: 1em;
 }
-.question[data-v-fda7e538] {
+.question[data-v-9c1d54a2] {
     background-color: var(--dark);
     border-radius: 0.25em;
     border: 2px solid #444;
@@ -312,20 +312,20 @@ legend[data-v-fda7e538] {
     padding-top: 1em;
 }
 @media screen and (max-width: 41.5em) {
-.question[data-v-fda7e538] {
+.question[data-v-9c1d54a2] {
         padding-left: 1em;
         padding-right: 1em;
 }
 }
-.question-index[data-v-fda7e538] {
+.question-index[data-v-9c1d54a2] {
     min-width: 2em;
 }
-.question-guidance[data-v-fda7e538] {
+.question-guidance[data-v-9c1d54a2] {
     margin-bottom: 1em;
     text-align: justify;
-    /*display: none;*/
+    display: none;
 }
-.shared[data-v-fda7e538] {
+.shared[data-v-9c1d54a2] {
     /* shared styles for legend and .question-index */
     font-weight: bold;
     line-height: 1.6em;

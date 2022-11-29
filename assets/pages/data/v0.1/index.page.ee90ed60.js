@@ -630,8 +630,8 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const ChecklistAnswer_vue_vue_type_style_index_0_scoped_a5aa5975_lang = "";
-const ChecklistAnswer = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-a5aa5975"]]);
+const ChecklistAnswer_vue_vue_type_style_index_0_scoped_b44595d7_lang = "";
+const ChecklistAnswer = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-b44595d7"]]);
 const _hoisted_1$1 = { class: "question" };
 const _hoisted_2 = { class: "question-index shared" };
 const _hoisted_3 = { class: "shared" };
@@ -671,8 +671,8 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const ChecklistQuestion_vue_vue_type_style_index_0_scoped_fda7e538_lang = "";
-const ChecklistQuestion = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-fda7e538"]]);
+const ChecklistQuestion_vue_vue_type_style_index_0_scoped_9c1d54a2_lang = "";
+const ChecklistQuestion = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-9c1d54a2"]]);
 const _withScopeId = (n) => (pushScopeId("data-v-bfece34d"), n = n(), popScopeId(), n);
 const _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("h1", null, "FAIR for data self-assessment checklist", -1));
 const _sfc_main = /* @__PURE__ */ defineComponent({
