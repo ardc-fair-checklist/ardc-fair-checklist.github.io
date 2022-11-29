@@ -34,7 +34,7 @@ export const nQuestions = computed(() => {
     };
 });
 
-export const nPointsMax = computed(() => {
+const nPointsMax = computed(() => {
     const derivePointsMax = (aspect: Aspect | '*') => {
         let selectedQuestions = state.value.questions;
         if (aspect !== '*') {
@@ -53,7 +53,7 @@ export const nPointsMax = computed(() => {
     };
 });
 
-export const slices = computed(() => {
+const slices = computed(() => {
     type Slices = {
         f: [number, number]
         a: [number, number]
