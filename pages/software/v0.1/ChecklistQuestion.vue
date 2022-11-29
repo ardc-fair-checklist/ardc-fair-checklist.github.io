@@ -94,7 +94,7 @@ legend {
 .question-guidance {
     margin-bottom: 1em;
     text-align: justify;
-    /*display: none;*/
+    display: none;
 }
 .shared {
     /* shared styles for legend and .question-index */

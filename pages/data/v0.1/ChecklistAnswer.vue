@@ -70,7 +70,7 @@ defineProps<PropType>();
 }
 .answer-points {
     width: min-content;
-    /*display: none;*/
+    display: none;
 }
 .answer-text {
     width: 100%;
