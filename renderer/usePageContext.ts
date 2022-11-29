@@ -5,7 +5,7 @@ import { inject } from 'vue';
 import type { App, InjectionKey } from 'vue';
 import { PageContext } from './types';
 
-const key: InjectionKey<PageContext> = Symbol('injection key');
+const key: InjectionKey<PageContext> = Symbol('description');
 
 export const usePageContext = () => {
     const pageContext = inject(key);
