@@ -1,0 +1,197 @@
+{
+    "questions": [
+        {
+            "answers": [
+                {
+                    "id": "f:q0:a0",
+                    "score": 0,
+                    "text": "answer text for aspect f, question 0, answer 0"
+                },
+                {
+                    "id": "f:q0:a1",
+                    "score": 1,
+                    "text": "answer text for aspect f, question 0, answer 1"
+                },
+                {
+                    "id": "f:q0:a2",
+                    "score": 10,
+                    "text": "answer text for aspect f, question 0, answer 2"
+                }
+            ],
+            "aspect": "f",
+            "guidance": "guidance text for aspect f, question 0",
+            "id": "f:q0",
+            "principle": "",
+            "text": "questions text for aspect f, question 0"
+        },
+        {
+            "answers": [
+                {
+                    "id": "f:q1:a0",
+                    "score": 0,
+                    "text": "answer text for aspect f, question 1, answer 0"
+                },
+                {
+                    "id": "f:q1:a1",
+                    "score": 1,
+                    "text": "answer text for aspect f, question 1, answer 1"
+                },
+                {
+                    "id": "f:q1:a2",
+                    "score": 10,
+                    "text": "answer text for aspect f, question 1, answer 2"
+                }
+            ],
+            "aspect": "f",
+            "guidance": "guidance text for aspect f, question 1",
+            "id": "f:q1",
+            "principle": "",
+            "text": "answer text for aspect f, question 1"
+        },
+        {
+            "answers": [
+                {
+                    "id": "a:q0:a0",
+                    "score": 0,
+                    "text": "answer text for aspect a, question 0, answer 0"
+                },
+                {
+                    "id": "a:q0:a1",
+                    "score": 1,
+                    "text": "answer text for aspect a, question 0, answer 1"
+                },
+                {
+                    "id": "a:q0:a2",
+                    "score": 2,
+                    "text": "answer text for aspect a, question 0, answer 2"
+                }
+            ],
+            "aspect": "a",
+            "guidance": "guidance text for aspect a, question 0",
+            "id": "a:q0",
+            "principle": "",
+            "text": "question text for aspect a, question 0"
+        },
+        {
+            "answers": [
+                {
+                    "id": "a:q1:a0",
+                    "score": 0,
+                    "text": "answer text for aspect a, question 1, answer 0"
+                },
+                {
+                    "id": "a:q1:a1",
+                    "score": 1,
+                    "text": "answer text for aspect a, question 1, answer 1"
+                },
+                {
+                    "id": "a:q1:a2",
+                    "score": 2,
+                    "text": "answer text for aspect a, question 1, answer 2"
+                }
+            ],
+            "aspect": "a",
+            "guidance": "guidance text for aspect a, question 1",
+            "id": "a:q1",
+            "principle": "",
+            "text": "questions text for aspect a, question 1"
+        },
+        {
+            "answers": [
+                {
+                    "id": "i:q0:a0",
+                    "score": 0,
+                    "text": "answer text for aspect i, question 0, answer 0"
+                },
+                {
+                    "id": "i:q0:a1",
+                    "score": 1,
+                    "text": "answer text for aspect i, question 0, answer 1"
+                },
+                {
+                    "id": "i:q0:a2",
+                    "score": 2,
+                    "text": "answer text for aspect i, question 0, answer 2"
+                }
+            ],
+            "aspect": "i",
+            "guidance": "guidance text for aspect i, question 0",
+            "id": "i:q0",
+            "principle": "",
+            "text": "question text for aspect i, question 0"
+        },
+        {
+            "answers": [
+                {
+                    "id": "i:q1:a0",
+                    "score": 0,
+                    "text": "answer text for aspect i, question 1, answer 0"
+                },
+                {
+                    "id": "i:q1:a1",
+                    "score": 1,
+                    "text": "answer text for aspect i, question 1, answer 1"
+                },
+                {
+                    "id": "i:q1:a2",
+                    "score": 2,
+                    "text": "answer text for aspect i, question 1, answer 2"
+                }
+            ],
+            "aspect": "i",
+            "guidance": "guidance text for aspect i, question 1",
+            "id": "i:q1",
+            "principle": "",
+            "text": "question text for aspect i, question 1"
+        },
+        {
+            "answers": [
+                {
+                    "id": "r:q0:a0",
+                    "score": 0,
+                    "text": "answer text for aspect r, question 0, answer 0"
+                },
+                {
+                    "id": "r:q0:a1",
+                    "score": 2,
+                    "text": "answer text for aspect r, question 0, answer 1"
+                },
+                {
+                    "id": "r:q0:a2",
+                    "score": 3,
+                    "text": "answer text for aspect r, question 0, answer 2"
+                }
+            ],
+            "aspect": "r",
+            "guidance": "guidance text for aspect r, question 0",
+            "id": "r:q0",
+            "principle": "",
+            "text": "question text for aspect r, question 0"
+        },
+        {
+            "answers": [
+                {
+                    "id": "r:q1:a0",
+                    "score": 0,
+                    "text": "answer text for aspect r, question 1, answer 0"
+                },
+                {
+                    "id": "r:q1:a1",
+                    "score": 1,
+                    "text": "answer text for aspect r, question 1, answer 1"
+                },
+                {
+                    "id": "r:q1:a2",
+                    "score": 2,
+                    "text": "answer text for aspect r, question 1, answer 2"
+                }
+            ],
+            "aspect": "r",
+            "guidance": "guidance text for aspect r, question 1",
+            "id": "r:q1",
+            "principle": "",
+            "text": "question text for aspect r, question 1"
+        }
+    ],
+    "version": "0.1"
+}
