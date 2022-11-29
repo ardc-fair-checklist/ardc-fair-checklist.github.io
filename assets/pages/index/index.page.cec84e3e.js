@@ -1,7 +1,7 @@
 import { l as latest } from "../../chunk-6660a69c.js";
 import { _ as _export_sfc, a as _imports_0, b as _imports_1 } from "../../chunk-55859c7c.js";
 import { u as openBlock, t as createElementBlock, x as createStaticVNode, d as defineComponent, y as renderSlot, z as normalizeClass, A as unref, v as createBaseVNode, B as createTextVNode, C as createVNode, D as withCtx, F as Fragment, E as pushScopeId, G as popScopeId } from "../../chunk-34b0814a.js";
-import { u as usePageContext } from "../../chunk-5d891244.js";
+import { u as usePageContext } from "../../chunk-3ae7c80c.js";
 const ChecklistFooter_vue_vue_type_style_index_0_scoped_2ba1b878_lang = "";
 const _sfc_main$2 = {};
 const _hoisted_1$1 = /* @__PURE__ */ createStaticVNode('<div class="logos" data-v-2ba1b878><a href="https://esciencecenter.nl" target="_blank" data-v-2ba1b878><img class="logo" src="' + _imports_0 + '" alt="nlesc logo" data-v-2ba1b878></a><a href="https://ardc.edu.au" target="_blank" data-v-2ba1b878><img class="logo" src="' + _imports_1 + '" alt="ardc logo" data-v-2ba1b878></a></div><p data-v-2ba1b878> This checklist is a collaborative effort by Netherlands eScience Center and Australian Research Data Commons. </p>', 2);

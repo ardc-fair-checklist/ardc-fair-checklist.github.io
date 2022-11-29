@@ -1,5 +1,5 @@
 import { s as inject } from "./chunk-34b0814a.js";
-const key = Symbol("injection key");
+const key = Symbol("description");
 const usePageContext = () => {
   const pageContext = inject(key);
   if (!pageContext)
