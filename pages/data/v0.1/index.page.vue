@@ -4,7 +4,7 @@
         <ChecklistHeader />
         <main>
             <h1>FAIR for data self-assessment checklist</h1>
-            <BannerVersions />
+            <ChecklistBannerVersions />
             <template v-if="nQuestions.total > 0">
                 <p>
                     Answer the {{ nQuestions.total }} questions below to assess
@@ -20,7 +20,7 @@
                         v-bind:question="question"
                     />
                 </div>
-                <ProgressBars
+                <ChecklistProgressBars
                     v-bind:progress="progress"
                 />
                 <ChecklistAbout />
@@ -33,21 +33,21 @@
 </template>
 
 <script setup lang="ts">
-import { latest } from '~/renderer/versions';
 import { aspects } from './store';
+import { latest } from '~/renderer/versions';
 import { nQuestions } from './store';
 import { progress } from './store';
 import { questions } from './store';
-import { questions as data } from './questions.json';
 import { setQuestions } from './store';
 import { type Aspect } from './types';
 import { type Question } from './types';
 import ChecklistAbout from './ChecklistAbout.vue';
-import BannerVersions from './BannerVersions.vue';
+import ChecklistBannerVersions from './ChecklistBannerVersions.vue';
 import ChecklistHeader from './ChecklistHeader.vue';
 import ChecklistLink from './ChecklistLink.vue';
-import ProgressBars from './ProgressBars.vue';
+import ChecklistProgressBars from './ChecklistProgressBars.vue';
 import ChecklistQuestion from './ChecklistQuestion.vue';
+import { questions as data } from './questions.json';
 import '~/renderer/global.css';
 import './app.css';
 
