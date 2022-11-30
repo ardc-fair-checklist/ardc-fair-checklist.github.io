@@ -1,6 +1,6 @@
 ---
 name: Any other issue
-about: ''
+about: Something else to report
 title: ''
 labels: ''
 assignees: ''
