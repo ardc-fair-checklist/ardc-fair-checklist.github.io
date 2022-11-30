@@ -4,8 +4,8 @@
         <ChecklistHeader />
         <main>
             <h1>FAIR for software self-assessment checklist</h1>
-            <BannerVersions />
-            <BannerParams />
+            <ChecklistBannerVersions />
+            <ChecklistBannerParams />
             <template v-if="nQuestions.total > 0">
                 <p>
                     Answer the {{ nQuestions.total }} questions below to assess
@@ -21,12 +21,12 @@
                         v-bind:question="question"
                     />
                 </div>
-                <ProgressBars
+                <ChecklistProgressBars
                     v-bind:progress="progress"
                     v-bind:onClick="scrollToBadgesSection"
                     v-bind:disableButton="disableButton"
                 />
-                <BadgeSnippets id="badges-section"/>
+                <ChecklistBadgeSnippets id="badges-section"/>
                 <ChecklistAbout />
             </template>
             <template v-else>
@@ -39,22 +39,22 @@
 <script setup lang='ts'>
 import { onMounted } from 'vue';
 import { ref } from 'vue';
-import { latest } from '~/renderer/versions';
 import { aspects } from './store';
+import { latest } from '~/renderer/versions';
 import { nQuestions } from './store';
 import { progress } from './store';
 import { questions } from './store';
 import { setQuestions } from './store';
-import { type Question } from './types';
 import { type Aspect } from './types';
-import BadgeSnippets from './BadgeSnippets.vue';
-import BannerParams from './BannerParams.vue';
-import BannerVersions from './BannerVersions.vue';
+import { type Question } from './types';
 import ChecklistAbout from './ChecklistAbout.vue';
+import ChecklistBadgeSnippets from './ChecklistBadgeSnippets.vue';
+import ChecklistBannerParams from './ChecklistBannerParams.vue';
+import ChecklistBannerVersions from './ChecklistBannerVersions.vue';
 import ChecklistHeader from './ChecklistHeader.vue';
 import ChecklistLink from './ChecklistLink.vue';
+import ChecklistProgressBars from './ChecklistProgressBars.vue';
 import ChecklistQuestion from './ChecklistQuestion.vue';
-import ProgressBars from './ProgressBars.vue';
 import { questions as data } from './questions.json';
 import '~/renderer/global.css';
 import './app.css';
