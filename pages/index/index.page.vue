@@ -1,12 +1,17 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-    <h1>FAIR checklists</h1>
-    <p>
-        Choose the checklist for
-        <ChecklistLink v-bind:href="linkToDataChecklist">data</ChecklistLink>
-        or for <ChecklistLink v-bind:href="linkToSoftwareChecklist">software</ChecklistLink>.
-    </p>
-    <ChecklistFooter />
+    <main>
+        <div>
+            <h1>FAIR checklists</h1>
+            <p>
+                Choose the checklist for
+                <ChecklistLink v-bind:href="linkToDataChecklist">data</ChecklistLink>
+                or for <ChecklistLink v-bind:href="linkToSoftwareChecklist">
+                software</ChecklistLink>.
+            </p>
+        </div>
+        <ChecklistFooter />
+    </main>
 </template>
 
 <script lang="ts" setup>
@@ -22,11 +27,16 @@ const linkToSoftwareChecklist = `${import.meta.env.BASE_URL}software/${latest.va
 
 <style scoped>
 main {
-    background-color: var(--black);
-    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
 }
 h1 {
     line-height: 1.2em;
     margin-top: 3em;
+    margin-bottom: 3em;
 }
 </style>

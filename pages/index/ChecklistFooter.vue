@@ -9,7 +9,7 @@
             </a>
         </div>
         <p>
-            This checklist is a collaborative effort by
+            These checklists are a collaborative effort by
             Netherlands eScience Center and Australian Research Data Commons.
         </p>
     </footer>
