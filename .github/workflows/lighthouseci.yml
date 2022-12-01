@@ -1,7 +1,7 @@
-name: CI
+name: lighthouse
 on: [push]
 jobs:
-  lighthouseci:
+  lighthouse:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -11,3 +11,5 @@ jobs:
       - run: npm install && npm install -g @lhci/cli@0.8.x
       - run: npm run build
       - run: lhci autorun
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
