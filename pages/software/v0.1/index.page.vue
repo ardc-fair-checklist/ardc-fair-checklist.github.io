@@ -40,6 +40,7 @@
 import { onMounted } from 'vue';
 import { ref } from 'vue';
 import { latest } from '~/renderer/versions';
+import { fairQueryParams } from './store';
 import { nQuestions } from './store';
 import { principles } from './store';
 import { progress } from './store';
@@ -88,6 +89,14 @@ onMounted(() => {
             const rect = elem.getBoundingClientRect();
             disableButton.value = elementInViewport(rect);
         }
+    };
+    window.onbeforeunload = () => {
+        const preserve = [
+            window.location.origin,
+            window.location.pathname,
+            `?${fairQueryParams.value}`
+        ].join('');
+        window.history.pushState({}, '', preserve);
     };
 });
 
