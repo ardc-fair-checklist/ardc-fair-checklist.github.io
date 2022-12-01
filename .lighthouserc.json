@@ -5,6 +5,8 @@
             "staticDistDir": "dist/client"
         },
         "assert": {
+            "assertions": {},
+            "preset": "lighthouse:no-pwa"
         },
         "upload": {
             "githubToken": "$GITHUB_TOKEN",
