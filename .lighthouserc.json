@@ -1,20 +1,15 @@
 {
-  "ci": {
-    "collect": {
-      // collect options here
-      "staticDistDir": "dist"
-    },
-    "assert": {
-      // assert options here
-    },
-    "upload": {
-      // upload options here
-    },
-    "server": {
-      // server options here
-    },
-    "wizard": {
-      // wizard options here
+    "ci": {
+        "collect": {
+          "staticDistDir": "dist/client"
+        },
+        "assert": {
+        },
+        "upload": {
+        },
+        "server": {
+        },
+        "wizard": {
+        }
     }
-  }
 }
