@@ -3,12 +3,12 @@
     <div>
         <ChecklistHeader />
         <main>
-            <h1>FAIR for software self-assessment checklist</h1>
+            <h1>Self-assessment checklist for FAIR software</h1>
             <ChecklistBannerVersions />
             <ChecklistBannerParams />
             <template v-if="nQuestions.total > 0">
                 <p>
-                    Answer the {{ nQuestions.total }} questions below to assess
+                    Answer the questions below to assess
                     your software's FAIRness, or switch to the checklist for
                     <ChecklistLink v-bind:href="linkToDataChecklist">data</ChecklistLink>
                     instead.
