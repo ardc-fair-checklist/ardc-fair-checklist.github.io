@@ -2,7 +2,7 @@ import { assert } from 'vitest';
 import { describe } from 'vitest';
 import { test } from 'vitest';
 
-describe('BannerParams', () => {
+describe('ChecklistBannerParams', () => {
     describe('If a user supplies no search parameters,', () => {
         test.todo('the app should render with the first answer enabled on every question', () => {
             assert(true, 'apparently not true');
