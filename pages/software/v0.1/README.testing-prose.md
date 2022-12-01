@@ -29,7 +29,7 @@
     1. If a user supplies a valid set of query parameter values,
         1. the app should render with the correct answers selected for each question
         1. the app should render the correct progress values for each principle
-        1. the overall compliance state should have the correct values
+        1. the compliance state should have the correct values
         1. the app should remove the query parameters from the URL
 1. Version handling
     1. If there is a newer version of the topic,
@@ -47,15 +47,11 @@
     1. If a user clicks on a non-zero-points answer to a question,
         1. the progress percentage for the corresponding principle should go up
         1. the progress percentage for the corresponding principle should go up by the correct amount
-        1. the overall progress percentage should go up
-        1. the overall progress percentage should go up by the correct amount
         1. the answer that was clicked should get the 'selected' state
         1. all other answers to that question should not have the 'selected' state
     1. If a user has 100% on all principles, and then clicks on a zero-points answer to a question, 
         1. the progress percentage for the corresponding principle should go down
         1. the progress percentage for the corresponding principle should go down by the correct amount
-        1. the overall progress percentage should go down
-        1. the overall progress percentage should go down by the correct amount
         1. the answer that was clicked should get the 'selected' state
         1. all other answers to that question should not have the 'selected' state
     1. If a user clicks on the "Copy Markdown snippet" button,
@@ -72,14 +68,10 @@
     1. If one element of the compliance state is incremented from code,
         1. the progress percentage for the corresponding principle should go up
         1. the progress percentage for the corresponding principle should go up by the correct amount
-        1. the overall progress percentage should go up
-        1. the overall progress percentage should go up by the correct amount
         1. the newly selected answer on the incremented question should get the 'selected' state
         1. all other answers to that question should not have the 'selected' state
     1. If one element of the compliance state is decremented from code,
         1. the progress percentage for the corresponding principle should go down
         1. the progress percentage for the corresponding principle should go down by the correct amount
-        1. the overall progress percentage should go down
-        1. the overall progress percentage should go down by the correct amount
         1. the newly selected answer on the decremented question should get the 'selected' state
         1. all other answers to that question should not have the 'selected' state

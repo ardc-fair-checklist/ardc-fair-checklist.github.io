@@ -34,14 +34,12 @@ describe('store', () => {
                 f: progress.value.f,
                 a: progress.value.a,
                 i: progress.value.i,
-                r: progress.value.r,
-                overall: progress.value.overall
+                r: progress.value.r
             };
             assert(actual.f === '0%', 'initial progress on principle f should be 0%.');
             assert(actual.a === '0%', 'initial progress on principle a should be 0%.');
             assert(actual.i === '0%', 'initial progress on principle i should be 0%.');
             assert(actual.r === '0%', 'initial progress on principle r should be 0%.');
-            assert(actual.overall === '0%', 'initial progress overall should be 0%.');
         });
         test('verify the fair query parameters are correct', () => {
             const actual = fairQueryParams.value;
@@ -72,15 +70,6 @@ describe('store', () => {
             const actual = parseFloat(progress.value.f.slice(0, -1));
             const expected = 5;
             assert(actual === expected, 'progress for principle f should be 5%');
-        });
-        test('the overall progress percentage should go up', () => {
-            const actual = parseFloat(progress.value.overall.slice(0, -1));
-            assert(actual > 0, 'overall progress should be greater than 0');
-        });
-        test('the overall progress percentage should go up by the correct amount', () => {
-            const actual = parseFloat(progress.value.overall.slice(0, -1));
-            const expected = 1;
-            assert(actual === expected, 'overall progress should be 1%');
         });
         test.todo('the newly selected answer on the incremented question should get the \'selected\' state', () => {
             assert(true, 'apparently not true');

@@ -83,7 +83,7 @@ describe('BannerParams', () => {
         test.todo('the app should render the correct progress values for each principle', () => {
             assert(true, 'apparently not true');
         });
-        test.todo('the overall compliance state should have the correct values', () => {
+        test.todo('the compliance state should have the correct values', () => {
             assert(true, 'apparently not true');
         });
         test.todo('the app should remove the search parameters from the URL', () => {

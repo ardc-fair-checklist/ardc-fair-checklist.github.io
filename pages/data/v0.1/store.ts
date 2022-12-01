@@ -90,15 +90,13 @@ export const progress = computed(() => {
             f: '0%',
             a: '0%',
             i: '0%',
-            r: '0%',
-            overall: '0%'
+            r: '0%'
         };
     }
     return {
         f: `${(100 * scores.slice(...slices.value.f).reduce(summation, 0)) / nPointsMax.value.f}%`,
         a: `${(100 * scores.slice(...slices.value.a).reduce(summation, 0)) / nPointsMax.value.a}%`,
         i: `${(100 * scores.slice(...slices.value.i).reduce(summation, 0)) / nPointsMax.value.i}%`,
-        r: `${(100 * scores.slice(...slices.value.r).reduce(summation, 0)) / nPointsMax.value.r}%`,
-        overall: `${(100 * scores.reduce(summation, 0)) / nPointsMax.value.total}%`
+        r: `${(100 * scores.slice(...slices.value.r).reduce(summation, 0)) / nPointsMax.value.r}%`
     };
 });

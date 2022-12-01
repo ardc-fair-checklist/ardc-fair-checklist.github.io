@@ -33,12 +33,6 @@ describe('Clickables', () => {
         test.todo('the progress percentage for the corresponding principle should go up by the correct amount', () => {
             expect(true).toBe(true);
         });
-        test.todo('the overall progress percentage should go up', () => {
-            expect(true).toBe(true);
-        });
-        test.todo('the overall progress percentage should go up by the correct amount', () => {
-            expect(true).toBe(true);
-        });
         test.todo('the answer that was clicked should get the \'selected\' state', () => {
             expect(true).toBe(true);
         });
@@ -51,12 +45,6 @@ describe('Clickables', () => {
             expect(true).toBe(true);
         });
         test.todo('the progress percentage for the corresponding principle should go down by the correct amount', () => {
-            expect(true).toBe(true);
-        });
-        test.todo('the overall progress percentage should go down', () => {
-            expect(true).toBe(true);
-        });
-        test.todo('the overall progress percentage should go down by the correct amount', () => {
             expect(true).toBe(true);
         });
         test.todo('the answer that was clicked should get the \'selected\' state', () => {
