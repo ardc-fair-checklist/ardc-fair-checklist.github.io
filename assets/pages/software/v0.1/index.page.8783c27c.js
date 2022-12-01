@@ -1,10 +1,10 @@
-import { H as ref, I as computed, u as openBlock, t as createElementBlock, v as createBaseVNode, J as toDisplayString, x as createStaticVNode, d as defineComponent, o as onMounted, A as unref, E as pushScopeId, G as popScopeId, K as createCommentVNode, y as renderSlot, z as normalizeClass, B as createTextVNode, C as createVNode, D as withCtx, F as Fragment, L as renderList, M as createBlock } from "../../../chunk-34b0814a.js";
 import { l as latest } from "../../../chunk-6660a69c.js";
+import { H as ref, I as computed, u as openBlock, t as createElementBlock, v as createBaseVNode, J as toDisplayString, x as createStaticVNode, d as defineComponent, o as onMounted, A as unref, E as pushScopeId, G as popScopeId, K as createCommentVNode, y as renderSlot, z as normalizeClass, B as createTextVNode, C as createVNode, D as withCtx, F as Fragment, L as renderList, M as createBlock } from "../../../chunk-34b0814a.js";
 import { _ as _export_sfc, a as _imports_0, b as _imports_1 } from "../../../chunk-55859c7c.js";
 import { u as usePageContext } from "../../../chunk-3ae7c80c.js";
 import { _ as _imports_0$1 } from "../../../chunk-797968b4.js";
 import { u as useCssVars, w as withKeys, a as withModifiers } from "../../../chunk-98817835.js";
-const aspects = ["f", "a", "i", "r"];
+const principles = ["f", "a", "i", "r"];
 const state = ref({
   compliance: [],
   questions: []
@@ -19,7 +19,7 @@ const setQuestions = (questionsNoIndex) => {
   state.value.compliance = new Array(questionsNoIndex.length).fill(0);
 };
 const nQuestions = computed(() => {
-  const deriveNumberOfQuestions = (aspect) => state.value.questions.filter((question) => question.aspect === aspect).length;
+  const deriveNumberOfQuestions = (principle) => state.value.questions.filter((question) => question.principle === principle).length;
   return {
     f: deriveNumberOfQuestions("f"),
     a: deriveNumberOfQuestions("a"),
@@ -29,10 +29,10 @@ const nQuestions = computed(() => {
   };
 });
 const nPointsMax = computed(() => {
-  const derivePointsMax = (aspect) => {
+  const derivePointsMax = (principle) => {
     let selectedQuestions = state.value.questions;
-    if (aspect !== "*") {
-      selectedQuestions = state.value.questions.filter((q) => q.aspect === aspect);
+    if (principle !== "*") {
+      selectedQuestions = state.value.questions.filter((q) => q.principle === principle);
     }
     return selectedQuestions.map((question) => Math.max(...question.answers.map((answer) => answer.score))).reduce((previousValue, currentValue) => previousValue + currentValue, 0);
   };
@@ -88,16 +88,14 @@ const progress = computed(() => {
       f: "0%",
       a: "0%",
       i: "0%",
-      r: "0%",
-      overall: "0%"
+      r: "0%"
     };
   }
   return {
     f: `${100 * scores.slice(...slices.value.f).reduce(summation, 0) / nPointsMax.value.f}%`,
     a: `${100 * scores.slice(...slices.value.a).reduce(summation, 0) / nPointsMax.value.a}%`,
     i: `${100 * scores.slice(...slices.value.i).reduce(summation, 0) / nPointsMax.value.i}%`,
-    r: `${100 * scores.slice(...slices.value.r).reduce(summation, 0) / nPointsMax.value.r}%`,
-    overall: `${100 * scores.reduce(summation, 0) / nPointsMax.value.total}%`
+    r: `${100 * scores.slice(...slices.value.r).reduce(summation, 0) / nPointsMax.value.r}%`
   };
 });
 const ChecklistAbout_vue_vue_type_style_index_0_scoped_7c7b328f_lang = "";
@@ -250,24 +248,24 @@ const _sfc_main$7 = /* @__PURE__ */ defineComponent({
         r: searchParams.get("r") || ""
       };
       const chooseBannerMessage = () => {
-        const checkAspect = (aspect) => {
-          if (params[aspect].length !== nQuestions.value[aspect]) {
+        const checkPrinciple = (principle) => {
+          if (params[principle].length !== nQuestions.value[principle]) {
             return {
-              msg: `Query parameter '${aspect}' does not have the right number of elements (${nQuestions.value[aspect]})`,
+              msg: `Query parameter '${principle}' does not have the right number of elements (${nQuestions.value[principle]})`,
               err: true
             };
           }
-          if (/^[0-9]+$/.test(params[aspect]) === false) {
+          if (/^[0-9]+$/.test(params[principle]) === false) {
             return {
-              msg: `Query parameter '${aspect}' includes unknown character`,
+              msg: `Query parameter '${principle}' includes unknown character`,
               err: true
             };
           }
-          const supplied = params[aspect].split("").map((c) => parseInt(c, 10));
+          const supplied = params[principle].split("").map((c) => parseInt(c, 10));
           const errors2 = supplied.map((iAnswer, index) => {
-            if (iAnswer >= nAnswers.value[aspect][index]) {
+            if (iAnswer >= nAnswers.value[principle][index]) {
               return {
-                msg: `Query parameter '${aspect}' has out-of-range value on position ${index}`,
+                msg: `Query parameter '${principle}' has out-of-range value on position ${index}`,
                 err: true
               };
             }
@@ -289,7 +287,7 @@ const _sfc_main$7 = /* @__PURE__ */ defineComponent({
             err: true
           };
         }
-        const errors = aspects.map((a) => checkAspect(a)).filter((error) => error.err === true);
+        const errors = principles.map((p) => checkPrinciple(p)).filter((error) => error.err === true);
         return {
           msg: errors.map((e) => e.msg).join("; "),
           err: errors.length > 0
@@ -313,8 +311,8 @@ const _sfc_main$7 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const ChecklistBannerParams_vue_vue_type_style_index_0_scoped_5a7e2f40_lang = "";
-const ChecklistBannerParams = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["__scopeId", "data-v-5a7e2f40"]]);
+const ChecklistBannerParams_vue_vue_type_style_index_0_scoped_fbc84e52_lang = "";
+const ChecklistBannerParams = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["__scopeId", "data-v-fbc84e52"]]);
 const _sfc_main$6 = /* @__PURE__ */ defineComponent({
   __name: "ChecklistLink",
   setup(__props) {
@@ -578,10 +576,9 @@ const questions = [
         text: "Globally unique and persistent identifier (e.g. DOI, PURL, or Handle)"
       }
     ],
-    aspect: "f",
     guidance: "A uniquely named piece of software is not the same as an identifier as it might be linked to a registry or programming language. A Uniform Resource Locator (URL) is a kind of unique identifier, but might not be persistent.",
     id: "f:q0",
-    principle: "F1. Software is assigned a globally unique and persistent identifier",
+    principle: "f",
     text: "Does the software have any identifier assigned?"
   },
   {
@@ -607,10 +604,9 @@ const questions = [
         text: "Each component has a PID with reference to a top level PID"
       }
     ],
-    aspect: "f",
     guidance: "A persistent identifier (PID) like a DOI, PURL or Handle has the following characteristics: globally unique, citable and persistent. The granularity is decided for each software and its maturity.",
     id: "f:q1",
-    principle: "F1.1. Different components of the software are assigned distinct identifiers representing different levels of granularity",
+    principle: "f",
     text: "Are different components of the software assigned distinct identifiers representing different levels of granularity?"
   },
   {
@@ -631,10 +627,9 @@ const questions = [
         text: "available versions distinctly identified"
       }
     ],
-    aspect: "f",
     guidance: "Version is one of the granularity levels identified as most relevant. Depending on the maturity of the software development, not only major versions but minor and point versions are also encouraged. For example: - each minor version (version X.Y) is assigned an identifier - Each point version (version X.Y.Z) is assigned an identifier",
     id: "f:q2",
-    principle: "F1.2. Different versions of the same software are assigned distinct identifiers.",
+    principle: "f",
     text: "Are different versions of the same software identified?"
   },
   {
@@ -660,10 +655,9 @@ const questions = [
         text: "Described comprehensively using a formal machine-readable metadata schema "
       }
     ],
-    aspect: "f",
     guidance: "See also Interoperable and Reusable for specific questions about relationships between objects, and about specific kinds of metadata. Rich metadata constitutes a plurality of attributes (for R1): (e.g. name, version, contributors roles, programming language, description of the purpose, science domain, key words, licence, PID, related identifiers) Examples of formal machine-readable metadata schemas are (e.g. Citation.CFF, .zenodo.json, codemeta.jsonld)",
     id: "f:q3",
-    principle: "F2. Software is described with rich metadata.",
+    principle: "f",
     text: "Is the software described with rich metadata?"
   },
   {
@@ -684,10 +678,9 @@ const questions = [
         text: "The identifier is captured in the metadata that describes the software"
       }
     ],
-    aspect: "f",
     guidance: "The identifier is recommended to be globally unique and persistent. Those features enable citability. F3 calls for that identifier to be included within the metadata record that the identifier points to",
     id: "f:q4",
-    principle: "F3. Metadata clearly and explicitly include the identifier of the software they describe.",
+    principle: "f",
     text: "Is the identifier included in the metadata that describes the software?"
   },
   {
@@ -713,10 +706,9 @@ const questions = [
         text: "Metadata is structured in a FAIR way"
       }
     ],
-    aspect: "f",
     guidance: "Many of the questions here relate to making the metadata associated with software FAIR. Principles F2, F3, A2, R1, and R2 all relate to making the metadata associated with software FAIR. Here the focus is on that metadata being captured in a way that enables searching and indexing of that metadata. For instance, a codemeta file may hold the relevant metadata, but if it is not exposed (or integrated) in a way that enables indexing, then it will not fulfil this criterion. Here this consideration is not just that the metadata exists, but also that it is available in a system that enables it to be FAIR.",
     id: "f:q5",
-    principle: "F4. Metadata are FAIR, and are searchable and indexable.",
+    principle: "f",
     text: "Are metadata FAIR, searchable and indexable?"
   },
   {
@@ -742,10 +734,9 @@ const questions = [
         text: "Software can be retrieved from a publicly-accessible code development repository, package or library manager or software registry or archive"
       }
     ],
-    aspect: "a",
     guidance: "Software is retrievable from: - a publicly-accessible code development repository (e.g. GitHub, GitLab, BitBucket, etc), - a package or library manager (e.g apt, CRAN, PyPI, etc), - a research software registry  (e.g. see this list), or - an archive.",
     id: "a:q0",
-    principle: "A1. Software is retrievable by its identifier using a standardised communications protocol.",
+    principle: "a",
     text: "Can the software be retrieved via its identifier using standardised protocols?"
   },
   {
@@ -771,10 +762,9 @@ const questions = [
         text: "And is machine readable"
       }
     ],
-    aspect: "a",
     guidance: "Some formal machine-readable metadata schema exist specifically for software (e.g. Citation.CFF, .zenodo.json, codemeta.jsonld). Mechanisms for retrieving metadata include DataCite DOI metadata, encoding of metadata using schema.org on the page resolved to by the identifier, and retrieval via a package manager",
     id: "a:q1",
-    principle: "A1. Software is retrievable by its identifier using a standardised communications protocol.",
+    principle: "a",
     text: "Can metadata be retrieved via is identifier using standardised protocols?"
   },
   {
@@ -800,10 +790,9 @@ const questions = [
         text: "Yes"
       }
     ],
-    aspect: "a",
     guidance: "This question refers to the combinations of these two principles [define protocol] [describe authentication and authorisation]",
     id: "a:q2",
-    principle: "A1.1. The protocol is open, free, and universally implementable. A1.2. The protocol allows for an authentication and authorisation procedure, where necessary.",
+    principle: "a",
     text: "Is the protocol open, free and universally implementable? and does it allow for authentication and autorisation procedures?"
   },
   {
@@ -829,10 +818,9 @@ const questions = [
         text: "Yes"
       }
     ],
-    aspect: "a",
     guidance: "Mostly a feature of the metadata registry",
     id: "a:q3",
-    principle: "A2. Metadata are accessible, even when the software is no longer available.",
+    principle: "a",
     text: "Are metadata accessible, even when the software is no longer available?"
   },
   {
@@ -853,10 +841,9 @@ const questions = [
         text: "Input/output meets domain-relevant standards"
       }
     ],
-    aspect: "i",
     guidance: "A domain-relevant standard is an agreed standard that addresses the needs of a given community (or communities). For interoperation between software it is necessary that more than one software tool supports common standards for interchange. Ideally, related research software are capable of exchanging data or metadata because they all implement common standards. The way in which the data is transmitted might be via reading and writing files, or by passing arguments to an API and receiving responses. Barriers to meeting this guiding principle include a lack of relevant standards, a lack of community consensus on relevant standards, a lack of implementations of agreed upon standards. Work outside the software itself may need to be done before this guiding principle can be addressed.",
     id: "i:q0",
-    principle: "I1. Software reads, writes and exchanges data in a way that meets domain-relevant community standards.",
+    principle: "i",
     text: "Are the data written/read or exchanged by the software machine readable and in (an) open (file) format(s)?"
   },
   {
@@ -877,10 +864,9 @@ const questions = [
         text: "Qualified links to other resources are recorded in a machine readable format"
       }
     ],
-    aspect: "i",
     guidance: "I2. Software includes qualified references to other objects.",
     id: "i:q1",
-    principle: "Software may utilise external data, metadata and other similar objects. Ideally, these should also be FAIR when possible. A qualified reference is a pointer to the other object, with a clear authority for resolving/confirming that identity given in the form of the reference. Ideally this is in a form that includes a resolver within the reference (e.g., in the form of a URL).",
+    principle: "i",
     text: "How is the relationship to data and metadata described in the metadata and software? (see R:q4 for relationship to other software)"
   },
   {
@@ -911,10 +897,9 @@ const questions = [
         text: "Source code available via a package manager or similar"
       }
     ],
-    aspect: "r",
     guidance: "Specifically it considers reusability in the sense of software being understood, built upon or incorporated into other software, but not necessarily executed (again). Sensitivities may restrict access to the software. The form of the software or the way in which it is made available restricts the way in which it can be understood. A service may obscure all internal workings of the software if no alternate form is made available. A compiled binary form is not as easily pulled apart or understood as a source code representation. Binaries in some cases can be built upon or incorporated into other software, but this is especially the case when it the programming interface to that software is fully documented. Source code is the most straightforwardly interrogable form of software, but in some circumstances making this form available may not be possible, practical or desirable.",
     id: "r:q0",
-    principle: "Reuseable: Software is both usable (it can be executed) and reusable (it can be understood, modified, built upon, or incorporated into other software).",
+    principle: "r",
     text: "Can software be understood, modified, built upon, or incorporated into other software? Is software made available in a form that makes this easy to do? Links to A:q0"
   },
   {
@@ -935,10 +920,9 @@ const questions = [
         text: "Yes, the software is packaged with access to dependencies."
       }
     ],
-    aspect: "r",
     guidance: "Specifically it considers reusability in the sense of software be able to be executed, not in the sense of it being understood, built upon or incorporated into other software. Factors affecting the executability of the software include documentation of configuration, dependencies and execution environment (software and hardware). These can be captured in a human readable format (such as text), but are ideally captured in a machine readable format as well. In some cases, it may be possible or desirable to make the software available in a packaged form to facilitate reuse. For example, an emulation environment where the software is run executable. Also a container where the software and its dependencies are all encapsulated. Or it could be that the software is made available via a package management system.",
     id: "r:q1",
-    principle: "Reuseable: Software is both usable (it can be executed) and reusable (it can be understood, modified, built upon, or incorporated into other software).",
+    principle: "r",
     text: "Is the software (re)executable? Can it easily be run (again)?"
   },
   {
@@ -969,10 +953,9 @@ const questions = [
         text: "Machine readable standard license"
       }
     ],
-    aspect: "r",
     guidance: "Standard licenses are those that are widely recognised. Licences are often referred to by name, but machine readable licenses can be specified by reference to a standard vocabulary such as SPDX, or are encoded in a machine readable format such as RDF/XML in the metadata record for the software.  Ideally the license deed is available in the package or linked to by a standard URL. Note that Creative Commons licenses are not recommended for software.",
     id: "r:q2",
-    principle: "R1.1. Software is given a clear and accessible licence.",
+    principle: "r",
     text: "Which of the following best describes the license (usage rights) attached to the software?"
   },
   {
@@ -998,10 +981,9 @@ const questions = [
         text: "Comprehensively recorded in a machine readable format"
       }
     ],
-    aspect: "r",
     guidance: 'Provenance answers the "who, what, when, where, why and how" for the development of the software. Providing detailed provenance gives a user the details they need to trust that the software will do what they expect it to do. This extends well beyond whether the software and its development over time has been captured in a version control system. A record of provenance captures information such as the people, their roles in making contributions, the resources committed (for instance grants, people-time, hardware), the time span of a project (or projects) focussed on the work,  the geographic location of the authors or their affiliations with organisations, the project objectives or intent in producing the software and the agreed upon process, systems and/or constraints (including changes in licensing) on the development of the software. All of this detail can help to interpret and understand how and why the software came to be, and to engender trust in reuse. A partial capture of provenance captures only some of this detail. This detail can also be comprehensive but not machine readable. Examples of machine readable provenance standards include PROV, and formats include RDF, JSON, NetCDF, XML, etc.',
     id: "r:q3",
-    principle: "R1.2. Software is associated with detailed provenance.",
+    principle: "r",
     text: "How much provenance information has been captured to facilitate software reuse? (e.g., project objectives, processes, authors, roles, contributions, use of other components)."
   },
   {
@@ -1027,10 +1009,9 @@ const questions = [
         text: "Qualified links to other software are recorded in a machine readable format"
       }
     ],
-    aspect: "r",
     guidance: "A qualified reference is a pointer to an external object, with a clear authority for resolving/confirming that identity given in the form of the reference. Ideally this is in a form that includes a resolver within the reference (e.g., in the form of a URI). For software this would mean referring to other software via a resolvable, qualified permanent identifier. In metadata this is only possible when software is able to be referred to in this fashion. Not all software can be referred to in this way. A qualified reference in software is presently technically difficult or impossible in many languages, where conventional practice is to use a (unqualified) reference via a (possibly non-unique) name, possibly in combination with a version number.",
     id: "r:q4",
-    principle: "R2. Software includes qualified references to other software.",
+    principle: "r",
     text: "How is the relationship to software described in the metadata and software? (see I:q1 for relationship to other components such as data and metadata)"
   },
   {
@@ -1051,26 +1032,25 @@ const questions = [
         text: "Uses domain-relevant standards"
       }
     ],
-    aspect: "r",
     guidance: "Relevant research domains are determined by the intended user base of the software, not any possible community of use for a piece of software. A piece of software created to address the needs of a community should be aware of any standards put forward by that community or adjacent ones. Similarly, a piece of software (such as analysis code) which is intended to represent work done within a domain-community should also be aware of any standards put forward by that community or adjacent ones. Some examples of domain-relevant community standards are: (e.g. CoC, Credit to authors and collaborations, institutional standards, registry standards, nomenclature described within a community)",
     id: "r:q5",
-    principle: "R3. Software meets domain-relevant community standards.",
+    principle: "r",
     text: "If they exist, how much have domain-relevant community standards been considered in writing the software? it is linked to I:q0"
   }
 ];
-const _withScopeId = (n) => (pushScopeId("data-v-c31722f8"), n = n(), popScopeId(), n);
-const _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("h1", null, "FAIR for software self-assessment checklist", -1));
+const _withScopeId = (n) => (pushScopeId("data-v-6892d18a"), n = n(), popScopeId(), n);
+const _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("h1", null, "Self-assessment checklist for FAIR software", -1));
 const _sfc_main = /* @__PURE__ */ defineComponent({
   __name: "index.page",
   setup(__props) {
     setQuestions(questions);
     const disableButton = ref(false);
-    const getAspectFullname = (aspect) => ({
+    const getFullname = (principle) => ({
       f: "Findable",
       a: "Accessible",
       i: "Interoperable",
       r: "Reusable"
-    })[aspect];
+    })[principle];
     const scrollToBadgesSection = () => {
       var _a;
       (_a = document.getElementById("badges-section")) == null ? void 0 : _a.scrollIntoView({ behavior: "smooth" });
@@ -1092,6 +1072,14 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
           disableButton.value = elementInViewport(rect);
         }
       };
+      window.onbeforeunload = () => {
+        const preserve = [
+          window.location.origin,
+          window.location.pathname,
+          `?${fairQueryParams.value}`
+        ].join("");
+        window.history.pushState({}, "", preserve);
+      };
     });
     const linkToDataChecklist = `${"/ssg/"}data/${latest.value.data}`;
     return (_ctx, _cache) => {
@@ -1103,7 +1091,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
           createVNode(ChecklistBannerParams),
           unref(nQuestions).total > 0 ? (openBlock(), createElementBlock(Fragment, { key: 0 }, [
             createBaseVNode("p", null, [
-              createTextVNode(" Answer the " + toDisplayString(unref(nQuestions).total) + " questions below to assess your software's FAIRness, or switch to the checklist for ", 1),
+              createTextVNode(" Answer the questions below to assess your software's FAIRness, or switch to the checklist for "),
               createVNode(ChecklistLink, { href: linkToDataChecklist }, {
                 default: withCtx(() => [
                   createTextVNode("data")
@@ -1112,10 +1100,10 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
               }),
               createTextVNode(" instead. ")
             ]),
-            (openBlock(true), createElementBlock(Fragment, null, renderList(unref(aspects), (aspect) => {
-              return openBlock(), createElementBlock("div", { key: aspect }, [
-                createBaseVNode("h2", null, toDisplayString(getAspectFullname(aspect)), 1),
-                (openBlock(true), createElementBlock(Fragment, null, renderList(unref(questions$1).filter((q) => q.aspect === aspect), (question) => {
+            (openBlock(true), createElementBlock(Fragment, null, renderList(unref(principles), (principle) => {
+              return openBlock(), createElementBlock("div", { key: principle }, [
+                createBaseVNode("h2", null, toDisplayString(getFullname(principle)), 1),
+                (openBlock(true), createElementBlock(Fragment, null, renderList(unref(questions$1).filter((q) => q.principle === principle), (question) => {
                   return openBlock(), createBlock(ChecklistQuestion, {
                     key: question.id,
                     question
@@ -1138,8 +1126,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const index_page_vue_vue_type_style_index_0_scoped_c31722f8_lang = "";
-const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-c31722f8"]]);
+const index_page_vue_vue_type_style_index_0_scoped_6892d18a_lang = "";
+const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-6892d18a"]]);
 export {
   index_page as default
 };

@@ -4,7 +4,7 @@ import { _ as _export_sfc, a as _imports_0, b as _imports_1 } from "../../../chu
 import { u as usePageContext } from "../../../chunk-3ae7c80c.js";
 import { _ as _imports_0$1 } from "../../../chunk-797968b4.js";
 import { u as useCssVars, w as withKeys, a as withModifiers } from "../../../chunk-98817835.js";
-const aspects = ["f", "a", "i", "r"];
+const principles = ["f", "a", "i", "r"];
 const state = ref({
   compliance: [],
   questions: []
@@ -19,7 +19,7 @@ const setQuestions = (questionsNoIndex) => {
   state.value.compliance = new Array(questionsNoIndex.length).fill(0);
 };
 const nQuestions = computed(() => {
-  const deriveNumberOfQuestions = (aspect) => state.value.questions.filter((question) => question.aspect === aspect).length;
+  const deriveNumberOfQuestions = (principle) => state.value.questions.filter((question) => question.principle === principle).length;
   return {
     f: deriveNumberOfQuestions("f"),
     a: deriveNumberOfQuestions("a"),
@@ -29,10 +29,10 @@ const nQuestions = computed(() => {
   };
 });
 const nPointsMax = computed(() => {
-  const derivePointsMax = (aspect) => {
+  const derivePointsMax = (principle) => {
     let selectedQuestions = state.value.questions;
-    if (aspect !== "*") {
-      selectedQuestions = state.value.questions.filter((q) => q.aspect === aspect);
+    if (principle !== "*") {
+      selectedQuestions = state.value.questions.filter((q) => q.principle === principle);
     }
     return selectedQuestions.map((q) => Math.max(...q.answers.map((a) => a.score))).reduce((previousValue, currentValue) => previousValue + currentValue, 0);
   };
@@ -73,16 +73,14 @@ const progress = computed(() => {
       f: "0%",
       a: "0%",
       i: "0%",
-      r: "0%",
-      overall: "0%"
+      r: "0%"
     };
   }
   return {
     f: `${100 * scores.slice(...slices.value.f).reduce(summation, 0) / nPointsMax.value.f}%`,
     a: `${100 * scores.slice(...slices.value.a).reduce(summation, 0) / nPointsMax.value.a}%`,
     i: `${100 * scores.slice(...slices.value.i).reduce(summation, 0) / nPointsMax.value.i}%`,
-    r: `${100 * scores.slice(...slices.value.r).reduce(summation, 0) / nPointsMax.value.r}%`,
-    overall: `${100 * scores.reduce(summation, 0) / nPointsMax.value.total}%`
+    r: `${100 * scores.slice(...slices.value.r).reduce(summation, 0) / nPointsMax.value.r}%`
   };
 });
 const ChecklistAbout_vue_vue_type_style_index_0_scoped_7d371f09_lang = "";
@@ -342,10 +340,9 @@ const questions = [
         text: "Globally Unique, citable and persistent (e.g. DOI, PURL, ARK or Handle)"
       }
     ],
-    aspect: "f",
     guidance: "",
     id: "f:q0",
-    principle: "",
+    principle: "f",
     text: "Does the dataset have any identifiers assigned?"
   },
   {
@@ -361,10 +358,9 @@ const questions = [
         text: "Yes"
       }
     ],
-    aspect: "f",
     guidance: "",
     id: "f:q1",
-    principle: "",
+    principle: "f",
     text: "Is the dataset identifier included in all metadata records/files describing the data?"
   },
   {
@@ -390,10 +386,9 @@ const questions = [
         text: "Comprehensively (see suggestion) using a recognised formal machine-readable metadata schema."
       }
     ],
-    aspect: "f",
     guidance: "",
     id: "f:q2",
-    principle: "",
+    principle: "f",
     text: "How is the data described with metadata?"
   },
   {
@@ -424,10 +419,9 @@ const questions = [
         text: "Data is in one place but discoverable through several registries"
       }
     ],
-    aspect: "f",
     guidance: "",
     id: "f:q3",
-    principle: "",
+    principle: "f",
     text: "What type of repository or registry is the metadata record in?"
   },
   {
@@ -468,10 +462,9 @@ const questions = [
         text: "Publicly accessible"
       }
     ],
-    aspect: "a",
     guidance: "",
     id: "a:q0",
-    principle: "",
+    principle: "a",
     text: "How accessible is the data?"
   },
   {
@@ -502,10 +495,9 @@ const questions = [
         text: "Standard web service API (e.g. OGC)"
       }
     ],
-    aspect: "a",
     guidance: "",
     id: "a:q1",
-    principle: "",
+    principle: "a",
     text: "Is the data available online without requiring specialised protocols or tools once access has been approved?"
   },
   {
@@ -526,10 +518,9 @@ const questions = [
         text: "Yes"
       }
     ],
-    aspect: "a",
     guidance: "",
     id: "a:q2",
-    principle: "",
+    principle: "a",
     text: "Will the metadata record be available even if the data is no longer available?"
   },
   {
@@ -550,10 +541,9 @@ const questions = [
         text: "In a structured, open standard, machine-readable format"
       }
     ],
-    aspect: "i",
     guidance: "",
     id: "i:q0",
-    principle: "",
+    principle: "i",
     text: "What (file) format(s) is the data available in?"
   },
   {
@@ -579,10 +569,9 @@ const questions = [
         text: "Standardised open and universal using resolvable global identifiers linking to explanations"
       }
     ],
-    aspect: "i",
     guidance: "",
     id: "i:q1",
-    principle: "",
+    principle: "i",
     text: "What best describes the types of vocabularies/ontologies/tagging schemas used to define the data elements?"
   },
   {
@@ -603,10 +592,9 @@ const questions = [
         text: "Metadata is represented in a machine readable format, e.g. in a linked data format such as Resource Description Framework (RDF)."
       }
     ],
-    aspect: "i",
     guidance: "",
     id: "i:q2",
-    principle: "",
+    principle: "i",
     text: "How is the metadata linked to other data and metadata (to enhance context and clearly indicate relationships)?"
   },
   {
@@ -637,10 +625,9 @@ const questions = [
         text: "Standard machine-readable license (e.g. Creative Commons)"
       }
     ],
-    aspect: "r",
     guidance: "",
     id: "r:q0",
-    principle: "",
+    principle: "r",
     text: "Which of the following best describes the license/usage rights attached to the data?"
   },
   {
@@ -666,25 +653,24 @@ const questions = [
         text: "Fully recorded in a machine readable format"
       }
     ],
-    aspect: "r",
     guidance: "",
     id: "r:q1",
-    principle: "",
+    principle: "r",
     text: "How much provenance information has been captured to facilitate data reuse?"
   }
 ];
-const _withScopeId = (n) => (pushScopeId("data-v-fc1a4763"), n = n(), popScopeId(), n);
-const _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("h1", null, "FAIR for data self-assessment checklist", -1));
+const _withScopeId = (n) => (pushScopeId("data-v-c536ffb5"), n = n(), popScopeId(), n);
+const _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("h1", null, "Self-assessment checklist for FAIR data", -1));
 const _sfc_main = /* @__PURE__ */ defineComponent({
   __name: "index.page",
   setup(__props) {
     setQuestions(questions);
-    const getAspectFullname = (aspect) => ({
+    const getFullname = (principle) => ({
       f: "Findable",
       a: "Accessible",
       i: "Interoperable",
       r: "Reusable"
-    })[aspect];
+    })[principle];
     const linkToSoftwareChecklist = `${"/ssg/"}software/${latest.value.software}`;
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("div", null, [
@@ -694,7 +680,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
           createVNode(ChecklistBannerVersions),
           unref(nQuestions).total > 0 ? (openBlock(), createElementBlock(Fragment, { key: 0 }, [
             createBaseVNode("p", null, [
-              createTextVNode(" Answer the " + toDisplayString(unref(nQuestions).total) + " questions below to assess your data's FAIRness, or switch to the checklist for ", 1),
+              createTextVNode(" Answer the questions below to assess your data's FAIRness, or switch to the checklist for "),
               createVNode(ChecklistLink, { href: linkToSoftwareChecklist }, {
                 default: withCtx(() => [
                   createTextVNode("software")
@@ -703,10 +689,10 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
               }),
               createTextVNode(" instead. ")
             ]),
-            (openBlock(true), createElementBlock(Fragment, null, renderList(unref(aspects), (aspect) => {
-              return openBlock(), createElementBlock("div", { key: aspect }, [
-                createBaseVNode("h2", null, toDisplayString(getAspectFullname(aspect)), 1),
-                (openBlock(true), createElementBlock(Fragment, null, renderList(unref(questions$1).filter((q) => q.aspect === aspect), (question) => {
+            (openBlock(true), createElementBlock(Fragment, null, renderList(unref(principles), (principle) => {
+              return openBlock(), createElementBlock("div", { key: principle }, [
+                createBaseVNode("h2", null, toDisplayString(getFullname(principle)), 1),
+                (openBlock(true), createElementBlock(Fragment, null, renderList(unref(questions$1).filter((q) => q.principle === principle), (question) => {
                   return openBlock(), createBlock(ChecklistQuestion, {
                     key: question.id,
                     question
@@ -724,8 +710,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const index_page_vue_vue_type_style_index_0_scoped_fc1a4763_lang = "";
-const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-fc1a4763"]]);
+const index_page_vue_vue_type_style_index_0_scoped_c536ffb5_lang = "";
+const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-c536ffb5"]]);
 export {
   index_page as default
 };

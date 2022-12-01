@@ -3,14 +3,14 @@
   "renderer/_default.page.client.ts": [],
   "renderer/_error.page.vue?vue&type=script&setup=true&lang.ts": [],
   "renderer/_error.page.vue": [],
-  "pages/index/ChecklistFooter.vue?vue&type=style&index=0&scoped=2ba1b878&lang.css": [],
+  "pages/index/ChecklistFooter.vue?vue&type=style&index=0&scoped=1afe7b4d&lang.css": [],
   "pages/index/ChecklistFooter.vue": [],
   "pages/index/ChecklistLink.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/index/ChecklistLink.vue?vue&type=style&index=0&scoped=058ee869&lang.css": [],
   "pages/index/ChecklistLink.vue": [],
   "pages/index/app.css": [],
   "pages/index/index.page.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/index/index.page.vue?vue&type=style&index=0&scoped=593d37f8&lang.css": [],
+  "pages/index/index.page.vue?vue&type=style&index=0&scoped=5622d05c&lang.css": [],
   "pages/index/index.page.vue": [],
   "pages/data/index/app.css": [],
   "pages/data/index/index.page.vue?vue&type=script&setup=true&lang.ts": [],
@@ -39,7 +39,7 @@
   "pages/data/v0.1/ChecklistQuestion.vue": [],
   "pages/data/v0.1/questions.json": [],
   "pages/data/v0.1/index.page.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/data/v0.1/index.page.vue?vue&type=style&index=0&scoped=fc1a4763&lang.css": [],
+  "pages/data/v0.1/index.page.vue?vue&type=style&index=0&scoped=c536ffb5&lang.css": [],
   "pages/data/v0.1/index.page.vue": [],
   "pages/software/index/app.css": [],
   "pages/software/index/index.page.vue?vue&type=script&setup=true&lang.ts": [],
@@ -51,7 +51,7 @@
   "pages/software/v0.1/ChecklistBadgeSnippets.vue?vue&type=style&index=0&scoped=01c0000b&lang.css": [],
   "pages/software/v0.1/ChecklistBadgeSnippets.vue": [],
   "pages/software/v0.1/ChecklistBannerParams.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/software/v0.1/ChecklistBannerParams.vue?vue&type=style&index=0&scoped=5a7e2f40&lang.css": [],
+  "pages/software/v0.1/ChecklistBannerParams.vue?vue&type=style&index=0&scoped=fbc84e52&lang.css": [],
   "pages/software/v0.1/ChecklistBannerParams.vue": [],
   "pages/software/v0.1/ChecklistLink.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/software/v0.1/ChecklistLink.vue?vue&type=style&index=0&scoped=b21c5856&lang.css": [],
@@ -74,7 +74,7 @@
   "pages/software/v0.1/ChecklistQuestion.vue": [],
   "pages/software/v0.1/questions.json": [],
   "pages/software/v0.1/index.page.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/software/v0.1/index.page.vue?vue&type=style&index=0&scoped=c31722f8&lang.css": [],
+  "pages/software/v0.1/index.page.vue?vue&type=style&index=0&scoped=6892d18a&lang.css": [],
   "pages/software/v0.1/index.page.vue": [],
   "node_modules/vite-plugin-ssr/dist/esm/utils/isPlainObject.js": [],
   "node_modules/vite-plugin-ssr/dist/esm/utils/stringifyStringArray.js": [],
@@ -131,20 +131,20 @@
     "/ssg/assets/index.page.ec3ad890.css",
     "/ssg/assets/global.b082e789.css"
   ],
-  "index.page.9e5eb863.js": [
-    "/ssg/assets/index.page.85b8cc2d.css",
+  "index.page.c48835ef.js": [
+    "/ssg/assets/index.page.a48c0b47.css",
     "/ssg/assets/global.b082e789.css"
   ],
-  "index.page.cec84e3e.js": [
-    "/ssg/assets/index.page.0ea06ea7.css",
+  "index.page.41787c96.js": [
+    "/ssg/assets/index.page.fc29facf.css",
     "/ssg/assets/global.b082e789.css"
   ],
   "index.page.194d6cc4.js": [
     "/ssg/assets/index.page.21e1d615.css",
     "/ssg/assets/global.b082e789.css"
   ],
-  "index.page.31599d00.js": [
-    "/ssg/assets/index.page.55e369db.css",
+  "index.page.8783c27c.js": [
+    "/ssg/assets/index.page.5af5d4fd.css",
     "/ssg/assets/global.b082e789.css"
   ],
   "_error.page.de708dd4.js": [],

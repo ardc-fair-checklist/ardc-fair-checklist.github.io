@@ -332,7 +332,7 @@ legend[data-v-9c1d54a2] {
     font-size: 1.17em;
 }
 
-main[data-v-fc1a4763] {
+main[data-v-c536ffb5] {
     min-width: 30em;
     max-width: 50em;
     margin-left: auto;
@@ -340,28 +340,28 @@ main[data-v-fc1a4763] {
     color: var(--white);
 }
 @media screen and (min-width: 70em) {
-main[data-v-fc1a4763] {
+main[data-v-c536ffb5] {
         padding-left: 3em;
         padding-right: 3em;
 }
 }
 @media screen and (max-width: 70em) {
-main[data-v-fc1a4763] {
+main[data-v-c536ffb5] {
         padding-left: 3em;
         padding-right: 3em;
 }
 }
 @media screen and (max-width: 41.5em) {
-main[data-v-fc1a4763] {
+main[data-v-c536ffb5] {
         padding-left: 0.5em;
         padding-right: 0.5em;
 }
 }
-h1[data-v-fc1a4763] {
+h1[data-v-c536ffb5] {
     line-height: 1.2em;
     margin-top: 1em;
 }
-h2[data-v-fc1a4763] {
+h2[data-v-c536ffb5] {
     border-bottom: 2px solid var(--white);
     width: 40%;
     color: var(--white);
