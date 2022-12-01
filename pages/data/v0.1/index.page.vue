@@ -12,10 +12,10 @@
                     <ChecklistLink v-bind:href="linkToSoftwareChecklist">software</ChecklistLink>
                     instead.
                 </p>
-                <div v-for="aspect in aspects" v-bind:key="aspect">
-                    <h2>{{ getAspectFullname(aspect) }}</h2>
+                <div v-for="principle in principles" v-bind:key="principle">
+                    <h2>{{ getFullname(principle) }}</h2>
                     <ChecklistQuestion
-                        v-for="question in questions.filter(q => q.aspect === aspect)"
+                        v-for="question in questions.filter(q => q.principle === principle)"
                         v-bind:key="question.id"
                         v-bind:question="question"
                     />
@@ -33,13 +33,13 @@
 </template>
 
 <script setup lang="ts">
-import { aspects } from './store';
+import { principles } from './store';
 import { latest } from '~/renderer/versions';
 import { nQuestions } from './store';
 import { progress } from './store';
 import { questions } from './store';
 import { setQuestions } from './store';
-import { type Aspect } from './types';
+import { type Principle } from './types';
 import { type Question } from './types';
 import ChecklistAbout from './ChecklistAbout.vue';
 import ChecklistBannerVersions from './ChecklistBannerVersions.vue';
@@ -53,12 +53,12 @@ import './app.css';
 
 setQuestions(data as Question[]);
 
-const getAspectFullname = (aspect: Aspect) => ({
+const getFullname = (principle: Principle) => ({
     f: 'Findable',
     a: 'Accessible',
     i: 'Interoperable',
     r: 'Reusable'
-}[aspect]);
+}[principle]);
 const linkToSoftwareChecklist = `${import.meta.env.BASE_URL}software/${latest.value.software}`;
 </script>
 

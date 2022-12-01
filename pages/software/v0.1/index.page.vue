@@ -13,10 +13,10 @@
                     <ChecklistLink v-bind:href="linkToDataChecklist">data</ChecklistLink>
                     instead.
                 </p>
-                <div v-for="aspect in aspects" v-bind:key="aspect">
-                    <h2>{{ getAspectFullname(aspect) }}</h2>
+                <div v-for="principle in principles" v-bind:key="principle">
+                    <h2>{{ getFullname(principle) }}</h2>
                     <ChecklistQuestion
-                        v-for="question in questions.filter(q => q.aspect === aspect)"
+                        v-for="question in questions.filter(q => q.principle === principle)"
                         v-bind:key="question.id"
                         v-bind:question="question"
                     />
@@ -39,13 +39,13 @@
 <script setup lang='ts'>
 import { onMounted } from 'vue';
 import { ref } from 'vue';
-import { aspects } from './store';
 import { latest } from '~/renderer/versions';
 import { nQuestions } from './store';
+import { principles } from './store';
 import { progress } from './store';
 import { questions } from './store';
 import { setQuestions } from './store';
-import { type Aspect } from './types';
+import { type Principle } from './types';
 import { type Question } from './types';
 import ChecklistAbout from './ChecklistAbout.vue';
 import ChecklistBadgeSnippets from './ChecklistBadgeSnippets.vue';
@@ -63,12 +63,12 @@ setQuestions(data as Question[]);
 
 const disableButton = ref(false);
 
-const getAspectFullname = (aspect: Aspect) => ({
+const getFullname = (principle: Principle) => ({
     f: 'Findable',
     a: 'Accessible',
     i: 'Interoperable',
     r: 'Reusable'
-}[aspect]);
+}[principle]);
 const scrollToBadgesSection = () => {
     document.getElementById('badges-section')?.scrollIntoView({ behavior: 'smooth' });
 };

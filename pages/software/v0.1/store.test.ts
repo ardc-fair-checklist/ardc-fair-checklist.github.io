@@ -21,7 +21,7 @@ describe('store', () => {
     describe('initial state', () => {
         test('verify the data is the test set', () => {
             const actual = questions.value[0].text;
-            const expected = 'questions text for aspect f, question 0';
+            const expected = 'questions text for principle f, question 0';
             assert(actual === expected, 'not using the test data set.');
         });
         test('verify the initial compliance is zeroes', () => {
@@ -37,10 +37,10 @@ describe('store', () => {
                 r: progress.value.r,
                 overall: progress.value.overall
             };
-            assert(actual.f === '0%', 'initial progress on aspect f should be 0%.');
-            assert(actual.a === '0%', 'initial progress on aspect a should be 0%.');
-            assert(actual.i === '0%', 'initial progress on aspect i should be 0%.');
-            assert(actual.r === '0%', 'initial progress on aspect r should be 0%.');
+            assert(actual.f === '0%', 'initial progress on principle f should be 0%.');
+            assert(actual.a === '0%', 'initial progress on principle a should be 0%.');
+            assert(actual.i === '0%', 'initial progress on principle i should be 0%.');
+            assert(actual.r === '0%', 'initial progress on principle r should be 0%.');
             assert(actual.overall === '0%', 'initial progress overall should be 0%.');
         });
         test('verify the fair query parameters are correct', () => {
@@ -64,14 +64,14 @@ describe('store', () => {
             const newCompliance = [1, 0, 0, 0, 0, 0, 0, 0, 0, 0];
             setCompliance(newCompliance);
         });
-        test('the progress percentage for the corresponding aspect should go up', () => {
+        test('the progress percentage for the corresponding principle should go up', () => {
             const actual = parseFloat(progress.value.f.slice(0, -1));
-            assert(actual > 0, 'progress for aspect f should be greater than 0');
+            assert(actual > 0, 'progress for principle f should be greater than 0');
         });
-        test('the progress percentage for the corresponding aspect should go up by the correct amount', () => {
+        test('the progress percentage for the corresponding principle should go up by the correct amount', () => {
             const actual = parseFloat(progress.value.f.slice(0, -1));
             const expected = 5;
-            assert(actual === expected, 'progress for aspect f should be 5%');
+            assert(actual === expected, 'progress for principle f should be 5%');
         });
         test('the overall progress percentage should go up', () => {
             const actual = parseFloat(progress.value.overall.slice(0, -1));

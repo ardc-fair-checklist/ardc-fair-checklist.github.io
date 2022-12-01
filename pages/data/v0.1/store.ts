@@ -1,9 +1,9 @@
 import { computed } from 'vue';
 import { ref } from 'vue';
-import { Aspect } from './types';
+import { Principle } from './types';
 import { Question } from './types';
 
-export const aspects = ['f', 'a', 'i', 'r'] as Aspect[];
+export const principles = ['f', 'a', 'i', 'r'] as Principle[];
 
 const state = ref({
     compliance: [] as number[],
@@ -23,8 +23,8 @@ export const setQuestions = (questionsNoIndex: Question[]) => {
 };
 
 export const nQuestions = computed(() => {
-    const deriveNumberOfQuestions = (aspect: Aspect) => (
-        state.value.questions.filter(question => question.aspect === aspect).length
+    const deriveNumberOfQuestions = (principle: Principle) => (
+        state.value.questions.filter(question => question.principle === principle).length
     );
     return {
         f: deriveNumberOfQuestions('f'),
@@ -36,10 +36,10 @@ export const nQuestions = computed(() => {
 });
 
 const nPointsMax = computed(() => {
-    const derivePointsMax = (aspect: Aspect | '*') => {
+    const derivePointsMax = (principle: Principle | '*') => {
         let selectedQuestions = state.value.questions;
-        if (aspect !== '*') {
-            selectedQuestions = state.value.questions.filter(q => q.aspect === aspect);
+        if (principle !== '*') {
+            selectedQuestions = state.value.questions.filter(q => q.principle === principle);
         }
         return selectedQuestions.map(q => Math.max(...q.answers.map(a => a.score)))
             .reduce((previousValue, currentValue) => previousValue + currentValue, 0);

@@ -32,7 +32,13 @@
                         "type": "array",
                         "uniqueItems": true
                     },
-                    "aspect": {
+                    "guidance": {
+                        "type": "string"
+                    },
+                    "id": {
+                        "type": "string"
+                    },
+                    "principle": {
                         "enum": [
                             "f",
                             "a",
@@ -41,22 +47,12 @@
                         ],
                         "type": "string"
                     },
-                    "guidance": {
-                        "type": "string"
-                    },
-                    "id": {
-                        "type": "string"
-                    },
-                    "principle": {
-                        "type": "string"
-                    },
                     "text": {
                         "type": "string"
                     }
                 },
                 "required": [
                     "answers",
-                    "aspect",
                     "guidance",
                     "id",
                     "principle",

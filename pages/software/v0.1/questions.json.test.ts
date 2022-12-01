@@ -30,26 +30,26 @@ describe('the software questions data', () => {
             .every(elem => elem)).toBe(true);
     });
 
-    test('the questions should be ordered by aspect and appear in FAIR order', () => {
-        const stringified = questions.map(q => q.aspect).join('');
+    test('the questions should be ordered by principle and appear in FAIR order', () => {
+        const stringified = questions.map(q => q.principle).join('');
         const re = /^f+a+i+r+$/;
         expect(re.test(stringified)).toBe(true);
     });
 
-    test('there should be 6 questions with aspect \'f\'', () => {
-        expect(questions.filter(q => q.aspect === 'f').length).toBe(6);
+    test('there should be 6 questions with principle \'f\'', () => {
+        expect(questions.filter(q => q.principle === 'f').length).toBe(6);
     });
 
-    test('there should be 4 questions with aspect \'a\'', () => {
-        expect(questions.filter(q => q.aspect === 'a').length).toBe(4);
+    test('there should be 4 questions with principle \'a\'', () => {
+        expect(questions.filter(q => q.principle === 'a').length).toBe(4);
     });
 
-    test('there should be 2 questions with aspect \'i\'', () => {
-        expect(questions.filter(q => q.aspect === 'i').length).toBe(2);
+    test('there should be 2 questions with principle \'i\'', () => {
+        expect(questions.filter(q => q.principle === 'i').length).toBe(2);
     });
 
-    test('there should be 6 questions with aspect \'r\'', () => {
-        expect(questions.filter(q => q.aspect === 'r').length).toBe(6);
+    test('there should be 6 questions with principle \'r\'', () => {
+        expect(questions.filter(q => q.principle === 'r').length).toBe(6);
     });
 
     test('there should be 18 questions in total', () => {

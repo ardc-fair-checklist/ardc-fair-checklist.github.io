@@ -4,13 +4,12 @@ export type Answer = {
     text: string
 };
 
-export type Aspect = 'f' | 'a' | 'i' | 'r';
+export type Principle = 'f' | 'a' | 'i' | 'r';
 
 export type Question = {
     answers: Answer[],
-    aspect: Aspect,
     guidance: string,
     id: string,
-    principle: string,
+    principle: Principle,
     text: string
 };

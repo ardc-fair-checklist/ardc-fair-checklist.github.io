@@ -23,10 +23,9 @@
                     "text": "Globally Unique, citable and persistent (e.g. DOI, PURL, ARK or Handle)"
                 }
             ],
-            "aspect": "f",
             "guidance": "",
             "id": "f:q0",
-            "principle": "",
+            "principle": "f",
             "text": "Does the dataset have any identifiers assigned?"
         },
         {
@@ -42,10 +41,9 @@
                     "text": "Yes"
                 }
             ],
-            "aspect": "f",
             "guidance": "",
             "id": "f:q1",
-            "principle": "",
+            "principle": "f",
             "text": "Is the dataset identifier included in all metadata records/files describing the data?"
         },
         {
@@ -71,10 +69,9 @@
                     "text": "Comprehensively (see suggestion) using a recognised formal machine-readable metadata schema."                                                                                                                    
                 }
             ],
-            "aspect": "f",
             "guidance": "",
             "id": "f:q2",
-            "principle": "",
+            "principle": "f",
             "text": "How is the data described with metadata?"
         },
         {
@@ -105,10 +102,9 @@
                     "text": "Data is in one place but discoverable through several registries"
                 }
             ],
-            "aspect": "f",
             "guidance": "",
             "id": "f:q3",
-            "principle": "",
+            "principle": "f",
             "text": "What type of repository or registry is the metadata record in?"
         },
         {
@@ -149,10 +145,9 @@
                     "text": "Publicly accessible"
                 }
             ],
-            "aspect": "a",
             "guidance": "",
             "id": "a:q0",
-            "principle": "",
+            "principle": "a",
             "text": "How accessible is the data?"
         },
         {
@@ -183,10 +178,9 @@
                     "text": "Standard web service API (e.g. OGC)"
                 }
             ],
-            "aspect": "a",
             "guidance": "",
             "id": "a:q1",
-            "principle": "",
+            "principle": "a",
             "text": "Is the data available online without requiring specialised protocols or tools once access has been approved?"                                                                                                            
         },
         {
@@ -207,10 +201,9 @@
                     "text": "Yes"
                 }
             ],
-            "aspect": "a",
             "guidance": "",
             "id": "a:q2",
-            "principle": "",
+            "principle": "a",
             "text": "Will the metadata record be available even if the data is no longer available?"
         },
         {
@@ -231,10 +224,9 @@
                     "text": "In a structured, open standard, machine-readable format"
                 }
             ],
-            "aspect": "i",
             "guidance": "",
             "id": "i:q0",
-            "principle": "",
+            "principle": "i",
             "text": "What (file) format(s) is the data available in?"
         },
         {
@@ -260,10 +252,9 @@
                     "text": "Standardised open and universal using resolvable global identifiers linking to explanations"                                                                                                                     
                 }
             ],
-            "aspect": "i",
             "guidance": "",
             "id": "i:q1",
-            "principle": "",
+            "principle": "i",
             "text": "What best describes the types of vocabularies/ontologies/tagging schemas used to define the data elements?"                                                                                                              
         },
         {
@@ -284,10 +275,9 @@
                     "text": "Metadata is represented in a machine readable format, e.g. in a linked data format such as Resource Description Framework (RDF)."                                                                                
                 }
             ],
-            "aspect": "i",
             "guidance": "",
             "id": "i:q2",
-            "principle": "",
+            "principle": "i",
             "text": "How is the metadata linked to other data and metadata (to enhance context and clearly indicate relationships)?"                                                                                                          
         },
         {
@@ -318,10 +308,9 @@
                     "text": "Standard machine-readable license (e.g. Creative Commons)"
                 }
             ],
-            "aspect": "r",
             "guidance": "",
             "id": "r:q0",
-            "principle": "",
+            "principle": "r",
             "text": "Which of the following best describes the license/usage rights attached to the data?"
         },
         {
@@ -347,10 +336,9 @@
                     "text": "Fully recorded in a machine readable format"
                 }
             ],
-            "aspect": "r",
             "guidance": "",
             "id": "r:q1",
-            "principle": "",
+            "principle": "r",
             "text": "How much provenance information has been captured to facilitate data reuse?"
         }
     ],

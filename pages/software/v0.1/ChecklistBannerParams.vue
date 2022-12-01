@@ -7,10 +7,11 @@
 <script setup lang="ts">
 import { onMounted } from 'vue';
 import { ref } from 'vue';
-import { aspects } from './store';
+import { principles } from './store';
 import { nAnswers } from './store';
 import { nQuestions } from './store';
 import { setCompliance } from './store';
+import { type Principle } from './types';
 
 const bannerMessage = ref('');
 onMounted(() => {
@@ -27,26 +28,25 @@ onMounted(() => {
         i: searchParams.get('i') || '',
         r: searchParams.get('r') || ''
     } as QueryParams;
-    type Aspect = 'f' | 'a' | 'i' | 'r';
     const chooseBannerMessage = () => {
-        const checkAspect = (aspect: Aspect) => {
-            if (params[aspect].length !== nQuestions.value[aspect]) {
+        const checkPrinciple = (principle: Principle) => {
+            if (params[principle].length !== nQuestions.value[principle]) {
                 return {
-                    msg: `Query parameter '${aspect}' does not have the right number of elements (${nQuestions.value[aspect]})`,
+                    msg: `Query parameter '${principle}' does not have the right number of elements (${nQuestions.value[principle]})`,
                     err: true
                 };
             }
-            if (/^[0-9]+$/.test(params[aspect]) === false) {
+            if (/^[0-9]+$/.test(params[principle]) === false) {
                 return {
-                    msg: `Query parameter '${aspect}' includes unknown character`,
+                    msg: `Query parameter '${principle}' includes unknown character`,
                     err: true
                 };
             }
-            const supplied = params[aspect].split('').map(c => parseInt(c, 10));
+            const supplied = params[principle].split('').map(c => parseInt(c, 10));
             const errors = supplied.map((iAnswer, index) => {
-                if (iAnswer >= nAnswers.value[aspect][index]) {
+                if (iAnswer >= nAnswers.value[principle][index]) {
                     return {
-                        msg: `Query parameter '${aspect}' has out-of-range value on position ${index}`,
+                        msg: `Query parameter '${principle}' has out-of-range value on position ${index}`,
                         err: true
                     };
                 }
@@ -58,18 +58,18 @@ onMounted(() => {
             };
         };
         if (Object.values(params).every(e => e === '')) {
-            // none of the aspects of FAIR have been assigned some value
+            // none of the principles of FAIR have been assigned some value
             return { msg: '', err: false };
         }
         if (Object.values(params).every(e => e !== '')) {
-            // every aspect of FAIR has been assigned some value
+            // every principle of FAIR has been assigned some value
         } else {
             return {
                 msg: "When using query parameters, include 'f', 'a', 'i', and 'r'",
                 err: true
             };
         }
-        const errors = aspects.map(a => checkAspect(a)).filter(error => error.err === true);
+        const errors = principles.map(p => checkPrinciple(p)).filter(error => error.err === true);
         return {
             msg: errors.map(e => e.msg).join('; '),
             err: errors.length > 0
@@ -83,7 +83,7 @@ onMounted(() => {
         // compliance state but use the default instead
         setCompliance(zeros);
     } else if (Object.values(params).every(e => e === '')) {
-        // none of the aspects of FAIR have been assigned a
+        // none of the principles of FAIR have been assigned a
         // value, use the default zeros for initialization
         setCompliance(zeros);
     } else {

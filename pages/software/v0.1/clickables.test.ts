@@ -27,10 +27,10 @@ describe('Clickables', () => {
         });
     });
     describe('If a user clicks on a non-zero-points answer to a question,', () => {
-        test.todo('the progress percentage for the corresponding aspect should go up', () => {
+        test.todo('the progress percentage for the corresponding principle should go up', () => {
             expect(true).toBe(true);
         });
-        test.todo('the progress percentage for the corresponding aspect should go up by the correct amount', () => {
+        test.todo('the progress percentage for the corresponding principle should go up by the correct amount', () => {
             expect(true).toBe(true);
         });
         test.todo('the overall progress percentage should go up', () => {
@@ -46,11 +46,11 @@ describe('Clickables', () => {
             expect(true).toBe(true);
         });
     });
-    describe('If a user has 100% on all aspects, and then clicks on a zero-points answer to a question,', () => {
-        test.todo('the progress percentage for the corresponding aspect should go down', () => {
+    describe('If a user has 100% on all principles, and then clicks on a zero-points answer to a question,', () => {
+        test.todo('the progress percentage for the corresponding principle should go down', () => {
             expect(true).toBe(true);
         });
-        test.todo('the progress percentage for the corresponding aspect should go down by the correct amount', () => {
+        test.todo('the progress percentage for the corresponding principle should go down by the correct amount', () => {
             expect(true).toBe(true);
         });
         test.todo('the overall progress percentage should go down', () => {
