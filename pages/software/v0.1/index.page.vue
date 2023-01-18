@@ -47,7 +47,6 @@ import { principles } from './store';
 import { progress } from './store';
 import { questions } from './store';
 import { setQuestions } from './store';
-import { questionsAsProse } from './store';
 import { type Principle } from './types';
 import { type Question } from './types';
 import ChecklistAbout from './ChecklistAbout.vue';
@@ -101,7 +100,6 @@ onMounted(() => {
         ].join('');
         window.history.pushState({}, '', preserve);
     };
-    console.log(questionsAsProse.value);
 });
 
 const linkToDataChecklist = `${import.meta.env.BASE_URL}data/${latest.value.data}`;
