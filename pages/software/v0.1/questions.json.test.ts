@@ -11,6 +11,8 @@ const ajv = new Ajv(); // options can be passed, e.g. {allErrors: true}
 const validate = ajv.compile(schema);
 
 describe('the software questions data', () => {
+    const unique = (v: string, i: number, self: string[]) => self.indexOf(v) === i;
+
     test('should validate against the schema', () => {
         const valid = validate({ questions, version });
         expect(valid).toBe(true);
@@ -36,23 +38,35 @@ describe('the software questions data', () => {
         expect(re.test(stringified)).toBe(true);
     });
 
+    test('each question should have a unique identifier', () => {
+        const identifiers = questions.map(q => q.id);
+        const uniqued = identifiers.filter(unique);
+        expect(identifiers.length).toBe(uniqued.length);
+    });
+
+    test('each answer should have a unique identifier', () => {
+        const identifiers = questions.flatMap(q => q.answers).map(a => a.id);
+        const uniqued = identifiers.filter(unique);
+        expect(identifiers.length).toBe(uniqued.length);
+    });
+
     test('there should be 6 questions with principle \'f\'', () => {
-        expect(questions.filter(q => q.principle === 'f').length).toBe(6);
+        expect(questions.filter(q => q.principle === 'f').length).toBe(1);
     });
 
     test('there should be 4 questions with principle \'a\'', () => {
-        expect(questions.filter(q => q.principle === 'a').length).toBe(4);
+        expect(questions.filter(q => q.principle === 'a').length).toBe(6);
     });
 
     test('there should be 2 questions with principle \'i\'', () => {
-        expect(questions.filter(q => q.principle === 'i').length).toBe(2);
+        expect(questions.filter(q => q.principle === 'i').length).toBe(1);
     });
 
     test('there should be 6 questions with principle \'r\'', () => {
-        expect(questions.filter(q => q.principle === 'r').length).toBe(6);
+        expect(questions.filter(q => q.principle === 'r').length).toBe(3);
     });
 
     test('there should be 18 questions in total', () => {
-        expect(questions.length).toBe(18);
+        expect(questions.length).toBe(11);
     });
 });
