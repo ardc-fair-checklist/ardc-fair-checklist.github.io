@@ -4,6 +4,7 @@
         <ChecklistHeader />
         <main>
             <h1>Self-assessment checklist for FAIR data</h1>
+            <ChecklistBannerWIP />
             <ChecklistBannerVersions />
             <template v-if="nQuestions.total > 0">
                 <p>
@@ -43,6 +44,7 @@ import { type Principle } from './types';
 import { type Question } from './types';
 import ChecklistAbout from './ChecklistAbout.vue';
 import ChecklistBannerVersions from './ChecklistBannerVersions.vue';
+import ChecklistBannerWIP from './ChecklistBannerWIP.vue';
 import ChecklistHeader from './ChecklistHeader.vue';
 import ChecklistLink from './ChecklistLink.vue';
 import ChecklistProgressBars from './ChecklistProgressBars.vue';
