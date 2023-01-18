@@ -84,16 +84,16 @@ const progress = computed(() => {
   };
 });
 const ChecklistAbout_vue_vue_type_style_index_0_scoped_7d371f09_lang = "";
-const _sfc_main$7 = {};
-const _hoisted_1$6 = /* @__PURE__ */ createStaticVNode('<div class="logos" data-v-7d371f09><a href="https://esciencecenter.nl" target="_blank" data-v-7d371f09><img class="logo" src="' + _imports_0 + '" alt="nlesc logo" data-v-7d371f09></a><a href="https://ardc.edu.au" target="_blank" data-v-7d371f09><img class="logo" src="' + _imports_1 + '" alt="ardc logo" data-v-7d371f09></a></div>', 1);
-function _sfc_render(_ctx, _cache) {
+const _sfc_main$8 = {};
+const _hoisted_1$7 = /* @__PURE__ */ createStaticVNode('<div class="logos" data-v-7d371f09><a href="https://esciencecenter.nl" target="_blank" data-v-7d371f09><img class="logo" src="' + _imports_0 + '" alt="nlesc logo" data-v-7d371f09></a><a href="https://ardc.edu.au" target="_blank" data-v-7d371f09><img class="logo" src="' + _imports_1 + '" alt="ardc logo" data-v-7d371f09></a></div>', 1);
+function _sfc_render$1(_ctx, _cache) {
   return openBlock(), createElementBlock("footer", null, [
-    _hoisted_1$6,
+    _hoisted_1$7,
     createBaseVNode("p", null, toDisplayString("This checklist is a collaborative effort by Netherlands eScience Center and Australian Research Data Commons."), 1)
   ]);
 }
-const ChecklistAbout = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render], ["__scopeId", "data-v-7d371f09"]]);
-const _sfc_main$6 = /* @__PURE__ */ defineComponent({
+const ChecklistAbout = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["render", _sfc_render$1], ["__scopeId", "data-v-7d371f09"]]);
+const _sfc_main$7 = /* @__PURE__ */ defineComponent({
   __name: "ChecklistLink",
   setup(__props) {
     const pageContext = usePageContext();
@@ -107,13 +107,13 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
   }
 });
 const ChecklistLink_vue_vue_type_style_index_0_scoped_7c19731c_lang = "";
-const ChecklistLink = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__scopeId", "data-v-7c19731c"]]);
+const ChecklistLink = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["__scopeId", "data-v-7c19731c"]]);
 const app = "";
-const _hoisted_1$5 = {
+const _hoisted_1$6 = {
   key: 0,
   class: "banner"
 };
-const _sfc_main$5 = /* @__PURE__ */ defineComponent({
+const _sfc_main$6 = /* @__PURE__ */ defineComponent({
   __name: "ChecklistBannerVersions",
   setup(__props) {
     const link = computed(() => [
@@ -128,7 +128,7 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
       showBanner.value = myVersion !== latest.value.data;
     });
     return (_ctx, _cache) => {
-      return showBanner.value ? (openBlock(), createElementBlock("div", _hoisted_1$5, [
+      return showBanner.value ? (openBlock(), createElementBlock("div", _hoisted_1$6, [
         createTextVNode(" A newer version of this checklist is available at "),
         createVNode(ChecklistLink, { href: unref(link) }, {
           default: withCtx(() => [
@@ -142,7 +142,14 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
   }
 });
 const ChecklistBannerVersions_vue_vue_type_style_index_0_scoped_320eb019_lang = "";
-const ChecklistBannerVersions = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-320eb019"]]);
+const ChecklistBannerVersions = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__scopeId", "data-v-320eb019"]]);
+const ChecklistBannerWIP_vue_vue_type_style_index_0_scoped_b79ea234_lang = "";
+const _sfc_main$5 = {};
+const _hoisted_1$5 = { class: "banner" };
+function _sfc_render(_ctx, _cache) {
+  return openBlock(), createElementBlock("div", _hoisted_1$5, " This website is a work in progress. Note that for the time being, the number of questions in the checklist, their order, and their content is subject to change. ");
+}
+const ChecklistBannerWIP = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["render", _sfc_render], ["__scopeId", "data-v-b79ea234"]]);
 const _withScopeId$1 = (n) => (pushScopeId("data-v-30b9123a"), n = n(), popScopeId(), n);
 const _hoisted_1$4 = { class: "home" };
 const _hoisted_2$3 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("svg", {
@@ -659,7 +666,7 @@ const questions = [
     text: "How much provenance information has been captured to facilitate data reuse?"
   }
 ];
-const _withScopeId = (n) => (pushScopeId("data-v-c536ffb5"), n = n(), popScopeId(), n);
+const _withScopeId = (n) => (pushScopeId("data-v-da508c0e"), n = n(), popScopeId(), n);
 const _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("h1", null, "Self-assessment checklist for FAIR data", -1));
 const _sfc_main = /* @__PURE__ */ defineComponent({
   __name: "index.page",
@@ -677,6 +684,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
         createVNode(ChecklistHeader),
         createBaseVNode("main", null, [
           _hoisted_1,
+          createVNode(ChecklistBannerWIP),
           createVNode(ChecklistBannerVersions),
           unref(nQuestions).total > 0 ? (openBlock(), createElementBlock(Fragment, { key: 0 }, [
             createBaseVNode("p", null, [
@@ -710,8 +718,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const index_page_vue_vue_type_style_index_0_scoped_c536ffb5_lang = "";
-const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-c536ffb5"]]);
+const index_page_vue_vue_type_style_index_0_scoped_da508c0e_lang = "";
+const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-da508c0e"]]);
 export {
   index_page as default
 };

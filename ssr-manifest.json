@@ -25,6 +25,8 @@
   "pages/data/v0.1/ChecklistBannerVersions.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/data/v0.1/ChecklistBannerVersions.vue?vue&type=style&index=0&scoped=320eb019&lang.css": [],
   "pages/data/v0.1/ChecklistBannerVersions.vue": [],
+  "pages/data/v0.1/ChecklistBannerWIP.vue?vue&type=style&index=0&scoped=b79ea234&lang.css": [],
+  "pages/data/v0.1/ChecklistBannerWIP.vue": [],
   "pages/data/v0.1/ChecklistHeader.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/data/v0.1/ChecklistHeader.vue?vue&type=style&index=0&scoped=30b9123a&lang.css": [],
   "pages/data/v0.1/ChecklistHeader.vue": [],
@@ -39,7 +41,7 @@
   "pages/data/v0.1/ChecklistQuestion.vue": [],
   "pages/data/v0.1/questions.json": [],
   "pages/data/v0.1/index.page.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/data/v0.1/index.page.vue?vue&type=style&index=0&scoped=c536ffb5&lang.css": [],
+  "pages/data/v0.1/index.page.vue?vue&type=style&index=0&scoped=da508c0e&lang.css": [],
   "pages/data/v0.1/index.page.vue": [],
   "pages/software/index/app.css": [],
   "pages/software/index/index.page.vue?vue&type=script&setup=true&lang.ts": [],
@@ -60,6 +62,8 @@
   "pages/software/v0.1/ChecklistBannerVersions.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/software/v0.1/ChecklistBannerVersions.vue?vue&type=style&index=0&scoped=d9a7a226&lang.css": [],
   "pages/software/v0.1/ChecklistBannerVersions.vue": [],
+  "pages/software/v0.1/ChecklistBannerWIP.vue?vue&type=style&index=0&scoped=518e944f&lang.css": [],
+  "pages/software/v0.1/ChecklistBannerWIP.vue": [],
   "pages/software/v0.1/ChecklistHeader.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/software/v0.1/ChecklistHeader.vue?vue&type=style&index=0&scoped=eb689ef1&lang.css": [],
   "pages/software/v0.1/ChecklistHeader.vue": [],
@@ -74,7 +78,7 @@
   "pages/software/v0.1/ChecklistQuestion.vue": [],
   "pages/software/v0.1/questions.json": [],
   "pages/software/v0.1/index.page.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/software/v0.1/index.page.vue?vue&type=style&index=0&scoped=6892d18a&lang.css": [],
+  "pages/software/v0.1/index.page.vue?vue&type=style&index=0&scoped=ee6a23ff&lang.css": [],
   "pages/software/v0.1/index.page.vue": [],
   "node_modules/vite-plugin-ssr/dist/esm/utils/isPlainObject.js": [],
   "node_modules/vite-plugin-ssr/dist/esm/utils/stringifyStringArray.js": [],
@@ -131,8 +135,8 @@
     "/ssg/assets/index.page.ec3ad890.css",
     "/ssg/assets/global.b082e789.css"
   ],
-  "index.page.c48835ef.js": [
-    "/ssg/assets/index.page.a48c0b47.css",
+  "index.page.aeb370a2.js": [
+    "/ssg/assets/index.page.90da2c15.css",
     "/ssg/assets/global.b082e789.css"
   ],
   "index.page.41787c96.js": [
@@ -143,8 +147,8 @@
     "/ssg/assets/index.page.21e1d615.css",
     "/ssg/assets/global.b082e789.css"
   ],
-  "index.page.8783c27c.js": [
-    "/ssg/assets/index.page.5af5d4fd.css",
+  "index.page.86348cdf.js": [
+    "/ssg/assets/index.page.d955019a.css",
     "/ssg/assets/global.b082e789.css"
   ],
   "_error.page.de708dd4.js": [],
