@@ -4,6 +4,7 @@
         <ChecklistHeader />
         <main>
             <h1>Self-assessment checklist for FAIR software</h1>
+            <ChecklistBannerWIP />
             <ChecklistBannerVersions />
             <ChecklistBannerParams />
             <template v-if="nQuestions.total > 0">
@@ -46,12 +47,14 @@ import { principles } from './store';
 import { progress } from './store';
 import { questions } from './store';
 import { setQuestions } from './store';
+import { questionsAsProse } from './store';
 import { type Principle } from './types';
 import { type Question } from './types';
 import ChecklistAbout from './ChecklistAbout.vue';
 import ChecklistBadgeSnippets from './ChecklistBadgeSnippets.vue';
 import ChecklistBannerParams from './ChecklistBannerParams.vue';
 import ChecklistBannerVersions from './ChecklistBannerVersions.vue';
+import ChecklistBannerWIP from './ChecklistBannerWIP.vue';
 import ChecklistHeader from './ChecklistHeader.vue';
 import ChecklistLink from './ChecklistLink.vue';
 import ChecklistProgressBars from './ChecklistProgressBars.vue';
@@ -98,6 +101,7 @@ onMounted(() => {
         ].join('');
         window.history.pushState({}, '', preserve);
     };
+    console.log(questionsAsProse.value);
 });
 
 const linkToDataChecklist = `${import.meta.env.BASE_URL}data/${latest.value.data}`;
