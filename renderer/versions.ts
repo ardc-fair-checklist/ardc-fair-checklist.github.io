@@ -3,7 +3,7 @@ import { ref } from 'vue';
 
 const state = ref({
     data: ['v0.1'],
-    software: ['v0.1']
+    software: ['v0.1', 'v0.2']
 });
 
 export const versions = computed(() => state.value);
