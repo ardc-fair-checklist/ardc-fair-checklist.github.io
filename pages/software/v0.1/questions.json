@@ -5,263 +5,484 @@
                 {
                     "id": "f:q0:a0",
                     "score": 0,
-                    "text": "No"
+                    "text": "No identifier"
                 },
                 {
                     "id": "f:q0:a1",
                     "score": 1,
-                    "text": "Yes E.g. keywords from the metadata are recognized by Search Engine Optimization tools such as https://validator.schema.org"
+                    "text": "Local identifier or reasonably unique name"
+                },
+                {
+                    "id": "f:q0:a2",
+                    "score": 2,
+                    "text": "Web address (URL)"
+                },
+                {
+                    "id": "f:q0:a3",
+                    "score": 3,
+                    "text": "Globally unique and persistent identifier (e.g. DOI, PURL, or Handle)"
                 }
             ],
-            "guidance": "",
+            "guidance": "A uniquely named piece of software is not the same as an identifier as it might be linked to a registry or programming language. A Uniform Resource Locator (URL) is a kind of unique identifier, but might not be persistent.",
             "id": "f:q0",
             "principle": "f",
-            "text": "Is information from the software or its metadata consumed by local or global search engines to help rank their results?"
+            "text": "Does the software have any identifier assigned?"
+        },
+        {
+            "answers": [
+                {
+                    "id": "f:q1:a0",
+                    "score": 0,
+                    "text": "No identifier"
+                },
+                {
+                    "id": "f:q1:a1",
+                    "score": 1,
+                    "text": "There is only one identifier for the entire bundle/package"
+                },
+                {
+                    "id": "f:q1:a2",
+                    "score": 2,
+                    "text": "Some components have distinct identifiers"
+                },
+                {
+                    "id": "f:q1:a3",
+                    "score": 3,
+                    "text": "Each component has a PID with reference to a top level PID"
+                }
+            ],
+            "guidance": "A persistent identifier (PID) like a DOI, PURL or Handle has the following characteristics: globally unique, citable and persistent. The granularity is decided for each software and its maturity.",
+            "id": "f:q1",
+            "principle": "f",
+            "text": "Are different components of the software assigned distinct identifiers representing different levels of granularity?"
+        },
+        {
+            "answers": [
+                {
+                    "id": "f:q2:a0",
+                    "score": 0,
+                    "text": "No identifier"
+                },
+                {
+                    "id": "f:q2:a1",
+                    "score": 1,
+                    "text": "Each major version (version X) is assigned an identifier"
+                },
+                {
+                    "id": "f:q2:a2",
+                    "score": 2,
+                    "text": "available versions distinctly identified"
+                }
+            ],
+            "guidance": "Version is one of the granularity levels identified as most relevant. Depending on the maturity of the software development, not only major versions but minor and point versions are also encouraged. For example: - each minor version (version X.Y) is assigned an identifier - Each point version (version X.Y.Z) is assigned an identifier",
+            "id": "f:q2",
+            "principle": "f",
+            "text": "Are different versions of the same software identified?"
+        },
+        {
+            "answers": [
+                {
+                    "id": "f:q3:a0",
+                    "score": 0,
+                    "text": "The software is not described with any metadata"
+                },
+                {
+                    "id": "f:q3:a1",
+                    "score": 1,
+                    "text": "The software has a title and a brief description"
+                },
+                {
+                    "id": "f:q3:a2",
+                    "score": 2,
+                    "text": "Title, description, and multiple fields are provided, albeit informally (not using a standard format)"
+                },
+                {
+                    "id": "f:q3:a3",
+                    "score": 3,
+                    "text": "Described comprehensively using a formal machine-readable metadata schema "
+                }
+            ],
+            "guidance": "See also Interoperable and Reusable for specific questions about relationships between objects, and about specific kinds of metadata. Rich metadata constitutes a plurality of attributes (for R1): (e.g. name, version, contributors roles, programming language, description of the purpose, science domain, key words, licence, PID, related identifiers) Examples of formal machine-readable metadata schemas are (e.g. Citation.CFF, .zenodo.json, codemeta.jsonld)",
+            "id": "f:q3",
+            "principle": "f",
+            "text": "Is the software described with rich metadata?"
+        },
+        {
+            "answers": [
+                {
+                    "id": "f:q4:a0",
+                    "score": 0,
+                    "text": "No metadata"
+                },
+                {
+                    "id": "f:q4:a1",
+                    "score": 1,
+                    "text": "Metadata does not include an identifier for the software"
+                },
+                {
+                    "id": "f:q4:a2",
+                    "score": 2,
+                    "text": "The identifier is captured in the metadata that describes the software"
+                }
+            ],
+            "guidance": "The identifier is recommended to be globally unique and persistent. Those features enable citability. F3 calls for that identifier to be included within the metadata record that the identifier points to",
+            "id": "f:q4",
+            "principle": "f",
+            "text": "Is the identifier included in the metadata that describes the software?"
+        },
+        {
+            "answers": [
+                {
+                    "id": "f:q5:a0",
+                    "score": 0,
+                    "text": "No metadata"
+                },
+                {
+                    "id": "f:q5:a1",
+                    "score": 1,
+                    "text": "Metadata is not structured"
+                },
+                {
+                    "id": "f:q5:a2",
+                    "score": 2,
+                    "text": "Metadata might be searchable and indexable but not FAIR"
+                },
+                {
+                    "id": "f:q5:a3",
+                    "score": 3,
+                    "text": "Metadata is structured in a FAIR way"
+                }
+            ],
+            "guidance": "Many of the questions here relate to making the metadata associated with software FAIR. Principles F2, F3, A2, R1, and R2 all relate to making the metadata associated with software FAIR. Here the focus is on that metadata being captured in a way that enables searching and indexing of that metadata. For instance, a codemeta file may hold the relevant metadata, but if it is not exposed (or integrated) in a way that enables indexing, then it will not fulfil this criterion. Here this consideration is not just that the metadata exists, but also that it is available in a system that enables it to be FAIR.",
+            "id": "f:q5",
+            "principle": "f",
+            "text": "Are metadata FAIR, searchable and indexable?"
         },
         {
             "answers": [
                 {
                     "id": "a:q0:a0",
                     "score": 0,
-                    "text": "No. E.g. The software is only identified by its name, which is not guaranteed to be or remain unique."
+                    "text": "No access to software, or there are unspecified access conditions, or software is not retrievable by its identifier"
                 },
                 {
                     "id": "a:q0:a1",
                     "score": 1,
-                    "text": "Yes for at least some of the identifiers. E.g. The software is identifiable by its URL, or by its DOI."
+                    "text": "Software is retrieved via its identifier with defined access conditions, but access is closed or mediated by individual arrangement"
+                },
+                {
+                    "id": "a:q0:a2",
+                    "score": 2,
+                    "text": "Stated minimal restrictions for software to be downloaded from an online location (e.g personal or group website or FTP server)"
+                },
+                {
+                    "id": "a:q0:a3",
+                    "score": 3,
+                    "text": "Software can be retrieved from a publicly-accessible code development repository, package or library manager or software registry or archive"
                 }
             ],
-            "guidance": "",
+            "guidance": "Software is retrievable from: - a publicly-accessible code development repository (e.g. GitHub, GitLab, BitBucket, etc), - a package or library manager (e.g apt, CRAN, PyPI, etc), - a research software registry  (e.g. see this list), or - an archive.",
             "id": "a:q0",
             "principle": "a",
-            "text": "Are the software's identifier(s) globally unique?"
+            "text": "Can the software be retrieved via its identifier using standardised protocols?"
         },
         {
             "answers": [
                 {
                     "id": "a:q1:a0",
                     "score": 0,
-                    "text": "No. E.g. the software is identified by its filename, and a copy is stored on an individual's flash drive."
+                    "text": "No metadata record exists"
                 },
                 {
                     "id": "a:q1:a1",
                     "score": 1,
-                    "text": "Yes for at least some of the identifiers, but the identifier only resolves to the software's metadata. E.g. the software is identified by URL or DOI, but the software itself is under embargo, proprietary, closed-source, or otherwise hidden from public view."
+                    "text": "Metadata exists, but is not accessible via an identifier"
                 },
                 {
                     "id": "a:q1:a2",
                     "score": 2,
-                    "text": "Yes for at least some of the identifiers. E.g. the software is identified by its name, and additionally by its URL or DOI."
+                    "text": "Metadata is retrievable via an identifier"
+                },
+                {
+                    "id": "a:q1:a3",
+                    "score": 3,
+                    "text": "And is machine readable"
                 }
             ],
-            "guidance": "",
+            "guidance": "Some formal machine-readable metadata schema exist specifically for software (e.g. Citation.CFF, .zenodo.json, codemeta.jsonld). Mechanisms for retrieving metadata include DataCite DOI metadata, encoding of metadata using schema.org on the page resolved to by the identifier, and retrieval via a package manager",
             "id": "a:q1",
             "principle": "a",
-            "text": "Can a third party resolve the software's identifier(s) to a publicly accessible resource?"
+            "text": "Can metadata be retrieved via is identifier using standardised protocols?"
         },
         {
             "answers": [
                 {
                     "id": "a:q2:a0",
                     "score": 0,
-                    "text": "No. E.g. the identifiers include only the name of the software as a concept, but each version of that concept will have a different feature set. Or, the identifiers only include a filename or URL, whose content may be subject to change."
+                    "text": "No (e.g. a specialized client using a closed protocol might be required to download the software)"
                 },
                 {
                     "id": "a:q2:a1",
                     "score": 1,
-                    "text": "Yes, at least some of the identifiers are persistent.  E.g. The identifiers include a DOI, PURL, Handle, or some other persistent identifier. If the identifier is a concept DOI or collection DOI, the identifiers must also specify a version or version list."
+                    "text": "Protocol is not open or free and allows for authentication and authorisation"
+                },
+                {
+                    "id": "a:q2:a2",
+                    "score": 2,
+                    "text": "Protocol is open and free but does not allow for authentication and authorisation"
+                },
+                {
+                    "id": "a:q2:a3",
+                    "score": 3,
+                    "text": "Yes"
                 }
             ],
-            "guidance": "",
+            "guidance": "This question refers to the combinations of these two principles [define protocol] [describe authentication and authorisation]",
             "id": "a:q2",
             "principle": "a",
-            "text": "A few years from now, will the software's identifier(s) resolve to exactly the same content as they do today?"
+            "text": "Is the protocol open, free and universally implementable? and does it allow for authentication and autorisation procedures?"
         },
         {
             "answers": [
                 {
                     "id": "a:q3:a0",
                     "score": 0,
-                    "text": "No"
+                    "text": "Not applicable, no metadata record exists"
                 },
                 {
                     "id": "a:q3:a1",
                     "score": 1,
-                    "text": "Yes E.g. The software is retrievable through a URL that uses HTTP, HTTPS, FTP, or SFTP"
-                }
-            ],
-            "guidance": "",
-            "id": "a:q3",
-            "principle": "a",
-            "text": "Is the software retrievable using a protocol that is open, free, and universally implementable?"
-        },
-        {
-            "answers": [
-                {
-                    "id": "a:q4:a0",
-                    "score": 0,
-                    "text": "No"
+                    "text": "No, metadata is lost if software is no longer accessible"
                 },
                 {
-                    "id": "a:q4:a1",
-                    "score": 1,
+                    "id": "a:q3:a2",
+                    "score": 2,
+                    "text": "Unsure, whether the institution/registry provides this feature"
+                },
+                {
+                    "id": "a:q3:a3",
+                    "score": 3,
                     "text": "Yes"
                 }
             ],
-            "guidance": "",
-            "id": "a:q4",
+            "guidance": "Mostly a feature of the metadata registry",
+            "id": "a:q3",
             "principle": "a",
-            "text": "Is the software retrievable using a protocol that allows for authentication and authorization?"
-        },
-        {
-            "answers": [
-                {
-                    "id": "a:q5:a0",
-                    "score": 0,
-                    "text": "The software is unlicensed"
-                },
-                {
-                    "id": "a:q5:a1",
-                    "score": 1,
-                    "text": "The software is licensed with a non-standard license E.g. the software's README includes a few lines about how the software may be used, but the legal meaning has not been tested or subjected to an audit"
-                },
-                {
-                    "id": "a:q5:a2",
-                    "score": 2,
-                    "text": "The software is licensed with a standard license E.g. the software is bundled with a license text such as that of the MIT, MPL, or Apache-2.0 license"
-                },
-                {
-                    "id": "a:q5:a3",
-                    "score": 3,
-                    "text": "As previous answer, and additionally, the license is machine readable E.g. the software specifies its license in a metadata file such as pyproject.toml, package.json, CITATION.cff, .zenodo.json, codemeta.json, or R DESCRIPTION file."
-                }
-            ],
-            "guidance": "",
-            "id": "a:q5",
-            "principle": "a",
-            "text": "Which of the following best describes the software's usage rights?"
+            "text": "Are metadata accessible, even when the software is no longer available?"
         },
         {
             "answers": [
                 {
                     "id": "i:q0:a0",
                     "score": 0,
-                    "text": "Not applicable"
+                    "text": "No Domain-relevant data input/output standard is implemented"
                 },
                 {
                     "id": "i:q0:a1",
                     "score": 1,
-                    "text": "The software reads, writes and exchanges data using proprietary format(s) only"
+                    "text": "Standard data input/output"
                 },
                 {
                     "id": "i:q0:a2",
                     "score": 2,
-                    "text": "The software uses open format(s) for at least some of the data it reads, writes, or exchanges"
-                },
-                {
-                    "id": "i:q0:a3",
-                    "score": 3,
-                    "text": "As previous answer, and additionally the format(s) are common for the domain"
+                    "text": "Input/output meets domain-relevant standards"
                 }
             ],
-            "guidance": "",
+            "guidance": "A domain-relevant standard is an agreed standard that addresses the needs of a given community (or communities). For interoperation between software it is necessary that more than one software tool supports common standards for interchange. Ideally, related research software are capable of exchanging data or metadata because they all implement common standards. The way in which the data is transmitted might be via reading and writing files, or by passing arguments to an API and receiving responses. Barriers to meeting this guiding principle include a lack of relevant standards, a lack of community consensus on relevant standards, a lack of implementations of agreed upon standards. Work outside the software itself may need to be done before this guiding principle can be addressed.",
             "id": "i:q0",
             "principle": "i",
-            "text": "If the software reads, writes, or exchanges data, what type of formats are being used?"
+            "text": "Are the data written/read or exchanged by the software machine readable and in (an) open (file) format(s)?"
+        },
+        {
+            "answers": [
+                {
+                    "id": "i:q1:a0",
+                    "score": 0,
+                    "text": "There are no links to other metadata or data"
+                },
+                {
+                    "id": "i:q1:a1",
+                    "score": 1,
+                    "text": "The metadata record includes URI links to related metadata, data and definitions"
+                },
+                {
+                    "id": "i:q1:a2",
+                    "score": 2,
+                    "text": "Qualified links to other resources are recorded in a machine readable format"
+                }
+            ],
+            "guidance": "I2. Software includes qualified references to other objects.",
+            "id": "i:q1",
+            "principle": "i",
+            "text": "How is the relationship to data and metadata described in the metadata and software? (see 17 for relationship to other software)"
         },
         {
             "answers": [
                 {
                     "id": "r:q0:a0",
                     "score": 0,
-                    "text": "Not applicable"
+                    "text": "Non-accessible form"
                 },
                 {
                     "id": "r:q0:a1",
-                    "score": 0,
-                    "text": "No"
+                    "score": 1,
+                    "text": "Undocumented binary form"
                 },
                 {
                     "id": "r:q0:a2",
                     "score": 2,
-                    "text": "Yes. E.g. the software's metadata includes qualified links to other identifiers such as a concept DOI, a GitLab URL, or a specification of the software's input data format."
+                    "text": "Documented binary form"
+                },
+                {
+                    "id": "r:q0:a3",
+                    "score": 3,
+                    "text": "Source code available in a repository and documented"
+                },
+                {
+                    "id": "r:q0:a4",
+                    "score": 4,
+                    "text": "Source code available via a package manager or similar"
                 }
             ],
-            "guidance": "",
+            "guidance": "Specifically it considers reusability in the sense of software being understood, built upon or incorporated into other software, but not necessarily executed (again). Sensitivities may restrict access to the software. The form of the software or the way in which it is made available restricts the way in which it can be understood. A service may obscure all internal workings of the software if no alternate form is made available. A compiled binary form is not as easily pulled apart or understood as a source code representation. Binaries in some cases can be built upon or incorporated into other software, but this is especially the case when it the programming interface to that software is fully documented. Source code is the most straightforwardly interrogable form of software, but in some circumstances making this form available may not be possible, practical or desirable.",
             "id": "r:q0",
             "principle": "r",
-            "text": "Do the metadata specify how the software is related to other digital artefacts?"
+            "text": "Can software be understood, modified, built upon, or incorporated into other software? Is software made available in a form that makes this easy to do? Links to 7"
         },
         {
             "answers": [
                 {
                     "id": "r:q1:a0",
                     "score": 0,
-                    "text": "No, the software is made available in a non-accessible form"
+                    "text": "No, access to the binary or source code is not available"
                 },
                 {
                     "id": "r:q1:a1",
-                    "score": 0,
-                    "text": "No, the software is in binary form and undocumented"
+                    "score": 1,
+                    "text": "Yes, a binary is available and it has an executable environment clearly described in order to execute the software"
                 },
                 {
                     "id": "r:q1:a2",
-                    "score": 1,
-                    "text": "Yes, the software is in binary form and sufficiently documented"
-                },
-                {
-                    "id": "r:q1:a3",
                     "score": 2,
-                    "text": "Yes, the source code is available from a repository but does not include documentation"
-                },
-                {
-                    "id": "r:q1:a4",
-                    "score": 3,
-                    "text": "Yes, as previous answer, and additionally the software is available via a package manager or similar"
-                },
-                {
-                    "id": "r:q1:a5",
-                    "score": 4,
-                    "text": "Yes, the source code is available from a repository and includes sufficient  documentation"
-                },
-                {
-                    "id": "r:q1:a6",
-                    "score": 5,
-                    "text": "Yes, as previous answer, and additionally the software is available via a package manager or similar"
+                    "text": "Yes, the software is packaged with access to dependencies."
                 }
             ],
-            "guidance": "",
+            "guidance": "Specifically it considers reusability in the sense of software be able to be executed, not in the sense of it being understood, built upon or incorporated into other software. Factors affecting the executability of the software include documentation of configuration, dependencies and execution environment (software and hardware). These can be captured in a human readable format (such as text), but are ideally captured in a machine readable format as well. In some cases, it may be possible or desirable to make the software available in a packaged form to facilitate reuse. For example, an emulation environment where the software is run executable. Also a container where the software and its dependencies are all encapsulated. Or it could be that the software is made available via a package management system.",
             "id": "r:q1",
             "principle": "r",
-            "text": "Is the software made available in a form that allows for it to be understood, modified, built upon, or incorporated into other software?"
+            "text": "Is the software (re)executable? Can it easily be run (again)?"
         },
         {
             "answers": [
                 {
                     "id": "r:q2:a0",
                     "score": 0,
-                    "text": "No, access to the binary or source code is not available"
+                    "text": "No license is attached"
                 },
                 {
                     "id": "r:q2:a1",
-                    "score": 0,
-                    "text": "No, the software is only available as source code, and the software's dependency tree or compilation tool chain are insufficiently specified to facilitate reliable recompilation"
+                    "score": 1,
+                    "text": "Non-standard license is attached"
                 },
                 {
                     "id": "r:q2:a2",
-                    "score": 1,
-                    "text": "Yes, the software is only available as source code but can be compiled using information bundled with the software sources (e.g. using package manager files like package-lock.json, conanfile.txt, pyproject.toml, requirements.txt, or using information from the documentation)"
+                    "score": 2,
+                    "text": "Machine-readable non-standard license"
                 },
                 {
                     "id": "r:q2:a3",
-                    "score": 2,
-                    "text": "Yes, the software and its dependency tree are made available in binary form using virtualization, containerization, Golang binaries, Windows .exe binaries, RPM binaries, or a similar method"
+                    "score": 3,
+                    "text": "Standard license"
+                },
+                {
+                    "id": "r:q2:a4",
+                    "score": 4,
+                    "text": "Machine readable standard license"
                 }
             ],
-            "guidance": "",
+            "guidance": "Standard licenses are those that are widely recognised. Licences are often referred to by name, but machine readable licenses can be specified by reference to a standard vocabulary such as SPDX, or are encoded in a machine readable format such as RDF/XML in the metadata record for the software.  Ideally the license deed is available in the package or linked to by a standard URL. Note that Creative Commons licenses are not recommended for software.",
             "id": "r:q2",
             "principle": "r",
-            "text": "Is the software executable?"
+            "text": "Which of the following best describes the license (usage rights) attached to the software?"
+        },
+        {
+            "answers": [
+                {
+                    "id": "r:q3:a0",
+                    "score": 0,
+                    "text": "No provenance detail given"
+                },
+                {
+                    "id": "r:q3:a1",
+                    "score": 1,
+                    "text": "Partially recorded as human readable text"
+                },
+                {
+                    "id": "r:q3:a2",
+                    "score": 2,
+                    "text": "Comprehensively recorded"
+                },
+                {
+                    "id": "r:q3:a3",
+                    "score": 3,
+                    "text": "Comprehensively recorded in a machine readable format"
+                }
+            ],
+            "guidance": "Provenance answers the \"who, what, when, where, why and how\" for the development of the software. Providing detailed provenance gives a user the details they need to trust that the software will do what they expect it to do. This extends well beyond whether the software and its development over time has been captured in a version control system. A record of provenance captures information such as the people, their roles in making contributions, the resources committed (for instance grants, people-time, hardware), the time span of a project (or projects) focussed on the work,  the geographic location of the authors or their affiliations with organisations, the project objectives or intent in producing the software and the agreed upon process, systems and/or constraints (including changes in licensing) on the development of the software. All of this detail can help to interpret and understand how and why the software came to be, and to engender trust in reuse. A partial capture of provenance captures only some of this detail. This detail can also be comprehensive but not machine readable. Examples of machine readable provenance standards include PROV, and formats include RDF, JSON, NetCDF, XML, etc.",
+            "id": "r:q3",
+            "principle": "r",
+            "text": "How much provenance information has been captured to facilitate software reuse? (e.g., project objectives, processes, authors, roles, contributions, use of other components)."
+        },
+        {
+            "answers": [
+                {
+                    "id": "r:q4:a0",
+                    "score": 0,
+                    "text": "Dependencies are expressed by name only, or not at all"
+                },
+                {
+                    "id": "r:q4:a1",
+                    "score": 1,
+                    "text": "Dependencies named, but no version detail is provided"
+                },
+                {
+                    "id": "r:q4:a2",
+                    "score": 2,
+                    "text": "The metadata record includes URI links to related software dependencies"
+                },
+                {
+                    "id": "r:q4:a3",
+                    "score": 3,
+                    "text": "Qualified links to other software are recorded in a machine readable format"
+                }
+            ],
+            "guidance": "A qualified reference is a pointer to an external object, with a clear authority for resolving/confirming that identity given in the form of the reference. Ideally this is in a form that includes a resolver within the reference (e.g., in the form of a URI). For software this would mean referring to other software via a resolvable, qualified permanent identifier. In metadata this is only possible when software is able to be referred to in this fashion. Not all software can be referred to in this way. A qualified reference in software is presently technically difficult or impossible in many languages, where conventional practice is to use a (unqualified) reference via a (possibly non-unique) name, possibly in combination with a version number.",
+            "id": "r:q4",
+            "principle": "r",
+            "text": "How is the relationship to software described in the metadata and software? (see 12 for relationship to other components such as data and metadata)"
+        },
+        {
+            "answers": [
+                {
+                    "id": "r:q5:a0",
+                    "score": 0,
+                    "text": "No standards looked for, or applied"
+                },
+                {
+                    "id": "r:q5:a1",
+                    "score": 1,
+                    "text": "Looked for standards, but unclear or unavailable"
+                },
+                {
+                    "id": "r:q5:a2",
+                    "score": 2,
+                    "text": "Uses domain-relevant standards"
+                }
+            ],
+            "guidance": "Relevant research domains are determined by the intended user base of the software, not any possible community of use for a piece of software. A piece of software created to address the needs of a community should be aware of any standards put forward by that community or adjacent ones. Similarly, a piece of software (such as analysis code) which is intended to represent work done within a domain-community should also be aware of any standards put forward by that community or adjacent ones. Some examples of domain-relevant community standards are: (e.g. CoC, Credit to authors and collaborations, institutional standards, registry standards, nomenclature described within a community)",
+            "id": "r:q5",
+            "principle": "r",
+            "text": "If they exist, how much have domain-relevant community standards been considered in writing the software? it is linked to 11"
         }
     ],
     "version": "0.1"
