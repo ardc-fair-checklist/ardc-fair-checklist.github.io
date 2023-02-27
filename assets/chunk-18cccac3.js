@@ -1,7 +1,7 @@
 import { H as ref, I as computed } from "./chunk-34b0814a.js";
 const state = ref({
   data: ["v0.1"],
-  software: ["v0.1"]
+  software: ["v0.1", "v0.2"]
 });
 computed(() => state.value);
 const latest = computed(() => ({

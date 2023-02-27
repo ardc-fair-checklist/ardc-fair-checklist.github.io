@@ -1,4 +1,4 @@
-import { l as latest } from "../../../chunk-6660a69c.js";
+import { l as latest } from "../../../chunk-18cccac3.js";
 import { d as defineComponent, o as onMounted, t as createElementBlock, u as openBlock } from "../../../chunk-34b0814a.js";
 const app = "";
 const _sfc_main = /* @__PURE__ */ defineComponent({
@@ -7,8 +7,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     onMounted(() => {
       const urlWithDuplicateSlashes = [
         "/ssg/",
-        "software",
-        latest.value.software
+        "data",
+        latest.value.data
       ].join("/");
       const url = `/${urlWithDuplicateSlashes.split("/").filter((e) => e !== "").join("/")}`;
       window.location.href = url;
