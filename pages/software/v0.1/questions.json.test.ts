@@ -51,22 +51,22 @@ describe('the software questions data', () => {
     });
 
     test('there should be 6 questions with principle \'f\'', () => {
-        expect(questions.filter(q => q.principle === 'f').length).toBe(1);
+        expect(questions.filter(q => q.principle === 'f').length).toBe(6);
     });
 
     test('there should be 4 questions with principle \'a\'', () => {
-        expect(questions.filter(q => q.principle === 'a').length).toBe(6);
+        expect(questions.filter(q => q.principle === 'a').length).toBe(4);
     });
 
     test('there should be 2 questions with principle \'i\'', () => {
-        expect(questions.filter(q => q.principle === 'i').length).toBe(1);
+        expect(questions.filter(q => q.principle === 'i').length).toBe(2);
     });
 
     test('there should be 6 questions with principle \'r\'', () => {
-        expect(questions.filter(q => q.principle === 'r').length).toBe(3);
+        expect(questions.filter(q => q.principle === 'r').length).toBe(6);
     });
 
     test('there should be 18 questions in total', () => {
-        expect(questions.length).toBe(11);
+        expect(questions.length).toBe(18);
     });
 });

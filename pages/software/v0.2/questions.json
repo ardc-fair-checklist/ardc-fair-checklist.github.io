@@ -170,7 +170,7 @@
                 }
             ],
             "guidance": "",
-            "id": "a:q5",
+            "id": "a:q6",
             "principle": "a",
             "text": "Does the software's machine-readable metadata include an identifier to reference itself?"
         },
@@ -221,7 +221,7 @@
                 }
             ],
             "guidance": "",
-            "id": "i:q0",
+            "id": "i:q1",
             "principle": "i",
             "text": "If any, what versioning strategy does the software adhere to?"
         },
