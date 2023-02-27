@@ -13,6 +13,9 @@
                                 "id": {
                                     "type": "string"
                                 },
+                                "elaboration": {
+                                    "type": "string"
+                                },
                                 "score": {
                                     "minimum": 0,
                                     "type": "integer"
@@ -23,6 +26,7 @@
                             },
                             "required": [
                                 "id",
+                                "elaboration",
                                 "score",
                                 "text"
                             ],
@@ -31,9 +35,6 @@
                         "minItems": 2,
                         "type": "array",
                         "uniqueItems": true
-                    },
-                    "guidance": {
-                        "type": "string"
                     },
                     "id": {
                         "type": "string"
@@ -53,7 +54,6 @@
                 },
                 "required": [
                     "answers",
-                    "guidance",
                     "id",
                     "principle",
                     "text"

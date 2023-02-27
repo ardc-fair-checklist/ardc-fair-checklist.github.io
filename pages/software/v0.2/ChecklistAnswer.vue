@@ -26,18 +26,21 @@
                 v-bind:for="answer.id"
                 v-bind:id="`label-${answer.id}`"
             >{{ answer.text }}
+                <div
+                    class="answer-elaboration"
+                    v-if="answer.elaboration !== ''">
+                        {{ answer.elaboration}}
+                </div>
             </label>
         </div>
     </div>
 </template>
 
 <script setup lang="ts">
+import { Answer } from './types';
+
 type PropType = {
-    answer: {
-        id: string,
-        score: number,
-        text: string
-    }
+    answer: Answer
     isChecked: boolean
     onClick: () => void
 };
@@ -74,6 +77,15 @@ defineProps<PropType>();
 }
 .answer-text {
     width: 100%;
+}
+
+.answer-elaboration {
+    margin-left: 1.5em;
+    margin-right: 3em;
+    margin-top: 0.2em;
+    margin-bottom: 0.5em;
+    font-size: 0.9em;
+    filter: brightness(80%);
 }
 
 </style>

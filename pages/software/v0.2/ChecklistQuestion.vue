@@ -7,9 +7,6 @@
             <legend class="shared">
                 {{ `${question.text}` }}
             </legend>
-            <div class="question-guidance">
-                {{ question.guidance }}
-            </div>
             <ChecklistAnswer v-for="(answer, answerIndex) in question.answers"
                 v-bind:answer="answer"
                 v-bind:isChecked="compliance[question.index] === answerIndex"
@@ -25,18 +22,11 @@
 import { compliance } from './store';
 import { setCompliance } from './store';
 import ChecklistAnswer from './ChecklistAnswer.vue';
+import { Numbered } from './types';
+import { Question } from './types';
 
 const props = defineProps<{
-    question: {
-        answers: {
-            id: string,
-            score: number,
-            text: string
-        }[],
-        guidance: string,
-        index: number,
-        text: string
-    }
+    question: Question & Numbered
 }>();
 
 const onClick = (answerIndex: number) => () => {
@@ -90,11 +80,6 @@ legend {
 
 .question-index {
     min-width: 2em;
-}
-.question-guidance {
-    margin-bottom: 1em;
-    text-align: justify;
-    display: none;
 }
 .shared {
     /* shared styles for legend and .question-index */

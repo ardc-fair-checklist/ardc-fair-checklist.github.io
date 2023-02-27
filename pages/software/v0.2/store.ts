@@ -1,13 +1,14 @@
 import { computed } from 'vue';
 import { ref } from 'vue';
 import { Principle } from './types';
+import { Numbered } from './types';
 import { Question } from './types';
 
 export const principles = ['f', 'a', 'i', 'r'] as Principle[];
 
 const state = ref({
     compliance: [] as number[],
-    questions: [] as (Question & { index: number })[]
+    questions: [] as (Question & Numbered)[]
 });
 
 export const compliance = computed(() => state.value.compliance);
