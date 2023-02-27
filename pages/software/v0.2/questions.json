@@ -4,16 +4,17 @@
             "answers": [
                 {
                     "id": "f:q0:a0",
+                    "elaboration": "",
                     "score": 0,
-                    "text": "No."
+                    "text": "No"
                 },
                 {
                     "id": "f:q0:a1",
+                    "elaboration": "E.g. keywords from the metadata are recognized by Search Engine Optimization tools such as https://validator.schema.org.",
                     "score": 1,
-                    "text": "Yes. E.g. keywords from the metadata are recognized by Search Engine Optimization tools such as https://validator.schema.org."
+                    "text": "Yes"
                 }
             ],
-            "guidance": "",
             "id": "f:q0",
             "principle": "f",
             "text": "Is information from the software or its metadata consumed by local or global search engines to help rank their results?"
@@ -22,80 +23,86 @@
             "answers": [
                 {
                     "id": "a:q0:a0",
+                    "elaboration": "E.g. The software is only identified by its name, which is not guaranteed to be or remain unique.",
                     "score": 0,
-                    "text": "No. E.g. The software is only identified by its name, which is not guaranteed to be or remain unique."
+                    "text": "No"
                 },
                 {
                     "id": "a:q0:a1",
+                    "elaboration": "E.g. The software is identifiable by its URL, or by its DOI.",
                     "score": 1,
-                    "text": "Yes for at least some of the identifiers. E.g. The software is identifiable by its URL, or by its DOI."
+                    "text": "Yes for at least some of the identifiers"
                 }
             ],
-            "guidance": "",
             "id": "a:q0",
             "principle": "a",
-            "text": "Are the software's identifier(s) globally unique?"
+            "text": "Are the software's identifiers globally unique?"
         },
         {
             "answers": [
                 {
                     "id": "a:q1:a0",
+                    "elaboration": "E.g. the software is identified by its filename, and a copy is stored on an individual's flash drive.",
                     "score": 0,
-                    "text": "No. E.g. the software is identified by its filename, and a copy is stored on an individual's flash drive."
+                    "text": "No"
                 },
                 {
                     "id": "a:q1:a1",
+                    "elaboration": "E.g. the software is identified by URL or DOI, but the software itself is under embargo, proprietary, closed-source, or otherwise hidden from public view.",
                     "score": 1,
-                    "text": "Yes for at least some of the identifiers, but the identifier only resolves to the software's metadata. E.g. the software is identified by URL or DOI, but the software itself is under embargo, proprietary, closed-source, or otherwise hidden from public view."
+                    "text": "Yes for at least some of the identifiers, but the identifier only resolves to the software's metadata"
                 },
                 {
                     "id": "a:q1:a2",
+                    "elaboration": "E.g. the software is identified by its name, and additionally by its URL or DOI.",
                     "score": 2,
-                    "text": "Yes for at least some of the identifiers. E.g. the software is identified by its name, and additionally by its URL or DOI."
+                    "text": "Yes for at least some of the identifiers"
                 }
             ],
-            "guidance": "",
             "id": "a:q1",
             "principle": "a",
-            "text": "Can a third party resolve the software's identifier(s) to a publicly accessible resource?"
+            "text": "Can a third party resolve the software's identifiers to a publicly accessible resource?"
         },
         {
             "answers": [
                 {
                     "id": "a:q2:a0",
+                    "elaboration": "E.g. the identifiers include only the name of the software as a concept, but each version of that concept will have a different feature set. Or, the identifiers only include a filename or URL, whose content may be subject to change.",
                     "score": 0,
-                    "text": "No. E.g. the identifiers include only the name of the software as a concept, but each version of that concept will have a different feature set. Or, the identifiers only include a filename or URL, whose content may be subject to change."
+                    "text": "No"
                 },
                 {
                     "id": "a:q2:a1",
+                    "elaboration": "E.g. The identifiers include a DOI, PURL, Handle, or some other persistent identifier. If the identifier is a concept DOI or collection DOI, the identifiers must also specify a version or version list.",
                     "score": 1,
-                    "text": "Yes, at least some of the identifiers are persistent.  E.g. The identifiers include a DOI, PURL, Handle, or some other persistent identifier. If the identifier is a concept DOI or collection DOI, the identifiers must also specify a version or version list."
+                    "text": "Yes, at least some of the identifiers are persistent"
                 },
                 {
                     "id": "a:q2:a2",
-                    "score": 1,
-                    "text": "Yes, as previous answer, and additionally the metadata will be available for some time after the software itself is no longer available. E.g. The software is a deposit on Zenodo."
+                    "elaboration": "E.g. The software is a deposition on Zenodo.",
+                    "score": 2,
+                    "text": "Yes, as previous answer, and additionally the metadata will be available for some time after the software itself is no longer available"
                 }
             ],
-            "guidance": "",
             "id": "a:q2",
             "principle": "a",
-            "text": "A few years from now, will the software's identifier(s) resolve to exactly the same content as they do today?"
+            "text": "A few years from now, will the software's identifiers resolve to exactly the same content as they do today?"
         },
         {
             "answers": [
                 {
                     "id": "a:q3:a0",
+                    "elaboration": "",
                     "score": 0,
-                    "text": "No."
+                    "text": "No"
                 },
                 {
                     "id": "a:q3:a1",
+                    "elaboration": "E.g. The software is retrievable through a URL that uses HTTP, HTTPS, FTP, or SFTP.",
                     "score": 1,
-                    "text": "Yes. E.g. The software is retrievable through a URL that uses HTTP, HTTPS, FTP, or SFTP."
+                    "text": "Yes"
                 }
             ],
-            "guidance": "",
             "id": "a:q3",
             "principle": "a",
             "text": "Is the software retrievable using a protocol that is open, free, and universally implementable?"
@@ -104,16 +111,17 @@
             "answers": [
                 {
                     "id": "a:q4:a0",
+                    "elaboration": "",
                     "score": 0,
-                    "text": "No."
+                    "text": "No"
                 },
                 {
                     "id": "a:q4:a1",
+                    "elaboration": "",
                     "score": 1,
-                    "text": "Yes."
+                    "text": "Yes"
                 }
             ],
-            "guidance": "",
             "id": "a:q4",
             "principle": "a",
             "text": "Is the software retrievable using a protocol that allows for authentication and authorization?"
@@ -122,26 +130,29 @@
             "answers": [
                 {
                     "id": "a:q5:a0",
+                    "elaboration": "",
                     "score": 0,
-                    "text": "The software is unlicensed."
+                    "text": "The software is unlicensed"
                 },
                 {
                     "id": "a:q5:a1",
+                    "elaboration": "E.g. the software's README includes a few lines about how the software may be used, but the legal meaning has not been tested or subjected to an audit.",
                     "score": 1,
-                    "text": "The software is licensed with a non-standard license. E.g. the software's README includes a few lines about how the software may be used, but the legal meaning has not been tested or subjected to an audit."
+                    "text": "The software is licensed with a non-standard license"
                 },
                 {
                     "id": "a:q5:a2",
+                    "elaboration": "E.g. the software is bundled with a license text such as that of the MIT, MPL, or Apache-2.0 license.",
                     "score": 2,
-                    "text": "The software is licensed with a standard license. E.g. the software is bundled with a license text such as that of the MIT, MPL, or Apache-2.0 license."
+                    "text": "The software is licensed with a standard license"
                 },
                 {
                     "id": "a:q5:a3",
+                    "elaboration": "E.g. the software specifies its license in a metadata file such as pyproject.toml, package.json, CITATION.cff, .zenodo.json, codemeta.json, or R DESCRIPTION file.",
                     "score": 3,
-                    "text": "As previous answer, and additionally, the license is machine readable. E.g. the software specifies its license in a metadata file such as pyproject.toml, package.json, CITATION.cff, .zenodo.json, codemeta.json, or R DESCRIPTION file."
+                    "text": "As previous answer, and additionally, the license is machine readable"
                 }
             ],
-            "guidance": "",
             "id": "a:q5",
             "principle": "a",
             "text": "Which of the following best describes the software's usage rights?"
@@ -150,26 +161,29 @@
             "answers": [
                 {
                     "id": "a:q6:a0",
+                    "elaboration": "",
                     "score": 0,
-                    "text": "Not applicable, the software does not have any associated machine-readable metadata."
+                    "text": "Not applicable, the software does not have any associated machine-readable metadata"
                 },
                 {
                     "id": "a:q6:a1",
+                    "elaboration": "",
                     "score": 1,
-                    "text": "Yes, the software's metadata include its name."
+                    "text": "Yes, the software's metadata include its name"
                 },
                 {
                     "id": "a:q6:a2",
+                    "elaboration": "E.g. The metadata includes a URL that points to the software on GitHub, GitLab, SourceForge, PyPI, NPM or CRAN.",
                     "score": 2,
-                    "text": "Yes, the software'a metadata includes a unique identifier such as a URL to reference itself. E.g. A URL to a copy of the software on GitHub, GitLab, SourceForge, PyPI, NPM or CRAN."
+                    "text": "Yes, the software'a metadata includes a unique identifier to reference itself"
                 },
                 {
                     "id": "a:q6:a3",
+                    "elaboration": "E.g. The metadata includes a DOI, pURL or Handle that points to an archived copy of the software.",
                     "score": 3,
-                    "text": "Yes, the software's metadata includes a unique and persistent identifier such as a DOI, pURL or Handle to reference itself."
+                    "text": "Yes, the software's metadata includes a unique and persistent identifier to reference itself"
                 }
             ],
-            "guidance": "",
             "id": "a:q6",
             "principle": "a",
             "text": "Does the software's machine-readable metadata include an identifier to reference itself?"
@@ -178,26 +192,29 @@
             "answers": [
                 {
                     "id": "i:q0:a0",
+                    "elaboration": "",
                     "score": 0,
-                    "text": "Not applicable."
+                    "text": "Not applicable"
                 },
                 {
                     "id": "i:q0:a1",
+                    "elaboration": "",
                     "score": 1,
-                    "text": "The software reads, writes and exchanges data using proprietary format(s) only."
+                    "text": "The software reads, writes and exchanges data using proprietary formats only"
                 },
                 {
                     "id": "i:q0:a2",
+                    "elaboration": "",
                     "score": 2,
-                    "text": "The software uses open format(s) for at least some of the data it reads, writes, or exchanges."
+                    "text": "The software uses open formats for at least some of the data it reads, writes, or exchanges"
                 },
                 {
                     "id": "i:q0:a3",
+                    "elaboration": "",
                     "score": 3,
-                    "text": "As previous answer, and additionally the format(s) are common for the domain."
+                    "text": "As previous answer, and additionally the formats are common for the domain"
                 }
             ],
-            "guidance": "",
             "id": "i:q0",
             "principle": "i",
             "text": "If the software reads, writes, or exchanges data, what type of formats are being used?"
@@ -206,21 +223,23 @@
             "answers": [
                 {
                     "id": "i:q1:a0",
+                    "elaboration": "",
                     "score": 0,
-                    "text": "Users of the software are supposed to always use the latest version."
+                    "text": "Users of the software are supposed to always use the latest version"
                 },
                 {
                     "id": "i:q1:a1",
+                    "elaboration": "E.g. The software is labeled according to the release date, the build number, etc.",
                     "score": 1,
-                    "text": "The version identifier uses some form of increment at every release. E.g. the release date, the build number, etc."
+                    "text": "The version identifier uses some form of increment at every release"
                 },
                 {
                     "id": "i:q1:a2",
+                    "elaboration": "E.g. The software is labeled according to semantic versioning.",
                     "score": 2,
-                    "text": "The version identifier reflects interoperability aspects. E.g. semantic versioning."
+                    "text": "The version identifier reflects interoperability aspects"
                 }
             ],
-            "guidance": "",
             "id": "i:q1",
             "principle": "i",
             "text": "If any, what versioning strategy does the software adhere to?"
@@ -229,21 +248,23 @@
             "answers": [
                 {
                     "id": "r:q0:a0",
+                    "elaboration": "",
                     "score": 0,
-                    "text": "The software and its metadata do not include links to related data."
+                    "text": "The software and its metadata do not include links to related data"
                 },
                 {
                     "id": "r:q0:a1",
-                    "score": 0,
-                    "text": "The software and its metadata include at least some URI links to related data."
+                    "elaboration": "",
+                    "score": 1,
+                    "text": "The software and its metadata include at least some URI links to related data"
                 },
                 {
                     "id": "r:q0:a2",
+                    "elaboration": "",
                     "score": 2,
-                    "text": "As previous answer, with at least some of the links qualified and machine-readable."
+                    "text": "As previous answer, with at least some of the links qualified and machine-readable"
                 }
             ],
-            "guidance": "",
             "id": "r:q0",
             "principle": "r",
             "text": "How is the software's relationship to related data described?"
@@ -252,21 +273,23 @@
             "answers": [
                 {
                     "id": "r:q1:a0",
+                    "elaboration": "",
                     "score": 0,
-                    "text": "The software and its metadata do not include links to related software."
+                    "text": "The software and its metadata do not include links to related software"
                 },
                 {
                     "id": "r:q1:a1",
-                    "score": 0,
-                    "text": "The software and its metadata include at least some URI links to related software."
+                    "elaboration": "",
+                    "score": 1,
+                    "text": "The software and its metadata include at least some URI links to related software"
                 },
                 {
                     "id": "r:q1:a2",
+                    "elaboration": "",
                     "score": 2,
-                    "text": "As previous answer, with at least some of the links qualified and machine-readable."
+                    "text": "As previous answer, with at least some of the links qualified and machine-readable"
                 }
             ],
-            "guidance": "",
             "id": "r:q1",
             "principle": "r",
             "text": "How is the software's relationship to related software described?"
@@ -275,26 +298,29 @@
             "answers": [
                 {
                     "id": "r:q2:a0",
+                    "elaboration": "",
                     "score": 0,
-                    "text": "The software or its metadata do not include explicit information about the dependencies."
+                    "text": "The software or its metadata do not include explicit information about the dependencies"
                 },
                 {
                     "id": "r:q2:a1",
+                    "elaboration": "",
                     "score": 1,
-                    "text": "The software or its metadata include the names of the dependencies."
+                    "text": "The software or its metadata include the names of the dependencies"
                 },
                 {
                     "id": "r:q2:a2",
+                    "elaboration": "",
                     "score": 2,
-                    "text": "The software or its metadata include URI links to the software's dependencies."
+                    "text": "The software or its metadata include URI links to the software's dependencies"
                 },
                 {
                     "id": "r:q2:a3",
+                    "elaboration": "",
                     "score": 3,
-                    "text": "As previous answer, and additionally each link points to a specific version or version range of the dependency, and the list of dependencies includes all dependencies needed to get the software running again on a fresh install of the targeted operating systems."
+                    "text": "As previous answer, and additionally each link points to a specific version or version range of the dependency, and the list of dependencies includes all dependencies needed to get the software running again on a fresh install of the targeted operating systems"
                 }
             ],
-            "guidance": "",
             "id": "r:q2",
             "principle": "r",
             "text": "How are the software's dependencies specified?"
@@ -303,41 +329,47 @@
             "answers": [
                 {
                     "id": "r:q3:a0",
+                    "elaboration": "",
                     "score": 0,
-                    "text": "No, the software is made available in a non-accessible form."
+                    "text": "No, the software is made available in a non-accessible form"
                 },
                 {
                     "id": "r:q3:a1",
+                    "elaboration": "",
                     "score": 0,
-                    "text": "No, the software is in binary form and undocumented."
+                    "text": "No, the software is in binary form and undocumented"
                 },
                 {
                     "id": "r:q3:a2",
+                    "elaboration": "",
                     "score": 1,
-                    "text": "Yes, the software is in binary form and sufficiently documented."
+                    "text": "Yes, the software is in binary form and sufficiently documented"
                 },
                 {
                     "id": "r:q3:a3",
+                    "elaboration": "",
                     "score": 2,
-                    "text": "Yes, the source code is available from a repository but does not include documentation."
+                    "text": "Yes, the source code is available from a repository but does not include documentation"
                 },
                 {
                     "id": "r:q3:a4",
+                    "elaboration": "",
                     "score": 3,
-                    "text": "Yes, as previous answer, and additionally the software is available via a package manager or similar."
+                    "text": "Yes, as previous answer, and additionally the software is available via a package manager or similar"
                 },
                 {
                     "id": "r:q3:a5",
+                    "elaboration": "",
                     "score": 4,
-                    "text": "Yes, the source code is available from a repository and includes sufficient  documentation."
+                    "text": "Yes, the source code is available from a repository and includes sufficient  documentation"
                 },
                 {
                     "id": "r:q3:a6",
+                    "elaboration": "",
                     "score": 5,
-                    "text": "Yes, as previous answer, and additionally the software is available via a package manager or similar."
+                    "text": "Yes, as previous answer, and additionally the software is available via a package manager or similar"
                 }
             ],
-            "guidance": "",
             "id": "r:q3",
             "principle": "r",
             "text": "Is the software made available in a form that allows for it to be understood, modified, built upon, or incorporated into other software?"
@@ -346,30 +378,33 @@
             "answers": [
                 {
                     "id": "r:q4:a0",
+                    "elaboration": "",
                     "score": 0,
-                    "text": "No, access to the binary or source code is not available."
+                    "text": "No, access to the binary or source code is not available"
                 },
                 {
                     "id": "r:q4:a1",
+                    "elaboration": "",
                     "score": 0,
-                    "text": "No, the software is only available as source code, and the software's dependency tree or compilation tool chain are insufficiently specified to facilitate reliable recompilation."
+                    "text": "No, the software is only available as source code, and the software's dependency tree or compilation tool chain are insufficiently specified to facilitate reliable recompilation"
                 },
                 {
                     "id": "r:q4:a2",
+                    "elaboration": "E.g. the software includes package manager files like package-lock.json, conanfile.txt, pyproject.toml, or requirements.txt that can be used to compile and run the software, or the software includes sufficient documentation to do so.",
                     "score": 1,
-                    "text": "Yes, the software is only available as source code but can be compiled using information bundled with the software sources (e.g. using package manager files like package-lock.json, conanfile.txt, pyproject.toml, requirements.txt, or using information from the documentation)."
+                    "text": "Yes, the software is only available as source code but can be compiled using information bundled with the software sources"
                 },
                 {
                     "id": "r:q4:a3",
+                    "elaboration": "",
                     "score": 2,
-                    "text": "Yes, the software and its dependency tree are made available in binary form using virtualization, containerization, Golang binaries, Windows .exe binaries, RPM binaries, or a similar method."
+                    "text": "Yes, the software and its dependency tree are made available in binary form using virtualization, containerization, Golang binaries, Windows .exe binaries, RPM binaries, or a similar method"
                 }
             ],
-            "guidance": "",
             "id": "r:q4",
             "principle": "r",
             "text": "Is the software executable?"
         }
     ],
-    "version": "0.1"
+    "version": "0.2"
 }
