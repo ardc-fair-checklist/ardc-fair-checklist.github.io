@@ -19,7 +19,7 @@ jobs:
 
       - name: Update the user feedback issue template with latest SHA
         run: |
-          SED_ARGS="--in-place s/\([0-9^Cf]\{40\}\)/${GITHUB_SHA}/ .github/ISSUE_TEMPLATE/10_feedback.md"
+          SED_ARGS="--in-place s/\([0-9a-f]\{40\}\)/${GITHUB_SHA}/ .github/ISSUE_TEMPLATE/10_feedback.md"
           sed $SED_ARGS
           git config --global user.name ci
           git config --global user.email "username@users.noreply.github.com"
