@@ -17,6 +17,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      - name: Update the user feedback issue template with latest SHA
+        run: |
+          SED_ARGS="s/\([0-9^Cf]\{40\}\)/${GITHUB_SHA}/ .github/ISSUE_TEMPLATE/10_feedback.md"
+          sed $SED_ARGS
+
       - name: Install
         run: npm install
 
