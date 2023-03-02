@@ -1,5 +1,5 @@
 import { l as latest } from "../../../chunk-18cccac3.js";
-import { H as ref, I as computed, u as openBlock, t as createElementBlock, v as createBaseVNode, J as toDisplayString, x as createStaticVNode, d as defineComponent, o as onMounted, A as unref, E as pushScopeId, G as popScopeId, K as createCommentVNode, y as renderSlot, z as normalizeClass, B as createTextVNode, C as createVNode, D as withCtx, F as Fragment, L as renderList, M as createBlock } from "../../../chunk-34b0814a.js";
+import { H as ref, I as computed, u as openBlock, t as createElementBlock, v as createBaseVNode, J as toDisplayString, x as createStaticVNode, d as defineComponent, o as onMounted, B as createTextVNode, A as unref, E as pushScopeId, G as popScopeId, K as createCommentVNode, y as renderSlot, z as normalizeClass, C as createVNode, D as withCtx, F as Fragment, L as renderList, M as createBlock } from "../../../chunk-34b0814a.js";
 import { _ as _export_sfc, a as _imports_0, b as _imports_1 } from "../../../chunk-55859c7c.js";
 import { u as usePageContext } from "../../../chunk-3ae7c80c.js";
 import { _ as _imports_0$1 } from "../../../chunk-797968b4.js";
@@ -108,7 +108,7 @@ function _sfc_render$1(_ctx, _cache) {
   ]);
 }
 const ChecklistAbout = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["render", _sfc_render$1], ["__scopeId", "data-v-85dd1aea"]]);
-const _withScopeId$2 = (n) => (pushScopeId("data-v-dc0faeca"), n = n(), popScopeId(), n);
+const _withScopeId$2 = (n) => (pushScopeId("data-v-f9a9cee9"), n = n(), popScopeId(), n);
 const _hoisted_1$8 = { class: "badges" };
 const _hoisted_2$4 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createBaseVNode("h2", null, "Get the badge", -1));
 const _hoisted_3$4 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createBaseVNode("h3", null, [
@@ -177,6 +177,7 @@ const _sfc_main$9 = /* @__PURE__ */ defineComponent({
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("div", _hoisted_1$8, [
         _hoisted_2$4,
+        createTextVNode(" Use the buttons next to the snippets below to copy your badge and paste it into your project's README. The hyperlink in each snippet points back to this page, and includes the necessary data to check the appropriate answers. "),
         _hoisted_3$4,
         createBaseVNode("div", _hoisted_4$2, [
           createBaseVNode("textarea", {
@@ -229,8 +230,8 @@ const _sfc_main$9 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const ChecklistBadgeSnippets_vue_vue_type_style_index_0_scoped_dc0faeca_lang = "";
-const ChecklistBadgeSnippets = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["__scopeId", "data-v-dc0faeca"]]);
+const ChecklistBadgeSnippets_vue_vue_type_style_index_0_scoped_f9a9cee9_lang = "";
+const ChecklistBadgeSnippets = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["__scopeId", "data-v-f9a9cee9"]]);
 const _hoisted_1$7 = {
   key: 0,
   class: "banner"

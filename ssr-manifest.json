@@ -84,7 +84,7 @@
   "pages/software/v0.2/ChecklistAbout.vue?vue&type=style&index=0&scoped=85dd1aea&lang.css": [],
   "pages/software/v0.2/ChecklistAbout.vue": [],
   "pages/software/v0.2/ChecklistBadgeSnippets.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/software/v0.2/ChecklistBadgeSnippets.vue?vue&type=style&index=0&scoped=dc0faeca&lang.css": [],
+  "pages/software/v0.2/ChecklistBadgeSnippets.vue?vue&type=style&index=0&scoped=f9a9cee9&lang.css": [],
   "pages/software/v0.2/ChecklistBadgeSnippets.vue": [],
   "pages/software/v0.2/ChecklistBannerParams.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/software/v0.2/ChecklistBannerParams.vue?vue&type=style&index=0&scoped=ff9f309c&lang.css": [],
@@ -185,8 +185,8 @@
     "/ssg/assets/index.page.d955019a.css",
     "/ssg/assets/global.b082e789.css"
   ],
-  "index.page.4999fbda.js": [
-    "/ssg/assets/index.page.7f191557.css",
+  "index.page.7484a0ea.js": [
+    "/ssg/assets/index.page.37d606c6.css",
     "/ssg/assets/global.b082e789.css"
   ],
   "_error.page.de708dd4.js": [],

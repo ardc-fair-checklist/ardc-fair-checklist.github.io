@@ -21,11 +21,11 @@ footer p[data-v-85dd1aea] {
     margin: 0 auto;
 }
 
-.badges[data-v-dc0faeca] {
+.badges[data-v-f9a9cee9] {
     margin-top: 5em;
     padding-top: 1.5em;
 }
-textarea[data-v-dc0faeca] {
+textarea[data-v-f9a9cee9] {
     background-color: white;
     border-radius: 3px;
     border: 2px solid #ccc;
@@ -39,19 +39,19 @@ textarea[data-v-dc0faeca] {
                 'Bitstream Vera Sans Mono',
                 'Courier New', monospace;
 }
-.row[data-v-dc0faeca] {
+.row[data-v-f9a9cee9] {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
 }
-.col[data-v-dc0faeca] {
+.col[data-v-f9a9cee9] {
     align-items: center;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
 }
-button[data-v-dc0faeca] {
+button[data-v-f9a9cee9] {
     align-self: center;
     background-color: #eee;
     border-radius: 0.15em;
@@ -63,25 +63,25 @@ button[data-v-dc0faeca] {
     margin-right: 1em;
     padding: 0.5em 1.5em;
 }
-button[data-v-dc0faeca]:hover {
+button[data-v-f9a9cee9]:hover {
     border: 2px solid white;
     background-color: white;
     cursor: pointer;
 }
-button[data-v-dc0faeca]:disabled {
+button[data-v-f9a9cee9]:disabled {
     opacity: 0.5;
 }
-.copied-text[data-v-dc0faeca] {
+.copied-text[data-v-f9a9cee9] {
     font-size: 80%;
     margin-left: 2em;
     margin-right: 1em;
     opacity: 0;
 }
-.copied-text.opaque[data-v-dc0faeca] {
+.copied-text.opaque[data-v-f9a9cee9] {
     opacity: 1;
     transition: opacity 0s;
 }
-.copied-text.transparent[data-v-dc0faeca] {
+.copied-text.transparent[data-v-f9a9cee9] {
     opacity: 0;
     transition: opacity 2s;
 }
