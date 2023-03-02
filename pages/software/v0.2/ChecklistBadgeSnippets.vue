@@ -2,6 +2,11 @@
     <div class="badges">
         <h2>Get the badge</h2>
 
+        Use the buttons next to the snippets below to copy your badge
+        and paste it into your project's README. The hyperlink in each
+        snippet points back to this page, and includes the
+        necessary data to check the appropriate answers.
+
         <h3>
             <label for="textarea-markdown-badge">Markdown</label>
         </h3>
