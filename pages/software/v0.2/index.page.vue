@@ -16,6 +16,7 @@
                 </p>
                 <div v-for="principle in principles" v-bind:key="principle">
                     <h2>{{ getFullname(principle) }}</h2>
+                    <p class="principle-quote">{{ getQuote(principle) }}</p>
                     <ChecklistQuestion
                         v-for="question in questions.filter(q => q.principle === principle)"
                         v-bind:key="question.id"
@@ -71,6 +72,12 @@ const getFullname = (principle: Principle) => ({
     a: 'Accessible',
     i: 'Interoperable',
     r: 'Reusable'
+}[principle]);
+const getQuote = (principle: Principle) => ({
+    f: 'The first step in reusing software is to discover that it exists in the first place.',
+    a: 'In order to reuse software, one must have access to it.',
+    i: 'Software must interact with data and other software to maximize its potential.',
+    r: 'Software should be usable and reusable.'
 }[principle]);
 const scrollToBadgesSection = () => {
     document.getElementById('badges-section')?.scrollIntoView({ behavior: 'smooth' });
@@ -136,14 +143,27 @@ h1 {
     margin-top: 1em;
 }
 h2 {
-    border-bottom: 2px solid var(--white);
     width: 40%;
     color: var(--white);
-    margin-bottom: 1.5em;
     margin-top: 3em;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px 10px;
     text-align: center;
+}
+
+p.principle-quote {
+    font-size: 1.3em;
+    font-style: italic;
+    margin-bottom: 1.5em;
+    margin-left: 4em;
+    margin-right: 4em;
+    text-align: center;
+}
+
+p.principle-quote:before {
+    content: open-quote;
+}
+p.principle-quote:after {
+    content: close-quote;
 }
 </style>
