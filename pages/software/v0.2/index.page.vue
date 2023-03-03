@@ -14,6 +14,7 @@
                     <ChecklistLink v-bind:href="linkToDataChecklist">data</ChecklistLink>
                     instead.
                 </p>
+                <div class="vspace"></div>
                 <div v-for="principle in principles" v-bind:key="principle">
                     <h2>{{ getFullname(principle) }}</h2>
                     <p class="principle-quote">{{ getQuote(principle) }}</p>
@@ -149,6 +150,10 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+
+div.vspace {
+    height: 3em
 }
 
 p.principle-quote {
