@@ -442,7 +442,7 @@ legend[data-v-3f6ce497] {
     font-size: 1.17em;
 }
 
-main[data-v-1d77fbac] {
+main[data-v-85fa558a] {
     min-width: 30em;
     max-width: 50em;
     margin-left: auto;
@@ -450,35 +450,49 @@ main[data-v-1d77fbac] {
     color: var(--white);
 }
 @media screen and (min-width: 70em) {
-main[data-v-1d77fbac] {
+main[data-v-85fa558a] {
         padding-left: 3em;
         padding-right: 3em;
 }
 }
 @media screen and (max-width: 70em) {
-main[data-v-1d77fbac] {
+main[data-v-85fa558a] {
         padding-left: 3em;
         padding-right: 3em;
 }
 }
 @media screen and (max-width: 41.5em) {
-main[data-v-1d77fbac] {
+main[data-v-85fa558a] {
         padding-left: 0.5em;
         padding-right: 0.5em;
 }
 }
-h1[data-v-1d77fbac] {
+h1[data-v-85fa558a] {
     line-height: 1.2em;
     margin-top: 1em;
 }
-h2[data-v-1d77fbac] {
-    border-bottom: 2px solid var(--white);
+h2[data-v-85fa558a] {
     width: 40%;
     color: var(--white);
-    margin-bottom: 1.5em;
     margin-top: 3em;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px 10px;
     text-align: center;
+}
+div.vspace[data-v-85fa558a] {
+    height: 3em
+}
+p.principle-quote[data-v-85fa558a] {
+    font-size: 1.3em;
+    font-style: italic;
+    margin-bottom: 1.5em;
+    margin-left: 4em;
+    margin-right: 4em;
+    text-align: center;
+}
+p.principle-quote[data-v-85fa558a]:before {
+    content: open-quote;
+}
+p.principle-quote[data-v-85fa558a]:after {
+    content: close-quote;
 }

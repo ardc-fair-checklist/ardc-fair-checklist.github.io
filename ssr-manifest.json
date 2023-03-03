@@ -112,7 +112,7 @@
   "pages/software/v0.2/ChecklistQuestion.vue": [],
   "pages/software/v0.2/questions.json": [],
   "pages/software/v0.2/index.page.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/software/v0.2/index.page.vue?vue&type=style&index=0&scoped=1d77fbac&lang.css": [],
+  "pages/software/v0.2/index.page.vue?vue&type=style&index=0&scoped=85fa558a&lang.css": [],
   "pages/software/v0.2/index.page.vue": [],
   "node_modules/vite-plugin-ssr/dist/esm/utils/isPlainObject.js": [],
   "node_modules/vite-plugin-ssr/dist/esm/utils/stringifyStringArray.js": [],
@@ -185,8 +185,8 @@
     "/ssg/assets/index.page.d955019a.css",
     "/ssg/assets/global.b082e789.css"
   ],
-  "index.page.7484a0ea.js": [
-    "/ssg/assets/index.page.37d606c6.css",
+  "index.page.3256be72.js": [
+    "/ssg/assets/index.page.24a42d02.css",
     "/ssg/assets/global.b082e789.css"
   ],
   "_error.page.de708dd4.js": [],
