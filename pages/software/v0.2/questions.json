@@ -132,30 +132,30 @@
                     "id": "a:q5:a0",
                     "elaboration": "",
                     "score": 0,
-                    "text": "The software is unlicensed"
+                    "text": "Not applicable, the software does not have any associated machine-readable metadata"
                 },
                 {
                     "id": "a:q5:a1",
-                    "elaboration": "E.g. the software's README includes a few lines about how the software may be used, but the legal meaning has not been tested or subjected to an audit.",
+                    "elaboration": "",
                     "score": 1,
-                    "text": "The software is licensed with a non-standard license"
+                    "text": "Yes, the software's metadata include its name"
                 },
                 {
                     "id": "a:q5:a2",
-                    "elaboration": "E.g. the software is bundled with a license text such as that of the MIT, MPL, or Apache-2.0 license.",
+                    "elaboration": "E.g. The metadata includes a URL that points to the software on GitHub, GitLab, SourceForge, PyPI, NPM or CRAN.",
                     "score": 2,
-                    "text": "The software is licensed with a standard license"
+                    "text": "Yes, the software'a metadata includes a unique identifier to reference itself"
                 },
                 {
                     "id": "a:q5:a3",
-                    "elaboration": "E.g. the software specifies its license in a metadata file such as pyproject.toml, package.json, CITATION.cff, .zenodo.json, codemeta.json, or R DESCRIPTION file.",
+                    "elaboration": "E.g. The metadata includes a DOI, pURL or Handle that points to an archived copy of the software.",
                     "score": 3,
-                    "text": "As previous answer, and additionally, the license is machine readable"
+                    "text": "Yes, the software's metadata includes a unique and persistent identifier to reference itself"
                 }
             ],
             "id": "a:q5",
             "principle": "a",
-            "text": "Which of the following best describes the software's usage rights?"
+            "text": "Does the software's machine-readable metadata include an identifier to reference itself?"
         },
         {
             "answers": [
@@ -163,30 +163,30 @@
                     "id": "a:q6:a0",
                     "elaboration": "",
                     "score": 0,
-                    "text": "Not applicable, the software does not have any associated machine-readable metadata"
+                    "text": "The software is unlicensed"
                 },
                 {
                     "id": "a:q6:a1",
-                    "elaboration": "",
+                    "elaboration": "E.g. the software's README includes a few lines about how the software may be used, but the legal meaning has not been tested or subjected to an audit.",
                     "score": 1,
-                    "text": "Yes, the software's metadata include its name"
+                    "text": "The software is licensed with a non-standard license"
                 },
                 {
                     "id": "a:q6:a2",
-                    "elaboration": "E.g. The metadata includes a URL that points to the software on GitHub, GitLab, SourceForge, PyPI, NPM or CRAN.",
+                    "elaboration": "E.g. the software is bundled with a license text such as that of the MIT, MPL, or Apache-2.0 license.",
                     "score": 2,
-                    "text": "Yes, the software'a metadata includes a unique identifier to reference itself"
+                    "text": "The software is licensed with a standard license"
                 },
                 {
                     "id": "a:q6:a3",
-                    "elaboration": "E.g. The metadata includes a DOI, pURL or Handle that points to an archived copy of the software.",
+                    "elaboration": "E.g. the software specifies its license in a metadata file such as pyproject.toml, package.json, CITATION.cff, .zenodo.json, codemeta.json, or R DESCRIPTION file.",
                     "score": 3,
-                    "text": "Yes, the software's metadata includes a unique and persistent identifier to reference itself"
+                    "text": "As previous answer, and additionally, the license is machine readable"
                 }
             ],
             "id": "a:q6",
             "principle": "a",
-            "text": "Does the software's machine-readable metadata include an identifier to reference itself?"
+            "text": "Which of the following best describes the software's usage rights?"
         },
         {
             "answers": [
@@ -250,24 +250,30 @@
                     "id": "r:q0:a0",
                     "elaboration": "",
                     "score": 0,
-                    "text": "The software and its metadata do not include links to related data"
+                    "text": "No, access to the binary or source code is not available"
                 },
                 {
                     "id": "r:q0:a1",
                     "elaboration": "",
-                    "score": 1,
-                    "text": "The software and its metadata include at least some URI links to related data"
+                    "score": 0,
+                    "text": "No, the software is only available as source code, and the software's dependency tree or compilation tool chain are insufficiently specified to facilitate reliable recompilation"
                 },
                 {
                     "id": "r:q0:a2",
+                    "elaboration": "E.g. the software includes package manager files like package-lock.json, conanfile.txt, pyproject.toml, or requirements.txt that can be used to compile and run the software, or the software includes sufficient documentation to do so.",
+                    "score": 1,
+                    "text": "Yes, the software is only available as source code but can be compiled using information bundled with the software sources"
+                },
+                {
+                    "id": "r:q0:a3",
                     "elaboration": "",
                     "score": 2,
-                    "text": "As previous answer, with at least some of the links qualified and machine-readable"
+                    "text": "Yes, the software and its dependency tree are made available in binary form using virtualization, containerization, Golang binaries, Windows .exe binaries, RPM binaries, or a similar method"
                 }
             ],
             "id": "r:q0",
             "principle": "r",
-            "text": "How is the software's relationship to related data described?"
+            "text": "Is the software executable?"
         },
         {
             "answers": [
@@ -275,24 +281,48 @@
                     "id": "r:q1:a0",
                     "elaboration": "",
                     "score": 0,
-                    "text": "The software and its metadata do not include links to related software"
+                    "text": "No, the software is made available in a non-accessible form"
                 },
                 {
                     "id": "r:q1:a1",
                     "elaboration": "",
-                    "score": 1,
-                    "text": "The software and its metadata include at least some URI links to related software"
+                    "score": 0,
+                    "text": "No, the software is in binary form and undocumented"
                 },
                 {
                     "id": "r:q1:a2",
                     "elaboration": "",
+                    "score": 1,
+                    "text": "Yes, the software is in binary form and sufficiently documented"
+                },
+                {
+                    "id": "r:q1:a3",
+                    "elaboration": "",
                     "score": 2,
-                    "text": "As previous answer, with at least some of the links qualified and machine-readable"
+                    "text": "Yes, the source code is available from a repository but does not include documentation"
+                },
+                {
+                    "id": "r:q1:a4",
+                    "elaboration": "",
+                    "score": 3,
+                    "text": "Yes, as previous answer, and additionally the software is available via a package manager or similar"
+                },
+                {
+                    "id": "r:q1:a5",
+                    "elaboration": "",
+                    "score": 4,
+                    "text": "Yes, the source code is available from a repository and includes sufficient  documentation"
+                },
+                {
+                    "id": "r:q1:a6",
+                    "elaboration": "",
+                    "score": 5,
+                    "text": "Yes, as previous answer, and additionally the software is available via a package manager or similar"
                 }
             ],
             "id": "r:q1",
             "principle": "r",
-            "text": "How is the software's relationship to related software described?"
+            "text": "Is the software made available in a form that allows for it to be understood, modified, built upon, or incorporated into other software?"
         },
         {
             "answers": [
@@ -300,30 +330,24 @@
                     "id": "r:q2:a0",
                     "elaboration": "",
                     "score": 0,
-                    "text": "The software or its metadata do not include explicit information about the dependencies"
+                    "text": "The software and its metadata do not include links to related data"
                 },
                 {
                     "id": "r:q2:a1",
                     "elaboration": "",
                     "score": 1,
-                    "text": "The software or its metadata include the names of the dependencies"
+                    "text": "The software and its metadata include at least some URI links to related data"
                 },
                 {
                     "id": "r:q2:a2",
                     "elaboration": "",
                     "score": 2,
-                    "text": "The software or its metadata include URI links to the software's dependencies"
-                },
-                {
-                    "id": "r:q2:a3",
-                    "elaboration": "",
-                    "score": 3,
-                    "text": "As previous answer, and additionally each link points to a specific version or version range of the dependency, and the list of dependencies includes all dependencies needed to get the software running again on a fresh install of the targeted operating systems"
+                    "text": "As previous answer, with at least some of the links qualified and machine-readable"
                 }
             ],
             "id": "r:q2",
             "principle": "r",
-            "text": "How are the software's dependencies specified?"
+            "text": "How is the software's relationship to related data described?"
         },
         {
             "answers": [
@@ -331,48 +355,24 @@
                     "id": "r:q3:a0",
                     "elaboration": "",
                     "score": 0,
-                    "text": "No, the software is made available in a non-accessible form"
+                    "text": "The software and its metadata do not include links to related software"
                 },
                 {
                     "id": "r:q3:a1",
                     "elaboration": "",
-                    "score": 0,
-                    "text": "No, the software is in binary form and undocumented"
+                    "score": 1,
+                    "text": "The software and its metadata include at least some URI links to related software"
                 },
                 {
                     "id": "r:q3:a2",
                     "elaboration": "",
-                    "score": 1,
-                    "text": "Yes, the software is in binary form and sufficiently documented"
-                },
-                {
-                    "id": "r:q3:a3",
-                    "elaboration": "",
                     "score": 2,
-                    "text": "Yes, the source code is available from a repository but does not include documentation"
-                },
-                {
-                    "id": "r:q3:a4",
-                    "elaboration": "",
-                    "score": 3,
-                    "text": "Yes, as previous answer, and additionally the software is available via a package manager or similar"
-                },
-                {
-                    "id": "r:q3:a5",
-                    "elaboration": "",
-                    "score": 4,
-                    "text": "Yes, the source code is available from a repository and includes sufficient  documentation"
-                },
-                {
-                    "id": "r:q3:a6",
-                    "elaboration": "",
-                    "score": 5,
-                    "text": "Yes, as previous answer, and additionally the software is available via a package manager or similar"
+                    "text": "As previous answer, with at least some of the links qualified and machine-readable"
                 }
             ],
             "id": "r:q3",
             "principle": "r",
-            "text": "Is the software made available in a form that allows for it to be understood, modified, built upon, or incorporated into other software?"
+            "text": "How is the software's relationship to related software described?"
         },
         {
             "answers": [
@@ -380,30 +380,30 @@
                     "id": "r:q4:a0",
                     "elaboration": "",
                     "score": 0,
-                    "text": "No, access to the binary or source code is not available"
+                    "text": "The software or its metadata do not include explicit information about the dependencies"
                 },
                 {
                     "id": "r:q4:a1",
                     "elaboration": "",
-                    "score": 0,
-                    "text": "No, the software is only available as source code, and the software's dependency tree or compilation tool chain are insufficiently specified to facilitate reliable recompilation"
+                    "score": 1,
+                    "text": "The software or its metadata include the names of the dependencies"
                 },
                 {
                     "id": "r:q4:a2",
-                    "elaboration": "E.g. the software includes package manager files like package-lock.json, conanfile.txt, pyproject.toml, or requirements.txt that can be used to compile and run the software, or the software includes sufficient documentation to do so.",
-                    "score": 1,
-                    "text": "Yes, the software is only available as source code but can be compiled using information bundled with the software sources"
+                    "elaboration": "",
+                    "score": 2,
+                    "text": "The software or its metadata include URI links to the software's dependencies"
                 },
                 {
                     "id": "r:q4:a3",
                     "elaboration": "",
-                    "score": 2,
-                    "text": "Yes, the software and its dependency tree are made available in binary form using virtualization, containerization, Golang binaries, Windows .exe binaries, RPM binaries, or a similar method"
+                    "score": 3,
+                    "text": "As previous answer, and additionally each link points to a specific version or version range of the dependency, and the list of dependencies includes all dependencies needed to get the software running again on a fresh install of the targeted operating systems"
                 }
             ],
             "id": "r:q4",
             "principle": "r",
-            "text": "Is the software executable?"
+            "text": "How are the software's dependencies specified?"
         }
     ],
     "version": "0.2"
