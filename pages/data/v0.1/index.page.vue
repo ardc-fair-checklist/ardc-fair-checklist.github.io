@@ -3,15 +3,16 @@
     <div>
         <ChecklistHeader />
         <main>
-            <h1>Self-assessment checklist for FAIR data</h1>
+            <h1>Self-assessment for FAIR data</h1>
+            <p>
+                For the research software variant, click
+                <ChecklistLink v-bind:href="linkToSoftwareChecklist">here</ChecklistLink>.
+            </p>
             <ChecklistBannerWIP />
             <ChecklistBannerVersions />
             <template v-if="nQuestions.total > 0">
                 <p>
-                    Answer the questions below to assess
-                    your data's FAIRness, or switch to the checklist for
-                    <ChecklistLink v-bind:href="linkToSoftwareChecklist">software</ChecklistLink>
-                    instead.
+                    Answer the questions below to assess your data's FAIRness.
                 </p>
                 <div v-for="principle in principles" v-bind:key="principle">
                     <h2>{{ getFullname(principle) }}</h2>
