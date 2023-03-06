@@ -3,18 +3,54 @@
     <div>
         <ChecklistHeader />
         <main>
-            <h1>Self-assessment checklist for FAIR software</h1>
+            <h1>Self-assessment for FAIR research software</h1>
+            <p>
+                For the data variant, click
+                <ChecklistLink v-bind:href="linkToDataChecklist">here</ChecklistLink>.
+            </p>
             <ChecklistBannerWIP />
             <ChecklistBannerVersions />
             <ChecklistBannerParams />
-            <template v-if="nQuestions.total > 0">
+            <h2>How to use this checklist</h2>
+            <div class="preamble">
                 <p>
-                    Answer the questions below to assess
-                    your software's FAIRness, or switch to the checklist for
-                    <ChecklistLink v-bind:href="linkToDataChecklist">data</ChecklistLink>
-                    instead.
+                    If you are a research software author, please answer the questions below to
+                    assess your software's FAIRness. As you go through them, the progress bars at
+                    the bottom of the screen will update according to your answers. When you're done
+                    with the questions, copy the badge at the bottom of the page and put it in your
+                    software's README.
                 </p>
-                <div class="vspace"></div>
+                <p>
+                    This way, you
+                    <ol>
+                        <li>
+                            <i>Promote transparency</i>: the badge links back to this page, and
+                            contains the required data to check the appropriate answers. This way,
+                            users of your software can easily get an idea of the FAIRness state of
+                            the project.
+                        </li>
+                        <li>
+                            <i>Discover best practices</i>: as you go through the questions, you may
+                            learn about practices to improve FAIRness that you were not aware of
+                            previously.
+                        </li>
+                        <li>
+                            <i>Become an ambassador of FAIR</i>: By putting the badge in your
+                            README, your project will help promote the previous 2 aspects.
+                        </li>
+                    </ol>
+                </p>
+                <p>
+                    The questions are inspired by the outcomes of the FAIR4RS Working Group (see
+                    <a href="https://doi.org/10.15497/RDA00068">doi:10.15497/RDA00068</a>). We
+                    gratefully acknowledge their contribution.
+                </p>
+                <p>
+                    Let's get started!
+                </p>
+            </div>
+            <div class="vspace"></div>
+            <template v-if="nQuestions.total > 0">
                 <div v-for="principle in principles" v-bind:key="principle">
                     <h2>{{ getFullname(principle) }}</h2>
                     <p class="principle-quote">{{ getQuote(principle) }}</p>
@@ -151,9 +187,26 @@ h2 {
     margin-right: auto;
     text-align: center;
 }
-
+div.preamble {
+    margin-left: 4em;
+    margin-right: 4em;
+    text-align: justify;
+}
+div.preamble li {
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
 div.vspace {
-    height: 3em
+    height: 1em
+}
+
+div.preamble a {
+    text-underline-offset: 0.3em;
+    color: #71caff;
+}
+
+div.preamble a:hover {
+    color: var(--white);
 }
 
 p.principle-quote {
