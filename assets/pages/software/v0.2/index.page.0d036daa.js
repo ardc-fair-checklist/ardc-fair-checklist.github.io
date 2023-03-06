@@ -726,37 +726,6 @@ const questions = [
   {
     answers: [
       {
-        id: "a:q6:a0",
-        elaboration: "",
-        score: 0,
-        text: "The software is unlicensed"
-      },
-      {
-        id: "a:q6:a1",
-        elaboration: "E.g. the software's README includes a few lines about how the software may be used, but the legal meaning has not been tested or subjected to an audit.",
-        score: 1,
-        text: "The software is licensed with a license that is not widely used"
-      },
-      {
-        id: "a:q6:a2",
-        elaboration: "E.g. the software is bundled with a license text such as that of the Apache-2.0, MIT, or MPL license.",
-        score: 2,
-        text: "The software is licensed with a widely used license"
-      },
-      {
-        id: "a:q6:a3",
-        elaboration: "E.g. the software specifies its license in a metadata file such as pyproject.toml, package.json, CITATION.cff, .zenodo.json, codemeta.json, or R DESCRIPTION file.",
-        score: 3,
-        text: "As previous answer, and additionally, the license is machine readable"
-      }
-    ],
-    id: "a:q6",
-    principle: "a",
-    text: "Which of the following best describes the software's usage rights?"
-  },
-  {
-    answers: [
-      {
         id: "i:q0:a0",
         elaboration: "",
         score: 0,
@@ -809,6 +778,87 @@ const questions = [
     id: "i:q1",
     principle: "i",
     text: "If any, what versioning strategy does the software adhere to?"
+  },
+  {
+    answers: [
+      {
+        id: "i:q2:a0",
+        elaboration: "",
+        score: 0,
+        text: "The software or its metadata do not include explicit information about the dependencies"
+      },
+      {
+        id: "i:q2:a1",
+        elaboration: "",
+        score: 1,
+        text: "The software or its metadata include the names of the dependencies"
+      },
+      {
+        id: "i:q2:a2",
+        elaboration: "",
+        score: 2,
+        text: "The software or its metadata include URI links to the software's dependencies"
+      },
+      {
+        id: "i:q2:a3",
+        elaboration: "",
+        score: 3,
+        text: "As previous answer, and additionally each link points to a specific version or version range of the dependency, and the list of dependencies includes all dependencies needed to get the software running again on a fresh install of the targeted operating systems"
+      }
+    ],
+    id: "i:q2",
+    principle: "i",
+    text: "How are the software's dependencies specified?"
+  },
+  {
+    answers: [
+      {
+        id: "i:q3:a0",
+        elaboration: "",
+        score: 0,
+        text: "The software and its metadata do not include links to related software"
+      },
+      {
+        id: "i:q3:a1",
+        elaboration: "",
+        score: 1,
+        text: "The software and its metadata include at least some URI links to related software"
+      },
+      {
+        id: "i:q3:a2",
+        elaboration: "",
+        score: 2,
+        text: "As previous answer, with at least some of the links qualified and machine-readable"
+      }
+    ],
+    id: "i:q3",
+    principle: "i",
+    text: "How is the software's relationship to related software, other than its dependencies, described?"
+  },
+  {
+    answers: [
+      {
+        id: "i:q4:a0",
+        elaboration: "",
+        score: 0,
+        text: "The software and its metadata do not include links to related data"
+      },
+      {
+        id: "i:q4:a1",
+        elaboration: "",
+        score: 1,
+        text: "The software and its metadata include at least some URI links to related data"
+      },
+      {
+        id: "i:q4:a2",
+        elaboration: "",
+        score: 2,
+        text: "As previous answer, with at least some of the links qualified and machine-readable"
+      }
+    ],
+    id: "i:q4",
+    principle: "i",
+    text: "How is the software's relationship to related data described?"
   },
   {
     answers: [
@@ -896,80 +946,30 @@ const questions = [
         id: "r:q2:a0",
         elaboration: "",
         score: 0,
-        text: "The software or its metadata do not include explicit information about the dependencies"
+        text: "The software is unlicensed"
       },
       {
         id: "r:q2:a1",
-        elaboration: "",
+        elaboration: "E.g. the software's README includes a few lines about how the software may be used, but the legal meaning has not been tested or subjected to an audit.",
         score: 1,
-        text: "The software or its metadata include the names of the dependencies"
+        text: "The software is licensed with a license that is not widely used"
       },
       {
         id: "r:q2:a2",
-        elaboration: "",
+        elaboration: "E.g. the software is bundled with a license text such as that of the Apache-2.0, MIT, or MPL license.",
         score: 2,
-        text: "The software or its metadata include URI links to the software's dependencies"
+        text: "The software is licensed with a widely used license"
       },
       {
         id: "r:q2:a3",
-        elaboration: "",
+        elaboration: "E.g. the software specifies its license in a metadata file such as pyproject.toml, package.json, CITATION.cff, .zenodo.json, codemeta.json, or R DESCRIPTION file.",
         score: 3,
-        text: "As previous answer, and additionally each link points to a specific version or version range of the dependency, and the list of dependencies includes all dependencies needed to get the software running again on a fresh install of the targeted operating systems"
+        text: "As previous answer, and additionally, the license is machine readable"
       }
     ],
     id: "r:q2",
     principle: "r",
-    text: "How are the software's dependencies specified?"
-  },
-  {
-    answers: [
-      {
-        id: "r:q3:a0",
-        elaboration: "",
-        score: 0,
-        text: "The software and its metadata do not include links to related software"
-      },
-      {
-        id: "r:q3:a1",
-        elaboration: "",
-        score: 1,
-        text: "The software and its metadata include at least some URI links to related software"
-      },
-      {
-        id: "r:q3:a2",
-        elaboration: "",
-        score: 2,
-        text: "As previous answer, with at least some of the links qualified and machine-readable"
-      }
-    ],
-    id: "r:q3",
-    principle: "r",
-    text: "How is the software's relationship to related software, other than its dependencies, described?"
-  },
-  {
-    answers: [
-      {
-        id: "r:q4:a0",
-        elaboration: "",
-        score: 0,
-        text: "The software and its metadata do not include links to related data"
-      },
-      {
-        id: "r:q4:a1",
-        elaboration: "",
-        score: 1,
-        text: "The software and its metadata include at least some URI links to related data"
-      },
-      {
-        id: "r:q4:a2",
-        elaboration: "",
-        score: 2,
-        text: "As previous answer, with at least some of the links qualified and machine-readable"
-      }
-    ],
-    id: "r:q4",
-    principle: "r",
-    text: "How is the software's relationship to related data described?"
+    text: "Which of the following best describes the software's usage rights?"
   }
 ];
 const _withScopeId = (n) => (pushScopeId("data-v-a6ff390e"), n = n(), popScopeId(), n);
