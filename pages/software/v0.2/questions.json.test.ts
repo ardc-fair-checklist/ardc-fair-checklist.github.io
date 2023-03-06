@@ -54,16 +54,16 @@ describe('the software questions data', () => {
         expect(questions.filter(q => q.principle === 'f').length).toBe(1);
     });
 
-    test('there should be 7 questions with principle \'a\'', () => {
-        expect(questions.filter(q => q.principle === 'a').length).toBe(7);
+    test('there should be 6 questions with principle \'a\'', () => {
+        expect(questions.filter(q => q.principle === 'a').length).toBe(6);
     });
 
-    test('there should be 2 questions with principle \'i\'', () => {
-        expect(questions.filter(q => q.principle === 'i').length).toBe(2);
+    test('there should be 5 questions with principle \'i\'', () => {
+        expect(questions.filter(q => q.principle === 'i').length).toBe(5);
     });
 
-    test('there should be 5 questions with principle \'r\'', () => {
-        expect(questions.filter(q => q.principle === 'r').length).toBe(5);
+    test('there should be 3 questions with principle \'r\'', () => {
+        expect(questions.filter(q => q.principle === 'r').length).toBe(3);
     });
 
     test('there should be 15 questions in total', () => {
