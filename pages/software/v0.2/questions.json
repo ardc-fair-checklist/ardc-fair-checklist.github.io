@@ -330,24 +330,30 @@
                     "id": "r:q2:a0",
                     "elaboration": "",
                     "score": 0,
-                    "text": "The software and its metadata do not include links to related data"
+                    "text": "The software or its metadata do not include explicit information about the dependencies"
                 },
                 {
                     "id": "r:q2:a1",
                     "elaboration": "",
                     "score": 1,
-                    "text": "The software and its metadata include at least some URI links to related data"
+                    "text": "The software or its metadata include the names of the dependencies"
                 },
                 {
                     "id": "r:q2:a2",
                     "elaboration": "",
                     "score": 2,
-                    "text": "As previous answer, with at least some of the links qualified and machine-readable"
+                    "text": "The software or its metadata include URI links to the software's dependencies"
+                },
+                {
+                    "id": "r:q2:a3",
+                    "elaboration": "",
+                    "score": 3,
+                    "text": "As previous answer, and additionally each link points to a specific version or version range of the dependency, and the list of dependencies includes all dependencies needed to get the software running again on a fresh install of the targeted operating systems"
                 }
             ],
             "id": "r:q2",
             "principle": "r",
-            "text": "How is the software's relationship to related data described?"
+            "text": "How are the software's dependencies specified?"
         },
         {
             "answers": [
@@ -372,7 +378,7 @@
             ],
             "id": "r:q3",
             "principle": "r",
-            "text": "How is the software's relationship to related software described?"
+            "text": "How is the software's relationship to related software, other than its dependencies, described?"
         },
         {
             "answers": [
@@ -380,30 +386,24 @@
                     "id": "r:q4:a0",
                     "elaboration": "",
                     "score": 0,
-                    "text": "The software or its metadata do not include explicit information about the dependencies"
+                    "text": "The software and its metadata do not include links to related data"
                 },
                 {
                     "id": "r:q4:a1",
                     "elaboration": "",
                     "score": 1,
-                    "text": "The software or its metadata include the names of the dependencies"
+                    "text": "The software and its metadata include at least some URI links to related data"
                 },
                 {
                     "id": "r:q4:a2",
                     "elaboration": "",
                     "score": 2,
-                    "text": "The software or its metadata include URI links to the software's dependencies"
-                },
-                {
-                    "id": "r:q4:a3",
-                    "elaboration": "",
-                    "score": 3,
-                    "text": "As previous answer, and additionally each link points to a specific version or version range of the dependency, and the list of dependencies includes all dependencies needed to get the software running again on a fresh install of the targeted operating systems"
+                    "text": "As previous answer, with at least some of the links qualified and machine-readable"
                 }
             ],
             "id": "r:q4",
             "principle": "r",
-            "text": "How are the software's dependencies specified?"
+            "text": "How is the software's relationship to related data described?"
         }
     ],
     "version": "0.2"
