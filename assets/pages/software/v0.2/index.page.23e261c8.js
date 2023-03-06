@@ -111,11 +111,11 @@ const ChecklistAbout = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["render", _sfc
 const _withScopeId$2 = (n) => (pushScopeId("data-v-f9a9cee9"), n = n(), popScopeId(), n);
 const _hoisted_1$8 = { class: "badges" };
 const _hoisted_2$5 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createBaseVNode("h2", null, "Get the badge", -1));
-const _hoisted_3$5 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createBaseVNode("h3", null, [
+const _hoisted_3$4 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createBaseVNode("h3", null, [
   /* @__PURE__ */ createBaseVNode("label", { for: "textarea-markdown-badge" }, "Markdown")
 ], -1));
 const _hoisted_4$2 = { class: "row" };
-const _hoisted_5$2 = ["value"];
+const _hoisted_5$3 = ["value"];
 const _hoisted_6$1 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createBaseVNode("div", { class: "copied-text" }, " copied ", -1));
 const _hoisted_7$2 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createBaseVNode("h3", null, [
   /* @__PURE__ */ createBaseVNode("label", { for: "textarea-rst-badge" }, "ReStructured Text")
@@ -178,14 +178,14 @@ const _sfc_main$9 = /* @__PURE__ */ defineComponent({
       return openBlock(), createElementBlock("div", _hoisted_1$8, [
         _hoisted_2$5,
         createTextVNode(" Use the buttons next to the snippets below to copy your badge and paste it into your project's README. The hyperlink in each snippet points back to this page, and includes the necessary data to check the appropriate answers. "),
-        _hoisted_3$5,
+        _hoisted_3$4,
         createBaseVNode("div", _hoisted_4$2, [
           createBaseVNode("textarea", {
             id: "textarea-markdown-badge",
             readonly: "",
             value: unref(markdownBadge),
             wrap: "off"
-          }, null, 8, _hoisted_5$2),
+          }, null, 8, _hoisted_5$3),
           createBaseVNode("div", { class: "col" }, [
             createBaseVNode("button", {
               role: "button",
@@ -399,7 +399,7 @@ const _hoisted_2$4 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ create
     })
   ])
 ], -1));
-const _hoisted_3$4 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("div", { class: "view-source" }, [
+const _hoisted_3$3 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("div", { class: "view-source" }, [
   /* @__PURE__ */ createBaseVNode("a", { href: "https://github.com/ardc-fair-checklist/ssg/issues/new?labels=user-feedback&template=10_feedback.md" }, " Report an issue "),
   /* @__PURE__ */ createBaseVNode("a", { href: "https://github.com/ardc-fair-checklist/ssg/issues/new?labels=user-feedback&template=10_feedback.md" }, [
     /* @__PURE__ */ createBaseVNode("img", {
@@ -422,7 +422,7 @@ const _sfc_main$4 = /* @__PURE__ */ defineComponent({
             _: 1
           })
         ]),
-        _hoisted_3$4
+        _hoisted_3$3
       ]);
     };
   }
@@ -431,9 +431,9 @@ const ChecklistHeader_vue_vue_type_style_index_0_scoped_4554f404_lang = "";
 const ChecklistHeader = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-4554f404"]]);
 const _hoisted_1$3 = { class: "footer" };
 const _hoisted_2$3 = { class: "inner" };
-const _hoisted_3$3 = { class: "another-inner" };
+const _hoisted_3$2 = { class: "another-inner" };
 const _hoisted_4$1 = { class: "progressbars" };
-const _hoisted_5$1 = /* @__PURE__ */ createStaticVNode('<div class="labels" data-v-b168c94e><div class="row" data-v-b168c94e><div class="label" data-v-b168c94e> Findable </div></div><div class="row" data-v-b168c94e><div class="label" data-v-b168c94e> Accessible </div></div><div class="row" data-v-b168c94e><div class="label" data-v-b168c94e> Interoperable </div></div><div class="row" data-v-b168c94e><div class="label" data-v-b168c94e> Reusable </div></div></div><div class="bars" data-v-b168c94e><div class="row" data-v-b168c94e><div class="bar bar-bg" data-v-b168c94e><div class="bar blue" data-v-b168c94e></div></div></div><div class="row" data-v-b168c94e><div class="bar bar-bg" data-v-b168c94e><div class="bar pink" data-v-b168c94e></div></div></div><div class="row" data-v-b168c94e><div class="bar bar-bg" data-v-b168c94e><div class="bar yellow" data-v-b168c94e></div></div></div><div class="row" data-v-b168c94e><div class="bar bar-bg" data-v-b168c94e><div class="bar purple" data-v-b168c94e></div></div></div></div>', 2);
+const _hoisted_5$2 = /* @__PURE__ */ createStaticVNode('<div class="labels" data-v-b168c94e><div class="row" data-v-b168c94e><div class="label" data-v-b168c94e> Findable </div></div><div class="row" data-v-b168c94e><div class="label" data-v-b168c94e> Accessible </div></div><div class="row" data-v-b168c94e><div class="label" data-v-b168c94e> Interoperable </div></div><div class="row" data-v-b168c94e><div class="label" data-v-b168c94e> Reusable </div></div></div><div class="bars" data-v-b168c94e><div class="row" data-v-b168c94e><div class="bar bar-bg" data-v-b168c94e><div class="bar blue" data-v-b168c94e></div></div></div><div class="row" data-v-b168c94e><div class="bar bar-bg" data-v-b168c94e><div class="bar pink" data-v-b168c94e></div></div></div><div class="row" data-v-b168c94e><div class="bar bar-bg" data-v-b168c94e><div class="bar yellow" data-v-b168c94e></div></div></div><div class="row" data-v-b168c94e><div class="bar bar-bg" data-v-b168c94e><div class="bar purple" data-v-b168c94e></div></div></div></div>', 2);
 const _hoisted_7$1 = ["disabled"];
 const _sfc_main$3 = /* @__PURE__ */ defineComponent({
   __name: "ChecklistProgressBars",
@@ -452,9 +452,9 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("div", _hoisted_1$3, [
         createBaseVNode("div", _hoisted_2$3, [
-          createBaseVNode("div", _hoisted_3$3, [
+          createBaseVNode("div", _hoisted_3$2, [
             createBaseVNode("div", _hoisted_4$1, [
-              _hoisted_5$1,
+              _hoisted_5$2,
               createBaseVNode("button", {
                 disabled: __props.disableButton,
                 role: "button",
@@ -471,9 +471,9 @@ const ChecklistProgressBars_vue_vue_type_style_index_0_scoped_b168c94e_lang = ""
 const ChecklistProgressBars = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-b168c94e"]]);
 const _hoisted_1$2 = ["aria-labelledby"];
 const _hoisted_2$2 = { class: "answer-radiobutton" };
-const _hoisted_3$2 = ["id", "value", "checked"];
+const _hoisted_3$1 = ["id", "value", "checked"];
 const _hoisted_4 = { class: "answer-points" };
-const _hoisted_5 = { class: "answer-text" };
+const _hoisted_5$1 = { class: "answer-text" };
 const _hoisted_6 = ["for", "id"];
 const _hoisted_7 = {
   key: 0,
@@ -508,10 +508,10 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
             role: "presentation",
             tabindex: "-1",
             "aria-label": ""
-          }, null, 8, _hoisted_3$2)
+          }, null, 8, _hoisted_3$1)
         ]),
         createBaseVNode("div", _hoisted_4, " (+" + toDisplayString(__props.answer.score) + ") ", 1),
-        createBaseVNode("div", _hoisted_5, [
+        createBaseVNode("div", _hoisted_5$1, [
           createBaseVNode("label", {
             for: __props.answer.id,
             id: `label-${__props.answer.id}`
@@ -528,7 +528,7 @@ const ChecklistAnswer_vue_vue_type_style_index_0_scoped_22bcce80_lang = "";
 const ChecklistAnswer = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-22bcce80"]]);
 const _hoisted_1$1 = { class: "question" };
 const _hoisted_2$1 = { class: "question-index shared" };
-const _hoisted_3$1 = { class: "shared" };
+const _hoisted_3 = { class: "shared" };
 const _sfc_main$1 = /* @__PURE__ */ defineComponent({
   __name: "ChecklistQuestion",
   props: {
@@ -548,7 +548,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
       return openBlock(), createElementBlock("div", _hoisted_1$1, [
         createBaseVNode("div", _hoisted_2$1, toDisplayString(`${__props.question.index + 1}.`), 1),
         createBaseVNode("fieldset", null, [
-          createBaseVNode("legend", _hoisted_3$1, toDisplayString(`${__props.question.text}`), 1),
+          createBaseVNode("legend", _hoisted_3, toDisplayString(`${__props.question.text}`), 1),
           (openBlock(true), createElementBlock(Fragment, null, renderList(__props.question.answers, (answer, answerIndex) => {
             return openBlock(), createBlock(ChecklistAnswer, {
               answer,
@@ -698,30 +698,30 @@ const questions = [
         id: "a:q5:a0",
         elaboration: "",
         score: 0,
-        text: "The software is unlicensed"
+        text: "Not applicable, the software does not have any associated machine-readable metadata"
       },
       {
         id: "a:q5:a1",
-        elaboration: "E.g. the software's README includes a few lines about how the software may be used, but the legal meaning has not been tested or subjected to an audit.",
+        elaboration: "",
         score: 1,
-        text: "The software is licensed with a non-standard license"
+        text: "Yes, the software's metadata include its name"
       },
       {
         id: "a:q5:a2",
-        elaboration: "E.g. the software is bundled with a license text such as that of the MIT, MPL, or Apache-2.0 license.",
+        elaboration: "E.g. The metadata includes a URL that points to the software on GitHub, GitLab, SourceForge, PyPI, NPM or CRAN.",
         score: 2,
-        text: "The software is licensed with a standard license"
+        text: "Yes, the software'a metadata includes a unique identifier to reference itself"
       },
       {
         id: "a:q5:a3",
-        elaboration: "E.g. the software specifies its license in a metadata file such as pyproject.toml, package.json, CITATION.cff, .zenodo.json, codemeta.json, or R DESCRIPTION file.",
+        elaboration: "E.g. The metadata includes a DOI, pURL or Handle that points to an archived copy of the software.",
         score: 3,
-        text: "As previous answer, and additionally, the license is machine readable"
+        text: "Yes, the software's metadata includes a unique and persistent identifier to reference itself"
       }
     ],
     id: "a:q5",
     principle: "a",
-    text: "Which of the following best describes the software's usage rights?"
+    text: "Does the software's machine-readable metadata include an identifier to reference itself?"
   },
   {
     answers: [
@@ -729,30 +729,30 @@ const questions = [
         id: "a:q6:a0",
         elaboration: "",
         score: 0,
-        text: "Not applicable, the software does not have any associated machine-readable metadata"
+        text: "The software is unlicensed"
       },
       {
         id: "a:q6:a1",
-        elaboration: "",
+        elaboration: "E.g. the software's README includes a few lines about how the software may be used, but the legal meaning has not been tested or subjected to an audit.",
         score: 1,
-        text: "Yes, the software's metadata include its name"
+        text: "The software is licensed with a license that is not widely used"
       },
       {
         id: "a:q6:a2",
-        elaboration: "E.g. The metadata includes a URL that points to the software on GitHub, GitLab, SourceForge, PyPI, NPM or CRAN.",
+        elaboration: "E.g. the software is bundled with a license text such as that of the Apache-2.0, MIT, or MPL license.",
         score: 2,
-        text: "Yes, the software'a metadata includes a unique identifier to reference itself"
+        text: "The software is licensed with a widely used license"
       },
       {
         id: "a:q6:a3",
-        elaboration: "E.g. The metadata includes a DOI, pURL or Handle that points to an archived copy of the software.",
+        elaboration: "E.g. the software specifies its license in a metadata file such as pyproject.toml, package.json, CITATION.cff, .zenodo.json, codemeta.json, or R DESCRIPTION file.",
         score: 3,
-        text: "Yes, the software's metadata includes a unique and persistent identifier to reference itself"
+        text: "As previous answer, and additionally, the license is machine readable"
       }
     ],
     id: "a:q6",
     principle: "a",
-    text: "Does the software's machine-readable metadata include an identifier to reference itself?"
+    text: "Which of the following best describes the software's usage rights?"
   },
   {
     answers: [
@@ -816,24 +816,30 @@ const questions = [
         id: "r:q0:a0",
         elaboration: "",
         score: 0,
-        text: "The software and its metadata do not include links to related data"
+        text: "No, access to the binary or source code is not available"
       },
       {
         id: "r:q0:a1",
         elaboration: "",
-        score: 1,
-        text: "The software and its metadata include at least some URI links to related data"
+        score: 0,
+        text: "No, the software is only available as source code, and the software's dependency tree or compilation tool chain are insufficiently specified to facilitate reliable recompilation"
       },
       {
         id: "r:q0:a2",
+        elaboration: "E.g. the software includes package manager files like package-lock.json, conanfile.txt, pyproject.toml, or requirements.txt that can be used to compile and run the software, or the software includes sufficient documentation to do so.",
+        score: 1,
+        text: "Yes, the software is only available as source code but can be compiled using information bundled with the software sources"
+      },
+      {
+        id: "r:q0:a3",
         elaboration: "",
         score: 2,
-        text: "As previous answer, with at least some of the links qualified and machine-readable"
+        text: "Yes, the software and its dependency tree are made available in binary form using virtualization, containerization, Golang binaries, Windows .exe binaries, RPM binaries, or a similar method"
       }
     ],
     id: "r:q0",
     principle: "r",
-    text: "How is the software's relationship to related data described?"
+    text: "Is the software executable?"
   },
   {
     answers: [
@@ -841,24 +847,48 @@ const questions = [
         id: "r:q1:a0",
         elaboration: "",
         score: 0,
-        text: "The software and its metadata do not include links to related software"
+        text: "No, the software is made available in a non-accessible form"
       },
       {
         id: "r:q1:a1",
         elaboration: "",
-        score: 1,
-        text: "The software and its metadata include at least some URI links to related software"
+        score: 0,
+        text: "No, the software is in binary form and undocumented"
       },
       {
         id: "r:q1:a2",
         elaboration: "",
+        score: 1,
+        text: "Yes, the software is in binary form and sufficiently documented"
+      },
+      {
+        id: "r:q1:a3",
+        elaboration: "",
         score: 2,
-        text: "As previous answer, with at least some of the links qualified and machine-readable"
+        text: "Yes, the source code is available from a repository but does not include documentation"
+      },
+      {
+        id: "r:q1:a4",
+        elaboration: "",
+        score: 3,
+        text: "Yes, as previous answer, and additionally the software is available via a package manager or similar"
+      },
+      {
+        id: "r:q1:a5",
+        elaboration: "",
+        score: 4,
+        text: "Yes, the source code is available from a repository and includes sufficient  documentation"
+      },
+      {
+        id: "r:q1:a6",
+        elaboration: "",
+        score: 5,
+        text: "Yes, as previous answer, and additionally the software is available via a package manager or similar"
       }
     ],
     id: "r:q1",
     principle: "r",
-    text: "How is the software's relationship to related software described?"
+    text: "Is the software made available in a form that allows for it to be understood, modified, built upon, or incorporated into other software?"
   },
   {
     answers: [
@@ -897,48 +927,24 @@ const questions = [
         id: "r:q3:a0",
         elaboration: "",
         score: 0,
-        text: "No, the software is made available in a non-accessible form"
+        text: "The software and its metadata do not include links to related software"
       },
       {
         id: "r:q3:a1",
         elaboration: "",
-        score: 0,
-        text: "No, the software is in binary form and undocumented"
+        score: 1,
+        text: "The software and its metadata include at least some URI links to related software"
       },
       {
         id: "r:q3:a2",
         elaboration: "",
-        score: 1,
-        text: "Yes, the software is in binary form and sufficiently documented"
-      },
-      {
-        id: "r:q3:a3",
-        elaboration: "",
         score: 2,
-        text: "Yes, the source code is available from a repository but does not include documentation"
-      },
-      {
-        id: "r:q3:a4",
-        elaboration: "",
-        score: 3,
-        text: "Yes, as previous answer, and additionally the software is available via a package manager or similar"
-      },
-      {
-        id: "r:q3:a5",
-        elaboration: "",
-        score: 4,
-        text: "Yes, the source code is available from a repository and includes sufficient  documentation"
-      },
-      {
-        id: "r:q3:a6",
-        elaboration: "",
-        score: 5,
-        text: "Yes, as previous answer, and additionally the software is available via a package manager or similar"
+        text: "As previous answer, with at least some of the links qualified and machine-readable"
       }
     ],
     id: "r:q3",
     principle: "r",
-    text: "Is the software made available in a form that allows for it to be understood, modified, built upon, or incorporated into other software?"
+    text: "How is the software's relationship to related software, other than its dependencies, described?"
   },
   {
     answers: [
@@ -946,36 +952,30 @@ const questions = [
         id: "r:q4:a0",
         elaboration: "",
         score: 0,
-        text: "No, access to the binary or source code is not available"
+        text: "The software and its metadata do not include links to related data"
       },
       {
         id: "r:q4:a1",
         elaboration: "",
-        score: 0,
-        text: "No, the software is only available as source code, and the software's dependency tree or compilation tool chain are insufficiently specified to facilitate reliable recompilation"
+        score: 1,
+        text: "The software and its metadata include at least some URI links to related data"
       },
       {
         id: "r:q4:a2",
-        elaboration: "E.g. the software includes package manager files like package-lock.json, conanfile.txt, pyproject.toml, or requirements.txt that can be used to compile and run the software, or the software includes sufficient documentation to do so.",
-        score: 1,
-        text: "Yes, the software is only available as source code but can be compiled using information bundled with the software sources"
-      },
-      {
-        id: "r:q4:a3",
         elaboration: "",
         score: 2,
-        text: "Yes, the software and its dependency tree are made available in binary form using virtualization, containerization, Golang binaries, Windows .exe binaries, RPM binaries, or a similar method"
+        text: "As previous answer, with at least some of the links qualified and machine-readable"
       }
     ],
     id: "r:q4",
     principle: "r",
-    text: "Is the software executable?"
+    text: "How is the software's relationship to related data described?"
   }
 ];
-const _withScopeId = (n) => (pushScopeId("data-v-85fa558a"), n = n(), popScopeId(), n);
-const _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("h1", null, "Self-assessment checklist for FAIR software", -1));
-const _hoisted_2 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("div", { class: "vspace" }, null, -1));
-const _hoisted_3 = { class: "principle-quote" };
+const _withScopeId = (n) => (pushScopeId("data-v-a6ff390e"), n = n(), popScopeId(), n);
+const _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("h1", null, "Self-assessment for FAIR research software", -1));
+const _hoisted_2 = /* @__PURE__ */ createStaticVNode('<h2 data-v-a6ff390e>How to use this checklist</h2><div class="preamble" data-v-a6ff390e><p data-v-a6ff390e> If you are a research software author, please answer the questions below to assess your software&#39;s FAIRness. As you go through them, the progress bars at the bottom of the screen will update according to your answers. When you&#39;re done with the questions, copy the badge at the bottom of the page and put it in your software&#39;s README. </p><p data-v-a6ff390e> This way, you <ol data-v-a6ff390e><li data-v-a6ff390e><i data-v-a6ff390e>Promote transparency</i>: the badge links back to this page, and contains the required data to check the appropriate answers. This way, users of your software can easily get an idea of the FAIRness state of the project. </li><li data-v-a6ff390e><i data-v-a6ff390e>Discover best practices</i>: as you go through the questions, you may learn about practices to improve FAIRness that you were not aware of previously. </li><li data-v-a6ff390e><i data-v-a6ff390e>Become an ambassador of FAIR</i>: By putting the badge in your README, your project will help promote the previous 2 aspects. </li></ol></p><p data-v-a6ff390e> The questions are inspired by the outcomes of the FAIR4RS Working Group (see <a href="https://doi.org/10.15497/RDA00068" data-v-a6ff390e>doi:10.15497/RDA00068</a>). We gratefully acknowledge their contribution. </p><p data-v-a6ff390e> Let&#39;s get started! </p></div><div class="vspace" data-v-a6ff390e></div>', 3);
+const _hoisted_5 = { class: "principle-quote" };
 const _sfc_main = /* @__PURE__ */ defineComponent({
   __name: "index.page",
   setup(__props) {
@@ -1029,25 +1029,25 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
         createVNode(ChecklistHeader),
         createBaseVNode("main", null, [
           _hoisted_1,
+          createBaseVNode("p", null, [
+            createTextVNode(" For the data variant, click "),
+            createVNode(ChecklistLink, { href: linkToDataChecklist }, {
+              default: withCtx(() => [
+                createTextVNode("here")
+              ]),
+              _: 1
+            }),
+            createTextVNode(". ")
+          ]),
           createVNode(ChecklistBannerWIP),
           createVNode(ChecklistBannerVersions),
           createVNode(ChecklistBannerParams),
+          _hoisted_2,
           unref(nQuestions).total > 0 ? (openBlock(), createElementBlock(Fragment, { key: 0 }, [
-            createBaseVNode("p", null, [
-              createTextVNode(" Answer the questions below to assess your software's FAIRness, or switch to the checklist for "),
-              createVNode(ChecklistLink, { href: linkToDataChecklist }, {
-                default: withCtx(() => [
-                  createTextVNode("data")
-                ]),
-                _: 1
-              }),
-              createTextVNode(" instead. ")
-            ]),
-            _hoisted_2,
             (openBlock(true), createElementBlock(Fragment, null, renderList(unref(principles), (principle) => {
               return openBlock(), createElementBlock("div", { key: principle }, [
                 createBaseVNode("h2", null, toDisplayString(getFullname(principle)), 1),
-                createBaseVNode("p", _hoisted_3, toDisplayString(getQuote(principle)), 1),
+                createBaseVNode("p", _hoisted_5, toDisplayString(getQuote(principle)), 1),
                 (openBlock(true), createElementBlock(Fragment, null, renderList(unref(questions$1).filter((q) => q.principle === principle), (question) => {
                   return openBlock(), createBlock(ChecklistQuestion, {
                     key: question.id,
@@ -1071,8 +1071,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const index_page_vue_vue_type_style_index_0_scoped_85fa558a_lang = "";
-const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-85fa558a"]]);
+const index_page_vue_vue_type_style_index_0_scoped_a6ff390e_lang = "";
+const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-a6ff390e"]]);
 export {
   index_page as default
 };

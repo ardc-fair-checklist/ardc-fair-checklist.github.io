@@ -41,7 +41,7 @@
   "pages/data/v0.1/ChecklistQuestion.vue": [],
   "pages/data/v0.1/questions.json": [],
   "pages/data/v0.1/index.page.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/data/v0.1/index.page.vue?vue&type=style&index=0&scoped=da508c0e&lang.css": [],
+  "pages/data/v0.1/index.page.vue?vue&type=style&index=0&scoped=951f41f4&lang.css": [],
   "pages/data/v0.1/index.page.vue": [],
   "pages/software/index/app.css": [],
   "pages/software/index/index.page.vue?vue&type=script&setup=true&lang.ts": [],
@@ -112,7 +112,7 @@
   "pages/software/v0.2/ChecklistQuestion.vue": [],
   "pages/software/v0.2/questions.json": [],
   "pages/software/v0.2/index.page.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/software/v0.2/index.page.vue?vue&type=style&index=0&scoped=85fa558a&lang.css": [],
+  "pages/software/v0.2/index.page.vue?vue&type=style&index=0&scoped=a6ff390e&lang.css": [],
   "pages/software/v0.2/index.page.vue": [],
   "node_modules/vite-plugin-ssr/dist/esm/utils/isPlainObject.js": [],
   "node_modules/vite-plugin-ssr/dist/esm/utils/stringifyStringArray.js": [],
@@ -169,8 +169,8 @@
     "/ssg/assets/index.page.ec3ad890.css",
     "/ssg/assets/global.b082e789.css"
   ],
-  "index.page.6e0364a0.js": [
-    "/ssg/assets/index.page.90da2c15.css",
+  "index.page.1812d4a6.js": [
+    "/ssg/assets/index.page.db6f18db.css",
     "/ssg/assets/global.b082e789.css"
   ],
   "index.page.83b47af1.js": [
@@ -185,8 +185,8 @@
     "/ssg/assets/index.page.d955019a.css",
     "/ssg/assets/global.b082e789.css"
   ],
-  "index.page.3256be72.js": [
-    "/ssg/assets/index.page.24a42d02.css",
+  "index.page.23e261c8.js": [
+    "/ssg/assets/index.page.76bc831e.css",
     "/ssg/assets/global.b082e789.css"
   ],
   "_error.page.de708dd4.js": [],
