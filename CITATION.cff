@@ -188,3 +188,27 @@ references:
         value: '10.15497/RDA00068'
     title: FAIR Principles for Research Software (FAIR4RS Principles)
     type: article
+  -
+    authors:
+      - family-names: Levett
+        given-names: Kerry
+      - family-names: Russell
+        given-names: Keith
+      - family-names: Schweitzer
+        given-names: Martin
+      - family-names: Unsworth
+        given-names: Kathryn
+      - family-names: White
+        given-names: Andrew
+      - name: ARDC
+    identifiers:
+      -
+        type: url
+        value: https://ardc.edu.au/resource/fair-data-self-assessment-tool/
+        description: Where the website is deployed
+      -
+        type: url
+        value: https://github.com/au-research/FAIR-Data-Assessment-Tool
+        description: Where the software for the website is being developed
+    title: FAIR Data Self Assessment Tool
+    type: website
