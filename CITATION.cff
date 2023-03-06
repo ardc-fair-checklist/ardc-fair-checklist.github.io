@@ -1,0 +1,190 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: ARDC FAIR checklist
+message: Please cite this software using these metadata.
+type: software
+authors:
+  - given-names: Jurriaan H.
+    family-names: Spaaks
+    email: j.spaaks@esciencecenter.nl
+    affiliation: Netherlands eScience Center
+    orcid: 'https://orcid.org/0000-0002-7064-4069'
+  - given-names: Tom
+    family-names: Honeyman
+    email: tom.honeyman@ardc.edu.au
+    affiliation: Australian Research Data Commons
+    orcid: 'https://orcid.org/0000-0001-9448-4023'
+identifiers:
+  - type: url
+    value: 'https://github.com/ardc-fair-checklist/ssg'
+    description: The software concept
+  - type: url
+    value: 'https://ardc-fair-checklist.github.io/ssg/'
+    description: Where the software is deployed
+repository-code: 'https://github.com/ardc-fair-checklist/ssg'
+url: 'https://ardc-fair-checklist.github.io/ssg/'
+abstract: >-
+  The software for a self-assessment web form that allows authors to evaluate the FAIRness of their
+  research software and data. In the case of research software, the form yields a badge that authors
+  can put in their project's README.
+keywords:
+  - FAIR software
+  - FAIR data
+  - FAIR
+  - badging
+  - best practices
+  - research software
+  - RSE
+  - Research Software Engineer
+license: Apache-2.0
+references:
+  -
+    authors:
+      - family-names: Chue Hong
+        given-names: Neil P.
+      - family-names: Katz
+        given-names: Daniel S.
+      - family-names: Barker
+        given-names: Michelle
+      - family-names: Lamprecht
+        given-names: Anna-Lena
+      - family-names: Martinez
+        given-names: Carlos
+      - family-names: Psomopoulos
+        given-names: Fotis E.
+      - family-names: Harrow
+        given-names: Jen
+      - family-names: Castro
+        given-names: Leyla Jael
+      - family-names: Gruenpeter
+        given-names: Morane
+      - family-names: Martinez
+        given-names: Paula Andrea
+      - family-names: Honeyman
+        given-names: Tom
+      - family-names: Struck
+        given-names: Alexander
+      - family-names: Lee
+        given-names: Allen
+      - family-names: Loewe
+        given-names: Axel
+      - family-names: Werkhoven
+        given-names: Ben
+        name-particle: van
+      - family-names: Jones
+        given-names: Catherine
+      - family-names: Garijo
+        given-names: Daniel
+      - family-names: Plomp
+        given-names: Esther
+      - family-names: Genova
+        given-names: Francoise
+      - family-names: Shanahan
+        given-names: Hugh
+      - family-names: Leng
+        given-names: Joanna
+      - family-names: Hellström
+        given-names: Maggie
+      - family-names: Sandström
+        given-names: Malin
+      - family-names: Sinha
+        given-names: Manodeep
+      - family-names: Kuzak
+        given-names: Mateusz
+      - family-names: Herterich
+        given-names: Patricia
+      - family-names: Zhang
+        given-names: Qian
+      - family-names: Islam
+        given-names: Sharif
+      - family-names: Sansone
+        given-names: Susanna-Assunta
+      - family-names: Pollard
+        given-names: Tom
+      - family-names: Atmojo
+        given-names: Udayanto Dwi
+      - family-names: Williams
+        given-names: Alan
+      - family-names: Czerniak
+        given-names: Andreas
+      - family-names: Niehues
+        given-names: Anna
+      - family-names: Fouilloux
+        given-names: Anne Claire
+      - family-names: Desinghu
+        given-names: Bala
+      - family-names: Goble
+        given-names: Carole
+      - family-names: Richard
+        given-names: Céline
+      - family-names: Gray
+        given-names: Charles
+      - family-names: Erdmann
+        given-names: Chris
+      - family-names: Nüst  
+        given-names: Daniel
+      - family-names: Tartarini
+        given-names: Daniele
+      - family-names: Ranguelova
+        given-names: Elena
+      - family-names: Anzt
+        given-names: Hartwig
+      - family-names: Todorov
+        given-names: Ilian
+      - family-names: McNally
+        given-names: James
+      - family-names: Moldon
+        given-names: Javier
+      - family-names: Burnett
+        given-names: Jessica
+      - family-names: Garrido-Sánchez
+        given-names: Julián
+      - family-names: Belhajjame
+        given-names: Khalid
+      - family-names: Sesink
+        given-names: Laurents
+      - family-names: Hwang
+        given-names: Lorraine
+      - family-names: Tovani-Palone
+        given-names: Marcos Roberto
+      - family-names: Wilkinson
+        given-names: Mark D.
+      - family-names: Servillat
+        given-names: Mathieu
+      - family-names: Liffers
+        given-names: Matthias
+      - family-names: Fox
+        given-names: Merc
+      - family-names: Miljković
+        given-names: Nadica
+      - family-names: Lynch
+        given-names: Nick
+      - family-names: Martinez Lavanchy
+        given-names: Paula
+      - family-names: Gesing
+        given-names: Sandra
+      - family-names: Stevens
+        given-names: Sarah
+      - family-names: Martinez Cuesta
+        given-names: Sergio
+      - family-names: Peroni
+        given-names: Silvio
+      - family-names: Soiland-Reyes
+        given-names: Stian
+      - family-names: Bakker
+        given-names: Tom
+      - family-names: Rabemanantsoa
+        given-names: Tovo
+      - family-names: Sochat
+        given-names: Vanessa
+      - family-names: Yehudi
+        given-names: Yo
+      - name: RDA FAIR4RS WG
+    identifiers:
+      -
+        type: doi
+        value: '10.15497/RDA00068'
+    title: FAIR Principles for Research Software (FAIR4RS Principles)
+    type: article
