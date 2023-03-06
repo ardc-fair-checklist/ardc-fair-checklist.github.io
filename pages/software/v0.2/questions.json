@@ -169,13 +169,13 @@
                     "id": "a:q6:a1",
                     "elaboration": "E.g. the software's README includes a few lines about how the software may be used, but the legal meaning has not been tested or subjected to an audit.",
                     "score": 1,
-                    "text": "The software is licensed with a non-standard license"
+                    "text": "The software is licensed with a license that is not widely used"
                 },
                 {
                     "id": "a:q6:a2",
-                    "elaboration": "E.g. the software is bundled with a license text such as that of the MIT, MPL, or Apache-2.0 license.",
+                    "elaboration": "E.g. the software is bundled with a license text such as that of the Apache-2.0, MIT, or MPL license.",
                     "score": 2,
-                    "text": "The software is licensed with a standard license"
+                    "text": "The software is licensed with a widely used license"
                 },
                 {
                     "id": "a:q6:a3",
