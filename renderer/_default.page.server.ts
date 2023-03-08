@@ -26,9 +26,16 @@ export const render = async (pageContext: PageContextServer) => {
             <head>
                 <meta charset="UTF-8" />
                 <link rel="icon" href="${import.meta.env.BASE_URL}site-logo.svg" />
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <meta name="description" content="${desc}" />
                 <meta name="author" content="Jurriaan H. Spaaks">
+                <meta name="description" content="${desc}" />
+                <meta name="title" content="${title}">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <meta property="og:description" content="${desc}" />
+                <meta property="og:image" content="${import.meta.env.BASE_URL}site-logo.svg" />
+                <meta property="og:locale" content="en_US" />
+                <meta property="og:title" content="${title}" />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="${import.meta.env.BASE_URL}" />
                 <title>${title}</title>
             </head>
             <body>
