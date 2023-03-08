@@ -10,14 +10,20 @@
                 },
                 {
                     "id": "f:q0:a1",
-                    "elaboration": "E.g. keywords from the metadata are recognized by Search Engine Optimization tools such as https://validator.schema.org.",
+                    "elaboration": "E.g. There is a setup.cfg file with keywords, authors, and a description, but the software is not published to PyPI.",
                     "score": 1,
+                    "text": "No, but some of the metadata is machine-readable"
+                },
+                {
+                    "id": "f:q0:a1",
+                    "elaboration": "E.g. keywords from the metadata are recognized by Search Engine Optimization tools such as schema.org's <a href=\"https://validator.schema.org\">validator</a> or <a href=\"https://osds.openlinksw.com/\">OpenLink's Structured Data Sniffer</a>.",
+                    "score": 2,
                     "text": "Yes"
                 }
             ],
             "id": "f:q0",
             "principle": "f",
-            "text": "Is information from the software or its metadata consumed by local or global search engines to help rank their results?"
+            "text": "Is information from the software's metadata consumed by local or global search engines to help rank their results?"
         },
         {
             "answers": [
