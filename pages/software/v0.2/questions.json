@@ -56,7 +56,7 @@
                     "id": "a:q1:a1",
                     "elaboration": "E.g. the software is identified by URL or DOI, but the software source files are under embargo, proprietary, closed-source, or otherwise hidden from public view.",
                     "score": 1,
-                    "text": "Yes for at least some of the identifiers, but the identifier only resolves to the software's metadata"
+                    "text": "Yes for at least some of the identifiers, but the identifier only resolves to a page about the software, not the source files themselves."
                 },
                 {
                     "id": "a:q1:a2",
@@ -75,7 +75,7 @@
                     "id": "a:q2:a0",
                     "elaboration": "E.g. the identifiers include only the name of the software as a concept, but each version of that concept will have a different feature set. Or, the identifiers only include a name or a URL, whose content may be subject to change.",
                     "score": 0,
-                    "text": "No"
+                    "text": "Maybe"
                 },
                 {
                     "id": "a:q2:a1",
@@ -138,7 +138,7 @@
                     "id": "a:q5:a0",
                     "elaboration": "",
                     "score": 0,
-                    "text": "Not applicable, the software does not have any associated machine-readable metadata"
+                    "text": "No"
                 },
                 {
                     "id": "a:q5:a1",
@@ -150,7 +150,7 @@
                     "id": "a:q5:a2",
                     "elaboration": "E.g. The metadata includes a URL that points to the software on GitHub, GitLab, SourceForge, PyPI, NPM or CRAN.",
                     "score": 2,
-                    "text": "Yes, the software'a metadata includes a unique identifier to reference itself"
+                    "text": "Yes, the software's metadata includes a unique identifier to reference itself"
                 },
                 {
                     "id": "a:q5:a3",
@@ -225,19 +225,19 @@
                     "id": "i:q2:a0",
                     "elaboration": "",
                     "score": 0,
-                    "text": "The software or its metadata do not include explicit information about the dependencies"
+                    "text": "The metadata do not include explicit information about the dependencies"
                 },
                 {
                     "id": "i:q2:a1",
                     "elaboration": "",
                     "score": 1,
-                    "text": "The software or its metadata include the names of the dependencies"
+                    "text": "The metadata include the names of the dependencies"
                 },
                 {
                     "id": "i:q2:a2",
                     "elaboration": "",
                     "score": 2,
-                    "text": "The software or its metadata include URI links to the software's dependencies"
+                    "text": "The metadata include URI links to the software's dependencies"
                 },
                 {
                     "id": "i:q2:a3",
@@ -256,13 +256,13 @@
                     "id": "i:q3:a0",
                     "elaboration": "",
                     "score": 0,
-                    "text": "The software and its metadata do not include links to related software"
+                    "text": "The metadata do not include links to related software"
                 },
                 {
                     "id": "i:q3:a1",
                     "elaboration": "",
                     "score": 1,
-                    "text": "The software and its metadata include at least some URI links to related software"
+                    "text": "The metadata include at least some URI links to related software"
                 },
                 {
                     "id": "i:q3:a2",
@@ -281,13 +281,13 @@
                     "id": "i:q4:a0",
                     "elaboration": "",
                     "score": 0,
-                    "text": "The software and its metadata do not include links to related data"
+                    "text": "The metadata do not include links to related data"
                 },
                 {
                     "id": "i:q4:a1",
                     "elaboration": "",
                     "score": 1,
-                    "text": "The software and its metadata include at least some URI links to related data"
+                    "text": "The metadata include at least some URI links to related data"
                 },
                 {
                     "id": "i:q4:a2",
