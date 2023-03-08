@@ -28,8 +28,8 @@
             >{{ answer.text }}
                 <div
                     class="answer-elaboration"
+                    v-html="answer.elaboration"
                     v-if="answer.elaboration !== ''">
-                        {{ answer.elaboration}}
                 </div>
             </label>
         </div>
@@ -87,5 +87,4 @@ defineProps<PropType>();
     font-size: 0.9em;
     filter: brightness(80%);
 }
-
 </style>
