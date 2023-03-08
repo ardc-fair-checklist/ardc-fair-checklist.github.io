@@ -19,7 +19,7 @@ authors:
 identifiers:
   - type: url
     value: 'https://github.com/ardc-fair-checklist/ssg'
-    description: The software concept
+    description: Where the software is being developed
   - type: url
     value: 'https://ardc-fair-checklist.github.io/ssg/'
     description: Where the software is deployed
