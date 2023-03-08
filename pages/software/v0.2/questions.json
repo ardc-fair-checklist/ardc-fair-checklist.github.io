@@ -16,7 +16,7 @@
                 },
                 {
                     "id": "f:q0:a1",
-                    "elaboration": "E.g. keywords from the metadata are recognized by Search Engine Optimization tools such as schema.org's <a href=\"https://validator.schema.org\">validator</a> or <a href=\"https://osds.openlinksw.com/\">OpenLink's Structured Data Sniffer</a>.",
+                    "elaboration": "E.g. the software is published to a package manager (e.g. PyPI, CRAN, NPM) or a dedicated publishing platform (e.g. the Research Software Directory, Zenodo). The resulting product pages on those platform demonstrate that keywords from the metadata are recognized by Search Engine Optimization tools such as schema.org's <a href=\"https://validator.schema.org\">validator</a> or <a href=\"https://osds.openlinksw.com/\">OpenLink's Structured Data Sniffer</a>.",
                     "score": 2,
                     "text": "Yes"
                 }
