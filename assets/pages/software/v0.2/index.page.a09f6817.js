@@ -428,13 +428,13 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
 const ChecklistHeader_vue_vue_type_style_index_0_scoped_4554f404_lang = "";
 const ChecklistHeader = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-4554f404"]]);
 const _imports_0 = "/ssg/venn-the-software.svg";
-const _withScopeId$1 = (n) => (pushScopeId("data-v-7154b0e6"), n = n(), popScopeId(), n);
+const _withScopeId$1 = (n) => (pushScopeId("data-v-6e7659b6"), n = n(), popScopeId(), n);
 const _hoisted_1$4 = { class: "preamble" };
-const _hoisted_2$4 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("h2", null, "How to use this checklist", -1));
+const _hoisted_2$4 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("h2", null, "How to use this page", -1));
 const _hoisted_3$3 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("p", null, " If you are a research software author, please answer the questions below to assess your software's FAIRness. As you go through them, the progress bars at the bottom of the screen will update according to your answers. When you're done with the questions, copy the badge at the bottom of the page and put it in your software's README. ", -1));
-const _hoisted_4$2 = /* @__PURE__ */ createStaticVNode('<ol data-v-7154b0e6><li data-v-7154b0e6><i data-v-7154b0e6>Promote transparency</i>: the badge links back to this page, and contains the required data to check the appropriate answers. This way, users of your software can easily get an idea of the FAIRness state of the project. </li><li data-v-7154b0e6><i data-v-7154b0e6>Discover best practices</i>: as you go through the questions, you may learn about practices to improve FAIRness that you were not aware of previously. </li><li data-v-7154b0e6><i data-v-7154b0e6>Become an ambassador of FAIR</i>: By putting the badge in your README, your project will help promote the previous 2 aspects. </li></ol><p data-v-7154b0e6> The questions are inspired by the outcomes of the FAIR4RS Working Group (see <a href="https://doi.org/10.15497/RDA00068" data-v-7154b0e6>doi:10.15497/RDA00068</a>). We gratefully acknowledge their contribution. </p><h2 data-v-7154b0e6>Definitions</h2>', 3);
+const _hoisted_4$2 = /* @__PURE__ */ createStaticVNode('<ol data-v-6e7659b6><li data-v-6e7659b6><i data-v-6e7659b6>Promote transparency</i>: the badge links back to this page, and contains the required data to check the appropriate answers. This way, users of your software can easily get an idea of the FAIRness state of the project. </li><li data-v-6e7659b6><i data-v-6e7659b6>Discover best practices</i>: as you go through the questions, you may learn about practices to improve FAIRness that you were not aware of previously. </li><li data-v-6e7659b6><i data-v-6e7659b6>Become an ambassador of FAIR</i>: By putting the badge in your README, your project will help promote the previous 2 aspects. </li></ol><p data-v-6e7659b6> The questions are inspired by the outcomes of the FAIR4RS Working Group (see <a href="https://doi.org/10.15497/RDA00068" data-v-6e7659b6>doi:10.15497/RDA00068</a>). We gratefully acknowledge their contribution. </p><h2 data-v-6e7659b6>Definitions</h2>', 3);
 const _hoisted_7$2 = { key: 0 };
-const _hoisted_8 = /* @__PURE__ */ createStaticVNode('<p data-v-7154b0e6> For many projects, the specific copy will be some kind of nested directory tree structure with files and folders, simply what would result from a <code data-v-7154b0e6>git clone</code> or <code data-v-7154b0e6>svn checkout</code>, or perhaps from uncompressing a <code data-v-7154b0e6>zip</code> or a <code data-v-7154b0e6>tar</code> file. Some files in the tree will be source files that define the software&#39;s functional behavior, these are collectively referred to as the software source files. The other files are metadata files that come bundled with the software: </p><img src="' + _imports_0 + '" alt="venn diagram showing the definition of software" data-v-7154b0e6><p data-v-7154b0e6> The metadata includes files that are meant to be read by humans, such as READMEs, documentation files, source files for documentation, image files, etc. The metadata may additionally include files that are meant to be read by machines, such as package manager files (e.g. <code data-v-7154b0e6>package.json</code>, <code data-v-7154b0e6>pyproject.toml</code>, <code data-v-7154b0e6>DESCRIPTION</code>, <code data-v-7154b0e6>CMakeLists.txt</code>, <code data-v-7154b0e6>setup.cfg</code>, etc.), citation files (e.g. <code data-v-7154b0e6>CITATION.cff</code>, <code data-v-7154b0e6>codemeta.json</code>), publishing files (<code data-v-7154b0e6>.zenodo.json</code>), etc. </p>', 3);
+const _hoisted_8 = /* @__PURE__ */ createStaticVNode('<p data-v-6e7659b6> For many projects, the specific copy will be some kind of nested directory tree structure with files and folders, simply what would result from a <code data-v-6e7659b6>git clone</code> or <code data-v-6e7659b6>svn checkout</code>, or perhaps from uncompressing a <code data-v-6e7659b6>zip</code> or a <code data-v-6e7659b6>tar</code> file. Some files in the tree will be source files that define the software&#39;s functional behavior, these are collectively referred to as the software source files. The other files are metadata files that come bundled with the software: </p><img src="' + _imports_0 + '" alt="venn diagram showing the definition of software" data-v-6e7659b6><p data-v-6e7659b6> The metadata includes files that are meant to be read by humans, such as READMEs, documentation files, source files for documentation, image files, etc. The metadata may additionally include files that are meant to be read by machines, such as package manager files (e.g. <code data-v-6e7659b6>package.json</code>, <code data-v-6e7659b6>pyproject.toml</code>, <code data-v-6e7659b6>DESCRIPTION</code>, <code data-v-6e7659b6>CMakeLists.txt</code>, <code data-v-6e7659b6>setup.cfg</code>, etc.), citation files (e.g. <code data-v-6e7659b6>CITATION.cff</code>, <code data-v-6e7659b6>codemeta.json</code>), publishing files (<code data-v-6e7659b6>.zenodo.json</code>), etc. </p>', 3);
 const _hoisted_11 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("p", null, " Let's get started! ", -1));
 const _hoisted_12 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("div", { class: "vspace" }, null, -1));
 const _sfc_main$4 = /* @__PURE__ */ defineComponent({
@@ -484,8 +484,8 @@ const _sfc_main$4 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const ChecklistPreamble_vue_vue_type_style_index_0_scoped_7154b0e6_lang = "";
-const ChecklistPreamble = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-7154b0e6"]]);
+const ChecklistPreamble_vue_vue_type_style_index_0_scoped_6e7659b6_lang = "";
+const ChecklistPreamble = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-6e7659b6"]]);
 const _hoisted_1$3 = { class: "footer" };
 const _hoisted_2$3 = { class: "inner" };
 const _hoisted_3$2 = { class: "another-inner" };
@@ -640,7 +640,7 @@ const questions = [
       },
       {
         id: "f:q0:a2",
-        elaboration: `E.g. the software is published to a package manager (e.g. PyPI, CRAN, NPM) or a dedicated publishing platform (e.g. the Research Software Directory, Zenodo). The resulting product pages on those platform demonstrate that keywords from the metadata are recognized by Search Engine Optimization tools such as schema.org's <a href="https://validator.schema.org">validator</a> or <a href="https://osds.openlinksw.com/">OpenLink's Structured Data Sniffer</a>.`,
+        elaboration: `E.g. the software is published to a package manager (e.g. PyPI, CRAN, NPM) or a dedicated publishing platform (e.g. the Research Software Directory, Zenodo). The associated pages on those platforms can be shown to contain relevant metadata by using Search Engine Optimization tools such as schema.org's <a href="https://validator.schema.org">validator</a> or <a href="https://osds.openlinksw.com/">OpenLink's Structured Data Sniffer</a>.`,
         score: 2,
         text: "Yes"
       }
@@ -678,7 +678,7 @@ const questions = [
       },
       {
         id: "a:q1:a1",
-        elaboration: "E.g. the software is identified by URL or DOI, but the software itself is under embargo, proprietary, closed-source, or otherwise hidden from public view.",
+        elaboration: "E.g. the software is identified by URL or DOI, but the software source files are under embargo, proprietary, closed-source, or otherwise hidden from public view.",
         score: 1,
         text: "Yes for at least some of the identifiers, but the identifier only resolves to the software's metadata"
       },
@@ -930,7 +930,7 @@ const questions = [
         id: "r:q0:a0",
         elaboration: "",
         score: 0,
-        text: "No, access to the binary or source code is not available"
+        text: "No"
       },
       {
         id: "r:q0:a1",
@@ -961,7 +961,7 @@ const questions = [
         id: "r:q1:a0",
         elaboration: "",
         score: 0,
-        text: "No, the software is made available in a non-accessible form"
+        text: "No"
       },
       {
         id: "r:q1:a1",
@@ -973,7 +973,7 @@ const questions = [
         id: "r:q1:a2",
         elaboration: "",
         score: 1,
-        text: "Yes, the software is in binary form and sufficiently documented"
+        text: "Yes, the software is sufficiently documented to do so, but it is in binary form"
       },
       {
         id: "r:q1:a3",
@@ -991,7 +991,7 @@ const questions = [
         id: "r:q1:a5",
         elaboration: "",
         score: 4,
-        text: "Yes, the source code is available from a repository and includes sufficient  documentation"
+        text: "Yes, the source code is available from a repository and includes sufficient documentation"
       },
       {
         id: "r:q1:a6",

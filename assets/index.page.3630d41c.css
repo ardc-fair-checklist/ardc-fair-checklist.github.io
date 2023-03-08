@@ -231,51 +231,51 @@ svg:hover #outline[data-v-4554f404] {
     fill: black;
 }
 
-h2[data-v-7154b0e6] {
+h2[data-v-6e7659b6] {
     color: var(--white);
     margin-top: 3em;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
-div.preamble[data-v-7154b0e6] {
+div.preamble[data-v-6e7659b6] {
     margin-left: 4em;
     margin-right: 4em;
 }
-li[data-v-7154b0e6] {
+li[data-v-6e7659b6] {
     padding-bottom: 0.5em;
     padding-top: 0.5em;
 }
-span.anchor-like[data-v-7154b0e6] {
+span.anchor-like[data-v-6e7659b6] {
     text-decoration: underline;
     text-underline-offset: 0.3em;
     color: #71caff;
 }
-span.anchor-like[data-v-7154b0e6]:hover {
+span.anchor-like[data-v-6e7659b6]:hover {
     color: var(--white);
 }
-div.vspace[data-v-7154b0e6] {
+div.vspace[data-v-6e7659b6] {
     height: 1.5em
 }
-img[data-v-7154b0e6] {
+img[data-v-6e7659b6] {
     width: 50%;
     padding-left: 25%;
     padding-right: 25%;
     margin-bottom: 2em;
     margin-top: 2em;
 }
-.expands[data-v-7154b0e6] {
+.expands[data-v-6e7659b6] {
     overflow: hidden;
     opacity: 0;
     max-height: 0;
 }
-.expanded[data-v-7154b0e6] {
+.expanded[data-v-6e7659b6] {
     max-height: 200em;
     opacity: 1;
     transition: max-height 2s ease,
                 opacity 1s ease;
 }
-.collapsed[data-v-7154b0e6] {
+.collapsed[data-v-6e7659b6] {
     max-height: 0;
     opacity: 0;
     transition: max-height 0.75s ease,
