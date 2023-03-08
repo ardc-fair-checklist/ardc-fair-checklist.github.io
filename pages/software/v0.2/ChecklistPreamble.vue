@@ -1,6 +1,6 @@
 <template>
     <div class="preamble">
-        <h2>How to use this checklist</h2>
+        <h2>How to use this page</h2>
         <p>
             If you are a research software author, please answer the questions below to
             assess your software's FAIRness. As you go through them, the progress bars at

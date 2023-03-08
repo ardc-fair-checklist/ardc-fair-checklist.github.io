@@ -16,7 +16,7 @@
                 },
                 {
                     "id": "f:q0:a2",
-                    "elaboration": "E.g. the software is published to a package manager (e.g. PyPI, CRAN, NPM) or a dedicated publishing platform (e.g. the Research Software Directory, Zenodo). The resulting product pages on those platform demonstrate that keywords from the metadata are recognized by Search Engine Optimization tools such as schema.org's <a href=\"https://validator.schema.org\">validator</a> or <a href=\"https://osds.openlinksw.com/\">OpenLink's Structured Data Sniffer</a>.",
+                    "elaboration": "E.g. the software is published to a package manager (e.g. PyPI, CRAN, NPM) or a dedicated publishing platform (e.g. the Research Software Directory, Zenodo). The associated pages on those platforms can be shown to contain relevant metadata by using Search Engine Optimization tools such as schema.org's <a href=\"https://validator.schema.org\">validator</a> or <a href=\"https://osds.openlinksw.com/\">OpenLink's Structured Data Sniffer</a>.",
                     "score": 2,
                     "text": "Yes"
                 }
@@ -54,7 +54,7 @@
                 },
                 {
                     "id": "a:q1:a1",
-                    "elaboration": "E.g. the software is identified by URL or DOI, but the software itself is under embargo, proprietary, closed-source, or otherwise hidden from public view.",
+                    "elaboration": "E.g. the software is identified by URL or DOI, but the software source files are under embargo, proprietary, closed-source, or otherwise hidden from public view.",
                     "score": 1,
                     "text": "Yes for at least some of the identifiers, but the identifier only resolves to the software's metadata"
                 },
@@ -306,7 +306,7 @@
                     "id": "r:q0:a0",
                     "elaboration": "",
                     "score": 0,
-                    "text": "No, access to the binary or source code is not available"
+                    "text": "No"
                 },
                 {
                     "id": "r:q0:a1",
@@ -337,7 +337,7 @@
                     "id": "r:q1:a0",
                     "elaboration": "",
                     "score": 0,
-                    "text": "No, the software is made available in a non-accessible form"
+                    "text": "No"
                 },
                 {
                     "id": "r:q1:a1",
@@ -349,7 +349,7 @@
                     "id": "r:q1:a2",
                     "elaboration": "",
                     "score": 1,
-                    "text": "Yes, the software is in binary form and sufficiently documented"
+                    "text": "Yes, the software is sufficiently documented to do so, but it is in binary form"
                 },
                 {
                     "id": "r:q1:a3",
@@ -367,7 +367,7 @@
                     "id": "r:q1:a5",
                     "elaboration": "",
                     "score": 4,
-                    "text": "Yes, the source code is available from a repository and includes sufficient  documentation"
+                    "text": "Yes, the source code is available from a repository and includes sufficient documentation"
                 },
                 {
                     "id": "r:q1:a6",
