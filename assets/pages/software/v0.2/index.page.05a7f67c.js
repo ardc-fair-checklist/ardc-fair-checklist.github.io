@@ -647,7 +647,7 @@ const questions = [
     ],
     id: "f:q0",
     principle: "f",
-    text: "Is information from the software's metadata consumed by local or global search engines to help rank their results?"
+    text: "Is information from the metadata consumed by local or global search engines to help rank their results?"
   },
   {
     answers: [
@@ -680,7 +680,7 @@ const questions = [
         id: "a:q1:a1",
         elaboration: "E.g. the software is identified by URL or DOI, but the software source files are under embargo, proprietary, closed-source, or otherwise hidden from public view.",
         score: 1,
-        text: "Yes for at least some of the identifiers, but the identifier only resolves to the software's metadata"
+        text: "Yes for at least some of the identifiers, but the identifier only resolves to a page about the software, not the source files themselves."
       },
       {
         id: "a:q1:a2",
@@ -699,7 +699,7 @@ const questions = [
         id: "a:q2:a0",
         elaboration: "E.g. the identifiers include only the name of the software as a concept, but each version of that concept will have a different feature set. Or, the identifiers only include a name or a URL, whose content may be subject to change.",
         score: 0,
-        text: "No"
+        text: "Maybe"
       },
       {
         id: "a:q2:a1",
@@ -762,30 +762,30 @@ const questions = [
         id: "a:q5:a0",
         elaboration: "",
         score: 0,
-        text: "Not applicable, the software does not have any associated machine-readable metadata"
+        text: "No"
       },
       {
         id: "a:q5:a1",
         elaboration: "",
         score: 1,
-        text: "Yes, the software's metadata include its name"
+        text: "Yes, the metadata includes the software's name"
       },
       {
         id: "a:q5:a2",
         elaboration: "E.g. The metadata includes a URL that points to the software on GitHub, GitLab, SourceForge, PyPI, NPM or CRAN.",
         score: 2,
-        text: "Yes, the software'a metadata includes a unique identifier to reference itself"
+        text: "Yes, the metadata includes a unique identifier to reference the software"
       },
       {
         id: "a:q5:a3",
         elaboration: "E.g. The metadata includes a DOI, pURL or Handle that points to an archived copy of the software.",
         score: 3,
-        text: "Yes, the software's metadata includes a unique and persistent identifier to reference itself"
+        text: "Yes, the metadata includes a unique and persistent identifier to reference the software"
       }
     ],
     id: "a:q5",
     principle: "a",
-    text: "Does the software's machine-readable metadata include an identifier to reference itself?"
+    text: "Does the metadata include an identifier to reference the associated software?"
   },
   {
     answers: [
@@ -849,19 +849,19 @@ const questions = [
         id: "i:q2:a0",
         elaboration: "",
         score: 0,
-        text: "The software or its metadata do not include explicit information about the dependencies"
+        text: "The metadata does not include explicit information about the dependencies"
       },
       {
         id: "i:q2:a1",
         elaboration: "",
         score: 1,
-        text: "The software or its metadata include the names of the dependencies"
+        text: "The metadata includes the names of the dependencies"
       },
       {
         id: "i:q2:a2",
         elaboration: "",
         score: 2,
-        text: "The software or its metadata include URI links to the software's dependencies"
+        text: "The metadata includes URI links to the software's dependencies"
       },
       {
         id: "i:q2:a3",
@@ -880,13 +880,13 @@ const questions = [
         id: "i:q3:a0",
         elaboration: "",
         score: 0,
-        text: "The software and its metadata do not include links to related software"
+        text: "The metadata does not include links to related software"
       },
       {
         id: "i:q3:a1",
         elaboration: "",
         score: 1,
-        text: "The software and its metadata include at least some URI links to related software"
+        text: "The metadata includes at least some URI links to related software"
       },
       {
         id: "i:q3:a2",
@@ -905,13 +905,13 @@ const questions = [
         id: "i:q4:a0",
         elaboration: "",
         score: 0,
-        text: "The software and its metadata do not include links to related data"
+        text: "The metadata does not include links to related data"
       },
       {
         id: "i:q4:a1",
         elaboration: "",
         score: 1,
-        text: "The software and its metadata include at least some URI links to related data"
+        text: "The metadata includes at least some URI links to related data"
       },
       {
         id: "i:q4:a2",
@@ -930,25 +930,19 @@ const questions = [
         id: "r:q0:a0",
         elaboration: "",
         score: 0,
-        text: "No"
+        text: "No, the software's dependency tree or compilation tool chain are insufficiently specified to facilitate reliable recompilation"
       },
       {
         id: "r:q0:a1",
-        elaboration: "",
-        score: 0,
-        text: "No, the software is only available as source code, and the software's dependency tree or compilation tool chain are insufficiently specified to facilitate reliable recompilation"
+        elaboration: "E.g. the software includes package manager files like package-lock.json, conanfile.txt, pyproject.toml, or requirements.txt that can be used to compile and run the software, or the software includes sufficient documentation to do so.",
+        score: 1,
+        text: "Yes, the software can be compiled using information bundled with the software sources"
       },
       {
         id: "r:q0:a2",
-        elaboration: "E.g. the software includes package manager files like package-lock.json, conanfile.txt, pyproject.toml, or requirements.txt that can be used to compile and run the software, or the software includes sufficient documentation to do so.",
-        score: 1,
-        text: "Yes, the software is only available as source code but can be compiled using information bundled with the software sources"
-      },
-      {
-        id: "r:q0:a3",
-        elaboration: "",
+        elaboration: "E.g. the metadata includes a URI link to a DockerHub image containing an executable.",
         score: 2,
-        text: "Yes, the software and its dependency tree are made available in binary form using virtualization, containerization, Golang binaries, Windows .exe binaries, RPM binaries, or a similar method"
+        text: "Yes, the software and its dependency tree are published using virtualization, containerization, or a similar method, and additionally the metadata includes a URI link that points to the executable resource"
       }
     ],
     id: "r:q0",
@@ -966,37 +960,25 @@ const questions = [
       {
         id: "r:q1:a1",
         elaboration: "",
-        score: 0,
-        text: "No, the software is in binary form and undocumented"
+        score: 1,
+        text: "Yes, the software is available from a repository but it does not include documentation"
       },
       {
         id: "r:q1:a2",
         elaboration: "",
-        score: 1,
-        text: "Yes, the software is sufficiently documented to do so, but it is in binary form"
+        score: 2,
+        text: "Yes, as previous answer, and additionally the software is available via a package manager or similar"
       },
       {
         id: "r:q1:a3",
         elaboration: "",
-        score: 2,
-        text: "Yes, the source code is available from a repository but does not include documentation"
+        score: 3,
+        text: "Yes, the software is available from a repository and includes sufficient documentation"
       },
       {
         id: "r:q1:a4",
         elaboration: "",
-        score: 3,
-        text: "Yes, as previous answer, and additionally the software is available via a package manager or similar"
-      },
-      {
-        id: "r:q1:a5",
-        elaboration: "",
         score: 4,
-        text: "Yes, the source code is available from a repository and includes sufficient documentation"
-      },
-      {
-        id: "r:q1:a6",
-        elaboration: "",
-        score: 5,
         text: "Yes, as previous answer, and additionally the software is available via a package manager or similar"
       }
     ],
