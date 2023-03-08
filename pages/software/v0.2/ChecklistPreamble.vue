@@ -32,22 +32,55 @@
             gratefully acknowledge their contribution.
         </p>
         <h2>Definitions</h2>
-        <p v-if="showCollapsed">
-            {{ txtShort }}...
-            <span
-                v-on:click="expand"
-                class="anchor-like">
-                Read more.
+        <p>
+            For the questions that follow, it is helpful to specify what we
+            mean by "the software". Our recommendation is to interpret that
+            phrase as "a specific copy of a specific version of your software-as-a-concept".
+            <span v-if="showCollapsed">
+                For many projects,...
+                <span
+                    v-on:click="expand"
+                    class="anchor-like">
+                    Read more.
+                </span>
             </span>
         </p>
-        <p v-if="showExpanded">
-            {{ txtLong }}
-            <span
-                v-on:click="collapse"
-                class="anchor-like">
-                Collapse.
-            </span>
-        </p>
+        <div class="expands" v-bind:class="{expanded: showExpanded, collapsed: showCollapsed}">
+            <p>
+                For many projects, the
+                specific copy will be some kind of nested directory tree structure with files
+                and folders, simply what would result from a <code>git clone</code> or <code>svn
+                checkout</code>, or perhaps from uncompressing a
+                <code>zip</code> or a <code>tar</code> file. Some files in the tree will be
+                source files that define the software's functional behavior, these are
+                collectively referred to as the software source files. The other files are
+                metadata files that come bundled with the software:
+            </p>
+            <img
+                src="/venn-the-software.svg"
+                alt="venn diagram showing the definition of software"
+            />
+            <p>
+                The metadata includes files that are meant to be read by humans, such
+                as READMEs, documentation files, source files for documentation, image files,
+                etc. The metadata may additionally include files that are meant to be read by
+                machines, such as package manager files (e.g. <code>package.json</code>,
+                <code>pyproject.toml</code>, <code>DESCRIPTION</code>,
+                <code>CMakeLists.txt</code>, <code>setup.cfg</code>, etc.), citation files (e.g.
+                <code>CITATION.cff</code>, <code>codemeta.json</code>), publishing files
+                (<code>.zenodo.json</code>), etc.
+            </p>
+            <p>
+                Any additional data that may be gotten from
+                APIs (for example the GitHub, GitLab, Zenodo, PyPI, CRAN, or NPM API) should not
+                be considered metadata for the purposes of this checklist.
+                <span
+                    v-on:click="collapse"
+                    class="anchor-like">
+                    Collapse the explanatory text.
+                </span>
+            </p>
+        </div>
         <p>
             Let's get started!
         </p>
@@ -68,27 +101,10 @@ const collapse = () => {
     showCollapsed.value = true;
     showExpanded.value = false;
 };
-const txtLong = `For this question and the questions that follow, it is helpful to specify what we mean
-            by "the software and its metadata". Our recommendation is to interpret that phrase as "a
-            specific copy of a specific version of your software-as-a-concept". For many projects,
-            this will be some kind of nested directory tree structure with files and folders, simply
-            what would result from a git clone or svn checkout, or perhaps
-            from uncompressing a zip or a tar file. Some files in the tree
-            will be source files that define functional behavior, these are collectively referred to
-            as the software sources. The other files are the metadata. The metadata includes files
-            that are meant to be read by humans, such as READMEs, documentation files, source files
-            for documentation, image files, etc. The metadata may additionally include files that
-            are meant to be read by machines, such as package manager files (e.g. package.json,
-            pyproject.toml, DESCRIPTION, CMakeList.txt, setup.cfg, etc.), citation files (e.g.
-            CITATION.cff, codemeta.json), publishing files (.zenodo.json), etc. Any additional data
-            that may be gotten from APIs (for example the GitHub, GitLab, Zenodo, PyPI, CRAN, or NPM
-            API) should not be considered metadata for the purposes of this checklist.`;
-const txtShort = txtLong.slice(0, 281);
 </script>
 
 <style scoped>
 h2 {
-    /*width: 40%;*/
     color: var(--white);
     margin-top: 3em;
     margin-left: auto;
@@ -98,23 +114,47 @@ h2 {
 div.preamble {
     margin-left: 4em;
     margin-right: 4em;
-    /*text-align: justify;*/
 }
 li {
     padding-bottom: 0.5em;
     padding-top: 0.5em;
 }
 
-a, span.anchor-like {
+span.anchor-like {
     text-decoration: underline;
     text-underline-offset: 0.3em;
     color: #71caff;
 }
 
-a:hover, span.anchor-like:hover {
+span.anchor-like:hover {
     color: var(--white);
 }
 div.vspace {
-    height: 1em
+    height: 1.5em
 }
+img {
+    width: 50%;
+    padding-left: 25%;
+    padding-right: 25%;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+.expands {
+    overflow: hidden;
+    opacity: 0;
+    max-height: 0;
+}
+.expanded {
+    max-height: 200em;
+    opacity: 1;
+    transition: max-height 2s ease,
+                opacity 1s ease;
+}
+.collapsed {
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.75s ease,
+                opacity 0.2s ease;
+}
+
 </style>
