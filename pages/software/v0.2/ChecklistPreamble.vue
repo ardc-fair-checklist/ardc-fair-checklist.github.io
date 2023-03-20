@@ -7,45 +7,60 @@
             the bottom of the screen will update according to your answers. When you're done
             with the questions, copy the badge at the bottom of the page and put it in your
             software's README.
+            <span v-if="showCollapsedHowtouse"
+                v-on:click="expandHowtouse"
+                class="anchor-like">
+                Read more.
+            </span>
         </p>
-        This way, you
-        <ol>
-            <li>
-                <i>Promote transparency</i>: the badge links back to this page, and
-                contains the required data to check the appropriate answers. This way,
-                users of your software can easily get an idea of the FAIRness state of
-                the project.
-            </li>
-            <li>
-                <i>Discover best practices</i>: as you go through the questions, you may
-                learn about practices to improve FAIRness that you were not aware of
-                previously.
-            </li>
-            <li>
-                <i>Become an ambassador of FAIR</i>: By putting the badge in your
-                README, your project will help promote the previous 2 aspects.
-            </li>
-        </ol>
-        <p>
-            The questions are inspired by the outcomes of the FAIR4RS Working Group (see
-            <a href="https://doi.org/10.15497/RDA00068">doi:10.15497/RDA00068</a>). We
-            gratefully acknowledge their contribution.
-        </p>
+        <div
+            class="expands"
+            v-bind:class="{expanded: showExpandedHowtouse, collapsed: showCollapsedHowtouse}">
+            This way, you
+            <ol>
+                <li>
+                    <i>Promote transparency</i>: the badge links back to this page, and
+                    contains the required data to check the appropriate answers. This way,
+                    users of your software can easily get an idea of the FAIRness state of
+                    the project.
+                </li>
+                <li>
+                    <i>Discover best practices</i>: as you go through the questions, you may
+                    learn about practices to improve FAIRness that you were not aware of
+                    previously.
+                </li>
+                <li>
+                    <i>Become an ambassador of FAIR</i>: By putting the badge in your
+                    README, your project will help promote the previous 2 aspects.
+                </li>
+            </ol>
+            <p>
+                The questions are inspired by the outcomes of the FAIR4RS Working Group (see
+                <a href="https://doi.org/10.15497/RDA00068">doi:10.15497/RDA00068</a>). We
+                gratefully acknowledge their contribution. <span
+                    v-on:click="collapseHowtouse"
+                    class="anchor-like">
+                    Collapse this section.
+                </span>
+            </p>
+        </div>
         <h2>Definitions</h2>
         <p>
             For the questions that follow, it is helpful to specify what we
             mean by "the software". Our recommendation is to interpret that
             phrase as "a specific copy of a specific version of your software-as-a-concept".
-            <span v-if="showCollapsed">
+            <span v-if="showCollapsedDefinitions">
                 For many projects,...
                 <span
-                    v-on:click="expand"
+                    v-on:click="expandDefinitions"
                     class="anchor-like">
                     Read more.
                 </span>
             </span>
         </p>
-        <div class="expands" v-bind:class="{expanded: showExpanded, collapsed: showCollapsed}">
+        <div
+            class="expands"
+            v-bind:class="{expanded: showExpandedDefinitions, collapsed: showCollapsedDefinitions}">
             <p>
                 For many projects, the
                 specific copy will be some kind of nested directory tree structure with files
@@ -75,9 +90,9 @@
                 APIs (for example the GitHub, GitLab, Zenodo, PyPI, CRAN, or NPM API) should not
                 be considered metadata for the purposes of this checklist.
                 <span
-                    v-on:click="collapse"
+                    v-on:click="collapseDefinitions"
                     class="anchor-like">
-                    Collapse the explanatory text.
+                    Collapse this section.
                 </span>
             </p>
         </div>
@@ -91,15 +106,25 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
-const showCollapsed = ref(true);
-const showExpanded = ref(false);
-const expand = () => {
-    showCollapsed.value = false;
-    showExpanded.value = true;
+const showCollapsedDefinitions = ref(true);
+const showExpandedDefinitions = ref(false);
+const expandDefinitions = () => {
+    showCollapsedDefinitions.value = false;
+    showExpandedDefinitions.value = true;
 };
-const collapse = () => {
-    showCollapsed.value = true;
-    showExpanded.value = false;
+const collapseDefinitions = () => {
+    showCollapsedDefinitions.value = true;
+    showExpandedDefinitions.value = false;
+};
+const showCollapsedHowtouse = ref(true);
+const showExpandedHowtouse = ref(false);
+const expandHowtouse = () => {
+    showCollapsedHowtouse.value = false;
+    showExpandedHowtouse.value = true;
+};
+const collapseHowtouse = () => {
+    showCollapsedHowtouse.value = true;
+    showExpandedHowtouse.value = false;
 };
 </script>
 
