@@ -1,5 +1,5 @@
 <template>
-    <div class="preamble">
+    <div>
         <h2>How to use this page</h2>
         <p>
             If you are a research software author, please answer the questions below to
@@ -131,14 +131,7 @@ const collapseHowtouse = () => {
 <style scoped>
 h2 {
     color: var(--white);
-    margin-top: 3em;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-div.preamble {
-    margin-left: 4em;
-    margin-right: 4em;
+    font-size: 1.2em;
 }
 li {
     padding-bottom: 0.5em;

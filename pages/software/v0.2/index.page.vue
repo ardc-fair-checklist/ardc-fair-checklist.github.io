@@ -4,7 +4,7 @@
         <ChecklistHeader />
         <main>
             <h1>Self-assessment for FAIR research software</h1>
-            <p>
+            <p class="data-variant">
                 For the data variant, click
                 <ChecklistLink v-bind:href="linkToDataChecklist">here</ChecklistLink>.
             </p>
@@ -141,6 +141,7 @@ main {
 h1 {
     line-height: 1.2em;
     margin-top: 1em;
+    margin-bottom: 0.25em;
 }
 h2 {
     width: 40%;
@@ -149,6 +150,10 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+p.data-variant {
+    margin-bottom: 4em;
+    margin-top: 0em;
 }
 
 p.principle-quote {
