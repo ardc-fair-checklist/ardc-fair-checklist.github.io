@@ -111,22 +111,22 @@ const ChecklistAbout = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["render", _sfc
 const _withScopeId$3 = (n) => (pushScopeId("data-v-f9a9cee9"), n = n(), popScopeId(), n);
 const _hoisted_1$9 = { class: "badges" };
 const _hoisted_2$6 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createBaseVNode("h2", null, "Get the badge", -1));
-const _hoisted_3$5 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createBaseVNode("h3", null, [
+const _hoisted_3$6 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createBaseVNode("h3", null, [
   /* @__PURE__ */ createBaseVNode("label", { for: "textarea-markdown-badge" }, "Markdown")
 ], -1));
 const _hoisted_4$3 = { class: "row" };
-const _hoisted_5$2 = ["value"];
-const _hoisted_6$1 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createBaseVNode("div", { class: "copied-text" }, " copied ", -1));
-const _hoisted_7$3 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createBaseVNode("h3", null, [
+const _hoisted_5$3 = ["value"];
+const _hoisted_6$2 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createBaseVNode("div", { class: "copied-text" }, " copied ", -1));
+const _hoisted_7$2 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createBaseVNode("h3", null, [
   /* @__PURE__ */ createBaseVNode("label", { for: "textarea-rst-badge" }, "ReStructured Text")
 ], -1));
-const _hoisted_8$1 = { class: "row" };
-const _hoisted_9 = ["value"];
-const _hoisted_10 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createBaseVNode("div", { class: "copied-text" }, " copied ", -1));
-const _hoisted_11$1 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createBaseVNode("h3", null, [
+const _hoisted_8 = { class: "row" };
+const _hoisted_9$1 = ["value"];
+const _hoisted_10$1 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createBaseVNode("div", { class: "copied-text" }, " copied ", -1));
+const _hoisted_11 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createBaseVNode("h3", null, [
   /* @__PURE__ */ createBaseVNode("label", { for: "textarea-html-badge" }, "HTML")
 ], -1));
-const _hoisted_12$1 = { class: "row" };
+const _hoisted_12 = { class: "row" };
 const _hoisted_13 = ["value"];
 const _hoisted_14 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createBaseVNode("div", { class: "copied-text" }, " copied ", -1));
 const _sfc_main$a = /* @__PURE__ */ defineComponent({
@@ -178,40 +178,40 @@ const _sfc_main$a = /* @__PURE__ */ defineComponent({
       return openBlock(), createElementBlock("div", _hoisted_1$9, [
         _hoisted_2$6,
         createTextVNode(" Use the buttons next to the snippets below to copy your badge and paste it into your project's README. The hyperlink in each snippet points back to this page, and includes the necessary data to check the appropriate answers. "),
-        _hoisted_3$5,
+        _hoisted_3$6,
         createBaseVNode("div", _hoisted_4$3, [
           createBaseVNode("textarea", {
             id: "textarea-markdown-badge",
             readonly: "",
             value: unref(markdownBadge),
             wrap: "off"
-          }, null, 8, _hoisted_5$2),
+          }, null, 8, _hoisted_5$3),
           createBaseVNode("div", { class: "col" }, [
             createBaseVNode("button", {
               role: "button",
               onClick: copyButtonClickHandler
             }, " Copy "),
-            _hoisted_6$1
+            _hoisted_6$2
           ])
         ]),
-        _hoisted_7$3,
-        createBaseVNode("div", _hoisted_8$1, [
+        _hoisted_7$2,
+        createBaseVNode("div", _hoisted_8, [
           createBaseVNode("textarea", {
             id: "textarea-rst-badge",
             readonly: "",
             value: unref(rstBadge),
             wrap: "off"
-          }, null, 8, _hoisted_9),
+          }, null, 8, _hoisted_9$1),
           createBaseVNode("div", { class: "col" }, [
             createBaseVNode("button", {
               role: "button",
               onClick: copyButtonClickHandler
             }, " Copy "),
-            _hoisted_10
+            _hoisted_10$1
           ])
         ]),
-        _hoisted_11$1,
-        createBaseVNode("div", _hoisted_12$1, [
+        _hoisted_11,
+        createBaseVNode("div", _hoisted_12, [
           createBaseVNode("textarea", {
             id: "textarea-html-badge",
             readonly: "",
@@ -397,7 +397,7 @@ const _hoisted_2$5 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ create
     })
   ])
 ], -1));
-const _hoisted_3$4 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createBaseVNode("div", { class: "view-source" }, [
+const _hoisted_3$5 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createBaseVNode("div", { class: "view-source" }, [
   /* @__PURE__ */ createBaseVNode("a", { href: "https://github.com/ardc-fair-checklist/ssg/issues/new?labels=user-feedback&template=10_feedback.md" }, " Report an issue "),
   /* @__PURE__ */ createBaseVNode("a", { href: "https://github.com/ardc-fair-checklist/ssg/issues/new?labels=user-feedback&template=10_feedback.md" }, [
     /* @__PURE__ */ createBaseVNode("img", {
@@ -420,7 +420,7 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
             _: 1
           })
         ]),
-        _hoisted_3$4
+        _hoisted_3$5
       ]);
     };
   }
@@ -428,67 +428,111 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
 const ChecklistHeader_vue_vue_type_style_index_0_scoped_4554f404_lang = "";
 const ChecklistHeader = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-4554f404"]]);
 const _imports_0 = "/ssg/venn-the-software.svg";
-const _withScopeId$1 = (n) => (pushScopeId("data-v-6e7659b6"), n = n(), popScopeId(), n);
-const _hoisted_1$4 = { class: "preamble" };
-const _hoisted_2$4 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("h2", null, "How to use this page", -1));
-const _hoisted_3$3 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("p", null, " If you are a research software author, please answer the questions below to assess your software's FAIRness. As you go through them, the progress bars at the bottom of the screen will update according to your answers. When you're done with the questions, copy the badge at the bottom of the page and put it in your software's README. ", -1));
-const _hoisted_4$2 = /* @__PURE__ */ createStaticVNode('<ol data-v-6e7659b6><li data-v-6e7659b6><i data-v-6e7659b6>Promote transparency</i>: the badge links back to this page, and contains the required data to check the appropriate answers. This way, users of your software can easily get an idea of the FAIRness state of the project. </li><li data-v-6e7659b6><i data-v-6e7659b6>Discover best practices</i>: as you go through the questions, you may learn about practices to improve FAIRness that you were not aware of previously. </li><li data-v-6e7659b6><i data-v-6e7659b6>Become an ambassador of FAIR</i>: By putting the badge in your README, your project will help promote the previous 2 aspects. </li></ol><p data-v-6e7659b6> The questions are inspired by the outcomes of the FAIR4RS Working Group (see <a href="https://doi.org/10.15497/RDA00068" data-v-6e7659b6>doi:10.15497/RDA00068</a>). We gratefully acknowledge their contribution. </p><h2 data-v-6e7659b6>Definitions</h2>', 3);
-const _hoisted_7$2 = { key: 0 };
-const _hoisted_8 = /* @__PURE__ */ createStaticVNode('<p data-v-6e7659b6> For many projects, the specific copy will be some kind of nested directory tree structure with files and folders, simply what would result from a <code data-v-6e7659b6>git clone</code> or <code data-v-6e7659b6>svn checkout</code>, or perhaps from uncompressing a <code data-v-6e7659b6>zip</code> or a <code data-v-6e7659b6>tar</code> file. Some files in the tree will be source files that define the software&#39;s functional behavior, these are collectively referred to as the software source files. The other files are metadata files that come bundled with the software: </p><img src="' + _imports_0 + '" alt="venn diagram showing the definition of software" data-v-6e7659b6><p data-v-6e7659b6> The metadata includes files that are meant to be read by humans, such as READMEs, documentation files, source files for documentation, image files, etc. The metadata may additionally include files that are meant to be read by machines, such as package manager files (e.g. <code data-v-6e7659b6>package.json</code>, <code data-v-6e7659b6>pyproject.toml</code>, <code data-v-6e7659b6>DESCRIPTION</code>, <code data-v-6e7659b6>CMakeLists.txt</code>, <code data-v-6e7659b6>setup.cfg</code>, etc.), citation files (e.g. <code data-v-6e7659b6>CITATION.cff</code>, <code data-v-6e7659b6>codemeta.json</code>), publishing files (<code data-v-6e7659b6>.zenodo.json</code>), etc. </p>', 3);
-const _hoisted_11 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("p", null, " Let's get started! ", -1));
-const _hoisted_12 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("div", { class: "vspace" }, null, -1));
+const _withScopeId$1 = (n) => (pushScopeId("data-v-31f001ec"), n = n(), popScopeId(), n);
+const _hoisted_1$4 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("h2", null, "How to use this page", -1));
+const _hoisted_2$4 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("ol", null, [
+  /* @__PURE__ */ createBaseVNode("li", null, [
+    /* @__PURE__ */ createBaseVNode("i", null, "Promote transparency"),
+    /* @__PURE__ */ createTextVNode(": the badge links back to this page, and contains the required data to check the appropriate answers. This way, users of your software can easily get an idea of the FAIRness state of the project. ")
+  ]),
+  /* @__PURE__ */ createBaseVNode("li", null, [
+    /* @__PURE__ */ createBaseVNode("i", null, "Discover best practices"),
+    /* @__PURE__ */ createTextVNode(": as you go through the questions, you may learn about practices to improve FAIRness that you were not aware of previously. ")
+  ]),
+  /* @__PURE__ */ createBaseVNode("li", null, [
+    /* @__PURE__ */ createBaseVNode("i", null, "Become an ambassador of FAIR"),
+    /* @__PURE__ */ createTextVNode(": By putting the badge in your README, your project will help promote the previous 2 aspects. ")
+  ])
+], -1));
+const _hoisted_3$4 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("a", { href: "https://doi.org/10.15497/RDA00068" }, "doi:10.15497/RDA00068", -1));
+const _hoisted_4$2 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("h2", null, "Definitions", -1));
+const _hoisted_5$2 = { key: 0 };
+const _hoisted_6$1 = /* @__PURE__ */ createStaticVNode('<p data-v-31f001ec> For many projects, the specific copy will be some kind of nested directory tree structure with files and folders, simply what would result from a <code data-v-31f001ec>git clone</code> or <code data-v-31f001ec>svn checkout</code>, or perhaps from uncompressing a <code data-v-31f001ec>zip</code> or a <code data-v-31f001ec>tar</code> file. Some files in the tree will be source files that define the software&#39;s functional behavior, these are collectively referred to as the software source files. The other files are metadata files that come bundled with the software: </p><img src="' + _imports_0 + '" alt="venn diagram showing the definition of software" data-v-31f001ec><p data-v-31f001ec> The metadata includes files that are meant to be read by humans, such as READMEs, documentation files, source files for documentation, image files, etc. The metadata may additionally include files that are meant to be read by machines, such as package manager files (e.g. <code data-v-31f001ec>package.json</code>, <code data-v-31f001ec>pyproject.toml</code>, <code data-v-31f001ec>DESCRIPTION</code>, <code data-v-31f001ec>CMakeLists.txt</code>, <code data-v-31f001ec>setup.cfg</code>, etc.), citation files (e.g. <code data-v-31f001ec>CITATION.cff</code>, <code data-v-31f001ec>codemeta.json</code>), publishing files (<code data-v-31f001ec>.zenodo.json</code>), etc. </p>', 3);
+const _hoisted_9 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("p", null, " Let's get started! ", -1));
+const _hoisted_10 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("div", { class: "vspace" }, null, -1));
 const _sfc_main$4 = /* @__PURE__ */ defineComponent({
   __name: "ChecklistPreamble",
   setup(__props) {
-    const showCollapsed = ref(true);
-    const showExpanded = ref(false);
-    const expand = () => {
-      showCollapsed.value = false;
-      showExpanded.value = true;
+    const showCollapsedDefinitions = ref(true);
+    const showExpandedDefinitions = ref(false);
+    const expandDefinitions = () => {
+      showCollapsedDefinitions.value = false;
+      showExpandedDefinitions.value = true;
     };
-    const collapse = () => {
-      showCollapsed.value = true;
-      showExpanded.value = false;
+    const collapseDefinitions = () => {
+      showCollapsedDefinitions.value = true;
+      showExpandedDefinitions.value = false;
+    };
+    const showCollapsedHowtouse = ref(true);
+    const showExpandedHowtouse = ref(false);
+    const expandHowtouse = () => {
+      showCollapsedHowtouse.value = false;
+      showExpandedHowtouse.value = true;
+    };
+    const collapseHowtouse = () => {
+      showCollapsedHowtouse.value = true;
+      showExpandedHowtouse.value = false;
     };
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("div", _hoisted_1$4, [
-        _hoisted_2$4,
-        _hoisted_3$3,
-        createTextVNode(" This way, you "),
+      return openBlock(), createElementBlock("div", null, [
+        _hoisted_1$4,
+        createBaseVNode("p", null, [
+          createTextVNode(" If you are a research software author, please answer the questions below to assess your software's FAIRness. As you go through them, the progress bars at the bottom of the screen will update according to your answers. When you're done with the questions, copy the badge at the bottom of the page and put it in your software's README. "),
+          showCollapsedHowtouse.value ? (openBlock(), createElementBlock("span", {
+            key: 0,
+            onClick: expandHowtouse,
+            class: "anchor-like"
+          }, " Read more. ")) : createCommentVNode("", true)
+        ]),
+        createBaseVNode("div", {
+          class: normalizeClass(["expands", { expanded: showExpandedHowtouse.value, collapsed: showCollapsedHowtouse.value }])
+        }, [
+          createTextVNode(" This way, you "),
+          _hoisted_2$4,
+          createBaseVNode("p", null, [
+            createTextVNode(" The questions are inspired by the outcomes of the FAIR4RS Working Group (see "),
+            _hoisted_3$4,
+            createTextVNode("). We gratefully acknowledge their contribution. "),
+            createBaseVNode("span", {
+              onClick: collapseHowtouse,
+              class: "anchor-like"
+            }, " Collapse this section. ")
+          ])
+        ], 2),
         _hoisted_4$2,
         createBaseVNode("p", null, [
           createTextVNode(' For the questions that follow, it is helpful to specify what we mean by "the software". Our recommendation is to interpret that phrase as "a specific copy of a specific version of your software-as-a-concept". '),
-          showCollapsed.value ? (openBlock(), createElementBlock("span", _hoisted_7$2, [
+          showCollapsedDefinitions.value ? (openBlock(), createElementBlock("span", _hoisted_5$2, [
             createTextVNode(" For many projects,... "),
             createBaseVNode("span", {
-              onClick: expand,
+              onClick: expandDefinitions,
               class: "anchor-like"
             }, " Read more. ")
           ])) : createCommentVNode("", true)
         ]),
         createBaseVNode("div", {
-          class: normalizeClass(["expands", { expanded: showExpanded.value, collapsed: showCollapsed.value }])
+          class: normalizeClass(["expands", { expanded: showExpandedDefinitions.value, collapsed: showCollapsedDefinitions.value }])
         }, [
-          _hoisted_8,
+          _hoisted_6$1,
           createBaseVNode("p", null, [
             createTextVNode(" Any additional data that may be gotten from APIs (for example the GitHub, GitLab, Zenodo, PyPI, CRAN, or NPM API) should not be considered metadata for the purposes of this checklist. "),
             createBaseVNode("span", {
-              onClick: collapse,
+              onClick: collapseDefinitions,
               class: "anchor-like"
-            }, " Collapse the explanatory text. ")
+            }, " Collapse this section. ")
           ])
         ], 2),
-        _hoisted_11,
-        _hoisted_12
+        _hoisted_9,
+        _hoisted_10
       ]);
     };
   }
 });
-const ChecklistPreamble_vue_vue_type_style_index_0_scoped_6e7659b6_lang = "";
-const ChecklistPreamble = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-6e7659b6"]]);
+const ChecklistPreamble_vue_vue_type_style_index_0_scoped_31f001ec_lang = "";
+const ChecklistPreamble = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-31f001ec"]]);
 const _hoisted_1$3 = { class: "footer" };
 const _hoisted_2$3 = { class: "inner" };
-const _hoisted_3$2 = { class: "another-inner" };
+const _hoisted_3$3 = { class: "another-inner" };
 const _hoisted_4$1 = { class: "progressbars" };
 const _hoisted_5$1 = /* @__PURE__ */ createStaticVNode('<div class="labels" data-v-b168c94e><div class="row" data-v-b168c94e><div class="label" data-v-b168c94e> Findable </div></div><div class="row" data-v-b168c94e><div class="label" data-v-b168c94e> Accessible </div></div><div class="row" data-v-b168c94e><div class="label" data-v-b168c94e> Interoperable </div></div><div class="row" data-v-b168c94e><div class="label" data-v-b168c94e> Reusable </div></div></div><div class="bars" data-v-b168c94e><div class="row" data-v-b168c94e><div class="bar bar-bg" data-v-b168c94e><div class="bar blue" data-v-b168c94e></div></div></div><div class="row" data-v-b168c94e><div class="bar bar-bg" data-v-b168c94e><div class="bar pink" data-v-b168c94e></div></div></div><div class="row" data-v-b168c94e><div class="bar bar-bg" data-v-b168c94e><div class="bar yellow" data-v-b168c94e></div></div></div><div class="row" data-v-b168c94e><div class="bar bar-bg" data-v-b168c94e><div class="bar purple" data-v-b168c94e></div></div></div></div>', 2);
 const _hoisted_7$1 = ["disabled"];
@@ -509,7 +553,7 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("div", _hoisted_1$3, [
         createBaseVNode("div", _hoisted_2$3, [
-          createBaseVNode("div", _hoisted_3$2, [
+          createBaseVNode("div", _hoisted_3$3, [
             createBaseVNode("div", _hoisted_4$1, [
               _hoisted_5$1,
               createBaseVNode("button", {
@@ -528,7 +572,7 @@ const ChecklistProgressBars_vue_vue_type_style_index_0_scoped_b168c94e_lang = ""
 const ChecklistProgressBars = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-b168c94e"]]);
 const _hoisted_1$2 = ["aria-labelledby"];
 const _hoisted_2$2 = { class: "answer-radiobutton" };
-const _hoisted_3$1 = ["id", "value", "checked"];
+const _hoisted_3$2 = ["id", "value", "checked"];
 const _hoisted_4 = { class: "answer-points" };
 const _hoisted_5 = { class: "answer-text" };
 const _hoisted_6 = ["for", "id"];
@@ -562,7 +606,7 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
             role: "presentation",
             tabindex: "-1",
             "aria-label": ""
-          }, null, 8, _hoisted_3$1)
+          }, null, 8, _hoisted_3$2)
         ]),
         createBaseVNode("div", _hoisted_4, " (+" + toDisplayString(__props.answer.score) + ") ", 1),
         createBaseVNode("div", _hoisted_5, [
@@ -586,7 +630,7 @@ const ChecklistAnswer_vue_vue_type_style_index_0_scoped_b1a3d975_lang = "";
 const ChecklistAnswer = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-b1a3d975"]]);
 const _hoisted_1$1 = { class: "question" };
 const _hoisted_2$1 = { class: "question-index shared" };
-const _hoisted_3 = { class: "shared" };
+const _hoisted_3$1 = { class: "shared" };
 const _sfc_main$1 = /* @__PURE__ */ defineComponent({
   __name: "ChecklistQuestion",
   props: {
@@ -606,7 +650,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
       return openBlock(), createElementBlock("div", _hoisted_1$1, [
         createBaseVNode("div", _hoisted_2$1, toDisplayString(`${__props.question.index + 1}.`), 1),
         createBaseVNode("fieldset", null, [
-          createBaseVNode("legend", _hoisted_3, toDisplayString(`${__props.question.text}`), 1),
+          createBaseVNode("legend", _hoisted_3$1, toDisplayString(`${__props.question.text}`), 1),
           (openBlock(true), createElementBlock(Fragment, null, renderList(__props.question.answers, (answer, answerIndex) => {
             return openBlock(), createBlock(ChecklistAnswer, {
               answer,
@@ -1018,9 +1062,10 @@ const questions = [
     text: "Which of the following best describes the software's usage rights?"
   }
 ];
-const _withScopeId = (n) => (pushScopeId("data-v-583deb5a"), n = n(), popScopeId(), n);
+const _withScopeId = (n) => (pushScopeId("data-v-39cccda9"), n = n(), popScopeId(), n);
 const _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("h1", null, "Self-assessment for FAIR research software", -1));
-const _hoisted_2 = { class: "principle-quote" };
+const _hoisted_2 = { class: "data-variant" };
+const _hoisted_3 = { class: "principle-quote" };
 const _sfc_main = /* @__PURE__ */ defineComponent({
   __name: "index.page",
   setup(__props) {
@@ -1074,7 +1119,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
         createVNode(ChecklistHeader),
         createBaseVNode("main", null, [
           _hoisted_1,
-          createBaseVNode("p", null, [
+          createBaseVNode("p", _hoisted_2, [
             createTextVNode(" For the data variant, click "),
             createVNode(_sfc_main$8, { href: linkToDataChecklist }, {
               default: withCtx(() => [
@@ -1092,7 +1137,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
             (openBlock(true), createElementBlock(Fragment, null, renderList(unref(principles), (principle) => {
               return openBlock(), createElementBlock("div", { key: principle }, [
                 createBaseVNode("h2", null, toDisplayString(getFullname(principle)), 1),
-                createBaseVNode("p", _hoisted_2, toDisplayString(getQuote(principle)), 1),
+                createBaseVNode("p", _hoisted_3, toDisplayString(getQuote(principle)), 1),
                 (openBlock(true), createElementBlock(Fragment, null, renderList(unref(questions$1).filter((q) => q.principle === principle), (question) => {
                   return openBlock(), createBlock(ChecklistQuestion, {
                     key: question.id,
@@ -1116,8 +1161,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const index_page_vue_vue_type_style_index_0_scoped_583deb5a_lang = "";
-const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-583deb5a"]]);
+const index_page_vue_vue_type_style_index_0_scoped_39cccda9_lang = "";
+const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-39cccda9"]]);
 export {
   index_page as default
 };

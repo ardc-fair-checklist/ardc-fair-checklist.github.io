@@ -101,7 +101,7 @@
   "pages/software/v0.2/ChecklistHeader.vue": [],
   "../../../../../venn-the-software.svg": [],
   "pages/software/v0.2/ChecklistPreamble.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/software/v0.2/ChecklistPreamble.vue?vue&type=style&index=0&scoped=6e7659b6&lang.css": [],
+  "pages/software/v0.2/ChecklistPreamble.vue?vue&type=style&index=0&scoped=31f001ec&lang.css": [],
   "pages/software/v0.2/ChecklistPreamble.vue": [],
   "pages/software/v0.2/ChecklistProgressBars.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/software/v0.2/ChecklistProgressBars.vue?vue&type=style&index=0&scoped=b168c94e&lang.css": [],
@@ -114,7 +114,7 @@
   "pages/software/v0.2/ChecklistQuestion.vue": [],
   "pages/software/v0.2/questions.json": [],
   "pages/software/v0.2/index.page.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/software/v0.2/index.page.vue?vue&type=style&index=0&scoped=583deb5a&lang.css": [],
+  "pages/software/v0.2/index.page.vue?vue&type=style&index=0&scoped=39cccda9&lang.css": [],
   "pages/software/v0.2/index.page.vue": [],
   "node_modules/vite-plugin-ssr/dist/esm/utils/isPlainObject.js": [],
   "node_modules/vite-plugin-ssr/dist/esm/utils/stringifyStringArray.js": [],
@@ -187,8 +187,8 @@
     "/ssg/assets/index.page.d955019a.css",
     "/ssg/assets/global.b082e789.css"
   ],
-  "index.page.05a7f67c.js": [
-    "/ssg/assets/index.page.3630d41c.css",
+  "index.page.912b5f8c.js": [
+    "/ssg/assets/index.page.dbe0734c.css",
     "/ssg/assets/global.b082e789.css"
   ],
   "_error.page.de708dd4.js": [],
