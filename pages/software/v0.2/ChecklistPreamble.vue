@@ -8,14 +8,18 @@
             with the questions, copy the badge at the bottom of the page and put it in your
             software's README.
             <span v-if="showCollapsedHowtouse"
+                v-bind:tabindex="showCollapsedHowtouse ? 0 : -1"
                 v-on:click="expandHowtouse"
-                class="anchor-like">
+                v-on:keydown.enter="expandHowtouse"
+                class="anchor-like"
+            >
                 Read more.
             </span>
         </p>
         <div
             class="expands"
-            v-bind:class="{expanded: showExpandedHowtouse, collapsed: showCollapsedHowtouse}">
+            v-bind:class="{expanded: showExpandedHowtouse, collapsed: showCollapsedHowtouse}"
+        >
             This way, you
             <ol>
                 <li>
@@ -36,10 +40,13 @@
             </ol>
             <p>
                 The questions are inspired by the outcomes of the FAIR4RS Working Group (see
-                <a href="https://doi.org/10.15497/RDA00068">doi:10.15497/RDA00068</a>). We
-                gratefully acknowledge their contribution. <span
+                <a href="https://doi.org/10.15497/RDA00068" target="_blank" v-bind:tabindex="showCollapsedHowtouse ? -1 : 0">
+                doi:10.15497/RDA00068</a>). We gratefully acknowledge their contribution. <span
+                    v-bind:tabindex="showCollapsedHowtouse ? -1 : 0"
                     v-on:click="collapseHowtouse"
-                    class="anchor-like">
+                    v-on:keydown.enter="collapseHowtouse"
+                    class="anchor-like"
+                >
                     Collapse this section.
                 </span>
             </p>
@@ -52,8 +59,11 @@
             <span v-if="showCollapsedDefinitions">
                 For many projects,...
                 <span
+                    v-bind:tabindex="showCollapsedDefinitions ? 0 : -1"
                     v-on:click="expandDefinitions"
-                    class="anchor-like">
+                    v-on:keydown.enter="expandDefinitions"
+                    class="anchor-like"
+                >
                     Read more.
                 </span>
             </span>
@@ -90,8 +100,11 @@
                 APIs (for example the GitHub, GitLab, Zenodo, PyPI, CRAN, or NPM API) should not
                 be considered metadata for the purposes of this checklist.
                 <span
+                    v-bind:tabindex="showCollapsedDefinitions ? -1 : 0"
                     v-on:click="collapseDefinitions"
-                    class="anchor-like">
+                    v-on:keydown="collapseDefinitions"
+                    class="anchor-like"
+                >
                     Collapse this section.
                 </span>
             </p>
