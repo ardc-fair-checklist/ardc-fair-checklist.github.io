@@ -2,8 +2,6 @@
     <div
         class="answer"
         v-bind:aria-labelledby="`label-${answer.id}`"
-        v-on:click="onClick"
-        v-on:keydown.space.prevent.stop="onClick"
         tabindex=0
         role="radio"
     >
@@ -42,7 +40,6 @@ import { Answer } from './types';
 type PropType = {
     answer: Answer
     isChecked: boolean
-    onClick: () => void
 };
 defineProps<PropType>();
 </script>

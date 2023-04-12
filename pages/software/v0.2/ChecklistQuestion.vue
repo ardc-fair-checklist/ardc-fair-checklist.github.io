@@ -29,7 +29,13 @@ const props = defineProps<{
     question: Question & Numbered
 }>();
 
-const onClick = (answerIndex: number) => () => {
+const onClick = (answerIndex: number) => (e: Event) => {
+    const eventSource = e.target as HTMLElement;
+    if (eventSource.tagName === 'A') {
+        // User clicked a link inside the answer, don't
+        // update the compliance state
+        return;
+    }
     const newCompliance = [
         ...compliance.value.slice(0, props.question.index),
         answerIndex,
