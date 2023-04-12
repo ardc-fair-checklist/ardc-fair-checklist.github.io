@@ -812,7 +812,7 @@ const questions = [
         id: "a:q4:a1",
         elaboration: "",
         score: 1,
-        text: "Yes"
+        text: "Yes, or the software is openly available"
       }
     ],
     id: "a:q4",
