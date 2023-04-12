@@ -1073,7 +1073,7 @@ const questions = [
         id: "r:q2:a3",
         elaboration: "E.g. the software specifies its license in a metadata file such as pyproject.toml, package.json, CITATION.cff, .zenodo.json, codemeta.json, or R DESCRIPTION file.",
         score: 3,
-        text: "As previous answer, and additionally, the license is machine readable"
+        text: "As previous answer, and additionally, the license is machine-readable"
       }
     ],
     id: "r:q2",
