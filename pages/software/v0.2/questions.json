@@ -154,7 +154,7 @@
                 },
                 {
                     "id": "a:q5:a3",
-                    "elaboration": "E.g. The metadata includes a DOI, pURL or Handle that points to an archived copy of the software.",
+                    "elaboration": "E.g. The metadata includes a DOI, PURL or Handle that points to an archived copy of the software.",
                     "score": 3,
                     "text": "Yes, the metadata includes a unique and persistent identifier to reference the software"
                 }
