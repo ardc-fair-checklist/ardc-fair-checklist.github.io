@@ -3,7 +3,7 @@ import { H as ref, I as computed, u as openBlock, t as createElementBlock, v as 
 import { _ as _export_sfc, a as _imports_0$1, b as _imports_1 } from "../../../chunk-55859c7c.js";
 import { u as usePageContext } from "../../../chunk-3ae7c80c.js";
 import { _ as _imports_0$2 } from "../../../chunk-797968b4.js";
-import { u as useCssVars, w as withKeys, a as withModifiers } from "../../../chunk-98817835.js";
+import { w as withKeys, u as useCssVars, a as withModifiers } from "../../../chunk-98817835.js";
 const principles = ["f", "a", "i", "r"];
 const state = ref({
   compliance: [],
@@ -117,18 +117,18 @@ const _hoisted_3$6 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ create
 const _hoisted_4$3 = { class: "row" };
 const _hoisted_5$3 = ["value"];
 const _hoisted_6$2 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createBaseVNode("div", { class: "copied-text" }, " copied ", -1));
-const _hoisted_7$2 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createBaseVNode("h3", null, [
+const _hoisted_7$3 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createBaseVNode("h3", null, [
   /* @__PURE__ */ createBaseVNode("label", { for: "textarea-rst-badge" }, "ReStructured Text")
 ], -1));
-const _hoisted_8 = { class: "row" };
+const _hoisted_8$1 = { class: "row" };
 const _hoisted_9$1 = ["value"];
-const _hoisted_10$1 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createBaseVNode("div", { class: "copied-text" }, " copied ", -1));
+const _hoisted_10 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createBaseVNode("div", { class: "copied-text" }, " copied ", -1));
 const _hoisted_11 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createBaseVNode("h3", null, [
   /* @__PURE__ */ createBaseVNode("label", { for: "textarea-html-badge" }, "HTML")
 ], -1));
-const _hoisted_12 = { class: "row" };
-const _hoisted_13 = ["value"];
-const _hoisted_14 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createBaseVNode("div", { class: "copied-text" }, " copied ", -1));
+const _hoisted_12$1 = { class: "row" };
+const _hoisted_13$1 = ["value"];
+const _hoisted_14$1 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createBaseVNode("div", { class: "copied-text" }, " copied ", -1));
 const _sfc_main$a = /* @__PURE__ */ defineComponent({
   __name: "ChecklistBadgeSnippets",
   setup(__props) {
@@ -194,8 +194,8 @@ const _sfc_main$a = /* @__PURE__ */ defineComponent({
             _hoisted_6$2
           ])
         ]),
-        _hoisted_7$2,
-        createBaseVNode("div", _hoisted_8, [
+        _hoisted_7$3,
+        createBaseVNode("div", _hoisted_8$1, [
           createBaseVNode("textarea", {
             id: "textarea-rst-badge",
             readonly: "",
@@ -207,23 +207,23 @@ const _sfc_main$a = /* @__PURE__ */ defineComponent({
               role: "button",
               onClick: copyButtonClickHandler
             }, " Copy "),
-            _hoisted_10$1
+            _hoisted_10
           ])
         ]),
         _hoisted_11,
-        createBaseVNode("div", _hoisted_12, [
+        createBaseVNode("div", _hoisted_12$1, [
           createBaseVNode("textarea", {
             id: "textarea-html-badge",
             readonly: "",
             value: unref(htmlBadge),
             wrap: "off"
-          }, null, 8, _hoisted_13),
+          }, null, 8, _hoisted_13$1),
           createBaseVNode("div", { class: "col" }, [
             createBaseVNode("button", {
               role: "button",
               onClick: copyButtonClickHandler
             }, " Copy "),
-            _hoisted_14
+            _hoisted_14$1
           ])
         ])
       ]);
@@ -428,9 +428,10 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
 const ChecklistHeader_vue_vue_type_style_index_0_scoped_4554f404_lang = "";
 const ChecklistHeader = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-4554f404"]]);
 const _imports_0 = "/ssg/venn-the-software.svg";
-const _withScopeId$1 = (n) => (pushScopeId("data-v-31f001ec"), n = n(), popScopeId(), n);
+const _withScopeId$1 = (n) => (pushScopeId("data-v-b137dd2e"), n = n(), popScopeId(), n);
 const _hoisted_1$4 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("h2", null, "How to use this page", -1));
-const _hoisted_2$4 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("ol", null, [
+const _hoisted_2$4 = ["tabindex", "onKeydown"];
+const _hoisted_3$4 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("ol", null, [
   /* @__PURE__ */ createBaseVNode("li", null, [
     /* @__PURE__ */ createBaseVNode("i", null, "Promote transparency"),
     /* @__PURE__ */ createTextVNode(": the badge links back to this page, and contains the required data to check the appropriate answers. This way, users of your software can easily get an idea of the FAIRness state of the project. ")
@@ -444,12 +445,15 @@ const _hoisted_2$4 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ create
     /* @__PURE__ */ createTextVNode(": By putting the badge in your README, your project will help promote the previous 2 aspects. ")
   ])
 ], -1));
-const _hoisted_3$4 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("a", { href: "https://doi.org/10.15497/RDA00068" }, "doi:10.15497/RDA00068", -1));
-const _hoisted_4$2 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("h2", null, "Definitions", -1));
-const _hoisted_5$2 = { key: 0 };
-const _hoisted_6$1 = /* @__PURE__ */ createStaticVNode('<p data-v-31f001ec> For many projects, the specific copy will be some kind of nested directory tree structure with files and folders, simply what would result from a <code data-v-31f001ec>git clone</code> or <code data-v-31f001ec>svn checkout</code>, or perhaps from uncompressing a <code data-v-31f001ec>zip</code> or a <code data-v-31f001ec>tar</code> file. Some files in the tree will be source files that define the software&#39;s functional behavior, these are collectively referred to as the software source files. The other files are metadata files that come bundled with the software: </p><img src="' + _imports_0 + '" alt="venn diagram showing the definition of software" data-v-31f001ec><p data-v-31f001ec> The metadata includes files that are meant to be read by humans, such as READMEs, documentation files, source files for documentation, image files, etc. The metadata may additionally include files that are meant to be read by machines, such as package manager files (e.g. <code data-v-31f001ec>package.json</code>, <code data-v-31f001ec>pyproject.toml</code>, <code data-v-31f001ec>DESCRIPTION</code>, <code data-v-31f001ec>CMakeLists.txt</code>, <code data-v-31f001ec>setup.cfg</code>, etc.), citation files (e.g. <code data-v-31f001ec>CITATION.cff</code>, <code data-v-31f001ec>codemeta.json</code>), publishing files (<code data-v-31f001ec>.zenodo.json</code>), etc. </p>', 3);
-const _hoisted_9 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("p", null, " Let's get started! ", -1));
-const _hoisted_10 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("div", { class: "vspace" }, null, -1));
+const _hoisted_4$2 = ["tabindex"];
+const _hoisted_5$2 = ["tabindex", "onKeydown"];
+const _hoisted_6$1 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("h2", null, "Definitions", -1));
+const _hoisted_7$2 = { key: 0 };
+const _hoisted_8 = ["tabindex", "onKeydown"];
+const _hoisted_9 = /* @__PURE__ */ createStaticVNode('<p data-v-b137dd2e> For many projects, the specific copy will be some kind of nested directory tree structure with files and folders, simply what would result from a <code data-v-b137dd2e>git clone</code> or <code data-v-b137dd2e>svn checkout</code>, or perhaps from uncompressing a <code data-v-b137dd2e>zip</code> or a <code data-v-b137dd2e>tar</code> file. Some files in the tree will be source files that define the software&#39;s functional behavior, these are collectively referred to as the software source files. The other files are metadata files that come bundled with the software: </p><img src="' + _imports_0 + '" alt="venn diagram showing the definition of software" data-v-b137dd2e><p data-v-b137dd2e> The metadata includes files that are meant to be read by humans, such as READMEs, documentation files, source files for documentation, image files, etc. The metadata may additionally include files that are meant to be read by machines, such as package manager files (e.g. <code data-v-b137dd2e>package.json</code>, <code data-v-b137dd2e>pyproject.toml</code>, <code data-v-b137dd2e>DESCRIPTION</code>, <code data-v-b137dd2e>CMakeLists.txt</code>, <code data-v-b137dd2e>setup.cfg</code>, etc.), citation files (e.g. <code data-v-b137dd2e>CITATION.cff</code>, <code data-v-b137dd2e>codemeta.json</code>), publishing files (<code data-v-b137dd2e>.zenodo.json</code>), etc. </p>', 3);
+const _hoisted_12 = ["tabindex"];
+const _hoisted_13 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("p", null, " Let's get started! ", -1));
+const _hoisted_14 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("div", { class: "vspace" }, null, -1));
 const _sfc_main$4 = /* @__PURE__ */ defineComponent({
   __name: "ChecklistPreamble",
   setup(__props) {
@@ -480,56 +484,68 @@ const _sfc_main$4 = /* @__PURE__ */ defineComponent({
           createTextVNode(" If you are a research software author, please answer the questions below to assess your software's FAIRness. As you go through them, the progress bars at the bottom of the screen will update according to your answers. When you're done with the questions, copy the badge at the bottom of the page and put it in your software's README. "),
           showCollapsedHowtouse.value ? (openBlock(), createElementBlock("span", {
             key: 0,
+            tabindex: showCollapsedHowtouse.value ? 0 : -1,
             onClick: expandHowtouse,
+            onKeydown: withKeys(expandHowtouse, ["enter"]),
             class: "anchor-like"
-          }, " Read more. ")) : createCommentVNode("", true)
+          }, " Read more. ", 40, _hoisted_2$4)) : createCommentVNode("", true)
         ]),
         createBaseVNode("div", {
           class: normalizeClass(["expands", { expanded: showExpandedHowtouse.value, collapsed: showCollapsedHowtouse.value }])
         }, [
           createTextVNode(" This way, you "),
-          _hoisted_2$4,
+          _hoisted_3$4,
           createBaseVNode("p", null, [
             createTextVNode(" The questions are inspired by the outcomes of the FAIR4RS Working Group (see "),
-            _hoisted_3$4,
+            createBaseVNode("a", {
+              href: "https://doi.org/10.15497/RDA00068",
+              target: "_blank",
+              tabindex: showCollapsedHowtouse.value ? -1 : 0
+            }, " doi:10.15497/RDA00068", 8, _hoisted_4$2),
             createTextVNode("). We gratefully acknowledge their contribution. "),
             createBaseVNode("span", {
+              tabindex: showCollapsedHowtouse.value ? -1 : 0,
               onClick: collapseHowtouse,
+              onKeydown: withKeys(collapseHowtouse, ["enter"]),
               class: "anchor-like"
-            }, " Collapse this section. ")
+            }, " Collapse this section. ", 40, _hoisted_5$2)
           ])
         ], 2),
-        _hoisted_4$2,
+        _hoisted_6$1,
         createBaseVNode("p", null, [
           createTextVNode(' For the questions that follow, it is helpful to specify what we mean by "the software". Our recommendation is to interpret that phrase as "a specific copy of a specific version of your software-as-a-concept". '),
-          showCollapsedDefinitions.value ? (openBlock(), createElementBlock("span", _hoisted_5$2, [
+          showCollapsedDefinitions.value ? (openBlock(), createElementBlock("span", _hoisted_7$2, [
             createTextVNode(" For many projects,... "),
             createBaseVNode("span", {
+              tabindex: showCollapsedDefinitions.value ? 0 : -1,
               onClick: expandDefinitions,
+              onKeydown: withKeys(expandDefinitions, ["enter"]),
               class: "anchor-like"
-            }, " Read more. ")
+            }, " Read more. ", 40, _hoisted_8)
           ])) : createCommentVNode("", true)
         ]),
         createBaseVNode("div", {
           class: normalizeClass(["expands", { expanded: showExpandedDefinitions.value, collapsed: showCollapsedDefinitions.value }])
         }, [
-          _hoisted_6$1,
+          _hoisted_9,
           createBaseVNode("p", null, [
             createTextVNode(" Any additional data that may be gotten from APIs (for example the GitHub, GitLab, Zenodo, PyPI, CRAN, or NPM API) should not be considered metadata for the purposes of this checklist. "),
             createBaseVNode("span", {
+              tabindex: showCollapsedDefinitions.value ? -1 : 0,
               onClick: collapseDefinitions,
+              onKeydown: collapseDefinitions,
               class: "anchor-like"
-            }, " Collapse this section. ")
+            }, " Collapse this section. ", 40, _hoisted_12)
           ])
         ], 2),
-        _hoisted_9,
-        _hoisted_10
+        _hoisted_13,
+        _hoisted_14
       ]);
     };
   }
 });
-const ChecklistPreamble_vue_vue_type_style_index_0_scoped_31f001ec_lang = "";
-const ChecklistPreamble = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-31f001ec"]]);
+const ChecklistPreamble_vue_vue_type_style_index_0_scoped_b137dd2e_lang = "";
+const ChecklistPreamble = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-b137dd2e"]]);
 const _hoisted_1$3 = { class: "footer" };
 const _hoisted_2$3 = { class: "inner" };
 const _hoisted_3$3 = { class: "another-inner" };
@@ -589,12 +605,12 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
       return openBlock(), createElementBlock("div", {
         class: "answer",
         "aria-labelledby": `label-${__props.answer.id}`,
+        tabindex: "0",
         onClick: _cache[0] || (_cache[0] = (...args) => __props.onClick && __props.onClick(...args)),
         onKeydown: _cache[1] || (_cache[1] = withKeys(withModifiers(
           (...args) => __props.onClick && __props.onClick(...args),
-          ["prevent", "stop"]
-        ), ["space"])),
-        tabindex: "0",
+          ["stop"]
+        ), ["enter"])),
         role: "radio"
       }, [
         createBaseVNode("div", _hoisted_2$2, [
@@ -626,8 +642,8 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const ChecklistAnswer_vue_vue_type_style_index_0_scoped_b1a3d975_lang = "";
-const ChecklistAnswer = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-b1a3d975"]]);
+const ChecklistAnswer_vue_vue_type_style_index_0_scoped_0ddd624a_lang = "";
+const ChecklistAnswer = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-0ddd624a"]]);
 const _hoisted_1$1 = { class: "question" };
 const _hoisted_2$1 = { class: "question-index shared" };
 const _hoisted_3$1 = { class: "shared" };
@@ -638,7 +654,11 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
   },
   setup(__props) {
     const props = __props;
-    const onClick = (answerIndex) => () => {
+    const generateClickHandler = (answerIndex) => (e) => {
+      const eventSource = e.target;
+      if (eventSource.tagName === "A") {
+        return;
+      }
       const newCompliance = [
         ...compliance.value.slice(0, props.question.index),
         answerIndex,
@@ -656,17 +676,16 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
               answer,
               isChecked: unref(compliance)[__props.question.index] === answerIndex,
               key: answer.id,
-              onClick: onClick(answerIndex),
-              onKeydown: withKeys(withModifiers(($event) => onClick(answerIndex), ["prevent", "stop"]), ["space"])
-            }, null, 8, ["answer", "isChecked", "onClick", "onKeydown"]);
+              onClick: generateClickHandler(answerIndex)
+            }, null, 8, ["answer", "isChecked", "onClick"]);
           }), 128))
         ])
       ]);
     };
   }
 });
-const ChecklistQuestion_vue_vue_type_style_index_0_scoped_3f6ce497_lang = "";
-const ChecklistQuestion = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-3f6ce497"]]);
+const ChecklistQuestion_vue_vue_type_style_index_0_scoped_59cf4474_lang = "";
+const ChecklistQuestion = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-59cf4474"]]);
 const questions = [
   {
     answers: [
@@ -684,7 +703,7 @@ const questions = [
       },
       {
         id: "f:q0:a2",
-        elaboration: `E.g. the software is published to a package manager (e.g. PyPI, CRAN, NPM) or a dedicated publishing platform (e.g. the Research Software Directory, Zenodo). The associated pages on those platforms can be shown to contain relevant metadata by using Search Engine Optimization tools such as schema.org's <a href="https://validator.schema.org">validator</a> or <a href="https://osds.openlinksw.com/">OpenLink's Structured Data Sniffer</a>.`,
+        elaboration: `E.g. the software is published to a package manager (e.g. PyPI, CRAN, NPM) or a dedicated publishing platform (e.g. the Research Software Directory, Zenodo). The associated pages on those platforms can be shown to contain relevant metadata by using Search Engine Optimization tools such as schema.org's <a href="https://validator.schema.org" target="_blank">validator</a> or <a href="https://osds.openlinksw.com/" target="_blank">OpenLink's Structured Data Sniffer</a>.`,
         score: 2,
         text: "Yes"
       }
@@ -747,7 +766,7 @@ const questions = [
       },
       {
         id: "a:q2:a1",
-        elaboration: "E.g. The identifiers include a DOI, PURL, Handle, or some other persistent identifier. If the identifier is a concept DOI or collection DOI, the identifiers must also specify a version or version list.",
+        elaboration: 'E.g. The identifiers include a DOI, PURL, Handle, or some other <a href="https://www.dpconline.org/handbook/technical-solutions-and-tools/persistent-identifiers" target="_blank">persistent identifier</a>. If the identifier is a concept DOI or collection DOI, the identifiers must also specify a version or version list.',
         score: 1,
         text: "Yes, at least some of the identifiers are persistent"
       },
@@ -822,7 +841,7 @@ const questions = [
       },
       {
         id: "a:q5:a3",
-        elaboration: "E.g. The metadata includes a DOI, pURL or Handle that points to an archived copy of the software.",
+        elaboration: "E.g. The metadata includes a DOI, PURL or Handle that points to an archived copy of the software.",
         score: 3,
         text: "Yes, the metadata includes a unique and persistent identifier to reference the software"
       }
@@ -1011,7 +1030,7 @@ const questions = [
         id: "r:q1:a2",
         elaboration: "",
         score: 2,
-        text: "Yes, as previous answer, and additionally the software is available via a package manager or similar"
+        text: "Yes, as previous answer, and additionally the software is available via a package manager"
       },
       {
         id: "r:q1:a3",
@@ -1023,7 +1042,7 @@ const questions = [
         id: "r:q1:a4",
         elaboration: "",
         score: 4,
-        text: "Yes, as previous answer, and additionally the software is available via a package manager or similar"
+        text: "Yes, as previous answer, and additionally the software is available via a package manager"
       }
     ],
     id: "r:q1",

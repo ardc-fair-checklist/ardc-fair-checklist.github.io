@@ -101,16 +101,16 @@
   "pages/software/v0.2/ChecklistHeader.vue": [],
   "../../../../../venn-the-software.svg": [],
   "pages/software/v0.2/ChecklistPreamble.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/software/v0.2/ChecklistPreamble.vue?vue&type=style&index=0&scoped=31f001ec&lang.css": [],
+  "pages/software/v0.2/ChecklistPreamble.vue?vue&type=style&index=0&scoped=b137dd2e&lang.css": [],
   "pages/software/v0.2/ChecklistPreamble.vue": [],
   "pages/software/v0.2/ChecklistProgressBars.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/software/v0.2/ChecklistProgressBars.vue?vue&type=style&index=0&scoped=b168c94e&lang.css": [],
   "pages/software/v0.2/ChecklistProgressBars.vue": [],
   "pages/software/v0.2/ChecklistAnswer.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/software/v0.2/ChecklistAnswer.vue?vue&type=style&index=0&scoped=b1a3d975&lang.css": [],
+  "pages/software/v0.2/ChecklistAnswer.vue?vue&type=style&index=0&scoped=0ddd624a&lang.css": [],
   "pages/software/v0.2/ChecklistAnswer.vue": [],
   "pages/software/v0.2/ChecklistQuestion.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/software/v0.2/ChecklistQuestion.vue?vue&type=style&index=0&scoped=3f6ce497&lang.css": [],
+  "pages/software/v0.2/ChecklistQuestion.vue?vue&type=style&index=0&scoped=59cf4474&lang.css": [],
   "pages/software/v0.2/ChecklistQuestion.vue": [],
   "pages/software/v0.2/questions.json": [],
   "pages/software/v0.2/index.page.vue?vue&type=script&setup=true&lang.ts": [],
@@ -187,8 +187,8 @@
     "/ssg/assets/index.page.d955019a.css",
     "/ssg/assets/global.b082e789.css"
   ],
-  "index.page.912b5f8c.js": [
-    "/ssg/assets/index.page.dbe0734c.css",
+  "index.page.bc762fb2.js": [
+    "/ssg/assets/index.page.621914f8.css",
     "/ssg/assets/global.b082e789.css"
   ],
   "_error.page.de708dd4.js": [],

@@ -231,44 +231,44 @@ svg:hover #outline[data-v-4554f404] {
     fill: black;
 }
 
-h2[data-v-31f001ec] {
+h2[data-v-b137dd2e] {
     color: var(--white);
     font-size: 1.2em;
 }
-li[data-v-31f001ec] {
+li[data-v-b137dd2e] {
     padding-bottom: 0.5em;
     padding-top: 0.5em;
 }
-span.anchor-like[data-v-31f001ec] {
+span.anchor-like[data-v-b137dd2e] {
     text-decoration: underline;
     text-underline-offset: 0.3em;
     color: #71caff;
 }
-span.anchor-like[data-v-31f001ec]:hover {
+span.anchor-like[data-v-b137dd2e]:hover {
     color: var(--white);
 }
-div.vspace[data-v-31f001ec] {
+div.vspace[data-v-b137dd2e] {
     height: 1.5em
 }
-img[data-v-31f001ec] {
+img[data-v-b137dd2e] {
     width: 50%;
     padding-left: 25%;
     padding-right: 25%;
     margin-bottom: 2em;
     margin-top: 2em;
 }
-.expands[data-v-31f001ec] {
+.expands[data-v-b137dd2e] {
     overflow: hidden;
     opacity: 0;
     max-height: 0;
 }
-.expanded[data-v-31f001ec] {
+.expanded[data-v-b137dd2e] {
     max-height: 200em;
     opacity: 1;
     transition: max-height 2s ease,
                 opacity 1s ease;
 }
-.collapsed[data-v-31f001ec] {
+.collapsed[data-v-b137dd2e] {
     max-height: 0;
     opacity: 0;
     transition: max-height 0.75s ease,
@@ -406,7 +406,7 @@ button[data-v-b168c94e]:disabled {
 }
 
 
-.answer[data-v-b1a3d975] {
+.answer[data-v-0ddd624a] {
     padding: 0.3em 0.2em;
     border: 2px solid var(--dark);
     border-radius: 0.25em;
@@ -415,25 +415,25 @@ button[data-v-b168c94e]:disabled {
     flex-direction: row;
     flex-wrap: nowrap;
 }
-*[data-v-b1a3d975]:focus:not(.focus-visible) {
+*[data-v-0ddd624a]:focus:not(.focus-visible) {
     /*  https://css-tricks.com/keyboard-only-focus-styles/  */
     outline: none;
 }
-.answer[data-v-b1a3d975]:hover, .answer[data-v-b1a3d975]:focus, .answer[data-v-b1a3d975]:active, .answer[data-v-b1a3d975]:focus-visible {
+.answer[data-v-0ddd624a]:hover, .answer[data-v-0ddd624a]:focus, .answer[data-v-0ddd624a]:active, .answer[data-v-0ddd624a]:focus-visible {
     border-color: var(--ardc-purple);
     color: var(--white);
 }
-.answer-radiobutton[data-v-b1a3d975] {
+.answer-radiobutton[data-v-0ddd624a] {
     width: min-content;
 }
-.answer-points[data-v-b1a3d975] {
+.answer-points[data-v-0ddd624a] {
     width: min-content;
     display: none;
 }
-.answer-text[data-v-b1a3d975] {
+.answer-text[data-v-0ddd624a] {
     width: 100%;
 }
-.answer-elaboration[data-v-b1a3d975] {
+.answer-elaboration[data-v-0ddd624a] {
     margin-left: 1.5em;
     margin-right: 3em;
     margin-top: 0.2em;
@@ -442,7 +442,7 @@ button[data-v-b168c94e]:disabled {
     filter: brightness(80%);
 }
 
-fieldset[data-v-3f6ce497] {
+fieldset[data-v-59cf4474] {
     border-style: none;
     flex-grow: 1;
     margin-inline-start: 0px;
@@ -452,12 +452,12 @@ fieldset[data-v-3f6ce497] {
     padding-inline-end: 0em;
     padding-block-end: 0em;
 }
-legend[data-v-3f6ce497] {
+legend[data-v-59cf4474] {
     padding-inline-start: 0px;
     padding-inline-end: 0px;
     margin-bottom: 1em;
 }
-.question[data-v-3f6ce497] {
+.question[data-v-59cf4474] {
     background-color: var(--dark);
     border-radius: 0.25em;
     border: 2px solid #444;
@@ -472,15 +472,15 @@ legend[data-v-3f6ce497] {
     padding-top: 1em;
 }
 @media screen and (max-width: 41.5em) {
-.question[data-v-3f6ce497] {
+.question[data-v-59cf4474] {
         padding-left: 1em;
         padding-right: 1em;
 }
 }
-.question-index[data-v-3f6ce497] {
+.question-index[data-v-59cf4474] {
     min-width: 2em;
 }
-.shared[data-v-3f6ce497] {
+.shared[data-v-59cf4474] {
     /* shared styles for legend and .question-index */
     font-weight: bold;
     line-height: 1.6em;
