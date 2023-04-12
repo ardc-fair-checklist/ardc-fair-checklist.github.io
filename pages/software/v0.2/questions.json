@@ -16,7 +16,7 @@
                 },
                 {
                     "id": "f:q0:a2",
-                    "elaboration": "E.g. the software is published to a package manager (e.g. PyPI, CRAN, NPM) or a dedicated publishing platform (e.g. the Research Software Directory, Zenodo). The associated pages on those platforms can be shown to contain relevant metadata by using Search Engine Optimization tools such as schema.org's <a href=\"https://validator.schema.org\">validator</a> or <a href=\"https://osds.openlinksw.com/\">OpenLink's Structured Data Sniffer</a>.",
+                    "elaboration": "E.g. the software is published to a package manager (e.g. PyPI, CRAN, NPM) or a dedicated publishing platform (e.g. the Research Software Directory, Zenodo). The associated pages on those platforms can be shown to contain relevant metadata by using Search Engine Optimization tools such as schema.org's <a href=\"https://validator.schema.org\" target=\"_blank\">validator</a> or <a href=\"https://osds.openlinksw.com/\" target=\"_blank\">OpenLink's Structured Data Sniffer</a>.",
                     "score": 2,
                     "text": "Yes"
                 }
