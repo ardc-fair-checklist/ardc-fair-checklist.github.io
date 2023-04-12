@@ -11,8 +11,7 @@
                 v-bind:answer="answer"
                 v-bind:isChecked="compliance[question.index] === answerIndex"
                 v-bind:key="answer.id"
-                v-bind:onClick="onClick(answerIndex)"
-                v-on:keydown.space.prevent.stop="onClick(answerIndex)"
+                v-bind:onClick="generateClickHandler(answerIndex)"
             />
         </fieldset>
     </div>
@@ -29,7 +28,13 @@ const props = defineProps<{
     question: Question & Numbered
 }>();
 
-const onClick = (answerIndex: number) => () => {
+const generateClickHandler = (answerIndex: number) => (e: Event) => {
+    const eventSource = e.target as HTMLElement;
+    if (eventSource.tagName === 'A') {
+        // User clicked a link inside the answer, don't
+        // update the compliance state
+        return;
+    }
     const newCompliance = [
         ...compliance.value.slice(0, props.question.index),
         answerIndex,

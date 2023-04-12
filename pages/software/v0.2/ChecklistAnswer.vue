@@ -2,9 +2,9 @@
     <div
         class="answer"
         v-bind:aria-labelledby="`label-${answer.id}`"
-        v-on:click="onClick"
-        v-on:keydown.space.prevent.stop="onClick"
         tabindex=0
+        v-on:click="onClick"
+        v-on:keydown.enter.stop="onClick"
         role="radio"
     >
         <div class="answer-radiobutton">
@@ -39,12 +39,12 @@
 <script setup lang="ts">
 import { Answer } from './types';
 
-type PropType = {
+defineProps<{
     answer: Answer
     isChecked: boolean
-    onClick: () => void
-};
-defineProps<PropType>();
+    // eslint-disable-next-line no-unused-vars
+    onClick:(e: Event) => void
+}>();
 </script>
 
 <style scoped>
