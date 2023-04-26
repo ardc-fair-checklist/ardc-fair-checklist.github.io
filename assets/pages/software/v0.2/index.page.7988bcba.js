@@ -754,7 +754,7 @@ const questions = [
     ],
     id: "a:q1",
     principle: "a",
-    text: "Can a third party resolve the software's identifiers to a publicly accessible resource?"
+    text: "Can someone else resolve the software's identifiers to a publicly accessible resource?"
   },
   {
     answers: [
@@ -885,26 +885,26 @@ const questions = [
     answers: [
       {
         id: "i:q1:a0",
-        elaboration: "",
+        elaboration: "E.g. the software does not make releases.",
         score: 0,
-        text: "Users of the software are supposed to always use the latest version"
+        text: "Different versions of the software are not identified separately"
       },
       {
         id: "i:q1:a1",
-        elaboration: "E.g. The software is labeled according to the release date, the build number, etc.",
+        elaboration: "E.g. Software versions are labeled according to the release date, the build number, etc.",
         score: 1,
-        text: "The version identifier uses some form of increment at every release"
+        text: "Different software versions are identified using some form of increment at every release"
       },
       {
         id: "i:q1:a2",
-        elaboration: "E.g. The software is labeled according to semantic versioning.",
+        elaboration: 'E.g. Software versions are labeled according to <a href="https://semver.org/" target="_blank">semantic versioning</a>.',
         score: 2,
-        text: "The version identifier reflects interoperability aspects"
+        text: "As previous answer, and additionally, the version identifier reflects interoperability aspects"
       }
     ],
     id: "i:q1",
     principle: "i",
-    text: "If any, what versioning strategy does the software adhere to?"
+    text: "What approach does the software take to versioning?"
   },
   {
     answers: [
