@@ -766,7 +766,7 @@ const questions = [
       },
       {
         id: "a:q2:a1",
-        elaboration: 'E.g. The identifiers include a DOI, PURL, Handle, or some other <a href="https://www.dpconline.org/handbook/technical-solutions-and-tools/persistent-identifiers" target="_blank">persistent identifier</a>. If the identifier is a concept DOI or collection DOI, the identifiers must also specify a version or version list.',
+        elaboration: 'E.g. The identifiers include a DOI, PURL, Handle, or some other <a href="https://en.wikipedia.org/wiki/Persistent_identifier" target="_blank">persistent identifier</a>. If the identifier is a concept DOI or collection DOI, the identifiers must also specify a version or version list.',
         score: 1,
         text: "Yes, at least some of the identifiers are persistent"
       },
