@@ -15,7 +15,7 @@ jobs:
             args: "--infile ./CITATION.cff --format zenodo --outfile .zenodo.citation.json"
         - name: Combine .zenodo.citation.json with .zenodo.extras.json
           run: |
-            cat .zenodo.citation.json .zenodo.extras.json | jq -s add > ${{ runner.temp }}.zenodo.json
+            cat .zenodo.citation.json .zenodo.extras.json | jq -s add > ${{ runner.temp }}/.zenodo.json
             rm .zenodo.citation.json
         - name: Create a draft snapshot of your repository contents as a new
                 version in collection 7890393 on Zenodo Sandbox using metadata
@@ -26,6 +26,6 @@ jobs:
           uses: zenodraft/action@0.10.0
           with:
             collection: 7890393
-            metadata: ${{ runner.temp }}.zenodo.json
+            metadata: ${{ runner.temp }}/.zenodo.json
             publish: false
             sandbox: false
