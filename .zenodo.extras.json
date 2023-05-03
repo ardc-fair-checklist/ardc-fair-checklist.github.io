@@ -5,5 +5,24 @@
     "references": [
         "Chue Hong, N. P., Katz, D. S., Barker, M., Lamprecht, A-L., Martinez, C., and RDA FAIR4RS WG (2022), FAIR Principles for Research Software (FAIR4RS Principles), Version 1.0, Zenodo, doi:10.15497/RDA00068",
         "Levett, K., Russell, K., Schweitzer, M., Unsworth, K., and White, A. (2021), FAIR Assessment Tool, v1.0, GitHub, https://github.com/au-research/FAIR-Data-Assessment-Tool Accessed: May 3, 2023"
-    ]
+    ],
+    "related_identifiers": [
+        {
+            "identifier": "https://github.com/au-research/FAIR-Data-Assessment-Tool",
+            "relation": "supplements",
+            "resource_type": "software",
+            "scheme": "url"
+        },
+        {
+            "identifier": "https://ardc.edu.au/resource/fair-data-self-assessment-tool/",
+            "relation": "supplements",
+            "resource_type": "other",
+            "scheme": "url"
+        },
+        {
+            "identifier": "10.15497/RDA00068",
+            "relation": "supplements",
+            "resource_type": "publication-article",
+            "scheme": "doi"
+        }]
 }
