@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7890394.svg)](https://doi.org/10.5281/zenodo.7890394)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7890393.svg)](https://doi.org/10.5281/zenodo.7890393)
 
 
 # ardc-fair-checklist
