@@ -85,7 +85,7 @@ There is a GitHub action `/.github/workflows/publish.yml` that builds the projec
 
 ### Zenodo
 
-There is a GitHub action `/.github/workflows/zenodraft.yml` that publishes a snapshot of `main` to Zenodo, makes a release on GitHub, and tags the corresponding SHA. The workflow purposely does not finalize the depostion on Zenodo. It must be published manually by clicking the "Publish" on Zenodo after inspection of the draft's metadata. The GitHub action can be triggered manually via the GitHub user interface.
+There is a GitHub action `/.github/workflows/zenodraft.yml` that publishes a snapshot of `main` to Zenodo, makes a release on GitHub, and tags the corresponding SHA. The workflow purposely does not finalize the depostion on Zenodo. It must be published manually by clicking the "Publish" button on Zenodo after inspection of the draft's metadata. The GitHub action can be triggered manually via the GitHub user interface.
 
 ## Adding a new version of an existing topic
 
