@@ -39,6 +39,7 @@ keywords:
   - RSE
   - Research Software Engineer
 license: Apache-2.0
+version: 0.1.0
 references:
   -
     authors:
@@ -188,6 +189,7 @@ references:
         value: '10.15497/RDA00068'
     title: FAIR Principles for Research Software (FAIR4RS Principles)
     type: article
+    date-published: 2022-05-24
   -
     authors:
       - family-names: Levett
@@ -212,3 +214,4 @@ references:
         description: Where the software for the website is being developed
     title: FAIR Data Self Assessment Tool
     type: website
+    date-published: 2021-06-17
