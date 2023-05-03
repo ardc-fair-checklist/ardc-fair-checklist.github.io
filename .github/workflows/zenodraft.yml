@@ -17,13 +17,14 @@ jobs:
           run: |
             cat .zenodo.citation.json .zenodo.extras.json | jq -s add > .zenodo.json
         - name: Create a draft snapshot of the repository contents as a new
-                version in a new collection on Zenodo using metadata
+                version in collection 7890393 on Zenodo using metadata
                 from file .zenodo.json
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             ZENODO_ACCESS_TOKEN: ${{ secrets.ZENODO_ACCESS_TOKEN }}
           uses: zenodraft/action@0.10.0
           with:
+            collection: 7890393
             metadata: .zenodo.json
             publish: false
             sandbox: false
