@@ -79,7 +79,13 @@ In the current app, there are multiple entities that could be versioned: the dat
 
 ## Publishing
 
+### GitHub Pages
+
 There is a GitHub action `/.github/workflows/publish.yml` that builds the project for production and hosts it at https://ardc-fair-checklist.github.io/ssg. The GitHub action can be triggered manually via the GitHub user interface.
+
+### Zenodo
+
+There is a GitHub action `/.github/workflows/zenodraft.yml` that publishes a snapshot of `main` to Zenodo, makes a release on GitHub, and tags the corresponding SHA. The GitHub action can be triggered manually via the GitHub user interface.
 
 ## Adding a new version of an existing topic
 
