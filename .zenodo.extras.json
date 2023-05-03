@@ -9,20 +9,21 @@
     "related_identifiers": [
         {
             "identifier": "https://github.com/au-research/FAIR-Data-Assessment-Tool",
-            "relation": "supplements",
+            "relation": "isSupplementedBy",
             "resource_type": "software",
             "scheme": "url"
         },
         {
             "identifier": "https://ardc.edu.au/resource/fair-data-self-assessment-tool/",
-            "relation": "supplements",
+            "relation": "isSupplementedBy",
             "resource_type": "other",
             "scheme": "url"
         },
         {
             "identifier": "10.15497/RDA00068",
-            "relation": "supplements",
+            "relation": "isSupplementedBy",
             "resource_type": "publication-article",
             "scheme": "doi"
-        }]
+        }
+    ]
 }
