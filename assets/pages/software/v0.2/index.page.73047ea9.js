@@ -991,21 +991,15 @@ const questions = [
     answers: [
       {
         id: "r:q0:a0",
-        elaboration: "",
+        elaboration: "E.g. the software's dependency tree or compilation tool chain are insufficiently specified to facilitate reliable recompilation",
         score: 0,
-        text: "No, the software's dependency tree or compilation tool chain are insufficiently specified to facilitate reliable recompilation"
+        text: "No, the software is available as-is. No attempt is made to make the software easily executed"
       },
       {
         id: "r:q0:a1",
         elaboration: "E.g. the software includes package manager files like package-lock.json, conanfile.txt, pyproject.toml, or requirements.txt that can be used to compile and run the software, or the software includes sufficient documentation to do so.",
         score: 1,
         text: "Yes, the software can be compiled using information bundled with the software sources"
-      },
-      {
-        id: "r:q0:a2",
-        elaboration: "E.g. the metadata includes a URI link to a DockerHub image containing an executable.",
-        score: 2,
-        text: "Yes, the software and its dependency tree are published using virtualization, containerization, or a similar method, and additionally the metadata includes a URI link that points to the executable resource"
       }
     ],
     id: "r:q0",
