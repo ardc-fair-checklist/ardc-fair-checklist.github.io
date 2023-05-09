@@ -760,7 +760,7 @@ const questions = [
     ],
     id: "a:q1",
     principle: "a",
-    text: "Can someone else resolve the software's identifiers to a publicly accessible resource?"
+    text: "Can someone else use the software's identifiers to get a copy of the software?"
   },
   {
     answers: [
