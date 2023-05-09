@@ -766,7 +766,7 @@ const questions = [
     answers: [
       {
         id: "a:q2:a0",
-        elaboration: "E.g. the identifiers include only the name of the software as a concept, but each version of that concept will have a different feature set. Or, the identifiers only include a name or a URL, whose content may be subject to change.",
+        elaboration: "E.g. the identifiers include only the name of the software as a concept, but each version of that concept will have a different feature set. Or, the identifiers only include a URL, whose content may be subject to change.",
         score: 0,
         text: "Maybe"
       },
