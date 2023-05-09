@@ -204,7 +204,7 @@
             "answers": [
                 {
                     "id": "i:q1:a0",
-                    "elaboration": "E.g. the software does not make releases.",
+                    "elaboration": "E.g. the software does not make releases. Updates may or may not be available, but when they are, no version or release is indicated.",
                     "score": 0,
                     "text": "Different versions of the software are not identified separately"
                 },
