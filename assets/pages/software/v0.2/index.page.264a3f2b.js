@@ -703,14 +703,20 @@ const questions = [
       },
       {
         id: "f:q0:a2",
-        elaboration: `E.g. the software is published to a package manager (e.g. PyPI, CRAN, NPM) or a dedicated publishing platform (e.g. the Research Software Directory, Zenodo). The associated pages on those platforms can be shown to contain relevant metadata by using Search Engine Optimization tools such as schema.org's <a href="https://validator.schema.org" target="_blank">validator</a> or <a href="https://osds.openlinksw.com/" target="_blank">OpenLink's Structured Data Sniffer</a>.`,
+        elaboration: "E.g. the software is on GitHub or GitLab.",
         score: 2,
-        text: "Yes"
+        text: "No, the software is published on a platform with minimal Search Engine Optimization"
+      },
+      {
+        id: "f:q0:a3",
+        elaboration: `E.g. the software is published to a package manager (e.g. PyPI, CRAN, NPM) or a dedicated publishing platform (e.g. the <a href="https://research-software-directory.org/" target="_blank">Research Software Directory</a>). The associated pages on those platforms can be shown to contain relevant metadata by using Search Engine Optimization tools such as schema.org's <a href="https://validator.schema.org" target="_blank">validator</a> or OpenLink's <a href="https://osds.openlinksw.com/" target="_blank">Structured Data Sniffer</a>.`,
+        score: 3,
+        text: "Yes, the software is findable via an associated web page which employs Search Engine Optimization."
       }
     ],
     id: "f:q0",
     principle: "f",
-    text: "Is information from the metadata consumed by local or global search engines to help rank their results?"
+    text: "Is information from the metadata consumed by search engines to help rank their results?"
   },
   {
     answers: [
