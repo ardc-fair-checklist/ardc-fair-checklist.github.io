@@ -905,7 +905,7 @@ const questions = [
         id: "i:q1:a2",
         elaboration: 'E.g. Software versions are labeled according to <a href="https://semver.org/" target="_blank">semantic versioning</a>.',
         score: 2,
-        text: "As previous answer, and additionally, the version identifier reflects interoperability aspects"
+        text: "As previous answer, and additionally, the version identifier communicates information about compatibility"
       }
     ],
     id: "i:q1",
