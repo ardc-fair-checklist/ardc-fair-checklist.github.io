@@ -741,9 +741,9 @@ const questions = [
     answers: [
       {
         id: "a:q1:a0",
-        elaboration: "E.g. the software is identified by name only.",
+        elaboration: "E.g. the software is identified by name, but there is no information on the version of the software, or where to get a copy.",
         score: 0,
-        text: "No"
+        text: "Maybe"
       },
       {
         id: "a:q1:a1",
@@ -753,7 +753,7 @@ const questions = [
       },
       {
         id: "a:q1:a2",
-        elaboration: "E.g. the software is identified by its name, and additionally by its URL or DOI.",
+        elaboration: "E.g. the software is identified by its URL or DOI.",
         score: 2,
         text: "Yes for at least some of the identifiers"
       }
