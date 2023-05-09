@@ -1024,24 +1024,18 @@ const questions = [
         id: "r:q1:a1",
         elaboration: "",
         score: 1,
-        text: "Yes, the software is available from a repository but it does not include documentation"
+        text: "Yes, the software is available"
       },
       {
         id: "r:q1:a2",
         elaboration: "",
         score: 2,
-        text: "Yes, as previous answer, and additionally the software is available via a package manager"
-      },
-      {
-        id: "r:q1:a3",
-        elaboration: "",
-        score: 3,
-        text: "Yes, the software is available from a repository and includes sufficient documentation"
+        text: "Yes, as previous answer, and additionally the software includes documentation"
       },
       {
         id: "r:q1:a4",
         elaboration: "",
-        score: 4,
+        score: 3,
         text: "Yes, as previous answer, and additionally the software is available via a package manager"
       }
     ],
