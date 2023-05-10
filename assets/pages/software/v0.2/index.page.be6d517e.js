@@ -741,20 +741,26 @@ const questions = [
     answers: [
       {
         id: "a:q1:a0",
-        elaboration: "E.g. the software is identified by URL or DOI, but the software source files are proprietary, closed-source, or otherwise hidden from public view.",
+        elaboration: "",
         score: 0,
-        text: "No, the identifiers only resolve to a page about the software, not the source files themselves."
+        text: "No"
       },
       {
         id: "a:q1:a1",
-        elaboration: "E.g. the software is identified by name and version, but there is no information where to get a copy.",
+        elaboration: "E.g. the software is identified by URL or DOI, but the software source files are proprietary, closed-source, or otherwise hidden from public view.",
         score: 1,
-        text: "Maybe"
+        text: "No, the identifiers only resolve to a page about the software, not the source files themselves."
       },
       {
         id: "a:q1:a2",
-        elaboration: "E.g. the software is identified by its URL or DOI. Or, a copy of the software may be obtained after going through an administrative procedure, e.g. vetting, sending an email, etc.",
+        elaboration: "E.g. the software is identified by name and version, but there is no information where to get a copy.",
         score: 2,
+        text: "Maybe"
+      },
+      {
+        id: "a:q1:a3",
+        elaboration: "E.g. the software is identified by its URL or DOI. Or, a copy of the software may be obtained after going through an administrative procedure, e.g. vetting, sending an email, etc.",
+        score: 3,
         text: "Yes for at least some of the identifiers"
       }
     ],
