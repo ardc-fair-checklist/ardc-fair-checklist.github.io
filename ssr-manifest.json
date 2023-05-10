@@ -34,7 +34,7 @@
   "pages/data/v0.1/ChecklistProgressBars.vue?vue&type=style&index=0&scoped=17b669a6&lang.css": [],
   "pages/data/v0.1/ChecklistProgressBars.vue": [],
   "pages/data/v0.1/ChecklistAnswer.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/data/v0.1/ChecklistAnswer.vue?vue&type=style&index=0&scoped=b44595d7&lang.css": [],
+  "pages/data/v0.1/ChecklistAnswer.vue?vue&type=style&index=0&scoped=4b043086&lang.css": [],
   "pages/data/v0.1/ChecklistAnswer.vue": [],
   "pages/data/v0.1/ChecklistQuestion.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/data/v0.1/ChecklistQuestion.vue?vue&type=style&index=0&scoped=9c1d54a2&lang.css": [],
@@ -60,7 +60,7 @@
   "pages/software/v0.1/ChecklistLink.vue": [],
   "pages/software/v0.1/app.css": [],
   "pages/software/v0.1/ChecklistBannerVersions.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/software/v0.1/ChecklistBannerVersions.vue?vue&type=style&index=0&scoped=d9a7a226&lang.css": [],
+  "pages/software/v0.1/ChecklistBannerVersions.vue?vue&type=style&index=0&scoped=ad4fe51a&lang.css": [],
   "pages/software/v0.1/ChecklistBannerVersions.vue": [],
   "pages/software/v0.1/ChecklistBannerWIP.vue?vue&type=style&index=0&scoped=518e944f&lang.css": [],
   "pages/software/v0.1/ChecklistBannerWIP.vue": [],
@@ -71,7 +71,7 @@
   "pages/software/v0.1/ChecklistProgressBars.vue?vue&type=style&index=0&scoped=dfc13404&lang.css": [],
   "pages/software/v0.1/ChecklistProgressBars.vue": [],
   "pages/software/v0.1/ChecklistAnswer.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/software/v0.1/ChecklistAnswer.vue?vue&type=style&index=0&scoped=5fd48f14&lang.css": [],
+  "pages/software/v0.1/ChecklistAnswer.vue?vue&type=style&index=0&scoped=5abb0218&lang.css": [],
   "pages/software/v0.1/ChecklistAnswer.vue": [],
   "pages/software/v0.1/ChecklistQuestion.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/software/v0.1/ChecklistQuestion.vue?vue&type=style&index=0&scoped=6bdebae3&lang.css": [],
@@ -92,7 +92,7 @@
   "pages/software/v0.2/ChecklistLink.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/software/v0.2/app.css": [],
   "pages/software/v0.2/ChecklistBannerVersions.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/software/v0.2/ChecklistBannerVersions.vue?vue&type=style&index=0&scoped=d2923422&lang.css": [],
+  "pages/software/v0.2/ChecklistBannerVersions.vue?vue&type=style&index=0&scoped=eac0336a&lang.css": [],
   "pages/software/v0.2/ChecklistBannerVersions.vue": [],
   "pages/software/v0.2/ChecklistBannerWIP.vue?vue&type=style&index=0&scoped=8a0d31e9&lang.css": [],
   "pages/software/v0.2/ChecklistBannerWIP.vue": [],
@@ -171,8 +171,8 @@
     "/ssg/assets/index.page.ec3ad890.css",
     "/ssg/assets/global.b082e789.css"
   ],
-  "index.page.1812d4a6.js": [
-    "/ssg/assets/index.page.db6f18db.css",
+  "index.page.96a2ac25.js": [
+    "/ssg/assets/index.page.4a170c70.css",
     "/ssg/assets/global.b082e789.css"
   ],
   "index.page.83b47af1.js": [
@@ -183,12 +183,12 @@
     "/ssg/assets/index.page.21e1d615.css",
     "/ssg/assets/global.b082e789.css"
   ],
-  "index.page.e2a4b9bb.js": [
-    "/ssg/assets/index.page.d955019a.css",
+  "index.page.34cb0c8e.js": [
+    "/ssg/assets/index.page.2ca08612.css",
     "/ssg/assets/global.b082e789.css"
   ],
-  "index.page.034d9ea8.js": [
-    "/ssg/assets/index.page.3aae5c32.css",
+  "index.page.48e248e6.js": [
+    "/ssg/assets/index.page.46dfdc29.css",
     "/ssg/assets/global.b082e789.css"
   ],
   "_error.page.de708dd4.js": [],

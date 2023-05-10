@@ -48,7 +48,7 @@
     ]
   },
   "pages/data/v0.1/index.page.vue": {
-    "file": "assets/pages/data/v0.1/index.page.1812d4a6.js",
+    "file": "assets/pages/data/v0.1/index.page.96a2ac25.js",
     "src": "pages/data/v0.1/index.page.vue",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -61,7 +61,7 @@
       "_chunk-98817835.js"
     ],
     "css": [
-      "assets/index.page.db6f18db.css"
+      "assets/index.page.4a170c70.css"
     ]
   },
   "pages/software/index/index.page.vue": {
@@ -78,7 +78,7 @@
     ]
   },
   "pages/software/v0.1/index.page.vue": {
-    "file": "assets/pages/software/v0.1/index.page.e2a4b9bb.js",
+    "file": "assets/pages/software/v0.1/index.page.34cb0c8e.js",
     "src": "pages/software/v0.1/index.page.vue",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -91,11 +91,11 @@
       "_chunk-98817835.js"
     ],
     "css": [
-      "assets/index.page.d955019a.css"
+      "assets/index.page.2ca08612.css"
     ]
   },
   "pages/software/v0.2/index.page.vue": {
-    "file": "assets/pages/software/v0.2/index.page.034d9ea8.js",
+    "file": "assets/pages/software/v0.2/index.page.48e248e6.js",
     "src": "pages/software/v0.2/index.page.vue",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -108,11 +108,11 @@
       "_chunk-98817835.js"
     ],
     "css": [
-      "assets/index.page.3aae5c32.css"
+      "assets/index.page.46dfdc29.css"
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.18a626dc.js",
+    "file": "assets/entry-client-routing.41b76b81.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -130,7 +130,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.3aa1cdda.js",
+    "file": "assets/entry-server-routing.6ad51bb1.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
@@ -193,7 +193,7 @@
     "src": "pages/data/index/index.page.css"
   },
   "pages/data/v0.1/index.page.css": {
-    "file": "assets/index.page.db6f18db.css",
+    "file": "assets/index.page.4a170c70.css",
     "src": "pages/data/v0.1/index.page.css"
   },
   "pages/software/index/index.page.css": {
@@ -201,11 +201,11 @@
     "src": "pages/software/index/index.page.css"
   },
   "pages/software/v0.1/index.page.css": {
-    "file": "assets/index.page.d955019a.css",
+    "file": "assets/index.page.2ca08612.css",
     "src": "pages/software/v0.1/index.page.css"
   },
   "pages/software/v0.2/index.page.css": {
-    "file": "assets/index.page.3aae5c32.css",
+    "file": "assets/index.page.46dfdc29.css",
     "src": "pages/software/v0.2/index.page.css"
   }
 }

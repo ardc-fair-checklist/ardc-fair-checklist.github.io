@@ -356,13 +356,13 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
           ]),
           _: 1
         }, 8, ["href"]),
-        createTextVNode(" , consider upgrading. ")
+        createTextVNode(", consider upgrading. ")
       ])) : createCommentVNode("", true);
     };
   }
 });
-const ChecklistBannerVersions_vue_vue_type_style_index_0_scoped_d9a7a226_lang = "";
-const ChecklistBannerVersions = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__scopeId", "data-v-d9a7a226"]]);
+const ChecklistBannerVersions_vue_vue_type_style_index_0_scoped_ad4fe51a_lang = "";
+const ChecklistBannerVersions = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__scopeId", "data-v-ad4fe51a"]]);
 const ChecklistBannerWIP_vue_vue_type_style_index_0_scoped_518e944f_lang = "";
 const _sfc_main$5 = {};
 const _hoisted_1$5 = { class: "banner" };
@@ -502,7 +502,8 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
             checked: __props.isChecked,
             role: "presentation",
             tabindex: "-1",
-            "aria-label": ""
+            "aria-label": "",
+            autocomplete: "off"
           }, null, 8, _hoisted_3$1)
         ]),
         createBaseVNode("div", _hoisted_4$1, " (+" + toDisplayString(__props.answer.score) + ") ", 1),
@@ -516,8 +517,8 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const ChecklistAnswer_vue_vue_type_style_index_0_scoped_5fd48f14_lang = "";
-const ChecklistAnswer = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-5fd48f14"]]);
+const ChecklistAnswer_vue_vue_type_style_index_0_scoped_5abb0218_lang = "";
+const ChecklistAnswer = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-5abb0218"]]);
 const _hoisted_1$1 = { class: "question" };
 const _hoisted_2 = { class: "question-index shared" };
 const _hoisted_3 = { class: "shared" };

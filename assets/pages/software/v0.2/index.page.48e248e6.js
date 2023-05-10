@@ -361,13 +361,13 @@ const _sfc_main$7 = /* @__PURE__ */ defineComponent({
           ]),
           _: 1
         }, 8, ["href"]),
-        createTextVNode(" , consider upgrading. ")
+        createTextVNode(", consider upgrading. ")
       ])) : createCommentVNode("", true);
     };
   }
 });
-const ChecklistBannerVersions_vue_vue_type_style_index_0_scoped_d2923422_lang = "";
-const ChecklistBannerVersions = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["__scopeId", "data-v-d2923422"]]);
+const ChecklistBannerVersions_vue_vue_type_style_index_0_scoped_eac0336a_lang = "";
+const ChecklistBannerVersions = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["__scopeId", "data-v-eac0336a"]]);
 const ChecklistBannerWIP_vue_vue_type_style_index_0_scoped_8a0d31e9_lang = "";
 const _sfc_main$6 = {};
 const _hoisted_1$6 = { class: "banner" };
