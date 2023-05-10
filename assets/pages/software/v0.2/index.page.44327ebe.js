@@ -15,7 +15,13 @@ const setCompliance = (newCompliance) => {
   state.value.compliance = newCompliance;
 };
 const setQuestions = (questionsNoIndex) => {
-  state.value.questions = questionsNoIndex.map((q, i) => ({ ...q, index: i }));
+  const addIndex = (q, i) => ({ ...q, index: i });
+  const normalizeScorePerQuestion = (q) => {
+    const maxScore = Math.max(...q.answers.map((a) => a.score));
+    const normalizedAnswers = q.answers.map((a) => ({ ...a, score: a.score / maxScore }));
+    return { ...q, answers: normalizedAnswers };
+  };
+  state.value.questions = questionsNoIndex.map(normalizeScorePerQuestion).map(addIndex);
   state.value.compliance = new Array(questionsNoIndex.length).fill(0);
 };
 const nQuestions = computed(() => {
