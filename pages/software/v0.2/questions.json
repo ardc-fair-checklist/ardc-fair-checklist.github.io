@@ -66,7 +66,7 @@
                 },
                 {
                     "id": "a:q1:a2",
-                    "elaboration": "E.g. the software is identified by name and version, but there is no information where to get a copy.",
+                    "elaboration": "E.g. the software is identified by name and version, but there is no information on where to get a copy.",
                     "score": 2,
                     "text": "Maybe"
                 },
