@@ -627,7 +627,8 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
             checked: __props.isChecked,
             role: "presentation",
             tabindex: "-1",
-            "aria-label": ""
+            "aria-label": "",
+            autocomplete: "off"
           }, null, 8, _hoisted_3$2)
         ]),
         createBaseVNode("div", _hoisted_4, " (+" + toDisplayString(__props.answer.score) + ") ", 1),
@@ -648,8 +649,8 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const ChecklistAnswer_vue_vue_type_style_index_0_scoped_0ddd624a_lang = "";
-const ChecklistAnswer = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-0ddd624a"]]);
+const ChecklistAnswer_vue_vue_type_style_index_0_scoped_cd02bf6a_lang = "";
+const ChecklistAnswer = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-cd02bf6a"]]);
 const _hoisted_1$1 = { class: "question" };
 const _hoisted_2$1 = { class: "question-index shared" };
 const _hoisted_3$1 = { class: "shared" };

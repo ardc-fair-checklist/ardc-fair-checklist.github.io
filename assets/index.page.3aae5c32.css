@@ -406,7 +406,7 @@ button[data-v-b168c94e]:disabled {
 }
 
 
-.answer[data-v-0ddd624a] {
+.answer[data-v-cd02bf6a] {
     padding: 0.3em 0.2em;
     border: 2px solid var(--dark);
     border-radius: 0.25em;
@@ -415,25 +415,25 @@ button[data-v-b168c94e]:disabled {
     flex-direction: row;
     flex-wrap: nowrap;
 }
-*[data-v-0ddd624a]:focus:not(.focus-visible) {
+*[data-v-cd02bf6a]:focus:not(.focus-visible) {
     /*  https://css-tricks.com/keyboard-only-focus-styles/  */
     outline: none;
 }
-.answer[data-v-0ddd624a]:hover, .answer[data-v-0ddd624a]:focus, .answer[data-v-0ddd624a]:active, .answer[data-v-0ddd624a]:focus-visible {
+.answer[data-v-cd02bf6a]:hover, .answer[data-v-cd02bf6a]:focus, .answer[data-v-cd02bf6a]:active, .answer[data-v-cd02bf6a]:focus-visible {
     border-color: var(--ardc-purple);
     color: var(--white);
 }
-.answer-radiobutton[data-v-0ddd624a] {
+.answer-radiobutton[data-v-cd02bf6a] {
     width: min-content;
 }
-.answer-points[data-v-0ddd624a] {
+.answer-points[data-v-cd02bf6a] {
     width: min-content;
     display: none;
 }
-.answer-text[data-v-0ddd624a] {
+.answer-text[data-v-cd02bf6a] {
     width: 100%;
 }
-.answer-elaboration[data-v-0ddd624a] {
+.answer-elaboration[data-v-cd02bf6a] {
     margin-left: 1.5em;
     margin-right: 3em;
     margin-top: 0.2em;

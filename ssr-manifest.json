@@ -107,7 +107,7 @@
   "pages/software/v0.2/ChecklistProgressBars.vue?vue&type=style&index=0&scoped=b168c94e&lang.css": [],
   "pages/software/v0.2/ChecklistProgressBars.vue": [],
   "pages/software/v0.2/ChecklistAnswer.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/software/v0.2/ChecklistAnswer.vue?vue&type=style&index=0&scoped=0ddd624a&lang.css": [],
+  "pages/software/v0.2/ChecklistAnswer.vue?vue&type=style&index=0&scoped=cd02bf6a&lang.css": [],
   "pages/software/v0.2/ChecklistAnswer.vue": [],
   "pages/software/v0.2/ChecklistQuestion.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/software/v0.2/ChecklistQuestion.vue?vue&type=style&index=0&scoped=59cf4474&lang.css": [],
@@ -187,8 +187,8 @@
     "/ssg/assets/index.page.d955019a.css",
     "/ssg/assets/global.b082e789.css"
   ],
-  "index.page.44327ebe.js": [
-    "/ssg/assets/index.page.621914f8.css",
+  "index.page.034d9ea8.js": [
+    "/ssg/assets/index.page.3aae5c32.css",
     "/ssg/assets/global.b082e789.css"
   ],
   "_error.page.de708dd4.js": [],
