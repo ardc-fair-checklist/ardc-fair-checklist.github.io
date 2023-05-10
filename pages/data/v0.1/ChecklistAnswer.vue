@@ -16,7 +16,9 @@
                 role="presentation"
                 tabindex="-1"
                 aria-label=""
+                autocomplete="off"
             >
+            <!-- autocomplete off for correctly resetting form state on refresh in firefox -->
         </div>
         <div class="answer-points">
             (+{{ answer.score }})
