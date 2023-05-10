@@ -741,19 +741,19 @@ const questions = [
     answers: [
       {
         id: "a:q1:a0",
-        elaboration: "E.g. the software is identified by name, but there is no information on the version of the software, or where to get a copy.",
+        elaboration: "E.g. the software is identified by URL or DOI, but the software source files are proprietary, closed-source, or otherwise hidden from public view.",
         score: 0,
-        text: "Maybe"
+        text: "No, the identifiers only resolve to a page about the software, not the source files themselves."
       },
       {
         id: "a:q1:a1",
-        elaboration: "E.g. the software is identified by URL or DOI, but the software source files are under embargo, proprietary, closed-source, or otherwise hidden from public view.",
+        elaboration: "E.g. the software is identified by name and version, but there is no information where to get a copy.",
         score: 1,
-        text: "Yes for at least some of the identifiers, but the identifier only resolves to a page about the software, not the source files themselves."
+        text: "Maybe"
       },
       {
         id: "a:q1:a2",
-        elaboration: "E.g. the software is identified by its URL or DOI.",
+        elaboration: "E.g. the software is identified by its URL or DOI. Or, a copy of the software may be obtained after going through an administrative procedure, e.g. vetting, sending an email, etc.",
         score: 2,
         text: "Yes for at least some of the identifiers"
       }
@@ -1024,7 +1024,7 @@ const questions = [
         id: "r:q1:a1",
         elaboration: "",
         score: 1,
-        text: "Yes, the software is available"
+        text: "Yes, the software's source files are available"
       },
       {
         id: "r:q1:a2",
