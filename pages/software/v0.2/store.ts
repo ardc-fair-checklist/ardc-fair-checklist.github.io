@@ -17,9 +17,8 @@ export const setCompliance = (newCompliance: number[]) => {
     state.value.compliance = newCompliance;
 };
 export const setQuestions = (questionsNoIndex: Question[]) => {
-    // add index
-    state.value.questions = (questionsNoIndex as Question[])
-        .map((q, i) => ({ ...q, index: i }));
+    const addIndex = (q: Question, i: number) => ({ ...q, index: i });
+    state.value.questions = (questionsNoIndex as Question[]).map(addIndex);
     state.value.compliance = new Array(questionsNoIndex.length).fill(0);
 };
 
