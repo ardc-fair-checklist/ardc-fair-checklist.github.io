@@ -18,7 +18,14 @@ export const setCompliance = (newCompliance: number[]) => {
 };
 export const setQuestions = (questionsNoIndex: Question[]) => {
     const addIndex = (q: Question, i: number) => ({ ...q, index: i });
-    state.value.questions = (questionsNoIndex as Question[]).map(addIndex);
+    const normalizeScorePerQuestion = (q: Question) => {
+        const maxScore = Math.max(...q.answers.map(a => a.score));
+        const normalizedAnswers = q.answers.map(a => ({ ...a, score: a.score / maxScore }));
+        return { ...q, answers: normalizedAnswers };
+    };
+    state.value.questions = (questionsNoIndex as Question[])
+        .map(normalizeScorePerQuestion)
+        .map(addIndex);
     state.value.compliance = new Array(questionsNoIndex.length).fill(0);
 };
 
