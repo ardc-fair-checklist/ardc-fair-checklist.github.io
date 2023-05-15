@@ -14,8 +14,7 @@ import './app.css';
 onMounted(() => {
     const urlWithDuplicateSlashes = [
         import.meta.env.BASE_URL,
-        'software',
-        latest.value.software
+        latest.value
     ].join('/');
     const url = `/${urlWithDuplicateSlashes.split('/').filter(e => e !== '').join('/')}`;
     window.location.href = url;
