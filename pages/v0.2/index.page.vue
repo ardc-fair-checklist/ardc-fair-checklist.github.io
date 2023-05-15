@@ -4,10 +4,6 @@
         <ChecklistHeader />
         <main>
             <h1>Self-assessment for FAIR research software</h1>
-            <p class="data-variant">
-                For the data variant, click
-                <ChecklistLink v-bind:href="linkToDataChecklist">here</ChecklistLink>.
-            </p>
             <ChecklistBannerWIP />
             <ChecklistBannerVersions />
             <ChecklistBannerParams />
@@ -40,7 +36,6 @@
 <script setup lang='ts'>
 import { onMounted } from 'vue';
 import { ref } from 'vue';
-import { latest } from '~/renderer/versions';
 import { fairQueryParams } from './store';
 import { nQuestions } from './store';
 import { principles } from './store';
@@ -55,7 +50,6 @@ import ChecklistBannerParams from './ChecklistBannerParams.vue';
 import ChecklistBannerVersions from './ChecklistBannerVersions.vue';
 import ChecklistBannerWIP from './ChecklistBannerWIP.vue';
 import ChecklistHeader from './ChecklistHeader.vue';
-import ChecklistLink from './ChecklistLink.vue';
 import ChecklistPreamble from './ChecklistPreamble.vue';
 import ChecklistProgressBars from './ChecklistProgressBars.vue';
 import ChecklistQuestion from './ChecklistQuestion.vue';
@@ -108,8 +102,6 @@ onMounted(() => {
         window.history.pushState({}, '', preserve);
     };
 });
-
-const linkToDataChecklist = `${import.meta.env.BASE_URL}data/${latest.value.data}`;
 </script>
 
 <style scoped>
@@ -151,11 +143,6 @@ h2 {
     margin-right: auto;
     text-align: center;
 }
-p.data-variant {
-    margin-bottom: 4em;
-    margin-top: 0em;
-}
-
 p.principle-quote {
     font-size: 1.3em;
     font-style: italic;

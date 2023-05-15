@@ -10,9 +10,7 @@
             <template v-if="nQuestions.total > 0">
                 <p>
                     Answer the questions below to assess
-                    your software's FAIRness, or switch to the checklist for
-                    <ChecklistLink v-bind:href="linkToDataChecklist">data</ChecklistLink>
-                    instead.
+                    your software's FAIRness.
                 </p>
                 <div v-for="principle in principles" v-bind:key="principle">
                     <h2>{{ getFullname(principle) }}</h2>
@@ -40,7 +38,6 @@
 <script setup lang='ts'>
 import { onMounted } from 'vue';
 import { ref } from 'vue';
-import { latest } from '~/renderer/versions';
 import { fairQueryParams } from './store';
 import { nQuestions } from './store';
 import { principles } from './store';
@@ -55,7 +52,6 @@ import ChecklistBannerParams from './ChecklistBannerParams.vue';
 import ChecklistBannerVersions from './ChecklistBannerVersions.vue';
 import ChecklistBannerWIP from './ChecklistBannerWIP.vue';
 import ChecklistHeader from './ChecklistHeader.vue';
-import ChecklistLink from './ChecklistLink.vue';
 import ChecklistProgressBars from './ChecklistProgressBars.vue';
 import ChecklistQuestion from './ChecklistQuestion.vue';
 import { questions as data } from './questions.json';
@@ -101,8 +97,6 @@ onMounted(() => {
         window.history.pushState({}, '', preserve);
     };
 });
-
-const linkToDataChecklist = `${import.meta.env.BASE_URL}data/${latest.value.data}`;
 </script>
 
 <style scoped>
