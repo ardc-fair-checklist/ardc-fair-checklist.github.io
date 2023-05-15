@@ -1,3 +1,10 @@
+:root {
+    background-image: linear-gradient(165deg, black 55%, var(--ardc-purple) 110%);
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+}
+
 #app {
     min-width: 30em;
     max-width: 50em;
@@ -5,21 +12,4 @@
     margin-right: auto;
     padding-left: 3em;
     padding-right: 3em;
-    text-align: center;
-}
-
-@media screen and (min-width: 70em) {
-    :root {
-        font-size: 112%;
-    }
-}
-@media screen and (max-width: 70em) {
-    :root {
-        font-size: 100%;
-    }
-}
-@media screen and (max-width: 41.5em) {
-    :root {
-        font-size: 70%;
-    }
 }
