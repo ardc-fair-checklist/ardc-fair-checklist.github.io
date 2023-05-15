@@ -75,7 +75,7 @@ relevant version info from `npm list`:
 
 ## Versioning strategy
 
-In the current app, there are multiple entities that could be versioned: the data questions JSON, the data questions app, the software questions JSON, and the software questions app. The DRY (Don't Repeat Yourself) principle would suggest to make one app that can be used to render data as well as software. However, this becomes more difficult to maintain as more versions of the data questions and software questions (and perhaps new future topics) are introduced. We therefore chose to have one directory for each combination of topic and version. That one directory contains all the components, along with all the data needed to render the app for that particular topic and that particular version. Naturally, this comes at the cost of having duplicate code. Each combination of topic and version is assigned its own route, and can choose to do its own processing on supplied query parameters. Only the contents of `public/`, `renderer/`, and `server/` are shared across topics and versions.
+In the current app, there are multiple entities that could be versioned, namely the software questions JSON and the software questions app. The DRY (Don't Repeat Yourself) principle would suggest to make one app that can be used to render any version of the questions. However, this becomes more difficult to maintain as more versions of the questions are introduced. We therefore chose to have one directory for each  version. That one directory contains all the components, along with all the data needed to render the app for that particular version of the questions. Naturally, this comes at the cost of having duplicate code between versions. Each version is assigned its own route, and can choose to do its own processing on supplied query parameters. Only the contents of `public/`, `renderer/`, and `server/` are shared across versions.
 
 ## Publishing
 
@@ -87,31 +87,31 @@ There is a GitHub action `/.github/workflows/publish.yml` that builds the projec
 
 There is a GitHub action `/.github/workflows/zenodraft.yml` that publishes a snapshot of `main` to Zenodo, makes a release on GitHub, and tags the corresponding SHA. The workflow purposely does not finalize the depostion on Zenodo. It must be published manually by clicking the "Publish" button on Zenodo after inspection of the draft's metadata. The GitHub action can be triggered manually via the GitHub user interface.
 
-## Adding a new version of an existing topic
+## Adding a new version
 
-Let's say the topic for which you want to make a new version is `software`, the current latest version is `v0.2`, and the version you want to make is `v1`. You would do the following:
+Let's say the current latest version is `v0.2`, and the version you want to make is `v1`. You would do the following:
 
 ```shell
 cd <project root>
-cp -r pages/software/v0.2 pages/software/v1
+cp -r pages/v0.2 pages/v1
 ```
 
 Then, add the new version string to the relevant part of the state in `versions.ts`:
 
 ```shell
-nano renderer/versions.ts 
+nano renderer/versions.ts
 ```
 
-Where it says
+where it says
 
 ```ts
-software: ['v0.1', 'v0.2']
+['v0.1', 'v0.2']
 ```
 
 add the next version identifier:
 
 ```ts
-software: ['v0.1', 'v0.2', 'v1']
+['v0.1', 'v0.2', 'v1']
 ```
 
 Start the development server:
@@ -127,54 +127,9 @@ Check browser:
 open http://localhost:3000
 ```
 
-Now make whatever changes you want under `pages/software/v1`. The page should update
+Now make whatever changes you want under `pages/v1`. The page should update
 through hot module reloading. Existing badges that point to any version that isn't
 the latest should still resolve to the correct (older) version page, but will now display a message prompting users to update.
-
-## Adding a new topic
-
-Let's say you want to have a checklist for services in addition to the software and data checklists that are already there. You'd do the following:
-
-Pick the topic and version that are the best match for what you want to make, let's say that is `pages/software/v0.2`:
-
-```shell
-cd <project root>
-mkdir pages/services
-cp -r pages/software/v0.2 pages/services/v0.1
-```
-
-In `versions.ts` where it says
-
-```ts
-data: ['v0.1', 'v0.2'],
-software: ['v0.1', 'v0.2']
-```
-
-add the relevant state:
-
-```ts
-data: ['v0.1', 'v0.2'],
-services: ['v0.1'],
-software: ['v0.1', 'v0.2']
-```
-
-And add a getter method below that.
-
-Next, start the development server with:
-
-```shell
-npm run dev
-```
-
-Check browser:
-
-```shell
-# add BASE_URL if you have it enabled, see vite.config.js
-open http://localhost:3000
-```
-
-Now make whatever changes you want under `pages/services/v0.1`. The page should update through hot module reloading.
-
 
 ## Notes
 

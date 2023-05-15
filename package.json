@@ -1,6 +1,6 @@
 {
-    "name": "fair-checklists",
-    "description": "Prerendered web app for interactive FAIR software and FAIR data checklists",
+    "name": "ardc-fair-checklist",
+    "description": "Prerendered web app for interactive FAIR software checklist",
     "keywords": [
         "Accessible",
         "ARDC",

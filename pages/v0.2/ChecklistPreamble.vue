@@ -39,9 +39,16 @@
                 </li>
             </ol>
             <p>
-                The questions are inspired by the outcomes of the FAIR4RS Working Group (see
-                <a href="https://doi.org/10.15497/RDA00068" target="_blank" v-bind:tabindex="showCollapsedHowtouse ? -1 : 0">
-                doi:10.15497/RDA00068</a>). We gratefully acknowledge their contribution. <span
+                The questions are inspired by
+                <a
+                    href="https://ardc.edu.au/resource/fair-data-self-assessment-tool/"
+                    target="_blank">ARDC's FAIR data self-assessment tool</a>
+                and by the outcomes of the FAIR4RS Working Group (see
+                <a
+                    href="https://doi.org/10.15497/RDA00068"
+                    target="_blank"
+                    v-bind:tabindex="showCollapsedHowtouse ? -1 : 0">doi:10.15497/RDA00068</a>).
+                We gratefully acknowledge their contribution. <span
                     v-bind:tabindex="showCollapsedHowtouse ? -1 : 0"
                     v-on:click="collapseHowtouse"
                     v-on:keydown.enter="collapseHowtouse"

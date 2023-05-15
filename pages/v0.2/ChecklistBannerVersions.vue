@@ -18,7 +18,7 @@ import './app.css';
 const link = computed(() => [
     window.location.origin,
     ...window.location.pathname.split('/').filter(e => e !== '').slice(0, -1),
-    latest.value.software
+    latest.value
 ].join('/'));
 
 const showBanner = ref(false);
@@ -26,7 +26,7 @@ const showBanner = ref(false);
 onMounted(() => {
     const { urlPathname } = usePageContext();
     const myVersion = urlPathname.split('/').filter(e => e !== '').slice(-1)[0];
-    showBanner.value = myVersion !== latest.value.software;
+    showBanner.value = myVersion !== latest.value;
 });
 </script>
 
