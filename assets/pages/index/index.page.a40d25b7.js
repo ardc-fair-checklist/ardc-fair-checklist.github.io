@@ -1,5 +1,5 @@
-import { l as latest } from "../../../chunk-18cccac3.js";
-import { d as defineComponent, o as onMounted, t as createElementBlock, u as openBlock } from "../../../chunk-34b0814a.js";
+import { l as latest } from "../../chunk-d031348f.js";
+import { d as defineComponent, o as onMounted, t as createElementBlock, u as openBlock } from "../../chunk-546a4201.js";
 const app = "";
 const _sfc_main = /* @__PURE__ */ defineComponent({
   __name: "index.page",
@@ -7,8 +7,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     onMounted(() => {
       const urlWithDuplicateSlashes = [
         "/ssg/",
-        "data",
-        latest.value.data
+        latest.value
       ].join("/");
       const url = `/${urlWithDuplicateSlashes.split("/").filter((e) => e !== "").join("/")}`;
       window.location.href = url;

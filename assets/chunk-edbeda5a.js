@@ -1,4 +1,4 @@
-import { a as hyphenate, i as isString, w as watchPostEffect, o as onMounted, b as onUnmounted, c as createHydrationRenderer, g as getCurrentInstance, F as Fragment, S as Static, e as extend, f as isOn, j as isModelListener, k as isFunction, l as isArray, m as camelize, n as capitalize, p as isSpecialBooleanAttr, q as includeBooleanAttr, r as callWithAsyncErrorHandling } from "./chunk-34b0814a.js";
+import { a as hyphenate, i as isString, c as createHydrationRenderer, w as watchPostEffect, o as onMounted, b as onUnmounted, g as getCurrentInstance, F as Fragment, S as Static, e as extend, f as isOn, j as isModelListener, k as isFunction, l as isArray, m as camelize, n as capitalize, p as isSpecialBooleanAttr, q as includeBooleanAttr, r as callWithAsyncErrorHandling, s as inject } from "./chunk-546a4201.js";
 const svgNS = "http://www.w3.org/2000/svg";
 const doc = typeof document !== "undefined" ? document : null;
 const templateContainer = doc && /* @__PURE__ */ doc.createElement("template");
@@ -76,13 +76,13 @@ function patchStyle(el, prev, next) {
   const style = el.style;
   const isCssString = isString(next);
   if (next && !isCssString) {
-    for (const key in next) {
-      setStyle(style, key, next[key]);
+    for (const key2 in next) {
+      setStyle(style, key2, next[key2]);
     }
     if (prev && !isString(prev)) {
-      for (const key in prev) {
-        if (next[key] == null) {
-          setStyle(style, key, "");
+      for (const key2 in prev) {
+        if (next[key2] == null) {
+          setStyle(style, key2, "");
         }
       }
     }
@@ -140,44 +140,44 @@ function autoPrefix(style, rawName) {
   return rawName;
 }
 const xlinkNS = "http://www.w3.org/1999/xlink";
-function patchAttr(el, key, value, isSVG, instance) {
-  if (isSVG && key.startsWith("xlink:")) {
+function patchAttr(el, key2, value, isSVG, instance) {
+  if (isSVG && key2.startsWith("xlink:")) {
     if (value == null) {
-      el.removeAttributeNS(xlinkNS, key.slice(6, key.length));
+      el.removeAttributeNS(xlinkNS, key2.slice(6, key2.length));
     } else {
-      el.setAttributeNS(xlinkNS, key, value);
+      el.setAttributeNS(xlinkNS, key2, value);
     }
   } else {
-    const isBoolean = isSpecialBooleanAttr(key);
+    const isBoolean = isSpecialBooleanAttr(key2);
     if (value == null || isBoolean && !includeBooleanAttr(value)) {
-      el.removeAttribute(key);
+      el.removeAttribute(key2);
     } else {
-      el.setAttribute(key, isBoolean ? "" : value);
+      el.setAttribute(key2, isBoolean ? "" : value);
     }
   }
 }
-function patchDOMProp(el, key, value, prevChildren, parentComponent, parentSuspense, unmountChildren) {
-  if (key === "innerHTML" || key === "textContent") {
+function patchDOMProp(el, key2, value, prevChildren, parentComponent, parentSuspense, unmountChildren) {
+  if (key2 === "innerHTML" || key2 === "textContent") {
     if (prevChildren) {
       unmountChildren(prevChildren, parentComponent, parentSuspense);
     }
-    el[key] = value == null ? "" : value;
+    el[key2] = value == null ? "" : value;
     return;
   }
-  if (key === "value" && el.tagName !== "PROGRESS" && !el.tagName.includes("-")) {
+  if (key2 === "value" && el.tagName !== "PROGRESS" && !el.tagName.includes("-")) {
     el._value = value;
     const newValue = value == null ? "" : value;
     if (el.value !== newValue || el.tagName === "OPTION") {
       el.value = newValue;
     }
     if (value == null) {
-      el.removeAttribute(key);
+      el.removeAttribute(key2);
     }
     return;
   }
   let needRemove = false;
   if (value === "" || value == null) {
-    const type = typeof el[key];
+    const type = typeof el[key2];
     if (type === "boolean") {
       value = includeBooleanAttr(value);
     } else if (value == null && type === "string") {
@@ -189,10 +189,10 @@ function patchDOMProp(el, key, value, prevChildren, parentComponent, parentSuspe
     }
   }
   try {
-    el[key] = value;
+    el[key2] = value;
   } catch (e) {
   }
-  needRemove && el.removeAttribute(key);
+  needRemove && el.removeAttribute(key2);
 }
 function addEventListener(el, event, handler, options) {
   el.addEventListener(event, handler, options);
@@ -259,52 +259,52 @@ function patchStopImmediatePropagation(e, value) {
   }
 }
 const nativeOnRE = /^on[a-z]/;
-const patchProp = (el, key, prevValue, nextValue, isSVG = false, prevChildren, parentComponent, parentSuspense, unmountChildren) => {
-  if (key === "class") {
+const patchProp = (el, key2, prevValue, nextValue, isSVG = false, prevChildren, parentComponent, parentSuspense, unmountChildren) => {
+  if (key2 === "class") {
     patchClass(el, nextValue, isSVG);
-  } else if (key === "style") {
+  } else if (key2 === "style") {
     patchStyle(el, prevValue, nextValue);
-  } else if (isOn(key)) {
-    if (!isModelListener(key)) {
-      patchEvent(el, key, prevValue, nextValue, parentComponent);
+  } else if (isOn(key2)) {
+    if (!isModelListener(key2)) {
+      patchEvent(el, key2, prevValue, nextValue, parentComponent);
     }
-  } else if (key[0] === "." ? (key = key.slice(1), true) : key[0] === "^" ? (key = key.slice(1), false) : shouldSetAsProp(el, key, nextValue, isSVG)) {
-    patchDOMProp(el, key, nextValue, prevChildren, parentComponent, parentSuspense, unmountChildren);
+  } else if (key2[0] === "." ? (key2 = key2.slice(1), true) : key2[0] === "^" ? (key2 = key2.slice(1), false) : shouldSetAsProp(el, key2, nextValue, isSVG)) {
+    patchDOMProp(el, key2, nextValue, prevChildren, parentComponent, parentSuspense, unmountChildren);
   } else {
-    if (key === "true-value") {
+    if (key2 === "true-value") {
       el._trueValue = nextValue;
-    } else if (key === "false-value") {
+    } else if (key2 === "false-value") {
       el._falseValue = nextValue;
     }
-    patchAttr(el, key, nextValue, isSVG);
+    patchAttr(el, key2, nextValue, isSVG);
   }
 };
-function shouldSetAsProp(el, key, value, isSVG) {
+function shouldSetAsProp(el, key2, value, isSVG) {
   if (isSVG) {
-    if (key === "innerHTML" || key === "textContent") {
+    if (key2 === "innerHTML" || key2 === "textContent") {
       return true;
     }
-    if (key in el && nativeOnRE.test(key) && isFunction(value)) {
+    if (key2 in el && nativeOnRE.test(key2) && isFunction(value)) {
       return true;
     }
     return false;
   }
-  if (key === "spellcheck" || key === "draggable" || key === "translate") {
+  if (key2 === "spellcheck" || key2 === "draggable" || key2 === "translate") {
     return false;
   }
-  if (key === "form") {
+  if (key2 === "form") {
     return false;
   }
-  if (key === "list" && el.tagName === "INPUT") {
+  if (key2 === "list" && el.tagName === "INPUT") {
     return false;
   }
-  if (key === "type" && el.tagName === "TEXTAREA") {
+  if (key2 === "type" && el.tagName === "TEXTAREA") {
     return false;
   }
-  if (nativeOnRE.test(key) && isString(value)) {
+  if (nativeOnRE.test(key2) && isString(value)) {
     return false;
   }
-  return key in el;
+  return key2 in el;
 }
 function useCssVars(getter) {
   const instance = getCurrentInstance();
@@ -349,8 +349,8 @@ function setVarsOnVNode(vnode, vars) {
 function setVarsOnNode(el, vars) {
   if (el.nodeType === 1) {
     const style = el.style;
-    for (const key in vars) {
-      style.setProperty(`--${key}`, vars[key]);
+    for (const key2 in vars) {
+      style.setProperty(`--${key2}`, vars[key2]);
     }
   }
 }
@@ -424,9 +424,21 @@ function normalizeContainer(container) {
   }
   return container;
 }
+const key = Symbol("description");
+const usePageContext = () => {
+  const pageContext = inject(key);
+  if (!pageContext)
+    throw new Error("setPageContext() not called in parent");
+  return pageContext;
+};
+const setPageContext = (app, pageContext) => {
+  app.provide(key, pageContext);
+};
 export {
-  withModifiers as a,
+  useCssVars as a,
+  withModifiers as b,
   createSSRApp as c,
-  useCssVars as u,
+  setPageContext as s,
+  usePageContext as u,
   withKeys as w
 };
