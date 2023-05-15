@@ -27,8 +27,7 @@ repository-code: 'https://github.com/ardc-fair-checklist/ssg'
 url: 'https://ardc-fair-checklist.github.io/ssg/'
 abstract: >-
   The software for a self-assessment web form that allows authors to evaluate the FAIRness of their
-  research software and data. In the case of research software, the form yields a badge that authors
-  can put in their project's README.
+  research software, resulting in a badge that they can put in their project's README.
 keywords:
   - FAIR software
   - FAIR data
