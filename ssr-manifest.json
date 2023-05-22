@@ -10,7 +10,7 @@
   "pages/v0.1/ChecklistAbout.vue?vue&type=style&index=0&scoped=b5f9b665&lang.css": [],
   "pages/v0.1/ChecklistAbout.vue": [],
   "pages/v0.1/ChecklistBadgeSnippets.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/v0.1/ChecklistBadgeSnippets.vue?vue&type=style&index=0&scoped=e2c27072&lang.css": [],
+  "pages/v0.1/ChecklistBadgeSnippets.vue?vue&type=style&index=0&scoped=047adcf4&lang.css": [],
   "pages/v0.1/ChecklistBadgeSnippets.vue": [],
   "pages/v0.1/ChecklistBannerParams.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/v0.1/ChecklistBannerParams.vue?vue&type=style&index=0&scoped=517424f2&lang.css": [],
@@ -20,30 +20,30 @@
   "pages/v0.1/ChecklistLink.vue": [],
   "pages/v0.1/app.css": [],
   "pages/v0.1/ChecklistBannerVersions.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/v0.1/ChecklistBannerVersions.vue?vue&type=style&index=0&scoped=cadd1925&lang.css": [],
+  "pages/v0.1/ChecklistBannerVersions.vue?vue&type=style&index=0&scoped=ce817809&lang.css": [],
   "pages/v0.1/ChecklistBannerVersions.vue": [],
   "pages/v0.1/ChecklistBannerWIP.vue?vue&type=style&index=0&scoped=30ff4474&lang.css": [],
   "pages/v0.1/ChecklistBannerWIP.vue": [],
-  "pages/v0.1/ChecklistHeader.vue?vue&type=style&index=0&scoped=4511bf2a&lang.css": [],
+  "pages/v0.1/ChecklistHeader.vue?vue&type=style&index=0&scoped=c3f295e5&lang.css": [],
   "pages/v0.1/ChecklistHeader.vue": [],
   "pages/v0.1/ChecklistProgressBars.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/v0.1/ChecklistProgressBars.vue?vue&type=style&index=0&scoped=cd51ae3c&lang.css": [],
   "pages/v0.1/ChecklistProgressBars.vue": [],
   "pages/v0.1/ChecklistAnswer.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/v0.1/ChecklistAnswer.vue?vue&type=style&index=0&scoped=ff7f7829&lang.css": [],
+  "pages/v0.1/ChecklistAnswer.vue?vue&type=style&index=0&scoped=6084355d&lang.css": [],
   "pages/v0.1/ChecklistAnswer.vue": [],
   "pages/v0.1/ChecklistQuestion.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/v0.1/ChecklistQuestion.vue?vue&type=style&index=0&scoped=f251147a&lang.css": [],
+  "pages/v0.1/ChecklistQuestion.vue?vue&type=style&index=0&scoped=282cc85b&lang.css": [],
   "pages/v0.1/ChecklistQuestion.vue": [],
   "pages/v0.1/questions.json": [],
   "pages/v0.1/index.page.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/v0.1/index.page.vue?vue&type=style&index=0&scoped=28cabef4&lang.css": [],
+  "pages/v0.1/index.page.vue?vue&type=style&index=0&scoped=b6c90f4e&lang.css": [],
   "pages/v0.1/index.page.vue": [],
   "pages/v0.2/store.ts": [],
   "pages/v0.2/ChecklistAbout.vue?vue&type=style&index=0&scoped=11cecc46&lang.css": [],
   "pages/v0.2/ChecklistAbout.vue": [],
   "pages/v0.2/ChecklistBadgeSnippets.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/v0.2/ChecklistBadgeSnippets.vue?vue&type=style&index=0&scoped=3edacc42&lang.css": [],
+  "pages/v0.2/ChecklistBadgeSnippets.vue?vue&type=style&index=0&scoped=7804cc5a&lang.css": [],
   "pages/v0.2/ChecklistBadgeSnippets.vue": [],
   "pages/v0.2/ChecklistBannerParams.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/v0.2/ChecklistBannerParams.vue?vue&type=style&index=0&scoped=38867b75&lang.css": [],
@@ -51,28 +51,28 @@
   "pages/v0.2/ChecklistLink.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/v0.2/app.css": [],
   "pages/v0.2/ChecklistBannerVersions.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/v0.2/ChecklistBannerVersions.vue?vue&type=style&index=0&scoped=914cf068&lang.css": [],
+  "pages/v0.2/ChecklistBannerVersions.vue?vue&type=style&index=0&scoped=699196ea&lang.css": [],
   "pages/v0.2/ChecklistBannerVersions.vue": [],
   "pages/v0.2/ChecklistBannerWIP.vue?vue&type=style&index=0&scoped=4661a9dc&lang.css": [],
   "pages/v0.2/ChecklistBannerWIP.vue": [],
-  "pages/v0.2/ChecklistHeader.vue?vue&type=style&index=0&scoped=10cc80ad&lang.css": [],
+  "pages/v0.2/ChecklistHeader.vue?vue&type=style&index=0&scoped=7d736891&lang.css": [],
   "pages/v0.2/ChecklistHeader.vue": [],
   "../../../../../venn-the-software.svg": [],
   "pages/v0.2/ChecklistPreamble.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/v0.2/ChecklistPreamble.vue?vue&type=style&index=0&scoped=729f5c83&lang.css": [],
+  "pages/v0.2/ChecklistPreamble.vue?vue&type=style&index=0&scoped=6b02313b&lang.css": [],
   "pages/v0.2/ChecklistPreamble.vue": [],
   "pages/v0.2/ChecklistProgressBars.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/v0.2/ChecklistProgressBars.vue?vue&type=style&index=0&scoped=a736e01a&lang.css": [],
+  "pages/v0.2/ChecklistProgressBars.vue?vue&type=style&index=0&scoped=53cea97a&lang.css": [],
   "pages/v0.2/ChecklistProgressBars.vue": [],
   "pages/v0.2/ChecklistAnswer.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/v0.2/ChecklistAnswer.vue?vue&type=style&index=0&scoped=285baffd&lang.css": [],
+  "pages/v0.2/ChecklistAnswer.vue?vue&type=style&index=0&scoped=343daf34&lang.css": [],
   "pages/v0.2/ChecklistAnswer.vue": [],
   "pages/v0.2/ChecklistQuestion.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/v0.2/ChecklistQuestion.vue?vue&type=style&index=0&scoped=b0770d1e&lang.css": [],
+  "pages/v0.2/ChecklistQuestion.vue?vue&type=style&index=0&scoped=90d2b7b0&lang.css": [],
   "pages/v0.2/ChecklistQuestion.vue": [],
   "pages/v0.2/questions.json": [],
   "pages/v0.2/index.page.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/v0.2/index.page.vue?vue&type=style&index=0&scoped=94a35a0a&lang.css": [],
+  "pages/v0.2/index.page.vue?vue&type=style&index=0&scoped=24879415&lang.css": [],
   "pages/v0.2/index.page.vue": [],
   "node_modules/vite-plugin-ssr/dist/esm/utils/isPlainObject.js": [],
   "node_modules/vite-plugin-ssr/dist/esm/utils/stringifyStringArray.js": [],
@@ -126,16 +126,16 @@
   "node_modules/vite-plugin-ssr/dist/esm/client/router/useClientRouter.js": [],
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": [],
   "index.page.a40d25b7.js": [
-    "/ssg/assets/index.page.21e1d615.css",
-    "/ssg/assets/global.b082e789.css"
+    "/ssg/assets/index.page.975591b6.css",
+    "/ssg/assets/global.7127219c.css"
   ],
-  "index.page.d68a2251.js": [
-    "/ssg/assets/index.page.8a143880.css",
-    "/ssg/assets/global.b082e789.css"
+  "index.page.95410add.js": [
+    "/ssg/assets/index.page.e749ac6c.css",
+    "/ssg/assets/global.7127219c.css"
   ],
-  "index.page.afb4016b.js": [
-    "/ssg/assets/index.page.f8baa27e.css",
-    "/ssg/assets/global.b082e789.css"
+  "index.page.d120804f.js": [
+    "/ssg/assets/index.page.7ddf3fbd.css",
+    "/ssg/assets/global.7127219c.css"
   ],
   "_error.page.544f5ff8.js": [],
   "_default.page.client.9e4fe41b.js": [],
@@ -161,11 +161,11 @@
   ],
   "renderer/versions.ts": [
     "/ssg/assets/chunk-d031348f.js",
-    "/ssg/assets/global.b082e789.css"
+    "/ssg/assets/global.7127219c.css"
   ],
   "renderer/global.css": [
     "/ssg/assets/chunk-d031348f.js",
-    "/ssg/assets/global.b082e789.css"
+    "/ssg/assets/global.7127219c.css"
   ],
   "../../../../../netherlands-escience-center-logo.svg": [
     "/ssg/assets/chunk-048deeaf.js"

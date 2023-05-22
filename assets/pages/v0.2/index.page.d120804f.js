@@ -112,7 +112,7 @@ function _sfc_render$2(_ctx, _cache) {
   ]);
 }
 const ChecklistAbout = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["render", _sfc_render$2], ["__scopeId", "data-v-11cecc46"]]);
-const _withScopeId$2 = (n) => (pushScopeId("data-v-3edacc42"), n = n(), popScopeId(), n);
+const _withScopeId$2 = (n) => (pushScopeId("data-v-7804cc5a"), n = n(), popScopeId(), n);
 const _hoisted_1$9 = { class: "badges" };
 const _hoisted_2$5 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createBaseVNode("h2", null, "Get the badge", -1));
 const _hoisted_3$5 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createBaseVNode("h3", null, [
@@ -234,8 +234,8 @@ const _sfc_main$a = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const ChecklistBadgeSnippets_vue_vue_type_style_index_0_scoped_3edacc42_lang = "";
-const ChecklistBadgeSnippets = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["__scopeId", "data-v-3edacc42"]]);
+const ChecklistBadgeSnippets_vue_vue_type_style_index_0_scoped_7804cc5a_lang = "";
+const ChecklistBadgeSnippets = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["__scopeId", "data-v-7804cc5a"]]);
 const _hoisted_1$8 = {
   key: 0,
   class: "banner"
@@ -364,8 +364,8 @@ const _sfc_main$7 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const ChecklistBannerVersions_vue_vue_type_style_index_0_scoped_914cf068_lang = "";
-const ChecklistBannerVersions = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["__scopeId", "data-v-914cf068"]]);
+const ChecklistBannerVersions_vue_vue_type_style_index_0_scoped_699196ea_lang = "";
+const ChecklistBannerVersions = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["__scopeId", "data-v-699196ea"]]);
 const ChecklistBannerWIP_vue_vue_type_style_index_0_scoped_4661a9dc_lang = "";
 const _sfc_main$6 = {};
 const _hoisted_1$6 = { class: "banner" };
@@ -373,18 +373,18 @@ function _sfc_render$1(_ctx, _cache) {
   return openBlock(), createElementBlock("div", _hoisted_1$6, " This website is a work in progress. Note that for the time being, the number of questions in the checklist, their order, and their content is subject to change. As a result, any badges are not guaranteed to reliably restore any previous form state. ");
 }
 const ChecklistBannerWIP = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["render", _sfc_render$1], ["__scopeId", "data-v-4661a9dc"]]);
-const ChecklistHeader_vue_vue_type_style_index_0_scoped_10cc80ad_lang = "";
+const ChecklistHeader_vue_vue_type_style_index_0_scoped_7d736891_lang = "";
 const _sfc_main$5 = {};
-const _hoisted_1$5 = /* @__PURE__ */ createStaticVNode('<div class="spacer" data-v-10cc80ad></div><div class="view-source" data-v-10cc80ad><a href="https://github.com/ardc-fair-checklist/ssg/issues/new?labels=user-feedback&amp;template=10_feedback.md" data-v-10cc80ad> Report an issue </a><a href="https://github.com/ardc-fair-checklist/ssg/issues/new?labels=user-feedback&amp;template=10_feedback.md" data-v-10cc80ad><img src="' + _imports_0$2 + '" alt="octocat logo" data-v-10cc80ad></a></div>', 2);
+const _hoisted_1$5 = /* @__PURE__ */ createStaticVNode('<div class="spacer" data-v-7d736891></div><div class="view-source" data-v-7d736891><a href="https://github.com/ardc-fair-checklist/ssg/issues/new?labels=user-feedback&amp;template=10_feedback.md" data-v-7d736891> Report an issue </a><a href="https://github.com/ardc-fair-checklist/ssg/issues/new?labels=user-feedback&amp;template=10_feedback.md" data-v-7d736891><img src="' + _imports_0$2 + '" alt="octocat logo" data-v-7d736891></a></div>', 2);
 const _hoisted_3$4 = [
   _hoisted_1$5
 ];
 function _sfc_render(_ctx, _cache) {
   return openBlock(), createElementBlock("header", null, _hoisted_3$4);
 }
-const ChecklistHeader = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["render", _sfc_render], ["__scopeId", "data-v-10cc80ad"]]);
+const ChecklistHeader = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["render", _sfc_render], ["__scopeId", "data-v-7d736891"]]);
 const _imports_0 = "/ssg/venn-the-software.svg";
-const _withScopeId$1 = (n) => (pushScopeId("data-v-729f5c83"), n = n(), popScopeId(), n);
+const _withScopeId$1 = (n) => (pushScopeId("data-v-6b02313b"), n = n(), popScopeId(), n);
 const _hoisted_1$4 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("h2", null, "How to use this page", -1));
 const _hoisted_2$4 = ["tabindex", "onKeydown"];
 const _hoisted_3$3 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("ol", null, [
@@ -410,7 +410,7 @@ const _hoisted_6$1 = ["tabindex", "onKeydown"];
 const _hoisted_7$2 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("h2", null, "Definitions", -1));
 const _hoisted_8 = { key: 0 };
 const _hoisted_9 = ["tabindex", "onKeydown"];
-const _hoisted_10 = /* @__PURE__ */ createStaticVNode('<p data-v-729f5c83> For many projects, the specific copy will be some kind of nested directory tree structure with files and folders, simply what would result from a <code data-v-729f5c83>git clone</code> or <code data-v-729f5c83>svn checkout</code>, or perhaps from uncompressing a <code data-v-729f5c83>zip</code> or a <code data-v-729f5c83>tar</code> file. Some files in the tree will be source files that define the software&#39;s functional behavior, these are collectively referred to as the software source files. The other files are metadata files that come bundled with the software: </p><img src="' + _imports_0 + '" alt="venn diagram showing the definition of software" data-v-729f5c83><p data-v-729f5c83> The metadata includes files that are meant to be read by humans, such as READMEs, documentation files, source files for documentation, image files, etc. The metadata may additionally include files that are meant to be read by machines, such as package manager files (e.g. <code data-v-729f5c83>package.json</code>, <code data-v-729f5c83>pyproject.toml</code>, <code data-v-729f5c83>DESCRIPTION</code>, <code data-v-729f5c83>CMakeLists.txt</code>, <code data-v-729f5c83>setup.cfg</code>, etc.), citation files (e.g. <code data-v-729f5c83>CITATION.cff</code>, <code data-v-729f5c83>codemeta.json</code>), publishing files (<code data-v-729f5c83>.zenodo.json</code>), etc. </p>', 3);
+const _hoisted_10 = /* @__PURE__ */ createStaticVNode('<p data-v-6b02313b> For many projects, the specific copy will be some kind of nested directory tree structure with files and folders, simply what would result from a <code data-v-6b02313b>git clone</code> or <code data-v-6b02313b>svn checkout</code>, or perhaps from uncompressing a <code data-v-6b02313b>zip</code> or a <code data-v-6b02313b>tar</code> file. Some files in the tree will be source files that define the software&#39;s functional behavior, these are collectively referred to as the software source files. The other files are metadata files that come bundled with the software: </p><img src="' + _imports_0 + '" alt="venn diagram showing the definition of software" data-v-6b02313b><p data-v-6b02313b> The metadata includes files that are meant to be read by humans, such as READMEs, documentation files, source files for documentation, image files, etc. The metadata may additionally include files that are meant to be read by machines, such as package manager files (e.g. <code data-v-6b02313b>package.json</code>, <code data-v-6b02313b>pyproject.toml</code>, <code data-v-6b02313b>DESCRIPTION</code>, <code data-v-6b02313b>CMakeLists.txt</code>, <code data-v-6b02313b>setup.cfg</code>, etc.), citation files (e.g. <code data-v-6b02313b>CITATION.cff</code>, <code data-v-6b02313b>codemeta.json</code>), publishing files (<code data-v-6b02313b>.zenodo.json</code>), etc. </p>', 3);
 const _hoisted_13 = ["tabindex"];
 const _hoisted_14 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("p", null, " Let's get started! ", -1));
 const _hoisted_15 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("div", { class: "vspace" }, null, -1));
@@ -506,13 +506,13 @@ const _sfc_main$4 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const ChecklistPreamble_vue_vue_type_style_index_0_scoped_729f5c83_lang = "";
-const ChecklistPreamble = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-729f5c83"]]);
+const ChecklistPreamble_vue_vue_type_style_index_0_scoped_6b02313b_lang = "";
+const ChecklistPreamble = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-6b02313b"]]);
 const _hoisted_1$3 = { class: "footer" };
 const _hoisted_2$3 = { class: "inner" };
 const _hoisted_3$2 = { class: "another-inner" };
 const _hoisted_4$1 = { class: "progressbars" };
-const _hoisted_5$1 = /* @__PURE__ */ createStaticVNode('<div class="labels" data-v-a736e01a><div class="row" data-v-a736e01a><div class="label" data-v-a736e01a> Findable </div></div><div class="row" data-v-a736e01a><div class="label" data-v-a736e01a> Accessible </div></div><div class="row" data-v-a736e01a><div class="label" data-v-a736e01a> Interoperable </div></div><div class="row" data-v-a736e01a><div class="label" data-v-a736e01a> Reusable </div></div></div><div class="bars" data-v-a736e01a><div class="row" data-v-a736e01a><div class="bar bar-bg" data-v-a736e01a><div class="bar blue" data-v-a736e01a></div></div></div><div class="row" data-v-a736e01a><div class="bar bar-bg" data-v-a736e01a><div class="bar pink" data-v-a736e01a></div></div></div><div class="row" data-v-a736e01a><div class="bar bar-bg" data-v-a736e01a><div class="bar yellow" data-v-a736e01a></div></div></div><div class="row" data-v-a736e01a><div class="bar bar-bg" data-v-a736e01a><div class="bar purple" data-v-a736e01a></div></div></div></div>', 2);
+const _hoisted_5$1 = /* @__PURE__ */ createStaticVNode('<div class="labels" data-v-53cea97a><div class="row" data-v-53cea97a><div class="label" data-v-53cea97a> Findable </div></div><div class="row" data-v-53cea97a><div class="label" data-v-53cea97a> Accessible </div></div><div class="row" data-v-53cea97a><div class="label" data-v-53cea97a> Interoperable </div></div><div class="row" data-v-53cea97a><div class="label" data-v-53cea97a> Reusable </div></div></div><div class="bars" data-v-53cea97a><div class="row" data-v-53cea97a><div class="bar bar-bg" data-v-53cea97a><div class="bar blue" data-v-53cea97a></div></div></div><div class="row" data-v-53cea97a><div class="bar bar-bg" data-v-53cea97a><div class="bar pink" data-v-53cea97a></div></div></div><div class="row" data-v-53cea97a><div class="bar bar-bg" data-v-53cea97a><div class="bar yellow" data-v-53cea97a></div></div></div><div class="row" data-v-53cea97a><div class="bar bar-bg" data-v-53cea97a><div class="bar purple" data-v-53cea97a></div></div></div></div>', 2);
 const _hoisted_7$1 = ["disabled"];
 const _sfc_main$3 = /* @__PURE__ */ defineComponent({
   __name: "ChecklistProgressBars",
@@ -523,10 +523,10 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
   },
   setup(__props) {
     useCssVars((_ctx) => ({
-      "1c1062a2": __props.progress.f,
-      "1c1062ac": __props.progress.a,
-      "1c10629c": __props.progress.i,
-      "1c10628a": __props.progress.r
+      "8ba4ed46": __props.progress.f,
+      "8ba4ed50": __props.progress.a,
+      "8ba4ed40": __props.progress.i,
+      "8ba4ed2e": __props.progress.r
     }));
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("div", _hoisted_1$3, [
@@ -546,8 +546,8 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const ChecklistProgressBars_vue_vue_type_style_index_0_scoped_a736e01a_lang = "";
-const ChecklistProgressBars = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-a736e01a"]]);
+const ChecklistProgressBars_vue_vue_type_style_index_0_scoped_53cea97a_lang = "";
+const ChecklistProgressBars = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-53cea97a"]]);
 const _hoisted_1$2 = ["aria-labelledby"];
 const _hoisted_2$2 = { class: "answer-radiobutton" };
 const _hoisted_3$1 = ["id", "value", "checked"];
@@ -605,8 +605,8 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const ChecklistAnswer_vue_vue_type_style_index_0_scoped_285baffd_lang = "";
-const ChecklistAnswer = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-285baffd"]]);
+const ChecklistAnswer_vue_vue_type_style_index_0_scoped_343daf34_lang = "";
+const ChecklistAnswer = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-343daf34"]]);
 const _hoisted_1$1 = { class: "question" };
 const _hoisted_2$1 = { class: "question-index shared" };
 const _hoisted_3 = { class: "shared" };
@@ -647,8 +647,8 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const ChecklistQuestion_vue_vue_type_style_index_0_scoped_b0770d1e_lang = "";
-const ChecklistQuestion = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-b0770d1e"]]);
+const ChecklistQuestion_vue_vue_type_style_index_0_scoped_90d2b7b0_lang = "";
+const ChecklistQuestion = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-90d2b7b0"]]);
 const questions = [
   {
     answers: [
@@ -1044,7 +1044,7 @@ const questions = [
     text: "Which of the following best describes the software's usage rights?"
   }
 ];
-const _withScopeId = (n) => (pushScopeId("data-v-94a35a0a"), n = n(), popScopeId(), n);
+const _withScopeId = (n) => (pushScopeId("data-v-24879415"), n = n(), popScopeId(), n);
 const _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("h1", null, "Self-assessment for FAIR research software", -1));
 const _hoisted_2 = { class: "principle-quote" };
 const _sfc_main = /* @__PURE__ */ defineComponent({
@@ -1131,8 +1131,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const index_page_vue_vue_type_style_index_0_scoped_94a35a0a_lang = "";
-const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-94a35a0a"]]);
+const index_page_vue_vue_type_style_index_0_scoped_24879415_lang = "";
+const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-24879415"]]);
 export {
   index_page as default
 };

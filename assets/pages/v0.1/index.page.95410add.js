@@ -106,7 +106,7 @@ function _sfc_render$2(_ctx, _cache) {
   ]);
 }
 const ChecklistAbout = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["render", _sfc_render$2], ["__scopeId", "data-v-b5f9b665"]]);
-const _withScopeId$1 = (n) => (pushScopeId("data-v-e2c27072"), n = n(), popScopeId(), n);
+const _withScopeId$1 = (n) => (pushScopeId("data-v-047adcf4"), n = n(), popScopeId(), n);
 const _hoisted_1$8 = { class: "badges" };
 const _hoisted_2$4 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("h2", null, "Get the badge", -1));
 const _hoisted_3$4 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("h3", null, [
@@ -227,8 +227,8 @@ const _sfc_main$9 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const ChecklistBadgeSnippets_vue_vue_type_style_index_0_scoped_e2c27072_lang = "";
-const ChecklistBadgeSnippets = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["__scopeId", "data-v-e2c27072"]]);
+const ChecklistBadgeSnippets_vue_vue_type_style_index_0_scoped_047adcf4_lang = "";
+const ChecklistBadgeSnippets = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["__scopeId", "data-v-047adcf4"]]);
 const _hoisted_1$7 = {
   key: 0,
   class: "banner"
@@ -359,8 +359,8 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const ChecklistBannerVersions_vue_vue_type_style_index_0_scoped_cadd1925_lang = "";
-const ChecklistBannerVersions = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__scopeId", "data-v-cadd1925"]]);
+const ChecklistBannerVersions_vue_vue_type_style_index_0_scoped_ce817809_lang = "";
+const ChecklistBannerVersions = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__scopeId", "data-v-ce817809"]]);
 const ChecklistBannerWIP_vue_vue_type_style_index_0_scoped_30ff4474_lang = "";
 const _sfc_main$5 = {};
 const _hoisted_1$5 = { class: "banner" };
@@ -368,16 +368,16 @@ function _sfc_render$1(_ctx, _cache) {
   return openBlock(), createElementBlock("div", _hoisted_1$5, " This website is a work in progress. Note that for the time being, the number of questions in the checklist, their order, and their content is subject to change. As a result, any badges are not guaranteed to reliably restore any previous form state. ");
 }
 const ChecklistBannerWIP = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["render", _sfc_render$1], ["__scopeId", "data-v-30ff4474"]]);
-const ChecklistHeader_vue_vue_type_style_index_0_scoped_4511bf2a_lang = "";
+const ChecklistHeader_vue_vue_type_style_index_0_scoped_c3f295e5_lang = "";
 const _sfc_main$4 = {};
-const _hoisted_1$4 = /* @__PURE__ */ createStaticVNode('<div class="spacer" data-v-4511bf2a></div><div class="view-source" data-v-4511bf2a><a href="https://github.com/ardc-fair-checklist/ssg/issues/new?labels=user-feedback&amp;template=10_feedback.md" data-v-4511bf2a> Report an issue </a><a href="https://github.com/ardc-fair-checklist/ssg/issues/new?labels=user-feedback&amp;template=10_feedback.md" data-v-4511bf2a><img src="' + _imports_0$1 + '" alt="octocat logo" data-v-4511bf2a></a></div>', 2);
+const _hoisted_1$4 = /* @__PURE__ */ createStaticVNode('<div class="spacer" data-v-c3f295e5></div><div class="view-source" data-v-c3f295e5><a href="https://github.com/ardc-fair-checklist/ssg/issues/new?labels=user-feedback&amp;template=10_feedback.md" data-v-c3f295e5> Report an issue </a><a href="https://github.com/ardc-fair-checklist/ssg/issues/new?labels=user-feedback&amp;template=10_feedback.md" data-v-c3f295e5><img src="' + _imports_0$1 + '" alt="octocat logo" data-v-c3f295e5></a></div>', 2);
 const _hoisted_3$3 = [
   _hoisted_1$4
 ];
 function _sfc_render(_ctx, _cache) {
   return openBlock(), createElementBlock("header", null, _hoisted_3$3);
 }
-const ChecklistHeader = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["render", _sfc_render], ["__scopeId", "data-v-4511bf2a"]]);
+const ChecklistHeader = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["render", _sfc_render], ["__scopeId", "data-v-c3f295e5"]]);
 const _hoisted_1$3 = { class: "footer" };
 const _hoisted_2$3 = { class: "inner" };
 const _hoisted_3$2 = { class: "another-inner" };
@@ -467,8 +467,8 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const ChecklistAnswer_vue_vue_type_style_index_0_scoped_ff7f7829_lang = "";
-const ChecklistAnswer = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-ff7f7829"]]);
+const ChecklistAnswer_vue_vue_type_style_index_0_scoped_6084355d_lang = "";
+const ChecklistAnswer = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-6084355d"]]);
 const _hoisted_1$1 = { class: "question" };
 const _hoisted_2$1 = { class: "question-index shared" };
 const _hoisted_3 = { class: "shared" };
@@ -508,8 +508,8 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const ChecklistQuestion_vue_vue_type_style_index_0_scoped_f251147a_lang = "";
-const ChecklistQuestion = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-f251147a"]]);
+const ChecklistQuestion_vue_vue_type_style_index_0_scoped_282cc85b_lang = "";
+const ChecklistQuestion = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-282cc85b"]]);
 const questions = [
   {
     answers: [
@@ -996,7 +996,7 @@ const questions = [
     text: "If they exist, how much have domain-relevant community standards been considered in writing the software? it is linked to 11"
   }
 ];
-const _withScopeId = (n) => (pushScopeId("data-v-28cabef4"), n = n(), popScopeId(), n);
+const _withScopeId = (n) => (pushScopeId("data-v-b6c90f4e"), n = n(), popScopeId(), n);
 const _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("h1", null, "Self-assessment checklist for FAIR software", -1));
 const _hoisted_2 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("p", null, " Answer the questions below to assess your software's FAIRness. ", -1));
 const _sfc_main = /* @__PURE__ */ defineComponent({
@@ -1076,8 +1076,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const index_page_vue_vue_type_style_index_0_scoped_28cabef4_lang = "";
-const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-28cabef4"]]);
+const index_page_vue_vue_type_style_index_0_scoped_b6c90f4e_lang = "";
+const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-b6c90f4e"]]);
 export {
   index_page as default
 };

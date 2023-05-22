@@ -28,11 +28,11 @@
       "_chunk-546a4201.js"
     ],
     "css": [
-      "assets/index.page.21e1d615.css"
+      "assets/index.page.975591b6.css"
     ]
   },
   "pages/v0.1/index.page.vue": {
-    "file": "assets/pages/v0.1/index.page.d68a2251.js",
+    "file": "assets/pages/v0.1/index.page.95410add.js",
     "src": "pages/v0.1/index.page.vue",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -43,11 +43,11 @@
       "_chunk-edbeda5a.js"
     ],
     "css": [
-      "assets/index.page.8a143880.css"
+      "assets/index.page.e749ac6c.css"
     ]
   },
   "pages/v0.2/index.page.vue": {
-    "file": "assets/pages/v0.2/index.page.afb4016b.js",
+    "file": "assets/pages/v0.2/index.page.d120804f.js",
     "src": "pages/v0.2/index.page.vue",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -58,11 +58,11 @@
       "_chunk-edbeda5a.js"
     ],
     "css": [
-      "assets/index.page.f8baa27e.css"
+      "assets/index.page.7ddf3fbd.css"
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.1fc2eabf.js",
+    "file": "assets/entry-client-routing.efefb9f9.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -77,7 +77,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.ec786e9b.js",
+    "file": "assets/entry-server-routing.07e1fe92.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
@@ -106,7 +106,7 @@
       "_chunk-546a4201.js"
     ],
     "css": [
-      "assets/global.b082e789.css"
+      "assets/global.7127219c.css"
     ]
   },
   "_chunk-048deeaf.js": {
@@ -116,19 +116,19 @@
     "file": "assets/chunk-bab5b76d.js"
   },
   "pages/index/index.page.css": {
-    "file": "assets/index.page.21e1d615.css",
+    "file": "assets/index.page.975591b6.css",
     "src": "pages/index/index.page.css"
   },
   "global.css": {
-    "file": "assets/global.b082e789.css",
+    "file": "assets/global.7127219c.css",
     "src": "global.css"
   },
   "pages/v0.1/index.page.css": {
-    "file": "assets/index.page.8a143880.css",
+    "file": "assets/index.page.e749ac6c.css",
     "src": "pages/v0.1/index.page.css"
   },
   "pages/v0.2/index.page.css": {
-    "file": "assets/index.page.f8baa27e.css",
+    "file": "assets/index.page.7ddf3fbd.css",
     "src": "pages/v0.2/index.page.css"
   }
 }
