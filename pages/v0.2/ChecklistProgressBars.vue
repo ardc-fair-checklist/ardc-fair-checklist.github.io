@@ -94,7 +94,7 @@ defineProps<PropType>();
     background-color: var(--light);
     border-top-left-radius: 0.5em;
     border-top-right-radius: 0.5em;
-    border: 2px solid #ccc;
+    border: 2px solid #333;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
