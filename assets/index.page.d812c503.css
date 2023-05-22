@@ -256,7 +256,7 @@ img[data-v-6b02313b] {
 }
 
 
-.footer[data-v-53cea97a] {
+.footer[data-v-7b14f3da] {
     align-items: center;
     bottom: 0;
     display: flex;
@@ -267,12 +267,12 @@ img[data-v-6b02313b] {
     position: fixed;
     width: 100%;
 }
-.inner[data-v-53cea97a] {
+.inner[data-v-7b14f3da] {
     align-items: center;
     background-color: var(--light);
     border-top-left-radius: 0.5em;
     border-top-right-radius: 0.5em;
-    border: 2px solid #ccc;
+    border: 2px solid #333;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -281,7 +281,7 @@ img[data-v-6b02313b] {
     max-width: 56em;
     width: 100%;
 }
-.another-inner[data-v-53cea97a] {
+.another-inner[data-v-7b14f3da] {
     background-color: var(--light);
     box-sizing: border-box;
     flex-grow: 1;
@@ -289,24 +289,24 @@ img[data-v-6b02313b] {
     min-width: 30em;
 }
 @media screen and (min-width: 70em) {
-.inner[data-v-53cea97a] {
+.inner[data-v-7b14f3da] {
         padding-left: 3em;
         padding-right: 3em;
 }
 }
 @media screen and (max-width: 70em) {
-.inner[data-v-53cea97a] {
+.inner[data-v-7b14f3da] {
         padding-left: 3em;
         padding-right: 3em;
 }
 }
 @media screen and (max-width: 41.5em) {
-.inner[data-v-53cea97a] {
+.inner[data-v-7b14f3da] {
         padding-left: 0.5em;
         padding-right: 0.5em;
 }
 }
-.progressbars[data-v-53cea97a] {
+.progressbars[data-v-7b14f3da] {
     background-color: var(--light);
     column-gap: 0.5em;
     display: flex;
@@ -318,54 +318,54 @@ img[data-v-6b02313b] {
     padding-right: 0.5em;
     padding-top: 0.25em;
 }
-.labels[data-v-53cea97a] {
+.labels[data-v-7b14f3da] {
     display: flex;
     flex-direction: column;
     flex-grow: 0;
 }
-.bars[data-v-53cea97a] {
+.bars[data-v-7b14f3da] {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
-.row[data-v-53cea97a] {
+.row[data-v-7b14f3da] {
     display: flex;
     flex-direction: column;
     height: 1.75em;
     justify-content: center;
     min-height: 1.75em;
 }
-.label[data-v-53cea97a] {
+.label[data-v-7b14f3da] {
     color: black;
     line-height: 2em;
     text-align: right;
 }
-.bar[data-v-53cea97a] {
+.bar[data-v-7b14f3da] {
     border-bottom-right-radius: 0.25em;
     border-top-right-radius: 0.25em;
     height: 0.7em;
 }
-.bar-bg[data-v-53cea97a] {
+.bar-bg[data-v-7b14f3da] {
     background-color: #eee;
     border: 1px solid var(--dark);
 }
-.blue[data-v-53cea97a] {
+.blue[data-v-7b14f3da] {
     background-color: var(--ardc-blue);
-    width: var(--8ba4ed46);  /* CSS Vue magic here */
+    width: var(--04fd82da);  /* CSS Vue magic here */
 }
-.pink[data-v-53cea97a] {
+.pink[data-v-7b14f3da] {
     background-color: var(--ardc-pink);
-    width: var(--8ba4ed50);  /* CSS Vue magic here */
+    width: var(--04fd82e4);  /* CSS Vue magic here */
 }
-.yellow[data-v-53cea97a] {
+.yellow[data-v-7b14f3da] {
     background-color: var(--ardc-yellow);
-    width: var(--8ba4ed40);  /* CSS Vue magic here */
+    width: var(--04fd82d4);  /* CSS Vue magic here */
 }
-.purple[data-v-53cea97a] {
+.purple[data-v-7b14f3da] {
     background-color: var(--ardc-purple);
-    width: var(--8ba4ed2e);  /* CSS Vue magic here */
+    width: var(--04fd82c2);  /* CSS Vue magic here */
 }
-button[data-v-53cea97a] {
+button[data-v-7b14f3da] {
     align-self: center;
     background-color: #eee;
     border-radius: 0.15em;
@@ -377,12 +377,12 @@ button[data-v-53cea97a] {
     margin-right: 1em;
     padding: 0.5em 1.5em;
 }
-button[data-v-53cea97a]:hover {
+button[data-v-7b14f3da]:hover {
     border: 1px solid rgba(0,0,0,0.7);
     background-color: white;
     cursor: pointer;
 }
-button[data-v-53cea97a]:disabled {
+button[data-v-7b14f3da]:disabled {
     opacity: 0.5;
 }
 
