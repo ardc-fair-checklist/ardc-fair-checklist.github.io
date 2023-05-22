@@ -164,8 +164,8 @@ button {
     align-self: center;
     background-color: #eee;
     border-radius: 0.15em;
-    border: 2px solid rgba(0, 0, 0, 0.7);
-    color: black;
+    border: 1px solid white;
+    color: var(--font);
     flex-grow: 0;
     height: min-content;
     margin-left: 2em;
@@ -174,8 +174,8 @@ button {
 }
 
 button:hover {
-    border: 2px solid white;
-    background-color: white;
+    border: 1px solid var(--font);
+    color: black;
     cursor: pointer;
 }
 

@@ -33,7 +33,7 @@ onMounted(() => {
 <style scoped>
 a {
     text-underline-offset: 0.3em;
-    color: #144e70;
+    color: #00b0d5;
 }
 
 a:hover {

@@ -49,8 +49,9 @@ defineProps<PropType>();
 <style scoped>
 .answer {
     padding: 0.3em 0.2em;
-    border: 2px solid var(--dark);
+    border: 2px solid #eeeeee;
     border-radius: 0.25em;
+    color: var(--font);
     column-gap: 0.5em;
     display: flex;
     flex-direction: row;
@@ -64,7 +65,6 @@ defineProps<PropType>();
 
 .answer:hover, .answer:focus, .answer:active, .answer:focus-visible {
     border-color: var(--ardc-purple);
-    color: var(--white);
 }
 
 .answer-radiobutton {

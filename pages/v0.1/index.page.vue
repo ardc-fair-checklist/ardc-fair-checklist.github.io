@@ -105,7 +105,7 @@ main {
     max-width: 50em;
     margin-left: auto;
     margin-right: auto;
-    color: var(--white);
+    color: var(--font);
 }
 @media screen and (min-width: 70em) {
     main {
@@ -128,12 +128,11 @@ main {
 h1 {
     line-height: 1.2em;
     margin-top: 1em;
+    margin-bottom: 0.25em;
 }
 h2 {
-    border-bottom: 2px solid var(--white);
     width: 40%;
-    color: var(--white);
-    margin-bottom: 1.5em;
+    color: var(--font);
     margin-top: 3em;
     margin-left: auto;
     margin-right: auto;

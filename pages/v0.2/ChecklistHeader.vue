@@ -35,7 +35,7 @@ header {
 }
 .view-source a {
     text-decoration: none;
-    color: var(--light);
+    color: var(--font);
     padding-right: 0.6em;
     padding-top: 0.2em;
     line-height: 1.6;
@@ -43,7 +43,7 @@ header {
 }
 .view-source:hover a {
     text-decoration: underline;
-    color: white;
+    color: black;
 }
 .view-source:hover img {
     opacity: 1;

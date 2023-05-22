@@ -52,8 +52,9 @@ defineProps<{
 <style scoped>
 .answer {
     padding: 0.3em 0.2em;
-    border: 2px solid var(--dark);
+    border: 2px solid #eeeeee;
     border-radius: 0.25em;
+    color: var(--font);
     column-gap: 0.5em;
     display: flex;
     flex-direction: row;
@@ -67,7 +68,6 @@ defineProps<{
 
 .answer:hover, .answer:focus, .answer:active, .answer:focus-visible {
     border-color: var(--ardc-purple);
-    color: var(--white);
 }
 
 .answer-radiobutton {
@@ -87,6 +87,6 @@ defineProps<{
     margin-top: 0.2em;
     margin-bottom: 0.5em;
     font-size: 0.9em;
-    filter: brightness(80%);
+    filter: opacity(95%);
 }
 </style>

@@ -67,10 +67,10 @@ legend {
     margin-bottom: 1em;
 }
 .question {
-    background-color: var(--dark);
+    background-color: #eeeeee;
     border-radius: 0.25em;
-    border: 2px solid #444;
-    color: var(--light);
+    border: 2px solid #ccc;
+    color: var(--font);
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
