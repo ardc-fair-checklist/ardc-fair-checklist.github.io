@@ -150,7 +150,7 @@ const collapseHowtouse = () => {
 
 <style scoped>
 h2 {
-    color: var(--white);
+    color: var(--font);
     font-size: 1.2em;
 }
 li {
@@ -161,11 +161,11 @@ li {
 span.anchor-like {
     text-decoration: underline;
     text-underline-offset: 0.3em;
-    color: #71caff;
+    color: #00b0d5;
 }
 
 span.anchor-like:hover {
-    color: var(--white);
+    color: var(--black);
 }
 div.vspace {
     height: 1.5em
