@@ -50,12 +50,20 @@ describe('the software questions data', () => {
         expect(identifiers.length).toBe(uniqued.length);
     });
 
-    test('there should be 1 questions with principle \'f\'', () => {
-        expect(questions.filter(q => q.principle === 'f').length).toBe(1);
+    test('each answer id should start with the corresponding question id', () => {
+        expect(questions.every(q => q.answers.every(a => a.id.startsWith(q.id)))).toBe(true);
     });
 
-    test('there should be 6 questions with principle \'a\'', () => {
-        expect(questions.filter(q => q.principle === 'a').length).toBe(6);
+    test('each question id should start with the corresponding principle', () => {
+        expect(questions.every(q => q.id.startsWith(q.principle))).toBe(true);
+    });
+
+    test('there should be 2 questions with principle \'f\'', () => {
+        expect(questions.filter(q => q.principle === 'f').length).toBe(2);
+    });
+
+    test('there should be 5 questions with principle \'a\'', () => {
+        expect(questions.filter(q => q.principle === 'a').length).toBe(5);
     });
 
     test('there should be 5 questions with principle \'i\'', () => {
