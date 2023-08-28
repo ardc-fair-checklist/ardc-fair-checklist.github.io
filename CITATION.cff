@@ -18,13 +18,13 @@ authors:
     orcid: 'https://orcid.org/0000-0001-9448-4023'
 identifiers:
   - type: url
-    value: 'https://github.com/ardc-fair-checklist/ssg'
+    value: 'https://github.com/ardc-fair-checklist/ardc-fair-checklist'
     description: Where the software is being developed
   - type: url
-    value: 'https://ardc-fair-checklist.github.io/ssg/'
+    value: 'https://ardc-fair-checklist.github.io/'
     description: Where the software is deployed
-repository-code: 'https://github.com/ardc-fair-checklist/ssg'
-url: 'https://ardc-fair-checklist.github.io/ssg/'
+repository-code: 'https://github.com/ardc-fair-checklist/ardc-fair-checklist'
+url: 'https://ardc-fair-checklist.github.io/'
 abstract: >-
   The software for a self-assessment web form that allows authors to evaluate the FAIRness of their
   research software, resulting in a badge that they can put in their project's README.
@@ -38,7 +38,7 @@ keywords:
   - RSE
   - Research Software Engineer
 license: Apache-2.0
-version: 0.2.0-rc0
+version: 0.2.0
 references:
   -
     authors:

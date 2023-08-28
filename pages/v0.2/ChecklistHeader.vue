@@ -3,10 +3,10 @@
         <div class="spacer">
         </div>
         <div class="view-source">
-            <a href="https://github.com/ardc-fair-checklist/ssg/issues/new?labels=user-feedback&template=10_feedback.md">
+            <a href="https://github.com/ardc-fair-checklist/ardc-fair-checklist/issues/new?labels=user-feedback&template=10_feedback.md">
                 Report an issue
             </a>
-            <a href="https://github.com/ardc-fair-checklist/ssg/issues/new?labels=user-feedback&template=10_feedback.md">
+            <a href="https://github.com/ardc-fair-checklist/ardc-fair-checklist/issues/new?labels=user-feedback&template=10_feedback.md">
                 <img src="/octocat.svg" alt="octocat logo" />
             </a>
         </div>

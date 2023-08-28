@@ -20,7 +20,7 @@ We recommend using Volar VSCode extension for improved development experience. T
 
 ```shell
 cd <some dir>
-git clone https://github.com/ardc-fair-checklist/ssg .
+git clone https://github.com/ardc-fair-checklist/ardc-fair-checklist .
 npm install
 ```
 
@@ -35,6 +35,7 @@ npm install
 - `npm run server:prod`: serve the production build
 - `npm run test`: run the unit tests in watch mode using `vitest`
 
+<!--
 ## Known problem with `npm run prod`
 
 Running `npm run prod` results in a production site that can't resolve some of its own assets when run locally and combined with not undefined `base` option in `vite.config.js`. A possible workaround is to build the production files, then insert a directory with the same name as `base` between `server`|`client` and their files, like so:
@@ -50,6 +51,7 @@ mv $LIST_CLIENT dist/client/$BASE/
 mv $LIST_SERVER dist/server/$BASE/
 npm run server:prod
 ```
+-->
 
 relevant version info from `npm list`:
 
@@ -81,7 +83,7 @@ In the current app, there are multiple entities that could be versioned, namely 
 
 ### GitHub Pages
 
-There is a GitHub action `/.github/workflows/publish.yml` that builds the project for production and hosts it at https://ardc-fair-checklist.github.io/ssg. The GitHub action can be triggered manually via the GitHub user interface.
+There is a GitHub action `/.github/workflows/publish.yml` that builds the project for production and hosts it at https://ardc-fair-checklist.github.io/. The GitHub action can be triggered manually via the GitHub user interface.
 
 ### Zenodo
 

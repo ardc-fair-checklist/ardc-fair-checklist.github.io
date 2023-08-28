@@ -7,12 +7,12 @@ An interactive checklist with questions about FAIRness of research software. The
 
 The checklist yields hyperlinked badges like this one:
 
-[![FAIRness badge image](https://ardc-fair-checklist.github.io/ssg/badge.svg)](https://ardc-fair-checklist.github.io/ssg/v0.1?f=111111&a=1111&i=11&r=111111)
+[![FAIRness badge image](https://ardc-fair-checklist.github.io/badge.svg)](https://ardc-fair-checklist.github.io/v0.1?f=111111&a=1111&i=11&r=111111)
 
 Here's what the corresponding Markdown looks like for that badge:
 
 ```markdown
-[![FAIRness badge image](https://ardc-fair-checklist.github.io/ssg/badge.svg)](https://ardc-fair-checklist.github.io/ssg/v0.1?f=111111&a=1111&i=11&r=111111)
+[![FAIRness badge image](https://ardc-fair-checklist.github.io/badge.svg)](https://ardc-fair-checklist.github.io/v0.1?f=111111&a=1111&i=11&r=111111)
 ```
 
 The app state should be restored to have the second answer for each question selected.
