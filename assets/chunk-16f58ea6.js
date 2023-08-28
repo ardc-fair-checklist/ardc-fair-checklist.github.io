@@ -772,7 +772,7 @@ function getPageFilesClientSide(pageFilesAll, pageId) {
 }
 const scriptRel = "modulepreload";
 const assetsURL = function(dep) {
-  return "/ssg/" + dep;
+  return "/" + dep;
 };
 const seen = {};
 const __vitePreload = function preload(baseModule, deps, importerUrl) {

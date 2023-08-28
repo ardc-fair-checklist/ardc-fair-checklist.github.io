@@ -170,7 +170,7 @@ const _sfc_main$9 = /* @__PURE__ */ defineComponent({
     };
     onMounted(() => {
       href.value = `${window.location.origin}/${window.location.pathname.split("/").filter((e) => e !== "").join("/")}`;
-      appBaseUrl.value = `${window.location.origin}${"/ssg/"}`;
+      appBaseUrl.value = `${window.location.origin}${"/"}`;
     });
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("div", _hoisted_1$8, [
@@ -368,16 +368,16 @@ function _sfc_render$1(_ctx, _cache) {
   return openBlock(), createElementBlock("div", _hoisted_1$5, " This website is a work in progress. Note that for the time being, the number of questions in the checklist, their order, and their content is subject to change. As a result, any badges are not guaranteed to reliably restore any previous form state. ");
 }
 const ChecklistBannerWIP = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["render", _sfc_render$1], ["__scopeId", "data-v-30ff4474"]]);
-const ChecklistHeader_vue_vue_type_style_index_0_scoped_c3f295e5_lang = "";
+const ChecklistHeader_vue_vue_type_style_index_0_scoped_00d1d6c4_lang = "";
 const _sfc_main$4 = {};
-const _hoisted_1$4 = /* @__PURE__ */ createStaticVNode('<div class="spacer" data-v-c3f295e5></div><div class="view-source" data-v-c3f295e5><a href="https://github.com/ardc-fair-checklist/ssg/issues/new?labels=user-feedback&amp;template=10_feedback.md" data-v-c3f295e5> Report an issue </a><a href="https://github.com/ardc-fair-checklist/ssg/issues/new?labels=user-feedback&amp;template=10_feedback.md" data-v-c3f295e5><img src="' + _imports_0$1 + '" alt="octocat logo" data-v-c3f295e5></a></div>', 2);
+const _hoisted_1$4 = /* @__PURE__ */ createStaticVNode('<div class="spacer" data-v-00d1d6c4></div><div class="view-source" data-v-00d1d6c4><a href="https://github.com/ardc-fair-checklist/ardc-fair-checklist/issues/new?labels=user-feedback&amp;template=10_feedback.md" data-v-00d1d6c4> Report an issue </a><a href="https://github.com/ardc-fair-checklist/ardc-fair-checklist/issues/new?labels=user-feedback&amp;template=10_feedback.md" data-v-00d1d6c4><img src="' + _imports_0$1 + '" alt="octocat logo" data-v-00d1d6c4></a></div>', 2);
 const _hoisted_3$3 = [
   _hoisted_1$4
 ];
 function _sfc_render(_ctx, _cache) {
   return openBlock(), createElementBlock("header", null, _hoisted_3$3);
 }
-const ChecklistHeader = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["render", _sfc_render], ["__scopeId", "data-v-c3f295e5"]]);
+const ChecklistHeader = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["render", _sfc_render], ["__scopeId", "data-v-00d1d6c4"]]);
 const _hoisted_1$3 = { class: "footer" };
 const _hoisted_2$3 = { class: "inner" };
 const _hoisted_3$2 = { class: "another-inner" };

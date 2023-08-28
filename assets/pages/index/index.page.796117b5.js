@@ -6,7 +6,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
   setup(__props) {
     onMounted(() => {
       const urlWithDuplicateSlashes = [
-        "/ssg/",
+        "/",
         latest.value
       ].join("/");
       const url = `/${urlWithDuplicateSlashes.split("/").filter((e) => e !== "").join("/")}`;
