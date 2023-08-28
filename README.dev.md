@@ -83,7 +83,7 @@ In the current app, there are multiple entities that could be versioned, namely 
 
 ### GitHub Pages
 
-There is a GitHub action `/.github/workflows/publish.yml` that builds the project for production and hosts it at https://ardc-fair-checklist.github.io/. The GitHub action can be triggered manually via the GitHub user interface.
+There is a GitHub action `/.github/workflows/publishing.yml` that builds the project for production and hosts it at https://ardc-fair-checklist.github.io/. The GitHub action can be triggered manually via the GitHub user interface.
 
 ### GitHub
 
