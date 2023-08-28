@@ -138,7 +138,3 @@ open http://localhost:3000
 Now make whatever changes you want under `pages/v1`. The page should update
 through hot module reloading. Existing badges that point to any version that isn't
 the latest should still resolve to the correct (older) version page, but will now display a message prompting users to update.
-
-## Notes
-
-https://agm1984.medium.com/how-to-set-up-es-lint-for-airbnb-vue-js-and-vs-code-a5ef5ac671e8
