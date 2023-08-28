@@ -85,7 +85,13 @@ In the current app, there are multiple entities that could be versioned, namely 
 
 There is a GitHub action `/.github/workflows/publish.yml` that builds the project for production and hosts it at https://ardc-fair-checklist.github.io/. The GitHub action can be triggered manually via the GitHub user interface.
 
+### GitHub
+
+Don't make GitHub releases manually, instead let the `zenodraft` workflow do it. See https://github.com/ardc-fair-checklist/ardc-fair-checklist.github.io/issues/92.
+
 ### Zenodo
+
+See https://github.com/ardc-fair-checklist/ardc-fair-checklist.github.io/issues/92 for avoiding a problem when publishing.
 
 There is a GitHub action `/.github/workflows/zenodraft.yml` that publishes a snapshot of `main` to Zenodo, makes a release on GitHub, and tags the corresponding SHA. The workflow purposely does not finalize the depostion on Zenodo. It must be published manually by clicking the "Publish" button on Zenodo after inspection of the draft's metadata. The GitHub action can be triggered manually via the GitHub user interface.
 
