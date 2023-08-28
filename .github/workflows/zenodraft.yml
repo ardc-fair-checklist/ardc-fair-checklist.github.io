@@ -18,7 +18,7 @@ jobs:
             cat .zenodo.citation.json .zenodo.extras.json | jq -s add > ${{ runner.temp }}/.zenodo.json
             rm .zenodo.citation.json
         - name: Create a draft snapshot of your repository contents as a new
-                version in collection 7890393 on Zenodo Sandbox using metadata
+                version in collection 7890393 on Zenodo using metadata
                 from repository file .zenodo.json
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
