@@ -679,7 +679,7 @@ const questions = [
     ],
     id: "f:q0",
     principle: "f",
-    text: "Is information from the metadata consumed by search engines to help rank their results?"
+    text: 'Is information from the metadata consumed by search engines to help rank their results? For the definition of "the metadata", see section above.'
   },
   {
     answers: [
@@ -698,7 +698,7 @@ const questions = [
     ],
     id: "f:q1",
     principle: "f",
-    text: "Are the software's identifiers globally unique?"
+    text: `Are the software's identifiers globally unique? For the definition of "the software", see section above.`
   },
   {
     answers: [
