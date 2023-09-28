@@ -4,7 +4,6 @@
         <ChecklistHeader />
         <main>
             <h1>Self-assessment for FAIR research software</h1>
-            <ChecklistBannerWIP />
             <ChecklistBannerVersions />
             <ChecklistBannerParams />
             <ChecklistPreamble />
@@ -48,7 +47,6 @@ import ChecklistAbout from './ChecklistAbout.vue';
 import ChecklistBadgeSnippets from './ChecklistBadgeSnippets.vue';
 import ChecklistBannerParams from './ChecklistBannerParams.vue';
 import ChecklistBannerVersions from './ChecklistBannerVersions.vue';
-import ChecklistBannerWIP from './ChecklistBannerWIP.vue';
 import ChecklistHeader from './ChecklistHeader.vue';
 import ChecklistPreamble from './ChecklistPreamble.vue';
 import ChecklistProgressBars from './ChecklistProgressBars.vue';
@@ -133,7 +131,7 @@ main {
 h1 {
     line-height: 1.2em;
     margin-top: 1em;
-    margin-bottom: 0.25em;
+    margin-bottom: 1.8em;
 }
 h2 {
     width: 40%;
