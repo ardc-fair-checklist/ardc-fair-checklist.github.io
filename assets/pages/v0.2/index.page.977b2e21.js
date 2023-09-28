@@ -103,17 +103,17 @@ const progress = computed(() => {
   };
 });
 const ChecklistAbout_vue_vue_type_style_index_0_scoped_11cecc46_lang = "";
-const _sfc_main$b = {};
-const _hoisted_1$a = /* @__PURE__ */ createStaticVNode('<div class="logos" data-v-11cecc46><a href="https://esciencecenter.nl" target="_blank" data-v-11cecc46><img class="logo" src="' + _imports_0$1 + '" alt="nlesc logo" data-v-11cecc46></a><a href="https://ardc.edu.au" target="_blank" data-v-11cecc46><img class="logo" src="' + _imports_1 + '" alt="ardc logo" data-v-11cecc46></a></div>', 1);
-function _sfc_render$2(_ctx, _cache) {
+const _sfc_main$a = {};
+const _hoisted_1$9 = /* @__PURE__ */ createStaticVNode('<div class="logos" data-v-11cecc46><a href="https://esciencecenter.nl" target="_blank" data-v-11cecc46><img class="logo" src="' + _imports_0$1 + '" alt="nlesc logo" data-v-11cecc46></a><a href="https://ardc.edu.au" target="_blank" data-v-11cecc46><img class="logo" src="' + _imports_1 + '" alt="ardc logo" data-v-11cecc46></a></div>', 1);
+function _sfc_render$1(_ctx, _cache) {
   return openBlock(), createElementBlock("footer", null, [
-    _hoisted_1$a,
+    _hoisted_1$9,
     createBaseVNode("p", null, toDisplayString("This checklist is a collaborative effort by Netherlands eScience Center and Australian Research Data Commons."), 1)
   ]);
 }
-const ChecklistAbout = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["render", _sfc_render$2], ["__scopeId", "data-v-11cecc46"]]);
+const ChecklistAbout = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["render", _sfc_render$1], ["__scopeId", "data-v-11cecc46"]]);
 const _withScopeId$2 = (n) => (pushScopeId("data-v-7804cc5a"), n = n(), popScopeId(), n);
-const _hoisted_1$9 = { class: "badges" };
+const _hoisted_1$8 = { class: "badges" };
 const _hoisted_2$5 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createBaseVNode("h2", null, "Get the badge", -1));
 const _hoisted_3$5 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createBaseVNode("h3", null, [
   /* @__PURE__ */ createBaseVNode("label", { for: "textarea-markdown-badge" }, "Markdown")
@@ -133,7 +133,7 @@ const _hoisted_11 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createB
 const _hoisted_12 = { class: "row" };
 const _hoisted_13$1 = ["value"];
 const _hoisted_14$1 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createBaseVNode("div", { class: "copied-text" }, " copied ", -1));
-const _sfc_main$a = /* @__PURE__ */ defineComponent({
+const _sfc_main$9 = /* @__PURE__ */ defineComponent({
   __name: "ChecklistBadgeSnippets",
   setup(__props) {
     const alt = "FAIR checklist badge";
@@ -179,7 +179,7 @@ const _sfc_main$a = /* @__PURE__ */ defineComponent({
       appBaseUrl.value = `${window.location.origin}${"/"}`;
     });
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("div", _hoisted_1$9, [
+      return openBlock(), createElementBlock("div", _hoisted_1$8, [
         _hoisted_2$5,
         createTextVNode(" Use the buttons next to the snippets below to copy your badge and paste it into your project's README. The hyperlink in each snippet points back to this page, and includes the necessary data to check the appropriate answers. "),
         _hoisted_3$5,
@@ -235,12 +235,12 @@ const _sfc_main$a = /* @__PURE__ */ defineComponent({
   }
 });
 const ChecklistBadgeSnippets_vue_vue_type_style_index_0_scoped_7804cc5a_lang = "";
-const ChecklistBadgeSnippets = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["__scopeId", "data-v-7804cc5a"]]);
-const _hoisted_1$8 = {
+const ChecklistBadgeSnippets = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["__scopeId", "data-v-7804cc5a"]]);
+const _hoisted_1$7 = {
   key: 0,
   class: "banner"
 };
-const _sfc_main$9 = /* @__PURE__ */ defineComponent({
+const _sfc_main$8 = /* @__PURE__ */ defineComponent({
   __name: "ChecklistBannerParams",
   setup(__props) {
     const bannerMessage = ref("");
@@ -312,13 +312,13 @@ const _sfc_main$9 = /* @__PURE__ */ defineComponent({
       }
     });
     return (_ctx, _cache) => {
-      return bannerMessage.value !== "" ? (openBlock(), createElementBlock("div", _hoisted_1$8, toDisplayString(bannerMessage.value), 1)) : createCommentVNode("", true);
+      return bannerMessage.value !== "" ? (openBlock(), createElementBlock("div", _hoisted_1$7, toDisplayString(bannerMessage.value), 1)) : createCommentVNode("", true);
     };
   }
 });
 const ChecklistBannerParams_vue_vue_type_style_index_0_scoped_38867b75_lang = "";
-const ChecklistBannerParams = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["__scopeId", "data-v-38867b75"]]);
-const _sfc_main$8 = /* @__PURE__ */ defineComponent({
+const ChecklistBannerParams = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["__scopeId", "data-v-38867b75"]]);
+const _sfc_main$7 = /* @__PURE__ */ defineComponent({
   __name: "ChecklistLink",
   setup(__props) {
     const pageContext = usePageContext();
@@ -332,11 +332,11 @@ const _sfc_main$8 = /* @__PURE__ */ defineComponent({
   }
 });
 const app = "";
-const _hoisted_1$7 = {
+const _hoisted_1$6 = {
   key: 0,
   class: "banner"
 };
-const _sfc_main$7 = /* @__PURE__ */ defineComponent({
+const _sfc_main$6 = /* @__PURE__ */ defineComponent({
   __name: "ChecklistBannerVersions",
   setup(__props) {
     const link = computed(() => [
@@ -351,9 +351,9 @@ const _sfc_main$7 = /* @__PURE__ */ defineComponent({
       showBanner.value = myVersion !== latest.value;
     });
     return (_ctx, _cache) => {
-      return showBanner.value ? (openBlock(), createElementBlock("div", _hoisted_1$7, [
+      return showBanner.value ? (openBlock(), createElementBlock("div", _hoisted_1$6, [
         createTextVNode(" A newer version of this checklist is available at "),
-        createVNode(_sfc_main$8, { href: unref(link) }, {
+        createVNode(_sfc_main$7, { href: unref(link) }, {
           default: withCtx(() => [
             createTextVNode(toDisplayString(unref(link)), 1)
           ]),
@@ -365,14 +365,7 @@ const _sfc_main$7 = /* @__PURE__ */ defineComponent({
   }
 });
 const ChecklistBannerVersions_vue_vue_type_style_index_0_scoped_699196ea_lang = "";
-const ChecklistBannerVersions = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["__scopeId", "data-v-699196ea"]]);
-const ChecklistBannerWIP_vue_vue_type_style_index_0_scoped_4661a9dc_lang = "";
-const _sfc_main$6 = {};
-const _hoisted_1$6 = { class: "banner" };
-function _sfc_render$1(_ctx, _cache) {
-  return openBlock(), createElementBlock("div", _hoisted_1$6, " This website is a work in progress. Note that for the time being, the number of questions in the checklist, their order, and their content is subject to change. As a result, any badges are not guaranteed to reliably restore any previous form state. ");
-}
-const ChecklistBannerWIP = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["render", _sfc_render$1], ["__scopeId", "data-v-4661a9dc"]]);
+const ChecklistBannerVersions = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__scopeId", "data-v-699196ea"]]);
 const ChecklistHeader_vue_vue_type_style_index_0_scoped_1b9140c3_lang = "";
 const _sfc_main$5 = {};
 const _hoisted_1$5 = /* @__PURE__ */ createStaticVNode('<div class="spacer" data-v-1b9140c3></div><div class="view-source" data-v-1b9140c3><a href="https://github.com/ardc-fair-checklist/ardc-fair-checklist/issues/new?labels=user-feedback&amp;template=10_feedback.md" data-v-1b9140c3> Report an issue </a><a href="https://github.com/ardc-fair-checklist/ardc-fair-checklist/issues/new?labels=user-feedback&amp;template=10_feedback.md" data-v-1b9140c3><img src="' + _imports_0$2 + '" alt="octocat logo" data-v-1b9140c3></a></div>', 2);
@@ -1044,7 +1037,7 @@ const questions = [
     text: "Which of the following best describes the software's usage rights?"
   }
 ];
-const _withScopeId = (n) => (pushScopeId("data-v-24879415"), n = n(), popScopeId(), n);
+const _withScopeId = (n) => (pushScopeId("data-v-e8806c6f"), n = n(), popScopeId(), n);
 const _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("h1", null, "Self-assessment for FAIR research software", -1));
 const _hoisted_2 = { class: "principle-quote" };
 const _sfc_main = /* @__PURE__ */ defineComponent({
@@ -1099,7 +1092,6 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
         createVNode(ChecklistHeader),
         createBaseVNode("main", null, [
           _hoisted_1,
-          createVNode(ChecklistBannerWIP),
           createVNode(ChecklistBannerVersions),
           createVNode(ChecklistBannerParams),
           createVNode(ChecklistPreamble),
@@ -1131,8 +1123,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const index_page_vue_vue_type_style_index_0_scoped_24879415_lang = "";
-const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-24879415"]]);
+const index_page_vue_vue_type_style_index_0_scoped_e8806c6f_lang = "";
+const index_page = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-e8806c6f"]]);
 export {
   index_page as default
 };

@@ -158,17 +158,6 @@ a[data-v-699196ea]:hover {
     text-align: center;
 }
 
-.banner[data-v-4661a9dc] {
-    background-color: lightgoldenrodyellow;
-    border-radius: 0.5em;
-    box-sizing: border-box;
-    color: #333;
-    margin-bottom: 1em;
-    min-height: 3em;
-    padding: 1.5em 3em;
-    text-align: center;
-}
-
 header[data-v-1b9140c3] {
     display: flex;
     flex-direction: row;
@@ -468,7 +457,7 @@ legend[data-v-90d2b7b0] {
     font-size: 1.17em;
 }
 
-main[data-v-24879415] {
+main[data-v-e8806c6f] {
     min-width: 30em;
     max-width: 50em;
     margin-left: auto;
@@ -476,29 +465,29 @@ main[data-v-24879415] {
     color: var(--font);
 }
 @media screen and (min-width: 70em) {
-main[data-v-24879415] {
+main[data-v-e8806c6f] {
         padding-left: 3em;
         padding-right: 3em;
 }
 }
 @media screen and (max-width: 70em) {
-main[data-v-24879415] {
+main[data-v-e8806c6f] {
         padding-left: 3em;
         padding-right: 3em;
 }
 }
 @media screen and (max-width: 41.5em) {
-main[data-v-24879415] {
+main[data-v-e8806c6f] {
         padding-left: 0.5em;
         padding-right: 0.5em;
 }
 }
-h1[data-v-24879415] {
+h1[data-v-e8806c6f] {
     line-height: 1.2em;
     margin-top: 1em;
-    margin-bottom: 0.25em;
+    margin-bottom: 1.8em;
 }
-h2[data-v-24879415] {
+h2[data-v-e8806c6f] {
     width: 40%;
     color: var(--font);
     margin-top: 3em;
@@ -506,7 +495,7 @@ h2[data-v-24879415] {
     margin-right: auto;
     text-align: center;
 }
-p.principle-quote[data-v-24879415] {
+p.principle-quote[data-v-e8806c6f] {
     font-size: 1.3em;
     font-style: italic;
     margin-bottom: 1.5em;
@@ -514,9 +503,9 @@ p.principle-quote[data-v-24879415] {
     margin-right: 4em;
     text-align: center;
 }
-p.principle-quote[data-v-24879415]:before {
+p.principle-quote[data-v-e8806c6f]:before {
     content: open-quote;
 }
-p.principle-quote[data-v-24879415]:after {
+p.principle-quote[data-v-e8806c6f]:after {
     content: close-quote;
 }

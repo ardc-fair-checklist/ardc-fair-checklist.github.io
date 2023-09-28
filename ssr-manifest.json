@@ -53,8 +53,6 @@
   "pages/v0.2/ChecklistBannerVersions.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/v0.2/ChecklistBannerVersions.vue?vue&type=style&index=0&scoped=699196ea&lang.css": [],
   "pages/v0.2/ChecklistBannerVersions.vue": [],
-  "pages/v0.2/ChecklistBannerWIP.vue?vue&type=style&index=0&scoped=4661a9dc&lang.css": [],
-  "pages/v0.2/ChecklistBannerWIP.vue": [],
   "pages/v0.2/ChecklistHeader.vue?vue&type=style&index=0&scoped=1b9140c3&lang.css": [],
   "pages/v0.2/ChecklistHeader.vue": [],
   "../../../../../venn-the-software.svg": [],
@@ -72,7 +70,7 @@
   "pages/v0.2/ChecklistQuestion.vue": [],
   "pages/v0.2/questions.json": [],
   "pages/v0.2/index.page.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/v0.2/index.page.vue?vue&type=style&index=0&scoped=24879415&lang.css": [],
+  "pages/v0.2/index.page.vue?vue&type=style&index=0&scoped=e8806c6f&lang.css": [],
   "pages/v0.2/index.page.vue": [],
   "node_modules/vite-plugin-ssr/dist/esm/utils/isPlainObject.js": [],
   "node_modules/vite-plugin-ssr/dist/esm/utils/stringifyStringArray.js": [],
@@ -133,8 +131,8 @@
     "/assets/index.page.0777de80.css",
     "/assets/global.7127219c.css"
   ],
-  "index.page.43d19f0a.js": [
-    "/assets/index.page.b11928eb.css",
+  "index.page.977b2e21.js": [
+    "/assets/index.page.2765cfd0.css",
     "/assets/global.7127219c.css"
   ],
   "_error.page.544f5ff8.js": [],
