@@ -20,7 +20,7 @@ We recommend using Volar VSCode extension for improved development experience. T
 
 ```shell
 cd <some dir>
-git clone https://github.com/ardc-fair-checklist/ardc-fair-checklist .
+git clone https://github.com/ardc-fair-checklist/ardc-fair-checklist.github.io .
 npm install
 ```
 
