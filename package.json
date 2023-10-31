@@ -15,9 +15,9 @@
         "NLeSC",
         "Reusable"
     ],
-    "homepage": "https://ardc-fair-checklist.github.io/",
+    "homepage": "https://fairsoftwarechecklist.net/",
     "bugs": {
-        "url": "https://github.com/ardc-fair-checklist/ardc-fair-checklist/issues"
+        "url": "https://github.com/ardc-fair-checklist/ardc-fair-checklist.github.io/issues"
     },
     "license": "Apache-2.0",
     "author": {
@@ -25,9 +25,9 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/ardc-fair-checklist/ardc-fair-checklist.git"
+        "url": "https://github.com/ardc-fair-checklist/ardc-fair-checklist.github.io.git"
     },
-    "version": "0.2.0",
+    "version": "0.2.2",
     "scripts": {
         "build": "vite build",
         "coverage": "vitest run --dom --coverage",

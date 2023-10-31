@@ -2,7 +2,7 @@
 # Visit https://bit.ly/cffinit to generate yours today!
 
 cff-version: 1.2.0
-title: ARDC FAIR checklist
+title: FAIR software checklist
 message: Please cite this software using these metadata.
 type: software
 authors:
@@ -16,15 +16,19 @@ authors:
     email: tom.honeyman@ardc.edu.au
     affiliation: Australian Research Data Commons
     orcid: 'https://orcid.org/0000-0001-9448-4023'
+  - given-names: Stefan
+    family-names: Verhoeven
+    affiliation: Netherlands eScience Center
+    orcid: 'https://orcid.org/0000-0002-5821-2060'
 identifiers:
   - type: url
-    value: 'https://github.com/ardc-fair-checklist/ardc-fair-checklist'
+    value: 'https://github.com/ardc-fair-checklist/ardc-fair-checklist.github.io'
     description: Where the software is being developed
   - type: url
-    value: 'https://ardc-fair-checklist.github.io/'
+    value: 'https://fairsoftwarechecklist.net'
     description: Where the software is deployed
-repository-code: 'https://github.com/ardc-fair-checklist/ardc-fair-checklist'
-url: 'https://ardc-fair-checklist.github.io/'
+repository-code: 'https://github.com/ardc-fair-checklist/ardc-fair-checklist.github.io'
+url: 'https://fairsoftwarechecklist.net'
 abstract: >-
   The software for a self-assessment web form that allows authors to evaluate the FAIRness of their
   research software, resulting in a badge that they can put in their project's README.
@@ -38,7 +42,7 @@ keywords:
   - RSE
   - Research Software Engineer
 license: Apache-2.0
-version: 0.2.0
+version: 0.2.2
 references:
   -
     authors:
