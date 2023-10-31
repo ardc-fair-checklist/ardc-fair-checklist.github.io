@@ -19,8 +19,8 @@ export const render = async (pageContext: PageContextServer) => {
 
     // See https://vite-plugin-ssr.com/head
     const { documentProps } = pageContext.exports;
-    const title = (documentProps && documentProps.title) || 'ARDC FAIR checklist';
-    const desc = (documentProps && documentProps.description) || 'ARDC FAIR checklist';
+    const title = (documentProps && documentProps.title) || 'FAIR software checklist';
+    const desc = (documentProps && documentProps.description) || 'FAIR software checklist';
 
     const documentHtml = escapeInject`<!DOCTYPE html>
         <html lang="en">
