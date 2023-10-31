@@ -60,7 +60,7 @@
   "pages/v0.2/ChecklistPreamble.vue?vue&type=style&index=0&scoped=6b02313b&lang.css": [],
   "pages/v0.2/ChecklistPreamble.vue": [],
   "pages/v0.2/ChecklistProgressBars.vue?vue&type=script&setup=true&lang.ts": [],
-  "pages/v0.2/ChecklistProgressBars.vue?vue&type=style&index=0&scoped=7b14f3da&lang.css": [],
+  "pages/v0.2/ChecklistProgressBars.vue?vue&type=style&index=0&scoped=e2d838ee&lang.css": [],
   "pages/v0.2/ChecklistProgressBars.vue": [],
   "pages/v0.2/ChecklistAnswer.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/v0.2/ChecklistAnswer.vue?vue&type=style&index=0&scoped=343daf34&lang.css": [],
@@ -131,8 +131,8 @@
     "/assets/index.page.0777de80.css",
     "/assets/global.7127219c.css"
   ],
-  "index.page.977b2e21.js": [
-    "/assets/index.page.2765cfd0.css",
+  "index.page.76b97bca.js": [
+    "/assets/index.page.22001886.css",
     "/assets/global.7127219c.css"
   ],
   "_error.page.544f5ff8.js": [],
