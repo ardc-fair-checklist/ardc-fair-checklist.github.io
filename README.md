@@ -7,12 +7,12 @@ An interactive checklist with questions about FAIRness of research software. The
 
 The checklist yields hyperlinked badges like this one:
 
-[![FAIRness badge image](https://fairsoftwarechecklist.net/badge.svg)](https://fairsoftwarechecklist.net/v0.1?f=111111&a=1111&i=11&r=111111)
+[![FAIR checklist badge](https://fairsoftwarechecklist.net/badge.svg)](https://fairsoftwarechecklist.net/v0.2?f=11&a=11111&i=11111&r=111)
 
 Here's what the corresponding Markdown looks like for that badge:
 
 ```markdown
-[![FAIRness badge image](https://fairsoftwarechecklist.net/badge.svg)](https://fairsoftwarechecklist.net/v0.1?f=111111&a=1111&i=11&r=111111)
+[![FAIR checklist badge](https://fairsoftwarechecklist.net/badge.svg)](https://fairsoftwarechecklist.net/v0.2?f=11&a=11111&i=11111&r=111)
 ```
 
 The app state should be restored to have the second answer for each question selected.
