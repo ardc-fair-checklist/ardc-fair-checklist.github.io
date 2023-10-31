@@ -157,25 +157,14 @@ a[data-v-ce817809]:hover {
     text-align: center;
 }
 
-.banner[data-v-30ff4474] {
-    background-color: lightgoldenrodyellow;
-    border-radius: 0.5em;
-    box-sizing: border-box;
-    color: #333;
-    margin-bottom: 1em;
-    min-height: 3em;
-    padding: 1.5em 3em;
-    text-align: center;
-}
-
-header[data-v-00d1d6c4] {
+header[data-v-86d22159] {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     padding: 1em 0.5em;
 }
-.view-source[data-v-00d1d6c4] {
+.view-source[data-v-86d22159] {
     min-width: min-content;
     display: flex;
     flex-direction: row;
@@ -183,7 +172,7 @@ header[data-v-00d1d6c4] {
     align-content: center;
     cursor: pointer;
 }
-.view-source a[data-v-00d1d6c4] {
+.view-source a[data-v-86d22159] {
     text-decoration: none;
     color: var(--font);
     padding-right: 0.6em;
@@ -191,21 +180,21 @@ header[data-v-00d1d6c4] {
     line-height: 1.6;
     text-underline-offset: 0.7em;
 }
-.view-source:hover a[data-v-00d1d6c4] {
+.view-source:hover a[data-v-86d22159] {
     text-decoration: underline;
     color: black;
 }
-.view-source:hover img[data-v-00d1d6c4] {
+.view-source:hover img[data-v-86d22159] {
     opacity: 1;
     transform: scale(1.05);
 }
-.view-source img[data-v-00d1d6c4] {
+.view-source img[data-v-86d22159] {
     width: 2em;
     height: 2em;
     opacity: 0.8;
 }
 @media screen and (min-width: 70em) {
-.view-source[data-v-00d1d6c4] {
+.view-source[data-v-86d22159] {
         padding-right: 1em;
 }
 }
@@ -419,7 +408,7 @@ legend[data-v-282cc85b] {
     font-size: 1.17em;
 }
 
-main[data-v-b6c90f4e] {
+main[data-v-6fb5fb56] {
     min-width: 30em;
     max-width: 50em;
     margin-left: auto;
@@ -427,29 +416,29 @@ main[data-v-b6c90f4e] {
     color: var(--font);
 }
 @media screen and (min-width: 70em) {
-main[data-v-b6c90f4e] {
+main[data-v-6fb5fb56] {
         padding-left: 3em;
         padding-right: 3em;
 }
 }
 @media screen and (max-width: 70em) {
-main[data-v-b6c90f4e] {
+main[data-v-6fb5fb56] {
         padding-left: 3em;
         padding-right: 3em;
 }
 }
 @media screen and (max-width: 41.5em) {
-main[data-v-b6c90f4e] {
+main[data-v-6fb5fb56] {
         padding-left: 0.5em;
         padding-right: 0.5em;
 }
 }
-h1[data-v-b6c90f4e] {
+h1[data-v-6fb5fb56] {
     line-height: 1.2em;
     margin-top: 1em;
     margin-bottom: 0.25em;
 }
-h2[data-v-b6c90f4e] {
+h2[data-v-6fb5fb56] {
     width: 40%;
     color: var(--font);
     margin-top: 3em;
