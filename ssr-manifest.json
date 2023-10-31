@@ -51,7 +51,7 @@
   "pages/v0.2/ChecklistBannerVersions.vue?vue&type=script&setup=true&lang.ts": [],
   "pages/v0.2/ChecklistBannerVersions.vue?vue&type=style&index=0&scoped=699196ea&lang.css": [],
   "pages/v0.2/ChecklistBannerVersions.vue": [],
-  "pages/v0.2/ChecklistHeader.vue?vue&type=style&index=0&scoped=1b9140c3&lang.css": [],
+  "pages/v0.2/ChecklistHeader.vue?vue&type=style&index=0&scoped=bf8029ec&lang.css": [],
   "pages/v0.2/ChecklistHeader.vue": [],
   "../../../../../venn-the-software.svg": [],
   "pages/v0.2/ChecklistPreamble.vue?vue&type=script&setup=true&lang.ts": [],
@@ -129,8 +129,8 @@
     "/assets/index.page.31b9ca35.css",
     "/assets/global.7127219c.css"
   ],
-  "index.page.76b97bca.js": [
-    "/assets/index.page.22001886.css",
+  "index.page.45c789d3.js": [
+    "/assets/index.page.a9742d84.css",
     "/assets/global.7127219c.css"
   ],
   "_error.page.544f5ff8.js": [],

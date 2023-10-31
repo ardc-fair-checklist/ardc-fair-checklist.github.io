@@ -366,16 +366,16 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
 });
 const ChecklistBannerVersions_vue_vue_type_style_index_0_scoped_699196ea_lang = "";
 const ChecklistBannerVersions = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__scopeId", "data-v-699196ea"]]);
-const ChecklistHeader_vue_vue_type_style_index_0_scoped_1b9140c3_lang = "";
+const ChecklistHeader_vue_vue_type_style_index_0_scoped_bf8029ec_lang = "";
 const _sfc_main$5 = {};
-const _hoisted_1$5 = /* @__PURE__ */ createStaticVNode('<div class="spacer" data-v-1b9140c3></div><div class="view-source" data-v-1b9140c3><a href="https://github.com/ardc-fair-checklist/ardc-fair-checklist/issues/new?labels=user-feedback&amp;template=10_feedback.md" data-v-1b9140c3> Report an issue </a><a href="https://github.com/ardc-fair-checklist/ardc-fair-checklist/issues/new?labels=user-feedback&amp;template=10_feedback.md" data-v-1b9140c3><img src="' + _imports_0$2 + '" alt="octocat logo" data-v-1b9140c3></a></div>', 2);
+const _hoisted_1$5 = /* @__PURE__ */ createStaticVNode('<div class="spacer" data-v-bf8029ec></div><div class="view-source" data-v-bf8029ec><a href="https://github.com/ardc-fair-checklist/ardc-fair-checklist.github.io/issues/new?labels=user-feedback&amp;template=10_feedback.md" data-v-bf8029ec> Report an issue </a><a href="https://github.com/ardc-fair-checklist/ardc-fair-checklist.github.io/issues/new?labels=user-feedback&amp;template=10_feedback.md" data-v-bf8029ec><img src="' + _imports_0$2 + '" alt="octocat logo" data-v-bf8029ec></a></div>', 2);
 const _hoisted_3$4 = [
   _hoisted_1$5
 ];
 function _sfc_render(_ctx, _cache) {
   return openBlock(), createElementBlock("header", null, _hoisted_3$4);
 }
-const ChecklistHeader = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["render", _sfc_render], ["__scopeId", "data-v-1b9140c3"]]);
+const ChecklistHeader = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["render", _sfc_render], ["__scopeId", "data-v-bf8029ec"]]);
 const _imports_0 = "/venn-the-software.svg";
 const _withScopeId$1 = (n) => (pushScopeId("data-v-6b02313b"), n = n(), popScopeId(), n);
 const _hoisted_1$4 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("h2", null, "How to use this page", -1));

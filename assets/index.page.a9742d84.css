@@ -158,14 +158,14 @@ a[data-v-699196ea]:hover {
     text-align: center;
 }
 
-header[data-v-1b9140c3] {
+header[data-v-bf8029ec] {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     padding: 1em 0.5em;
 }
-.view-source[data-v-1b9140c3] {
+.view-source[data-v-bf8029ec] {
     min-width: min-content;
     display: flex;
     flex-direction: row;
@@ -173,7 +173,7 @@ header[data-v-1b9140c3] {
     align-content: center;
     cursor: pointer;
 }
-.view-source a[data-v-1b9140c3] {
+.view-source a[data-v-bf8029ec] {
     text-decoration: none;
     color: var(--font);
     padding-right: 0.6em;
@@ -181,21 +181,21 @@ header[data-v-1b9140c3] {
     line-height: 1.6;
     text-underline-offset: 0.7em;
 }
-.view-source:hover a[data-v-1b9140c3] {
+.view-source:hover a[data-v-bf8029ec] {
     text-decoration: underline;
     color: black;
 }
-.view-source:hover img[data-v-1b9140c3] {
+.view-source:hover img[data-v-bf8029ec] {
     opacity: 1;
     transform: scale(1.05);
 }
-.view-source img[data-v-1b9140c3] {
+.view-source img[data-v-bf8029ec] {
     width: 2em;
     height: 2em;
     opacity: 0.8;
 }
 @media screen and (min-width: 70em) {
-.view-source[data-v-1b9140c3] {
+.view-source[data-v-bf8029ec] {
         padding-right: 1em;
 }
 }
