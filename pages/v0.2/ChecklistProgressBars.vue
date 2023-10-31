@@ -186,15 +186,15 @@ defineProps<PropType>();
     width: v-bind('progress.f');  /* CSS Vue magic here */
 }
 .pink {
-    background-color: var(--ardc-pink);
+    background-color: var(--ardc-blue);
     width: v-bind('progress.a');  /* CSS Vue magic here */
 }
 .yellow {
-    background-color: var(--ardc-yellow);
+    background-color: var(--ardc-blue);
     width: v-bind('progress.i');  /* CSS Vue magic here */
 }
 .purple {
-    background-color: var(--ardc-purple);
+    background-color: var(--ardc-blue);
     width: v-bind('progress.r');  /* CSS Vue magic here */
 }
 
