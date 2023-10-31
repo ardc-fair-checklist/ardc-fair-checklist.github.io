@@ -4,7 +4,6 @@
         <ChecklistHeader />
         <main>
             <h1>Self-assessment checklist for FAIR software</h1>
-            <ChecklistBannerWIP />
             <ChecklistBannerVersions />
             <ChecklistBannerParams />
             <template v-if="nQuestions.total > 0">
@@ -50,7 +49,6 @@ import ChecklistAbout from './ChecklistAbout.vue';
 import ChecklistBadgeSnippets from './ChecklistBadgeSnippets.vue';
 import ChecklistBannerParams from './ChecklistBannerParams.vue';
 import ChecklistBannerVersions from './ChecklistBannerVersions.vue';
-import ChecklistBannerWIP from './ChecklistBannerWIP.vue';
 import ChecklistHeader from './ChecklistHeader.vue';
 import ChecklistProgressBars from './ChecklistProgressBars.vue';
 import ChecklistQuestion from './ChecklistQuestion.vue';
