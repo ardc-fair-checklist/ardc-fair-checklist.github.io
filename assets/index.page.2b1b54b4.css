@@ -245,7 +245,7 @@ img[data-v-6b02313b] {
 }
 
 
-.footer[data-v-e2d838ee] {
+.footer[data-v-4f54fd78] {
     align-items: center;
     bottom: 0;
     display: flex;
@@ -256,7 +256,7 @@ img[data-v-6b02313b] {
     position: fixed;
     width: 100%;
 }
-.inner[data-v-e2d838ee] {
+.inner[data-v-4f54fd78] {
     align-items: center;
     background-color: var(--light);
     border-top-left-radius: 0.5em;
@@ -270,7 +270,7 @@ img[data-v-6b02313b] {
     max-width: 56em;
     width: 100%;
 }
-.another-inner[data-v-e2d838ee] {
+.another-inner[data-v-4f54fd78] {
     background-color: var(--light);
     box-sizing: border-box;
     flex-grow: 1;
@@ -278,24 +278,24 @@ img[data-v-6b02313b] {
     min-width: 30em;
 }
 @media screen and (min-width: 70em) {
-.inner[data-v-e2d838ee] {
+.inner[data-v-4f54fd78] {
         padding-left: 3em;
         padding-right: 3em;
 }
 }
 @media screen and (max-width: 70em) {
-.inner[data-v-e2d838ee] {
+.inner[data-v-4f54fd78] {
         padding-left: 3em;
         padding-right: 3em;
 }
 }
 @media screen and (max-width: 41.5em) {
-.inner[data-v-e2d838ee] {
+.inner[data-v-4f54fd78] {
         padding-left: 0.5em;
         padding-right: 0.5em;
 }
 }
-.progressbars[data-v-e2d838ee] {
+.progressbars[data-v-4f54fd78] {
     background-color: var(--light);
     column-gap: 0.5em;
     display: flex;
@@ -307,54 +307,54 @@ img[data-v-6b02313b] {
     padding-right: 0.5em;
     padding-top: 0.25em;
 }
-.labels[data-v-e2d838ee] {
+.labels[data-v-4f54fd78] {
     display: flex;
     flex-direction: column;
     flex-grow: 0;
 }
-.bars[data-v-e2d838ee] {
+.bars[data-v-4f54fd78] {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
-.row[data-v-e2d838ee] {
+.row[data-v-4f54fd78] {
     display: flex;
     flex-direction: column;
     height: 1.75em;
     justify-content: center;
     min-height: 1.75em;
 }
-.label[data-v-e2d838ee] {
+.label[data-v-4f54fd78] {
     color: black;
     line-height: 2em;
     text-align: right;
 }
-.bar[data-v-e2d838ee] {
+.bar[data-v-4f54fd78] {
     border-bottom-right-radius: 0.25em;
     border-top-right-radius: 0.25em;
     height: 0.7em;
 }
-.bar-bg[data-v-e2d838ee] {
+.bar-bg[data-v-4f54fd78] {
     background-color: #eee;
     border: 1px solid var(--dark);
 }
-.blue[data-v-e2d838ee] {
-    background-color: var(--ardc-blue);
-    width: var(--e800fabe);  /* CSS Vue magic here */
+.blue[data-v-4f54fd78] {
+    background-color: #00A7D9;
+    width: var(--2617d86a);  /* CSS Vue magic here */
 }
-.pink[data-v-e2d838ee] {
-    background-color: var(--ardc-blue);
-    width: var(--e800fac8);  /* CSS Vue magic here */
+.pink[data-v-4f54fd78] {
+    background-color: #00A7D9;
+    width: var(--2617d874);  /* CSS Vue magic here */
 }
-.yellow[data-v-e2d838ee] {
-    background-color: var(--ardc-blue);
-    width: var(--e800fab8);  /* CSS Vue magic here */
+.yellow[data-v-4f54fd78] {
+    background-color: #00A7D9;
+    width: var(--2617d864);  /* CSS Vue magic here */
 }
-.purple[data-v-e2d838ee] {
-    background-color: var(--ardc-blue);
-    width: var(--e800faa6);  /* CSS Vue magic here */
+.purple[data-v-4f54fd78] {
+    background-color: #00A7D9;
+    width: var(--2617d852);  /* CSS Vue magic here */
 }
-button[data-v-e2d838ee] {
+button[data-v-4f54fd78] {
     align-self: center;
     background-color: #eee;
     border-radius: 0.15em;
@@ -366,12 +366,12 @@ button[data-v-e2d838ee] {
     margin-right: 1em;
     padding: 0.5em 1.5em;
 }
-button[data-v-e2d838ee]:hover {
+button[data-v-4f54fd78]:hover {
     border: 1px solid rgba(0,0,0,0.7);
     background-color: white;
     cursor: pointer;
 }
-button[data-v-e2d838ee]:disabled {
+button[data-v-4f54fd78]:disabled {
     opacity: 0.5;
 }
 
