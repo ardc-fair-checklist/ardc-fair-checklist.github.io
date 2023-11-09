@@ -182,19 +182,19 @@ defineProps<PropType>();
     border: 1px solid var(--dark);
 }
 .blue {
-    background-color: var(--ardc-blue);
+    background-color: #00A7D9;
     width: v-bind('progress.f');  /* CSS Vue magic here */
 }
 .pink {
-    background-color: var(--ardc-blue);
+    background-color: #00A7D9;
     width: v-bind('progress.a');  /* CSS Vue magic here */
 }
 .yellow {
-    background-color: var(--ardc-blue);
+    background-color: #00A7D9;
     width: v-bind('progress.i');  /* CSS Vue magic here */
 }
 .purple {
-    background-color: var(--ardc-blue);
+    background-color: #00A7D9;
     width: v-bind('progress.r');  /* CSS Vue magic here */
 }
 
